@@ -1,0 +1,1486 @@
+@inproceedings{Grosvenor:2012:URP:2342356.2342423,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342423},
+ address = {New York, NY, USA},
+ author = {Grosvenor, Matthew P.},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342423},
+ isbn = {978-1-4503-1419-0},
+ keyword = {device driver, emulation, hardware, userspace, virtualisation},
+ link = {http://doi.acm.org/10.1145/2342356.2342423},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {307--308},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {uvNIC: Rapid Prototyping Network Interface Controller Device Drivers},
+ year = {2012}
+}
+
+
+@inproceedings{Marchetta:2012:DTA:2342356.2342384,
+ abstract = {Traceroute is probably the most famous computer networks diagnostic tool, widely adopted for both performance troubleshooting and research. Unfortunately, traceroute is not free of inaccuracies. In this poster, we present our ongoing work to address the inaccuracy caused by third-party addresses.We discuss the impact of third-party addresses on traceroute applications and present a novel active probing technique able to identify such addresses in traceroute traces. Finally, we detail preliminary results suggesting how this phenomenon has been largely underestimated.},
+ acmid = {2342384},
+ address = {New York, NY, USA},
+ author = {Marchetta, Pietro and de Donato, Walter and Pescap{\'e}, Antonio},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342384},
+ isbn = {978-1-4503-1419-0},
+ keyword = {as-level path, internet topology, traceroute},
+ link = {http://doi.acm.org/10.1145/2342356.2342384},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {109--110},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Detecting Third-party Addresses in Traceroute IP Paths},
+ year = {2012}
+}
+
+
+@inproceedings{Zhou:2012:MMC:2342356.2342440,
+ abstract = {Modern data centers are massive, and support a range of distributed applications across potentially hundreds of server racks. As their utilization and bandwidth needs continue to grow, traditional methods of augmenting bandwidth have proven complex and costly in time and resources. Recent measurements show that data center traffic is often limited by congestion loss caused by short traffic bursts. Thus an attractive alternative to adding physical bandwidth is to augment wired links with wireless links in the 60 GHz band. We address two limitations with current 60 GHz wireless proposals. First, 60 GHz wireless links are limited by line-of-sight, and can be blocked by even small obstacles. Second, even beamforming links leak power, and potential interference will severely limit concurrent transmissions in dense data centers. We propose and evaluate a new wireless primitive for data centers, 3D beamforming, where 60 GHz signals bounce off data center ceilings, thus establishing indirect line-of-sight between any two racks in a data center. We build a small 3D beamforming testbed to demonstrate its ability to address both link blockage and link interference, thus improving link range and number of concurrent transmissions in the data center. In addition, we propose a simple link scheduler and use traffic simulations to show that these 3D links significantly expand wireless capacity compared to their 2D counterparts.},
+ acmid = {2342440},
+ address = {New York, NY, USA},
+ author = {Zhou, Xia and Zhang, Zengbin and Zhu, Yibo and Li, Yubo and Kumar, Saipriya and Vahdat, Amin and Zhao, Ben Y. and Zheng, Haitao},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342440},
+ isbn = {978-1-4503-1419-0},
+ keyword = {60 ghz wireless, data centers, wireless beamforming},
+ link = {http://doi.acm.org/10.1145/2342356.2342440},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {443--454},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Mirror Mirror on the Ceiling: Flexible Wireless Links for Data Centers},
+ year = {2012}
+}
+
+
+@inproceedings{Katz-Bassett:2012:LPR:2342356.2342435,
+ abstract = {The Internet was designed to always find a route if there is a policy-compliant path. However, in many cases, connectivity is disrupted despite the existence of an underlying valid path. The research community has focused on short-term outages that occur during route convergence. There has been less progress on addressing avoidable long-lasting outages. Our measurements show that long-lasting events contribute significantly to overall unavailability. To address these problems, we develop LIFEGUARD, a system for automatic failure localization and remediation. LIFEGUARD uses active measurements and a historical path atlas to locate faults, even in the presence of asymmetric paths and failures. Given the ability to locate faults, we argue that the Internet protocols should allow edge ISPs to steer traffic to them around failures, without requiring the involvement of the network causing the failure. Although the Internet does not explicitly support this functionality today, we show how to approximate it using carefully crafted BGP messages. LIFEGUARD employs a set of techniques to reroute around failures with low impact on working routes. Deploying LIFEGUARD on the Internet, we find that it can effectively route traffic around an AS without causing widespread disruption.},
+ acmid = {2342435},
+ address = {New York, NY, USA},
+ author = {Katz-Bassett, Ethan and Scott, Colin and Choffnes, David R. and Cunha, \'{I}talo and Valancius, Vytautas and Feamster, Nick and Madhyastha, Harsha V. and Anderson, Thomas and Krishnamurthy, Arvind},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342435},
+ isbn = {978-1-4503-1419-0},
+ keyword = {availability, bgp, internet, measurement, outages, repair, routing},
+ link = {http://doi.acm.org/10.1145/2342356.2342435},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {395--406},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {LIFEGUARD: Practical Repair of Persistent Route Failures},
+ year = {2012}
+}
+
+
+@inproceedings{Ghodsi:2012:MFQ:2342356.2342358,
+ abstract = {Middleboxes are ubiquitous in today's networks and perform a variety of important functions, including IDS, VPN, firewalling, and WAN optimization. These functions differ vastly in their requirements for hardware resources (e.g., CPU cycles and memory bandwidth). Thus, depending on the functions they go through, different flows can consume different amounts of a middlebox's resources. While there is much literature on weighted fair sharing of link bandwidth to isolate flows, it is unclear how to schedule multiple resources in a middlebox to achieve similar guarantees. In this paper, we analyze several natural packet scheduling algorithms for multiple resources and show that they have undesirable properties. We propose a new algorithm, Dominant Resource Fair Queuing (DRFQ), that retains the attractive properties that fair sharing provides for one resource. In doing so, we generalize the concept of virtual time in classical fair queuing to multi-resource settings. The resulting algorithm is also applicable in other contexts where several resources need to be multiplexed in the time domain.},
+ acmid = {2342358},
+ address = {New York, NY, USA},
+ author = {Ghodsi, Ali and Sekar, Vyas and Zaharia, Matei and Stoica, Ion},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342358},
+ isbn = {978-1-4503-1419-0},
+ keyword = {fair queueing, fairness, middleboxes, scheduling},
+ link = {http://doi.acm.org/10.1145/2342356.2342358},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {1--12},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Multi-resource Fair Queueing for Packet Processing},
+ year = {2012}
+}
+
+
+@inproceedings{Dave:2012:MFC:2342356.2342394,
+ abstract = {Advertising plays a vital role in supporting free websites and smartphone apps. Click-spam, i.e., fraudulent or invalid clicks on online ads where the user has no actual interest in the advertiser's site, results in advertising revenue being misappropriated by click-spammers. While ad networks take active measures to block click-spam today, the effectiveness of these measures is largely unknown. Moreover, advertisers and third parties have no way of independently estimating or defending against click-spam. In this paper, we take the first systematic look at click-spam. We propose the first methodology for advertisers to independently measure click-spam rates on their ads. We also develop an automated methodology for ad networks to proactively detect different simultaneous click-spam attacks. We validate both methodologies using data from major ad networks. We then conduct a large-scale measurement study of click-spam across ten major ad networks and four types of ads. In the process, we identify and perform in-depth analysis on seven ongoing click-spam attacks not blocked by major ad networks at the time of this writing. Our findings highlight the severity of the click-spam problem, especially for mobile ads.},
+ acmid = {2342394},
+ address = {New York, NY, USA},
+ author = {Dave, Vacha and Guha, Saikat and Zhang, Yin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342394},
+ isbn = {978-1-4503-1419-0},
+ keyword = {advertising fraud, click fraud, click-spam, invalid clicks, traffic quality},
+ link = {http://doi.acm.org/10.1145/2342356.2342394},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {175--186},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Measuring and Fingerprinting Click-spam in Ad Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Gao:2012:EG:2342356.2342398,
+ abstract = {Large-scale Internet applications, such as content distribution networks, are deployed across multiple datacenters and consume massive amounts of electricity. To provide uniformly low access latencies, these datacenters are geographically distributed and the deployment size at each location reflects the regional demand for the application. Consequently, an application's environmental impact can vary significantly depending on the geographical distribution of end-users, as electricity cost and carbon footprint per watt is location specific. In this paper, we describe FORTE: Flow Optimization based framework for request-Routing and Traffic Engineering. FORTE dynamically controls the fraction of user traffic directed to each datacenter in response to changes in both request workload and carbon footprint. It allows an operator to navigate the three-way tradeoff between access latency, carbon footprint, and electricity costs and to determine an optimal datacenter upgrade plan in response to increases in traffic load. We use FORTE to show that carbon taxes or credits are impractical in incentivizing carbon output reduction by providers of large-scale Internet applications. However, they can reduce carbon emissions by 10% without increasing the mean latency nor the electricity bill.},
+ acmid = {2342398},
+ address = {New York, NY, USA},
+ author = {Gao, Peter Xiang and Curtis, Andrew R. and Wong, Bernard and Keshav, Srinivasan},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342398},
+ isbn = {978-1-4503-1419-0},
+ keyword = {energy, green computing},
+ link = {http://doi.acm.org/10.1145/2342356.2342398},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {211--222},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {It's Not Easy Being Green},
+ year = {2012}
+}
+
+
+@inproceedings{Perry:2012:SC:2342356.2342363,
+ abstract = {Spinal codes are a new class of rateless codes that enable wireless networks to cope with time-varying channel conditions in a natural way, without requiring any explicit bit rate selection. The key idea in the code is the sequential application of a pseudo-random hash function to the message bits to produce a sequence of coded symbols for transmission. This encoding ensures that two input messages that differ in even one bit lead to very different coded sequences after the point at which they differ, providing good resilience to noise and bit errors. To decode spinal codes, this paper develops an approximate maximum-likelihood decoder, called the bubble decoder, which runs in time polynomial in the message size and achieves the Shannon capacity over both additive white Gaussian noise (AWGN) and binary symmetric channel (BSC) models. Experimental results obtained from a software implementation of a linear-time decoder show that spinal codes achieve higher throughput than fixed-rate LDPC codes, rateless Raptor codes, and the layered rateless coding approach of Strider, across a range of channel conditions and message sizes. An early hardware prototype that can decode at 10 Mbits/s in FPGA demonstrates that spinal codes are a practical construction.},
+ acmid = {2342363},
+ address = {New York, NY, USA},
+ author = {Perry, Jonathan and Iannucci, Peter A. and Fleming, Kermin E. and Balakrishnan, Hari and Shah, Devavrat},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342363},
+ isbn = {978-1-4503-1419-0},
+ keyword = {capacity, channel code, practical decoder, rateless, spinal code, wireless},
+ link = {http://doi.acm.org/10.1145/2342356.2342363},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {49--60},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Spinal Codes},
+ year = {2012}
+}
+
+
+@inproceedings{Wahlisch:2012:FIM:2342356.2342422,
+ abstract = {Computer systems are commonly attacked by malicious transport contacts. We present a comparative study that analyzes to what extent those attacks depend on the network access, in particular if an adversary targets specifically on mobile or non-mobile devices. Based on a mobile honeypot that extracts first statistical results, our findings indicate that a few topological domains of the Internet have started to place particular focus on attacking mobile networks.},
+ acmid = {2342422},
+ address = {New York, NY, USA},
+ author = {W\"{a}hlisch, Matthias and Trapp, Sebastian and Keil, Christian and Sch\"{o}nfelder, Jochen and schmidt, Thomas C. and Schiller, Jochen},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342422},
+ isbn = {978-1-4503-1419-0},
+ keyword = {mobile honeypot, mobile vs. non-mobile attacks},
+ link = {http://doi.acm.org/10.1145/2342356.2342422},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {305--306},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {First Insights from a Mobile Honeypot},
+ year = {2012}
+}
+
+
+@inproceedings{Suresh:2012:DPE:2342356.2342409,
+ abstract = {We present a demo of Odin, an SDN framework to program enterprise wireless local area networks (WLANs). Enterprise WLANs need to support a wide range of services and functionalities. This includes authentication, authorization and accounting, policy, mobility and interference management, and load balancing. WLANs also exhibit unique challenges. In particular, access point (AP) association decisions are not made by the infrastructure, but by clients. In addition, the association state machine combined with the broadcast nature of the wireless medium requires keeping track of a large amount of state changes. To this end, Odin builds on a light virtual AP abstraction that greatly simplifies client management. Odin does not require any client side modifications and its design supports WPA2 Enterprise. With Odin, a network operator can implement enterprise WLAN services as network applications.},
+ acmid = {2342409},
+ address = {New York, NY, USA},
+ author = {Suresh, Lalith and Schulz-Zander, Julius and Merz, Ruben and Feldmann, Anja},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342409},
+ isbn = {978-1-4503-1419-0},
+ keyword = {enterprise wlans, odin, sdn},
+ link = {http://doi.acm.org/10.1145/2342356.2342409},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {279--280},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Demo: Programming Enterprise WLANs with Odin},
+ year = {2012}
+}
+
+
+@inproceedings{Grandl:2012:SNE:2342356.2342410,
+ abstract = {eXpressive Internet Architecture (XIA) [1] is an architecture that natively supports multiple communication types and allows networks to evolve their abstractions and functionality to accommodate new styles of communication over time. XIA embeds an elegant mechanism for handling unforeseen communication types for legacy routers. In this demonstration, we show that XIA overcomes three key barriers in network evolution (outlined below) by (1) allowing end-hosts and applications to start using new communication types (e.g., service and content) before the network supports them, (2) ensuring that upgrading a subset of routers to support new functionalities immediately benefits applications, and (3) using the same mechanisms we employ for 1 and 2 to incrementally deploy XIA in IP networks.},
+ acmid = {2342410},
+ address = {New York, NY, USA},
+ author = {Grandl, Robert and Han, Dongsu and Lee, Suk-Bok and Lim, Hyeontaek and Machado, Michel and Mukerjee, Matthew and Naylor, David},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342410},
+ isbn = {978-1-4503-1419-0},
+ keyword = {evolution, internet architecture, multiple communication styles},
+ link = {http://doi.acm.org/10.1145/2342356.2342410},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {281--282},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Supporting Network Evolution and Incremental Deployment with XIA},
+ year = {2012}
+}
+
+
+@inproceedings{Poese:2012:PEE:2342356.2342370,
+ abstract = {We present PaDIS Emulator, a fully automated platform to evaluate CDN-ISP collaboration for better content delivery, traffic engineering, and cost reduction. The PaDIS Emulator enables researchers as well as CDN and ISP operators to evaluate the benefits of collaboration using their own operational networks, configuration, and cost functions. The PaDIS Emulator consists of three components: the network emulation, the collaboration mechanism, and the performance monitor. These layers provide scalable emulation of the interaction between an ISP or a number of ISPs with multiple CDNs and vice versa. PaDIS Emulator design is flexible in order to implement a wide range of collaboration mechanisms on virtualized or real hardware, and evaluate them before introduction to operational networks.},
+ acmid = {2342370},
+ address = {New York, NY, USA},
+ author = {Poese, Ingmar and Frank, Benjamin and Knight, Simon and Semmler, Niklas and Smaragdakis, Georgios},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342370},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cdn-isp collaboration, traffic engineering},
+ link = {http://doi.acm.org/10.1145/2342356.2342370},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {81--82},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {PaDIS Emulator: An Emulator to Evaluate CDN-ISP Collaboration},
+ year = {2012}
+}
+
+
+@inproceedings{Huici:2012:BHC:2342356.2342369,
+ abstract = {Passive network monitoring and data analysis, crucial to the correct operation of networks and the systems that rely on them, has become an increasingly difficult task given continued growth and diversification of the Internet. In this demo we present Blockmon, a novel composable measurement system with the flexibility to allow for a wide range of traffic monitoring and data analysis, as well as the necessary mechanisms to yield high performance on today's modern multi-core hardware. In this demo we use Blockmon's GUI to show how to easily create Blockmon applications and display data exported by them. We present a simple flow meter application and a more involved VoIP nomaly detection one.},
+ acmid = {2342369},
+ address = {New York, NY, USA},
+ author = {Huici, Felipe and di Pietro, Andrea and Trammell, Brian and Gomez Hidalgo, Jose Maria and Martinez Ruiz, Daniel and d'Heureuse, Nico},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342369},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data processing, high performance, network monitoring},
+ link = {http://doi.acm.org/10.1145/2342356.2342369},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {79--80},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Blockmon: A High-performance Composable Network Traffic Measurement System},
+ year = {2012}
+}
+
+
+@inproceedings{Gurney:2012:RSS:2342356.2342375,
+ abstract = {The Route Shepherd tool demonstrates applications of choosing between routing protocol configurations on the basis of rigorously-supported theory. Splitting the configuration space into equivalence classes allows the identification of which parameter combinations lead to protocol stability, and which do not. This ahead-of-time analysis generates a predicate, in the form of a combination of linear integer inequalities, which can be used in several complementary ways by downstream applications. Examples presented include warning operators about errors in advance, recovery from protocol oscillation, plotting a series of safe parameter changes, and understanding the dynamics of the routing system.},
+ acmid = {2342375},
+ address = {New York, NY, USA},
+ author = {Gurney, Alexander J.T. and Han, Xianglong and Li, Yang and Loo, Boon Thau},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342375},
+ isbn = {978-1-4503-1419-0},
+ keyword = {border gateway protocol, partial specification, routing policy, stable path problems},
+ link = {http://doi.acm.org/10.1145/2342356.2342375},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {91--92},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Route Shepherd: Stability Hints for the Control Plane},
+ year = {2012}
+}
+
+
+@inproceedings{Brown:2012:MUS:2342356.2342407,
+ abstract = {This demo presents MultiNet, a novel method for joining devices to a domestic Wi-Fi network. MultiNet dynamically reconfigures the network to accept each device, rather than configuring each device to fit the network as is the norm. It does so by assuming that each device is pre-configured with a cryptographically generated WPA2 network SSID/passphrase pair, and then providing a lightweight interaction through which the user creates a new network for each device. This approach makes securely adding devices to a wireless network straightforward without compromising security or burdening the user, and maintaining backward compatibility with existing deployed standards and protocols. The demo deploys a MultiNet Access Point (AP) and a number of Wi-Fi enabled consumer devices to allow viewers to dynamically construct and deconstruct the network via the MultiNet controller currently implemented as an app on an Android phone (Figure 1). The code for MultiNet is publicly available under open-source licenses.},
+ acmid = {2342407},
+ address = {New York, NY, USA},
+ author = {Brown, Anthony and Mortier, Richard and Rodden, Tom},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342407},
+ isbn = {978-1-4503-1419-0},
+ keyword = {usable security; domestic environments; 802.11; infrastructure intervention},
+ link = {http://doi.acm.org/10.1145/2342356.2342407},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {275--276},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {MultiNet: Usable and Secure WiFi Device Association},
+ year = {2012}
+}
+
+
+@inproceedings{Wu:2012:NAD:2342356.2342438,
+ abstract = {Driven by the soaring demands for always-on and fast-response online services, modern datacenter networks have recently undergone tremendous growth. These networks often rely on commodity hardware to reach immense scale while keeping capital expenses under check. The downside is that commodity devices are prone to failures, raising a formidable challenge for network operators to promptly handle these failures with minimal disruptions to the hosted services.  Recent research efforts have focused on automatic failure localization. Yet, resolving failures still requires significant human interventions, resulting in prolonged failure recovery time. Unlike previous work, NetPilot aims to quickly mitigate rather than resolve failures. NetPilot mitigates failures in much the same way operators do -- by deactivating or restarting suspected offending components. NetPilot circumvents the need for knowing the exact root cause of a failure by taking an intelligent trial-and-error approach. The core of NetPilot is comprised of an Impact Estimator that helps guard against overly disruptive mitigation actions and a failure-specific mitigation planner that minimizes the number of trials. We demonstrate that NetPilot can effectively mitigate several types of critical failures commonly encountered in production datacenter networks.},
+ acmid = {2342438},
+ address = {New York, NY, USA},
+ author = {Wu, Xin and Turner, Daniel and Chen, Chao-Chih and Maltz, David A. and Yang, Xiaowei and Yuan, Lihua and Zhang, Ming},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342438},
+ isbn = {978-1-4503-1419-0},
+ keyword = {automated failure mitigation, datacenter networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342438},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {419--430},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {NetPilot: Automating Datacenter Network Failure Mitigation},
+ year = {2012}
+}
+
+
+@inproceedings{Wang:2012:ERL:2342356.2342364,
+ abstract = {There is a long-standing vision of embedding backscatter nodes like RFIDs into everyday objects to build ultra-low power ubiquitous networks. A major problem that has challenged this vision is that backscatter communication is neither reliable nor efficient. Backscatter nodes cannot sense each other, and hence tend to suffer from colliding transmissions. Further, they are ineffective at adapting the bit rate to channel conditions, and thus miss opportunities to increase throughput, or transmit above capacity causing errors.  This paper introduces a new approach to backscatter communication. The key idea is to treat all nodes as if they were a single virtual sender. One can then view collisions as a code across the bits transmitted by the nodes. By ensuring only a few nodes collide at any time, we make collisions act as a sparse code and decode them using a new customized compressive sensing algorithm. Further, we can make these collisions act as a rateless code to automatically adapt the bit rate to channel quality --i.e., nodes can keep colliding until the base station has collected enough collisions to decode. Results from a network of backscatter nodes communicating with a USRP backscatter base station demonstrate that the new design produces a 3.5× throughput gain, and due to its rateless code, reduces message loss rate in challenging scenarios from 50% to zero.},
+ acmid = {2342364},
+ address = {New York, NY, USA},
+ author = {Wang, Jue and Hassanieh, Haitham and Katabi, Dina and Indyk, Piotr},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342364},
+ isbn = {978-1-4503-1419-0},
+ keyword = {backscatter, compressive sensing, rfid, wireless},
+ link = {http://doi.acm.org/10.1145/2342356.2342364},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {61--72},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Efficient and Reliable Low-power Backscatter Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Farrington:2012:DUD:2342356.2342377,
+ abstract = {We designed and constructed a 24x24-port optical circuit switch (OCS) prototype with a programming time of 68.5 μs, a switching time of 2.8 μs, and a receiver electronics initialization time of 8.7 μs [1]. We demonstrate the operation of this prototype switch in a data center testbed under various workloads.},
+ acmid = {2342377},
+ address = {New York, NY, USA},
+ author = {Farrington, Nathan and Porter, George and Sun, Pang-Chen and Forencich, Alex and Ford, Joseph and Fainman, Yeshaiahu and Papen, George and Vahdat, Amin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342377},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data center networks, optical circuit switching},
+ link = {http://doi.acm.org/10.1145/2342356.2342377},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {95--96},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {A Demonstration of Ultra-low-latency Data Center Optical Circuit Switching},
+ year = {2012}
+}
+
+
+@inproceedings{Twigg:2012:UDC:2342356.2342380,
+ abstract = {Measurement and inference in data centers present a set of opportunities and challenges distinct from the Internet domain. Existing toolsets may be perturbed or be mislead by issues related to virtualization. Yet, while equally confronted by scale, data centers are relatively homogenous and symmetric. We believe these may be attributes to be exploited. However, data is required to better evaluate our hypotheses. Therefore, we introduce our efforts to gather data using a single framework from which we can launch tests of our choosing. Our observations reinforce recent claims, but indicate changes in the network. They also reveal additional obfuscations stemming from virtualization.},
+ acmid = {2342380},
+ address = {New York, NY, USA},
+ author = {Twigg, Neil Alexander and Fayed, Marwan and Perkins, Colin and Pezaros, Dimitrios and Tso, Posco},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342380},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data centers, network measurement, tomography},
+ link = {http://doi.acm.org/10.1145/2342356.2342380},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {101--102},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {User-level Data Center Tomography},
+ year = {2012}
+}
+
+
+@inproceedings{Wolf:2012:CPN:2342356.2342382,
+ abstract = {There has been a great interest in defining a new network architecture that can meet the needs of a future Internet. One of the main challenges in this context is how to realize the many different technical solutions that have developed in recent years in a single coherent architecture. In addition, it is necessary to consider how to ensure economic viability of architecture solutions. In this work, we discuss how to design a network architecture where choices at different layers of the protocol stack are explicitly exposed to users. This approach ensures that innovative technical solutions can be used and rewarded, which is essential to encourage wide deployment of this architecture.},
+ acmid = {2342382},
+ address = {New York, NY, USA},
+ author = {Wolf, Tilman and Griffioen, James and Calvert, Kenneth L. and Dutta, Rudra and Rouskas, George N. and Baldine, Ilia and Nagurney, Anna},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342382},
+ isbn = {978-1-4503-1419-0},
+ keyword = {network architecture; innovation; economics},
+ link = {http://doi.acm.org/10.1145/2342356.2342382},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {105--106},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Choice As a Principle in Network Architecture},
+ year = {2012}
+}
+
+
+@inproceedings{Ahmed:2012:EDN:2342356.2342416,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342416},
+ address = {New York, NY, USA},
+ author = {Ahmed, Mohamed and Huici, Felipe and Jahanpanah, Armin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342416},
+ isbn = {978-1-4503-1419-0},
+ keyword = {isolation, minimalistic, network performance, sdn, virtualization, xen},
+ link = {http://doi.acm.org/10.1145/2342356.2342416},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {293--294},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Enabling Dynamic Network Processing with clickOS},
+ year = {2012}
+}
+
+
+@inproceedings{Lee:2012:RDT:2342356.2342385,
+ abstract = {With the rapid growth of data centers, minimizing the queueing delay at network switches has been one of the key challenges. In this work, we analyze the shortcomings of the current TCP algorithm when used in data center networks, and we propose to use latency-based congestion detection and rate-based transfer to achieve ultra-low queueing delay in data centers.},
+ acmid = {2342385},
+ address = {New York, NY, USA},
+ author = {Lee, Changhyun and Jang, Keon and Moon, Sue},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342385},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data centers, latency, tcp},
+ link = {http://doi.acm.org/10.1145/2342356.2342385},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {111--112},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Reviving Delay-based TCP for Data Centers},
+ year = {2012}
+}
+
+
+@inproceedings{Popa:2012:FSN:2342356.2342396,
+ abstract = {The network, similar to CPU and memory, is a critical and shared resource in the cloud. However, unlike other resources, it is neither shared proportionally to payment, nor do cloud providers offer minimum guarantees on network bandwidth. The reason networks are more difficult to share is because the network allocation of a virtual machine (VM) X depends not only on the VMs running on the same machine with X, but also on the other VMs that X communicates with and the cross-traffic on each link used by X. In this paper, we start from the above requirements--payment proportionality and minimum guarantees--and show that the network-specific challenges lead to fundamental tradeoffs when sharing cloud networks. We then propose a set of properties to explicitly express these tradeoffs. Finally, we present three allocation policies that allow us to navigate the tradeoff space. We evaluate their characteristics through simulation and testbed experiments to show that they can provide minimum guarantees and achieve better proportionality than existing solutions.},
+ acmid = {2342396},
+ address = {New York, NY, USA},
+ author = {Popa, Lucian and Kumar, Gautam and Chowdhury, Mosharaf and Krishnamurthy, Arvind and Ratnasamy, Sylvia and Stoica, Ion},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342396},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cloud computing, network sharing},
+ link = {http://doi.acm.org/10.1145/2342356.2342396},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {187--198},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {FairCloud: Sharing the Network in Cloud Computing},
+ year = {2012}
+}
+
+
+@inproceedings{Nychis:2012:ONN:2342356.2342436,
+ abstract = {In this paper, we present network-on-chip (NoC) design and contrast it to traditional network design, highlighting similarities and differences between the two. As an initial case study, we examine network congestion in bufferless NoCs. We show that congestion manifests itself differently in a NoC than in traditional networks. Network congestion reduces system throughput in congested workloads for smaller NoCs (16 and 64 nodes), and limits the scalability of larger bufferless NoCs (256 to 4096 nodes) even when traffic has locality (e.g., when an application's required data is mapped nearby to its core in the network). We propose a new source throttling-based congestion control mechanism with application-level awareness that reduces network congestion to improve system performance. Our mechanism improves system performance by up to 28% (15% on average in congested workloads) in smaller NoCs, achieves linear throughput scaling in NoCs up to 4096 cores (attaining similar performance scalability to a NoC with large buffers), and reduces power consumption by up to 20%. Thus, we show an effective application of a network-level concept, congestion control, to a class of networks -- bufferless on-chip networks -- that has not been studied before by the networking community.},
+ acmid = {2342436},
+ address = {New York, NY, USA},
+ author = {Nychis, George P. and Fallin, Chris and Moscibroda, Thomas and Mutlu, Onur and Seshan, Srinivasan},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342436},
+ isbn = {978-1-4503-1419-0},
+ keyword = {congestion control, multi-core, on-chip networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342436},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {407--418},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {On-chip Networks from a Networking Perspective: Congestion and Scalability in Many-core Interconnects},
+ year = {2012}
+}
+
+
+@inproceedings{Liu:2012:FFI:2342356.2342386,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342386},
+ address = {New York, NY, USA},
+ author = {Liu, Bingyang and Bi, Jun and Yang, Xiaowei},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342386},
+ isbn = {978-1-4503-1419-0},
+ keyword = {economics, ingress filtering, ip spoofing},
+ link = {http://doi.acm.org/10.1145/2342356.2342386},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {113--114},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {FaaS: Filtering IP Spoofing Traffic As a Service},
+ year = {2012}
+}
+
+
+@inproceedings{Niemi:2012:DIP:2342356.2342412,
+ abstract = {This paper introduces a serious security problem that people believe has been fixed, but which is still very much existing and evolving, namely evasions. We describe how protocols can still be misused to fool network security devices, such as intrusion prevention systems.},
+ acmid = {2342412},
+ address = {New York, NY, USA},
+ author = {Niemi, Olli-Pekka and Levom\"{a}ki, Antti and Manner, Jukka},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342412},
+ isbn = {978-1-4503-1419-0},
+ keyword = {evasion, ids, intrusion prevention, ips, network},
+ link = {http://doi.acm.org/10.1145/2342356.2342412},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {285--286},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Dismantling Intrusion Prevention Systems},
+ year = {2012}
+}
+
+
+@inproceedings{Bodik:2012:SFB:2342356.2342439,
+ abstract = {Datacenter networks have been designed to tolerate failures of network equipment and provide sufficient bandwidth. In practice, however, failures and maintenance of networking and power equipment often make tens to thousands of servers unavailable, and network congestion can increase service latency. Unfortunately, there exists an inherent tradeoff between achieving high fault tolerance and reducing bandwidth usage in network core; spreading servers across fault domains improves fault tolerance, but requires additional bandwidth, while deploying servers together reduces bandwidth usage, but also decreases fault tolerance. We present a detailed analysis of a large-scale Web application and its communication patterns. Based on that, we propose and evaluate a novel optimization framework that achieves both high fault tolerance and significantly reduces bandwidth usage in the network core by exploiting the skewness in the observed communication patterns.},
+ acmid = {2342439},
+ address = {New York, NY, USA},
+ author = {Bod\'{\i}k, Peter and Menache, Ishai and Chowdhury, Mosharaf and Mani, Pradeepkumar and Maltz, David A. and Stoica, Ion},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342439},
+ isbn = {978-1-4503-1419-0},
+ keyword = {bandwidth, datacenter networks, fault tolerance},
+ link = {http://doi.acm.org/10.1145/2342356.2342439},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {431--442},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Surviving Failures in Bandwidth-constrained Datacenters},
+ year = {2012}
+}
+
+
+@inproceedings{Dandapat:2012:DCS:2342356.2342368,
+ abstract = {We propose a content distribution strategy over municipal WiFi networks where Access Points (APs) collaboratively cache popular multimedia content, and disseminate them in a manner that each mobile device has the portion of the content just-in-time for playback. If successful, we envision that a child will be able to seamlessly watch a movie in a car, as her tablet downloads different parts of the movie over different WiFi APs at different times.},
+ acmid = {2342368},
+ address = {New York, NY, USA},
+ author = {Dandapat, Sourav Kumar and Jain, Sanyam and Choudhury, Romit Roy and Ganguly, Niloy},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342368},
+ isbn = {978-1-4503-1419-0},
+ keyword = {content distribution, distributed content storage, municipal wifi network},
+ link = {http://doi.acm.org/10.1145/2342356.2342368},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {77--78},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Distributed Content Storage for Just-in-time Streaming},
+ year = {2012}
+}
+
+
+@inproceedings{Nemeth:2012:TSC:2342356.2342372,
+ abstract = {The limited capabilities of the switches renders the implementation of unorthodox routing and forwarding mechanisms as a hard task in OpenFlow. Our high level goal is therefore to inspect the possibilities of slightly smartening up the OpenFlow switches. As a first step in this direction we demonstrate (with Bloom filters, greedy routing and network coding) that a very limited computational capability enables us to natively support experimental technologies while preserving performance. We distribute the demos in source files and as a ready-to-experiment VM image to promote further improvements and evaluations.},
+ acmid = {2342372},
+ address = {New York, NY, USA},
+ author = {N{\'e}meth, Felici\'{a}n and Stipkovits, \'{A}d\'{a}m and Sonkoly, Bal\'{a}zs and Guly\'{a}s, Andr\'{a}s},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342372},
+ isbn = {978-1-4503-1419-0},
+ keyword = {bloom filters, greedy routing, network coding, openflow, sdn},
+ link = {http://doi.acm.org/10.1145/2342356.2342372},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {85--86},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Towards SmartFlow: Case Studies on Enhanced Programmable Forwarding in OpenFlow Switches},
+ year = {2012}
+}
+
+
+@inproceedings{Otto:2012:NIC:2342356.2342413,
+ abstract = {The Domain Name System (DNS) is a fundamental component of today's Internet. Recent years have seen radical changes to DNS with increases in usage of remote DNS and public DNS services such as OpenDNS. Given the close relationship between DNS and Content Delivery Networks (CDNs) and the pervasive use of CDNs by many popular applications including web browsing and real-time entertainment services, it is important to understand the impact of remote and public DNS services on users' overall experience on the Web. This work presents a tool, namehelp, which comparatively evaluates DNS services in terms of the web performance they provide, and implements an end-host solution to address the performance impact of remote DNS on CDNs. The demonstration will show the functionality of namehelp with online results for its performance improvements.},
+ acmid = {2342413},
+ address = {New York, NY, USA},
+ author = {Otto, John S. and S\'{a}nchez, Mario A. and Rula, John P. and Stein, Ted and Bustamante, Fabi\'{a}n E.},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342413},
+ isbn = {978-1-4503-1419-0},
+ keyword = {content delivery networks, domain name system},
+ link = {http://doi.acm.org/10.1145/2342356.2342413},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {287--288},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Namehelp: Intelligent Client-side DNS Resolution},
+ year = {2012}
+}
+
+
+@inproceedings{Xie:2012:OCC:2342356.2342397,
+ abstract = {In multi-tenant datacenters, jobs of different tenants compete for the shared datacenter network and can suffer poor performance and high cost from varying, unpredictable network performance. Recently, several virtual network abstractions have been proposed to provide explicit APIs for tenant jobs to specify and reserve virtual clusters (VC) with both explicit VMs and required network bandwidth between the VMs. However, all of the existing proposals reserve a fixed bandwidth throughout the entire execution of a job. In the paper, we first profile the traffic patterns of several popular cloud applications, and find that they generate substantial traffic during only 30%-60% of the entire execution, suggesting existing simple VC models waste precious networking resources. We then propose a fine-grained virtual network abstraction, Time-Interleaved Virtual Clusters (TIVC), that models the time-varying nature of the networking requirement of cloud applications. To demonstrate the effectiveness of TIVC, we develop Proteus, a system that implements the new abstraction. Using large-scale simulations of cloud application workloads and prototype implementation running actual cloud applications, we show the new abstraction significantly increases the utilization of the entire datacenter and reduces the cost to the tenants, compared to previous fixed-bandwidth abstractions.},
+ acmid = {2342397},
+ address = {New York, NY, USA},
+ author = {Xie, Di and Ding, Ning and Hu, Y. Charlie and Kompella, Ramana},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342397},
+ isbn = {978-1-4503-1419-0},
+ keyword = {allocation, bandwidth, datacenter, network reservation, profiling},
+ link = {http://doi.acm.org/10.1145/2342356.2342397},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {199--210},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {The Only Constant is Change: Incorporating Time-varying Network Reservations in Data Centers},
+ year = {2012}
+}
+
+
+@inproceedings{Wahlisch:2012:VCY:2342356.2342405,
+ abstract = {Smartphones are popular attack targets, but usually too weak in applying common protection concepts. SKIMS designs and implements a cooperative, cross-layer security system for mobile devices. Detection mechanisms as well as a proactive and reactive defense of attacks are core components of this project. In this demo, we show a comprehensive proof-of-concept of our approaches, which include entropy-based malware detection, a mobile honeypot, and spontaneous, socio-inspired trust establishment.},
+ acmid = {2342405},
+ address = {New York, NY, USA},
+ author = {W\"{a}hlisch, Matthias and Trapp, Sebastian and Schiller, Jochen and Jochheim, Benjamin and Nolte, Theodor and Schmidt, Thomas C. and Ugus, Osman and Westhoff, Dirk and Kutscher, Martin and K\"{u}ster, Matthias and Keil, Christian and Sch\"{o}nfelder, Jochen},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342405},
+ isbn = {978-1-4503-1419-0},
+ keyword = {ad hoc trust, malware detection, mobile honeypot, mobile security},
+ link = {http://doi.acm.org/10.1145/2342356.2342405},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {271--272},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Vitamin C for Your Smartphone: The SKIMS Approach for Cooperativeand Lightweight Security at Mobiles},
+ year = {2012}
+}
+
+
+@inproceedings{Cidon:2012:FDL:2342356.2342400,
+ abstract = {Unlike their cellular counterparts, Wi-Fi networks do not have the luxury of a dedicated control plane that is decoupled from the data plane. Consequently, Wi-Fi struggles to provide many of the capabilities that are taken for granted in cellular networks, including efficient and fair resource allocation, QoS and handoffs. The reason for the lack of a control plane with designated spectrum is that it would impose significant overhead. This is at odds with Wi-Fi's goal of providing a simple, plug-and-play network. In this paper we present Flashback, a novel technique that provides a decoupled low overhead control plane for wireless networks that retains the simplicity of Wi-Fi's distributed asynchronous operation. Flashback allows nodes to reliably send short control messages concurrently with data transmissions, while ensuring that data packets are decoded correctly without harming throughput. We utilize Flashback's novel messaging capability to design, implement and experimentally evaluate a reliable control plane for Wi-Fi with rates from 175Kbps to 400Kbps depending on the environment. Moreover, to demonstrate its broad applicability, we design and implement a novel resource allocation mechanism that utilizes Flashback to provide efficient, QoS-aware and fair medium access, while eliminating control overheads including data plane contention, RTS/CTS and random back offs.},
+ acmid = {2342400},
+ address = {New York, NY, USA},
+ author = {Cidon, Asaf and Nagaraj, Kanthi and Katti, Sachin and Viswanath, Pramod},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342400},
+ isbn = {978-1-4503-1419-0},
+ keyword = {wireless control},
+ link = {http://doi.acm.org/10.1145/2342356.2342400},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {223--234},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Flashback: Decoupled Lightweight Wireless Control},
+ year = {2012}
+}
+
+
+@inproceedings{Eittenberger:2012:RBM:2342356.2342415,
+ abstract = {As mobile devices and cellular networks become ubiquitous, first apps for popular P2P video streaming networks emerge. We have observed that when these applications operate in cellular networks, they don't upload video traffic back to other peers. This paper presents a reason for this behavior and proposes a viable solution to exploit the uplink capacity of mobile devices more efficiently. To the best of our knowledge, this paper is the first to propose the usage of Raptor codes to increase the upload throughput of mobile P2P applications.},
+ acmid = {2342415},
+ address = {New York, NY, USA},
+ author = {Eittenberger, Philipp M.},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342415},
+ isbn = {978-1-4503-1419-0},
+ keyword = {android, mobile p2p streaming, raptor codes},
+ link = {http://doi.acm.org/10.1145/2342356.2342415},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {291--292},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {RaptorStream: Boosting Mobile Peer-to-peer Streaming with Raptor Codes},
+ year = {2012}
+}
+
+
+@inproceedings{Ma:2012:SPR:2342356.2342428,
+ abstract = {Ternary Content-Addressable Memories (TCAMs) has become the industrial standard for high-throughput packet classification. However, one major drawback of TCAMs is their high power consumption, which is becoming critical with the boom of data centers, the growing classifiers and the deployment of IPv6. In this paper, we propose a practical and efficient solution which introduces a smart pre-classifier to reduce power consumption of TCAMs for multi-dimensional packet classification. We reduce the dimension of the problem through the pre-classifier which pre-classifies a packet on two header fields, source and destination IP addresses. We then return to the high dimension problem where only a small portion of a TCAM is activated and searched for a given packet. The smart pre-classifier is built in a way such that a given packet matches at most one entry in the pre-classifier, which make commodity TCAMs sufficient to implement the pre-classifier. Furthermore, each rule is stored only once in one of the TCAM blocks, which avoids rule replication. The presented solution uses commodity TCAMs, and the proposed algorithms are easy to implement. Our scheme achieves a median power reduction of 91% and an average power reduction of 88% on real and synthetic classifiers respectively.},
+ acmid = {2342428},
+ address = {New York, NY, USA},
+ author = {Ma, Yadi and Banerjee, Suman},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342428},
+ isbn = {978-1-4503-1419-0},
+ keyword = {packet classification, power consumption, smartpc},
+ link = {http://doi.acm.org/10.1145/2342356.2342428},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {335--346},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {A Smart Pre-classifier to Reduce Power Consumption of TCAMs for Multi-dimensional Packet Classification},
+ year = {2012}
+}
+
+
+@inproceedings{Zhang:2012:PLU:2342356.2342417,
+ abstract = {Location prediction using mobile phone traces has attracted increasing attention. Owing to the irregular user mobility patterns, it still remains challenging to predict user location. Our empirical study in this paper shows that the call patterns are strongly correlated with co-locate patterns (i.e., visiting the same cell tower at the same period), and the call patterns mainly affect user short-time mobility. On top of these findings, we propose NextMe --- a novel scheme to enhance the location prediction accuracy by leveraging the social interplay revealed in the cellular calls. To identify when the social interplay will affect user mobility, we introduce the concepts of the Critical Call Pattern (CCP), and the Critical Call (CC). We validate NextMe with the MIT Reality Mining dataset, involving 350,000-hour activity logs of 106 persons, and 112,508 cellular calls. Experimental results show that the social interplay significantly improves the accuracy.},
+ acmid = {2342417},
+ address = {New York, NY, USA},
+ author = {Zhang, Daqiang and Vasilakos, Athanasios V. and Xiong, Haoyi},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342417},
+ isbn = {978-1-4503-1419-0},
+ keyword = {mobile phone calls, social interplay, social networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342417},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {295--296},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Predicting Location Using Mobile Phone Calls},
+ year = {2012}
+}
+
+
+@inproceedings{Ciucu:2012:PNC:2342356.2342426,
+ abstract = {ACM Sigcomm 2006 published a paper [26] which was perceived to unify the deterministic and stochastic branches of the network calculus (abbreviated throughout as DNC and SNC) [39]. Unfortunately, this seemingly fundamental unification---which has raised the hope of a straightforward transfer of all results from DNC to SNC---is invalid. To substantiate this claim, we demonstrate that for the class of stationary and ergodic processes, which is prevalent in traffic modelling, the probabilistic arrival model from [26] is quasi-deterministic, i.e., the underlying probabilities are either zero or one. Thus, the probabilistic framework from [26] is unable to account for statistical multiplexing gain, which is in fact the raison d'être of packet-switched networks. Other previous formulations of SNC can capture statistical multiplexing gain, yet require additional assumptions [12], [22] or are more involved [14], [9] [28], and do not allow for a straightforward transfer of results from DNC. So, in essence, there is no free lunch in this endeavor. Our intention in this paper is to go beyond presenting a negative result by providing a comprehensive perspective on network calculus. To that end, we attempt to illustrate the fundamental concepts and features of network calculus in a systematic way, and also to rigorously clarify some key facts as well as misconceptions. We touch in particular on the relationship between linear systems, classical queueing theory, and network calculus, and on the lingering issue of tightness of network calculus bounds. We give a rigorous result illustrating that the statistical multiplexing gain scales as Ω(√N), as long as some small violations of system performance constraints are tolerable. This demonstrates that the network calculus can capture actual system behavior tightly when applied carefully. Thus, we positively conclude that it still holds promise as a valuable systematic methodology for the performance analysis of computer and communication systems, though the unification of DNC and SNC remains an open, yet quite elusive task.},
+ acmid = {2342426},
+ address = {New York, NY, USA},
+ author = {Ciucu, Florin and Schmitt, Jens},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342426},
+ isbn = {978-1-4503-1419-0},
+ keyword = {network calculus, queueing theory, statistical multiplexing gain},
+ link = {http://doi.acm.org/10.1145/2342356.2342426},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {311--322},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Perspectives on Network Calculus: No Free Lunch, but Still Good Value},
+ year = {2012}
+}
+
+
+@inproceedings{Liu:2012:CCI:2342356.2342431,
+ abstract = {Video traffic already represents a significant fraction of today's traffic and is projected to exceed 90% in the next five years. In parallel, user expectations for a high quality viewing experience (e.g., low startup delays, low buffering, and high bitrates) are continuously increasing. Unlike traditional workloads that either require low latency (e.g., short web transfers) or high average throughput (e.g., large file transfers), a high quality video viewing experience requires sustained performance over extended periods of time (e.g., tens of minutes). This imposes fundamentally different demands on content delivery infrastructures than those envisioned for traditional traffic patterns. Our large-scale measurements over 200 million video sessions show that today's delivery infrastructure fails to meet these requirements: more than 20% of sessions have a rebuffering ratio ≥ 10% and more than 14% of sessions have a video startup delay ≥ 10s. Using measurement-driven insights, we make a case for a video control plane that can use a global view of client and network conditions to dynamically optimize the video delivery in order to provide a high quality viewing experience despite an unreliable delivery infrastructure. Our analysis shows that such a control plane can potentially improve the rebuffering ratio by up to 2× in the average case and by more than one order of magnitude under stress.},
+ acmid = {2342431},
+ address = {New York, NY, USA},
+ author = {Liu, Xi and Dobrian, Florin and Milner, Henry and Jiang, Junchen and Sekar, Vyas and Stoica, Ion and Zhang, Hui},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342431},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cdns, control plane, video},
+ link = {http://doi.acm.org/10.1145/2342356.2342431},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {359--370},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {A Case for a Coordinated Internet Video Control Plane},
+ year = {2012}
+}
+
+
+@inproceedings{Riggio:2012:EES:2342356.2342406,
+ abstract = {The energy wasted in wireless networks is a serious concern and the main challenge lies in determining when and where the energy is wasted. In this demo, we present Energino, an energy measurement and control system designed to deliver high performance while remaining a cheap solution.},
+ acmid = {2342406},
+ address = {New York, NY, USA},
+ author = {Riggio, Roberto and Sengul, Cigdem and Mabell Gomez, Karina and Rasheed, Tinku},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342406},
+ isbn = {978-1-4503-1419-0},
+ keyword = {arduino, energy consumption monitoring, open hardware, wireless},
+ link = {http://doi.acm.org/10.1145/2342356.2342406},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {273--274},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Energino: Energy Saving Tips for Your Wireless Network},
+ year = {2012}
+}
+
+
+@inproceedings{Saarinen:2012:SOP:2342356.2342418,
+ abstract = {Offloading computation to cloud has been widely used for extending battery life of mobile devices. However, little effort has been invested in applying the offloading techniques to communication-related tasks. We propose SmartDiet, a toolkit to identify the constraints that reduce offloading opportunities and to calculate the energy-saving potential of offloading communication-related tasks. SmartDiet traces the method-level application execution and estimates the allocation of communication energy cost from traffic traces. We discuss key features of SmartDiet and show some preliminary results using a prototype implementation.},
+ acmid = {2342418},
+ address = {New York, NY, USA},
+ author = {Saarinen, Aki and Siekkinen, Matti and Xiao, Yu and Nurminen, Jukka K. and Kemppainen, Matti and Hui, Pan},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342418},
+ isbn = {978-1-4503-1419-0},
+ keyword = {constraint analysis, energy consumption, offloading},
+ link = {http://doi.acm.org/10.1145/2342356.2342418},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {297--298},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {SmartDiet: Offloading Popular Apps to Save Energy},
+ year = {2012}
+}
+
+
+@inproceedings{Escriva:2012:HDS:2342356.2342360,
+ abstract = {Distributed key-value stores are now a standard component of high-performance web services and cloud computing applications. While key-value stores offer significant performance and scalability advantages compared to traditional databases, they achieve these properties through a restricted API that limits object retrieval---an object can only be retrieved by the (primary and only) key under which it was inserted. This paper presents HyperDex, a novel distributed key-value store that provides a unique search primitive that enables queries on secondary attributes. The key insight behind HyperDex is the concept of hyperspace hashing in which objects with multiple attributes are mapped into a multidimensional hyperspace. This mapping leads to efficient implementations not only for retrieval by primary key, but also for partially-specified secondary attribute searches and range queries. A novel chaining protocol enables the system to achieve strong consistency, maintain availability and guarantee fault tolerance. An evaluation of the full system shows that HyperDex is 12-13x faster than Cassandra and MongoDB for finding partially specified objects. Additionally, HyperDex achieves 2-4x higher throughput for get/put operations.},
+ acmid = {2342360},
+ address = {New York, NY, USA},
+ author = {Escriva, Robert and Wong, Bernard and Sirer, Emin G\"{u}n},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342360},
+ isbn = {978-1-4503-1419-0},
+ keyword = {fault-tolerance, key-value store, nosql, performance, strong consistency},
+ link = {http://doi.acm.org/10.1145/2342356.2342360},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {25--36},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {HyperDex: A Distributed, Searchable Key-value Store},
+ year = {2012}
+}
+
+
+@inproceedings{Hong:2012:FFQ:2342356.2342389,
+ abstract = {Today's data centers face extreme challenges in providing low latency. However, fair sharing, a principle commonly adopted in current congestion control protocols, is far from optimal for satisfying latency requirements. We propose Preemptive Distributed Quick (PDQ) flow scheduling, a protocol designed to complete flows quickly and meet flow deadlines. PDQ enables flow preemption to approximate a range of scheduling disciplines. For example, PDQ can emulate a shortest job first algorithm to give priority to the short flows by pausing the contending flows. PDQ borrows ideas from centralized scheduling disciplines and implements them in a fully distributed manner, making it scalable to today's data centers. Further, we develop a multipath version of PDQ to exploit path diversity. Through extensive packet-level and flow-level simulation, we demonstrate that PDQ significantly outperforms TCP, RCP and D3 in data center environments. We further show that PDQ is stable, resilient to packet loss, and preserves nearly all its performance gains even given inaccurate flow information.},
+ acmid = {2342389},
+ address = {New York, NY, USA},
+ author = {Hong, Chi-Yao and Caesar, Matthew and Godfrey, P. Brighten},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342389},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data center, deadline, flow scheduling},
+ link = {http://doi.acm.org/10.1145/2342356.2342389},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {127--138},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Finishing Flows Quickly with Preemptive Scheduling},
+ year = {2012}
+}
+
+
+@inproceedings{Sherry:2012:MMS:2342356.2342359,
+ abstract = {Modern enterprises almost ubiquitously deploy middlebox processing services to improve security and performance in their networks. Despite this, we find that today's middlebox infrastructure is expensive, complex to manage, and creates new failure modes for the networks that use them. Given the promise of cloud computing to decrease costs, ease management, and provide elasticity and fault-tolerance, we argue that middlebox processing can benefit from outsourcing the cloud. Arriving at a feasible implementation, however, is challenging due to the need to achieve functional equivalence with traditional middlebox deployments without sacrificing performance or increasing network complexity. In this paper, we motivate, design, and implement APLOMB, a practical service for outsourcing enterprise middlebox processing to the cloud. Our discussion of APLOMB is data-driven, guided by a survey of 57 enterprise networks, the first large-scale academic study of middlebox deployment. We show that APLOMB solves real problems faced by network administrators, can outsource over 90% of middlebox hardware in a typical large enterprise network, and, in a case study of a real enterprise, imposes an average latency penalty of 1.1ms and median bandwidth inflation of 3.8%.},
+ acmid = {2342359},
+ address = {New York, NY, USA},
+ author = {Sherry, Justine and Hasan, Shaddi and Scott, Colin and Krishnamurthy, Arvind and Ratnasamy, Sylvia and Sekar, Vyas},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342359},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cloud, middlebox, outsourcing},
+ link = {http://doi.acm.org/10.1145/2342356.2342359},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {13--24},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Making Middleboxes Someone else's Problem: Network Processing As a Cloud Service},
+ year = {2012}
+}
+
+
+@inproceedings{Gill:2012:SSP:2342356.2342367,
+ abstract = {We propose the demonstration of SP4, a software-based programmable packet processing platform that supports (1) stateful packet processing useful for analyzing traffic flows with session semantics, (2) uses a task-stealing architecture that automatically leverages multi-core processing capabilities in a load-balanced manner without the need for explicit performance profiling, and (3) a declarative language for rapidly specifying and composing new packet processing functionalities from reusable modules. Our demonstration showcases the use of SP4 for performing high-throughput analysis of traffic traces for a variety of applications, such as filtering out unwanted traffic and detection of DDoS attacks using machine learning based analysis.},
+ acmid = {2342367},
+ address = {New York, NY, USA},
+ author = {Gill, Harjot and Lin, Dong and Sarna, Lohit and Mead, Robert and Lee, Kenton C.T. and Loo, Boon Thau},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342367},
+ isbn = {978-1-4503-1419-0},
+ keyword = {declarative networking, multicore, packet analysis},
+ link = {http://doi.acm.org/10.1145/2342356.2342367},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {75--76},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {SP4: Scalable Programmable Packet Processing Platform},
+ year = {2012}
+}
+
+
+@inproceedings{Wang:2012:RAB:2342356.2342374,
+ abstract = {Today's inter-domain routing protocol, the Border Gateway Protocol (BGP), is increasingly complicated and fragile due to policy misconfiguration by individual autonomous systems (ASes). Existing configuration analysis techniques are either manual and tedious, or do not scale beyond a small number of nodes due to the state explosion problem. To aid the diagnosis of misconfigurations in real-world large BGP systems, this paper presents BGPVerif , a reduction based analysis toolkit. The key idea is to reduce BGP system size prior to analysis while preserving crucial correctness properties. BGPVerif consists of two components, NetReducer that simplifies BGP configurations, and NetAnalyzer that automatically detects routing oscillation. BGPVerif accepts a wide range of BGP configuration inputs ranging from real-world traces (Rocketfuel network topologies), randomly generated BGP networks (GT-ITM), Cisco configuration guidelines, as well as arbitrary user-defined networks. BGPVerif illustrates the applicability, efficiency, and benefits of the reduction technique, it also introduces an infrastructure that enables networking researchers to interact with advanced formal method tool.},
+ acmid = {2342374},
+ address = {New York, NY, USA},
+ author = {Wang, Anduo and Gurney, Alexander J.T. and Han, Xianglong and Cao, Jinyan and Talcot, Carolyn and Loo, Boon Thau and Scedrov, Andre},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342374},
+ isbn = {978-1-4503-1419-0},
+ keyword = {border gateway protocol, formal analysis, reduction},
+ link = {http://doi.acm.org/10.1145/2342356.2342374},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {89--90},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Reduction-based Analysis of BGP Systems with BGPVerif},
+ year = {2012}
+}
+
+
+@proceedings{Keshav:2011:2018436,
+ abstract = {Welcome to the 2011 ACM SIGCOMM Conference in Toronto, Canada. It has been our pleasure to oversee the tremendous efforts volunteered by our technical program committee and other individuals in shaping this year's technical program. We hope that you will find the papers selected for the technical program stimulating and thought-provoking, and that you enjoy the conference! SIGCOMM 2011 received 223 submissions, and we accepted 32 papers, for an acceptance ratio of 14%. This represents a modest drop over the number of submissions from previous years. We received submissions from authors in at least 36 countries, and the final program reflects the significant geographical diversity across submissions, with authors representing 12 different countries and 44 distinct institutions. The SIGCOMM 2011 TPC comprised 50 members from academia and industry, reflecting the diversity of our community. The TPC members' research interests span the wide range of topics present in this year's submissions and accepted papers. The members of the TPC wrote at least three first-round reviews for all 223 submissions, as well as three or more second-round reviews for the top 101 papers. Thus, we had at least 6 reviews for each of the 70 papers that we discussed in the TPC meeting. Most second-round papers received significant online discussion between PC members prior to the TPC meeting, and in some cases we solicited additional reviews from external topic experts. In total, the submissions received over 1000 written reviews. Reviewing was double-blind, and was subject to a strict conflict-of-interest policy. PC members with potential conflicts of interest were excluded from all discussions of the relevant papers. Both of the TPC co-chairs were authors of submissions; these reviews were handled entirely outside of the online review system, so as to guarantee reviewer anonymity. Almost all of the TPC members attended the TPC meeting in Boston in person, for 1.5 days of energetic discussion. Those who were not able to attend in person participated via a telephone conference. We strove, as TPC chairs, to ensure that all 70 papers received full and fair discussion, and we encouraged the TPC to consider prioritizing "appropriately risky" papers over otherwise comparable "correct but boring" papers when there was a choice. Each of the 32 accepted papers was shepherded by a member of the TPC, to help the authors improve their final versions.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0797-0},
+ location = {Toronto, Ontario, Canada},
+ note = {533119},
+ publisher = {ACM},
+ title = {SIGCOMM '11: Proceedings of the ACM SIGCOMM 2011 Conference},
+ year = {2011}
+}
+
+
+@inproceedings{Reitblatt:2012:ANU:2342356.2342427,
+ abstract = {Configuration changes are a common source of instability in networks, leading to outages, performance disruptions, and security vulnerabilities. Even when the initial and final configurations are correct, the update process itself often steps through intermediate configurations that exhibit incorrect behaviors. This paper introduces the notion of consistent network updates---updates that are guaranteed to preserve well-defined behaviors when transitioning mbetween configurations. We identify two distinct consistency levels, per-packet and per-flow, and we present general mechanisms for implementing them in Software-Defined Networks using switch APIs like OpenFlow. We develop a formal model of OpenFlow networks, and prove that consistent updates preserve a large class of properties. We describe our prototype implementation, including several optimizations that reduce the overhead required to perform consistent updates. We present a verification tool that leverages consistent updates to significantly reduce the complexity of checking the correctness of network control software. Finally, we describe the results of some simple experiments demonstrating the effectiveness of these optimizations on example applications.},
+ acmid = {2342427},
+ address = {New York, NY, USA},
+ author = {Reitblatt, Mark and Foster, Nate and Rexford, Jennifer and Schlesinger, Cole and Walker, David},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342427},
+ isbn = {978-1-4503-1419-0},
+ keyword = {consistency, frenetic, network programming languages, openflow, planned change, software-defined networking},
+ link = {http://doi.acm.org/10.1145/2342356.2342427},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {323--334},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Abstractions for Network Update},
+ year = {2012}
+}
+
+
+@inproceedings{Zhao:2012:PVI:2342356.2342434,
+ abstract = {Existing secure interdomain routing protocols can verify validity properties about individual routes, such as whether they correspond to a real network path. It is often useful to verify more complex properties relating to the route decision procedure - for example, whether the chosen route was the best one available, or whether it was consistent with the network's peering agreements. However, this is difficult to do without knowing a network's routing policy and full routing state, which are not normally disclosed. In this paper, we show how a network can allow its peers to verify a number of nontrivial properties of its interdomain routing decisions without revealing any additional information. If all the properties hold, the peers learn nothing beyond what the interdomain routing protocol already reveals; if a property does not hold, at least one peer can detect this and prove the violation. We present SPIDeR, a practical system that applies this approach to the Border Gateway Protocol, and we report results from an experimental evaluation to demonstrate that SPIDeR has a reasonable overhead.},
+ acmid = {2342434},
+ address = {New York, NY, USA},
+ author = {Zhao, Mingchen and Zhou, Wenchao and Gurney, Alexander J.T. and Haeberlen, Andreas and Sherr, Micah and Loo, Boon Thau},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342434},
+ isbn = {978-1-4503-1419-0},
+ keyword = {accountability, fault detection, privacy, routing, security},
+ link = {http://doi.acm.org/10.1145/2342356.2342434},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {383--394},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Private and Verifiable Interdomain Routing Decisions},
+ year = {2012}
+}
+
+
+@inproceedings{Chaudhry:2012:SEN:2342356.2342371,
+ abstract = {This demo presents Signposts, a system to provide users with a secure, simple mechanism to establish and maintain communication channels between their personal cloud of named devices. Signpost names exist in the DNSSEC hierarchy, and resolve to secure end-points when accessed by existing DNS clients. Signpost clients intercept user connection intentions while adding privacy and multipath support. Signpost servers co-ordinate clients to dynamically discover routes and overcome the middleboxes that pervade modern edge networks. The demo will show a simple scenario where an individual's personal devices (phone, laptop) are interconnected via Signposts while sitting on different networks behind various middleboxes. As a result they will be able to fetch and push data between each other, demonstrated by, e.g., simple web browsing, even as the network configuration changes.},
+ acmid = {2342371},
+ address = {New York, NY, USA},
+ author = {Chaudhry, Amir and Madhavapeddy, Anil and Rotsos, Charalampos and Mortier, Richard and Aucinas, Andrius and Crowcroft, Jon and Eide, Sebastian Probst and Hand, Steven and Moore, Andrew W. and Vallina-Rodriguez, Narseo},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342371},
+ isbn = {978-1-4503-1419-0},
+ keyword = {dns, edge network, middlebox, naming, user-centered},
+ link = {http://doi.acm.org/10.1145/2342356.2342371},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {83--84},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Signposts: End-to-end Networking in a World of Middleboxes},
+ year = {2012}
+}
+
+
+@inproceedings{Li:2012:RCI:2342356.2342419,
+ abstract = {Contact interval between moving vehicles is one of the key metrics in vehicular ad hoc networks (VANETs), which is important to routing schemes and network capacity. In this work, by carrying out an extensive experiment involving tens of thousands of operational taxis in Beijing city, we find an invariant character that the contact interval can be modeled by a three-segmented distribution, and there exists a characteristic time point, up to which the contact interval obeys a power law distribution, while beyond which it decays as an exponential one. This property is in sharp contrast to the recent empirical data studies based on Shanghai vehicular mobility, where the contact interval exhibits only exponential distribution.},
+ acmid = {2342419},
+ address = {New York, NY, USA},
+ author = {Li, Yong and Jin, Depeng and Hui, Pan and Su, Li and Zeng, Lieguang},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342419},
+ isbn = {978-1-4503-1419-0},
+ keyword = {contact interval patterns, mobility trace, vehicular networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342419},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {299--300},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Revealing Contact Interval Patterns in Large Scale Urban Vehicular Ad Hoc Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Steiner:2012:NSP:2342356.2342366,
+ abstract = {We consider a system of compute and storage resources geographically distributed over a large number of locations connected via a wide-area network. By distributing the resources, latency to users can be decreased, bandwidth costs reduced and availablility increased. The challenge is to distribute services with varying characteristics among the data centers optimally. Some services are very latency sensitive, others need vast amounts of storage, and yet others are computationally complex but do not require hard deadlines on execution. We propose efficient algorithms for the placement of services to get the maximum benefit from a distributed cloud systems. The algorithms need input on the status of the network, compute resources and data resources, which are matched to application requirements. This demonstration shows how a network-aware cloud can combine all three resource types - computation, storage, and network connectivity - in distributed cloud environments. Our dynamic service placement algorithm monitors the network and data center resources in real-time. Our prototype uses the information gathered to place or migrate services to provide the best user experience for a service.},
+ acmid = {2342366},
+ address = {New York, NY, USA},
+ author = {Steiner, Moritz and Gaglianello, Bob Gaglianello and Gurbani, Vijay and Hilt, Volker and Roome, W.D. and Scharf, Michael and Voith, Thomas},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342366},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cloud, service placement},
+ link = {http://doi.acm.org/10.1145/2342356.2342366},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {73--74},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Network-aware Service Placement in a Distributed Cloud Environment},
+ year = {2012}
+}
+
+
+@inproceedings{Liu:2012:OCP:2342356.2342432,
+ abstract = {Many large content publishers use multiple content distribution networks to deliver their content, and many commercial systems have become available to help a broader set of content publishers to benefit from using multiple distribution networks, which we refer to as content multihoming. In this paper, we conduct the first systematic study on optimizing content multihoming, by introducing novel algorithms to optimize both performance and cost for content multihoming. In particular, we design a novel, efficient algorithm to compute assignments of content objects to content distribution networks for content publishers, considering both cost and performance. We also design a novel, lightweight client adaptation algorithm executing at individual content viewers to achieve scalable, fine-grained, fast online adaptation to optimize the quality of experience (QoE) for individual viewers. We prove the optimality of our optimization algorithms and conduct systematic, extensive evaluations, using real charging data, content viewer demands, and performance data, to demonstrate the effectiveness of our algorithms. We show that our content multihoming algorithms reduce publishing cost by up to 40%. Our client algorithm executing in browsers reduces viewer QoE degradation by 51%.},
+ acmid = {2342432},
+ address = {New York, NY, USA},
+ author = {Liu, Hongqiang Harry and Wang, Ye and Yang, Yang Richard and Wang, Hao and Tian, Chen},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342432},
+ isbn = {978-1-4503-1419-0},
+ keyword = {content delivery, multiple cdns, optimization.},
+ link = {http://doi.acm.org/10.1145/2342356.2342432},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {371--382},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Optimizing Cost and Performance for Content Multihoming},
+ year = {2012}
+}
+
+
+@inproceedings{Knight:2012:ASL:2342356.2342378,
+ abstract = {We present a methodology that brings simplicity to large and complex test labs by using abstraction. The networking community has appreciated the value of large scale test labs to explore complex network interactions, as seen in projects such as PlanetLab, GENI, DETER, Emulab, and SecSI. Virtualization has enabled the creation of many more such labs. However, one problem remains: it is time consuming, tedious and error prone to setup and configure large scale test networks. Separate devices need to be configured in a coordinated way, even in a virtual lab. AutoNetkit, an open source tool, uses abstractions and defaults to achieve both configuration and deployment and create such large-scale virtual labs. This allows researchers and operators to explore new protocols, create complex models of networks and predict consequences of configuration changes. However, our abstractions could also allow the discussion of the broader configuration management problem. Abstractions that currently configure networks in a test lab can, in the future, be employed in configuration management tools for real networks.},
+ acmid = {2342378},
+ address = {New York, NY, USA},
+ author = {Knight, Simon and Jaboldinov, Askar and Maennel, Olaf and Phillips, Iain and Roughan, Matthew},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342378},
+ isbn = {978-1-4503-1419-0},
+ keyword = {automated configuration, emulation, network management},
+ link = {http://doi.acm.org/10.1145/2342356.2342378},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {97--98},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {AutoNetkit: Simplifying Large Scale, Open-source Network Experimentation},
+ year = {2012}
+}
+
+
+@inproceedings{Wahlisch:2012:TDB:2342356.2342381,
+ abstract = {Prefix hijacking has always been a big concern in the Internet. Some events made it into the international world-news, but most of them remain unreported or even unnoticed. The scale of the problem can only be estimated. The Resource Publication Infrastructure (RPKI) is an effort by the IETF to secure the inter-domain routing system. It includes a formally verifiable way of identifying who owns legitimately which portion of the IP address space. The RPKI has been standardized and prototype implementations are tested by Internet Service Providers (ISPs). Currently the system holds already about 2% of the Internet routing table. Therefore, in theory, it should be easy to detect hijacking of prefixes within that address space. We take an early look at BGP update data and check those updates against the RPKI---in the same way a router would do, once the system goes operational. We find many interesting dynamics, not all can be easily explained as hijacking, but a significant number are likely operational testing or misconfigurations.},
+ acmid = {2342381},
+ address = {New York, NY, USA},
+ author = {W\"{a}hlisch, Matthias and Maennel, Olaf and Schmidt, Thomas C.},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342381},
+ isbn = {978-1-4503-1419-0},
+ keyword = {bgp, deployment, rpki, secure inter-domain routing},
+ link = {http://doi.acm.org/10.1145/2342356.2342381},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {103--104},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Towards Detecting BGP Route Hijacking Using the RPKI},
+ year = {2012}
+}
+
+
+@proceedings{Eggert:2012:2342356,
+ abstract = {Welcome to the 2012 ACM SIGCOMM Conference in Helsinki, Finland, which is a wonderful location and incidentally is the farthest north that the conference has ventured to in its long history! It is our pleasure to introduce the technical program of the conference. This year's program continues SIGCOMM's tradition of presenting outstanding work that suggests new areas of research in networking. The program committee accepted 31 papers selected from 235 submissions. We felt it was important to have a broad view of networking; this allowed us to choose papers on such diverse topics as on-chip networking, key-value stores, and measuring click spam. While this year's program continues to reflect a recent renaissance in data centers and wireless, traditional topics such as routing, QoS, and measurement are also well represented. The papers came from a rich mix of authors from both academia and industry across the globe. Authors from organizations in around 25 countries submitted papers, and the final program includes authors from over 30 organizations in 8 countries. It was a delight to work with a terrific technical program committee of 49 members from all over the world and including distinguished academic and industrial researchers. We chose the PC with care, trying to balance experience with youth, and recognizing authors who have made consistent technical contributions in SIGCOMM and other top conferences, while ensuring broad technical area coverage and a wide geographic representation. Members of the PC were drawn from 9 countries in 4 continents, with a quarter of the PC comprising first-time members, both relatively young networking researchers and experienced researchers from sister areas such as operating systems and mobile systems. We are grateful for the insight and care that our PC displayed, working hard and responding to our every request. We are also delighted to report that the first-time PC members were a wonderful addition, enriching the PC with their insights and exhibiting a high degree of diligence and professionalism. We continued the tradition of a two-round review process, with a first round of three reviews for each paper. Around half the submitted papers were chosen for the second round, which then generated three more reviews. After the second round and a subsequent online discussion phase, around 60 papers were chosen for discussion at the PC meeting. As chairs we went less by numerical score in order to decide which paper to advance than by the actual reviews, realizing that numerical scores vary widely with reviewers. In a few cases, we sought external reviewers to obtain an expert opinion. The PC meeting was held in San Jose, CA, USA, over a day and a half. While all of the papers in the discussion set were discussed and had tentative decisions made on day 1, the half-day on day 2 allowed plenty of time for the PC to revisit, and in some cases reverse, the decisions made on day 1, and even bring up papers for discussion papers that hadn't been shortlisted for discussion on day 1. Despite following the traditional process, this year's review process was marked by two new mechanisms. First, we reintroduced an author response phase, which had last been tried in SIGCOMM over a decade ago. To make the author response effective, we formulated a careful set of instructions, including illustrative examples, to help make the author responses more factual and effective. The author response phase was intended partly to reduce the possibility of mistaken reviews, but also to promote an approximation to the healthy dialog between authors and reviewers inherent in the classical journal process. We were delighted with the quality of the author responses we saw even with (eventually) rejected papers: respectful, factual, and insightful. The responses were all considered as part of the PC discussion, and some indeed changed the reviewers' minds. Second, the entire PC made an attempt to provide constructive reviews, emphasizing the positive, and suggesting where the paper could be improved. To make explicit the value we placed on good reviews and recognize exceptional contributions in this regard by PC members, we instituted 3 Outstanding Reviewer Awards, which will be presented at the conference. The selection of the award papers started with nominations made by PC members. We as the PC chairs shortlisted 5 of the nominated papers and passed these on to an awards committee chaired by David Wetherall and also comprising T.V. Lakshman, Dave Levin, and Ratul Mahajan, all members of the PC. We are grateful to the members of the awards committee for conducting a thorough process and sending us their selections in quick time. It is a pleasure to present the Best Paper Award for ACM SIGCOMM 2012 to the paper titled "Multi-Resource Fair Queueing for Packet Processing" by Ali Ghodsi, Vyas Sekar, Matei Zaharia, and Ion Stoica, and the Best Student Paper Award to the paper titled "Picasso: Flexible RF and Spectrum Slicing" by Steven Hong, Jeff Mehlman, and Sachin Katti. For the Outstanding Reviewer Awards, we, the PC chairs, made the selections based on the quality and timeliness of reviewing, participation in the online and PC meeting discussions, and the willingness to go the extra mile when needed. It was challenging for us to make a selection from among the many PC members who contributed so strongly, but after careful thought, it is our pleasure to recognize Aditya Akella, Matt Caesar, and Dave Levin with the Outstanding Reviewer Awards for SIGCOMM 2012. Congratulations to all of the award winners, authors as well as reviewers.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1419-0},
+ location = {Helsinki, Finland},
+ publisher = {ACM},
+ title = {SIGCOMM '12: Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ year = {2012}
+}
+
+
+@inproceedings{Fu:2012:FAA:2342356.2342383,
+ abstract = {With the rapid expansion of customer population and link bandwidth, energy expenditures of the Internet have been rising dramatically. To gain energy efficiency, we propose a novel router architecture, which allows each of its modules to adjust frequency according to traffic loads. Several modulation strategies are also discussed to ensure dwell time on low energy states and reduce blind switches. Our preliminary results show that the frequency adjustment router could save up to 40% of the total energy consumption.},
+ acmid = {2342383},
+ address = {New York, NY, USA},
+ author = {Fu, Wenliang and Song, Tian},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342383},
+ isbn = {978-1-4503-1419-0},
+ keyword = {energy efficient router architecture, energy efficient strategy, frequency adjustment},
+ link = {http://doi.acm.org/10.1145/2342356.2342383},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {107--108},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {A Frequency Adjustment Architecture for Energy Efficient Router},
+ year = {2012}
+}
+
+
+@inproceedings{Ager:2012:ALE:2342356.2342393,
+ abstract = {The largest IXPs carry on a daily basis traffic volumes in the petabyte range, similar to what some of the largest global ISPs reportedly handle. This little-known fact is due to a few hundreds of member ASes exchanging traffic with one another over the IXP's infrastructure. This paper reports on a first-of-its-kind and in-depth analysis of one of the largest IXPs worldwide based on nine months' worth of sFlow records collected at that IXP in 2011. A main finding of our study is that the number of actual peering links at this single IXP exceeds the number of total AS links of the peer-peer type in the entire Internet known as of 2010! To explain such a surprisingly rich peering fabric, we examine in detail this IXP's ecosystem and highlight the diversity of networks that are members at this IXP and connect there with other member ASes for reasons that are similarly diverse, but can be partially inferred from their business types and observed traffic patterns. In the process, we investigate this IXP's traffic matrix and illustrate what its temporal and structural properties can tell us about the member ASes that generated the traffic in the first place. While our results suggest that these large IXPs can be viewed as a microcosm of the Internet ecosystem itself, they also argue for a re-assessment of the mental picture that our community has about this ecosystem.},
+ acmid = {2342393},
+ address = {New York, NY, USA},
+ author = {Ager, Bernhard and Chatzis, Nikolaos and Feldmann, Anja and Sarrar, Nadi and Uhlig, Steve and Willinger, Walter},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342393},
+ isbn = {978-1-4503-1419-0},
+ keyword = {internet exchange points, internet topology, traffic characterization},
+ link = {http://doi.acm.org/10.1145/2342356.2342393},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {163--174},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Anatomy of a Large European IXP},
+ year = {2012}
+}
+
+
+@inproceedings{Hong:2012:PFR:2342356.2342411,
+ abstract = {Many applications can benefit from the capability to simultaneously and independently use arbitrarily sized but separate spectrum fragments with a single radio and antenna. By this capability we mean that the radio can simultaneously transmit, simultaneously receive, or simultaneously transmit and receive on arbitrary but separate spectrum fragments. For example, we can use it for spectrum aggregation in fragmented ISM bands as shown in as shown in Fig. 2(A). A WiFi AP can run independent OFDM PHY and CSMA MAC protocols on two WiFi channels to simultaneously serve two legacy WiFi clients assigned to different channels and achieve significantly higher throughput than a legacy AP that is restricted to use only one channel at a time. Similarly, a WiFi client radio with such a capability can use it to simultaneously connect to multiple WiFi APs on different channels and obtain a much higher aggregate throughput than current radios that can transmit or receive on only one channel at a time.},
+ acmid = {2342411},
+ address = {New York, NY, USA},
+ author = {Hong, Steven and Mehlman, Jeffrey and Katti, Sachin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342411},
+ isbn = {978-1-4503-1419-0},
+ keyword = {interference cancellation, radio virtualization},
+ link = {http://doi.acm.org/10.1145/2342356.2342411},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {283--284},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Picasso: Flexible RF and Spectrum Slicing},
+ year = {2012}
+}
+
+
+@inproceedings{Tian:2012:SPE:2342356.2342430,
+ abstract = {As live streaming networks grow in scale and complexity, they are becoming increasingly difficult to evaluate. Existing evaluation methods including lab/testbed testing, simulation, and theoretical modeling, lack either scale or realism. The industrial practice of gradually-rolling-out in a testing channel is lacking in controllability and protection when experimental algorithms fail, due to its passive approach. In this paper, we design a novel system called ShadowStream that introduces evaluation as a built-in capability in production Internet live streaming networks. ShadowStream introduces a simple, novel, transparent embedding of experimental live streaming algorithms to achieve safe evaluations of the algorithms during large-scale, real production live streaming, despite the possibility of large performance failures of the tested algorithms. ShadowStream also introduces transparent, scalable, distributed experiment orchestration to resolve the mismatch between desired viewer behaviors and actual production viewer behaviors, achieving experimental scenario controllability. We implement ShadowStream based on a major Internet live streaming network, build additional evaluation tools such as deterministic replay, and demonstrate the benefits of ShadowStream through extensive evaluations.},
+ acmid = {2342430},
+ address = {New York, NY, USA},
+ author = {Tian, Chen and Alimi, Richard and Yang, Yang Richard and Zhang, David},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342430},
+ isbn = {978-1-4503-1419-0},
+ keyword = {live testing, performance evaluation, streaming},
+ link = {http://doi.acm.org/10.1145/2342356.2342430},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {347--358},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {ShadowStream: Performance Evaluation As a Capability in Production Internet Live Streaming Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Voellmy:2012:SSD:2342356.2342414,
+ abstract = {Software defined networking (SDN) introduces centralized controllers to dramatically increase network programmability. The simplicity of a logical centralized controller, however, can come at the cost of control-plane scalability. In this demo, we present McNettle, an extensible SDN control system whose control event processing throughput scales with the number of system CPU cores and which supports control algorithms requiring globally visible state changes occurring at flow arrival rates. Programmers extend McNettle by writing event handlers and background programs in a high-level functional programming language extended with shared state and memory transactions. We implement our framework in Haskell and leverage the multicore facilities of the Glasgow Haskell Compiler (GHC) and runtime system. Our implementation schedules event handlers, allocates memory, optimizes message parsing and serialization, and reduces system calls in order to optimize cache usage, OS processing, and runtime system overhead. Our experiments show that McNettle can serve up to 5000 switches using a single controller with 46 cores, achieving throughput of over 14 million flows per second, near-linear scaling up to 46 cores, and latency under 200 μs for light loads and 10 ms with loads consisting of up to 5000 switches.},
+ acmid = {2342414},
+ address = {New York, NY, USA},
+ author = {Voellmy, Andreas and Wang, Junchang},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342414},
+ isbn = {978-1-4503-1419-0},
+ keyword = {haskell, multicore, openflow, software-defined networking},
+ link = {http://doi.acm.org/10.1145/2342356.2342414},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {289--290},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Scalable Software Defined Network Controllers},
+ year = {2012}
+}
+
+
+@inproceedings{Kang:2012:PTS:2342356.2342424,
+ abstract = {A Software Defined Network (SDN) enforces network-wide policies by installing packet-handling rules across a distributed collection of switches. Today's SDN platforms force programmers to decide how to decompose a high-level policy into the low-level rules in each switch. We argue that future SDN platforms should support automatic transformation of policies by moving, merging, or splitting rules across multiple switches. This would simplify programming by allowing programs written on one abstract switch to run over a more complex network topology, and simplify analysis by consolidating a policy spread over multiple switches into a single list of rules. This poster presents our ongoing work on a sound and complete set of axioms for policy transformation, to enable rewriting of rules across multiple switches while preserving the forwarding policy. These axioms are invaluable for creating and analyzing algorithms for optimizing the rewriting of rules.},
+ acmid = {2342424},
+ address = {New York, NY, USA},
+ author = {Kang, Nanxi and Reich, Joshua and Rexford, Jennifer and Walker, David},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342424},
+ isbn = {978-1-4503-1419-0},
+ keyword = {network virtualization, openflow, software defined networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342424},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {309--310},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Policy Transformation in Software Defined Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Gursun:2012:IVW:2342356.2342392,
+ abstract = {Consider this simple question: how can a network operator identify the set of routes that pass through its network? Answering this question is surprisingly hard: BGP only informs an operator about a limited set of routes. By observing traffic, an operator can only conclude that a particular route passes through its network -- but not that a route does not pass through its network. We approach this problem as one of statistical inference, bringing varying levels of additional information to bear: (1) the existence of traffic, and (2) the limited set of publicly available routing tables. We show that the difficulty depends critically on the position of the network in the overall Internet topology, and that the operators with the greatest incentive to solve this problem are those for which the problem is hardest. Nonetheless, we show that suitable application of nonparametric inference techniques can solve this problem quite accurately. For certain networks, traffic existence information yields good accuracy, while for other networks an accurate approach uses the "distance" between prefixes, according to a new network distance metric that we define. We then show how solving this problem leads to improved solutions for a particular application: traffic matrix completion.},
+ acmid = {2342392},
+ address = {New York, NY, USA},
+ author = {G\"{u}rsun, Gonca and Ruchansky, Natali and Terzi, Evimaria and Crovella, Mark},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342392},
+ isbn = {978-1-4503-1419-0},
+ keyword = {bgp, matrix completion},
+ link = {http://doi.acm.org/10.1145/2342356.2342392},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {151--162},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Inferring Visibility: Who's (Not) Talking to Whom?},
+ year = {2012}
+}
+
+
+@inproceedings{Zhang:2012:DRM:2342356.2342408,
+ abstract = {A rapid reconfiguration of medium access scheme is required in order to achieve runtime performance optimization for dynamic spectrum access and fulfilling varying Quality of Service (QoS) demands. We have developed TRUMP, a toolchain which allows composing MAC solutions at runtime. In this demonstration, we will show how MAC reconfiguration can be achieved efficiently using TRUMP. Inspired by the optimum route calculation method used in car navigation systems, the compiler toolchain in TRUMP realizes an appropriate MAC solution at runtime. TRUMP allows expressing various types of constraints and options such as speed, energy consumption and packet delivery rate which leads to different MAC compositions. The live demonstration of MAC reconfiguration will be carried out on WARP SDR platform.},
+ acmid = {2342408},
+ address = {New York, NY, USA},
+ author = {Zhang, Xi and Ansari, Junaid and M\"{a}h\"{o}nen, Petri},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342408},
+ isbn = {978-1-4503-1419-0},
+ keyword = {compiler assisted, mac, reconfiguration, sdr platform},
+ link = {http://doi.acm.org/10.1145/2342356.2342408},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {277--278},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Demo: Runtime MAC Reconfiguration Using a Meta-compiler Assisted Toolchain},
+ year = {2012}
+}
+
+
+@inproceedings{Vamanan:2012:DDT:2342356.2342388,
+ abstract = {An important class of datacenter applications, called Online Data-Intensive (OLDI) applications, includes Web search, online retail, and advertisement. To achieve good user experience, OLDI applications operate under soft-real-time constraints (e.g., 300 ms latency) which imply deadlines for network communication within the applications. Further, OLDI applications typically employ tree-based algorithms which, in the common case, result in bursts of children-to-parent traffic with tight deadlines. Recent work on datacenter network protocols is either deadline-agnostic (DCTCP) or is deadline-aware (D3) but suffers under bursts due to race conditions. Further, D3 has the practical drawbacks of requiring changes to the switch hardware and not being able to coexist with legacy TCP. We propose Deadline-Aware Datacenter TCP (D2TCP), a novel transport protocol, which handles bursts, is deadline-aware, and is readily deployable. In designing D2TCP, we make two contributions: (1) D2TCP uses a distributed and reactive approach for bandwidth allocation which fundamentally enables D2TCP's properties. (2) D2TCP employs a novel congestion avoidance algorithm, which uses ECN feedback and deadlines to modulate the congestion window via a gamma-correction function. Using a small-scale implementation and at-scale simulations, we show that D2TCP reduces the fraction of missed deadlines compared to DCTCP and D3 by 75% and 50%, respectively.},
+ acmid = {2342388},
+ address = {New York, NY, USA},
+ author = {Vamanan, Balajee and Hasan, Jahangir and Vijaykumar, T.N.},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342388},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cloud services, datacenter, deadline, ecn, oldi, sla, tcp},
+ link = {http://doi.acm.org/10.1145/2342356.2342388},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {115--126},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Deadline-aware Datacenter TCP (D2TCP)},
+ year = {2012}
+}
+
+
+@inproceedings{Sundaresan:2012:ALW:2342356.2342421,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342421},
+ address = {New York, NY, USA},
+ author = {Sundaresan, Srikanth and Magharei, Nazanin and Feamster, Nick and Teixeira, Renata},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342421},
+ isbn = {978-1-4503-1419-0},
+ keyword = {broadband networks, pre-fetching, web performance},
+ link = {http://doi.acm.org/10.1145/2342356.2342421},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {303--304},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Accelerating Last-mile Web Performance with Popularity-based Prefetching},
+ year = {2012}
+}
+
+
+@inproceedings{Wahlisch:2012:BIP:2342356.2342379,
+ abstract = {The paradigm of information-centric networking subsumes recent approaches to integrate content replication services into a future Internet layer. Current concepts foster either a dynamic mapping that directs content requests to a nearby copy, or an immediate routing on content identifiers. In this paper, we evaluate in practical experiments the performance of content routing, which we analyze with a focus on conceptual aspects. Our findings indicate that the performance of the content distribution system is threatened by a heavy management of states that arise from the strong coupling of the control to the data plane in the underlying routing infrastructure.},
+ acmid = {2342379},
+ address = {New York, NY, USA},
+ author = {W\"{a}hlisch, Matthias and Schmidt, Thomas C. and Vahlenkamp, Markus},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342379},
+ isbn = {978-1-4503-1419-0},
+ keyword = {experimental evaluation, performance, routing},
+ link = {http://doi.acm.org/10.1145/2342356.2342379},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {99--100},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Bulk of Interest: Performance Measurement of Content-centric Routing},
+ year = {2012}
+}
+
+
+@inproceedings{Ha:2012:TTP:2342356.2342402,
+ abstract = {The two largest U.S. wireless ISPs have recently moved towards usage-based pricing to better manage the growing demand on their networks. Yet usage-based pricing still requires ISPs to over-provision capacity for demand at peak times of the day. Time-dependent pricing (TDP) addresses this problem by considering when a user consumes data, in addition to how much is used. We present the architecture, implementation, and a user trial of an end-to-end TDP system called TUBE. TUBE creates a price-based feedback control loop between an ISP and its end users. On the ISP side, it computes TDP prices so as to balance the cost of congestion during peak periods with that of offering lower prices in less congested periods. On mobile devices, it provides a graphical user interface that allows users to respond to the offered prices either by themselves or using an "autopilot" mode. We conducted a pilot TUBE trial with 50 iPhone or iPad 3G data users, who were charged according to our TDP algorithms. Our results show that TDP benefits both operators and customers, flattening the temporal fluctuation of demand while allowing users to save money by choosing the time and volume of their usage.},
+ acmid = {2342402},
+ address = {New York, NY, USA},
+ author = {Ha, Sangtae and Sen, Soumya and Joe-Wong, Carlee and Im, Youngbin and Chiang, Mung},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342402},
+ isbn = {978-1-4503-1419-0},
+ keyword = {time-dependent pricing, user trial, wireless},
+ link = {http://doi.acm.org/10.1145/2342356.2342402},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {247--258},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {TUBE: Time-dependent Pricing for Mobile Data},
+ year = {2012}
+}
+
+
+@inproceedings{Mineraud:2012:FSD:2342356.2342420,
+ abstract = {This paper proposes an improved version of a fully distributed routing protocol, that is applicable for cloud computing infrastructure. Simulation results shows the protocol is ideal for discovering cloud services in a scalable manner with minimum latency.},
+ acmid = {2342420},
+ address = {New York, NY, USA},
+ author = {Mineraud, Julien and Balasubramaniam, Sasitharan and Kangasharju, Jussi and Donnelly, William},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342420},
+ isbn = {978-1-4503-1419-0},
+ keyword = {cloud computing infrastructure, scalable route discovery},
+ link = {http://doi.acm.org/10.1145/2342356.2342420},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {301--302},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Fs-PGBR: A Scalable and Delay Sensitive Cloud Routing Protocol},
+ year = {2012}
+}
+
+
+@inproceedings{Kumar:2012:CCN:2342356.2342403,
+ abstract = {This paper introduces CarSpeak, a communication system for autonomous driving. CarSpeak enables a car to query and access sensory information captured by other cars in a manner similar to how it accesses information from its local sensors. CarSpeak adopts a content-centric approach where information objects -- i.e., regions along the road -- are first class citizens. It names and accesses road regions using a multi-resolution system, which allows it to scale the amount of transmitted data with the available bandwidth. CarSpeak also changes the MAC protocol so that, instead of having nodes contend for the medium, contention is between road regions, and the medium share assigned to any region depends on the number of cars interested in that region. CarSpeak is implemented in a state-of-the-art autonomous driving system and tested on indoor and outdoor hardware testbeds including an autonomous golf car and 10 iRobot Create robots. In comparison with a baseline that directly uses 802.11, CarSpeak reduces the time for navigating around obstacles by 2.4x, and reduces the probability of a collision due to limited visibility by 14x.},
+ acmid = {2342403},
+ address = {New York, NY, USA},
+ author = {Kumar, Swarun and Shi, Lixin and Ahmed, Nabeel and Gil, Stephanie and Katabi, Dina and Rus, Daniela},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342403},
+ isbn = {978-1-4503-1419-0},
+ keyword = {autonomous vehicles, content-centric, wireless},
+ link = {http://doi.acm.org/10.1145/2342356.2342403},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {259--270},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {CarSpeak: A Content-centric Network for Autonomous Driving},
+ year = {2012}
+}
+
+
+@proceedings{Chiu:2013:2486001,
+ abstract = {Welcome to ACM SIGCOMM 2013! This year's conference continues the SIGCOMM tradition of being the premier forum for the presentation of research on networking and communications. The technical program this year features a set of outstanding papers that cover a wide variety of areas including software defined networks, data center networks, wireless networks, content delivery, routing, congestion management, quality of service, security, privacy, measurement and analysis. This year's call for papers attracted 246 submissions from all over the world. The 35 member Technical Program Committee along with a selected group of external experts carefully considered all of the submissions over two rounds or reviewing -- including an author feedback period - with a total of 898 detailed reviews completed. The TPC meeting to select the final program was held on the campus of the University of Wisconsin - Madison in late April, 2013. At the conclusion of the meeting, the committee had assembled a wonderful program composed of 38 papers, to be presented over three days at the conference. The quality of submissions was extremely high as reflected in the final technical program. Following the TPC meeting, a subcommittee had the pleasure of selecting the best paper award winners. Five outstanding paper were considered as candidates for the award. After careful consideration, the paper entitled "Ambient Backscatter: Wireless Communication Out of Thin Air" by Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall and Joshua Smith received the Best Paper Award. Please join us in congratulating the authors!},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2056-6},
+ location = {Hong Kong, China},
+ publisher = {ACM},
+ title = {SIGCOMM '13: Proceedings of the ACM SIGCOMM 2013 Conference on SIGCOMM},
+ year = {2013}
+}
+
+
+@inproceedings{Rahul:2012:JSW:2342356.2342401,
+ abstract = {We present joint multi-user beamforming (JMB), a system that enables independent access points (APs) to beamform their signals, and communicate with their clients on the same channel as if they were one large MIMO transmitter. The key enabling technology behind JMB is a new low-overhead technique for synchronizing the phase of multiple transmitters in a distributed manner. The design allows a wireless LAN to scale its throughput by continually adding more APs on the same channel. JMB is implemented and tested with both software radio clients and off-the-shelf 802.11n cards, and evaluated in a dense congested deployment resembling a conference room. Results from a 10-AP software-radio testbed show a linear increase in network throughput with a median gain of 8.1 to 9.4x. Our results also demonstrate that JMB's joint multi-user beamforming can provide throughput gains with unmodified 802.11n cards.},
+ acmid = {2342401},
+ address = {New York, NY, USA},
+ author = {Rahul, Hariharan Shankar and Kumar, Swarun and Katabi, Dina},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342401},
+ isbn = {978-1-4503-1419-0},
+ keyword = {distributed mimo, multi-user mimo, wireless networks},
+ link = {http://doi.acm.org/10.1145/2342356.2342401},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {235--246},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {JMB: Scaling Wireless Capacity with User Demands},
+ year = {2012}
+}
+
+
+@inproceedings{Zats:2012:DRF:2342356.2342390,
+ abstract = {Web applications have now become so sophisticated that rendering a typical page may require hundreds of intra-datacenter flows. At the same time, web sites must meet strict page creation deadlines of 200-300ms to satisfy user demands for interactivity. Long-tailed flow completion times make it challenging for web sites to meet these constraints. They are forced to choose between rendering a subset of the complex page, or delay its rendering, thus missing deadlines and sacrificing either quality or responsiveness. Either option leads to potential financial loss. In this paper, we present a new cross-layer network stack aimed at reducing the long tail of flow completion times. The approach exploits cross-layer information to reduce packet drops, prioritize latency-sensitive flows, and evenly distribute network load, effectively reducing the long tail of flow completion times. We evaluate our approach through NS-3 based simulation and Click-based implementation demonstrating our ability to consistently reduce the tail across a wide range of workloads. We often achieve reductions of over 50% in 99.9th percentile flow completion times.},
+ acmid = {2342390},
+ address = {New York, NY, USA},
+ author = {Zats, David and Das, Tathagata and Mohan, Prashanth and Borthakur, Dhruba and Katz, Randy},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342390},
+ isbn = {978-1-4503-1419-0},
+ keyword = {datacenter network, flow statistics, multi-path},
+ link = {http://doi.acm.org/10.1145/2342356.2342390},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {139--150},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {DeTail: Reducing the Flow Completion Time Tail in Datacenter Networks},
+ year = {2012}
+}
+
+
+@inproceedings{Olteanu:2012:EMS:2342356.2342376,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342376},
+ address = {New York, NY, USA},
+ author = {Olteanu, Vladimir Andrei and Raiciu, Costin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342376},
+ isbn = {978-1-4503-1419-0},
+ keyword = {middlebox, migration},
+ link = {http://doi.acm.org/10.1145/2342356.2342376},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {93--94},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Efficiently Migrating Stateful Middleboxes},
+ year = {2012}
+}
+
+
+@inproceedings{Jarschel:2012:OED:2342356.2342373,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2342373},
+ address = {New York, NY, USA},
+ author = {Jarschel, Michael and Pries, Rastin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342373},
+ isbn = {978-1-4503-1419-0},
+ keyword = {data center, energy-efficiency, openflow},
+ link = {http://doi.acm.org/10.1145/2342356.2342373},
+ location = {Helsinki, Finland},
+ numpages = {2},
+ pages = {87--88},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {An OpenFlow-based Energy-efficient Data Center Approach},
+ year = {2012}
+}
+
+
+@inproceedings{Hong:2012:PFR:2342356.2342362,
+ abstract = {This paper presents the design, implementation and evaluation of Picasso, a novel radio design that allows simultaneous transmission and reception on separate and arbitrary spectrum fragments using a single RF frontend and antenna. Picasso leverages this capability to flexibly partition fragmented spectrum into multiple slices that share the RF frontend and antenna, yet operate concurrent and independent PHY/MAC protocols. We show how this capability provides a general and clean abstraction to exploit fragmented spectrum in WiFi networks, handle coexistence in dense deployments as well as many other applications. We prototype Picasso, and demonstrate experimentally that a Picasso radio partitioned into four slices, each concurrently operating four standard WiFi OFDM PHY and CSMA MAC stacks, can achieve the same sum throughput as four physically separate radios individually configured to operate on the spectrum fragments. We also demonstrate experimentally how Picasso's slicing abstraction provides a clean mechanism to enable multiple diverse networks to coexist and achieve higher throughput, better video quality and latency than the best known state of the art approaches.},
+ acmid = {2342362},
+ address = {New York, NY, USA},
+ author = {Hong, Steven S. and Mehlman, Jeffrey and Katti, Sachin},
+ booktitle = {Proceedings of the ACM SIGCOMM 2012 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication},
+ doi = {10.1145/2342356.2342362},
+ isbn = {978-1-4503-1419-0},
+ keyword = {interference cancellation, radio virtualization},
+ link = {http://doi.acm.org/10.1145/2342356.2342362},
+ location = {Helsinki, Finland},
+ numpages = {12},
+ pages = {37--48},
+ publisher = {ACM},
+ series = {SIGCOMM '12},
+ title = {Picasso: Flexible RF and Spectrum Slicing},
+ year = {2012}
+}
+
+

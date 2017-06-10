@@ -1,0 +1,1145 @@
+@inproceedings{Resnick:2008:ICM:1454008.1454033,
+ abstract = {Attackers may seek to manipulate recommender systems in order to promote or suppress certain items. Existing defenses based on analysis of ratings also discard useful information from honest raters. In this paper, we show that this is unavoidable and provide a lower bound on how much information must be discarded. We use an information-theoretic framework to exhibit a fundamental tradeoff between manipulation-resistance and optimal use of genuine ratings in recommender systems. We define a recommender system to be (n, c)-robust if an attacker with n sybil identities cannot cause more than a limited amount c units of damage to predictions. We prove that any robust recommender system must also discard Ω(log (n/c)) units of useful information from each genuine rater.},
+ acmid = {1454033},
+ address = {New York, NY, USA},
+ author = {Resnick, Paul and Sami, Rahul},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454033},
+ isbn = {978-1-60558-093-7},
+ keyword = {information loss, manipulation-resistance, recommender systems, shilling},
+ link = {http://doi.acm.org/10.1145/1454008.1454033},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {147--154},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {The Information Cost of Manipulation-resistance in Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Park:2008:LTR:1454008.1454012,
+ abstract = {The paper studies the Long Tail problem of recommender systems when many items in the Long Tail have only few ratings, thus making it hard to use them in recommender systems. The approach presented in the paper splits the whole itemset into the head and the tail parts and clusters only the tail items. Then recommendations for the tail items are based on the ratings in these clusters and for the head items on the ratings of individual items. If such partition and clustering are done properly, we show that this reduces the recommendation error rates for the tail items, while maintaining reasonable computational performance.},
+ acmid = {1454012},
+ address = {New York, NY, USA},
+ author = {Park, Yoon-Joo and Tuzhilin, Alexander},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454012},
+ isbn = {978-1-60558-093-7},
+ keyword = {clustering, data mining, long tail, recommendation},
+ link = {http://doi.acm.org/10.1145/1454008.1454012},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {11--18},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {The Long Tail of Recommender Systems and How to Leverage It},
+ year = {2008}
+}
+
+
+@inproceedings{Li:2008:PPF:1454008.1454027,
+ abstract = {Frequent itemset mining (FIM) is a useful tool for discovering frequently co-occurrent items. Since its inception, a number of significant FIM algorithms have been developed to speed up mining performance. Unfortunately, when the dataset size is huge, both the memory use and computational cost can still be prohibitively expensive. In this work, we propose to parallelize the FP-Growth algorithm (we call our parallel algorithm PFP) on distributed machines. PFP partitions computation in such a way that each machine executes an independent group of mining tasks. Such partitioning eliminates computational dependencies between machines, and thereby communication between them. Through empirical study on a large dataset of 802,939 Web pages and 1,021,107 tags, we demonstrate that PFP can achieve virtually linear speedup. Besides scalability, the empirical study demonstrates that PFP to be promising for supporting query recommendation for search engines.},
+ acmid = {1454027},
+ address = {New York, NY, USA},
+ author = {Li, Haoyuan and Wang, Yi and Zhang, Dong and Zhang, Ming and Chang, Edward Y.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454027},
+ isbn = {978-1-60558-093-7},
+ keyword = {data mining, frequent itemset mining, parallel fp-growth},
+ link = {http://doi.acm.org/10.1145/1454008.1454027},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {107--114},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Pfp: Parallel Fp-growth for Query Recommendation},
+ year = {2008}
+}
+
+
+@inproceedings{Lathia:2008:KCT:1454008.1454044,
+ abstract = {Recommender systems, based on collaborative filtering, draw their strength from techniques that manipulate a set of user-rating profiles in order to compute predicted ratings of unrated items. There are a wide range of techniques that can be applied to this problem; however, the k-nearest neighbour (kNN) algorithm has become the dominant method used in this context. Much research to date has focused on improving the performance of this algorithm, without considering the properties that emerge from manipulating the user data in this way. In order to understand the effect of kNN on a user-rating dataset, the algorithm can be viewed as a process that generates a graph, where nodes are users and edges connect similar users: the algorithm generates an implicit social network amongst the system subscribers. Temporal updates of the recommender system will impose changes on the graph. In this work we analyse user-user kNN graphs from a temporal perspective, retrieving characteristics such as dataset growth, the evolution of similarity between pairs of users, the volatility of user neighbourhoods over time, and emergent properties of the entire graph as the algorithm parameters change. These insights explain why certain kNN parameters and similarity measures outperform others, and show that there is a surprising degree of structural similarity between these graphs and explicit user social networks.},
+ acmid = {1454044},
+ address = {New York, NY, USA},
+ author = {Lathia, Neal and Hailes, Stephen and Capra, Licia},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454044},
+ isbn = {978-1-60558-093-7},
+ keyword = {graph analysis, power users, recommender systems, similarity, temporal},
+ link = {http://doi.acm.org/10.1145/1454008.1454044},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {227--234},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {kNN CF: A Temporal Social Network},
+ year = {2008}
+}
+
+
+@inproceedings{Krishnan:2008:PBR:1454008.1454042,
+ abstract = {Algorithmic recommender systems attempt to predict which items a target user will like based on information about the user's prior preferences and the preferences of a larger community. After more than a decade of widespread use, researchers and system users still debate whether such "impersonal" recommender systems actually perform as well as human recommenders. We compare the performance of MovieLens algorithmic predictions with the recommendations made, based on the same user profiles, by active MovieLens users. We found that algorithmic collaborative filtering outperformed humans on average, though some individuals outperformed the system substantially and humans on average outperformed the system on certain prediction tasks.},
+ acmid = {1454042},
+ address = {New York, NY, USA},
+ author = {Krishnan, Vinod and Narayanashetty, Pradeep Kumar and Nathan, Mukesh and Davies, Richard T. and Konstan, Joseph A.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454042},
+ isbn = {978-1-60558-093-7},
+ keyword = {human recommenders, mae, movielens, predictions, recommender evaluation, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454042},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {211--218},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Who Predicts Better?: Results from an Online Study Comparing Humans and an Online Recommender System},
+ year = {2008}
+}
+
+
+@inproceedings{Yildirim:2008:RWM:1454008.1454031,
+ abstract = {Collaborative Filtering is one of the most widely used approaches in recommendation systems which predicts user preferences by learning past user-item relationships. In recent years, item-oriented collaborative filtering methods came into prominence as they are more scalable compared to user-oriented methods. Item-oriented methods discover item-item relationships from the training data and use these relations to compute predictions. In this paper, we propose a novel item-oriented algorithm, Random Walk Recommender, that first infers transition probabilities between items based on their similarities and models finite length random walks on the item space to compute predictions. This method is especially useful when training data is less than plentiful, namely when typical similarity measures fail to capture actual relationships between items. Aside from the proposed prediction algorithm, the final transition probability matrix computed in one of the intermediate steps can be used as an item similarity matrix in typical item-oriented approaches. Thus, this paper suggests a method to enhance similarity matrices under sparse data as well. Experiments on MovieLens data show that Random Walk Recommender algorithm outperforms two other item-oriented methods in different sparsity levels while having the best performance difference in sparse datasets.},
+ acmid = {1454031},
+ address = {New York, NY, USA},
+ author = {Yildirim, Hilmi and Krishnamoorthy, Mukkai S.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454031},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, random walk, sparsity},
+ link = {http://doi.acm.org/10.1145/1454008.1454031},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {131--138},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A Random Walk Method for Alleviating the Sparsity Problem in Collaborative Filtering},
+ year = {2008}
+}
+
+
+@inproceedings{Drachsler:2008:NSL:1454008.1454058,
+ abstract = {This paper offers an extended abstract of a PhD project that focuses on supporting learners in finding most suitable learning activities in informal learning environments. For this purpose we aim to develop a personal recommender system, which will recommend most suitable learning activities to learners regarding their personal needs and preferences. As a theoretical framework for informal learning environments we use the concept of Learning Networks [1]. Learning Networks can be filled with lots of learning activities stemming from different providers. Such networks are dynamic, because each member could add or delete content at any time. A personal recommender system is needed to support learners in selecting learning activities from a Learning Network that will enable them to achieve their learning goals in a specific domain. It is expected that such support will minimize the amount of time learners need for finding suitable learning activities. A better alignment of the characteristics of learners and learning activities is expected to increase both effectiveness and efficiency of learning progress of the learners.},
+ acmid = {1454058},
+ address = {New York, NY, USA},
+ author = {Drachsler, Hendrik and Hummel, Hans and Koper, Rob},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454058},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, informal learning, learning networks, ontology, recommender systems, technology enhanced learning},
+ link = {http://doi.acm.org/10.1145/1454008.1454058},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {303--306},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Navigation Support for Learners in Informal Learning Environments},
+ year = {2008}
+}
+
+
+@inproceedings{Burke:2008:RRS:1454008.1454066,
+ abstract = {This tutorial will discuss vulnerabilities of collaborative recommendation algorithms: attacks that can be mounted against them and possible defenses that can be used. The tutorial will be of interest to researchers and practitioners in the area of collaborative recommendation.},
+ acmid = {1454066},
+ address = {New York, NY, USA},
+ author = {Burke, Robin D.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454066},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, recommender systems, robustness, security},
+ link = {http://doi.acm.org/10.1145/1454008.1454066},
+ location = {Lausanne, Switzerland},
+ numpages = {2},
+ pages = {331--332},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Robust Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Teppan:2008:IPP:1454008.1454063,
+ abstract = {Internet users often face the challenge of identifying the most suitable product out of some product assortment available on a certain e-sales platform. Recommender systems can substantially alleviate this typically complex task. Since the rise of such systems a lot of effort has been done in developing different recommendation approaches and algorithms, which all of them have certain strengths and weaknesses. What has been widely ignored by the recommender community so far are the potentials and impacts of psychological and decision theoretical phenomenons, which already have been investigated and applied in the field of marketing. Such phenomenons promise big capability to support users in decision making when facing a comparison situation. This paper concentrates on two classes of phenomenons, which are decoy effects and serial position effects. Tightly coupled to these phenomenons is the problem of getting the utility function of a recommender right, as this function serves both as the basis of result set calculation as well as the fundament of exploitation of above mentioned phenomenons. Putting all these aspects together an extended architecture for recommender systems will be proposed in the end of the paper.},
+ acmid = {1454063},
+ address = {New York, NY, USA},
+ author = {Teppan, Erich Christian},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454063},
+ isbn = {978-1-60558-093-7},
+ keyword = {decoy effects, model-based diagnosis, recommender systems, serial position effects},
+ link = {http://doi.acm.org/10.1145/1454008.1454063},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {323--326},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Implications of Psychological Phenomenons for Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Ding:2008:BCF:1454008.1454011,
+ abstract = {User-based collaborative filtering methods typically predict a user's item ratings as a weighted average of the ratings given by similar users, where the weight is proportional to the user similarity. Therefore, the accuracy of user similarity is the key to the success of the recommendation, both for selecting neighborhoods and computing predictions. However, the computed similarities between users are somewhat inaccurate due to data sparsity. For a given user, the set of neighbors selected for predicting ratings on different items typically exhibit overlap. Thus, error terms contributing to rating predictions will tend to be shared, leading to correlation of the prediction errors. Through a set of case studies, we discovered that for a given user, the prediction errors on different items are correlated to the similarities of the corresponding items, and to the degree to which they share common neighbors. We propose a framework to improve prediction accuracy based on these statistical prediction errors. Two different strategies to estimate the prediction error on a desired item are proposed. Our experiments show that these approaches improve the prediction accuracy of standard user based methods significantly, and they outperform other state-of-the-art methods.},
+ acmid = {1454011},
+ address = {New York, NY, USA},
+ author = {Ding, Shengchao and Zhao, Shiwan and Yuan, Quan and Zhang, Xiatian and Fu, Rongyao and Bergman, Lawrence},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454011},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, prediction errors, recommender systems, similarity},
+ link = {http://doi.acm.org/10.1145/1454008.1454011},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {3--10},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Boosting Collaborative Filtering Based on Statistical Prediction Errors},
+ year = {2008}
+}
+
+
+@inproceedings{Schifanella:2008:MEC:1454008.1454014,
+ abstract = {We focus on collaborative filtering dealing with self-organizing communities, host mobility, wireless access, and ad-hoc communications. In such a domain, knowledge representation and users profiling can be hard; remote servers can be often unreachable due to client mobility; and feedback ratings collected during random connections to other users' ad-hoc devices can be useless, because of natural differences between human beings. Our approach is based on so called Affinity Networks, and on a novel system, called MobHinter, that epidemically spreads recommendations through spontaneous similarities between users. Main results of our study are two fold: firstly, we show how to reach comparable recommendation accuracies in the mobile domain as well as in a complete knowledge scenario; secondly, we propose epidemic collaborative strategies that can reduce rapidly and realistically the cold start problem.},
+ acmid = {1454014},
+ address = {New York, NY, USA},
+ author = {Schifanella, Rossano and Panisson, Andr{\'e} and Gena, Cristina and Ruffo, Giancarlo},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454014},
+ isbn = {978-1-60558-093-7},
+ keyword = {ad-hoc networks, recommender systems, social collaborative filtering},
+ link = {http://doi.acm.org/10.1145/1454008.1454014},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {27--34},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {MobHinter: Epidemic Collaborative Filtering and Self-organization in Mobile Ad-hoc Networks},
+ year = {2008}
+}
+
+
+@inproceedings{Celma:2008:NAE:1454008.1454038,
+ abstract = {This paper presents two methods, named Item- and User-centric, to evaluate the quality of novel recommendations. The former method focuses on analyzing the item-based recommendation network. The aim is to detect whether the network topology has any pathology that hinders novel recommendations. The latter, user-centric evaluation, aims at measuring users' perceived quality of novel, previously unknown, recommendations. The results of the experiments, done in the music recommendation context, show that last.fm social recommender, based on collaborative filtering, is prone to popularity bias. This has direct consequences on the topology of the item-based recommendation network. Pure audio content-based methods (CB) are not affected by popularity. However, a user-centric experiment done with 288 subjects shows that even though a social-based approach recommends less novel items than our CB, users' perceived quality is better than those recommended by a pure CB method.},
+ acmid = {1454038},
+ address = {New York, NY, USA},
+ author = {Celma, \`{O}scar and Herrera, Perfecto},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454038},
+ isbn = {978-1-60558-093-7},
+ keyword = {complex network analysis, evaluation, long tail, novelty, popularity, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454038},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {179--186},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A New Approach to Evaluating Novel Recommendations},
+ year = {2008}
+}
+
+
+@inproceedings{Sampaio:2008:NPR:1454008.1454061,
+ abstract = {Advanced applications have caused end-users to show a new interest in accessing network measurement and status data across multiple domains, in order to detect occasional network problems. Diversity of network technologies, technical solutions and network managers add to the complexity of providing such information, which, when available, includes technical details that are meaningful only to specialists. However, context awareness can ease the recommendation process underlying a monitoring infrastructure. This research investigates a novel approach for traffic monitoring in view of the context information used to provide network performance recommendations in the most productive way.},
+ acmid = {1454061},
+ address = {New York, NY, USA},
+ author = {Sampaio, Leobino Nascimento},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454061},
+ isbn = {978-1-60558-093-7},
+ keyword = {context-awareness, monitoring, performance, recommendation},
+ link = {http://doi.acm.org/10.1145/1454008.1454061},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {315--318},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A Network Performance Recommendation Process for Advanced Internet Applications Users},
+ year = {2008}
+}
+
+
+@inproceedings{Zanker:2008:CCM:1454008.1454032,
+ abstract = {Recommender Systems (RS) have become popular for their ability to make useful suggestions to online shoppers. Knowledge-based RS represent one branch of these types of applications that employ means-end knowledge to map abstract user requirements to product characteristics. Before setting up such a system, the knowledge has to be acquired from domain experts and formalized using constraints or a comparable representation mechanism. However, the initial acquisition of the knowledge base and its maintenance are effort intensive tasks. Here, we propose a system that learns rule-based preferences from successful interactions in historic transaction data. It is realized as a meta-level hybrid that employs collaborative filtering to derive preferences from a user's nearest neighbors that are processed by a knowledge-based RS to derive recommendations. An evaluation using a commercial dataset showed that this approach outperforms the prediction accuracy of a knowledge base provided by domain experts. In addition, the approach is applicable for supporting domain experts in the maintenance and validation tasks associated with providing personalization knowledge bases.},
+ acmid = {1454032},
+ address = {New York, NY, USA},
+ author = {Zanker, Markus},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454032},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, hybrid recommendation approaches, knowledge-based recommendation},
+ link = {http://doi.acm.org/10.1145/1454008.1454032},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {139--146},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A Collaborative Constraint-based Meta-level Recommender},
+ year = {2008}
+}
+
+
+@inproceedings{Chen:2008:CUE:1454008.1454022,
+ abstract = {We present a cross-cultural user evaluation of an organization-based product recommender interface, by comparing it with the traditional list view. The results show that it performed significantly better, for all study participants, in improving on their competence perceptions, including perceived recommendation quality, perceived ease of use and perceived usefulness, and positively impacting users' behavioral intentions such as intention to save effort in the next visit. Additionally, oriental users were observed reacting more significantly strongly to the organization interface regarding some subjective aspects, compared to western subjects. Through this user study, we also identified the dominating role of the recommender system's decision-aiding competence in stimulating both oriental and western users' return intention to an e-commerce website where the system is applied.},
+ acmid = {1454022},
+ address = {New York, NY, USA},
+ author = {Chen, Li and Pu, Pearl},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454022},
+ isbn = {978-1-60558-093-7},
+ keyword = {cross-cultural user study, list view, organization interface, product recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454022},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {75--82},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A Cross-cultural User Evaluation of Product Recommender Interfaces},
+ year = {2008}
+}
+
+
+@inproceedings{Santos:2008:RSP:1454008.1454062,
+ abstract = {Dynamic support in adaptive inclusive educational systems depends on properly managing the adaptation in the eLearning life cycle by combining design and runtime adaptations and making a pervasive usage of standards along the eLearning life cycle. My Ph.D research focuses on recommender systems for lifelong learning inclusive scenarios, which have particular differences in their need for personalized recommendations. The research presented here makes a proposal for addressing some of the existing challenges. It goes beyond issues that are usually considered when building recommender systems and focuses also on closing the cycle. In particular, I propose a graphical representation that will help to compare the recommenders' performance in eLearning scenarios.},
+ acmid = {1454062},
+ address = {New York, NY, USA},
+ author = {Santos, Olga C.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454062},
+ isbn = {978-1-60558-093-7},
+ keyword = {accessibility, adaptive educational systems, inclusive support, lifelong learning, personalization, recommender systems, standards},
+ link = {http://doi.acm.org/10.1145/1454008.1454062},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {319--322},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {A Recommender System to Provide Adaptive and Inclusive Standard-based Support Along the Elearning Life Cycle},
+ year = {2008}
+}
+
+
+@inproceedings{Koutrika:2008:FRO:1454008.1454041,
+ abstract = {CourseRank is a course planning tool aimed at helping students at Stanford. Recommendations comprise an integral part of it. However, implementing existing recommendation methods leads to fixed recommendations that cannot adapt to each particular student's changing requirements and do not help exploit the full extent of the available learning opportunities at the university. In this paper, we describe the concept of a flexible recommendation workflow, i.e., a high-level description of a parameterized process for computing recommendations. The input parameters of a flexible recommendation process comprise the "knobs" that control the final output and hence generate flexible recommendations. We describe how flexible recommendations can be expressed over a relational database and we present our prototype system that allows defining and executing different, fully-parameterized, recommendation workflows over relational data. Finally, we describe a user interface in CourseRank that allows students customize recommendations.},
+ acmid = {1454041},
+ address = {New York, NY, USA},
+ author = {Koutrika, Georgia and Ikeda, Robert and Bercovitz, Benjamin and Garcia-Molina, Hector},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454041},
+ isbn = {978-1-60558-093-7},
+ keyword = {courserank, flexible recommendations, workflows},
+ link = {http://doi.acm.org/10.1145/1454008.1454041},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {203--210},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Flexible Recommendations over Rich Data},
+ year = {2008}
+}
+
+
+@inproceedings{Adomavicius:2008:CRS:1454008.1454068,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1454068},
+ address = {New York, NY, USA},
+ author = {Adomavicius, Gediminas and Tuzhilin, Alexander},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454068},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, contextual information, personalization, recommender systems, tutorial},
+ link = {http://doi.acm.org/10.1145/1454008.1454068},
+ location = {Lausanne, Switzerland},
+ numpages = {2},
+ pages = {335--336},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Context-aware Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Drenner:2008:CIU:1454008.1454039,
+ abstract = {Recommender systems try to address the "new user problem" by quickly and painlessly learning user preferences so that users can begin receiving recommendations as soon as possible. We take an expanded perspective on the new user experience, seeing it as an opportunity to elicit valuable contributions to the community and shape subsequent user behavior. We conducted a field experiment in MovieLens where we imposed additional work on new users: not only did they have to rate movies, they also had to enter varying numbers of tags. While requiring more work led to fewer users completing the entry process, the benefits were significant: the remaining users produced a large volume of tags initially, and continued to enter tags at a much higher rate than a control group. Further, their rating behavior was not depressed. Our results suggest that careful design of the initial user experience can lead to significant benefits for an online community.},
+ acmid = {1454039},
+ address = {New York, NY, USA},
+ author = {Drenner, Sara and Sen, Shilad and Terveen, Loren},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454039},
+ isbn = {978-1-60558-093-7},
+ keyword = {entry barrier, new user problem, online communities, recommender system, tagging, user experience, user interfaces},
+ link = {http://doi.acm.org/10.1145/1454008.1454039},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {187--194},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Crafting the Initial User Experience to Achieve Community Goals},
+ year = {2008}
+}
+
+
+@inproceedings{Weimer:2008:ACF:1454008.1454050,
+ abstract = {We present a flexible approach to collaborative filtering which stems from basic research results. The approach is flexible in several dimensions: We introduce an algorithm where the loss can be tailored to a particular recommender problem. This allows us to optimize the prediction quality in a way that matters for the specific recommender system. The introduced algorithm can deal with structured estimation of the predictions for one user. The most prominent outcome of this is the ability of learning to rank items along user preferences. To this end, we also present a novel algorithm to compute the ordinal loss in O(n log(n)) as apposed to O(n2). We extend this basic model such that it can accommodate user and item offsets as well as user and item features if they are present. The latter unifies collaborative filtering with content based filtering. We present an analysis of the algorithm which shows desirable properties in terms of privacy needs of users, parallelization of the algorithm as well as collaborative filtering as a service. We evaluate the algorithm on data provided by WikiLens. This data is a cross-domain data set as it contains ratings on items from a vast array of categories. Evaluation shows that cross-domain prediction is possible.},
+ acmid = {1454050},
+ address = {New York, NY, USA},
+ author = {Weimer, Markus and Karatzoglou, Alexandros and Smola, Alex},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454050},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, structured estimation},
+ link = {http://doi.acm.org/10.1145/1454008.1454050},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {275--282},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Adaptive Collaborative Filtering},
+ year = {2008}
+}
+
+
+@inproceedings{Gunawardana:2008:TBM:1454008.1454013,
+ abstract = {We describe a novel statistical model, the tied Boltzmann machine, for combining collaborative and content information for recommendations. In our model, pairwise interactions between items are captured through a Boltzmann machine, whose parameters are constrained according to the content associated with the items. This allows the model to use content information to recommend items that are not seen during training. We describe a tractable algorithm for training the model, and give experimental results evaluating the model in two cold start recommendation tasks on the MovieLens data set.},
+ acmid = {1454013},
+ address = {New York, NY, USA},
+ author = {Gunawardana, Asela and Meek, Christopher},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454013},
+ isbn = {978-1-60558-093-7},
+ keyword = {boltzmann machines, cold start, collaborative filtering, content-based filtering, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454013},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {19--26},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Tied Boltzmann Machines for Cold Start Recommendations},
+ year = {2008}
+}
+
+
+@inproceedings{Agrahri:2008:PCI:1454008.1454052,
+ abstract = {Search engines are among the most-used resources on the internet. However, even today's most successful search engines struggle to provide high quality search results. According to recent studies as many as 50 percent of web search sessions fail to find any relevant results for the searcher. Researchers have proposed social search techniques, in which early searchers provide feedback that is used to improve relevance for later searchers. In this paper we investigate foundational questions of social search. In particular, we directly assess the degree of agreement among users about the relevance ranking of search results. We developed a simulated search engine interface that systematically randomizes Google's normal relevance ordering of the items presented to users. Our results show that (a) people are biased toward items in the top of the search lists, even if the list is randomized; (b) people explicit feedback is not biased and (c) people's shared preferences do not always agree with Google's result order. These results suggest that social search techniques might improve the effectiveness of web search engines.},
+ acmid = {1454052},
+ address = {New York, NY, USA},
+ author = {Agrahri, Arun Kumar and Manickam, Divya Anand Thattandi and Riedl, John},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454052},
+ isbn = {978-1-60558-093-7},
+ keyword = {browsing, explicit feedback, recommender systems, social access patterns, social search},
+ link = {http://doi.acm.org/10.1145/1454008.1454052},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {283--286},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Can People Collaborate to Improve the Relevance of Search Results?},
+ year = {2008}
+}
+
+
+@inproceedings{Wu:2008:IPL:1454008.1454026,
+ abstract = {With the fast development of web 2.0, user-centric publishing and knowledge management platforms, such as Wiki, Blogs, and Q & A systems attract a large number of users. Given the availability of the huge amount of meaningful user generated content, incremental model based recommendation techniques can be employed to improve users' experience using automatic recommendations. In this paper, we propose an incremental recommendation algorithm based on Probabilistic Latent Semantic Analysis (PLSA). The proposed algorithm can consider not only the users' long-term and short-term interests, but also users' negative and positive feedback. We compare the proposed method with several baseline methods using a real-world Question & Answer website called Wenda. Experiments demonstrate both the effectiveness and the efficiency of the proposed methods.},
+ acmid = {1454026},
+ address = {New York, NY, USA},
+ author = {Wu, Hu and Wang, Yongji and Cheng, Xiang},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454026},
+ isbn = {978-1-60558-093-7},
+ keyword = {incremental learning, plsa, recommendation system},
+ link = {http://doi.acm.org/10.1145/1454008.1454026},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {99--106},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Incremental Probabilistic Latent Semantic Analysis for Automatic Question Recommendation},
+ year = {2008}
+}
+
+
+@inproceedings{Kagie:2008:CAW:1454008.1454040,
+ abstract = {In content- and knowledge-based recommender systems often a measure of (dis)similarity between items is used. Frequently, this measure is based on the attributes of the items. However, which attributes are important for the users of the system remains an important question to answer. In this paper, we present an approach to determine attribute weights in a dissimilarity measure using clickstream data of an e-commerce website. Counted is how many times products are sold and based on this a Poisson regression model is estimated. Estimates of this model are then used to determine the attribute weights in the dissimilarity measure. We show an application of this approach on a product catalog of MP3 players provided by Compare Group, owner of the Dutch price comparison site http://www.vergelijk.nl, and show how the dissimilarity measure can be used to improve 2D product catalog visualizations.},
+ acmid = {1454040},
+ address = {New York, NY, USA},
+ author = {Kagie, Martijn and van Wezel, Michiel and Groenen, Patrick J.F.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454040},
+ isbn = {978-1-60558-093-7},
+ keyword = {choosing attribute weights, dissimilarity, generalized linear models, map based interfaces, missing values, poisson regression},
+ link = {http://doi.acm.org/10.1145/1454008.1454040},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {195--202},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Choosing Attribute Weights for Item Dissimilarity Using Clikstream Data with an Application to a Product Catalog Map},
+ year = {2008}
+}
+
+
+@inproceedings{Shani:2008:MRW:1454008.1454015,
+ abstract = {In this paper we study the challenges and evaluate the effectiveness of data collected from the web for recommendations. We provide experimental results, including a user study, showing that our methods produce good recommendations in realistic applications. We propose a new evaluation metric, that takes into account the difficulty of prediction. We show that the new metric aligns well with the results from a user study.},
+ acmid = {1454015},
+ address = {New York, NY, USA},
+ author = {Shani, Guy and Chickering, Max and Meek, Christopher},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454015},
+ isbn = {978-1-60558-093-7},
+ keyword = {evaluation metrics, recommender systems, web mining},
+ link = {http://doi.acm.org/10.1145/1454008.1454015},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {35--42},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Mining Recommendations from the Web},
+ year = {2008}
+}
+
+
+@inproceedings{Lee:2008:PTC:1454008.1454060,
+ abstract = {Typical collaborative filtering recommenders (CF) do not provide any chance for users to choose or evaluate the bases for recommendation. Once the system evaluates a group of users as being similar to a target user, her information is tailored by unknown people's taste. As a cultural event recommender, PITTCULT provides a way for users to rate the trustworthiness of other users; then, according to those ratings, a recommendation is generated. This paper explains why trust-based recommendation is necessary, and how studies using PITTCULT cope with the problems of the existing CF.},
+ acmid = {1454060},
+ address = {New York, NY, USA},
+ author = {Lee, Danielle Hyunsook},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454060},
+ isbn = {978-1-60558-093-7},
+ keyword = {cultural event recommender, personalized information, trusted-based recommendation},
+ link = {http://doi.acm.org/10.1145/1454008.1454060},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {311--314},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {PITTCULT: Trust-based Cultural Event Recommender},
+ year = {2008}
+}
+
+
+@inproceedings{Symeonidis:2008:TRB:1454008.1454017,
+ abstract = {Social tagging is the process by which many users add metadata in the form of keywords, to annotate and categorize information items (songs, pictures, web links, products etc.). Collaborative tagging systems recommend tags to users based on what tags other users have used for the same items, aiming to develop a common consensus about which tags best describe an item. However, they fail to provide appropriate tag recommendations, because: (i) users may have different interests for an information item and (ii) information items may have multiple facets. In contrast to the current tag recommendation algorithms, our approach develops a unified framework to model the three types of entities that exist in a social tagging system: users, items and tags. These data is represented by a 3-order tensor, on which latent semantic analysis and dimensionality reduction is performed using the Higher Order Singular Value Decomposition (HOSVD) technique. We perform experimental comparison of the proposed method against two state-of-the-art tag recommendations algorithms with two real data sets (Last.fm and BibSonomy). Our results show significant improvements in terms of effectiveness measured through recall/precision.},
+ acmid = {1454017},
+ address = {New York, NY, USA},
+ author = {Symeonidis, Panagiotis and Nanopoulos, Alexandros and Manolopoulos, Yannis},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454017},
+ isbn = {978-1-60558-093-7},
+ keyword = {recommender systems, social tagging},
+ link = {http://doi.acm.org/10.1145/1454008.1454017},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {43--50},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Tag Recommendations Based on Tensor Dimensionality Reduction},
+ year = {2008}
+}
+
+
+@proceedings{Pu:2008:1454008,
+ abstract = {Recommender systems have emerged as an important part of the solution to the information overload problem facing today's Web users. Combining ideas and techniques from information filtering, user modeling, artificial intelligence, user interface design and human-computer interaction, recommender systems provide users with proactive suggestions that are tailored to meet their particular information needs and preferences. Indeed recommender systems have enjoyed considerable commercial success and continue to play an increasingly important role in many online services, from Amazon and Yahoo! to iTunes and Last.fm. It is our great pleasure to welcome you to the Second ACM International Conference on Recommender Systems (RecSys), which builds on a wonderful legacy of research workshops, the Recommenders Summer School held in Bilbao in 2006, and the First ACM International Conference on Recommender Systems held in Minneapolis in 2007. This conference brings together leaders in the field, from both research and practice, to explore the latest innovations, challenges, and opportunities for recommender systems technologies. The call for papers attracted 121 submissions, a more than 100% increase compared to 2007, with authors from nearly 30 different countries. After a detailed scientific review process the program committee selected 38 papers for publication in the proceedings and presentation at the conference, a 31% acceptance rate. Of these 38 papers, 20 full-length papers were accepted for oral presentation and 18 papers for poster presentation, of which 15 were full-length papers and 3 were short-papers. In addition, the conference program includes a keynote presentation by Yahoo!'s Andrei Broder; two panel sessions filled with industry leaders sharing experiences and raising challenges for the research community; and presentations of six early-stage recommender start-ups, each bidding to win a $100,000 prize from Strands, Inc. The conference also includes three tutorials, in which leaders of the field explore hot topics in more detail; and a doctoral symposium to provide an opportunity for doctoral students to explore and develop their research interests in an interdisciplinary workshop, under the guidance of a panel of distinguished research faculty.},
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-093-7},
+ location = {Lausanne, Switzerland},
+ note = {609085},
+ publisher = {ACM},
+ title = {RecSys '08: Proceedings of the 2008 ACM Conference on Recommender Systems},
+ year = {2008}
+}
+
+
+@article{Koren:2010:CFT:1721654.1721677,
+ abstract = {Customer preferences for products are drifting over time. Product perception and popularity are constantly changing as new selection emerges. Similarly, customer inclinations are evolving, leading them to ever redefine their taste. Thus, modeling temporal dynamics is essential for designing recommender systems or general customer preference models. However, this raises unique challenges. Within the ecosystem intersecting multiple products and customers, many different characteristics are shifting simultaneously, while many of them influence each other and often those shifts are delicate and associated with a few data instances. This distinguishes the problem from concept drift explorations, where mostly a single concept is tracked. Classical time-window or instance decay approaches cannot work, as they lose too many signals when discarding data instances. A more sensitive approach is required, which can make better distinctions between transient effects and long-term patterns. We show how to model the time changing behavior throughout the life span of the data. Such a model allows us to exploit the relevant components of all data instances, while discarding only what is modeled as being irrelevant. Accordingly, we revamp two leading collaborative filtering recommendation approaches. Evaluation is made on a large movie-rating dataset underlying the Netflix Prize contest. Results are encouraging and better than those previously reported on this dataset. In particular, methods described in this paper play a significant role in the solution that won the Netflix contest.},
+ acmid = {1721677},
+ address = {New York, NY, USA},
+ author = {Koren, Yehuda},
+ doi = {10.1145/1721654.1721677},
+ issn = {0001-0782},
+ issue_date = {April 2010},
+ journal = {Commun. ACM},
+ link = {http://doi.acm.org/10.1145/1721654.1721677},
+ month = {apr},
+ number = {4},
+ numpages = {9},
+ pages = {89--97},
+ publisher = {ACM},
+ title = {Collaborative Filtering with Temporal Dynamics},
+ volume = {53},
+ year = {2010}
+}
+
+
+@inproceedings{Maidel:2008:EOB:1454008.1454024,
+ abstract = {A new ontological-content-based method for ranking the relevancy of items in the electronic newspapers domain is proposed. The method is being implemented in ePaper, a personalized electronic newspaper research project. The content-based part of the filtering method of ePaper utilizes a hierarchical ontology of news items. The method considers common and "close" ontology concepts appearing in the user's profile and in the item's profile, measuring the hierarchical distance between concepts in the two profiles. Based on the number of common and related concepts, and their distances from each other, the filtering algorithm computes the similarity between items and users, and rank-orders the news items according to their relevancy to each user, thus providing a personalized newspaper. We have conducted evaluations of the filtering method, examining various parameters. A group of subjects, each having defined an initial content-based profile using the news ontology concepts, read news items from a certain electronic newspaper and expressed the relevancy of each item to them. In different runs of the algorithm on the same data, we changed several parameters of the algorithm, and compared the results with the users' ratings. We discovered that the filtering method, which considers not only common concepts but also hierarchically related concepts, yields significantly better quality of filtering compared to using only common concepts. Moreover, we were able to find optimal values of similarity scores according to the hierarchical distance between related concepts.},
+ acmid = {1454024},
+ address = {New York, NY, USA},
+ author = {Maidel, Veronica and Shoval, Peretz and Shapira, Bracha and Taieb-Maimon, Meirav},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454024},
+ isbn = {978-1-60558-093-7},
+ keyword = {content-based filtering, electronic newspaper, ontology, personalization},
+ link = {http://doi.acm.org/10.1145/1454008.1454024},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {91--98},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Evaluation of an Ontology-content Based Filtering Method for a Personalized Newspaper},
+ year = {2008}
+}
+
+
+@proceedings{Bergman:2009:1639714,
+ abstract = {2009 is likely to become the "Year of the Netflix Challenge" in recommender systems. With a prize of one million dollars one of the highest in computer science, it raised a tremendous awareness for as well as a transformation to the field of recommender systems. We are very happy to welcome you to the Third ACM Conference on Recommender Systems (ACM RecSys 2009) in New York. In the last few years, ACM RecSys has continuously grown and meanwhile certainly can be understood as the scientific core event in the area of recommender systems, bringing together persons from academic research, industry research as well as from applications. While recommender systems has close relations to many neighboring fields such as machine learning, information retrieval, databases, human computer interaction, e-commerce, semantic web and many others and many of the best conferences in these areas have their dedicated sessions on recommender systems, ACM RecSys is the conference where all of them finally meet. With 187 submissions this year's ACM RecSys has continued to grow at a fast rate of over 50%. Authors from 35 different countries from all over the world submitted their papers. After the program committee consisting of 78 researchers finished a thorough scientific review process in two rounds writing almost 700 reviews, less than 19% of the long submissions have been accepted, the overall acceptance rate for long and short papers is less than 40%. Besides a deepened interest in algorithms for recommender systems, this year tags and social networks, privacy and security and trust attracted the most attention by authors. Moreover, the program of ACM RecSys 2009 includes two keynotes, one from a more academic perspective and another one from a more industrial perspective, a panel session about the recently concluded Netflix challenge, three tutorials and three workshops as well as a doctoral symposium.},
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-435-5},
+ location = {New York, New York, USA},
+ note = {609096},
+ publisher = {ACM},
+ title = {RecSys '09: Proceedings of the Third ACM Conference on Recommender Systems},
+ year = {2009}
+}
+
+
+@inproceedings{Zhang:2008:AMI:1454008.1454030,
+ abstract = {The primary premise upon which top-N recommender systems operate is that similar users are likely to have similar tastes with regard to their product choices. For this reason, recommender algorithms depend deeply on similarity metrics to build the recommendation lists for end-users. However, it has been noted that the products offered on recommendation lists are often too similar to each other and attention has been paid towards the goal of improving diversity to avoid monotonous recommendations. Noting that the retrieval of a set of items matching a user query is a common problem across many applications of information retrieval, we model the competing goals of maximizing the diversity of the retrieved list while maintaining adequate similarity to the user query as a binary optimization problem. We explore a solution strategy to this optimization problem by relaxing it to a trust-region problem.This leads to a parameterized eigenvalue problem whose solution is finally quantized to the required binary solution. We apply this approach to the top-N prediction problem, evaluate the system performance on the Movielens dataset and compare it with a standard item-based top-N algorithm. A new evaluation metric ItemNovelty is proposed in this work. Improvements on both diversity and accuracy are obtained compared to the benchmark algorithm.},
+ acmid = {1454030},
+ address = {New York, NY, USA},
+ author = {Zhang, Mi and Hurley, Neil},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454030},
+ isbn = {978-1-60558-093-7},
+ keyword = {accuracy, diversity, metrics, novelty, recommender system},
+ link = {http://doi.acm.org/10.1145/1454008.1454030},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {123--130},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Avoiding Monotony: Improving the Diversity of Recommendation Lists},
+ year = {2008}
+}
+
+
+@inproceedings{Rendle:2008:ORK:1454008.1454047,
+ abstract = {Regularized matrix factorization models are known to generate high quality rating predictions for recommender systems. One of the major drawbacks of matrix factorization is that once computed, the model is static. For real-world applications dynamic updating a model is one of the most important tasks. Especially when ratings on new users or new items come in, updating the feature matrices is crucial. In this paper, we generalize regularized matrix factorization (RMF) to regularized kernel matrix factorization (RKMF). Kernels provide a flexible method for deriving new matrix factorization methods. Furthermore with kernels nonlinear interactions between feature vectors are possible. We propose a generic method for learning RKMF models. From this method we derive an online-update algorithm for RKMF models that allows to solve the new-user/new-item problem. Our evaluation indicates that our proposed online-update methods are accurate in approximating a full retrain of a RKMF model while the runtime of online-updating is in the range of milliseconds even for huge datasets like Netflix.},
+ acmid = {1454047},
+ address = {New York, NY, USA},
+ author = {Rendle, Steffen and Schmidt-Thieme, Lars},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454047},
+ isbn = {978-1-60558-093-7},
+ keyword = {matrix factorization, online-update, recommender system},
+ link = {http://doi.acm.org/10.1145/1454008.1454047},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {251--258},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Online-updating Regularized Kernel Matrix Factorization Models for Large-scale Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Bogers:2008:RSA:1454008.1454053,
+ abstract = {We describe the use of the social reference management website CiteULike for recommending scientific articles to users, based on their reference library. We test three different collaborative filtering algorithms, and find that user-based filtering performs best. A temporal analysis of the data indexed by CiteULike shows that it takes about two years for the cold-start problem to disappear and recommendation performance to improve.},
+ acmid = {1454053},
+ address = {New York, NY, USA},
+ author = {Bogers, Toine and van den Bosch, Antal},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454053},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, recommender systems, social bookmarking, test collection},
+ link = {http://doi.acm.org/10.1145/1454008.1454053},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {287--290},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Recommending Scientific Articles Using Citeulike},
+ year = {2008}
+}
+
+
+@inproceedings{Dias:2008:VPR:1454008.1454054,
+ abstract = {Recommender systems have recently grown in popularity both in e-commerce and in research. However, there is little, if any, direct evidence in the literature of the value of recommender systems to e-Businesses, especially relating to consumer packaged goods (CPG) sold in a supermarket setting. We have been working in collaboration with LeShop (www.LeShop.ch), to gather real evidence of the added business value of a personalised recommender system. In this paper, we present our initial evaluation of the performance of our model-based personalised recommender systems over the 21-month period from May 2006 to January 2008, with particular focus on the added-value to the business. Our analysis covers shopper penetration, as well as the direct and indirect extra revenue generated by our recommender systems. One of the key lessons we have learnt during this case study is that the effect of a recommender system extends far beyond the direct extra revenue generated from the purchase of recommended items. The importance of maintaining updated model files was also found to be key to maintaining the performance of such model-based systems.},
+ acmid = {1454054},
+ address = {New York, NY, USA},
+ author = {Dias, M. Benjamin and Locher, Dominique and Li, Ming and El-Deredy, Wael and Lisboa, Paulo J.G.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454054},
+ isbn = {978-1-60558-093-7},
+ keyword = {business value creation, case study, e-commerce, performance evaluation, personalisation, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454054},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {291--294},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {The Value of Personalised Recommender Systems to e-Business: A Case Study},
+ year = {2008}
+}
+
+
+@article{Pommeranz:2012:DIE:2339916.2339923,
+ abstract = {Two problems may arise when an intelligent (recommender) system elicits users' preferences. First, there may be a mismatch between the quantitative preference representations in most preference models and the users' mental preference models. Giving exact numbers, e.g., such as "I like 30 days of vacation 2.5 times better than 28 days" is difficult for people. Second, the elicitation process can greatly influence the acquired model (e.g., people may prefer different options based on whether a choice is represented as a loss or gain). We explored these issues in three studies. In the first experiment we presented users with different preference elicitation methods and found that cognitively less demanding methods were perceived low in effort and high in liking. However, for methods enabling users to be more expressive, the perceived effort was not an indicator of how much the methods were liked. We thus hypothesized that users are willing to spend more effort if the feedback mechanism enables them to be more expressive. We examined this hypothesis in two follow-up studies. In the second experiment, we explored the trade-off between giving detailed preference feedback and effort. We found that familiarity with and opinion about an item are important factors mediating this trade-off. Additionally, affective feedback was preferred over a finer grained one-dimensional rating scale for giving additional detail. In the third study, we explored the influence of the interface on the elicitation process in a participatory set-up. People considered it helpful to be able to explore the link between their interests, preferences and the desirability of outcomes. We also confirmed that people do not want to spend additional effort in cases where it seemed unnecessary. Based on the findings, we propose four design guidelines to foster interface design of preference elicitation from a user view.},
+ acmid = {2339923},
+ address = {Hingham, MA, USA},
+ author = {Pommeranz, Alina and Broekens, Joost and Wiggers, Pascal and Brinkman, Willem-Paul and Jonker, Catholijn M.},
+ doi = {10.1007/s11257-011-9116-6},
+ issn = {0924-1868},
+ issue_date = {October   2012},
+ journal = {User Modeling and User-Adapted Interaction},
+ keyword = {Constructive preferences, Interface design, Preference elicitation},
+ link = {http://dx.doi.org/10.1007/s11257-011-9116-6},
+ month = {oct},
+ number = {4-5},
+ numpages = {41},
+ pages = {357--397},
+ publisher = {Kluwer Academic Publishers},
+ title = {Designing Interfaces for Explicit Preference Elicitation: A User-centered Investigation of Preference Representation and Elicitation Process},
+ volume = {22},
+ year = {2012}
+}
+
+
+@inproceedings{Umyarov:2008:LAR:1454008.1454064,
+ abstract = {One of the key problems in recommender systems is accurate estimation of unknown ratings of individual items for individual users in terms of the previously specified ratings and other characteristics of items and users. In this thesis, we investigate a way of improving estimations of individual ratings using externally provided properties of aggregate ratings for groups of items and users, such as an externally specified average rating of action movies provided by graduate students or externally specified standard deviation of ratings for comedy movies.},
+ acmid = {1454064},
+ address = {New York, NY, USA},
+ author = {Umyarov, Akhmed},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454064},
+ isbn = {978-1-60558-093-7},
+ keyword = {aggregate ratings, collaborative filtering, hierarchical models, predictive models, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454064},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {327--330},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Leveraging Aggregate Ratings for Improving Predictive Performance of Recommender Systems},
+ year = {2008}
+}
+
+
+@proceedings{Konstan:2007:1297231,
+ abstract = {Recommender systems have emerged as an important part of the solution to the information overload problem facing today's Web users. Combining ideas and techniques from information filtering, user modeling, artificial intelligence, user interface design and human-computer interaction, recommender systems provide users with proactive suggestions that are tailored to meet their particular information needs and preferences. Indeed recommender systems have enjoyed considerable commercial success and continue to play an increasingly important role in many online services, from Amazon and iTunes to Tivo and Last.fm. It is our great pleasure to welcome you to the First ACM Recommender Systems conference, which builds on a wonderful legacy of research workshops and the Recommenders06 Summer School in Bilbao on the Present and Future of Recommender Systems. This conference brings together leaders in the field, from both research and practice, to explore the latest innovations, challenges, and opportunities for recommender systems technologies. The call for papers attracted 35 long paper submissions and 23 short paper submissions from 15 countries. After a detailed scientific review process the program committee selected 16 full-length papers (a 46% acceptance rate) and 14 short-papers (a 61% acceptance rate) for publication in the proceedings and presentation at the conference. In addition, the conference program includes a keynote presentation by Google's Krishna Bharat, the creator of Google News; two panel sessions filled with industry leaders sharing experiences and raising challenges for the research community; and industry-track submissions intended to provoke discussion. The conference also includes a doctoral symposium to provide an opportunity for doctoral students to explore and develop their research interests in an interdisciplinary workshop, under the guidance of a panel of distinguished research faculty.},
+ address = {New York, NY, USA},
+ isbn = {978-1-59593-730--8},
+ location = {Minneapolis, MN, USA},
+ note = {609075},
+ publisher = {ACM},
+ title = {RecSys '07: Proceedings of the 2007 ACM Conference on Recommender Systems},
+ year = {2007}
+}
+
+
+@inproceedings{Domingues:2008:IPM:1454008.1454057,
+ abstract = {The analysis, design and maintenance of Web sites involves two significant challenges: managing the services and content available, and secondly, making the site dynamically adequate to user's needs. These challenges can be addressed by automating several of the management activities of a Web site. In this work we propose to develop a platform that can be used for that purpose, which is independent of the Web site. We started by developing a data warehouse that stores data about the usage, content and structure of a Web site. We have also developed a tool that uses the data in the data warehouse and provides information to the editor to monitor the activity on the Web site as well as the site itself. We have recently begun to develop multidimensional recommender systems that take advantage of the wealth of the data in the data warehouse. Both simulated and live tests are carried out to test the platform.},
+ acmid = {1454057},
+ address = {New York, NY, USA},
+ author = {Domingues, Marcos Aur{\'e}lio},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454057},
+ isbn = {978-1-60558-093-7},
+ keyword = {data warehousing, recommender system, web mining, web site automation},
+ link = {http://doi.acm.org/10.1145/1454008.1454057},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {299--302},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {An Independent Platform for the Monitoring, Analysis and Adaptation of Web Sites},
+ year = {2008}
+}
+
+
+@inproceedings{Takacs:2008:MFN:1454008.1454049,
+ abstract = {Collaborative filtering (CF) approaches proved to be effective for recommender systems in predicting user preferences in item selection using known user ratings of items. This subfield of machine learning has gained a lot of popularity with the Netflix Prize competition started in October 2006. Two major approaches for this problem are matrix factorization (MF) and the neighbor based approach (NB). In this work, we propose various variants of MF and NB that can boost the performance of the usual ensemble based scheme. First, we investigate various regularization scenarios for MF. Second, we introduce two NB methods: one is based on correlation coefficients and the other on linear least squares. At the experimentation part, we show that the proposed approaches compare favorably with existing ones in terms of prediction accuracy and/or required training time. We present results of blending the proposed methods.},
+ acmid = {1454049},
+ address = {New York, NY, USA},
+ author = {Tak\'{a}cs, G\'{a}bor and Pil\'{a}szy, Istv\'{a}n and N{\'e}meth, Botty\'{a}n and Tikk, Domonkos},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454049},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, matrix factorization, neighbor based methods, netflix prize},
+ link = {http://doi.acm.org/10.1145/1454008.1454049},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {267--274},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Matrix Factorization and Neighbor Based Algorithms for the Netflix Prize Problem},
+ year = {2008}
+}
+
+
+@inproceedings{Zanardi:2008:SRU:1454008.1454018,
+ abstract = {Social (or folksonomic) tagging has become a very popular way to describe, categorise, search, discover and navigate content within Web 2.0 websites. Unlike taxonomies, which overimpose a hierarchical categorisation of content, folksonomies empower end users by enabling them to freely create and choose the categories (in this case, tags) that best describe some content. However, as tags are informally defined, continually changing, and ungoverned, social tagging has often been criticised for lowering, rather than increasing, the efficiency of searching, due to the number of synonyms, homonyms, polysemy, as well as the heterogeneity of users and the noise they introduce. In this paper, we propose Social Ranking, a method that exploits recommender system techniques to increase the efficiency of searches within Web 2.0. We measure users' similarity based on their past tag activity. We infer tags' relationships based on their association to content. We then propose a mechanism to answer a user's query that ranks (recommends) content based on the inferred semantic distance of the query to the tags associated to such content, weighted by the similarity of the querying user to the users who created those tags. A thorough evaluation conducted on the CiteULike dataset demonstrates that Social Ranking neatly improves coverage, while not compromising on accuracy.},
+ acmid = {1454018},
+ address = {New York, NY, USA},
+ author = {Zanardi, Valentina and Capra, Licia},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454018},
+ isbn = {978-1-60558-093-7},
+ keyword = {recommender systems, similarity, tags, web 2.0},
+ link = {http://doi.acm.org/10.1145/1454008.1454018},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {51--58},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Social Ranking: Uncovering Relevant Content Using Tag-based Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Geyer:2008:RTS:1454008.1454019,
+ abstract = {Traditional social networking sites allow users to enter responses to a set of predefined fields when populating their personal profiles. In the system discussed in this work, freeform 'About You' entries allow users to craft their own questions / topics. We found that this kind of flexibility often leads to low content contributions and infrequent updates. The 'About You' recommender system described in this paper differs from many recommender systems in that it recommends content for users to create, rather than consume. We present empirical data from an experiment with 2,000 users of a social networking site during a one month period. Our findings suggest that users who receive recommendations create more entries and update them more over time. Further, using articulated social network information for recommendations performed better than content-based matching.},
+ acmid = {1454019},
+ address = {New York, NY, USA},
+ author = {Geyer, Werner and Dugan, Casey and Millen, David R. and Muller, Michael and Freyne, Jill},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454019},
+ isbn = {978-1-60558-093-7},
+ keyword = {impression formation, recommendation, self description, social networking, user profiles},
+ link = {http://doi.acm.org/10.1145/1454008.1454019},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {59--66},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Recommending Topics for Self-descriptions in Online User Profiles},
+ year = {2008}
+}
+
+
+@inproceedings{Xu:2008:POD:1454008.1454023,
+ abstract = {We propose a new recommendation algorithm for online documents, images and videos, which is personalized. Our idea is to rely on the attention time of individual users captured through commodity eye-tracking as the essential clue. The prediction of user interest over a certain online item (a document, image or video) is based on the user's attention time acquired using vision-based commodity eye-tracking during his previous reading, browsing or video watching sessions over the same type of online materials. After acquiring a user's attention times over a collection of online materials, our algorithm can predict the user's probable attention time over a new online item through data mining. Based on our proposed algorithm, we have developed a new online content recommender system for documents, images and videos. The recommendation results produced by our algorithm are evaluated by comparing with those manually labeled by users as well as by commercial search engines including Google (Web) Search, Google Image Search and YouTube.},
+ acmid = {1454023},
+ address = {New York, NY, USA},
+ author = {Xu, Songhua and Jiang, Hao and Lau, Francis C.M.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454023},
+ isbn = {978-1-60558-093-7},
+ keyword = {commodity eye-tracking, document, image and video recommendation, implicit user feedback, personalized recommendation and ranking, user attention, web search},
+ link = {http://doi.acm.org/10.1145/1454008.1454023},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {83--90},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Personalized Online Document, Image and Video Recommendation via Commodity Eye-tracking},
+ year = {2008}
+}
+
+
+@inproceedings{Shepitsen:2008:PRS:1454008.1454048,
+ abstract = {Collaborative tagging applications allow Internet users to annotate resources with personalized tags. The complex network created by many annotations, often called a folksonomy, permits users the freedom to explore tags, resources or even other user's profiles unbound from a rigid predefined conceptual hierarchy. However, the freedom afforded users comes at a cost: an uncontrolled vocabulary can result in tag redundancy and ambiguity hindering navigation. Data mining techniques, such as clustering, provide a means to remedy these problems by identifying trends and reducing noise. Tag clusters can also be used as the basis for effective personalized recommendation assisting users in navigation. We present a personalization algorithm for recommendation in folksonomies which relies on hierarchical tag clusters. Our basic recommendation framework is independent of the clustering method, but we use a context-dependent variant of hierarchical agglomerative clustering which takes into account the user's current navigation context in cluster selection. We present extensive experimental results on two real world dataset. While the personalization algorithm is successful in both cases, our results suggest that folksonomies encompassing only one topic domain, rather than many topics, present an easier target for recommendation, perhaps because they are more focused and often less sparse. Furthermore, context dependent cluster selection, an integral step in our personalization algorithm, demonstrates more utility for recommendation in multi-topic folksonomies than in single-topic folksonomies. This observation suggests that topic selection is an important strategy for recommendation in multi-topic folksonomies.},
+ acmid = {1454048},
+ address = {New York, NY, USA},
+ author = {Shepitsen, Andriy and Gemmell, Jonathan and Mobasher, Bamshad and Burke, Robin},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454048},
+ isbn = {978-1-60558-093-7},
+ keyword = {clustering, collaborative tagging, personalization, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454048},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {259--266},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Personalized Recommendation in Social Tagging Systems Using Hierarchical Clustering},
+ year = {2008}
+}
+
+
+@inproceedings{Koren:2008:TRP:1454008.1454067,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1454067},
+ address = {New York, NY, USA},
+ author = {Koren, Yehuda},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454067},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative filtering, netflix prize},
+ link = {http://doi.acm.org/10.1145/1454008.1454067},
+ location = {Lausanne, Switzerland},
+ numpages = {2},
+ pages = {333--334},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Tutorial on Recent Progress in Collaborative Filtering},
+ year = {2008}
+}
+
+
+@inproceedings{Oostendorp:2008:TRA:1454008.1454045,
+ abstract = {Interface Controls Reduction is the design task of generating simplified interface controls for setting a larger, more complex set of controls. We explore three different empirical approaches to the task: preset sharing, point clustering, and principal component analysis. All three draw on the experience of lead users to recommend simplified controls for others. A case study where they were applied as part of an iterative development cycle with hundreds of users reveals the advantages and challenges of each approach.},
+ acmid = {1454045},
+ address = {New York, NY, USA},
+ author = {Oostendorp, Nathan and Resnick, Paul},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454045},
+ isbn = {978-1-60558-093-7},
+ keyword = {clustering, icr, preset, principal component analysis, slashdot},
+ link = {http://doi.acm.org/10.1145/1454008.1454045},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {235--242},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Three Recommender Approaches to Interface Controls Reduction},
+ year = {2008}
+}
+
+
+@article{Rana:2015:SDF:2717330.2717469,
+ abstract = {The extensive usage of internet is fundamentally changing the way we live and communicate. Consequently, the requirements of users while browsing internet are changing drastically. Recommender Systems (RSs) provide a technology that helps users in finding relevant contents on internet. Revolutionary innovations in the field of internet and their consequent effects on users have activated the research in the area of recommender systems. This paper presents issues related to the changing needs of user requirements as well as changes in the systems' contents. The RSs involving said issues are termed as Dynamic Recommender Systems (DRSs). The paper first defines the concept of DRS and explores the various parameters that contribute in developing a DRS. The paper also discusses the scope of contributions in this field and concludes citing in possible extensions that can improve the dynamic qualities of recommendation systems in future.},
+ acmid = {2717469},
+ address = {Norwell, MA, USA},
+ author = {Rana, Chhavi and Jain, Sanjay Kumar},
+ doi = {10.1007/s10462-012-9359-6},
+ issn = {0269-2821},
+ issue_date = {January   2015},
+ journal = {Artif. Intell. Rev.},
+ keyword = {Collaborative filtering, Dynamic, Information overload, Recommender systems, Temporal},
+ link = {http://dx.doi.org/10.1007/s10462-012-9359-6},
+ month = {jan},
+ number = {1},
+ numpages = {13},
+ pages = {141--153},
+ publisher = {Kluwer Academic Publishers},
+ title = {A Study of the Dynamic Features of Recommender Systems},
+ volume = {43},
+ year = {2015}
+}
+
+
+@inproceedings{Bryan:2008:URA:1454008.1454034,
+ abstract = {Trust, reputation and recommendation are key components of successful e-commerce systems. However, e-commerce systems are also vulnerable in this respect because there are opportunities for sellers to gain advantage through manipulation of reputation and recommendation. One such vulnerability is the use of fraudulent user profiles to boost (or damage) the ratings of items in an online recommender system. In this paper we cast this problem as a problem of detecting anomalous structure in network analysis and propose a novel mechanism for detecting this anomalous structure. We present an evaluation that shows that this approach is effective at uncovering the types of recommender systems attack described in the literature.},
+ acmid = {1454034},
+ address = {New York, NY, USA},
+ author = {Bryan, Kenneth and O'Mahony, Michael and Cunningham, P\'{a}draig},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454034},
+ isbn = {978-1-60558-093-7},
+ keyword = {attack detection, recommender system, shilling},
+ link = {http://doi.acm.org/10.1145/1454008.1454034},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {155--162},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Unsupervised Retrieval of Attack Profiles in Collaborative Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Broder:2008:CAR:1454008.1454009,
+ abstract = {Computational advertising is an emerging scientific discipline, at the intersection of large scale search and text analysis, information retrieval, statistical modeling, machine learning, optimization, and microeconomics. The central challenge of computational advertising is to find the "best match" between a given user in a given context and a suitable advertisement. The context could be a user entering a query in a search engine ("sponsored search"), a user reading a web page ("content match" and "display ads"), a user conversing on a cell phone ("mobile advertising"), and so on. The information about the user can vary from scarily detailed to practically nil. The number of potential advertisements might be in the billions. Thus, depending on the definition of "best match" this challenge leads to a variety of massive optimization and search problems, with complicated constraints. The main part of this talk will give an introduction to computational advertising and present some illustrative research. In the second part we will discuss connections to recommender systems and present a couple of open problems of potential interest to both communities.},
+ acmid = {1454009},
+ address = {New York, NY, USA},
+ author = {Broder, Andrei Z.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454009},
+ isbn = {978-1-60558-093-7},
+ keyword = {computational advertising, content match, recommender systems, sponsored search},
+ link = {http://doi.acm.org/10.1145/1454008.1454009},
+ location = {Lausanne, Switzerland},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Computational Advertising and Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Lakiotaki:2008:URS:1454008.1454043,
+ abstract = {UTARec, a Recommender System that incorporates Multiple Criteria Analysis methodologies is presented. The system's performance and capability of addressing certain shortfalls of existing Recommender Systems is demonstrated in the case of movie recommendations. UTARec's accuracy is measured in terms of Kendall's tau and ROC curve analysis and is also compared to a Multiple Rating Collaborative Filtering (MRCF) approach. The results indicate that the proposed Multiple Criteria Analysis methodology can certainly improve the recommendation process by producing highly accurate results, from a user oriented perspective.},
+ acmid = {1454043},
+ address = {New York, NY, USA},
+ author = {Lakiotaki, Kleanthi and Tsafarakis, Stelios and Matsatsinis, Nikolaos},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454043},
+ isbn = {978-1-60558-093-7},
+ keyword = {algorithm performance analysis, dissagregation-aggregation approach, multiple criteria analysis, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454043},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {219--226},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {UTA-Rec: A Recommender System Based on Multiple Criteria Analysis},
+ year = {2008}
+}
+
+
+@inproceedings{Recio-Garcia:2008:PRS:1454008.1454046,
+ abstract = {Our goal is to support system developers in rapid prototyping recommender systems using Case-Based Reasoning (CBR) techniques. In this paper we describe how jCOLIBRI can serve to that goal. jCOLIBRI is an object-oriented framework in Java for building CBR systems that greatly benefits from the reuse of previously developed CBR systems. jCOLIBRI includes a case base of templates for case-based recommender systems that can be easily adapted to prototype a great variety of alternatives. We describe the contents of the case base and show experimental results from our experience using the recommender templates case base with mid-size projects from undergraduate students.},
+ acmid = {1454046},
+ address = {New York, NY, USA},
+ author = {Recio-Garc\'{\i}a, Juan A. and D\'{\i}az-Agudo, Bel{\'e}n and Gonz\'{a}lez-Calero, Pedro A.},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454046},
+ isbn = {978-1-60558-093-7},
+ keyword = {case based reasoning, recommender systems, template based design},
+ link = {http://doi.acm.org/10.1145/1454008.1454046},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {243--250},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Prototyping Recommender Systems in Jcolibri},
+ year = {2008}
+}
+
+
+@inproceedings{Kwon:2008:ITR:1454008.1454059,
+ abstract = {One of the goals in recommender systems is to recommend those items to each user that maximize the user's utility. In this study, we propose new approaches which, in conjunction with any existing recommendation technique, can improve the top-N item selection by taking into account rating variance. We empirically demonstrate how these approaches work with several recommendation techniques, increasing the accuracy of recommendations. We also show how these approaches can generate more personalized recommendations, as measured by the diversity metric. As a result, users can be given a better control to choose whether to receive recommendations with higher accuracy or higher diversity.},
+ acmid = {1454059},
+ address = {New York, NY, USA},
+ author = {Kwon, YoungOk},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454059},
+ isbn = {978-1-60558-093-7},
+ keyword = {accuracy, diversity, rating variance, recommendation filtering, recommendation ranking},
+ link = {http://doi.acm.org/10.1145/1454008.1454059},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {307--310},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Improving Top-n Recommendation Techniques Using Rating Variance},
+ year = {2008}
+}
+
+
+@inproceedings{Hadzic:2008:CGC:1454008.1454028,
+ abstract = {Critique-based conversational recommender systems are becoming common place, facilitating richer dialogues with the user than pure content-based or collaborative approaches. Most implementations of these systems combine similarity-based reasoning with constraints to enable users express preferences as critiques of products. Critiques are simple statements like "I like this product, but would prefer one that is less expensive". In this paper we exploit the fact that the repertoire of critiques available to the user is usually known ahead of interaction time to construct a critique graph representation of a catalogue. The critique graph provides a formal basis for reasoning about the set of products that can be reached using critiques from a given product. We introduce the concepts of product cover, support sets of products and catalogue cover. The latter is defined as a set of products from which all products in a catalogue can be reached using a specified best-case maximum number of critiques. We show that for the catalogues we considered, catalogue covers are typically small. We show that the sizes and distributions of product covers and support sets can be used to inform us of the structure of a catalogue and the challenges it would present for interactive navigation. We also propose the notion of a minimum catalogue cover as a set of "entry products" that ensure that all products in the catalogue can be reached by critiquing.},
+ acmid = {1454028},
+ address = {New York, NY, USA},
+ author = {Hadzic, Tarik and O'Sullivan, Barry},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454028},
+ isbn = {978-1-60558-093-7},
+ keyword = {recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454028},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {115--122},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Critique Graphs for Catalogue Navigation},
+ year = {2008}
+}
+
+
+@inproceedings{Brodsky:2008:CDF:1454008.1454037,
+ abstract = {This paper proposes a framework for Composite Alternative Recommendation Development (CARD), which supports composite product and service definitions, top-k decision optimization, and dynamic preference learning. Composite services are characterized by a set of sub-services, which, in turn, can be composite or atomic. Each atomic and composite service is associated with metrics, such as cost, duration, and enjoyment ranking. The framework is based on the Composite Recommender Knowledge Base, which is composed of views, including Service Metric Views that specify services and their metrics; Recommendation Views that specify the ranking definition to balance optimality and diversity; parametric Transformers that specify how service metrics are defined in terms of metrics of its subservices; and learning sets from which the unknown parameters in the transformers are iteratively learned. Also introduced in the paper is the top-k selection criterion that, based on a vector of utility metrics, provides the balance between the optimality of individual metrics and the diversity of recommendations. To exemplify the framework, specific views are developed for a travel package recommender system.},
+ acmid = {1454037},
+ address = {New York, NY, USA},
+ author = {Brodsky, Alexander and Morgan Henshaw, Sylvia and Whittle, Jon},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454037},
+ isbn = {978-1-60558-093-7},
+ keyword = {decision guidance, decision optimization, development framework, preference learning, ranking, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454037},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {171--178},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {CARD: A Decision-guidance Framework and Application for Recommending Composite Alternatives},
+ year = {2008}
+}
+
+
+@inproceedings{deGemmis:2008:ITS:1454008.1454036,
+ abstract = {Basic content personalization consists in matching up the attributes of a user profile, in which preferences and interests are stored, with the attributes of a content object. The Web 2.0 (r)evolution and the advent of user generated content have changed the game for personalization, since the role of people has evolved from passive consumers of information to that of active contributors. One of the forms of user generated content that has drawn more attention from the research community is folksonomy, a taxonomy generated by users who collaboratively annotate and categorize resources of interests with freely chosen keywords called tags. In this paper, we investigate whether folksonomies might be a valuable source of information about user interests. The main contribution is a strategy that enables a content-based recommender to infer user interests by applying machine learning techniques both on the "official" item descriptions provided by a publisher, and on tags which users adopt to freely annotate relevant items. Static content and tags are preventively analyzed by advanced linguistic techniques in order to capture the semantics of the user interests often hidden behind keywords. The proposed approach has been evaluated in the context of cultural heritage personalization. Preliminary experiments involving 30 real users show an improvement in the predictive accuracy of the tag-augmented recommender compared to the pure content-based one.},
+ acmid = {1454036},
+ address = {New York, NY, USA},
+ author = {de Gemmis, Marco and Lops, Pasquale and Semeraro, Giovanni and Basile, Pierpaolo},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454036},
+ isbn = {978-1-60558-093-7},
+ keyword = {collaborative tagging, machine learning, recommender systems, word sense disambiguation},
+ link = {http://doi.acm.org/10.1145/1454008.1454036},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {163--170},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Integrating Tags in a Semantic Content-based Recommender},
+ year = {2008}
+}
+
+
+@inproceedings{Koren:2009:CFT:1557019.1557072,
+ abstract = {Customer preferences for products are drifting over time. Product perception and popularity are constantly changing as new selection emerges. Similarly, customer inclinations are evolving, leading them to ever redefine their taste. Thus, modeling temporal dynamics should be a key when designing recommender systems or general customer preference models. However, this raises unique challenges. Within the eco-system intersecting multiple products and customers, many different characteristics are shifting simultaneously, while many of them influence each other and often those shifts are delicate and associated with a few data instances. This distinguishes the problem from concept drift explorations, where mostly a single concept is tracked. Classical time-window or instance-decay approaches cannot work, as they lose too much signal when discarding data instances. A more sensitive approach is required, which can make better distinctions between transient effects and long term patterns. The paradigm we offer is creating a model tracking the time changing behavior throughout the life span of the data. This allows us to exploit the relevant components of all data instances, while discarding only what is modeled as being irrelevant. Accordingly, we revamp two leading collaborative filtering recommendation approaches. Evaluation is made on a large movie rating dataset by Netflix. Results are encouraging and better than those previously reported on this dataset.},
+ acmid = {1557072},
+ address = {New York, NY, USA},
+ author = {Koren, Yehuda},
+ booktitle = {Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ doi = {10.1145/1557019.1557072},
+ isbn = {978-1-60558-495-9},
+ keyword = {collaborative filtering, concept drift, recommender systems},
+ link = {http://doi.acm.org/10.1145/1557019.1557072},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {447--456},
+ publisher = {ACM},
+ series = {KDD '09},
+ title = {Collaborative Filtering with Temporal Dynamics},
+ year = {2009}
+}
+
+
+@inproceedings{Baltrunas:2008:ECI:1454008.1454056,
+ abstract = {Recommender Systems help an on-line user to tame information overload and are being used now in complex domains where it could be beneficial to exploit context-awareness, e.g., in travel recommendation. Technically, in Recommender Systems we can interpret context as a set of constraints or preferences over the usage of items determined by the contextual conditions (e.g., today it is raining or the user is in a particular location). In fact, there is a lack of approaches to deal effectively with contextual data. This thesis investigates some approaches to exploit context in Recommender Systems. It provides a general architecture of context-aware Recommender Systems and analyzes separate components of this model. The main focus is to investigate new approaches that can bring a real added value to users. In this paper I also describe my initial results on item selection and item weighting for context-dependent Collaborative Filtering (CF). Moreover, I shall present my ongoing research on CF hybridization using context.},
+ acmid = {1454056},
+ address = {New York, NY, USA},
+ author = {Baltrunas, Linas},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454056},
+ isbn = {978-1-60558-093-7},
+ keyword = {context, recommender systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454056},
+ location = {Lausanne, Switzerland},
+ numpages = {4},
+ pages = {295--298},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Exploiting Contextual Information in Recommender Systems},
+ year = {2008}
+}
+
+
+@inproceedings{Garg:2008:PIT:1454008.1454020,
+ abstract = {We study the problem of personalized, interactive tag recommendation for Flickr: While a user enters/selects new tags for a particular picture, the system suggests related tags to her, based on the tags that she or other people have used in the past along with (some of) the tags already entered. The suggested tags are dynamically updated with every additional tag entered/selected. We describe a new algorithm, called Hybrid, which can be applied to this problem, and show that it outperforms previous algorithms. It has only a single tunable parameter, which we found to be very robust. Apart from this new algorithm and its detailed analysis, our main contributions are (i) a clean methodology which leads to conservative performance estimates, (ii) showing how classical classification algorithms can be applied to this problem, (iii) introducing a new cost measure, which captures the effort of the whole tagging process, (iv) clearly identifying, when purely local schemes (using only a user's tagging history) can or cannot be improved by global schemes (using everybody's tagging history).},
+ acmid = {1454020},
+ address = {New York, NY, USA},
+ author = {Garg, Nikhil and Weber, Ingmar},
+ booktitle = {Proceedings of the 2008 ACM Conference on Recommender Systems},
+ doi = {10.1145/1454008.1454020},
+ isbn = {978-1-60558-093-7},
+ keyword = {flickr, tag co-occurrence, tag recommendation, tagging systems},
+ link = {http://doi.acm.org/10.1145/1454008.1454020},
+ location = {Lausanne, Switzerland},
+ numpages = {8},
+ pages = {67--74},
+ publisher = {ACM},
+ series = {RecSys '08},
+ title = {Personalized, Interactive Tag Recommendation for Flickr},
+ year = {2008}
+}
+
+

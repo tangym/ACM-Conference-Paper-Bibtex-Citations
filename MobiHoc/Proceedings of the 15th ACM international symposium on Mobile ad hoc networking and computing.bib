@@ -1,0 +1,1257 @@
+@inproceedings{Jones:2014:OAT:2632951.2632957,
+ abstract = {Legacy networks are often designed to operate with simple single-path routing, like shortest-path, which is known to be throughput suboptimal. On the other hand, previously proposed throughput optimal policies (i.e., backpressure) require every device in the network to make dynamic routing decisions. In this work, we study an overlay architecture for dynamic routing such that only a subset of devices (overlay nodes) need to make dynamic routing decisions. We determine the essential collection of nodes that must bifurcate traffic for achieving the maximum multicommodity network throughput. We apply our optimal node placement algorithm to several graphs and the results show that a small fraction of overlay nodes is sufficient for achieving maximum throughput. Finally, we propose a heuristic policy (OBP), which dynamically controls traffic bifurcations at overlay nodes. In all studied simulation scenarios, OBP not only achieves full throughput, but also reduces delay in comparison to the throughput optimal backpressure routing.},
+ acmid = {2632957},
+ address = {New York, NY, USA},
+ author = {Jones, Nathaniel M. and Paschos, Georgios S. and Shrader, Brooke and Modiano, Eytan},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632957},
+ isbn = {978-1-4503-2620-9},
+ keyword = {backpressure routing, multipath routing, overlay},
+ link = {http://doi.acm.org/10.1145/2632951.2632957},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {73--82},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {An Overlay Architecture for Throughput Optimal Multipath Routing},
+ year = {2014}
+}
+
+
+@inproceedings{Huang:2014:BMP:2632951.2632983,
+ abstract = {Motivated by the increasing popularity of learning and predicting human user behavior in communication and computing systems, in this paper, we investigate the fundamental benefit of predictive scheduling, i.e., predicting and pre-serving arrivals, in controlled queueing systems. Based on a lookahead-window prediction model, we first establish a novel queue-equivalence between the predictive queueing system with a fully-efficient scheduling scheme and an equivalent queueing system without prediction. This result allows us to analytically demonstrate that predictive scheduling necessarily improves system delay performance and drives it to zero with increasing prediction power. It also enables us to exactly determine the required prediction power for different systems and study its impact on tail delay. We then propose the Predictive, Backpressure, (PBP) algorithm for achieving optimal utility performance in such predictive systems. PBP efficiently incorporates prediction into stochastic system control and avoids the great complication due to the exponential state space growth in the prediction window size. We show that PBP achieves a utility performance that is within O(ε) of the optimal, for any ε>0, while guaranteeing that the system delay distribution is a shifted-to-the-left version of that under the original Backpressure algorithm. Hence, the average delay under PBP is strictly better than that under Backpressure, and vanishes with increasing prediction window size. This implies that the resulting utility-delay tradeoff with predictive scheduling can beat the known optimal [O(ε), O(log(1/ε))] tradeoff for systems without prediction.},
+ acmid = {2632983},
+ address = {New York, NY, USA},
+ author = {Huang, Longbo and Zhang, Shaoquan and Chen, Minghua and Liu, Xin},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632983},
+ isbn = {978-1-4503-2620-9},
+ keyword = {control, lyapunov optimization, predictive scheduling, queueing theory},
+ link = {http://doi.acm.org/10.1145/2632951.2632983},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {33--42},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {When Backpressure Meets Predictive Scheduling},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:SRC:2632951.2632979,
+ abstract = {Photos obtained via crowdsourcing can be used in many critical applications. Due to the limitations of communication bandwidth, storage and processing capability, it is a challenge to transfer the huge amount of crowdsourced photos. To address this problem, we propose a framework, called SmartPhoto, to quantify the quality (utility) of crowdsourced photos based on the accessible geographical and geometrical information (called metadata) including the smartphone's orientation, position and all related parameters of the built-in camera. From the metadata, we can infer where and how the photo is taken, and then only transmit the most useful photos. Three optimization problems regarding the tradeoffs between photo utility and resource constraints, namely the Max-Utility problem, the online Max-Utility problem and the Min-Selection problem, are studied. Efficient algorithms are proposed and their performance bounds are theoretically proved. We have implemented SmartPhoto in a testbed using Android based smartphones, and proposed techniques to improve the accuracy of the collected metadata by reducing sensor reading errors and solving object occlusion issues. Results based on real implementations and extensive simulations demonstrate the effectiveness of the proposed algorithms.},
+ acmid = {2632979},
+ address = {New York, NY, USA},
+ author = {Wang, Yi and Hu, Wenjie and Wu, Yibo and Cao, Guohong},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632979},
+ isbn = {978-1-4503-2620-9},
+ keyword = {camera sensor, crowdsourcing, image sensing, photo sharing, smartphone},
+ link = {http://doi.acm.org/10.1145/2632951.2632979},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {113--122},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {SmartPhoto: A Resource-aware Crowdsourcing Approach for Image Sensing with Smartphones},
+ year = {2014}
+}
+
+
+@inproceedings{Tang:2014:LBM:2632951.2632982,
+ abstract = {We consider the problem of broadcasting a message in a mobile ad hoc network (MANET) with the objective of minimizing the broadcast latency. Due to the mobility of network nodes, the coordination among nodes is hard and expensive. Thus it is much desired to design efficient, one-sided broadcast protocols where each node acts according to its own state solely. Although random scheduling is a popular and effective one-sided approach for leveraging the broadcast nature of wireless medium while coping with transmission collisions, both critical for reducing the broadcast latency, in this paper, we show that when nodes move very fast, the performance of pure random scheduling must be sub-optimal, no matter how the forwarding probabilities are specified. Furthermore, we propose a novel one-sided broadcast protocol named R2, which first splits the message into a certain number of mini-messages and then couples a fine-grained random scheduling with random linear network coding for broadcasting the mini-messages. Theoretical analyses demonstrate that R$^2$ performs optimally in order sense, no matter how fast network nodes move around, although different mobility has distinct effect on the speed of message broadcast.},
+ acmid = {2632982},
+ address = {New York, NY, USA},
+ author = {Tang, Bin and Ye, Baoliu and Lu, Sanglu and Guo, Song and Stojmenovic, Ivan},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632982},
+ isbn = {978-1-4503-2620-9},
+ keyword = {broadcast, mobile ad hoc networks, random linear network coding, random scheduling},
+ link = {http://doi.acm.org/10.1145/2632951.2632982},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {317--326},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Latency-optimized Broadcast in Mobile Ad Hoc Networks Without Node Coordination},
+ year = {2014}
+}
+
+
+@inproceedings{Shi:2014:CCO:2632951.2632958,
+ abstract = {There is great potential for boosting the performance of mobile devices by offloading computation-intensive parts of mobile applications to the cloud. The full realization of this potential is hindered by a mismatch between how individual mobile devices demand computing resources and how cloud providers offer them: offloading requests from a mobile device usually require quick response, may be infrequent, and are subject to variable network connectivity, whereas cloud resources incur relatively long setup times, are leased for long time quanta, and are indifferent to network connectivity. In this paper, we present the design and implementation of the COSMOS system, which bridges this gap by providing computation offloading as a service to mobile devices. COSMOS efficiently manages cloud resources for offloading requests to both improve offloading performance seen by mobile devices and reduce the monetary cost per request to the provider. COSMOS also effectively allocates and schedules offloading requests to resolve the contention for cloud resources. Moreover, COSMOS makes offloading decisions in a risk-controlled manner to overcome the uncertainties caused by variable network connectivity and program execution. We have implemented COSMOS for Android and explored its design space through computation offloading experiments to Amazon EC2 across different applications and in various settings. We find that COSMOS, configured with the right design choices, has significant potential in reducing the cost of providing cloud resources to mobile devices while at the same time enabling mobile computation speedup.},
+ acmid = {2632958},
+ address = {New York, NY, USA},
+ author = {Shi, Cong and Habak, Karim and Pandurangan, Pranesh and Ammar, Mostafa and Naik, Mayur and Zegura, Ellen},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632958},
+ isbn = {978-1-4503-2620-9},
+ keyword = {computation offloading, intermittent connectivity, mobile devices, resource management},
+ link = {http://doi.acm.org/10.1145/2632951.2632958},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {287--296},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {COSMOS: Computation Offloading As a Service for Mobile Devices},
+ year = {2014}
+}
+
+
+@inproceedings{Huang:2014:JFJ:2632951.2632965,
+ abstract = {To address the problem of information spreading over lossy communication channels, this paper proposes a joint FoUntain coding and Network coding (FUN) approach. Different from the Transmission Control Protocol (TCP), our FUN approach is a mechanism of Forward Error Correction (FEC), which does not use retransmission for recovery of lost packets. The novelty of our FUN approach lies in combining the best features of fountain coding, intra-session network coding, and cross-next-hop network coding. As such, our FUN approach is capable of achieving unprecedented high throughput over lossy channels. Experimental results demonstrate that our FUN approach achieves higher throughput than the existing schemes for multihop wireless networks.},
+ acmid = {2632965},
+ address = {New York, NY, USA},
+ author = {Huang, Qiuyuan and Sun, Kairan and Li, Xin and Wu, Dapeng Oliver},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632965},
+ isbn = {978-1-4503-2620-9},
+ keyword = {erasure channel, fountain code, information spreading, loss tolerant, multihop, multiple sources, network coding},
+ link = {http://doi.acm.org/10.1145/2632951.2632965},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {83--92},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Just FUN: A Joint Fountain Coding and Network Coding Approach to Loss-tolerant Information Spreading},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:SSE:2632951.2632966,
+ abstract = {In-network data storage and retrieval are fundamental functions of sensor networks. Among many proposals, geographical hash table (GHT) is perhaps most appealing as it is very simple yet powerful with low communication cost, where the key is to correctly define the bounding box. It is envisioned that the skeleton has the power to facilitate computing a precise bounding box. In existing works, the focus has been on skeleton extraction algorithms targeting for 2D sensor networks, which usually delivers a 1-manifold skeleton consisting of 1D curves. It faces a set of non-trivial challenges when 3D sensor networks are considered, in order to properly extract the surface skeleton composed of a set of 2-manifolds and possibly 1D curves. In this paper, we study the problem of surface skeleton extraction in 3D sensor networks. We propose a scalable and distributed connectivity-based algorithm to extract the surface skeleton of 3D sensor networks. First, we propose a novel approach to identifying surface skeleton nodes by computing the \textit{extended feature nodes} such that it is robust against boundary noise, etc. We then find the maximal independent set of the identified skeleton nodes and triangulate them to form a compact representation of the 3D sensor network. Furthermore, to react to the dynamics of the sensor networks caused by node failure, insertion, etc., we design an efficient updating scheme to reconstruct the surface skeleton. Finally, we apply the extracted surface skeleton to facilitate the data storage protocol design. Extensive simulations show the robustness of the proposed algorithm to shape variation, node density, node distribution and communication radio model, and its effectiveness for data storage application with respect to load balancing.},
+ acmid = {2632966},
+ address = {New York, NY, USA},
+ author = {Liu, Wenping and Yang, Yang and Jiang, Hongbo and Liao, Xiaofei and Liu, Jiangchuan and Li, Bo},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632966},
+ isbn = {978-1-4503-2620-9},
+ keyword = {3d sensor networks, data storage, surface skeleton},
+ link = {http://doi.acm.org/10.1145/2632951.2632966},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {337--346},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Surface Skeleton Extraction and Its Application for Data Storage in 3D Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Wattenhofer:2014:AHN:2632951.2633210,
+ abstract = {Researchers in ad hoc networks are used to study some of the prevalent technical difficulties in networking: Without a fixed infrastructure, challenges such as mobility or wireless communication must be investigated in their purest form. As a consequence one learns a great deal about the fundamentals of networking. In my talk I will present a few exciting research questions that I learned when studying ad hoc networks: I will discuss how mobility leads to distributed complexity, why clock synchronization is unexpectedly difficult, and what difference it makes to assume a more accurate wireless model. Along my talk I will present several open questions.},
+ acmid = {2633210},
+ address = {New York, NY, USA},
+ author = {Wattenhofer, Roger},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2633210},
+ isbn = {978-1-4503-2620-9},
+ keyword = {clock synchronization, distributed complexity, mobile networks, signal-to-interference-plus-noise-ratio, wireless communication},
+ link = {http://doi.acm.org/10.1145/2632951.2633210},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {245--246},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Ad Hoc Networks: Pushing Mobile and Wireless Communication Since 1970},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:RAR:2632951.2632962,
+ abstract = {In large scale wireless sensor networks, retransmission strategies are widely adopted to guarantee the reliability of multi-hop forwarding. However, keeping retransmission over a bursty link may fail consecutively. Moreover, the retransmission will also be useless over those back-up links which are spatial correlated with the failed link. Thus, it is necessary to design an unified retransmission strategy, which considers both temporal and spacial link properties, to further improve network reliability and efficiency. In this paper, we propose RxLayer, a practical and general supporting layer of data retransmission. Without inducing noticeable overhead, RxLayer captures the temporal and spatial link properties by conditional probability models. A sender will retransmit data over the candidate link with the highest delivery probability while failures occur. RxLayer can be transparently integrated with most of the existing forwarding protocols. We implement RxLayer and evaluate it on both indoor and outdoor testbeds. The results show that RxLayer improves networks reliability and energy efficiency in various scenarios. The network reliability is improved by up to 7.82%, and the total number of transmissions is reduced by up to 36.3%.},
+ acmid = {2632962},
+ address = {New York, NY, USA},
+ author = {Liu, Daibo and Cao, Zhichao and Wang, Jiliang and Hou, Mengshu and Li, Yujun},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632962},
+ isbn = {978-1-4503-2620-9},
+ keyword = {bursty link, link correlation, retransmission strategy, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632962},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {377--386},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {RxLayer: Adaptive Retransmission Layer for Low Power Wireless},
+ year = {2014}
+}
+
+
+@inproceedings{Ahmed:2014:PBI:2632951.2635933,
+ abstract = {In data management protocols for Ad-hoc Social Networks (ASNETs), involvement of selfish users can pose a serious threat to network performance and fairness. Therefore, it is essential to detect and mitigate their effects on other well behaving users. We contribute to this line of research by combining the benefits of users' social behavior (social tie) with a biologically inspired approach in ASNETs. We designed a bio-inspired scheme (BoDMaS) to detect and mitigate selfish users in replication operations. Its goals include providing greater accessibility and effective detection of selfish users. The proposed scheme not only guarantees accessibility and effective detection rate, but also ensures the reliability of replica allocation operations.},
+ acmid = {2635933},
+ address = {New York, NY, USA},
+ author = {Ahmed, Ahmedin Mohammed and Xia, Feng and Yang, Qiuyuan and Liaqat, Hannan Bin and Chen, Zhikui and Qiu, Tie},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635933},
+ isbn = {978-1-4503-2620-9},
+ keyword = {ad-hoc social networks, replication, selfishness},
+ link = {http://doi.acm.org/10.1145/2632951.2635933},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {421--422},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Bacteria Inspired Mitigation of Selfish Users in Ad-hoc Social Networks},
+ year = {2014}
+}
+
+
+@inproceedings{He:2014:MIN:2632951.2632975,
+ abstract = {Social networks are important mediums for communication,information dissemination, and influence spreading. Most of existing works focus on understanding the characteristics of social networks or spreading information through the 'word of mouth' effect of social networks. However, motivated by applications of alleviating social problems, such as drinking, smoking, addicting to gaming, and influence spreading problems, such as promoting new products, we propose a new optimization problem named the Minimum-sized Influential Node Set (MINS) selection problem, which is to identify the minimum-sized set of influential nodes, such that every node in the network could be influenced by these selected nodes no less than a threshold. Our contributions are threefold. First, we prove that, under the independent cascade model, MINS is NP-hard. Subsequently, we present a greedy approximation algorithm to address the MINS selection problem. Moreover, the performance ratio of the greedy algorithm is analyzed. Finally, to validate the proposed greedy algorithm, extensive experiments and simulations are conducted both on real world coauthor data sets and random graphs.},
+ acmid = {2632975},
+ address = {New York, NY, USA},
+ author = {He, Jing (Selena) and Ji, Shouling and Beyah, Raheem and Cai, Zhipeng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632975},
+ isbn = {978-1-4503-2620-9},
+ keyword = {greedy algorithm, influence spreading, minimum-sized influential node set, nphard problem, performance ratio, social networks, viral marketing},
+ link = {http://doi.acm.org/10.1145/2632951.2632975},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {93--102},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Minimum-sized Influential Node Set Selection for Social Networks Under the Independent Cascade Model},
+ year = {2014}
+}
+
+
+@inproceedings{Goswami:2014:LBS:2632951.2632987,
+ abstract = {Load balanced routing in a network, i.e., minimizing the maximum traffic load any node carries for unsplittable flows, is a well known NP-hard problem. Finding practical algorithms remains a long standing challenge. In this paper we propose greedy routing using virtual coordinates that achieves both small path stretch ratio (compared to shortest path) and small load balancing ratio (compared to optimal load balanced routing), in a large scale wireless sensor network deployed densely inside a geometric domain with complex shape. We first provide a greedy routing scheme on a disk with a stretch ratio of at most 2, and under which the maximum load is a factor 4√2 smaller than the maximum load under shortest path routing. This is the first simple routing scheme with a small stretch that has been proven to outperform shortest path routing in terms of load balancing. Then we transform a network of arbitrary shape to a disk by an area preserving map φ. We show that both the path length and the maximum traffic load in the original network only increases by an additional factor of d2, where d is the maximum length stretch of φ. Combined with the result on a disk we again achieve both bounded stretch and bounded load balancing ratio. Our simulation results evaluated the practical performance on both quality measures.},
+ acmid = {2632987},
+ address = {New York, NY, USA},
+ author = {Goswami, Mayank and Ni, Chien-Chun and Ban, Xiaomeng and Gao, Jie and Gu, Xianfeng David and Pingali, Vamsi},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632987},
+ isbn = {978-1-4503-2620-9},
+ keyword = {area-preserving maps, conformal mapping, load balancing, sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632987},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {63--72},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Load Balanced Short Path Routing in Large-scale Wireless Networks Using Area-preserving Maps},
+ year = {2014}
+}
+
+
+@inproceedings{Gu:2014:FDA:2632951.2632981,
+ abstract = {Rendezvous process is the cornerstone to construct Cognitive Radio Networks (CRNs), through which a secondary user can establish a link for communication with its neighbor on a common channel. Although many blind rendezvous algorithms have been proposed which do not rely on a central controller or a common control channel, all of these works still rely on the global parameters such as the number of licensed channels N and the number of users. This paper aims to design fully distributed blind rendezvous algorithms only based on each user's local information. We first give the Synchronous Check & Hop (SCH) algorithm for two synchronous users where they start the rendezvous process at the same time. The SCH algorithm guarantees rendezvous in O(min{ka,kb} N) time slots where ka,kb are the corresponding number of sensed channels of these two users. Our main contribution is a fully distributed algorithm called Conversion Based Hopping (CBH), where each user only uses its identifier (ID) and its number of sensed channels. CBH guarantees rendezvous between two asynchronous users in O((max{ka,kb})2) time slots. To our knowledge, this is the first result with rendezvous time independent of the global parameter N. We also derive a lower bound of rendezvous time between two users as Ω((ka-kg)(kb-kg)) where k_g is the number of their common channels. All of our results also apply to a more general blind rendezvous problem which we call Oblivious Blind Rendezvous where each user is free to assign their local labels to the sensed channels. Extensive simulation results compared with the state-of-the-art rendezvous algorithms corroborate our theoretical analyses.},
+ acmid = {2632981},
+ address = {New York, NY, USA},
+ author = {Gu, Zhaoquan and Hua, Qiang-Sheng and Dai, Weiguo},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632981},
+ isbn = {978-1-4503-2620-9},
+ keyword = {blind rendezvous, cognitive radio networks, distributed algorithm},
+ link = {http://doi.acm.org/10.1145/2632951.2632981},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {155--164},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Fully Distributed Algorithms for Blind Rendezvous in Cognitive Radio Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Ye:2014:MAM:2632951.2632986,
+ abstract = {Localization in mobile networks is of paramount importance to a variety of pervasive applications. Due to the limitations of GPS, such as high deployment cost, many researchers have devised a variety of different localization schemes based on the measurements of connectivity or distance between neighboring nodes. The existing schemes suffer seriously from either low localization precision or overlong computation time. In this paper, we present a novel localization scheme based on matrix completion, MALL, that utilizes the collected connectivity and distance information to achieve high-precision localization. Since MALL only involves convex optimization and low-complexity non-convex optimization, it can localize mobile nodes at a fast pace. Furthermore, MALL leads to low communication cost. Through intensive simulation and testbed experiments, we found that MALL outperforms the state-of-the-art localization schemes. An in-depth analysis of the time complexity and communication cost of MALL is also included in this paper.},
+ acmid = {2632986},
+ address = {New York, NY, USA},
+ author = {Ye, Qiang and Cheng, Jie and Du, Hongwei and Jia, Xiaohua and Zhang, Jing},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632986},
+ isbn = {978-1-4503-2620-9},
+ keyword = {decentralized schemes, localization, matrix completion, mobile networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632986},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {327--336},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {A Matrix-completion Approach to Mobile Network Localization},
+ year = {2014}
+}
+
+
+@inproceedings{Barto:2014:DRO:2632951.2636056,
+ abstract = {This work addresses the challenge in providing reliable communication in mobile networks with intermittent, on/off links through the use of a routing overlay designed to deal with these channel impairments. Link blockage is a predominant feature of mobile networks operating at 10+ GHz frequencies, and current techniques are ill-suited to address this problem. We present an approach comprised of multiple-path routing with end-to-end coding, queue-length-based congestion control, and a negative acknowledgement (NACK) loss-recovery scheme; these are implemented in an IP-overlay. The demonstrated scenario consists of two clusters of mobile ground vehicles operating in an ``urban canyon'' environment. Blockage occurs on satellite links connecting the clusters. Through the use of interactive displays, demo participants gain an understanding of routing behavior.},
+ acmid = {2636056},
+ address = {New York, NY, USA},
+ author = {Barto, William C. and Brennen, Andrea and Herrera, Laura and Jones, Nathaniel M. and Pudlewski, Scott and Shrader, Brooke and Worthen, Andrew P.},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636056},
+ isbn = {978-1-4503-2620-9},
+ keyword = {blockage channel, multipath routing, overlay, queue-based congestion control, reliability},
+ link = {http://doi.acm.org/10.1145/2632951.2636056},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {409--410},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: Routing Overlay for Reliable Communication in Networks with Blockage},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:BPS:2632951.2632952,
+ abstract = {Consider a wireless network in which selfish users compete with each other for usage of spectrum. We view this competition as a spatial spectrum access game. There are two fundamental questions regarding this game: how to converge to the optimal Nash equilibrium, and how to converge fast. To answer these two questions, we apply a technique called Belief Propagation to design algorithms for users in this game, which can guarantee fast convergence to an optimal or nearly optimal pure strategy Nash equilibrium. Specifically, when the interference graph is an undirected tree or a directed acyclic graph, our algorithms can find the optimal Nash equilibrium in linear time. For general undirected interference graph, our algorithm converges fast as long as the game is potential (which is the case for many typical scenarios). For some other typical spatial spectrum access games, our algorithms can provide a good approximation to the optimal Nash equilibrium.},
+ acmid = {2632952},
+ address = {New York, NY, USA},
+ author = {Wang, Yi-Kai and Yin, Yitong and Zhong, Sheng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632952},
+ isbn = {978-1-4503-2620-9},
+ keyword = {belief propagation, distributed algorithm, game theory, wireless network},
+ link = {http://doi.acm.org/10.1145/2632951.2632952},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {225--234},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Belief Propagation for Spatial Spectrum Access Games},
+ year = {2014}
+}
+
+
+@inproceedings{Hu:2014:QTO:2632951.2632954,
+ abstract = {In cellular networks, due to practical deployment issues, some areas have good wireless coverage while others may not. This results in significant throughput (service quality) difference between wireless carriers at some locations. Through extensive measurements, we have validated the existence of such service quality difference. Then, through peer to peer interfaces such as WiFi direct, a mobile device (node) with low service quality can offload its data traffic to nodes with better service quality, to save energy and reduce delay. To achieve this goal, we propose a Quality-Aware Traffic Offloading (QATO) framework to offload network tasks to neighboring nodes with better service quality. QATO can identify neighbors with better service quality and provide incentive mechanisms to motivate nodes to help each other. To validate our design, we have implemented QATO on Android platform and have developed a web browser and a photo uploader on top of it. Experimental results show that QATO can significantly reduce energy and delay for both data downloading and uploading. Through trace-driven simulations, we also show that all users can benefit from data offloading in the long run.},
+ acmid = {2632954},
+ address = {New York, NY, USA},
+ author = {Hu, Wenjie and Cao, Guohong},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632954},
+ isbn = {978-1-4503-2620-9},
+ keyword = {cellular networks, data offloading, energy saving, smartphone},
+ link = {http://doi.acm.org/10.1145/2632951.2632954},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {277--286},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Quality-aware Traffic Offloading in Wireless Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Dai:2014:DRS:2632951.2636059,
+ abstract = {Inspired by the spectrum database in the white spaces, we propose a recommendation whose function is similar to that of the spectrum database. We aim at predicting the spectrum availabilities and recommending the part that is more likely to be available for the usage of SUs. The prediction on the spectrum availabilities is through running the spectrum mining algorithm on the collected spectrum data. Therefore, the two main components for our demo are the data collection and spectrum mining. After the mining process is finished, our system would give the predictions and recommendations on the spectrum that is more likely to be available.},
+ acmid = {2636059},
+ address = {New York, NY, USA},
+ author = {Dai, Ying and Daniels, Andrew and Wu, Jie},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636059},
+ isbn = {978-1-4503-2620-9},
+ keyword = {USRP/GNUradio, cognitive radio networks, recommendation-based},
+ link = {http://doi.acm.org/10.1145/2632951.2636059},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {415--416},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: Recommendation System for Dynamic Spectrum Access Through Spectrum Mining and Prediction},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:PCR:2632951.2635941,
+ abstract = {Existing algorithms for topology extraction focus on only one topology feature, either skeleton or segmentation, in 2D or 3D sensor networks, most of which requiring complete boundary information. As boundary information is not easily obtained, especially in sparse 3D sensor networks, and extracting these two features separately is very expensive, in this study, we propose to simultaneously extract the line-like skeleton of 2D/3D sensor networks and decompose the network into nice pieces, by constructing the Reeb graph. The Reeb graph has been envisioned as a powerful tool for encoding the topology of an object in computer graphics and computational geometry, where the key is to select the right feature function f. Without using boundary information, we first construct a cut graph, and then regard the distance of a node to the nearest cut as the function f such that the corresponding Reeb graph is pose independent, based on which the skeleton extraction and network decomposition are simultaneously conducted. Some simulation results are presented to show the efficiency of the algorithm.},
+ acmid = {2635941},
+ address = {New York, NY, USA},
+ author = {Liu, Wenping and Lin, Zhifeng and Jiang, Hongbo},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635941},
+ isbn = {978-1-4503-2620-9},
+ keyword = {3D sensor networks, reeb graph, segmentation, skeleton},
+ link = {http://doi.acm.org/10.1145/2632951.2635941},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {431--432},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: The Construction of Reeb Graph and Its Applications in 3D Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Jin:2014:PEC:2632951.2635936,
+ abstract = {In this paper, we propose a novel clock calibration approach, which addresses two key challenges for clock calibration in Wireless Sensor Networks: excessive communication overhead and the trade-off between accuracy and cost. To achieve this, our approach leverages the fact that the clock skew is highly correlated to temperature, which can serve as both an assistant for clock skew estimation and a regulatory factor for the duty-cycled design. Our approach is one order of magnitude more power-efficient than communication based approaches since the calibration largely relies on local temperature information. In addition, our approach provides a nice feature of self-adaptive period, which can substantially promote the system flexibility. We present the theory behind our approach, and provide preliminary results of a simulated comparison of our approach and some recent approaches.},
+ acmid = {2635936},
+ address = {New York, NY, USA},
+ author = {Jin, Meng and Fang, Dingyi and Chen, Xiaojiang and Yang, Zhe and Liu, Chen and Xu, Dan and Yin, Xiaoyan},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635936},
+ isbn = {978-1-4503-2620-9},
+ keyword = {clock calibration, environment adaptive, wsns},
+ link = {http://doi.acm.org/10.1145/2632951.2635936},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {425--426},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Environment-adaptive Clock Calibration for Wireless Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Liaqat:2014:PRT:2632951.2635939,
+ abstract = {Reliable social connectivity and transmission of data for popular nodes are vital in multihop Ad-hoc Social Networks (ASNETs). However, congestion may occur and hence popular nodes might not achieve required bandwidth when multiple senders share data with a single receiver. The traditional Transport Control Protocol (TCP) might not be able to perform efficiently in ASNETs. Therefore, we propose a Reliable TCP for Popular Data in Socially-aware Ad-hoc Networks called RTPS. RTPS employs a popularity level approach for every single node which partitions the bandwidth among users. The reliability of popular data is ensured since bandwidth will firstly assigned to the popular sender. Preliminary results show that by delaying the acknowledgment and improving the performance of TCP, RTPS reduces collision loss in multihop ASNETs.},
+ acmid = {2635939},
+ address = {New York, NY, USA},
+ author = {Liaqat, Hannan Bin and Xia, Feng and Yang, Qiuyuan and Liu, Li and Chen, Zhikui and Qiu, Tie},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635939},
+ isbn = {978-1-4503-2620-9},
+ keyword = {TCP, ad-hoc social networks, congestion},
+ link = {http://doi.acm.org/10.1145/2632951.2635939},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {429--430},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Reliable TCP for Popular Data in Socially-aware Ad-hoc Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Maggi:2014:DDG:2632951.2636058,
+ abstract = {We consider a Dial-a-ride scenario in which one on-demand bus has to find an efficient route to serve different users willing to reach different destinations. We implemented in MATLAB a shortest path algorithm that minimizes a linear combination of an environmental cost and of the total waiting plus travel time experienced by the travellers. We demonstrate the outcome of the algorithm on the map of Dublin with the software SUMO.},
+ acmid = {2636058},
+ address = {New York, NY, USA},
+ author = {Maggi, Lorenzo and Faizrahnemoon, Mahsa},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636058},
+ isbn = {978-1-4503-2620-9},
+ keyword = {bus on demand, green algorithm, minimum travel time},
+ link = {http://doi.acm.org/10.1145/2632951.2636058},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {413--414},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: Dial-a-Ride: A Green Shortest Path Algorithm},
+ year = {2014}
+}
+
+
+@inproceedings{Xia:2014:PCC:2632951.2635940,
+ abstract = {To address selfishness in socially-aware networking, we propose a Community-based Incentive Scheme (CIS). CIS utilizes community to stimulate cooperation among selfish nodes and allows all nodes to behave selfishly to imitate the realistic condition. The simulation results show that CIS effectively stimulates selfish nodes to cooperate, achieves higher delivery ratio while not increasing latency dramatically.},
+ acmid = {2635940},
+ address = {New York, NY, USA},
+ author = {Xia, Feng and Yang, Qiuyuan and Liu, Li and Qiu, Tie and Chen, Zhikui and Li, Jie},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635940},
+ isbn = {978-1-4503-2620-9},
+ keyword = {data forwarding, incentive scheme, selfishness, socially-aware networking},
+ link = {http://doi.acm.org/10.1145/2632951.2635940},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {437--438},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: CIS: A Community-based Incentive Scheme for Socially-aware Networking},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:GFR:2632951.2632988,
+ abstract = {In cognitive radio (CR) networks, a pair of CR nodes have to ``rendezvous'' on a common channel for link establishment. Channel hopping (CH) protocols have been proposed for creating rendezvous over multiple channels to reduce the possibility of rendezvous failures caused by the detection of primary user signals. Rendezvous within a minimal bounded time over multiple channels is a challenging problem in heterogeneous CR networks where two CR nodes may have asynchronous clocks, different sensing capabilities, no common universal channel set, and heterogeneous channel index systems. In this paper, we present a systematic approach using group theory for designing CH protocols that guarantee the maximum number of rendezvous channels and the minimal time-to-rendezvous (TTR) in heterogeneous environments. We derive the minimum upper bound of TTR, and propose two types of rendezvous protocols that are independent of environmental heterogeneity. Analytical and simulation results show that these protocols are resistant to rendezvous failures under various network conditions.},
+ acmid = {2632988},
+ address = {New York, NY, USA},
+ author = {Chen, Lin and Bian, Kaigui and Chen, Lin and Liu, Cong and Park, Jung-Min Jerry and Li, Xiaoming},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632988},
+ isbn = {978-1-4503-2620-9},
+ keyword = {cognitive radio, heterogeneous, rendezvous},
+ link = {http://doi.acm.org/10.1145/2632951.2632988},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {165--174},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {A Group-theoretic Framework for Rendezvous in Heterogeneous Cognitive Radio Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Karaliopoulos:2014:BRI:2632951.2632955,
+ abstract = {The search for parking space in busy urban districts is one of those routine human activities that can benefit from the widespread adoption of pervasive sensing and radio communication technologies. Proposed parking assistance solutions combine sensors, either as fixed infrastructure or onboard vehicles, wireless networking technologies and mobile social applications running over smartphones to collect, share and present to drivers real-time information about parking availability and demand. One question that arises is how does (and should) the driver actually use such information to take parking decisions, e.g., whether to search for on-street parking space or drive to a parking lot and, in the latter case, which one. The paper is, hence, a performance analysis study that seeks to capture the highly behavioral and heuristic dimension of drivers' decisions and its impact on the efficiency of the parking search process. To this end we model drivers as agents of bounded rationality and consider lexicographic heuristics, an instance of the fast and frugal heuristics developed in behavioral sciences such as psychology and biology, as the mechanisms for their decisions. We analyze the performance of the search process under these heuristics and compare it against the predictions of normative game-theoretic models assuming fully rational strategically acting agents. We derive conditions under which the simpler heuristic decision-making rules outperform the complex norms and show their satisfaction under a broad range of scenarios concerning the fees charged for the parking resources and their distances from drivers' destinations. The practical implications of these results for parking assistance solutions are identified and thoroughly discussed.},
+ acmid = {2632955},
+ address = {New York, NY, USA},
+ author = {Karaliopoulos, Merkourios and Katsikopoulos, Konstantinos and Lambrinos, Lambros},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632955},
+ isbn = {978-1-4503-2620-9},
+ keyword = {bounded rationality, cognitive decision heuristics, game-theory, parking, vehicular networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632955},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {195--204},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Bounded Rationality Can Increase Parking Search Efficiency},
+ year = {2014}
+}
+
+
+@proceedings{Shen:2015:2746285,
+ abstract = {On behalf of the Technical Program Committee, we would like to welcome you to ACM MobiHoc 2015 in Hangzhou, China. ACM MobiHoc is the premier international symposium dedicated to addressing challenges emerging from wireless networking and computing. The highly selective technical program has traditionally brought together a unique blend of researchers and practitioners, thereby influencing the direction of a wide range of wireless networking research areas. We hope that you will find the conference intellectually stimulating. We are delighted to report that this year's program continues the tradition of excellence set by this conference over the years. We received 250 submissions, which has made it extremely challenging to select only 37 papers for presentation and inclusion in the proceedings. At such a selective acceptance rate (14.8%) many of the papers that we could not accept are of high quality and we are certain that many of them will appear in the near future at other top-tier conferences. The paper selection process was handled by the Technical Program Committee (TPC). The TPC included 65 excellent members with expertise spanning all the major areas relevant to the conference scope. In particular, the TPC was composed of members from 16 countries and included 11 members from research labs and industry. The 250 submitted papers went through a first phase of reviews followed by a very active online discussion phase. Then, several papers went through a second review phase. The reviews were provided by the TPC members and, when needed, a few reviews were provided by external expert reviewers. At the end of this process and based on the results of the online discussion, 12 papers were accepted and 46 papers were further discussed at the TPC meeting that was held on Feb. 28, 2015 at Columbia University in New York. Following the discussions at the meeting, 25 additional papers were accepted. Ten of the accepted papers were assigned shepherds who volunteered to assist the authors during the process of preparing the final version. The work of the TPC was outstanding and we thank all the members for the time and efforts they dedicated to the paper selection process and to attending the meeting. These efforts make this wonderful conference possible. We are pleased with the strong technical program of the conference, represented by the papers in these proceedings. The conference program covers a wide range of topics, including routing, scheduling, algorithms, performance evaluation, dynamic spectrum access, cellular networks, sensor networks, mobile applications and crowdsensing, security, and wireless systems. This year's program is preceded by a set of seven workshops. It continues the tradition of having keynote talks from outstanding leaders in the field, and it includes a poster/demo session. The keynote speakers are Prof. Ness B. Shroff, the Ohio Eminent Scholar in Networking and Communications at The Ohio State University, Prof. Wen Gao, Vice President of the NSF of China, and Prof. Andrea Goldsmith, the Stephen Harris Professor in the School of Engineering, Professor of Electrical Engineering at Stanford University.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3489-1},
+ location = {Hangzhou, China},
+ note = {533155},
+ publisher = {ACM},
+ title = {MobiHoc '15: Proceedings of the 16th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2015}
+}
+
+
+@inproceedings{Zheng:2014:UCA:2632951.2632964,
+ abstract = {With the growing deployment of wireless communication technologies, radio spectrum is becoming a scarce resource. Auctions are believed to be among the most effective tools to solve or relieve the problem of radio spectrum shortage. However, designing a practical spectrum auction mechanism has to consider five major challenges: strategic behaviors of unknown users, channel heterogeneity, preference diversity, channel spatial reusability, and social welfare maximization. Unfortunately, none of existing work fully considered these five challenges. In this paper, we model the problem of heterogeneous spectrum allocation as a combinatorial auction, and propose AEGIS, which is the first framework of unknown combinatorial auction mechanisms for heterogeneous spectrum redistribution. AEGIS contains two mechanisms, namely AEGIS-SG and AEGIS-MP. AEGIS-SG is a direct revelation combinatorial spectrum auction mechanism for unknown single-minded users, achieving strategy-proofness and approximately efficient social welfare. We further design an iterative ascending combinatorial auction, namely AEGIS-MP, to adapt to the scenario with unknown multi-minded users. AEGIS-MP is implemented in a set of undominated strategies and has a good approximation ratio. We evaluate AEGIS on two practical datasets: Google Spectrum Database and GoogleWiFi. Evaluation results show that AEGIS achieves much better performance than the state-of-the-art mechanisms.},
+ acmid = {2632964},
+ address = {New York, NY, USA},
+ author = {Zheng, Zhenzhe and Wu, Fan and Tang, Shaojie and Chen, Guihai},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632964},
+ isbn = {978-1-4503-2620-9},
+ keyword = {channel allocation, combinatorial auction},
+ link = {http://doi.acm.org/10.1145/2632951.2632964},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {3--12},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Unknown Combinatorial Auction Mechanisms for Heterogeneous Spectrum Redistribution},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:HMN:2632951.2632972,
+ abstract = {Neighbor discovery is of paramount importance in mobile sensing applications that rely heavily on data timely collected and shared among nearby users. Guaranteed discovery with bounded latency and supporting heterogenous duty cycles to provide fine-grained control of energy conservation levels are among the most crucial requirements in the design of efficient neighbor discovery protocols. While simultaneously satisfying these two requirements is non-trivial, the situation is exacerbated if the operating frequencies of mobile devices span multiple channels and discovery occurs only if nodes switch to the same channel. In this paper, we formulate this problem as heterogeneous multi-channel neighbor discovery problem and establish a theoretical framework of the problem, under which we derive the performance bound of any neighbor discovery protocol. Based on the theoretical results, we then develop Mc-Dis (Multi-channel Discovery), a novel multi-channel discovery protocol that (1) achieves guaranteed discovery with order-minimal worst-case discovery delay and (2) supports almost all duty cycles to provide fine-grained control of energy conservation levels.},
+ acmid = {2632972},
+ address = {New York, NY, USA},
+ author = {Chen, Lin and Bian, Kaigui and Zheng, Meng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632972},
+ isbn = {978-1-4503-2620-9},
+ keyword = {energy efficiency, multi-channel, neighbor discovery, wireless networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632972},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {307--316},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Heterogeneous Multi-channel Neighbor Discovery Formobile Sensing Applications: Theoretical Foundationand Protocol Design},
+ year = {2014}
+}
+
+
+@inproceedings{Xia:2014:TWS:2632951.2632977,
+ abstract = {We propose a distributed and deterministic routing algorithm with constant storage, communication and computation overhead, dubbed trace-routing, for strong-connected 3D wireless sensor networks. Its basic idea is to construct a virtual cutting plane that intersects boundary surface to yield a trace, along which a routing path with guaranteed delivery can be established. We prove the correctness of trace-routing under both continuous and discrete settings. We implement the trace-routing algorithm on Crossbow sensors and carry out extensive simulations to evaluate its routing efficiency.},
+ acmid = {2632977},
+ address = {New York, NY, USA},
+ author = {Xia, Su and Wu, Hongyi and Jin, Miao},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632977},
+ isbn = {978-1-4503-2620-9},
+ keyword = {3D, routing, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632977},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {357--366},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Trace-routing in 3D Wireless Sensor Networks: A Deterministic Approach with Constant Overhead},
+ year = {2014}
+}
+
+
+@inproceedings{Wan:2014:CMW:2632951.2632989,
+ abstract = {Multiple-input multiple-output (MIMO) technology provides a means of boosting network capacity without requiring additional spectrum. It has received widespread attention over the past decade from both industry and academic researchers, now forming a key component of nearly all emerging wireless standards. Despite the huge promise and considerable attention, a rigorous algorithm-theoretic framework for maximizing network capacity in multihop wireless MIMO\ networks is missing in the state of the art. The existing algorithms and protocols for maximizing network capacity in multihop wireless MIMO networks are purely heuristic without any provable performance guarantees. In this paper we conduct a comprehensive algorithm study for maximizing network capacity in multihop wireless MIMO networks with receiver-side interference suppression, including the full characterization of NP-hardness and APX-hardness, the polynomial time approximation schemes, and the practical approximation algorithms with provable performance guarantees.},
+ acmid = {2632989},
+ address = {New York, NY, USA},
+ author = {Wan, Peng-Jun and Xu, Boliu and Frieder, Ophir and Ji, Sai and Wang, Baowei and Xu, Xiaohua},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632989},
+ isbn = {978-1-4503-2620-9},
+ keyword = {capacity, multiple-input multiple-output, stream scheduling},
+ link = {http://doi.acm.org/10.1145/2632951.2632989},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {145--154},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Capacity Maximization in Wireless MIMO Networks with Receiver-side Interference Suppression},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:MDD:2632951.2632973,
+ abstract = {In this paper, we model the data dissemination in online social networks (OSNs) and study the scaling laws of traffic load. We propose a three-layered system model to formulate data dissemination sessions for social applications in OSNs. The layered model consists of the physical network layer, social relationship layer, and application session layer. By analyzing mutual relevances among these three layers, we investigate the geographical distribution feature of dissemination sessions in OSNs. Based on this, we derive the traffic load of OSNs under a realistic assumption that every source sustains a data generating rate of constant order. To the best of our knowledge, this is the first work to address the issue of traffic load scaling for OSNs by modeling the social data dissemination from a layered perspective.},
+ acmid = {2632973},
+ address = {New York, NY, USA},
+ author = {Wang, Cheng and Tang, Shaojie and Yang, Lei and Guo, Yi and Li, Fan and Jiang, Changjun},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632973},
+ isbn = {978-1-4503-2620-9},
+ keyword = {data dissemination, online social networks, scaling laws, traffic load},
+ link = {http://doi.acm.org/10.1145/2632951.2632973},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {53--62},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Modeling Data Dissemination in Online Social Networks: A Geographical Perspective on Bounding Network Traffic Load},
+ year = {2014}
+}
+
+
+@inproceedings{Wu:2014:CSM:2632951.2632969,
+ abstract = {Compressive Sensing (CS) has been recognized as a promising technique to reduce and balance the transmission cost in wireless sensor networks (WSNs). Existing efforts mainly focus on applying CS to reliable WSNs, namely, each wireless link is 100% reliable. However, our experimental results show that traditional compressive data gathering (CDG) could result in arbitrarily bad recovery performance, when the wireless links are lossy. In this paper, we study the impact of packet loss on compressive data gathering and ways to improve its robustness using sparsest random scheduling (SRS). The key idea of our scheme is to treat each sampling value as one CS measurement, which helps us to reduce the impact of packet loss on the recovery accuracy. Our scheme also outperforms the tradition CDG in reliable WSNs in that our scheme has significantly lowered transmission cost. To achieve this, we present a sparsest measurement matrix where each row has only one nonzero element. More importantly, we propose a representation basis to sparsify the gathering data, and prove that our measurement matrix satisfies the restricted isometric property (RIP) with high probability. Extensive experimental results show our scheme can recover the data accurately with packet loss ratio up to $15\%$, while traditional CDG can hardly recover the data under similar or even better conditions.},
+ acmid = {2632969},
+ address = {New York, NY, USA},
+ author = {Wu, Xuangou and Yang, Panlong and Jung, Taeho and Xiong, Yan and Zheng, Xiao},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632969},
+ isbn = {978-1-4503-2620-9},
+ keyword = {compressive sensing, data gathering, restricted isometry property, sparsest random scheduling},
+ link = {http://doi.acm.org/10.1145/2632951.2632969},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {13--22},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Compressive Sensing Meets Unreliable Link: Sparsest Random Scheduling for Compressive Data Gathering in Lossy WSNs},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:PEM:2632951.2635943,
+ abstract = {The prevalence of mobile devices has attracted research on mobile content delivery techniques. The MobilityFirst(MF) project, discussed in this paper, proposes a clean-slate Internet architecture that enables mobile content-oriented operations at the network level. We describe the design details of the architecture in realizing this and provides a preliminary evaluation on scalability and performance.},
+ acmid = {2635943},
+ address = {New York, NY, USA},
+ author = {Zhang, Feixiong and Hu, Yi and Zhang, Yanyong and Raychaudhuri, Dipankar},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635943},
+ isbn = {978-1-4503-2620-9},
+ keyword = {content-oriented networking, mobile content, mobilityfirst},
+ link = {http://doi.acm.org/10.1145/2632951.2635943},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {441--442},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Enabling Mobile Content-oriented Networking in the Mobilityfirst Future Internet Architecture},
+ year = {2014}
+}
+
+
+@inproceedings{He:2014:EES:2632951.2632970,
+ abstract = {Different from energy harvesting which generates dynamic energy supplies, the mobile charger is able to provide stable and reliable energy supply for sensor nodes, and thus enables sustainable system operations. While previous mobile charging protocols either focus on the charger travel distance or the charging delay of sensor nodes, in this work we propose a novel Energy Synchronized Charging (ESync) protocol, which simultaneously reduces both of them. Observing the limitation of the Traveling Salesman Problem (TSP)-based solutions when nodes energy consumptions are diverse, we construct a set of nested TSP tours based on their energy consumptions, and only nodes with low remaining energy are involved in each charging round. Furthermore, we propose the concept of energy synchronization to synchronize the charging re- quests sequence of nodes with their sequence on the TSP tours. Experiment and simulation demonstrate ESync can reduce charger travel distance and nodes charging delay by about 30% and 40% respectively.},
+ acmid = {2632970},
+ address = {New York, NY, USA},
+ author = {He, Liang and Fu, Lingkun and Zheng, Likun and Gu, Yu and Cheng, Peng and Chen, Jiming and Pan, Jianping},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632970},
+ isbn = {978-1-4503-2620-9},
+ keyword = {energy synchronization, mobile charging, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632970},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {247--256},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {ESync: An Energy Synchronized Charging Protocol for Rechargeable Wireless Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Marasevic:2014:MFR:2632951.2632960,
+ abstract = {This paper considers max-min fair rate allocation and routing in energy harvesting networks where fairness is required among both the nodes and the time slots. Unlike most previous work on fairness, we focus on multihop topologies and consider different routing methods. We assume a predictable energy profile and focus on the design of efficient and optimal algorithms that can serve as benchmarks for distributed and approximate algorithms. We first develop an algorithm that obtains a max-min fair rate assignment for any given (time-variable or time-invariable) unsplittable routing or a routing tree. For time-invariable unsplittable routing, we also develop an algorithm that finds routes that maximize the minimum rate assigned to any node in any slot. For fractional routing, we study the joint routing and rate assignment problem. We develop an algorithm for the time-invariable case with constant rates. We show that the time-variable case is at least as hard as the 2-commodity feasible flow problem and design an FPTAS to combat the high running time. Finally, we show that finding a max-min fair unsplittable routing or a routing tree is NP-hard, even for a time horizon of a single slot. Our analysis provides insights into the problem structure and can be applied to other related fairness problems.},
+ acmid = {2632960},
+ address = {New York, NY, USA},
+ author = {Mara\v{s}evi\'{c}, Jelena and Stein, Clifford and Zussman, Gil},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632960},
+ isbn = {978-1-4503-2620-9},
+ keyword = {energy adaptive networking, energy harvesting, fairness, routing, sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632960},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {367--376},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Max-min Fair Rate Allocation and Routing in Energy Harvesting Networks: Algorithmic Analysis},
+ year = {2014}
+}
+
+
+@inproceedings{Barros:2014:BVN:2632951.2633209,
+ abstract = {There are now 1 billion vehicles in the world waiting to be connected to the Internet. At the same time, vehicular communication technologies have matured to a point in which massive deployment is both possible and feasible. One option for deployment is to wait for car manufacturers to embed DSRC/WAVE interfaces inside their latest models. However, since only 9% of the world's fleet is new every year, this would result in a time span of up to 20 years until 90% of the vehicles are finally connected. Another option is to rely entirely on cellular communications, such as GPRS, EDGE, 3G and LTE. This cellular only approach is impractical due to the capital expenses required for telecom operators to meet the demands of the impending tsunami of mobile data (expected to grow 1800% until 2016). Clearly, there is need for a low-cost wireless networking solution that can be placed in any vehicle and offers reliable connectivity, improved quality of experience and higher safety for drivers and passengers. This solution, we will argue, is vehicular mesh networking. Drawing from five years of research and our experience with a large testbed with hundreds of taxis and buses, currently under deployment in Porto, Portugal, we will address how city-scale deployment can be achieved and what kind of connectivity, bandwidth, quality of service and application support can be provided as the density of Internet gateways and the density of connected vehicles grows towards widespread deployment. Some attention will also be given to relevant issues in system design such as channel modeling, mobility patterns, networking protocols and large-scale simulation with manageable complexity. Finally, we will show how a vehicular mesh network can be used as a highly dense urban scanner, producing real-time data on-the-move, which can be leveraged from the cloud to help manage future cities, protect our environment and improve our quality of life.},
+ acmid = {2633209},
+ address = {New York, NY, USA},
+ author = {Barros, Jo\~{a}o},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2633209},
+ isbn = {978-1-4503-2620-9},
+ keyword = {intelligent transportation systems, network protocols, vehicular networks},
+ link = {http://doi.acm.org/10.1145/2632951.2633209},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {123--124},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {How to Build Vehicular Networks in the Real World},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:PMP:2632951.2635937,
+ abstract = {This paper investigates the heterogeneity of delay-tolerate networks (DTNs) by considering that among regular nodes some infostations are equipped with large-capacity buffer and connected by high-speed links to form an infostation system. We analytically model epidemic routing behavior of such DTNs using extended Susceptible-Infectious-Recovered model. Specifically, closed expressions for the number of infectious nodes with varying time, Cumulative Distribution Function (CDF) of packet delivery delay and CDF of infostations infected time are derived. Based on extensive numerical results, the impact of transmission range and inforstation number on the network performance is revealed.},
+ acmid = {2635937},
+ address = {New York, NY, USA},
+ author = {Wang, Dongyang and Wu, Muqing and Lv, Bo},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635937},
+ isbn = {978-1-4503-2620-9},
+ keyword = {heterogeneous delay-tolerate networks, infostation, routing},
+ link = {http://doi.acm.org/10.1145/2632951.2635937},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {435--436},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Modeling the Performance of Routing in Heterogeneous Delay-tolerant Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Zheng:2014:CWN:2632951.2632985,
+ abstract = {A thorough understanding of capacity of wireless networks can help with effective design and efficient employment of wireless networks. Much effort has been spent on investigating capacity of multicast which is a popular communication model and generalization of unicast and broadcast. However, most previous works assume homogeneous traffic patterns, which is not meaningful for practical applications. This paper analyzes the capacity of wireless networks with multiple types of multicast sessions without the assumption of homogeneous traffic patterns. A new network model is proposed accommodating practical traffic patterns and the capacity is analyzed accordingly. A theoretical upper bound is derived, and a feasible transmission scheme with capacity lower bound is presented. Two bounds are asymptotically tight, that is, in the order of Θ(a2ns/∑i=1nsmin√ki⋅ Ri⋅ r,Ri2⋅ W), where a is the side length of the deployed region, r is the transmission range, ns is the number of multicast sessions, and ki and Ri are parameters of multicast session i. Furthermore, the variation of capacity towards different numbers of and distributions of destinations is illustrated.},
+ acmid = {2632985},
+ address = {New York, NY, USA},
+ author = {Zheng, Xu and Li, Jianzhong and Gao, Hong and Cai, Zhipeng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632985},
+ isbn = {978-1-4503-2620-9},
+ keyword = {capacity, heterogeneous traffic, multicast, scalability},
+ link = {http://doi.acm.org/10.1145/2632951.2632985},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {135--144},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Capacity of Wireless Networks with Multiple Types of Multicast Sessions},
+ year = {2014}
+}
+
+
+@inproceedings{Zhu:2014:DPS:2632951.2632974,
+ abstract = {Dynamic spectrum redistribution---under which spectrum owners lease out under-utilized spectrum to users for financial gain---is an effective way to improve spectrum utilization. Auction is a natural way to incentivize spectrum owners to share their idle resources. In recent years, a number of strategy-proof auction mechanisms have been proposed to stimulate bidders to truthfully reveal their valuations. However, it has been shown that truthfulness is not a necessary condition for revenue maximization. Furthermore, in most existing spectrum auction mechanisms, bidders may infer the valuations---which are private information---of the other bidders from the auction outcome. In this paper, we propose a Differentially privatE spectrum auction mechanism with Approximate Revenue maximization (DEAR). We theoretically prove that DEAR achieves approximate truthfulness, privacy preservation, and approximate revenue maximization. Our extensive evaluations show that DEAR achieves good performance in terms of both revenue and privacy preservation.},
+ acmid = {2632974},
+ address = {New York, NY, USA},
+ author = {Zhu, Ruihao and Li, Zhijing and Wu, Fan and Shin, Kang and Chen, Guihai},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632974},
+ isbn = {978-1-4503-2620-9},
+ keyword = {mechanism design, privacy, spectrum auction},
+ link = {http://doi.acm.org/10.1145/2632951.2632974},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {185--194},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Differentially Private Spectrum Auction with Approximate Revenue Maximization},
+ year = {2014}
+}
+
+
+@inproceedings{Hei:2014:PNF:2632951.2635944,
+ abstract = {Security of wireless medical devices is critical for patient safety because security attacks may directly hurt patients' health. In this paper, we design a novel access control scheme based on bi-channel and multi-factor authentication for wireless medical devices. Our scheme utilizes near field communication (NFC) to perform device pairing, which supports key exchange between a device and a reader in short communication range (<= 6cm) with bounded response time. To further defend against attacks when a malicious reader is placed within the device's communication range in crowded situations, we design a crowd detection algorithm using WiFi and user's smart phone to assist the key exchange. Our analyses and experiments show that our security schemes are effective and efficient.},
+ acmid = {2635944},
+ address = {New York, NY, USA},
+ author = {Hei, Xiali and Du, Xiaojiang and Lin, Shan},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635944},
+ isbn = {978-1-4503-2620-9},
+ keyword = {access control, medical devices, near field communication, response time, secure pairing},
+ link = {http://doi.acm.org/10.1145/2632951.2635944},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {423--424},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Near Field Communication Based Access Control for Wireless Medical Devices},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:DAR:2632951.2636060,
+ abstract = {In this paper, we design an augmented reality based file transfer system called ShareAR. The ShareAR system only needs a single-finger action that drags the file icon to the target face on the screen of a mobile device. The dragged file can be transmitted to the target receiver who gets the file immediately as her/his mobile device is on-line or receives the file later after connecting to the Internet. Through ShareAR, users do not need to know the target account in advance. In addition, users do not need to input account information by themselves. Furthermore, users can select a specific target among multiple candidates from the camera of a mobile device. ShareAR reveals an innovative user interface to transfer files between mobile devices. We have implemented an Android-based ShareAR system that outperforms existing schemes in experimental results.},
+ acmid = {2636060},
+ address = {New York, NY, USA},
+ author = {Chen, Lien-Wu and Ho, Yu-Fan and Kuo, Wei-Ting},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636060},
+ isbn = {978-1-4503-2620-9},
+ keyword = {augmented reality, cloud computing, face recognition, file transfer, mobile device},
+ link = {http://doi.acm.org/10.1145/2632951.2636060},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {417--418},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: An Augmented Reality Based File Transfer System for Mobile Users Using Smart Phones},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:PRD:2632951.2632967,
+ abstract = {This paper presents CSPR, a compressive sensing based approach for path reconstruction in wireless sensor networks. By viewing the whole network as a path representation space, an arbitrary routing path can be represented by a path vector in the space. As path length is usually much smaller than the network size, such path vectors are sparse, i.e., the majority of elements are zeros. By encoding sparse path representation into packets, the path vector (and thus the represented path) can be recovered from a small amount of packets using compressive sensing technique. CSPR formalizes the sparse path representation and enables accurate and efficient per-packet path reconstruction. CSPR is invulnerable to network dynamics and lossy links due to its distinct design. A set of optimization techniques are further proposed to improve the design. We evaluate CSPR in both testbed-based experiments and large-scale trace-driven simulations. Evaluation results show that CSPR achieves high path recovery accuracy (i.e., 100% and 96% in experiments and simulations, respectively), and outperforms the state-of-the-art approaches in various network settings.},
+ acmid = {2632967},
+ address = {New York, NY, USA},
+ author = {Liu, Zhidan and Li, Zhenjiang and Li, Mo and Xing, Wei and Lu, Dongming},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632967},
+ isbn = {978-1-4503-2620-9},
+ keyword = {bloom filter, compressive sensing, packet path reconstruction, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632967},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {297--306},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Path Reconstruction in Dynamic Wireless Sensor Networks Using Compressive Sensing},
+ year = {2014}
+}
+
+
+@inproceedings{Cheng:2014:SSD:2632951.2632978,
+ abstract = {The main-thread approach for optimizing the throughput capacity over a multihop wireless network is to apply a multi-commodity flow (MCF) formulation, augmented with a scheduling constraint derived from the conflict graph associated with the network. A fundamental issue with the conflict graph based MCF formulation is that finding all independent sets (ISs) for scheduling is NP-hard in general. If we express the MCF formulation in a matrix format, the constraint matrix will contain a very large number of columns, with each IS being associated with one column. According to the linear programming theorem, such a type of problem can be addressed with the delayed column generation (DCG) method. Unfortunately, applications of the DCG in wireless networks have not received much attention. To the best of knowledge, none of the existing work conducted theoretical studies of the performance of DCG in wireless networks. In this paper, we study the DCG method in the context of a general network flow problem. With a protocol interference model, we rigorously prove that searching an entering column in the DCG operation is equivalent to a maximum weighted independent set (MWIS) problem. A prominent theoretical contribution of this paper is the theorem that: if an MWIS approximation algorithm with the approximation ratio β (<1) is applied in the DCG method, the maximum flow solved will be at least β of the optimal solution. Furthermore, the DCG method is also applied to the multi-radio multi-channel (MR-MC) networks. With extensive numerical results comparing to the existing methods, we show that the DCG method achieves the most preferred tradeoff between computation complexity and network capacity and maintains good scalability when addressing large-scale networks, particularly in the complex MR-MC context.},
+ acmid = {2632978},
+ address = {New York, NY, USA},
+ author = {Cheng, Yu and Cao, Xianghui and Shen, Xuemin (Sherman) and Shila, Devu Manikantan and Li, Hongkun},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632978},
+ isbn = {978-1-4503-2620-9},
+ keyword = {MWIS, approximation ratio, delayed column generation, multi-radio multi-channel networks, network capacity optimization},
+ link = {http://doi.acm.org/10.1145/2632951.2632978},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {23--32},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {A Systematic Study of the Delayed Column Generation Method for Optimizing Wireless Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Mehari:2014:DEM:2632951.2636061,
+ abstract = {A large amount of research focuses on experimentally optimizing performance of wireless solutions. Finding the optimal performance settings typically requires investigating all possible combinations of design parameters, and as a result the number of required experiments increases exponentially for each considered design parameter. However, Efficient Global Optimization (EGO) algorithms overcome this limitation and arrive at the global optimum performance in a very short time compared to the exhaustive search technique. In this demo, we apply the SUrrogate MOdeling (SUMO) toolbox, an efficient implementation of EGO algorithms, in order to improve the experimentation time of a realistic wireless conference solution. By tuning a speaker's transmit power and channel parameters, the SUMO toolbox searches for an improved listeners' audio quality having minimum transmission exposure. Moreover, the SUMO experiment is compared to an exhaustive search experiment and it is found that SUMO reached 99.51\% of the global optimum performance while requiring 10 times less experiments.},
+ acmid = {2636061},
+ address = {New York, NY, USA},
+ author = {Mehari, Michael T. and De Poorter, Eli and Moerman, Ingrid},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636061},
+ isbn = {978-1-4503-2620-9},
+ keyword = {SUMO, optimization, testbeds, wireless experimentation},
+ link = {http://doi.acm.org/10.1145/2632951.2636061},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {419--420},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: Efficient Multi-objective Optimization of Network Problems on Wireless Testbeds},
+ year = {2014}
+}
+
+
+@inproceedings{Jahanian:2014:RTI:2632951.2633208,
+ abstract = {The computer and information science and engineering disciplines are at the center of an ongoing societal transformation. The explosive growth of scientific and social data, wireless connectivity at broadband speeds for a countless number of mobile endpoints, and seamless access to resources in the 'cloud' are transforming the way we work, learn, play, and communicate. Furthermore, the proliferation of mobile devices and new applications is leading to increasing complexity and growth of network traffic. I will talk about how digitalization, virtualization, and mobility are reshaping our economy, society, and daily lives. I will also talk about these trends catalyze new opportunities for foundational research. I will further explore how advances in computing and communication serve as key drivers of economic competitiveness and how they will be crucial to achieving national priorities.},
+ acmid = {2633208},
+ address = {New York, NY, USA},
+ author = {Jahanian, Farnam},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2633208},
+ isbn = {978-1-4503-2620-9},
+ keyword = {computing, data, digitalization, mobility},
+ link = {http://doi.acm.org/10.1145/2632951.2633208},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Realizing the Transformative Impact of Computing and Data in a Networked World},
+ year = {2014}
+}
+
+
+@proceedings{Chockalingam:2013:2491288,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2193-8},
+ location = {Bangalore, India},
+ note = {533135},
+ publisher = {ACM},
+ title = {MobiHoc '13: Proceedings of the Fourteenth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2013}
+}
+
+
+@inproceedings{Gao:2014:SMU:2632951.2632984,
+ abstract = {In database-driven opportunistic spectrum access, location information of secondary users plays an important role. In a database query-and-update procedure, a secondary user reports to the geolocation database of its location information, so that the updated knowledgebase facilitates location-aided incumbent protection and network coexistence. However, such database-driven spectrum sharing becomes very challenging when the secondary users are mobile. In this paper, we propose a probabilistic coexistence framework that supports mobile users by incorporating the solutions to solve two core problems: (i) white space allocation (WSA) at the database and (ii) location update control (LUC) at the users. We frame the two problems such that they interact through dynamic control of the users' location uncertainty levels. For WSA, we derive a centralized real-time solution to mitigate mutual interference among secondary users and protect primary users against harmful interference. For LUC, we design a local two-level strategy to enable both movement-driven and interference-driven control of location uncertainty. This strategy makes an appropriate trade-off between the effectiveness of interference mitigation and the cost of database queries. To evaluate our algorithms, we have carried out both theoretical model-driven and real-world trace-driven simulation experiments. Our simulation results show that the proposed framework can determine and adapt the database query intervals of mobile users to achieve near-optimal interference mitigation with minimal location updates.},
+ acmid = {2632984},
+ address = {New York, NY, USA},
+ author = {Gao, Bo and Park, Jung-Min and Yang, Yaling},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632984},
+ isbn = {978-1-4503-2620-9},
+ keyword = {geolocation database, mobility management, opportunistic spectrum access, spectrum sharing},
+ link = {http://doi.acm.org/10.1145/2632951.2632984},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {215--224},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Supporting Mobile Users in Database-driven Opportunistic Spectrum Access},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:EFT:2632951.2632968,
+ abstract = {In this paper, we propose an extensible and flexible truthful auction framework that is individual-rational and self-collusion resistant. By properly setting one simple parameter, this framework can yield efficient auctions (like VCG) and (sub)optimal auctions (like Myerson's Optimal Mechanism (MOM)) with a more computationally-efficient procedure compared to VCG and MOM; by carefully choosing virtual valuation functions for the bidders, it can produce attribute-aware auctions that take the channel diversity into consideration. The framework adopts a novel procedure that can prevent bidder self-collusion resulted from the bid diversity. Theoretical analysis and case studies demonstrate the strength of our auction framework in handling various considerations in a practical heterogeneous spectrum market.},
+ acmid = {2632968},
+ address = {New York, NY, USA},
+ author = {Li, Wei and Cheng, Xiuzhen and Bie, Rongfang and Zhao, Feng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632968},
+ isbn = {978-1-4503-2620-9},
+ keyword = {efficient auctions, heterogeneous spectrum market, optimal auctions, self-collusion resistance, truthful auctions},
+ link = {http://doi.acm.org/10.1145/2632951.2632968},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {175--184},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {An Extensible and Flexible Truthful Auction Framework for Heterogeneous Spectrum Markets},
+ year = {2014}
+}
+
+
+@inproceedings{Fu:2014:DES:2632951.2636057,
+ abstract = {Different from energy harvesting which generates dynamic energy supplies, the mobile charger is able to provide stable and reliable energy supply for sensor nodes, and thus enables sustainable system operations. While previous mobile charging protocols either focus on the charger travel distance or the charging delay of sensor nodes, in this work we propose a novel Energy Synchronized Charging (ESync) protocol, which simultaneously reduces both of them. Observing the limitation of the Traveling Salesman Problem (TSP)-based solutions when nodes energy consumptions are diverse, we construct a set of nested TSP tours based on their energy consumption rates, and only nodes with low remaining energy are involved in each charging round. Furthermore, we propose the concept of energy synchronization to synchronize the charging requests sequence of nodes with their sequence on the TSP tours.},
+ acmid = {2636057},
+ address = {New York, NY, USA},
+ author = {Fu, Lingkun and Liu, Hao and He, Liang and Gu, Yu and Cheng, Peng and Chen, Jiming},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636057},
+ isbn = {978-1-4503-2620-9},
+ keyword = {energy synchronization, mobile charging, nested tsp tours},
+ link = {http://doi.acm.org/10.1145/2632951.2636057},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {411--412},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: An Energy Synchronized Charging Protocol for Rechargeable Wireless Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Peng:2014:EEM:2632951.2632971,
+ abstract = {Most mobile devices today come with multiple access interfaces, \emph{e.g.}, 4G and WiFi. Multipath TCP (MP-TCP) can greatly improve network performance by exploiting the connection diversity of multiple access interfaces, at the expense of higher energy consumption. In this paper, we design MP-TCP algorithms for mobile devices by jointly considering the performance and energy consumption. We consider two main types of mobile applications: realtime applications that have a fixed duration and file transfer applications that have a fixed data size. For each type of applications, we propose a two-timescale algorithm with theoretical guarantee on the performance. We present simulation results that show that our algorithms can reduce energy consumption by up to 22$\%$ without sacrificing throughput compared to a baseline MP-TCP algorithm.},
+ acmid = {2632971},
+ address = {New York, NY, USA},
+ author = {Peng, Qiuyu and Chen, Minghua and Walid, Anwar and Low, Steven},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632971},
+ isbn = {978-1-4503-2620-9},
+ keyword = {energy efficiency, mobile devices, multipath TCP},
+ link = {http://doi.acm.org/10.1145/2632951.2632971},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {257--266},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Energy Efficient Multipath TCP for Mobile Devices},
+ year = {2014}
+}
+
+
+@inproceedings{Gong:2014:WCF:2632951.2632963,
+ abstract = {Radio Frequency Identification technology (RFID) is widely used in many applications, such as asset monitoring, e-passport and electronic payment, and is becoming one of the most effective solutions in cyber physical system. Since the identification alone does not provide any guarantee that tag corresponds to genuine identity, authentication of tag information is needed in most RFID systems. Meanwhile, as the number of tags is rapidly growing in recent years, per-tag based methods suffer from severely low efficiency and thus give way to probabilistic batch authentication. Most previous methods, however, share a common drawback from statistical perspective: they fail to explore correlation information, i.e., they do not comprehensively utilize all the information in authentication data structures. In addition, those schemes are not scalable well when multiple tag sets need to be verified simultaneously. In this paper, we propose a fast and efficient batch authentication scheme, Wise Counting (WIC), for large-scale RFID systems. We are the first to formally introduce the general batch authentication problem with multiple tag sets and give counterfeits estimation scheme with high efficiency. By employing a novel hierarchical authentication structure, we show that WIC is able to fast and efficiently authenticate both a single tag set and multiple tag sets in an easy, intuitive way. Through detailed theoretical analysis and extensive simulations, we validate the design of WIC and demonstrate its large superiority over state-of-the art approaches.},
+ acmid = {2632963},
+ address = {New York, NY, USA},
+ author = {Gong, Wei and Liu, Yunhao and Nayak, Amiya and Wang, Cheng},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632963},
+ isbn = {978-1-4503-2620-9},
+ keyword = {RFID tags, batch authentication, counterfeits estimation, hierarchical data structure},
+ link = {http://doi.acm.org/10.1145/2632951.2632963},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {347--356},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Wise Counting: Fast and Efficient Batch Authentication for Large-scale RFID Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Garikipati:2014:MTS:2632951.2632980,
+ abstract = {The scaling of network MIMO (netMIMO) comes with the challenges of interference that arise from the aging of the Channel State Information (CSI). Particularly, in scenarios of high channel mobility---where netMIMO is expected to be used---the performance degradation from interference can be severe. In this paper, we design transmission schemes to address the two sources of CSI aging: delay in acquiring CSI feedback, and transmission period over which CSI remains unchanged. We introduce a two-phase training and feedback protocol that balances CSI aging across users by allowing users with high interference to have a shorter feedback delay. We also introduce an adaptive adjustment to the transmission length to reduce the decoding errors caused from interference. The proposed protocols adapt to the measurements collected from the users and hence applicable to various mobility scenarios. Our evaluation in a real and synchronized netMIMO setup shows significant gains (5--10dB) in user performance, especially in mobile channels.},
+ acmid = {2632980},
+ address = {New York, NY, USA},
+ author = {Garikipati, Krishna C. and Shin, Kang G.},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632980},
+ isbn = {978-1-4503-2620-9},
+ keyword = {CSI aging, CSI feedback, multi-user MIMO networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632980},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {387--396},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Measurement-based Transmission Schemes for Network MIMO},
+ year = {2014}
+}
+
+
+@inproceedings{Song:2014:MTC:2632951.2632959,
+ abstract = {Binary proximity sensors (BPS) provide extremely low cost and privacy preserving features for tracking mobile targets in smart environment, but great challenges are posed for track- ing multiple targets, because a BPS cannot distinguish one or multiple targets are in its sensing range. In this paper, we at first address the counting problem by presenting a maxi- mum clique partition model on unit disk graph, which leads to a tight lower bound for estimating the number of targets by a snapshot of sensor readings. Then, to more accurately count and track the multiple targets by sequential readings of sensors, we state the key is to comprehensively infer the states behind the events. Therefore, at each event we infer which target may trigger the event via a dynamic coloring technique (DEC) and predict the potential regions of the multiple targets by a colorful area shrinking and expanding approach. Such an approach generates multiple potential scenarios containing different colors to interpret the sequen- tial events, where the number of colors indicates the different estimations of the target number. Then we designed multi- color particle filter (MCPF), which is run in parallel in each scenario to enumerate and evaluate the potential trajecto- ries of the targets under the color constraint. The likelihoods of the trajectories are evaluated by each target's movement consistence. The overall best trajectory over all scenarios is voted to provide not only the most possible target number, but also the trajectories of the targets. Extensive simula- tions were conducted using a multi-agent simulator which show good accuracy of the proposed multi-target tracking algorithms.},
+ acmid = {2632959},
+ address = {New York, NY, USA},
+ author = {Song, Lei and Wang, Yongcai},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632959},
+ isbn = {978-1-4503-2620-9},
+ keyword = {multiple target tracking},
+ link = {http://doi.acm.org/10.1145/2632951.2632959},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {397--406},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Multiple Target Counting and Tracking Using Binary Proximity Sensors: Bounds, Coloring, and Filter},
+ year = {2014}
+}
+
+
+@inproceedings{Ma:2014:PSM:2632951.2635935,
+ abstract = {In this paper, we formulate a generalized optimization problem to meet the profit problem for crowdsourced systems with considering three aspects of connectivity, profit and risk. We also propose a routing algorithm for this special scenario, featured by dynamic mobility and social graph. This algorithm has two parts: social graph extraction and social mobility based routing. The first part extracts each patrician's social graph to get the social knowledge. The second part gives a policy for the decider to assign the passages to the leaving nodes according to their social graph. We applied our algorithm into the realistic traces, and compare it with several existing methods. The result shows the competitive performance of this routing algorithm, both in connectivity, profit and risk.},
+ acmid = {2635935},
+ address = {New York, NY, USA},
+ author = {Ma, Chuang and Yang, Yongjian and Du, Zhanwei and Zhang, Chijun},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635935},
+ isbn = {978-1-4503-2620-9},
+ keyword = {crowdsourced systems, dynamic mobility, pocket switched network, social graph},
+ link = {http://doi.acm.org/10.1145/2632951.2635935},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {433--434},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Social Mobility Based Routing in Crowdsourced Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Yang:2014:PCS:2632951.2635934,
+ abstract = {Crowdsourcing is an increasingly popular solution for human intelligence tasks (HITs). Existing systems consist centralized control platforms. We are exploring a more comprehensive system in which a smartphone network is adopted as an effective supplement for location and time sensitive tasks. Additionally, social networks are used for more efficient potential worker selection. The system architecture is designed featuring the dual communication paradigm, Internet-based centralized communication mode and the wifi-based ad hoc communication mode.},
+ acmid = {2635934},
+ address = {New York, NY, USA},
+ author = {Yang, Shuhui and Thormann, Jonathon},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635934},
+ isbn = {978-1-4503-2620-9},
+ keyword = {ad hoc connection, crowdsourcing, human computation, smartphone, social networking},
+ link = {http://doi.acm.org/10.1145/2632951.2635934},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {439--440},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: Crowdsourcing to Smartphones: Social Network Based Human Collaboration},
+ year = {2014}
+}
+
+
+@inproceedings{Le:2014:PSA:2632951.2635938,
+ abstract = {The number of hops between source node and destination node is one of key parameter in studying multi-hop ad-hoc networks. Although hop count in conventional ad-hoc networks has been well studied, to the best of our knowledge, there have no works that intensively investigate the hop count of multi-hop path in cognitive environment. This paper presents detail simulation analysis on the hop count of multi-hop path in Cognitive Radio Ad-hoc Networks (CRAHNs). The effect of network parameters such as node density of Secondary User (SU) and Primary User (PU), operating frequencies, average activating rate of PUs, in the networks are studied. Simulation experiments with different network parameters are conducted to clarify the features of hop count in cognitive ad-hoc networks.},
+ acmid = {2635938},
+ address = {New York, NY, USA},
+ author = {Le, Dung The and An, Beongku},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2635938},
+ isbn = {978-1-4503-2620-9},
+ keyword = {cognitive radio ad-hoc networks, hop count, multi-hop paths},
+ link = {http://doi.acm.org/10.1145/2632951.2635938},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {427--428},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Poster: A Simulation Analysis on the Hop Count of Multi-hop Path in Cognitive Radio Ad-hoc Networks},
+ year = {2014}
+}
+
+
+@proceedings{Wu:2014:2632951,
+ abstract = {We are pleased to present the proceedings of the 15th ACM International Symposium on Mobile Ad-Hoc Networking and Computing (ACM MobiHoc 2014), held in Philadelphia, PA, USA, from August 11 toAugust 14, 2014. This conference continues with the great success of the previous editions. ACM MobiHoc is well recognized as a premier international forum for researchers, practitioners and students for discussions on emerging challenges from mobile networking, computing, and systems. It covers topics ranging from fundamental theory, to technology issues, to applications and system development. To align with the conference vision, the Technical Program Committee has assembled a strong and diverse program, covering a wide range of technical topics, hoping to influence the direction of a broad spectrum of wireless networking research. This year we received 211 submissions from countries covering all the world regions. Under the guidance of the TPC Co-Chairs, the technical program committee and the reviewers provided outstanding work. Each of the submitted papers, except the early rejected papers due to violation of the rule of anonymity, received, on average, three to four in-depth reviews from Program Committee members, and the process was completed by a TPC review with a recommendation of acceptance/reject/TPC-discussion. The first round review and discussion led by TPC-lead recommended 7 papers for direct acceptance. Based on the TPC recommendation and the review scores, 60 papers were selected for TPC meeting held on May 23, 2014, in Chicago. These papers are randomly grouped into two groups with consideration of balance of paper review scores and avoiding TPC conflict of interests. Extensive discussions of these papers were held among TPC members to advise the TPC Chairs of accepted papers for the program. Only 33 papers were accepted from the TPC meeting. Total 40 papers are included in the final program as regular papers. Due to the large number of submissions, many high quality papers, unfortunately, could not be included in the conference program. Overall, the final program is excellent and diverse, and covers both fundamental issues as well as emerging topics. The ACM MobiHoc 2014 technical program, in addition to ten technical sessions, consists of three keynote talks, a panel on full-duplex communication chaired by Dr. Ness Shroff, a poster session, a demo session, and a demo pitch session. It is our great pleasure and privilege to invite three worldknown researchers, Dr. Farnam Jahanian from NSF, Dr. Joao Barros from University of Porto, and Dr. Roger Wattenhofer from ETH to give three keynote talks on various interesting and timely topics. In addition to the main conference program, seven workshops will be held together with the conference on August 11, 2014.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2620-9},
+ location = {Philadelphia, Pennsylvania, USA},
+ publisher = {ACM},
+ title = {MobiHoc '14: Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:SCS:2632951.2632961,
+ abstract = {Increasingly, more spectrum bands are utilized for unlicensed use in wireless cognitive networks. It is important to study how information-theoretic secrecy capacity is affected in large-scale cognitive networks. We consider two scenarios: (1) non-colluding case, where eavesdroppers decode messages individually. In this case, we propose a new secure protocol model to analyze the transmission opportunities of secondary nodes. We show that the secrecy capacity of the primary network is not affected, while the secondary network can achieve the same performance as a standalone network in the order sense. Since our analysis is general as we only make a few relaxed assumptions on both networks, the conclusions hold when both networks are classic static networks, networks with i.i.d mobility, multicast networks etc. (2) colluding case where eavesdroppers can collude to decode a message. In that case, we show that the lower bound of per-node secrecy capacity of the primary network is Ω(1/√n φe-2/α-1(n)) when the eavesdropper density is φe(n)=Ω(log2n). Interestingly the existence of secondary nodes increases the secrecy capacity of the primary network.},
+ acmid = {2632961},
+ address = {New York, NY, USA},
+ author = {Chen, Yitao and Zhang, Jinbei and Wang, Xinbing and Tian, Xiaohua and Wu, Weijie and Wu, Fan and Tan, Chee Wei},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632961},
+ isbn = {978-1-4503-2620-9},
+ keyword = {cognitive networks, colluding eavesdroppers, scaling law, secrecy capacity},
+ link = {http://doi.acm.org/10.1145/2632951.2632961},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {125--134},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Secrecy Capacity Scaling of Large-scale Cognitive Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Sermpezis:2014:CCE:2632951.2632976,
+ abstract = {Mobile users are envisioned to exploit direct communication opportunities between their portable devices, in order to enrich the set of services they can access through cellular or WiFi networks. Sharing contents of common interest or providing access to resources or services between peers can enhance a mobile node's capabilities, offload the cellular network, and disseminate information to nodes without internet access. Interest patterns, i.e. how many nodes are interested in each content or service (popularity), as well as how many users can provide a content or service (availability) impact the performance and feasibility of envisioned applications. In this paper, we establish an analytical framework to study the effects of these factors on the delay and success probability of a content/service access request through opportunistic communication. We also apply our framework to the data offloading problem and provide insights for its optimization.},
+ acmid = {2632976},
+ address = {New York, NY, USA},
+ author = {Sermpezis, Pavlos and Spyropoulos, Thrasyvoulos},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632976},
+ isbn = {978-1-4503-2620-9},
+ keyword = {mobile data offloading, opportunistic networks, performance analysis},
+ link = {http://doi.acm.org/10.1145/2632951.2632976},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {103--112},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Not All Content is Created Equal: Effect of Popularity and Availability for Content-centric Opportunistic Networking},
+ year = {2014}
+}
+
+
+@inproceedings{Alrefaie:2014:DRS:2632951.2636055,
+ abstract = {GPS-Enabled devices such as smartphones are widely used. With GPS chips that uses lower energy, GPS location and traces are widely collected by different users. One important useful usage is extracting the speed of a user in vehicle to determine real-time and historical speed of traffic in each road in the city. Accumulating these speed records allows the creation of speed profiles. Speed profiles define the general behavior (i.e., traffic speed) of each road at each time of the day. In this demo, we show an energy-efficient location acquisition algorithm to collect traces, a map-matching algorithm to construct the path that the user has taken, an algorithm to calculate the average speed of the vehicle and a speed profile of different road segments used to provide historical, real-time and predicted traffic speed. We also display the whole system in action with data of over 1000 traces collected in Trento, Italy.},
+ acmid = {2636055},
+ address = {New York, NY, USA},
+ author = {Alrefaie, Mohamed Taher},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2636055},
+ isbn = {978-1-4503-2620-9},
+ keyword = {GPS traces, smart cities, urban computing},
+ link = {http://doi.acm.org/10.1145/2632951.2636055},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {2},
+ pages = {407--408},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Demo: Road Speed Profile: From GPS Traces to Real-time Traffic Speed},
+ year = {2014}
+}
+
+
+@inproceedings{Fu:2014:ODS:2632951.2632990,
+ abstract = {This paper investigates the problem of optimally determining source-destination connectivity in random graphs. We consider the classic Erdos-Renyi (ER) random graph with $n$ nodes, where an edge independently exists between any two nodes with probability p. The problem examined is that of determining whether a given pair of nodes, a source S and a destination D, are connected by a path. Assuming that at each step one edge can be tested to see if it exists or not, we determine an optimal policy that minimizes the total expected number of steps. The optimal policy has several interesting features. In order to establish connectivity of S and D, a policy needs to check all edges on some path to see if they all exist, but to establish disconnectivity it has to check all edges on some cut to see if none of them exists. The optimal policy has the following form. At each step it examines the condensation multigraph formed by contracting each known connected component to a single node, and then checks an edge that is simultaneously on a shortest S-D path as well as in a minimum S-D cut. Among such edges, it chooses that which leads to the most opportunities for connection. Interestingly, the optimal strategy does not depend on p or n, even though the entire graph itself undergoes a sharp transition from disconnectivity to connectivity around p = ln n/n. The policy is efficiently implementable, requiring no more than 30 log2n operations to determine which edge to test next. The result also extends to some more general graphs.},
+ acmid = {2632990},
+ address = {New York, NY, USA},
+ author = {Fu, Luoyi and Wang, Xinbing and Kumar, P.R.},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632990},
+ isbn = {978-1-4503-2620-9},
+ keyword = {connectivity, optimization, random graphs},
+ link = {http://doi.acm.org/10.1145/2632951.2632990},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {205--214},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Optimal Determination of Source-destination Connectivity in Random Graphs},
+ year = {2014}
+}
+
+
+@inproceedings{Kim:2014:AFC:2632951.2632991,
+ abstract = {Smart mobile devices are generating a tremendous amount of data traffic that is putting stress on even the most advanced cellular networks. Delayed offloading has recently been proposed as an efficient mechanism to substantially alleviate this stress. The idea is simple. It allows a mobile device to delay transmission of data packets for a certain amount of time, while it searches WiFi (or similarly femtocell) networks to offload the data during the time. When the time expires, it completes the remaining portion of the delayed transmission through the cellular network that is available at the moment. In this paper, we develop an analytical framework using an embedded Markov process for the delayed offloading system. We provide a closed-form expression for estimating how much data generated by the users can be offloaded to WiFi networks from cellular networks even when there are non-Markovian data arrivals and service interruptions. We conduct extensive numerical studies with various ranges of delay, service interruption time, arrived data, and service rate. These numerical studies show that the current deployment of WiFi networks measured from a metropolitan city is capable of offloading about 80% of the generated data with 30 minutes of delay and 1 Mbps of WiFi data rate, but increasing the data rate does not help improve the amount of offloading. Further studies using this framework on two new deployment strategies of WiFi networks give guidance on how to upgrade WiFi networks by revealing that the amount of offloading for 30 minutes of delay and 1 Mbps of data rate can be drastically improved to about 90% or 98% according to the strategy.},
+ acmid = {2632991},
+ address = {New York, NY, USA},
+ author = {Kim, Yoora and Lee, Kyunghan and Shroff, Ness B.},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632991},
+ isbn = {978-1-4503-2620-9},
+ keyword = {mobile data offloading, queueing, reneging, wifi networks},
+ link = {http://doi.acm.org/10.1145/2632951.2632991},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {267--276},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {An Analytical Framework to Characterize the Efficiency and Delay in a Mobile Data Offloading System},
+ year = {2014}
+}
+
+
+@inproceedings{Shnayder:2014:TPD:2632951.2632956,
+ abstract = {We design a protocol for dynamic prioritization of data on shared routers such as untethered 3G/4G devices. The mechanism prioritizes bandwidth in favor of users with the highest value, and is incentive compatible, so that users can simply report their true values for network access. A revenue pooling mechanism also aligns incentives for sellers, so that they will choose to use prioritization methods that retain the incentive properties on the buy-side. In this way, the design allows for an open architecture. In addition to revenue pooling, the technical contribution is to identify a class of stochastic demand models and a prioritization scheme that provides allocation monotonicity. Simulation results confirm efficiency gains from dynamic prioritization relative to prior methods, as well as the effectiveness of revenue pooling.},
+ acmid = {2632956},
+ address = {New York, NY, USA},
+ author = {Shnayder, Victor and Parkes, David C. and Kawadia, Vikas and Hoon, Jeremy},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632956},
+ isbn = {978-1-4503-2620-9},
+ keyword = {bandwidth sharing, mechanism design},
+ link = {http://doi.acm.org/10.1145/2632951.2632956},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {235--244},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {Truthful Prioritization for Dynamic Bandwidth Sharing},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:YLB:2632951.2632953,
+ abstract = {Location-based social networks (LBSNs) feature friend discovery by location proximity that has attracted hundreds of millions of users world-wide. While leading LBSN providers claim the well-protection of their users' location privacy, for the first time we show through real world attacks that these claims do not hold. In our identified attacks, a malicious individual with the capability of no more than a regular LBSN user can easily break most LBSNs by manipulating location information fed to LBSN client apps and running them as location oracles. We further develop an automated user location tracking system and test it on leading LBSNs including Wechat, Skout, and Momo. We demonstrate its effectiveness and efficiency via a 3 week real-world experiment on 30 volunteers and show that we could geo-locate any target with high accuracy and readily recover his/her top 5 locations. Finally, we also develop a framework that explores a grid reference system and location classifications to mitigate the attacks. Our result serves as a critical security reminder of the current LBSNs pertaining to a vast number of users.},
+ acmid = {2632953},
+ address = {New York, NY, USA},
+ author = {Li, Muyuan and Zhu, Haojin and Gao, Zhaoyu and Chen, Si and Yu, Le and Hu, Shangqian and Ren, Kui},
+ booktitle = {Proceedings of the 15th ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2632951.2632953},
+ isbn = {978-1-4503-2620-9},
+ keyword = {location privacy, mobile social network},
+ link = {http://doi.acm.org/10.1145/2632951.2632953},
+ location = {Philadelphia, Pennsylvania, USA},
+ numpages = {10},
+ pages = {43--52},
+ publisher = {ACM},
+ series = {MobiHoc '14},
+ title = {All Your Location Are Belong to Us: Breaking Mobile Social Networks for Automated User Location Tracking},
+ year = {2014}
+}
+
+

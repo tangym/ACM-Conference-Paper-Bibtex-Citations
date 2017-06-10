@@ -1,0 +1,1814 @@
+@inproceedings{Chaney:2015:PMU:2792838.2800193,
+ abstract = {Preference-based recommendation systems have transformed how we consume media. By analyzing usage data, these methods uncover our latent preferences for items (such as articles or movies) and form recommendations based on the behavior of others with similar tastes. But traditional preference-based recommendations do not account for the social aspect of consumption, where a trusted friend might point us to an interesting item that does not match our typical preferences. In this work, we aim to bridge the gap between preference- and social-based recommendations. We develop social Poisson factorization (SPF), a probabilistic model that incorporates social network information into a traditional factorization method; SPF introduces the social aspect to algorithmic recommendation. We develop a scalable algorithm for analyzing data with SPF, and demonstrate that it outperforms competing methods on six real-world datasets; data sources include a social reader and Etsy.},
+ acmid = {2800193},
+ address = {New York, NY, USA},
+ author = {Chaney, Allison J.B. and Blei, David M. and Eliassi-Rad, Tina},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800193},
+ isbn = {978-1-4503-3692-5},
+ keyword = {probabilistic models, recommender systems, social networks},
+ link = {http://doi.acm.org/10.1145/2792838.2800193},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {43--50},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {A Probabilistic Model for Using Social Networks in Personalized Item Recommendation},
+ year = {2015}
+}
+
+
+@inproceedings{Magnuson:2015:ERU:2792838.2796556,
+ abstract = {User interactions with Twitter (social network) frequently take place on mobile devices - a user base that it strongly caters to. As much of Twitter's traffic comes with geo-tagging information associated with it, it is a natural platform for geographic recommendations. This paper proposes an event recommender system for Twitter users, which identifies twitter activity co-located with previous events, and uses it to drive geographic recommendations via item-based collaborative filtering.},
+ acmid = {2796556},
+ address = {New York, NY, USA},
+ author = {Magnuson, Axel and Dialani, Vijay and Mallela, Deepa},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796556},
+ isbn = {978-1-4503-3692-5},
+ keyword = {event identification, geo tagging, opinion mining, point of interest},
+ link = {http://doi.acm.org/10.1145/2792838.2796556},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {331--332},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Event Recommendation Using Twitter Activity},
+ year = {2015}
+}
+
+
+@inproceedings{Kapoor:2015:ILE:2792838.2800172,
+ abstract = {Studies have shown that the recommendation of unseen, novel or serendipitous items is crucial for a satisfying and engaging user experience. As a result, recent developments in recommendation research have increasingly focused towards introducing novelty in user recommendation lists. While, existing solutions aim to find the right balance between the similarity and novelty of the recommended items, they largely ignore the user needs for novelty. In this paper, we show that there are large individual and temporal differences in the users' novelty preferences. We develop a regression model to predict these dynamic novelty preferences of users using features derived from their past interactions. Finally, we describe an adaptive recommender,~\emph{adaNov-R}, that adapts to the user needs for novel items and show that the model achieves better recommendation performance on a metric that considers both novel and familiar items.},
+ acmid = {2800172},
+ address = {New York, NY, USA},
+ author = {Kapoor, Komal and Kumar, Vikas and Terveen, Loren and Konstan, Joseph A. and Schrater, Paul},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800172},
+ isbn = {978-1-4503-3692-5},
+ keyword = {diversity, dynamic user preferences, novelty, recommendation systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800172},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {19--26},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {"I Like to Explore Sometimes": Adapting to Dynamic User Novelty Preferences},
+ year = {2015}
+}
+
+
+@inproceedings{Nemeth:2015:SUR:2792838.2799499,
+ abstract = {Gravity R&D has been providing recommendation engines as SaaS solutions since 2009. The company has a strong research focus and recommendation quality has always been their primary differentiating factor. Widely used or open source recommendation algorithms are of little use to our technology team as a result of the superiority of our in-house developed, proprietary algorithms. Gravity R&D experienced many challenges while scaling up their services. The sheer quantity of data handled on a daily basis increased exponentially. This presentation will cover how overcoming these challenges permanently shaped our algorithms and system architecture used to generate these recommendations. Serving personalized recommendations requires real-time computation and data access for every single request. To generate responses in real-time, current user inputs have to be compared against their history in order to deliver accurate recommendations. We then combine this user information with specific details about available items as the next step in the recommendation process. It becomes more difficult to provide accurate recommendations as the number of transactions and items increase. It also becomes difficult because this type of analysis requires the combination of multiple heterogeneous algorithms that all require different inputs. Initially, the architecture was designed for MF based models and serving huge numbers of requests but with a limited number of items. Now, Gravity is using MF, neighborhood based models and metadata based models to generate recommendations for millions of items within their databases. This required a shift from a monolithic architecture with in-process caching to a more service oriented architecture with multi-layer caching. As a result of an increase in the number of components and number of clients, managing the infrastructure can be quite difficult. Even with these challenges, we don't believe that it is worthwhile to use a fully distributed system. It adds unneeded complexity, resources, and overhead to the system. We prefer an approach of firstly optimizing current algorithms and architecture and only moving to a distributed system when no other options are left.},
+ acmid = {2799499},
+ address = {New York, NY, USA},
+ author = {N{\'e}meth, Botty\'{a}n},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799499},
+ isbn = {978-1-4503-3692-5},
+ keyword = {performance, recommendation engine, scalability},
+ link = {http://doi.acm.org/10.1145/2792838.2799499},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {233--233},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Scaling Up Recommendation Services in Many Dimensions},
+ year = {2015}
+}
+
+
+@inproceedings{Valcarce:2015:ESL:2792838.2796547,
+ abstract = {Even though there exist multiple approaches to build recommendation algorithms, algebraic techniques based on vector and matrix representations are predominant in the field. Notwithstanding the fact that these algebraic Collaborative Filtering methods have been demonstrated to be very effective in the rating prediction task, they do not generally provide good results in the top-N recommendation task. In this research, we return to the roots of recommender systems and we explore the relationship between Information Filtering and Information Retrieval. We think that probabilistic methods taken from the latter field such as statistical Language Models can be a more effective and formal way for generating personalised ranks of recommendations. We compare our improvements against several algebraic and probabilistic state-of-the-art algorithms and pave the way to future and promising research directions.},
+ acmid = {2796547},
+ address = {New York, NY, USA},
+ author = {Valcarce, Daniel},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796547},
+ isbn = {978-1-4503-3692-5},
+ keyword = {language models, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2796547},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {375--378},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Exploring Statistical Language Models for Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Kar:2015:SOL:2792838.2800194,
+ abstract = {This paper studies the selection and ordering of in-stream ads in videos shown in online content publishers. We propose an allocation algorithm that uses a collective measure of price and quality for each ad and factors in slot-specific continuation probabilities to maximize publisher revenue. The algorithm is based on cascade models and uses a dynamic programming method to assign linear (video) ads to slots in an online video. The approach accounts for the negative externality created by lower quality ads placed in a video, leading to viewer exit and thereby preventing the publisher from showing the subsequent ads scheduled in that session. Our algorithm is scalable and suited for real-time applications. A large log of viewer activity from a video ad platform is used to empirically test the algorithm. A series of simulations show that our algorithm, when compared to other algorithms currently practiced in industry, generates more revenue for the publisher and increases viewer retention.},
+ acmid = {2800194},
+ address = {New York, NY, USA},
+ author = {Kar, Wreetabrata and Swaminathan, Viswanathan and Albuquerque, Paulo},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800194},
+ isbn = {978-1-4503-3692-5},
+ keyword = {dynamic program, linear online video ads, revenue maximization, scalable real-time algorithm, viewer retention},
+ link = {http://doi.acm.org/10.1145/2792838.2800194},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {203--210},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Selection and Ordering of Linear Online Video Ads},
+ year = {2015}
+}
+
+
+@inproceedings{Nov:2015:ARI:2792838.2799667,
+ abstract = {In social recommendation systems, users often publicly rate objects such as photos, news articles or consumer products. When they appear in aggregate, these ratings carry social signals such as the direction and strength of the raters' average opinion about the product. Using a controlled experiment we manipulated two central social signals -- the direction and strength of social ratings of five popular consumer products -- and examined their interacting effects on users' ratings. The results show an asymmetric user behavior, where the direction of perceived social rating has a negative effect on users' ratings if the direction of perceived social rating is negative, but no effect if the direction is positive. The strength of perceived social ratings did not have a significant effect on users' ratings. The findings highlight the potential for cascading adverse effects of small number of negative user ratings on subsequent users' opinions.},
+ acmid = {2799667},
+ address = {New York, NY, USA},
+ author = {Nov, Oded and Arazy, Ofer},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799667},
+ isbn = {978-1-4503-3692-5},
+ keyword = {anchoring, recommender systems, social influence, social signals, theory-driven design.},
+ link = {http://doi.acm.org/10.1145/2792838.2799667},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {249--252},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Asymmetric Recommendations: The Interacting Effects of Social Ratings? Direction and Strength on Users' Ratings},
+ year = {2015}
+}
+
+
+@inproceedings{Seminario:2015:NET:2792838.2799666,
+ abstract = {Recommender Systems (RSs) can be vulnerable to manipulation by malicious users who successfully bias recommendations for their own benefit or pleasure. These are known as attacks on RSs and are typically used to either promote ("push") or disparage ("nuke") targeted items contained within the recommender's user-item dataset. Our recent work with the Power User Attack (PUA) model, determined that attackers disguised as influential power users can mount successful (from the attacker's viewpoint) push attacks against user-based, item-based, and SVD-based recommenders. However, the success of push attack vectors may not be symmetric for nuke attacks, which target the opposite effect --- reducing the likelihood that target items appear in users' top-N lists. The asymmetry between push and nuke attacks is highlighted when evaluating these attacks using traditional robustness metrics such as Rank and Prediction Shift. This paper examines the PUA attack model in the context of nuke attacks, in order to investigate the differences between push and nuke attack orientations, as well as how they are evaluated. In this work we show that the PUA is able to mount successful nuke attacks against commonly-used recommender algorithms highlighting the "nuke vs. push" asymmetry in the results.},
+ acmid = {2799666},
+ address = {New York, NY, USA},
+ author = {Seminario, Carlos E. and Wilson, David C.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799666},
+ isbn = {978-1-4503-3692-5},
+ keyword = {attacks, evaluation, power users, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799666},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {293--296},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Nuke 'Em Till They Go: Investigating Power User Attacks to Disparage Items in Collaborative Recommenders},
+ year = {2015}
+}
+
+
+@inproceedings{Steck:2015:GRM:2792838.2800185,
+ abstract = {The ranking quality at the top of the list is crucial in many real-world applications of recommender systems. In this paper, we present a novel framework that allows for pointwise as well as listwise training with respect to various ranking metrics. This is based on a training objective function where we assume that, for given a user, the recommender system predicts scores for all items that follow approximately a Gaussian distribution. We motivate this assumption from the properties of implicit feedback data. As a model, we use matrix factorization and extend it by non-linear activation functions, as customary in the literature of artificial neural networks. In particular, we use non-linear activation functions derived from our Gaussian assumption. Our preliminary experimental results show that this approach is competitive with state-of-the-art methods with respect to optimizing the Area under the ROC curve, while it is particularly effective in optimizing the head of the ranked list.},
+ acmid = {2800185},
+ address = {New York, NY, USA},
+ author = {Steck, Harald},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800185},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, learning to rank, matrix factorization, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800185},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {115--122},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Gaussian Ranking by Matrix Factorization},
+ year = {2015}
+}
+
+
+@proceedings{Sen:2016:2959100,
+ abstract = {It is our great pleasure to welcome you to the 10th ACM Conference on Recommender Systems (RecSys 2016), held in Boston, MA, USA, from September 15th through 19th. Since it was first held ten years ago, RecSys has grown to become the leading conference for the presentation and discussion of recommender systems research, bringing together the world's leading recommender systems researchers and e-commerce companies. The program for RecSys 2016 reflects the growth of the Recommender Systems community. For the second time in the history of RecSys we will offer two parallel tracks during the three days of the main conference with a record breaking 112 contributions including 51 technical papers, 9 Past, Present, and Future papers, 15 industry papers, four tutorials, three keynotes, and 30 demos and posters. We again offer an extensive pre-conference program with nine workshops, the RecSys Challenge and a doctoral symposium. The technical program for RecSys 2016 drew upon a record 294 total submissions. To celebrate the tenth year of the conference, the program features a new track reflecting on past, present, and future research in the field of recommender systems. Papers in this track consider a broad perspective on how the field has evolved and the challenges and directions that lie ahead. The review process for all tracks was highly selective. In the main program, 29 long papers were accepted out of 159 submissions (18.2% acceptance rate), 22 out of 110 short papers (20% acceptance rate), and 9 out of 25 Past, Present and Future paper submissions (36% acceptance rate). Prominent topics covered by these papers include human factors, social aspects, context awareness, cold start, novelty and diversity, and core algorithmic research (matrix factorization, deep learning, probabilistic approaches, etc.). Building on the tradition established by previous years, RecSys 2016 features a strong focus on significant real-world challenges facing industrial practitioners and practical solutions to those challenges. The three industry sessions feature a rich set of talks from Mendeley, Meetup, Bloomberg, Foursquare, Spotify, Netflix, Pandora, Stitch Fix, Expedia, Nara Logics, GraphSQL, Retail Rocket, Quora, Google and Pinterest. A wide range of domains are represented in these sessions including publishing, news, Q & A, events, music, movies, television, fashion, apps and games.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4035-9},
+ location = {Boston, Massachusetts, USA},
+ publisher = {ACM},
+ title = {RecSys '16: Proceedings of the 10th ACM Conference on Recommender Systems},
+ year = {2016}
+}
+
+
+@inproceedings{Salehi-Abari:2015:PSN:2792838.2800190,
+ abstract = {Social networks facilitate a variety of social, economic, and political interactions. Homophily---the tendency for people to associate or interact with similar peers---and social influence---the tendency to adopt certain characteristics of those with whom one interacts---suggest that preferences (e.g., over products, services, political parties) are likely to be correlated among people whom directly interact in a social network. We develop a model, preference-oriented social networks, that captures such correlations of individual preferences, where preferences take the form of rankings over a set of options. We develop probabilistic inference methods for predicting individual preferences given observed social connections and partial observations of the preferences of others in the network. We exploit these predictions in a social choice context to make group decisions or recommendations even when the preferences of some group members are unobserved. Experiments demonstrate the effectiveness of our algorithms and the improvements made possible by accounting for social ties.},
+ acmid = {2800190},
+ address = {New York, NY, USA},
+ author = {Salehi-Abari, Amirali and Boutilier, Craig},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800190},
+ isbn = {978-1-4503-3692-5},
+ keyword = {group recommendation, preferences, probabilistic inference, probabilistic models, social networks},
+ link = {http://doi.acm.org/10.1145/2792838.2800190},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {35--42},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Preference-oriented Social Networks: Group Recommendation and Inference},
+ year = {2015}
+}
+
+
+@inproceedings{Berlioz:2015:ADP:2792838.2800173,
+ abstract = {Recommender systems are increasingly becoming an integral part of on-line services. As the recommendations rely on personal user information, there is an inherent loss of privacy resulting from the use of such systems. While several works studied privacy-enhanced neighborhood-based recommendations, little attention has been paid to privacy preserving latent factor models, like those represented by matrix factorization techniques. In this paper, we address the problem of privacy preserving matrix factorization by utilizing differential privacy, a rigorous and provable privacy preserving method. We propose and study several approaches for applying differential privacy to matrix factorization, and evaluate the privacy-accuracy trade-offs offered by each approach. We show that input perturbation yields the best recommendation accuracy, while guaranteeing a solid level of privacy protection.},
+ acmid = {2800173},
+ address = {New York, NY, USA},
+ author = {Berlioz, Arnaud and Friedman, Arik and Kaafar, Mohamed Ali and Boreli, Roksana and Berkovsky, Shlomo},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800173},
+ isbn = {978-1-4503-3692-5},
+ keyword = {differential privacy, matrix factorization},
+ link = {http://doi.acm.org/10.1145/2792838.2800173},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {107--114},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Applying Differential Privacy to Matrix Factorization},
+ year = {2015}
+}
+
+
+@inproceedings{Song:2015:IMF:2792838.2799668,
+ abstract = {Matrix factorization is widely used in Recommender Systems. Although existing popular incremental matrix factorization methods are effectively in reducing time complexity, they simply assume that the similarity between items or users is invariant. For instance, they keep the item feature matrix unchanged and just update the user matrix without re-training the entire model. However, with the new users growing continuously, the fitting error would be accumulated since the extra distribution information of items has not been utilized. In this paper, we present an alternative and reasonable approach, with a relaxed assumption that the similarity between items (users) is relatively stable after updating. Concretely, utilizing the prediction error of the new data as the auxiliary features, our method updates both feature matrices simultaneously, and thus users' preference can be better modeled than merely adjusting one corresponded feature matrix. Besides, our method maintains the feature dimension in a smaller size through taking advantage of matrix sketching. Experimental results show that our proposal outperforms the existing incremental matrix factorization methods.},
+ acmid = {2799668},
+ address = {New York, NY, USA},
+ author = {Song, Qiang and Cheng, Jian and Lu, Hanqing},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799668},
+ isbn = {978-1-4503-3692-5},
+ keyword = {matrix factorization, recommender systems, sketching},
+ link = {http://doi.acm.org/10.1145/2792838.2799668},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {277--280},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Incremental Matrix Factorization via Feature Space Re-learning for Recommender System},
+ year = {2015}
+}
+
+
+@inproceedings{Forsati:2015:PER:2792838.2800198,
+ abstract = {The significance of social-enhanced recommender systems is increasing, along with its practicality, as online reviews, ratings, friendship links, and follower relationships are increasingly becoming available. In recent years, there has been an upsurge of interest in exploiting social information, such as trust and distrust relations in recommendation algorithms. The goal is to improve the quality of suggestions and mitigate the data sparsity and the cold-start users problems in existing systems. In this paper, we introduce a general collaborative social ranking model to rank the latent features of users extracted from rating data based on the social context of users. In contrast to existing social regularization methods, the proposed framework is able to simultaneously leverage trust, distrust, and neutral relations, and has a linear dependency on the social network size. By integrating the ranking based social regularization idea into the matrix factorization algorithm, we propose a novel recommendation algorithm, dubbed PushTrust. Our experiments on the Epinions dataset demonstrate that collaboratively ranking the latent features of users by exploiting trust and distrust relations leads to a substantial increase in performance, and to effectively deal with cold-start users problem.},
+ acmid = {2800198},
+ address = {New York, NY, USA},
+ author = {Forsati, Rana and Barjasteh, Iman and Masrour, Farzan and Esfahanian, Abdol-Hossein and Radha, Hayder},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800198},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, collaborative social ranking, matrix factorization, social regularization},
+ link = {http://doi.acm.org/10.1145/2792838.2800198},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {51--58},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {PushTrust: An Efficient Recommendation Algorithm by Leveraging Trust and Distrust Relations},
+ year = {2015}
+}
+
+
+@inproceedings{Hidasi:2015:CPM:2792838.2796543,
+ abstract = {This work focuses on solving the context-aware implicit feedback based recommendation task with factorization and is heavily influenced by the practical considerations. I propose context-aware factorization algorithms that can efficiently work on implicit data. I generalize these algorithms and propose the General Factorization Framework (GFF) in which experimentation with novel preference models is possible. This practically useful, yet neglected feature results in models that are more appropriate for context-aware recommendations than the ones used by the state-of-the-art. I also propose a way to speed up and enhance scalability of the training process, that makes it viable to use the more accurate high factor models with reasonable training times.},
+ acmid = {2796543},
+ address = {New York, NY, USA},
+ author = {Hidasi, Bal\'{a}zs},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796543},
+ isbn = {978-1-4503-3692-5},
+ keyword = {context-awareness, factorization, implicit feedback, preference modeling, recommender systems, scalability},
+ link = {http://doi.acm.org/10.1145/2792838.2796543},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {371--374},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Context-aware Preference Modeling with Factorization},
+ year = {2015}
+}
+
+
+@inproceedings{Ben-Shimon:2015:RCY:2792838.2798723,
+ abstract = {The 2015 ACM Recommender Systems Challenge offered the opportunity to work on a large-scale e-commerce dataset from a big retailer in Europe which is accepting recommender system as a service from YOOCHOOSE. Participants tackled the problem of predicting what items a user intends to purchase, if any, given a click sequence performed during an activity session on the e-commerce website. The challenge ran for seven months and was very successful, attracting 850 teams from 49 countries which submitted a total of 5,437 solutions. The winners of the challenge scored approximately 50% of the maximum score, which we considered as an impressive achievement. In this paper we provide a brief overview of the challenge and its results.},
+ acmid = {2798723},
+ address = {New York, NY, USA},
+ author = {Ben-Shimon, David and Tsikinovsky, Alexander and Friedmann, Michael and Shapira, Bracha and Rokach, Lior and Hoerle, Johannes},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798723},
+ isbn = {978-1-4503-3692-5},
+ keyword = {e-commerce, recommender systems, recsys challenge 2015, yoochoose},
+ link = {http://doi.acm.org/10.1145/2792838.2798723},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {357--358},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {RecSys Challenge 2015 and the YOOCHOOSE Dataset},
+ year = {2015}
+}
+
+
+@inproceedings{Daly:2015:CSF:2792838.2799673,
+ abstract = {Real-time traffic awareness applications are playing an ever increasing role understanding and tackling traffic congestion in cities. First-hand accounts from drivers witnessing an incident is an invaluable source of information for traffic managers. Nowadays, drivers increasingly contact control rooms through social media to report on journey times, accidents or road weather conditions. These new interactions allow traffic controllers to engage users, and in particular to query them for information rather than passively collecting it. Querying participants presents the challenge of which users to probe for updates about a specific situation. In order to maximise the probability of a user responding and the accuracy of the information, we propose a strategy which takes into account the engagement levels of the user, the mobility profile and the reputation of the user. We provide an analysis of a real-world user corpus of Twitter users contributing updates to LiveDrive, a Dublin based traffic radio station.},
+ acmid = {2799673},
+ address = {New York, NY, USA},
+ author = {Daly, Elizabeth and Berlingerio, Michele and Schnitzler, Francois},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799673},
+ isbn = {978-1-4503-3692-5},
+ keyword = {crowd-sourcing, recommender systems, traffic},
+ link = {http://doi.acm.org/10.1145/2792838.2799673},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {253--256},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Crowd Sourcing, with a Few Answers: Recommending Commuters for Traffic Updates},
+ year = {2015}
+}
+
+
+@inproceedings{Bogers:2015:SWN:2792838.2798718,
+ abstract = {While content-based recommendation has been applied successfully in many different domains, it has not seen the same level of attention as collaborative filtering techniques have. However, there are many recommendation domains and applications where content and metadata play a key role, either in addition to or instead of ratings and implicit usage data. For some domains, such as movies, the relationship between content and usage data has seen thorough investigation already, but for many other domains, such as books, news, scientific articles, and Web pages we still do not know if and how these data sources should be combined to provided the best recommendation performance. The CBRecSys 2015 workshop aims to address this by providing a dedicated venue for papers dedicated to all aspects of content-based recommendation.},
+ acmid = {2798718},
+ address = {New York, NY, USA},
+ author = {Bogers, Toine and Koolen, Marijn},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798718},
+ isbn = {978-1-4503-3692-5},
+ keyword = {content-based recommendation, context, implicit feedback, recommender systems, semantics, text reviews, user-generated contents},
+ link = {http://doi.acm.org/10.1145/2792838.2798718},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {339--340},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Second Workshop on New Trends in Content-based Recommender Systems (CBRecSys 2015)},
+ year = {2015}
+}
+
+
+@inproceedings{Tkalcic:2015:EWE:2792838.2798716,
+ abstract = {The EMPIRE workshop focuses on recommender systems (and other personalized systems) that take advantage of user-centric properties, such as emotions and personality. The workshop is organized as a focused mini-conference with technical and position papers. The goal is to gather the scattered work under a common umbrella and take advantage of the discussion time to draw future research opportunities.},
+ acmid = {2798716},
+ address = {New York, NY, USA},
+ author = {Tkal\v{c}i\v{c}, Marco and De Carolis, Berardina and de Gemmis, Marco and Odi\'{c}, Ante and Ko\v{s}ir, Andrej},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798716},
+ isbn = {978-1-4503-3692-5},
+ keyword = {emotions, personality, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2798716},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {343--344},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {EMPIRE 2015: Workshop on Emotions and Personality in Personalized Systems},
+ year = {2015}
+}
+
+
+@inproceedings{BalbyMarinho:2015:RPR:2792838.2799674,
+ abstract = {Large scale virtual worlds such as massive multiplayer online games or 3D worlds gained tremendous popularity over the past few years. With the large and ever increasing amount of content available, virtual world users face the information overload problem. To tackle this issue, game-designers usually deploy recommendation services with the aim of making the virtual world a more joyful environment to be connected at. In this context, we present in this paper the results of a project that aims at understanding the mobility patterns of virtual world users in order to derive place recommenders for helping them to explore content more efficiently. Our study focus on the virtual world SecondLife, one of the largest and most prominent in recent years. Since SecondLife is comparable to real-world Location-based Social Networks (LBSNs), i.e., users can both check-in and share visited virtual places, a natural approach is to assume that place recommenders that are known to work well on real-world LBSNs will also work well on SecondLife. We have put this assumption to the test and found out that (i) while collaborative filtering algorithms have compatible performances in both environments, (ii) existing place recommenders based on geographic metadata are not useful in SecondLife.},
+ acmid = {2799674},
+ address = {New York, NY, USA},
+ author = {Balby Marinho, Leandro and Trattner, Christoph and Parra, Denis},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799674},
+ isbn = {978-1-4503-3692-5},
+ keyword = {location-based recommendations, virtual environments},
+ link = {http://doi.acm.org/10.1145/2792838.2799674},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {245--248},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Are Real-World Place Recommender Algorithms Useful in Virtual World Environments?},
+ year = {2015}
+}
+
+
+@inproceedings{Hopfgartner:2015:RRS:2792838.2792839,
+ abstract = {This tutorial addressed two trending topics in the field of recommender systems research, namely A/B testing and real-time recommendations of streamed data. Focusing on the news domain, participants learned how to benchmark the performance of stream-based recommendation algorithms in a live recommender system and in a simulated environment.},
+ acmid = {2792839},
+ address = {New York, NY, USA},
+ author = {Hopfgartner, Frank and Kille, Benjamin and Heintz, Tobias and Turrin, Roberto},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2792839},
+ isbn = {978-1-4503-3692-5},
+ keyword = {A/B testing, offline evaluation, stream recommendation},
+ link = {http://doi.acm.org/10.1145/2792838.2792839},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {361--362},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Real-time Recommendation of Streamed Data},
+ year = {2015}
+}
+
+
+@inproceedings{Liu:2015:FDP:2792838.2800191,
+ abstract = {Differentially private collaborative filtering is a challenging task, both in terms of accuracy and speed. We present a simple algorithm that is provably differentially private, while offering good performance, using a novel connection of differential privacy to Bayesian posterior sampling via Stochastic Gradient Langevin Dynamics. Due to its simplicity the algorithm lends itself to efficient implementation. By careful systems design and by exploiting the power law behavior of the data to maximize CPU cache bandwidth we are able to generate 1024 dimensional models at a rate of 8.5 million recommendations per second on a single PC.},
+ acmid = {2800191},
+ address = {New York, NY, USA},
+ author = {Liu, Ziqi and Wang, Yu-Xiang and Smola, Alexander},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800191},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, differential privacy, scalable matrix factorization},
+ link = {http://doi.acm.org/10.1145/2792838.2800191},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {171--178},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Fast Differentially Private Matrix Factorization},
+ year = {2015}
+}
+
+
+@inproceedings{Maksai:2015:POP:2792838.2800184,
+ abstract = {We investigate how metrics that can be measured offline can be used to predict the online performance of recommender systems, thus avoiding costly A-B testing. In addition to accuracy metrics, we combine diversity, coverage, and serendipity metrics to create a new performance model. Using the model, we quantify the trade-off between different metrics and propose to use it to tune the parameters of recommender algorithms without the need for online testing. Another application for the model is a self-adjusting algorithm blend that optimizes a recommender's parameters over time. We evaluate our findings on data and experiments from news websites.},
+ acmid = {2800184},
+ address = {New York, NY, USA},
+ author = {Maksai, Andrii and Garcin, Florent and Faltings, Boi},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800184},
+ isbn = {978-1-4503-3692-5},
+ keyword = {evaluation metrics, online evaluation, recommender system},
+ link = {http://doi.acm.org/10.1145/2792838.2800184},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {179--186},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Predicting Online Performance of News Recommender Systems Through Richer Evaluation Metrics},
+ year = {2015}
+}
+
+
+@inproceedings{Ye:2015:LWL:2792838.2798715,
+ abstract = {With the increase of data collected and computation power available, modern recommender systems are ever facing new challenges. While complex models are developed in academia, industry practice seems to focus on relatively simple techniques that can deal with the magnitude of data and the need to distribute the computation. The workshop on large-scale recommender systems (LSRS) is a meeting place for industry and academia to discuss the current and future challenges of applied large-scale recommender systems.},
+ acmid = {2798715},
+ address = {New York, NY, USA},
+ author = {Ye, Tao and Bickson, Danny and Ampazis, Nicholas and Benczur, Andras},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798715},
+ isbn = {978-1-4503-3692-5},
+ keyword = {big data, machine learning, recommendation systems, scalability},
+ link = {http://doi.acm.org/10.1145/2792838.2798715},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {349--350},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {LSRS'15: Workshop on Large-Scale Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Said:2015:RER:2792838.2792841,
+ abstract = {Recommender systems research is by and large based on comparisons of recommendation algorithms' predictive accuracies: the better the evaluation metrics (higher accuracy scores or lower predictive errors), the better the recommendation algorithm. Comparing the evaluation results of two recommendation approaches is however a difficult process as there are very many factors to be considered in the implementation of an algorithm, its evaluation, and how datasets are processed and prepared. This tutorial shows how to present evaluation results in a clear and concise manner, while ensuring that the results are comparable, replicable and unbiased. These insights are not limited to recommender systems research alone, but are also valid for experiments with other types of personalized interactions and contextual information access.},
+ acmid = {2792841},
+ address = {New York, NY, USA},
+ author = {Said, Alan and Bellog\'{\i}n, Alejandro},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2792841},
+ isbn = {978-1-4503-3692-5},
+ keyword = {evaluation, experimental design, experimental methodology, replicability, reproducibility},
+ link = {http://doi.acm.org/10.1145/2792838.2792841},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {363--364},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Replicable Evaluation of Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Banks:2015:RGU:2792838.2799675,
+ abstract = {This paper describes a casual Facebook game to capture recommendation data as a side-effect of gameplay. We show how this data can be used to make successful recommendations as part of a live-user trial.},
+ acmid = {2799675},
+ address = {New York, NY, USA},
+ author = {Banks, Sam and Rafter, Rachael and Smyth, Barry},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799675},
+ isbn = {978-1-4503-3692-5},
+ keyword = {crowdsourcing, games-with-a-purpose, human computation, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799675},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {305--308},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {The Recommendation Game: Using a Game-with-a-Purpose to Generate Recommendation Data},
+ year = {2015}
+}
+
+
+@proceedings{Ben-Shimon:2015:2813448,
+ abstract = {This volume contains the papers presented at the ACM RecSys Challenge 2015 workshop held on September 16, 2015, in Vienna, Austria. The challenge offered participants the opportunity to work on a large-scale e-commerce dataset from a big retailer in Europe. Participants tackled the problem of predicting what items a user intends to purchase, if any, given a click sequence performed during an activity session on the e-commerce website. The challenge was launched on November 15, 2014, and ran for seven months, attracting 850 teams from 49 countries which submitted a total of 5,437 solutions. The winners were determined based on the final ranking of the scores at the end of the challenge. However, in order to receive the monetary prize, the participants were required to submit, and have accepted, a paper detailing the applied algorithms, and attend the challenge's workshop. There were 22 submissions, and each submission was reviewed by at least two program committee members. The following table contains a summary of the 12 accepted papers and the corresponding score and rank in the final leaderboard.},
+ address = {New York, NY, USA},
+ editor = {Ben-Shimon, David and Friedmann, Michael and Rokach, Lior and Shapira, Bracha},
+ isbn = {978-1-4503-3665-9},
+ location = {Vienna, Austria},
+ publisher = {ACM},
+ title = {RecSys '15 Challenge: Proceedings of the 2015 International ACM Recommender Systems Challenge},
+ year = {2015}
+}
+
+
+@inproceedings{Charlin:2015:DPF:2792838.2800174,
+ abstract = {Models for recommender systems use latent factors to explain the preferences and behaviors of users with respect to a set of items (e.g., movies, books, academic papers). Typically, the latent factors are assumed to be static and, given these factors, the observed pref- erences and behaviors of users are assumed to be generated without order. These assumptions limit the explorative and predictive capabilities of such models, since users' interests and item popularity may evolve over time. To address this, we propose dPF, a dynamic matrix factorization model based on the recent Poisson factorization model for recommendations. dPF models the time evolving latent factors with a Kalman filter and the actions with Poisson distributions. We derive a scalable variational inference algorithm to infer the latent factors. Finally, we demonstrate dPF on 10 years of user click data from arXiv.org, one of the largest repository of scientific papers and a formidable source of information about the behavior of scientists. Empirically we show performance improvement over both static and, more recently proposed, dynamic recommendation models. We also provide a thorough exploration of the inferred posteriors over the latent variables.},
+ acmid = {2800174},
+ address = {New York, NY, USA},
+ author = {Charlin, Laurent and Ranganath, Rajesh and McInerney, James and Blei, David M.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800174},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, dynamic models, matrix factorization, probabilistic models, state space models, variational inference},
+ link = {http://doi.acm.org/10.1145/2792838.2800174},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {155--162},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Dynamic Poisson Factorization},
+ year = {2015}
+}
+
+
+@inproceedings{O'Donovan:2015:JWI:2792838.2798714,
+ abstract = {As an interactive intelligent system, recommender systems are developed to give recommendations that match users' preferences. Since the emergence of recommender systems, a large majority of research focuses on objective accuracy criteria and less attention has been paid to how users interact with the system and the efficacy of interface designs from users' perspectives. The field has reached a point where it is ready to look beyond algorithms, into users' interactions, decision making processes, and overall experience. Following from the success of the joint IntRS 2014 workshop and previous workshops on Interfaces and Decisions in Recommender Systems, this workshop will focus on the aspect of integrating different theories of human decision making into the construction of recommender systems. It will focus particularly on the impact of interfaces on decision support and overall satisfaction, and on ways to compare and evaluate novel techniques and applications in this area.},
+ acmid = {2798714},
+ address = {New York, NY, USA},
+ author = {O'Donovan, John and Tintarev, Nava and Felfernig, Alexander and Brusilovsky, Peter and Semeraro, Giovanni and Lops, Pasquale},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798714},
+ isbn = {978-1-4503-3692-5},
+ keyword = {decision biases, decision making, decision psychology, interaction, recommender algorithms, recommender systems, user interfaces},
+ link = {http://doi.acm.org/10.1145/2792838.2798714},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {347--348},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Joint Workshop on Interfaces and Human Decision Making for Recommender Systems (\#IntRS)},
+ year = {2015}
+}
+
+
+@inproceedings{Griesner:2015:PRT:2792838.2799679,
+ abstract = {Providing personalized point-of-interest (POI) recommendation has become a major issue with the rapid emergence of location-based social networks (LBSNs). Unlike traditional recommendation approaches, the LBSNs application domain comes with significant geographical and temporal dimensions. Moreover most of traditional recommendation algorithms fail to cope with the specific challenges implied by these two dimensions. Fusing geographical and temporal influences for better recommendation accuracy in LBSNs remains unexplored, as far as we know. We depict how matrix factorization can serve POI recommendation, and propose a novel attempt to integrate both geographical and temporal influences into matrix factorization. Specifically we present GeoMF-TD, an extension of geographical matrix factorization with temporal dependencies. Our experiments on a real dataset shows up to 20\% benefit on recommendation precision.},
+ acmid = {2799679},
+ address = {New York, NY, USA},
+ author = {Griesner, Jean-Benoit and Abdessalem, Talel and Naacke, Hubert},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799679},
+ isbn = {978-1-4503-3692-5},
+ keyword = {accuracy measures, kernel density estimation, matrix factorization},
+ link = {http://doi.acm.org/10.1145/2792838.2799679},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {301--304},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {POI Recommendation: Towards Fused Matrix Factorization with Geographical and Temporal Influences},
+ year = {2015}
+}
+
+
+@inproceedings{Kang:2015:EJF:2792838.2799663,
+ abstract = {Rejection is the norm in academic publishing. One of the main reasons for rejections is that the topics of the submitted papers are not relevant to the scope of the journal, even when the papers themselves are excellent. Submission to a journal that fits well with the publication may avoid this issue. A system that is able to suggest journals that have published similar articles to the submitted papers may help authors choose where to submit. The Elsevier journal finder, a freely available online service, is one of the most comprehensive journal recommender systems, covering all scientific domains and more than 2,900 per-reviewed Elsevier journals. The system uses natural language processing for feature generation, and Okapi BM25 matching for the recommendation algorithm. The procedure is to paste text, such as an abstract, and get a list of recommend journals and relevant metadata. The website URL is http://journalfinder.elsevier.com.},
+ acmid = {2799663},
+ address = {New York, NY, USA},
+ author = {Kang, Ning and Doornenbal, Marius A. and Schijvenaars, Robert J.A.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799663},
+ isbn = {978-1-4503-3692-5},
+ keyword = {TF-IDF, natural language processing, noun phrase, okapi BM25, recommender system},
+ link = {http://doi.acm.org/10.1145/2792838.2799663},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {261--264},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Elsevier Journal Finder: Recommending Journals for Your Paper},
+ year = {2015}
+}
+
+
+@inproceedings{Steck:2015:IRS:2792838.2792840,
+ abstract = {In this tutorial we will explore the field of interactive video and music recommendations and their application at Netflix and Spotify. Interactive recommender systems enable the user to steer the received recommendations in the desired direction through explicit interaction with the system. In this tutorial, we outline the various aspects that are crucial for a smooth and effective user experience. In particular, we present our insights from several A/B tests. The tutorial will help researchers and practitioners in the RecSys community to gain a deeper understanding of the challenges related to the application of recommender systems in the online video and music entertainment business.},
+ acmid = {2792840},
+ address = {New York, NY, USA},
+ author = {Steck, Harald and van Zwol, Roelof and Johnson, Chris},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2792840},
+ isbn = {978-1-4503-3692-5},
+ keyword = {interactive recommender systems, personalization},
+ link = {http://doi.acm.org/10.1145/2792838.2792840},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {359--360},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Interactive Recommender Systems: Tutorial},
+ year = {2015}
+}
+
+
+@inproceedings{Kowald:2015:ETR:2792838.2799664,
+ abstract = {To date, the evaluation of tag recommender algorithms has mostly been conducted in limited ways, including p-core pruned datasets, a small set of compared algorithms and solely based on recommender accuracy. In this study, we use an open-source evaluation framework to compare a rich set of state-of-the-art algorithms in six unfiltered, open datasets via various metrics, measuring not only accuracy but also the diversity, novelty and computational costs of the approaches. We therefore provide a transparent and reproducible tag recommender evaluation in real-world folksonomies. Our results suggest that the efficacy of an algorithm highly depends on the given needs and thus, they should be of interest to both researchers and developers in the field of tag-based recommender systems.},
+ acmid = {2799664},
+ address = {New York, NY, USA},
+ author = {Kowald, Dominik and Lex, Elisabeth},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799664},
+ isbn = {978-1-4503-3692-5},
+ keyword = {accuracy, computational costs, diversity, novelty, recommender evaluation, social tagging systems, tag recommender},
+ link = {http://doi.acm.org/10.1145/2792838.2799664},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {265--268},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Evaluating Tag Recommender Algorithms in Real-World Folksonomies: A Comparative Study},
+ year = {2015}
+}
+
+
+@inproceedings{Sahebi:2015:TTT:2792838.2800188,
+ abstract = {As the heterogeneity of data sources are increasing on the web, and due to the sparsity of data in each of these data sources, cross-domain recommendation is becoming an emerging research topic in the recent years. Cross-domain collaborative filtering aims to transfer the user rating pattern from source (auxiliary) domains to a target domain for the purpose of alleviating the sparsity problem and providing better target recommendations. However, the studies so far have either focused on a limited number of domains that are assumed to be related to each other (such as books and movies), or a division of the same dataset (such as movies) into different domains based on an item characteristic (such as genre). In this paper, we study a broad set of domains and their characteristics to understand the factors that affect the success or failure of cross-domain collaborative filtering, the amount of improvement in cross-domain approaches, and the selection of best source domains for a specific target domain. We propose to use Canonical Correlation Analysis (CCA) as a significant major factor in finding the most promising source domains for a target domain, and suggest a cross-domain collaborative filtering based on CCA (CD-CCA) that proves to be successful in using the shared information between domains in the target recommendations.},
+ acmid = {2800188},
+ address = {New York, NY, USA},
+ author = {Sahebi, Shaghayegh and Brusilovsky, Peter},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800188},
+ isbn = {978-1-4503-3692-5},
+ keyword = {canonical correlation analysis, collaborative filtering, cross-domain, domain pair, recommender system, source domain, target domain},
+ link = {http://doi.acm.org/10.1145/2792838.2800188},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {131--138},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {It Takes Two to Tango: An Exploration of Domain Pairs for Cross-Domain Collaborative Filtering},
+ year = {2015}
+}
+
+
+@inproceedings{HosseinzadehAghdam:2015:ARC:2792838.2799684,
+ abstract = {Recommender systems help users find items of interest by tailoring their recommendations to users' personal preferences. The utility of an item for a user, however, may vary greatly depending on that user's specific situation or the context in which the item is used. Without considering these changes in preferences, the recommendations may match the general preferences of a user, but they may have small value for the user in his/her current situation. In this paper, we introduce a hierarchical hidden Markov model for capturing changes in user's preferences. Using a user's feedback sequence on items, we model the user as a hierarchical hidden Markov process and the current context of the user as a hidden variable in this model. For a given user, our model is used to infer the maximum likelihood sequence of transitions between contextual states and to predict the probability distribution for the context of the next action. The predicted context is then used to generate recommendations. Our evaluation results using Last.fm music playlist data, indicate that this approach achieves significantly better performance in terms of accuracy and diversity compared to baseline methods.},
+ acmid = {2799684},
+ address = {New York, NY, USA},
+ author = {Hosseinzadeh Aghdam, Mehdi and Hariri, Negar and Mobasher, Bamshad and Burke, Robin},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799684},
+ isbn = {978-1-4503-3692-5},
+ keyword = {context-aware recommendation algorithms, hierarchical hidden markov models, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799684},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {241--244},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Adapting Recommendations to Contextual Changes Using Hierarchical Hidden Markov Models},
+ year = {2015}
+}
+
+
+@inproceedings{Valcarce:2015:SPR:2792838.2799677,
+ abstract = {Probabilistic modelling of recommender systems naturally introduces the concept of prior probability into the recommendation task. Relevance-Based Language Models, a principled probabilistic query expansion technique in Information Retrieval, has been recently adapted to the item recommendation task with success. In this paper, we study the effect of the item and user prior probabilities under that framework. We adapt two priors from the document retrieval field and then we propose other two new probabilistic priors. Evidence gathered from experimentation indicates that a linear prior for the neighbour and a probabilistic prior based on Dirichlet smoothing for the items improve the quality of the item recommendation ranking.},
+ acmid = {2799677},
+ address = {New York, NY, USA},
+ author = {Valcarce, Daniel and Parapar, Javier and Barreiro, Alvaro},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799677},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, prior probability, recommender systems, relevance-based language models},
+ link = {http://doi.acm.org/10.1145/2792838.2799677},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {237--240},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {A Study of Priors for Relevance-Based Language Modelling of Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Vall:2015:LAM:2792838.2796548,
+ abstract = {The objective of this PhD research is to deepen the understanding of how people listen to music and construct playlists. We believe that further insights into such mechanisms can lead to enhanced music recommendations. We research on the exploitation of user-generated data in the context of on-line music services, since it constitutes a rich and increasing source of information of user behavior. The research carried out so far has centered on the scenario of producing a single artist recommendation. Concretely, in this paper we show how to mitigate the cold-start problem for new artists, elaborating on our findings on the combined effect of users' listening histories and users' tagging activity. As future research, we will investigate how improved techniques to exploit user-generated data can also be applied to the task of producing sequential recommendations, like playlists. We are particulary interested in creating music playlists similarly as users would do, and in finding mechanisms to make such music streams adapt to users' feedback on-line.},
+ acmid = {2796548},
+ address = {New York, NY, USA},
+ author = {Vall, Andreu},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796548},
+ isbn = {978-1-4503-3692-5},
+ keyword = {cold-start problem, collaborative filtering, music recommendation, playlist generation, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2796548},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {387--390},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Listener-Inspired Automated Music Playlist Generation},
+ year = {2015}
+}
+
+
+@inproceedings{Elsweiler:2015:TAM:2792838.2799665,
+ abstract = {Food recommenders have been touted as a useful tool to help people achieve a healthy diet. Here we incorporate nutrition into the recommender problem by examining the feasibility of algorithmically creating daily meal plans for a sample of user profiles (n=100), combined with a diverse set of food preference data (n=64) collected in a natural setting. Our analyses demonstrate it is possible to recommend plans for a large percentage of users which meet the guidelines set out by international health agencies},
+ acmid = {2799665},
+ address = {New York, NY, USA},
+ author = {Elsweiler, David and Harvey, Morgan},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799665},
+ isbn = {978-1-4503-3692-5},
+ keyword = {health, planning, prevention, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799665},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {313--316},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Towards Automatic Meal Plan Recommendations for Balanced Nutrition},
+ year = {2015}
+}
+
+
+@inproceedings{Neumann:2015:WRS:2792838.2798717,
+ abstract = {For many households the television is the central entertainment hub in their home, and the average TV viewer spends about half of their leisure time in front of a TV. At any given moment, a costumer has hundreds to thousands of entertainment choices available, which makes some sort of automatic, personalized recommendations desirable to help consumers deal with the often overwhelming number of choices they face. The 2nd Workshop on Recommendation Systems for Television and Online Video aims to offer a place to present and discuss the latest academic and industrial research on recommendation systems for this challenging and exciting application domain},
+ acmid = {2798717},
+ address = {New York, NY, USA},
+ author = {Neumann, Jan and Bickson, Danny and Sayyadi, Hassan and Turrin, Roberto and Hannon, John},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798717},
+ isbn = {978-1-4503-3692-5},
+ keyword = {big data, movies, recommendations, television, video-on-demand},
+ link = {http://doi.acm.org/10.1145/2792838.2798717},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {353--354},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {2Nd Workshop on Recommendation Systems for Television and Online Video (RecSysTV 2015)},
+ year = {2015}
+}
+
+
+@inproceedings{Verstrepen:2015:TRS:2792838.2800170,
+ abstract = {Standard collaborative filtering recommender systems assume that every account in the training data represents a single user. However, multiple users often share a single account. A typical example is a single shopping account for the whole family. Traditional recommender systems fail in this situation. If contextual information is available, context aware recommender systems are the state-of-the-art solution. Yet, often no contextual information is available. Therefore, we introduce the challenge of recommending to shared accounts in the absence of contextual information. We propose a solution to this challenge for all cases in which the reference recommender system is an item-based top-N collaborative filtering recommender system, generating recommendations based on binary, positive-only feedback. We experimentally show the advantages of our proposed solution for tackling the problems that arise from the existence of shared accounts on multiple datasets.},
+ acmid = {2800170},
+ address = {New York, NY, USA},
+ author = {Verstrepen, Koen and Goethals, Bart},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800170},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, explaining recommendations, nearest neighbors, recommender systems, shared account},
+ link = {http://doi.acm.org/10.1145/2792838.2800170},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {59--66},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Top-N Recommendation for Shared Accounts},
+ year = {2015}
+}
+
+
+@inproceedings{Macedo:2015:CER:2792838.2800187,
+ abstract = {The Web has grown into one of the most important channels to communicate social events nowadays. However, the sheer volume of events available in event-based social networks (EBSNs) often undermines the users' ability to choose the events that best fit their interests. Recommender systems appear as a natural solution for this problem, but differently from classic recommendation scenarios (e.g. movies, books), the event recommendation problem is intrinsically cold-start. Indeed, events published in EBSNs are typically short-lived and, by definition, are always in the future, having little or no trace of historical attendance. To overcome this limitation, we propose to exploit several contextual signals available from EBSNs. In particular, besides content-based signals based on the events' description and collaborative signals derived from users' RSVPs, we exploit social signals based on group memberships, location signals based on the users' geographical preferences, and temporal signals derived from the users' time preferences. Moreover, we combine the proposed signals for learning to rank events for personalized recommendation. Thorough experiments using a large crawl of Meetup.com demonstrate the effectiveness of our proposed contextual learning approach in contrast to state-of-the-art event recommenders from the literature.},
+ acmid = {2800187},
+ address = {New York, NY, USA},
+ author = {Macedo, Augusto Q. and Marinho, Leandro B. and Santos, Rodrygo L.T.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800187},
+ isbn = {978-1-4503-3692-5},
+ keyword = {algorithms, event-based social networks, experimentation, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800187},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {123--130},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Context-Aware Event Recommendation in Event-based Social Networks},
+ year = {2015}
+}
+
+
+@inproceedings{Mojsilovic:2015:AEE:2792838.2799497,
+ abstract = {Some of the largest worldwide employers today are knowledge-based enterprises whose most important asset is human capital. Knowledge workers are unique, each having individualized skills, competencies and expertise, which constantly evolve and expand. Managing and planning for such a workforce critically depends on the ability to construct complete, accurate, and real-time representation and inventory of the expertise of employees in a form that integrates with business processes. In this session Saška will describe how enterprise expertise assessment process can be posed as predictive modeling and recommendation problem, and will present results and lessons learned from an actual deployment of IBM Expertise, a corporate-wide expertise recommendation and management system.},
+ acmid = {2799497},
+ address = {New York, NY, USA},
+ author = {Mojsilovi\'{c}, Aleksandra and Varshney, Kush R.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799497},
+ isbn = {978-1-4503-3692-5},
+ keyword = {expertise, predictive modeling, recommender systems, social},
+ link = {http://doi.acm.org/10.1145/2792838.2799497},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {231--231},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Assessing Expertise in the Enterprise: The Recommender Point of View},
+ year = {2015}
+}
+
+
+@inproceedings{Christoffel:2015:BWA:2792838.2800180,
+ abstract = {User satisfaction is often dependent on providing accurate and diverse recommendations. In this paper, we explore scalable algorithms that exploit random walks as a sampling technique to obtain diverse recommendations without compromising on accuracy. Specifically, we present a novel graph vertex ranking recommendation algorithm called RP^3_beta that re-ranks items based on 3-hop random walk transition probabilities. We show empirically, that RP^3_beta provides accurate recommendations with high long-tail item frequency at the top of the recommendation list. We also present scalable approximate versions of RP^3_beta and the two most accurate previously published vertex ranking algorithms based on random walk transition probabilities and show that these approximations converge with increasing number of samples.},
+ acmid = {2800180},
+ address = {New York, NY, USA},
+ author = {Christoffel, Fabian and Paudel, Bibek and Newell, Chris and Bernstein, Abraham},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800180},
+ isbn = {978-1-4503-3692-5},
+ keyword = {bipartite graph, diversity, item ranking, long-tail, random walks, sampling, top-n recommendation},
+ link = {http://doi.acm.org/10.1145/2792838.2800180},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {163--170},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Blockbusters and Wallflowers: Accurate, Diverse, and Scalable Recommendations with Random Walks},
+ year = {2015}
+}
+
+
+@inproceedings{Li:2015:OCR:2792838.2800171,
+ abstract = {Recommender systems have become de facto tools for suggesting items that are of potential interest to users. Predicting a user's rating on an item is the fundamental recommendation task. Traditional methods that generate predictions by analyzing the user-item rating matrix perform poorly when the matrix is sparse. Recent approaches use data from social networks to improve accuracy. However, most of the social-network based recommender systems only consider direct friendships and they are less effective when the targeted user has few social connections. In this paper, we propose two alternative models that incorporate the overlapping community regularization into the matrix factorization framework. Our empirical study on four real datasets shows that our approaches outperform the state-of-the-art algorithms in both traditional and social-network based recommender systems regarding both cold-start users and normal users.},
+ acmid = {2800171},
+ address = {New York, NY, USA},
+ author = {Li, Hui and Wu, Dingming and Tang, Wenbin and Mamoulis, Nikos},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800171},
+ isbn = {978-1-4503-3692-5},
+ keyword = {matrix factorization, overlapping community regularization, rating prediction, social recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800171},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {27--34},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Overlapping Community Regularization for Rating Prediction in Social Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Lu:2015:EGP:2792838.2800189,
+ abstract = {Experts are important for providing reliable and authoritative information and opinion, as well as for improving online reviews and services. While considerable previous research has focused on finding topical experts with broad appeal -- e.g., top Java developers, best lawyers in Texas -- we tackle the problem of personalized expert recommendation, to identify experts who have special personal appeal and importance to users. One of the key insights motivating our approach is to leverage the geo-spatial preferences of users and the variation of these preferences across different regions, topics, and social communities. Through a fine-grained GPS-tagged social media trace, we characterize these geo-spatial preferences for personalized experts, and integrate these preferences into a matrix factorization-based personalized expert recommender. Through extensive experiments, we find that the proposed approach can improve the quality of recommendation by 24% in precision compared to several baselines. We also find that users' geo-spatial preference of expertise and their underlying social communities can ameliorate the cold start problem by more than 20% in precision and recall.},
+ acmid = {2800189},
+ address = {New York, NY, USA},
+ author = {Lu, Haokai and Caverlee, James},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800189},
+ isbn = {978-1-4503-3692-5},
+ keyword = {GPS-tagged social media, expert recommendation, geospatial preference},
+ link = {http://doi.acm.org/10.1145/2792838.2800189},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {67--74},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Exploiting Geo-Spatial Preference for Personalized Expert Recommendation},
+ year = {2015}
+}
+
+
+@inproceedings{Bouros:2015:LWL:2792838.2798720,
+ abstract = {The amount of available geo-referenced data has seen a dramatic explosion over the past few years. Human activities now generate digital traces that are annotated with location data, enabling the collection of rich information about people's interests and habits. This torrent of geo-referenced data provides a tremendous potential to augment recommender systems. The LocalRec'15 workshop brings together scholars from location-based services and recommender systems, and seeks to set out new trends and research directions.},
+ acmid = {2798720},
+ address = {New York, NY, USA},
+ author = {Bouros, Panagiotis and Lathia, Neal and Renz, Matthias and Ricci, Francesco and Sacharidis, Dimitris},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798720},
+ isbn = {978-1-4503-3692-5},
+ keyword = {location-based services, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2798720},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {351--352},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {LocalRec'15: Workshop on Location-Aware Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Gulla:2015:IWN:2792838.2798721,
+ abstract = {The 3rd International Workshop on News Recommendation and Analytics (INRA 2015) is held in conjunction with RecSys 2015 Conference in Vienna, Austria. This paper presents a brief summary of the INRA 2015. This workshop aims to create an interdisciplinary community that addresses design issues in news recommender systems and news analytics, and promote fruitful collaboration opportunities between researchers, media companies and practitioners. We have a keynote speaker and an invited demo presentation in addition to 4 papers accepted in this workshop.},
+ acmid = {2798721},
+ address = {New York, NY, USA},
+ author = {Gulla, Jon Atle and Yu, Bei and \"{O}zg\"{o}bek, \"{O}zlem and Shabib, Nafiseh},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798721},
+ isbn = {978-1-4503-3692-5},
+ keyword = {analytics, news recommendation, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2798721},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {345--346},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {3rd International Workshop on News Recommendation and Analytics (INRA 2015)},
+ year = {2015}
+}
+
+
+@inproceedings{Lim:2015:TRM:2792838.2799671,
+ abstract = {In implicit feedback datasets, non-interaction of a user with an item does not necessarily indicate that an item is irrelevant for the user. Thus, evaluation measures computed on the observed feedback may not accurately reflect performance on the complete data. In this paper, we discuss a missing data model for implicit feedback and propose a novel evaluation measure oriented towards Top-N recommendation. Our evaluation measure admits unbiased estimation under our missing data model, unlike the popular Normalized Discounted Cumulative Gain (NDCG) measure. We also derive an efficient algorithm to optimize the measure on the training data. We run several experiments which demonstrate the utility of our proposed measure.},
+ acmid = {2799671},
+ address = {New York, NY, USA},
+ author = {Lim, Daryl and McAuley, Julian and Lanckriet, Gert},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799671},
+ isbn = {978-1-4503-3692-5},
+ keyword = {evaluation, ranking, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799671},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {309--312},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Top-N Recommendation with Missing Implicit Feedback},
+ year = {2015}
+}
+
+
+@inproceedings{SarShalom:2015:DQM:2792838.2799670,
+ abstract = {Although data quality has been recognized as an important factor in the broad information systems research, it has received little attention in recommender systems. Data quality matters are typically addressed in recommenders by ad-hoc cleansing methods, which prune noisy or unreliable records from the data. However, the setting of the cleansing parameters is often done arbitrarily, without thorough consideration of the data characteristics. In this work, we turn to two central data quality problems in recommender systems: sparsity and redundancy. We devise models for setting data-dependent thresholds and sampling levels, and evaluate these using a collection of public and proprietary datasets. We observe that the models accurately predict data cleansing parameters, while having minor effect on the accuracy of the generated recommendations.},
+ acmid = {2799670},
+ address = {New York, NY, USA},
+ author = {Sar Shalom, Oren and Berkovsky, Shlomo and Ronen, Royi and Ziklik, Elad and Amihood, Amir},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799670},
+ isbn = {978-1-4503-3692-5},
+ keyword = {data quality, recommender systems, redundancy, sparsity},
+ link = {http://doi.acm.org/10.1145/2792838.2799670},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {257--260},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Data Quality Matters in Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Ekstrand:2015:LUC:2792838.2800195,
+ abstract = {Recommender systems are not one-size-fits-all; different algorithms and data sources have different strengths, making them a better or worse fit for different users and use cases. As one way of taking advantage of the relative merits of different algorithms, we gave users the ability to change the algorithm providing their movie recommendations and studied how they make use of this power. We conducted our study with the launch of a new version of the MovieLens movie recommender that supports multiple recommender algorithms and allows users to choose the algorithm they want to provide their recommendations. We examine log data from user interactions with this new feature to under-stand whether and how users switch among recommender algorithms, and select a final algorithm to use. We also look at the properties of the algorithms as they were experienced by users and examine their relationships to user behavior. We found that a substantial portion of our user base (25%) used the recommender-switching feature. The majority of users who used the control only switched algorithms a few times, trying a few out and settling down on an algorithm that they would leave alone. The largest number of users prefer a matrix factorization algorithm, followed closely by item-item collaborative filtering; users selected both of these algorithms much more often than they chose a non-personalized mean recommender. The algorithms did produce measurably different recommender lists for the users in the study, but these differences were not directly predictive of user choice.},
+ acmid = {2800195},
+ address = {New York, NY, USA},
+ author = {Ekstrand, Michael D. and Kluver, Daniel and Harper, F. Maxwell and Konstan, Joseph A.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800195},
+ isbn = {978-1-4503-3692-5},
+ keyword = {experiment, field study, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800195},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {11--18},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Letting Users Choose Recommender Algorithms: An Experimental Study},
+ year = {2015}
+}
+
+
+@inproceedings{Kazai:2015:PRC:2792838.2796552,
+ abstract = {Personalised news recommender systems traditionally rely on content ingested from a select set of publishers and ask users to indicate their interests from a predefined list of topics. They then provide users a feed of news items for each of their topics. In this demo, we present a mobile app that automatically learns users' interests from their browsing or twitter history and provides them with a personalised feed of diverse, crowd curated content. The app also continuously learns from the users' interactions as they swipe to like or skip items recommended to them. In addition, users can discover trending stories and content liked by other users they follow. The crowd is thus formed of the users, who as a whole act as the curators of the content to be recommended.},
+ acmid = {2796552},
+ address = {New York, NY, USA},
+ author = {Kazai, Gabriella and Clarke, Daoud and Yusof, Iskander and Venanzi, Matteo},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796552},
+ isbn = {978-1-4503-3692-5},
+ keyword = {crowd curation, mobile, recommender system, social filter},
+ link = {http://doi.acm.org/10.1145/2792838.2796552},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {325--326},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {A Personalised Reader for Crowd Curated Content},
+ year = {2015}
+}
+
+
+@inproceedings{Bourke:2015:ARS:2792838.2799495,
+ abstract = {Recommender systems have cemented themselves in the daily experiences of most online users. In this work we will elaborate on the different challenges faced when creating recommendations in the following domains - Online marketplaces: Two sided marketplaces where buyers and sellers can interact and sell items with each other. - Online News: Online news sites where users consume the latest news articles related to current affairs. - Generic Recommendations: Sites which create generic recommendations based on generalised algorithms. We will review how we address these different challenges in Schibsted. Schibsted is an international media company with over 200 million unique users a month, split across 39 countries across the world. Concretely we will review, and compare the primary challenges between the different domains mentioned as well as the commonalities and general lessons we have learnt. For example in a two sided marketplace, it is important that both actors in the interaction are considered when creating recommendations. Constraints such as price sensitivity and geographical location become important when identifying good quality recommendations for our users. Alternatively, in online news we need to consider issues such as freshness and topical relevance when creating recommendations for users, while also striving to ensure we have editorial satisfaction. Finally we can look to generic recommendation solutions where we provide simple recommendation API end points. In this case it is important to ensure good quality recommendations while ensuring a generic enough solution that it can be used in many different scenarios. What makes these challenges particularly interesting is that we approach these different challenges with a holistic view of for improving the overall user experience for our users in Schibsted.},
+ acmid = {2799495},
+ address = {New York, NY, USA},
+ author = {Bourke, Steven},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799495},
+ isbn = {978-1-4503-3692-5},
+ keyword = {e-commerce, news, real world deployments, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799495},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {229--229},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {The Application of Recommender Systems in a Multi Site, Multi Domain Environment},
+ year = {2015}
+}
+
+
+@inproceedings{Auteri:2015:PCD:2792838.2799493,
+ abstract = {The expansion of TV services such as DVR and, more recently, Catch-up have removed the temporal constraint typical of the Linear "appointment" TV enabling users to watch content they love at any time and on-demand. However, the DVR and Catch-up TV libraries, while providing a convenient time-shifted "on-demand" consumption, are indeed composed by content recently aired on a linear channel, so that they have more in common with Linear TV than they have with VOD. In this talk we will present and discuss the main challenges and some possible solutions to personalize the user experience with content from DVR and Catch-up TV, such as: (i) The consumption pattern is strongly affected by the context (e.g., time and device used to access the video service). (ii) Some content is consumed serially and still follows seasonal dynamics (e.g., TV Series). (iii) The system is fed with a massive and very dynamic streams of data (e.g., new content arriving right after broadcast, signals of user interactions). (iv) The same piece of content may coexist across multiple services provided by the same operator (e.g., linear schedule, network-DVR, catch-up TV, subscription VOD, rental VOD).},
+ acmid = {2799493},
+ address = {New York, NY, USA},
+ author = {Auteri, Pancrazio and Turrin, Roberto},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799493},
+ isbn = {978-1-4503-3692-5},
+ keyword = {DVR, TV, VOD, catch-up, content lifecycle, context, linear TV, personalization, predictive analytics, recommender systems, video on demand},
+ link = {http://doi.acm.org/10.1145/2792838.2799493},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {227--227},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Personalized Catch-up \&\#38; DVR: VOD or Linear, That is the Question},
+ year = {2015}
+}
+
+
+@inproceedings{Almahairi:2015:LDR:2792838.2800192,
+ abstract = {Recent work has shown that collaborative filter-based recommender systems can be improved by incorporating side information, such as natural language reviews, as a way of regularizing the derived product representations. Motivated by the success of this approach, we introduce two different models of reviews and study their effect on collaborative filtering performance. While the previous state-of-the-art approach is based on a latent Dirichlet allocation (LDA) model of reviews, the models we explore are neural network based: a bag-of-words product-of-experts model and a recurrent neural network. We demonstrate that the increased flexibility offered by the product-of-experts model allowed it to achieve state-of-the-art performance on the Amazon review dataset, outperforming the LDA-based approach. However, interestingly, the greater modeling power offered by the recurrent neural network appears to undermine the model's ability to act as a regularizer of the product representations.},
+ acmid = {2800192},
+ address = {New York, NY, USA},
+ author = {Almahairi, Amjad and Kastner, Kyle and Cho, Kyunghyun and Courville, Aaron},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800192},
+ isbn = {978-1-4503-3692-5},
+ keyword = {deep learning, neural networks, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2800192},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {147--154},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Learning Distributed Representations from Reviews for Collaborative Filtering},
+ year = {2015}
+}
+
+
+@inproceedings{Harper:2015:PUC:2792838.2800179,
+ abstract = {The essence of a recommender system is that it can recommend items personalized to the preferences of an individual user. But typically users are given no explicit control over this personalization, and are instead left guessing about how their actions affect the resulting recommendations. We hypothesize that any recommender algorithm will better fit some users' expectations than others, leaving opportunities for improvement. To address this challenge, we study a recommender that puts some control in the hands of users. Specifically, we build and evaluate a system that incorporates user-tuned popularity and recency modifiers, allowing users to express concepts like "show more popular items". We find that users who are given these controls evaluate the resulting recommendations much more positively. Further, we find that users diverge in their preferred settings, confirming the importance of giving control to users.},
+ acmid = {2800179},
+ address = {New York, NY, USA},
+ author = {Harper, F. Maxwell and Xu, Funing and Kaur, Harmanpreet and Condiff, Kyle and Chang, Shuo and Terveen, Loren},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800179},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, movielens, personalization, recommender systems, simulation study, social computing, user control, user study},
+ link = {http://doi.acm.org/10.1145/2792838.2800179},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {3--10},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Putting Users in Control of Their Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Jannach:2015:AER:2792838.2800176,
+ abstract = {An essential characteristic in many e-commerce settings is that website visitors can have very specific short-term shopping goals when they browse the site. Relying solely on long-term user models that are pre-trained on historical data can therefore be insufficient for a suitable next-basket recommendation. Simple "real-time" recommendation approaches based, e.g., on unpersonalized co-occurrence patterns, on the other hand do not fully exploit the available information about the user's long-term preference profile. In this work, we aim to explore and quantify the effectiveness of using and combining long-term models and short-term adaptation strategies. We conducted an empirical evaluation based on a novel evaluation design and two real-world datasets. The results indicate that maintaining short-term content-based and recency-based profiles of the visitors can lead to significant accuracy increases. At the same time, the experiments show that the choice of the algorithm for learning the long-term preferences is particularly important at the beginning of new shopping sessions.},
+ acmid = {2800176},
+ address = {New York, NY, USA},
+ author = {Jannach, Dietmar and Lerche, Lukas and Jugovac, Michael},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800176},
+ isbn = {978-1-4503-3692-5},
+ keyword = {algorithms, context, e-commerce, evaluation},
+ link = {http://doi.acm.org/10.1145/2792838.2800176},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {211--218},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Adaptation and Evaluation of Recommendations for Short-term Shopping Goals},
+ year = {2015}
+}
+
+
+@inproceedings{Karagiannakis:2015:OTA:2792838.2796555,
+ abstract = {In this demonstration, we present OSMRec, a command line utility and JOSM plugin for automatic recommendation of tags (categories) on newly created spatial entities in OpenStreetMap (OSM). JOSM allows downloading parts of OSM, editing the map (e.g. inserting, deleting, annotating with tags spatial entities) and re-uploading the updated part back on OSM. OSMRec plugin exploits already annotated entities within OSM to train category classification models and utilizes these models in order to recommend OSM categories for newly inserted spatial entities in OSM.},
+ acmid = {2796555},
+ address = {New York, NY, USA},
+ author = {Karagiannakis, Nikos and Giannopoulos, Giorgos and Skoutas, Dimitrios and Athanasiou, Spiros},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796555},
+ isbn = {978-1-4503-3692-5},
+ keyword = {OSM, category recommendation, spatial entities},
+ link = {http://doi.acm.org/10.1145/2792838.2796555},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {337--338},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {OSMRec Tool for Automatic Recommendation of Categories on Spatial Entities in OpenStreetMap},
+ year = {2015}
+}
+
+
+@inproceedings{Liu:2015:KER:2792838.2796557,
+ abstract = {Kibitz (kibitz.csail.mit.edu) is a web application and recommendation system framework that helps inexperienced and novice programmers to build recommenders without the need to program the back end for the system. The author uploads a table of items, and Kibitz produces a collaborative-filtering recommender for the uploaded items. The recommender can be hosted by Kibitz or downloaded and customized as a set of static pages hosted on the author's personal web domain. Developers who want to avoid the hassle of writing their own recommender back end may choose to link their websites to our service through our easy to use API. A demo of our system can be found at kibitz.csail.mit.edu/video_demo/.},
+ acmid = {2796557},
+ address = {New York, NY, USA},
+ author = {Liu, Quanquan and Karger, David R.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796557},
+ isbn = {978-1-4503-3692-5},
+ keyword = {applications and services, human factors, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2796557},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {335--336},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Kibitz: End-to-End Recommendation System Builder},
+ year = {2015}
+}
+
+
+@inproceedings{Barjasteh:2015:CIU:2792838.2800196,
+ abstract = {A major challenge in collaborative filtering based recommender systems is how to provide recommendations when rating data is sparse or entirely missing for a subset of users or items, commonly known as the cold-start problem. In recent years, there has been considerable interest in developing new solutions that address the cold-start problem. These solutions are mainly based on the idea of exploiting other sources of information to compensate for the lack of rating data. In this paper, we propose a novel algorithmic framework based on matrix factorization that simultaneously exploits the similarity information among users and items to alleviate the cold-start problem. In contrast to existing methods, the proposed algorithm decouples the following two aspects of the cold-start problem: (a) the completion of a rating sub-matrix, which is generated by excluding cold-start users and items from the original rating matrix; and (b) the transduction of knowledge from existing ratings to cold-start items/users using side information. This crucial difference significantly boosts the performance when appropriate side information is incorporated. We provide theoretical guarantees on the estimation error of the proposed two-stage algorithm based on the richness of similarity information in capturing the rating data. To the best of our knowledge, this is the first algorithm that addresses the cold-start problem with provable guarantees. We also conduct thorough experiments on synthetic and real datasets that demonstrate the effectiveness of the proposed algorithm and highlights the usefulness of auxiliary information in dealing with both cold-start users and items.},
+ acmid = {2800196},
+ address = {New York, NY, USA},
+ author = {Barjasteh, Iman and Forsati, Rana and Masrour, Farzan and Esfahanian, Abdol-Hossein and Radha, Hayder},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800196},
+ isbn = {978-1-4503-3692-5},
+ keyword = {cold-start problem, matrix factorization, sparsity},
+ link = {http://doi.acm.org/10.1145/2792838.2800196},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {91--98},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Cold-Start Item and User Recommendation with Decoupled Completion and Transduction},
+ year = {2015}
+}
+
+
+@inproceedings{Moreno:2015:TWT:2792838.2798713,
+ abstract = {Tourism has been one of the most prominents fields of application of recommender systems in the last ten years.This summary gives an overview of the latest advances in the area, which have been presented in the RecSys 2015 workshop on Tourism Recommender Systems.},
+ acmid = {2798713},
+ address = {New York, NY, USA},
+ author = {Moreno, Antonio and Sebasti\'{a}, Laura and Vansteenwegen, Pieter},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798713},
+ isbn = {978-1-4503-3692-5},
+ keyword = {diversification, group recommendation, ontologies, personalization, planning, recommender systems, tourism},
+ link = {http://doi.acm.org/10.1145/2792838.2798713},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {355--356},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {TouRS'15: Workshop on Tourism Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Zhao:2015:ERP:2792838.2800178,
+ abstract = {Most existing e-commerce recommender systems aim to recommend the right products to a consumer, assuming the properties of each product are fixed. However, some properties, including price discount, can be personalized to respond to each consumer's preference. This paper studies how to automatically set the price discount when recommending a product, in light of the fact that the price will often alter a consumer's purchase decision. The key to optimizing the discount is to predict consumer's willingness-to-pay (WTP), namely, the highest price a consumer is willing to pay for a product. Purchase data used by traditional e-commerce recommender systems provide points below or above the decision boundary. In this paper we collected training data to better predict the decision boundary. We implement a new e-commerce mechanism adapted from laboratory lottery and auction experiments that elicit a rational customer's exact WTP for a small subset of products, and use a machine learning algorithm to predict the customer's WTP for other products. The mechanism is implemented on our own e-commerce website that leverages Amazon's data and subjects recruited via Mechanical Turk. The experimental results suggest that this approach can help predict WTP, and boost consumer satisfaction as well as seller profit.},
+ acmid = {2800178},
+ address = {New York, NY, USA},
+ author = {Zhao, Qi and Zhang, Yi and Friedman, Daniel and Tan, Fangfang},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800178},
+ isbn = {978-1-4503-3692-5},
+ keyword = {consumer, crowdsourcing, e-commerce, promotion, recommender system},
+ link = {http://doi.acm.org/10.1145/2792838.2800178},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {219--226},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {E-commerce Recommendation with Personalized Promotion},
+ year = {2015}
+}
+
+
+@inproceedings{DaliBetzalel:2015:PMT:2792838.2799672,
+ abstract = {Proactive recommender systems push recommendations to users without their explicit request whenever a recommendation that suits a user is available. These systems strive to optimize the match between recommended items and users' preferences. We assume that recommendations might be reflected with low accuracy not only due to the recommended items' suitability to the user, but also because of the recommendations' timings. We therefore claim that it is possible to learn a model of good and bad contexts for recommendations that can later be integrated in a recommender system. Using mobile data collected during a three week user study, we suggest a two-phase model that is able to classify whether a certain context is at all suitable for any recommendation, regardless of its content. Results reveal that a hybrid model that first decides whether it should use a personal or a non-personal timing model, and then classifies accordingly whether the timing is proper for recommendations, is superior to both the personal or non-personal timing models.},
+ acmid = {2799672},
+ address = {New York, NY, USA},
+ author = {Dali Betzalel, Nofar and Shapira, Bracha and Rokach, Lior},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799672},
+ isbn = {978-1-4503-3692-5},
+ keyword = {data mining, mobile, personalization, proactivity, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799672},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {297--300},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {"Please, Not Now!": A Model for Timing Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Neumann:2015:RLT:2792838.2799494,
+ abstract = {Despite the rise in video-on-demand consumption, live TV is still the most popular way to consume video entertainment. At Comcast we are developing novel ways to make it easy for our customers to access the live TV content that is interesting and relevant for them at the current moment. In this talk, we will describe some of the latest research at Comcast Labs on learning the favorite stations and programs for a customer at a given time of day, personalizing their TV guide, and informing our customers of what is trending on TV and social media at that moment, so that they can participate in the shared experience of live TV. We will explain how usage data is processed using both batch and real-time approaches to personalize the experience for Comcast's customers},
+ acmid = {2799494},
+ address = {New York, NY, USA},
+ author = {Neumann, Jan and Sayyadi, Hassan},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799494},
+ isbn = {978-1-4503-3692-5},
+ keyword = {big data, movies, recommendations, television, video-on-demand},
+ link = {http://doi.acm.org/10.1145/2792838.2799494},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {228--228},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Recommendations for Live TV},
+ year = {2015}
+}
+
+
+@inproceedings{Geuens:2015:FMH:2792838.2796542,
+ abstract = {This study creates a hybrid recommendation system for online offer personalization of an e-commerce company. The system goes beyond existing literature by combining four different data sources, i.e. customer data, product data, implicit and explicit behavioral data, in a single algorithm. Factorization machines are employed as model-based algorithm and have as advantage that the four data sources are incorporated in a single model by feature combination. Results show that hybridization of the four distinct data sources improves accuracy compared to (i) factorization machines based on a single data source and (ii) a real-life company benchmark model using collaborative filtering.},
+ acmid = {2796542},
+ address = {New York, NY, USA},
+ author = {Geuens, Stijn},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796542},
+ isbn = {978-1-4503-3692-5},
+ keyword = {factorization machine, feature combination, hybrid algorithm, recommendation system},
+ link = {http://doi.acm.org/10.1145/2792838.2796542},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {379--382},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Factorization Machines for Hybrid Recommendation Systems Based on Behavioral, Product, and Customer Data},
+ year = {2015}
+}
+
+
+@inproceedings{Stock:2015:SAP:2792838.2799503,
+ abstract = {Philosophers of language have taught us that at the basis of language production there is the intention to change the state of the world by intervening linguistically on other agents. Persuasion, being the process of influencing attitudes, beliefs, behaviors, mood of a target, is a matter of stronger emphasis. Argumentation is just one resource to persuasion; it has been studied since the times of Aristotle and now for quite some time in artificial intelligence. The peripheral route to persuasion [1] is a different modality, one that is based on indirect, evocative, aesthetic aspects of the message. Automated intelligent persuasion of this sort (and also defense from inappropriate persuasion) is a research area close to producing usable results, both through creative production of language expressions, and through other forms of communication. The traditional goal of human-oriented information technology is mostly to offer services. With intelligent persuasive interfaces, instead, the overall goal is to produce an effect on humans, to influence their beliefs, their attitudes and eventually their actions and overall behavior. The area of intelligent persuasion has the potential to change the picture radically in the world of advertising and of social influencing. Computer-based systems can be flexible, and starting from goals they have to pursue, they can take into account the situation and the specific target, adapt the messages in appropriate ways and assess the outcome. In addition, the availability of very large amounts of data which can be exploited also in real time provides unprecedented possibilities. It is easy now to predict the following developments for the advertising sector: reduction in time to market and extension of possible occasions for advertisement; overall reduction of off target messages, eliminating the less relevant for the individual in a given situation; more attention to the wearing out of the message and to the need for planning variants and connected messages across time and space; contextual personalization, on the basis of audience profile and dynamic model (emotional state, beliefs, goals, etc.) and situational information; interactivity; audience reaction monitoring and system feedback on message effectiveness. In the Per Te project we have explored several areas concerned with intelligent persuasion. One topic is concerned with getting the attention and evoking a desired concept by means of original linguistic expressions. A main theme is the automatic production of flexible creative messages [2]. The approach is based on developing specific techniques, mostly corpus based, for producing variations of given expressions [3]. Another theme is concerned with ambient intelligence and peripheral displays. A novel technology is able to indirectly but purposefully impact on the behavior of a co-located group of people. Continuous recognition of each individual's focus of attention and activity is used to drive a tabletop interface aimed at facilitating group interaction during a brainstorming-style activity [4}. We believe one of the ultimate criteria for interactive systems' acceptability is going to be the moral implications of their actions. Persuasion is a sensitive topic and we believe ethics has to be studied from now, in view of granting systems will be accepted by users. We have conducted experiments based on the approach of moral dilemmas, so to understand what persuasion means are acceptable in stressed contexts [5]. In conclusion the potential of intelligent persuasion systems is great, not only for commercial applications but also with a societal view: for influencing social attitudes of people and leading to better social behavior.},
+ acmid = {2799503},
+ address = {New York, NY, USA},
+ author = {Stock, Oliviero},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799503},
+ isbn = {978-1-4503-3692-5},
+ keyword = {computational ethics, creativity, intelligent persuasion systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799503},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {A (Persuasive?) Speech on Automated Persuasion},
+ year = {2015}
+}
+
+
+@inproceedings{Ludmann:2015:ORS:2792838.2796544,
+ abstract = {In this paper, I present a novel approach for implementing a stream-based Recommender System (RecSys). I propose to add RecSys operators to an application-independent Data Stream Management System (DSMS) to allow writing continuous queries over data streams that calculate personalized sets of recommendations. That empowers RecSys providers to create a custom RecSys by writing queries in a declarative query language. This approach ensures a flexible and extendable usage of RecSys functions in different settings and benefits from matured features of DSMSs.},
+ acmid = {2796544},
+ address = {New York, NY, USA},
+ author = {Ludmann, Cornelius A.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796544},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, data stream management system, recommender system, stream processing},
+ link = {http://doi.acm.org/10.1145/2792838.2796544},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {391--394},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Online Recommender Systems Based on Data Stream Management Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Kouki:2015:HFE:2792838.2800175,
+ abstract = {As the amount of recorded digital information increases, there is a growing need for flexible recommender systems which can incorporate richly structured data sources to improve recommendations. In this paper, we show how a recently introduced statistical relational learning framework can be used to develop a generic and extensible hybrid recommender system. Our hybrid approach, HyPER (HYbrid Probabilistic Extensible Recommender), incorporates and reasons over a wide range of information sources. Such sources include multiple user-user and item-item similarity measures, content, and social information. HyPER automatically learns to balance these different information signals when making predictions. We build our system using a powerful and intuitive probabilistic programming language called probabilistic soft logic, which enables efficient and accurate prediction by formulating our custom recommender systems with a scalable class of graphical models known as hinge-loss Markov random fields. We experimentally evaluate our approach on two popular recommendation datasets, showing that HyPER can effectively combine multiple information types for improved performance, and can significantly outperform existing state-of-the-art approaches.},
+ acmid = {2800175},
+ address = {New York, NY, USA},
+ author = {Kouki, Pigi and Fakhraei, Shobeir and Foulds, James and Eirinaki, Magdalini and Getoor, Lise},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800175},
+ isbn = {978-1-4503-3692-5},
+ keyword = {graphical models, hybrid recommender systems, probabilistic programming, probabilistic soft logic},
+ link = {http://doi.acm.org/10.1145/2792838.2800175},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {99--106},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {HyPER: A Flexible and Extensible Probabilistic Framework for Hybrid Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Guy:2015:RUL:2792838.2799502,
+ abstract = {With mobile devices, users no longer access the web from specific locations, but virtually from anywhere. How does this affect our ability to provide personalized information for users' In this talk, I will discuss the influence of location activity on users' information needs and how a better understanding of these needs can help enhance web applications in which personalization plays a central role.},
+ acmid = {2799502},
+ address = {New York, NY, USA},
+ author = {Guy, Ido},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799502},
+ isbn = {978-1-4503-3692-5},
+ keyword = {context-based recommendation, location-aware search, recommender systems, search personalization, user modeling.},
+ link = {http://doi.acm.org/10.1145/2792838.2799502},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {236--236},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {The Role of User Location in Personalized Search and Recommendation},
+ year = {2015}
+}
+
+
+@inproceedings{Guo:2015:USB:2792838.2799683,
+ abstract = {Recommender systems are routinely equipped with standardized taxonomy that associates each item with one or more categories or genres. Although such information does not directly imply the quality of an item, the distribution of ratings vary greatly across categories, e.g. animation movies may generally receive higher ratings than action movies. While it is a natural outcome given the diversity and heterogeneity of both users and items, it makes directly aggregated ratings, which are commonly used to guide users' choice by reflecting the overall quality of an item, incomparable across categories and hence prone to fairness and diversity issues. This paper aims to uncover and calibrate systematic category-wise biases for discrete-valued ratings. We propose a novel Bayesian multiplicative probit model that treats the inflation or deflation of mean rating for a combination of categories as multiplicatively contributed from category-specific parameters. The posterior distribution of those parameters, as inferred from data, can capture the bias for all possible combinations of categories, thus enabling statistically efficient estimation and principled rating calibration.},
+ acmid = {2799683},
+ address = {New York, NY, USA},
+ author = {Guo, Fangjian and Dunson, David B.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799683},
+ isbn = {978-1-4503-3692-5},
+ keyword = {bayesian model, bias, category, genre, taxonomy},
+ link = {http://doi.acm.org/10.1145/2792838.2799683},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {317--320},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Uncovering Systematic Bias in Ratings Across Categories: A Bayesian Approach},
+ year = {2015}
+}
+
+
+@inproceedings{Larson:2015:OAR:2792838.2798719,
+ abstract = {CrowdRec 2015 provides the recommender system community with a forum at which to discuss crowdsourcing and human computation. Systems that explicitly collect information from human annotators to improve recommendations are becoming more widespread. At this year's workshop, we highlight incentivization and the issue of avoiding bias. We take a special look at how recommender systems can influence collective behavior, and the contribution that the crowd can make to recommender system evaluation.},
+ acmid = {2798719},
+ address = {New York, NY, USA},
+ author = {Larson, Martha and Tikk, Domonkos and Turrin, Roberto},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2798719},
+ isbn = {978-1-4503-3692-5},
+ keyword = {crowdsourcing, human computation, human intelligence, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2798719},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {341--342},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Overview of ACM RecSys CrowdRec 2015 Workshop: Crowdsourcing and Human Computation for Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Aharon:2015:EAU:2792838.2800183,
+ abstract = {The item cold-start problem is of a great importance in collaborative filtering (CF) recommendation systems. It arises when new items are added to the inventory and the system cannot model them properly since it relies solely on historical users' interactions (e.g., ratings). Much work has been devoted to mitigate this problem mostly by employing hybrid approaches that combine content-based recommendation techniques or by devoting a portion of the user traffic for exploration to gather interactions from random users. We focus on pure CF recommender systems (i.e., without content or context information) in a realistic online setting, where random exploration is inefficient and smart exploration that carefully selects users is crucial due to the huge flux of new items with short lifespan. We further assume that users arrive randomly one after the other and that the system has to immediately decide whether the arriving user will participate in the exploration of the new items. For this setting we present ExcUseMe, a smart exploration algorithm that selects a predefined number of users for exploring new items. ExcUseMe gradually excavates the users that are more likely to be interested in the new items and models the new items based on the users' interactions. We evaluated ExcUseMe on several datasets and scenarios and compared it to state-of-the-art algorithms. Experimental results indicate that ExcUseMe is an efficient algorithm that outperforms all other algorithms in all tested scenarios.},
+ acmid = {2800183},
+ address = {New York, NY, USA},
+ author = {Aharon, Michal and Anava, Oren and Avigdor-Elgrabli, Noa and Drachsler-Cohen, Dana and Golan, Shahar and Somekh, Oren},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800183},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, item cold-start, online algorithms},
+ link = {http://doi.acm.org/10.1145/2792838.2800183},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {83--90},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {ExcUseMe: Asking Users to Help in Item Cold-Start Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Hu:2015:SRS:2792838.2792842,
+ abstract = {This tutorial provides an overview of how search engines and machine learning techniques can be tightly coupled to address the need for building scalable recommender or other prediction-based systems. In particular, we will review ML-Scoring, an open source framework, created by the authors that tightly integrates machine-learning models into Elasticsearch, a popular search engine that is distributed, scalable, highly available with real-time search and analytic functionalities. The fundamentals and basic methods in information retrieval and machine learning will be explained. Accompanying the theory, practical examples will illustrate their applications with a series of hands-on exercises. These will demonstrate how to load a dataset into Elasticsearch, how to train a model in an external software framework such as Spark, Weka, or R, and finally how to load the trained models as a ML-Scoring plugins created for Elasticsearch.},
+ acmid = {2792842},
+ address = {New York, NY, USA},
+ author = {Hu, Si ying Diana and Delgado, Joaquin},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2792842},
+ isbn = {978-1-4503-3692-5},
+ keyword = {large-scale recommender systems, search engines},
+ link = {http://doi.acm.org/10.1145/2792838.2792842},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {365--366},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Scalable Recommender Systems: Where Machine Learning Meets Search},
+ year = {2015}
+}
+
+
+@inproceedings{Mouli:2015:MMP:2792838.2799678,
+ abstract = {Conversational recommender systems help users navigate through the product space by exploiting feedback. In conversational systems based on preference-based feedback, the user selects the most preferred item from a list of recommended products. Modelling user's preferences then becomes important in order to recommend relevant items. Several existing recommender systems accomplish this by assuming the features to be independent. Here we will attempt to forego this assumption and exploit the dependencies between the features to build a robust user preference model.},
+ acmid = {2799678},
+ address = {New York, NY, USA},
+ author = {Mouli, S Chandra and Chakraborti, Sutanu},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799678},
+ isbn = {978-1-4503-3692-5},
+ keyword = {conversational recommendation systems, preference-based feedback, user preference model},
+ link = {http://doi.acm.org/10.1145/2792838.2799678},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {285--288},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Making the Most of Preference Feedback by Modeling Feature Dependencies},
+ year = {2015}
+}
+
+
+@inproceedings{MenkdosSantos:2015:HRS:2792838.2796545,
+ abstract = {Traditional recommendation systems use multiple computational techniques to perform personalized recommendations, and can consider the interests of users and even the context in which they live. However, they usually ignore each individual's personality factors, and hence, the recommendations generated overwhelmingly consider that all the users are identical psychologically. They ignore, for example, the curiosity level of each user, which may indicate that individuals with a high level of curiosity seek visit exotic locations and/or not yet visited by them, or even individuals with a low curiosity level tend to do the same things they did in the past, uninterested in new or different areas. Our paper presents a complete hybrid recommendation system considering the curiosity level of each individual as a decisive factor to recommend sites of South America. In order to prove the efficiency of our system in contrast to traditional recommendation systems, as well as to measure the satisfaction of users about the recommendations, we performed some preliminary experiments with the participation of 105 Brazilian volunteers. The first results indicate that considering the level of curiosity of a user increases the satisfaction with the recommendations.},
+ acmid = {2796545},
+ address = {New York, NY, USA},
+ author = {Menk dos Santos, Alan},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796545},
+ isbn = {978-1-4503-3692-5},
+ keyword = {curiosity, data mining, recommendation system, social media},
+ link = {http://doi.acm.org/10.1145/2792838.2796545},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {367--370},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {A Hybrid Recommendation System Based on Human Curiosity},
+ year = {2015}
+}
+
+
+@inproceedings{Harvey:2015:ARH:2792838.2796551,
+ abstract = {Poor health due to a lack of understanding of nutrition is a major problem in the modern world, one which could potentially be addressed via the use of recommender systems. In this demo we present a system to generate meal plans for users which they will not only like, based on their taste preferences, but will also conform to daily nutritional guidelines. The interface allows the selection of recipes for breakfast, lunch and dinner and can automatically complete a daily meal plan or can generate entire plans itself.},
+ acmid = {2796551},
+ address = {New York, NY, USA},
+ author = {Harvey, Morgan and Elsweiler, David},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796551},
+ isbn = {978-1-4503-3692-5},
+ keyword = {health, planning, prevention, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2796551},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {327--328},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Automated Recommendation of Healthy, Personalised Meal Plans},
+ year = {2015}
+}
+
+
+@inproceedings{Larrain:2015:GTB:2792838.2799682,
+ abstract = {In this paper, we present work-in-progress of a recently started project that aims at studying the effect of time in recommender systems in the context of social tagging. Despite the existence of previous work in this area, no research has yet made an extensive evaluation and comparison of time-aware recommendation methods. With this motivation, this paper presents results of a study where we focused on understanding (i) "when" to use the temporal information into traditional collaborative filtering (CF) algorithms, and (ii) "how" to weight the similarity between users and items by exploring the effect of different time-decay functions. As the results of our extensive evaluation conducted over five social tagging systems (Delicious, BibSonomy, CiteULike, MovieLens, and Last.fm) suggest, the step (when) in which time is incorporated in the CF algorithm has substantial effect on accuracy, and the type of time-decay function (how) plays a role on accuracy and coverage mostly under pre-filtering on user-based CF, while item-based shows stronger stability over the experimental conditions.},
+ acmid = {2799682},
+ address = {New York, NY, USA},
+ author = {Larrain, Santiago and Trattner, Christoph and Parra, Denis and Graells-Garrido, Eduardo and N{\o}rv{\aa}g, Kjetil},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799682},
+ isbn = {978-1-4503-3692-5},
+ keyword = {collaborative filtering, social tagging, time-aware recommendations},
+ link = {http://doi.acm.org/10.1145/2792838.2799682},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {269--272},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Good Times Bad Times: A Study on Recency Effects in Collaborative Filtering for Social Tagging},
+ year = {2015}
+}
+
+
+@inproceedings{Unger:2015:LCR:2792838.2796546,
+ abstract = {The emergence of smart mobile devices has given rise to the development of context-aware systems that utilize sensors to collect available data about users. This data, in turn, is used in order to improve various services for the user. The development of such applications is inherently complex, since these applications adapt to changing context information, such as: physical context, computational context, and user tasks. Context information is gathered from a variety of sources that differ in the quality of information they produce and that are often failure-prone. Our study is part of a growing research effort that examines how data collected from mobile devices can be utilized to infer users' behavior and environment. We propose novel approaches that use a rich set of mobile sensors in order to infer unexplored users' contexts in personal models. We also suggest utilizing these high dimensional sensors, which represent users' context for a CARS (context-aware recommender system). For this purpose, we suggest several methods for reducing the dimensionality space by extracting latent contexts from data collected by mobile device sensors. Latent contexts are hidden context patterns, modeled as numeric vectors that are learned for each user automatically, by utilizing unsupervised deep learning techniques on the collected data. We also describe a novel latent context recommendation technique that uses latent contexts and improves the accuracy of state-of-the-art CARS. A preliminary analysis reveals encouraging insights regarding the feasibility of latent contexts and their utilization for context-aware recommendation systems.},
+ acmid = {2796546},
+ address = {New York, NY, USA},
+ author = {Unger, Moshe},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796546},
+ isbn = {978-1-4503-3692-5},
+ keyword = {context, context aware recommendation, matrix factorization, recommendation},
+ link = {http://doi.acm.org/10.1145/2792838.2796546},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {383--386},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Latent Context-Aware Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Lerallut:2015:LRP:2792838.2799498,
+ abstract = {Performance retargeting consists of displaying online advertisements that are personalized according to each user's browsing history. We show close to three billion personalized ads a day, each of them optimized to generate the best post-click sales performance for our clients. Within this time frame, Criteo's recommender system must choose a dozen relevant products from billions of candidates in a few milliseconds. Our main challenge is to balance the amount of data we use with the processing speed and low-latency requirements of a web-scale environment.},
+ acmid = {2799498},
+ address = {New York, NY, USA},
+ author = {Lerallut, Romain and Gasselin, Diane and Le Roux, Nicolas},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799498},
+ isbn = {978-1-4503-3692-5},
+ keyword = {large-scale, low-latency, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799498},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {232--232},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Large-Scale Real-Time Product Recommendation at Criteo},
+ year = {2015}
+}
+
+
+@inproceedings{Das:2015:MMR:2792838.2799501,
+ abstract = {At OpenTable, recommendations play a key role in connecting diners with restaurants. The act of recommending a restaurant to a diner relies heavily on aligning everything we know about the restaurant with everything we can infer about the diner. Our methods go beyond using the diner-restaurant interaction history as the sole input -- we use click and search data, the metadata of restaurants, as well as insights gleaned from reviews, together with any contextual information to make meaningful recommendations. In this talk, I will highlight the main aspects of our recommendation stack built with Scala using Apache Spark.},
+ acmid = {2799501},
+ address = {New York, NY, USA},
+ author = {Das, Sudeep},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799501},
+ isbn = {978-1-4503-3692-5},
+ keyword = {content analysis, matrix factorization, recommendation},
+ link = {http://doi.acm.org/10.1145/2792838.2799501},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {235--235},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Making Meaningful Restaurant Recommendations At OpenTable},
+ year = {2015}
+}
+
+
+@inproceedings{Abel:2015:WKY:2792838.2799496,
+ abstract = {Business-oriented social networks like LinkedIn or XING support people in discovering career opportunities. In this talk, we will focus on the problem of recommending job offers to Millions of XING users. We will discuss challenges of building a job recommendation system that has to satisfy the demands of both job seekers who have certain wishes concerning their next career step and recruiters who aim to hire the most appropriate candidate for a job. Based on insights gained from a large-scale analysis of usage data and profile data such as curriculum vitae, we will study features of the recommendation algorithms that aim to solve the problem. Job advertisements typically describe the job role that the candidate will need to fill, required skills, the expected educational background that candidates should have and the company and environment in which candidates will be working. Users of professional social networks curate their profile and curriculum vitae in which they describe their skills, interests and previous career steps. Recommending jobs to users is however a non-trivial task for which pure content-based features that would just match the aforementioned properties are not sufficient. For example, we often observe that there is a gap between what people specify in their profiles and what they are actually interested in. Moreover, profile and CV typically describe the past and current situation of a user but do not reflect enough the actual demands that users have with respect to their next career step. Therefore, it is crucial to also analyze the behavior of the users and exploit interaction data such as search queries, clicks on jobs, bookmarks, clicks that similar users performed, etc. Our job recommendation system exploits various features in order to estimate whether a job posting is relevant for a user or not. Some of these features rather reflect social aspects (e.g. does the user have contacts that are living in the city in which the job is offered?) while others capture to what extent the user fulfills the requirements of the role that is described in the job advertisement (e.g. similarity of user's skills and required skills). To better understand appropriate next career steps, we mine the CVs of the users and learn association rules that describe the typical career paths. This information is also made publicly available via FutureMe - a tool that allows people to explore possible career opportunities and identify professions that may be interesting for them to work in. One of the challenges when developing the job recommendation system is to collect explicit feedback and thus understanding (i) whether a recommended job was relevant for a user and (ii) whether the user was a good candidate for the job. We thus started to stronger involve users in providing feedback and build a feedback cycle that allows the recommender system to automatically adapt to the feedback that the crowd of users is providing. By displaying explanations about why certain items were suggested, we furthermore aim to increase transparency of how the recommender system works.},
+ acmid = {2799496},
+ address = {New York, NY, USA},
+ author = {Abel, Fabian},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799496},
+ isbn = {978-1-4503-3692-5},
+ keyword = {recommender systems, social networks},
+ link = {http://doi.acm.org/10.1145/2792838.2799496},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {230--230},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {We Know Where You Should Work Next Summer: Job Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Bistaffa:2015:RFP:2792838.2800177,
+ abstract = {We perform recommendations for the Social Ridesharing scenario, in which a set of commuters, connected through a social network, arrange one-time rides at short notice. In particular, we focus on how much one should pay for taking a ride with friends. More formally, we propose the first approach that can compute fair coalitional payments that are also stable according to the game-theoretic concept of the kernel for systems with thousands of agents in real-world scenarios. Our tests, based on real datasets for both spatial (GeoLife) and social data (Twitter), show that our approach is significantly faster than the state-of-the-art (up to 84 times), allowing us to compute stable payments for 2000 agents in 50 minutes. We also develop a parallel version of our approach, which achieves a near-optimal speed-up in the number of processors used. Finally, our empirical analysis reveals new insights into the relationship between payments incurred by a user by virtue of its position in its social network and its role (rider or driver).},
+ acmid = {2800177},
+ address = {New York, NY, USA},
+ author = {Bistaffa, Filippo and Farinelli, Alessandro and Chalkiadakis, Georgios and Ramchurn, Sarvapali D.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800177},
+ isbn = {978-1-4503-3692-5},
+ keyword = {algorithm scalability, coalition formation, innovative applications, ridesharing, social networks},
+ link = {http://doi.acm.org/10.1145/2792838.2800177},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {139--146},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Recommending Fair Payments for Large-Scale Social Ridesharing},
+ year = {2015}
+}
+
+
+@inproceedings{Wayman:2015:NGS:2792838.2799669,
+ abstract = {Despite the rampant increase in obesity rates and concomitant increases in rates of mortality from heart disease, cancer and diabetes, getting the general public to adopt a healthy diet has proven to be challenging for a variety of reasons. In this paper, we describe Foodle, a research project aimed at providing automated, personalized and goal-driven dietary guidance to users based on their grocery receipt data, by leveraging the availability of digital receipts for grocery store purchases. We discuss challenges faced, the current state of the project, and directions for future work.},
+ acmid = {2799669},
+ address = {New York, NY, USA},
+ author = {Wayman, Elizabeth and Madhvanath, Sriganesh},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799669},
+ isbn = {978-1-4503-3692-5},
+ keyword = {diet, nutrition, recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799669},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {289--292},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Nudging Grocery Shoppers to Make Healthier Choices},
+ year = {2015}
+}
+
+
+@inproceedings{Zhao:2015:RVC:2792838.2800181,
+ abstract = {With the increasing accessibility of transactional data in venture finance, venture capital firms (VCs) face great challenges in developing quantitative tools to identify new investment opportunities. Recommendation techniques have the possibility of helping VCs making data-driven investment decisions by providing an automatic screening process of a large number of startups across different domains on the basis of their past investment data. A previous study has shown the potential advantage of using collaborative filtering to catch and predict the VCs' investment behaviours. However, two fundamental challenges in venture finance make conventional recommendation techniques difficult to apply. First, risk factors should be cautiously considered when making investments: for a potential startup, a VC needs to specifically estimate how well this new investment can fit into its holding investment portfolio in such a way that investment risk can be hedged. Second, The investment behaviours are much sparser than conventional recommendation applications and a VC's investments are usually limited to a few industry categories, making it impossible to use a topic-diversification method to hedge the risk. In this paper, we solve the startup recommendation problem from a risk management perspective. We propose 5 risk-aware startup selection and ranking algorithms to catch the VCs' investment behaviours and predict their new investments. Apart from the contribution on the new risk-aware recommendation model, our experiments on the collected CrunchBase dataset show significant performance improvements over strong baselines.},
+ acmid = {2800181},
+ address = {New York, NY, USA},
+ author = {Zhao, Xiaoxue and Zhang, Weinan and Wang, Jun},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800181},
+ isbn = {978-1-4503-3692-5},
+ keyword = {portfolio theory, recommendation diversification, recommender systems, venture finance},
+ link = {http://doi.acm.org/10.1145/2792838.2800181},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {75--82},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Risk-Hedged Venture Capital Investment Recommendation},
+ year = {2015}
+}
+
+
+@proceedings{Werthner:2015:2792838,
+ abstract = {Our very warm welcome to the 9th ACM Recommender Systems Conference (ACM RecSys 2015), held between September 16th and 20th, in Vienna, Austria. The RecSys conference series has clearly established itself as the premier international forum for research and development in the field of Recommender Systems, where leading researchers and practitioners from academia and industry meet to share their challenges, solutions, research results, and experiences in the field. The maturity of the conference is clearly demonstrated by the high quality of the submitted research work. This year RecSys received again clearly more than 200 submissions (131 long papers and 84 short papers) and the review process was extremely selective. The Program Committee worked very hard to ensure that every paper got at least three careful and fair reviews and one metareview. All papers, particularly those at the borderline, were also reviewed and thoroughly discussed by a Senior Program Committee member and by the PC Chairs. This process finally led to the acceptance of 28 long papers for oral presentation (acceptance rate 21.4%) and 22 short papers for poster presentation (acceptance rate 26.2%). We are therefore extremely grateful to our 131 Program Committee members (34 senior and 97 regular) and to our 57 additional reviewers for producing more than 875 detailed and insightful reviews and metareviews. Furthermore, we would like to particularly thank those Senior Program Committee members, who assisted the program chairs in identifying those distinguished papers who received awards. Besides the technical paper program consisting of oral presentations and a poster and demo session, the core conference program also includes two keynote speakers, two industry sessions and a panel discussion. In order to accommodate the program in a two and a half day format technical papers are presented in two parallel tracks for the first time in this conference series. In addition the conference includes four tutorials and a challenge as a pre-conference program and nine workshops as well as a doctoral symposium as post-conference events.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3692-5},
+ location = {Vienna, Austria},
+ publisher = {ACM},
+ title = {RecSys '15: Proceedings of the 9th ACM Conference on Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Sifa:2015:UCM:2792838.2799680,
+ abstract = {Time plays an important role regarding user preferences for products. It introduces asymmetries into the adoption of products which should be considered in the context of recommender systems and business intelligence. We therefore investigate how temporally asymmetric user preferences can be analyzed using a latent factor model called Decomposition Into Directional Components (DEDICOM). We introduce a new scalable hybrid algorithm that combines projected gradient descent and alternating least squares updates to compute DEDICOM and imposes semi-nonnegativity constraints to better interpret the resulting factors. We apply our model to analyze user churn and migration between different computer games in a social gaming environment.},
+ acmid = {2799680},
+ address = {New York, NY, USA},
+ author = {Sifa, Rafet and Ojeda, C{\'e}sar and Bauckhage, Christian},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799680},
+ isbn = {978-1-4503-3692-5},
+ keyword = {churn migration analysis, latent factor models, preference learning},
+ link = {http://doi.acm.org/10.1145/2792838.2799680},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {321--324},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {User Churn Migration Analysis with DEDICOM},
+ year = {2015}
+}
+
+
+@inproceedings{Jannach:2015:BHH:2792838.2800182,
+ abstract = {Automated playlist generation is a special form of music recommendation and a common feature of digital music playing applications. A particular challenge of the task is that the recommended items should not only match the general listener's preference but should also be coherent with the most recently played tracks. In this work, we propose a novel algorithmic approach and optimization scheme to generate playlist continuations that address these requirements. In our approach, we first use collections of shared music playlists, music metadata, and user preferences to select suitable tracks with high accuracy. Next, we apply a generic re-ranking optimization scheme to generate playlist continuations that match the characteristics of the last played tracks. An empirical evaluation on three collections of shared playlists shows that the combination of different input signals helps to achieve high accuracy during track selection and that the re-ranking technique can both help to balance different quality optimization goals and to further increase accuracy.},
+ acmid = {2800182},
+ address = {New York, NY, USA},
+ author = {Jannach, Dietmar and Lerche, Lukas and Kamehkhosh, Iman},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800182},
+ isbn = {978-1-4503-3692-5},
+ keyword = {evaluation, music recommendation, quality factors},
+ link = {http://doi.acm.org/10.1145/2792838.2800182},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {187--194},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Beyond "Hitting the Hits": Generating Coherent Music Playlist Continuations with the Right Tracks},
+ year = {2015}
+}
+
+
+@inproceedings{Guardia-Sebaoun:2015:LTM:2792838.2799676,
+ abstract = {For recommender systems, time is often an important source of information but it is also a complex dimension to apprehend. We propose here to learn item and user representations such that any timely ordered sequence of items selected by a user will be represented as a trajectory of the user in a representation space. This allows us to rank new items for this user. We then enrich the item and user representations in order to perform rating prediction using a classical matrix factorization scheme. We demonstrate the interest of our approach regarding both item ranking and rating prediction on a series of classical benchmarks.},
+ acmid = {2799676},
+ address = {New York, NY, USA},
+ author = {Gu\`{a}rdia-Sebaoun, Elie and Guigue, Vincent and Gallinari, Patrick},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799676},
+ isbn = {978-1-4503-3692-5},
+ keyword = {latent representation, recommender systems, temporal dynamics},
+ link = {http://doi.acm.org/10.1145/2792838.2799676},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {281--284},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Latent Trajectory Modeling: A Light and Efficient Way to Introduce Time in Recommender Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Zoeter:2015:RT:2792838.2799500,
+ abstract = {Recommender systems have received much attention in recent years, and they have been successfully applied in many different domains. With each domain come new constraints that require system designers to make choices about how to apply and extend generic algorithms in their context. Booking.com is planet earth's number one accommodation reservation site. The accommodation recommendation problem that it needs to solve has several interesting and unique challenges that make that a straightforward matrix factorization or a basic bi-linear model are not sufficient to provide the required predictions. In this talk, we will discuss several of the challenges we have encountered and solutions we have developed.},
+ acmid = {2799500},
+ address = {New York, NY, USA},
+ author = {Zoeter, Onno},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799500},
+ isbn = {978-1-4503-3692-5},
+ keyword = {recommender systems},
+ link = {http://doi.acm.org/10.1145/2792838.2799500},
+ location = {Vienna, Austria},
+ numpages = {1},
+ pages = {234--234},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Recommendations in Travel},
+ year = {2015}
+}
+
+
+@inproceedings{Graus:2015:IUE:2792838.2799681,
+ abstract = {We studied an alternative choice-based interface for preference elicitation during the cold start phase and compared it directly with a standard rating-based interface. In this alternative interface users started from a diverse set covering all movies and iteratively narrowed down through a matrix factorization latent feature space to smaller sets of items based on their choices. The results show that compared to a rating-based interface, the choice-based interface requires less effort and results in more satisfying recommendations, showing that it might be a promising candidate for alleviating the cold start problem of new users.},
+ acmid = {2799681},
+ address = {New York, NY, USA},
+ author = {Graus, Mark P. and Willemsen, Martijn C.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2799681},
+ isbn = {978-1-4503-3692-5},
+ keyword = {choice, diversification, matrix factorisation, preference elication, rating, user-centric evaluation},
+ link = {http://doi.acm.org/10.1145/2792838.2799681},
+ location = {Vienna, Austria},
+ numpages = {4},
+ pages = {273--276},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Improving the User Experience During Cold Start Through Choice-Based Preference Elicitation},
+ year = {2015}
+}
+
+
+@inproceedings{deSousa:2015:CCN:2792838.2796553,
+ abstract = {We present CNARe, an easy-to-use online system that shows personalized collaboration recommendations to researchers. It also provides visualizations and metrics that allow to investigate how the recommendations affect a co-authorship social network and other analyses.},
+ acmid = {2796553},
+ address = {New York, NY, USA},
+ author = {de Sousa, Guilherme A. and Diniz, Matheus A. and Brandao, Michele A. and Moro, Mirella M.},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796553},
+ isbn = {978-1-4503-3692-5},
+ keyword = {co-authorship recommendation, social network analysis},
+ link = {http://doi.acm.org/10.1145/2792838.2796553},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {329--330},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {CNARe: Co-authorship Networks Analysis and Recommendations},
+ year = {2015}
+}
+
+
+@inproceedings{Bansal:2015:CDU:2792838.2800186,
+ abstract = {We consider the problem of recommending comment-worthy articles such as news and blog-posts. An article is defined to be comment-worthy for a particular user if that user is interested to leave a comment on it. We note that recommending comment-worthy articles calls for elicitation of commenting-interests of the user from the content of both the articles and the past comments made by users. We thus propose to develop content-driven user profiles to elicit these latent interests of users in commenting and use them to recommend articles for future commenting. The difficulty of modeling comment content and the varied nature of users' commenting interests make the problem technically challenging. The problem of recommending comment-worthy articles is resolved by leveraging article and comment content through topic modeling and the co-commenting pattern of users through collaborative filtering, combined within a novel hierarchical Bayesian modeling approach. Our solution, Collaborative Correspondence Topic Models (CCTM), generates user profiles which are leveraged to provide a personalized ranking of comment-worthy articles for each user. Through these content-driven user profiles, CCTM effectively handle the ubiquitous problem of cold-start without relying on additional meta-data. The inference problem for the model is intractable with no off-the-shelf solution and we develop an efficient Monte Carlo EM algorithm. CCTM is evaluated on three real world data-sets, crawled from two blogs, ArsTechnica (AT) Gadgets (102,087 comments) and AT-Science (71,640 comments), and a news site, DailyMail (33,500 comments). We show average improvement of 14% (warm-start) and 18% (cold-start) in AUC, and 80% (warm-start) and 250% (cold-start) in Hit-Rank@5, over state of the art.},
+ acmid = {2800186},
+ address = {New York, NY, USA},
+ author = {Bansal, Trapit and Das, Mrinal and Bhattacharyya, Chiranjib},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2800186},
+ isbn = {978-1-4503-3692-5},
+ keyword = {blogs, collaborative filtering, comments, hybrid recommendation systems, news, topic modeling, user profiling},
+ link = {http://doi.acm.org/10.1145/2792838.2800186},
+ location = {Vienna, Austria},
+ numpages = {8},
+ pages = {195--202},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Content Driven User Profiling for Comment-Worthy Recommendations of News and Blog Articles},
+ year = {2015}
+}
+
+
+@inproceedings{Ge:2015:HFR:2792838.2796554,
+ abstract = {With the rapid changes in the food variety and lifestyles, many people are facing the problem of making healthier food decisions to reduce the risk of chronic diseases such as obesity and diabetes. To this end, our recommender system not only offers recipe recommendations that suit the user's preference but is also able to take the user's health into account. It is developed on a mobile platform by considering that our application may be directly used in the kitchen. This demo paper summarizes the complete human-computer interaction design, the implemented health-aware recommendation algorithm and preliminary user feedback.},
+ acmid = {2796554},
+ address = {New York, NY, USA},
+ author = {Ge, Mouzhi and Ricci, Francesco and Massimo, David},
+ booktitle = {Proceedings of the 9th ACM Conference on Recommender Systems},
+ doi = {10.1145/2792838.2796554},
+ isbn = {978-1-4503-3692-5},
+ keyword = {food, recommender systems, smart health, utility},
+ link = {http://doi.acm.org/10.1145/2792838.2796554},
+ location = {Vienna, Austria},
+ numpages = {2},
+ pages = {333--334},
+ publisher = {ACM},
+ series = {RecSys '15},
+ title = {Health-aware Food Recommender System},
+ year = {2015}
+}
+
+

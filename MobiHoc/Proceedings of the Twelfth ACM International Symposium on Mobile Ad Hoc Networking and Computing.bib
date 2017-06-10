@@ -1,0 +1,560 @@
+@inproceedings{Hariharan:2011:OEE:2107502.2107534,
+ abstract = {In this paper, we develop a mathematical framework for studying the problem of maximizing the "information" received at the sink in a data gathering wireless sensor network. We explicitly account for unreliable links, energy constraints, and in-network computation. The network model is that of a sensor network arranged in the form of a tree topology, where the root corresponds to the sink node, and the rest of the network detects an event and transmits data to the sink over one or more hops. This problem of sending data from multiple sources to a common sink is often referred to as the convergecasting problem. We develop an integer optimization based framework for this problem, which allows for tackling link unreliability using general error-recovery schemes. Even though this framework has a non-linear objective function, and cannot be relaxed to a convex programming problem, we develop a low complexity, distributed solution. The solution involves finding a Maximum Weight Increasing Independent Set (MWIIS) in rectangle graphs over each hop of the network, and can be obtained in polynomial time. Further, we apply these techniques to a target tracking problem where we optimally select sensors to track a given target such that the information obtained is maximized subject to constraints on the per-node sensing and communication energy. We validate our algorithms through numerical evaluations, and illustrate the advantages of explicitly considering link unreliability in the optimization framework.},
+ acmid = {2107534},
+ address = {New York, NY, USA},
+ articleno = {24},
+ author = {Hariharan, Srikanth and Shroff, Ness B.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107534},
+ isbn = {978-1-4503-0722-2},
+ keyword = {convergecasting, data aggregation, energy efficiency, graph theoretic algorithms, integer optimization, target tracking, unreliable links, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107534},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {24:1--24:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {On Optimal Energy Efficient Convergecasting in Unreliable Sensor Networks with Applications to Target Tracking},
+ year = {2011}
+}
+
+
+@inproceedings{Avallone:2011:TOR:2107502.2107532,
+ abstract = {Endowing mesh routers with multiple radios is a recent solution to improve the performance of wireless mesh networks (WMNs). The problem how to route flows and assign channels to radios in multi-radio WMNs has attracted a lot of attention in the recent years. However, the approaches proposed so far have mainly focused on reducing interference or maximizing the throughput. Little attention has been paid to the energy consumption of wireless mesh networks. However, with the rising concerns about the energy consumed by communication infrastructures, it makes sense to consider the minimization of the energy consumption as an objective of the channel assignment and routing problem. Our work stems from the observation that an idle radio simply overhearing a frame consumes nearly the same power as the radio actually receiving the frame. Hence, energy may be saved by turning off a number of radios, if the performance of the network is not impaired. In this paper, we define the energy-efficient channel assignment and routing problem, which is NP-complete, and propose a heuristic algorithm. We also present a Mixed Integer Linear Programs (MILP) to find an optimal solution to the energy-efficient channel assignment and routing problem. Finally, we show the results of extensive simulation studies we conducted to assess the effectiveness of the proposed algorithm. Such results show that our heuristic outperforms a previous proposal and that, on the average, it keeps 10% more radios turned on than the optimal solution.},
+ acmid = {2107532},
+ address = {New York, NY, USA},
+ articleno = {22},
+ author = {Avallone, Stefano},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107532},
+ isbn = {978-1-4503-0722-2},
+ keyword = {energy efficient protocols, multi-radio wireless mesh networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107532},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {22:1--22:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Turning off Radios to Save Power in Multi-radio Wireless Mesh Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Hou:2011:BDT:2107502.2107508,
+ abstract = {There is increasing demand for using wireless networks for applications that generate packets with strict per-packet delay constraints. In addition to delay constraints, such applications also have various traffic patterns and require guarantees on throughputs of packets that are delivered within their delay constraints. Furthermore, a mechanism for serving delay-constrained traffic needs to specifically consider the unreliable nature of wireless links, which may differ from link to link. Also, as it is usually infeasible to gather feedback information from all clients after each transmission, broadcasting delay-constrained traffic requires addressing the challenge of the lack of feedback information. We study a model that jointly considers the application requirements on traffic patterns, delay constraints, and throughput requirements, as well as wireless limitations, including the unreliable wireless links and the lack of feedback information. Based on this model, we develop a general framework for designing feasibility-optimal broadcasting policies that applies to systems with various network coding mechanisms. We demonstrate the usage of this framework by designing policies for three different kinds of systems: one that does not use network coding, one that employs XOR coding, and the last that allows the usage of linear coding.},
+ acmid = {2107508},
+ address = {New York, NY, USA},
+ articleno = {4},
+ author = {Hou, I-Hong and Kumar, P. R.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107508},
+ isbn = {978-1-4503-0722-2},
+ keyword = {broadcast, deadlines, delays, network coding, scheduling},
+ link = {http://doi.acm.org/10.1145/2107502.2107508},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {4:1--4:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Broadcasting Delay-constrained Traffic over Unreliable Wireless Links with Network Coding},
+ year = {2011}
+}
+
+
+@inproceedings{He:2011:DDM:2107502.2107525,
+ abstract = {We consider the problem of disseminating data from a base station to a sparse, partitioned mobile network by controllable data ferries with limited ferry-node and ferry-ferry communication ranges. Existing solutions to data ferry control mostly assume the nodes to be stationary, which reduces the problem to designing fixed ferry routes. In the more challenging scenario of mobile networks, existing solutions have focused on single-ferry control and left out an important issue of ferry cooperation in the presence of multiple ferries. In this paper, we jointly address the issues of ferry navigation and cooperation using the approach of stochastic control. Under the assumption that ferries can communicate within each partition, we propose a hierarchical control system called Dispatch-and-Search (DAS), consisting of a global controller that dispatches ferries to individual partitions and local controllers that coordinate the search for nodes within each partition. Formulating the global and the local control as Partially Observable Markov Decision Processes (POMDPs), we develop efficient control policies to optimize the (discounted) total throughput, which significantly improve the performance of their predetermined counterparts in cases of limited prior knowledge.},
+ acmid = {2107525},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {He, Ting and Swami, Ananthram and Lee, Kang-Won},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107525},
+ isbn = {978-1-4503-0722-2},
+ keyword = {data ferry control, myopic control policies, partially observable Markov decision processes},
+ link = {http://doi.acm.org/10.1145/2107502.2107525},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {17:1--17:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Dispatch-and-search: Dynamic Multi-ferry Control in Partitioned Mobile Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Qiao:2011:EPP:2107502.2107535,
+ abstract = {Future RFID technologies will go far beyond today's widely-used passive tags. Battery-powered active tags are likely to gain more popularity due to their long operational ranges and richer on-tag resources. With integrated sensors, these tags can provide not only static identification numbers but also dynamic, real-time information such as sensor readings. This paper studies a general problem of how to design efficient polling protocols to collect such real-time information from a subset M of tags in a large RFID system. We show that the standard, straightforward polling design is not energy-efficient because each tag has to continuously monitor the wireless channel and receive O(|M|) tag IDs, which is energy-consuming. Existing work is able to cut the amount of data each tag has to receive by half through a coding design. In this paper, we propose a tag-ordering polling protocol (TOP) that can reduce per-tag energy consumption by more than an order of magnitude. We also reveal an energy-time tradeoff in the protocol design: per-tag energy consumption can be reduced to O(1) at the expense of longer execution time of the protocol. Finally, we apply partitioned Bloom filters to enhance the performance of TOP, such that it can achieve much better energy efficiency without degradation in protocol execution time.},
+ acmid = {2107535},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {Qiao, Yan and Chen, Shigang and Li, Tao and Chen, Shiping},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107535},
+ isbn = {978-1-4503-0722-2},
+ keyword = {RFID, energy-efficient, polling protocols},
+ link = {http://doi.acm.org/10.1145/2107502.2107535},
+ location = {Paris, France},
+ numpages = {9},
+ pages = {25:1--25:9},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Energy-efficient Polling Protocols in RFID Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Yang:2011:TAC:2107502.2107514,
+ abstract = {On one hand, cooperative communication has been gaining more and more popularity since it has great potential to increase the capacity of wireless networks. On the other hand, the applications of cooperative communication technology are rarely seen in reality, even in some scenarios where the demands for bandwidth-hungry applications have pushed the system designers to develop innovative network solutions. A main obstacle lying between the potential capability of channel capacity improvement and the wide adoption of cooperative communication is the lack of incentives for the participating wireless nodes to serve as relay nodes. Hence, in this paper, we design TASC, an auction scheme for the cooperative communications, where wireless node can trade relay services. TASC makes an important contribution of maintaining truthfulness while fulfilling other design objectives. We show analytically that TASC is truthful and has polynomial time complexity. Extensive experiments show that TASC can achieve multiple economic properties without significant performance degradation compared with pure relay assignment algorithms.},
+ acmid = {2107514},
+ address = {New York, NY, USA},
+ articleno = {9},
+ author = {Yang, Dejun and Fang, Xi and Xue, Guoliang},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107514},
+ isbn = {978-1-4503-0722-2},
+ keyword = {cooperative communication auctions, scheme design},
+ link = {http://doi.acm.org/10.1145/2107502.2107514},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {9:1--9:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Truthful Auction for Cooperative Communications},
+ year = {2011}
+}
+
+
+@inproceedings{Richa:2011:SLE:2107502.2107522,
+ abstract = {Electing a leader is a fundamental task in distributed computations. Many coordination problems, such as the access to a shared resource, and the resulting inefficiencies, can be avoided by relying on a leader. This paper presents Select, a leader election protocol for wireless networks where nodes communicate over a shared medium. Select is very robust in two respects. First, the protocol is self-stabilizing in the sense that it converges to a correct solution from any possible initial network state (e.g., where no or multiple nodes consider themselves a leader). This is an appealing property, especially for dynamic networks. Second, the described protocol is resilient against a powerful reactive jammer that blocks a significant fraction of all communication rounds. The reactive model is general and of interest beyond jamming (e.g., in the context of co-existing networks). The paper also reports on experimental results obtained from our simulation framework which allows us to study convergence behavior under different types of adversarial jammers.},
+ acmid = {2107522},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {Richa, Andrea and Scheideler, Christian and Schmid, Stefan and Zhang, Jin},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107522},
+ isbn = {978-1-4503-0722-2},
+ keyword = {MAC protocols, jamming, wireless ad-hoc networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107522},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {15:1--15:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Self-stabilizing Leader Election for Single-hop Wireless Networks Despite Jamming},
+ year = {2011}
+}
+
+
+@proceedings{Vaidya:2010:1860093,
+ abstract = {Welcome to ACM MobiHoc 2010, the 11th ACM International Symposium on Mobile Ad Hoc Networking and Computing! ACM MobiHoc is the premier international symposium dedicated to addressing challenges emerging from wireless ad hoc networking and computing. The mission of the symposium is to bring together researchers and practitioners from a broad spectrum of wireless networking research to present the most up-to-date results and achievements in the field. As in previous years, the paper selection process was highly competitive. The call for papers attracted 157 submissions from Asia, Canada, Europe, and the United States. All papers were reviewed through a double blind review process. Each paper was reviewed by at least three program committee members not connected with the authors; most papers received four reviews and for some papers even five reviews were written. After the online-discussion phase, the top 57 papers were selected to be discussed in detail at the TPC meeting. The TPC meeting took place at Microsoft Research in Redmond on May 27 and 28, 2010 and 26 papers were selected for inclusion in the technical program. The technical program covers a variety of topics, including mobility, modeling and analysis, routing and forwarding, scheduling, security, sensor networking, and spectrum allocation. Wehope that these proceedings will serve as a valuable reference for mobile networking researchers and practitioners. We hope that you will find this program interesting and thought-provoking and that the symposium will provide you with a valuable opportunity to share ideas with other researchers and practitioners from institutions around the world.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0183-1},
+ location = {Chicago, Illinois, USA},
+ note = {533105},
+ publisher = {ACM},
+ title = {MobiHoc '10: Proceedings of the Eleventh ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Zeng:2011:NDW:2107502.2107506,
+ abstract = {Neighbor discovery is one of the first steps in configuring and managing a wireless network. Most existing studies on neighbor discovery assume a single-packet reception model where only a single packet can be received successfully at a receiver. In this paper, motivated by the increasing prevalence of multipacket reception (MPR) technologies such as CDMA and MIMO, we study neighbor discovery in MPR networks that allow multiple packets to be received successfully at a receiver. More specifically, we design and analyze a series of randomized algorithms for neighbor discovery in MPR networks. We start with a simple Aloha-like algorithm that assumes synchronous node transmissions and the number of neighbors, n, is known. We show that the time for all the nodes to discover their respective neighbors is Θ(ln n) in an idealized MPR network that allows an arbitrary number of nodes to transmit simultaneously. In a more realistic scenario, in which no more than k nodes can transmit simultaneously, we show that the time to discover all neighbors is Θ(n ln n/k). When a node knows whether its transmission is successful or not (e.g., based on feedbacks from other nodes), we design an adaptive Aloha-like algorithm that dynamically determines the transmission probability for each node, and show that it yields a ln n improvement over the simple Aloha-like scheme. Last, we extend our schemes to take into account a number of practical considerations, such as lack of knowledge of the number of neighbors and asynchronous algorithm operation, while resulting in only a constant or log n factor slowdown in algorithm performance.},
+ acmid = {2107506},
+ address = {New York, NY, USA},
+ articleno = {3},
+ author = {Zeng, Wei and Vasudevan, Sudarshan and Chen, Xian and Wang, Bing and Russell, Alexander and Wei, Wei},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107506},
+ isbn = {978-1-4503-0722-2},
+ keyword = {ad hoc networks, neighbor discovery, network management, randomized algorithms, sensor networks, wireless networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107506},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {3:1--3:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Neighbor Discovery in Wireless Networks with Multipacket Reception},
+ year = {2011}
+}
+
+
+@inproceedings{Badam:2011:HTT:2107502.2107511,
+ abstract = {Multiple communication channels are common in today's consumer and enterprise networks. For example, a high bandwidth but unreliable wireless network might co-exist with a reliable wired link (EWLANs and neighborhood networks). In this paper, we present a system that uses this reliable wired communication channel to boost the bandwidth of the lossy wireless link. Specifically, we propose a new, efficient partial packet recovery (PPR) technique and adaptive feedback mechanism specially designed to correct partial packets on an 802.11 wireless network using a wired backhaul. Our initial experiments demonstrate up to a 3x improvement over standalone 802.11 and upto a 30% improvement over existing PPR techniques.},
+ acmid = {2107511},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Badam, Anirudh and Kaminsky, Michael and Han, Dongsu and Papagiannaki, Konstantina and Andersen, David G. and Seshan, Srinivasan},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107511},
+ isbn = {978-1-4503-0722-2},
+ link = {http://doi.acm.org/10.1145/2107502.2107511},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {7:1--7:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {The Hare and the Tortoise: Taming Wireless Losses by Exploiting Wired Reliability},
+ year = {2011}
+}
+
+
+@inproceedings{Yao:2011:TCC:2107502.2107523,
+ abstract = {In cognitive radio networks, cooperative relay is a new technology that can significantly improve spectrum efficiency and system throughput. While the existing protocols for cooperative relay are very interesting and useful, there is a crucial problem that has not been investigated: In reality, selfish users may cheat in cooperative relay, in order to benefit themselves. Here by cheating we mean the behavior of reporting misleading information to other users. Such cheating behavior may harm other users and thus lead to poor system throughput. Given the threat of selfish users' cheating, our objective in this paper is to suppress the cheating behavior of selfish users in cooperative relay. Hence, we design the first cheat-proof scheme for cooperative relay in cognitive radio networks, and rigorously prove that under our scheme, selfish users have incentives to faithfully follow the protocol. Our design and analysis start in the model of strategic game for interactions among secondary users; then they are extended to the entire cooperative replay process, which can be modeled as an extensive game. Results of extensive simulations demonstrate that our scheme suppresses cheating behavior and thus improves the system throughput in face of selfish users.},
+ acmid = {2107523},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Yao, Haifan and Zhong, Sheng},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107523},
+ isbn = {978-1-4503-0722-2},
+ keyword = {cheat-proof, cognitive radio networks, cooperative relay},
+ link = {http://doi.acm.org/10.1145/2107502.2107523},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {16:1--16:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Towards Cheat-proof Cooperative Relay for Cognitive Radio Networks},
+ year = {2011}
+}
+
+
+@proceedings{Nasipuri:2012:2248371,
+ abstract = {On behalf of the organizing committee, it is my pleasure to welcome you to MobiHoc 2012, the Thirteenth ACM International Symposium on Mobile Ad Hoc Networking and Computing. MobiHoc continues its tradition of serving as the premier forum for bringing together researchers and practitioners on a broad spectrum of wireless networking and mobile computing topics that include mobile ad hoc networks, wireless sensor networks, wireless mesh networks, cognitive radio networks, and other emerging areas. MobiHoc 2012 is being held on the beautiful Hilton Head Island, SC, which we hope will provide an enjoyable environment for presenting the most recent research achievements and connecting with the research community in these areas. This year's MobiHoc includes seven exciting technical sessions that include 24 exceptional papers, four workshops, and a poster session. The technical program committee led by the chairs Yih-Chun Hu and Sanjay Shakkottai did an outstanding job in reviewing and selecting the MobiHoc papers, while maintaining the MobiHoc tradition of high selectivity and fairness. The Workshop chairs Ryuji Wakikawa and Wenye Wang did an excellent job in getting together the MobiHoc workshops: the Workshop on Sensor-Enhanced Safety and Privacy in Public Spaces; the Workshop on Airborne Networks and Communications; the Workshop on Name-Oriented Mobile Networking Design - Architecture, Algorithms, and Applications; and the Workshop on Pervasive Wireless Healthcare. These workshops are focused on areas of emerging interest and provide significant diversity to the MobiHoc program. The poster chair Karthik Sundaresan did substantial work to have poster papers reviewed and accepted in time for the proceedings. I am deeply thankful to all of these committee members. I am delighted to announce keynote presentations from two renowned contributors to MobiHoc (as well as their respective research areas): Dr. Edward Knightly from Rice University, who will be presenting on Urban-scale Wireless Networks in Unlicensed sub-GHz bands; and Dr. Nitin Vaidya from the University of Illinois at Urbana-Champaign, who will be presenting on Resilient Distributed Consensus.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1281-3},
+ location = {Hilton Head, South Carolina, USA},
+ note = {533125},
+ publisher = {ACM},
+ title = {MobiHoc '12: Proceedings of the Thirteenth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2012}
+}
+
+
+@inproceedings{Wang:2011:BCC:2107502.2107518,
+ abstract = {Barrier coverage has attracted much attention in the past few years. However, most of the previous works focused on traditional scalar sensors. We propose to study barrier coverage in camera sensor networks. One fundamental difference between camera and scalar sensor is that cameras from different positions can form quite different views of the object. As a result, simply combining the sensing range of the cameras across the field does not necessarily form an effective camera barrier since the face image (or the interested aspect) of the object may be missed. To address this problem, we use the angle between the object's facing direction and the camera's viewing direction to measure the quality of sensing. An object is full-view covered if there is always a camera to cover it no matter which direction it faces and the camera's viewing direction is sufficiently close to the object's facing direction. We study the problem of constructing a camera barrier, which is essentially a connected zone across the monitored field such that every point within this zone is full-view covered. We propose a novel method to select camera sensors from an arbitrary deployment to form a camera barrier, and present redundancy reduction techniques to effectively reduce the number of cameras used. We also present techniques to deploy cameras for barrier coverage in a deterministic environment, and analyze and optimize the number of cameras required for this specific deployment under various parameters.},
+ acmid = {2107518},
+ address = {New York, NY, USA},
+ articleno = {12},
+ author = {Wang, Yi and Cao, Guohong},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107518},
+ isbn = {978-1-4503-0722-2},
+ keyword = {barrier coverage, camera sensors, full-view coverage},
+ link = {http://doi.acm.org/10.1145/2107502.2107518},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {12:1--12:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Barrier Coverage in Camera Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Han:2011:OOO:2107502.2107505,
+ abstract = {Opportunistic routing achieves significant performance gain under lossy wireless links. In this paper, we develop a novel approach that exploits inter-flow network coding in opportunistic routing. A unique feature of our design is that it systematically optimizes end-to-end performance (e.g., total throughput). A key challenge to achieve this goal is a strong tension between opportunistic routing and inter-flow network coding: to achieve high reliability, opportunistic routing uses intra-flow coding to spread information across multiple nodes; this reduces the information reaching an individual node, which in turn reduces inter-flow coding opportunity. To address this challenge, we decouple opportunistic routing and inter-flow network coding by proposing a novel framework where an overlay network performs overlay routing and inter-flow coding without worrying about packet losses, while an underlay network uses optimized opportunistic routing and rate limiting to provide efficient and reliable overlay links for the overlay network to take advantage of. Based on this framework, we develop the first optimization algorithm to jointly optimize opportunistic routes, rate limits, inter-flow and intra-flow coding. We then develop a practical opportunistic routing protocol (O3) based on the optimization results. Using Qualnet simulation, we study the individual and aggregate benefits of opportunistic routing, inter-flow coding, and rate limits. Our results show that (i) rate limiting significantly improves the performance of all routing protocols, (ii) opportunistic routing is beneficial under high loss rates, whereas inter-flow coding is more effective under low loss rates, and (iii) O3 significantly out-performs state-of-the-art routing protocols by simultaneously leveraging optimized opportunistic routing, inter-flow coding, and rate limits.},
+ acmid = {2107505},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Han, Mi Kyung and Bhartia, Apurv and Qiu, Lili and Rozner, Eric},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107505},
+ isbn = {978-1-4503-0722-2},
+ keyword = {network coding, opportunistic routing, wireless mesh networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107505},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {2:1--2:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {O3: Optimized Overlay-based Opportunistic Routing},
+ year = {2011}
+}
+
+
+@inproceedings{Huang:2011:UOS:2107502.2107531,
+ abstract = {In this paper, we show how to achieve close-to-optimal utility performance in energy harvesting networks with only finite capacity energy storage devices. In these networks, nodes are capable of harvesting energy from the environment. The amount of energy that can be harvested is time varying and evolves according to some probability law. We develop an online algorithm, called the Energy-limited Scheduling Algorithm (ESA), which jointly manages the energy and makes power allocation decisions for packet transmissions. ESA only has to keep track of the amount of energy left at the network nodes and does not require any knowledge of the harvestable energy process. We show that ESA achieves a utility that is within O(ε) of the optimal, for any ε > 0, while ensuring that the network congestion and the required capacity of the energy storage devices are deterministically upper bounded by bounds of size O(1/ε). We then also develop the Modified-ESA algorithm (MESA) to achieve the same O(ε) close-to-utility performance, with the average network congestion and the required capacity of the energy storage devices being only O([log(1/ε)]2).},
+ acmid = {2107531},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Huang, Longbo and Neely, Michael J.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107531},
+ isbn = {978-1-4503-0722-2},
+ keyword = {Lyapunov analysis, energy harvesting, queueing, stochastic network},
+ link = {http://doi.acm.org/10.1145/2107502.2107531},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {21:1--21:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Utility Optimal Scheduling in Energy Harvesting Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Li:2011:UUF:2107502.2107520,
+ abstract = {A wireless sensor network becomes dynamic if it is monitoring a time-variant event (e.g., expansion of oil spill in ocean). In such applications, on-line boundary detection is a crucial function, as it allows us to track the event variation in a timely fashion. However, the problem becomes very challenging as it demands a highly efficient algorithm to cope with the dynamics introduced by the evolving event. Moreover, as many physical events occupy volumes rather than surfaces (e.g., oil spill again), the algorithm has to work for 3D cases. To this end, we propose UNiform Fast On-Line boundary Detection (UNFOLD) to tackle the challenge. The essence of UNFOLD is to inverse node coordinates such that a "notched" surface is "unfolded" into a convex one, which in turn reduces boundary detection to simple convexity test. UNFOLD is uniform as every node behaves the same (performing coordinate inversion and convexity test), and it is super fast as both computation and communication involve only one-hop neighbors. We prove the correctness and efficiency of UNFOLD; we also use simulations and implementations to evaluate its performance, which demonstrates that UNFOLD is 100 times more time and energy efficient than the most up-to-date proposal.},
+ acmid = {2107520},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Li, Feng and Luo, Jun and Zhang, Chi and Xin, Shiqing and He, Ying},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107520},
+ isbn = {978-1-4503-0722-2},
+ keyword = {3D wireless sensor networks, convexity test, inversion, on-line boundary detection},
+ link = {http://doi.acm.org/10.1145/2107502.2107520},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {14:1--14:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {UNFOLD: Uniform Fast On-line Boundary Detection for Dynamic 3D Wireless Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Sundaresan:2011:SAV:2107502.2107529,
+ abstract = {The demand for real-time video services coupled with the need for increased spectral efficiencies has brought a lot of attention to video multicasting in next generation OFDMA systems. Layered video provides an efficient solution to address the channel quality variation across users. However, the frequency selectivity across subchannels introduced by OFDMA serves as a drawback for multicast scheduling. This significantly diminishes the benefits of video layering and can potentially degrade the system performance to worse than that without channel diversity. Layering the PHY with the help of multi-resolution modulation serves as an effective tool to help retain channel diversity and leverage the benefits of layered video. While layering the PHY provides benefits to multicast in general, we show that its benefits are much more significant in a system with channel diversity. The corresponding multicast scheduling problem now becomes all the more challenging with multi-resolution modulation. In addressing this problem, we provide efficient scheduling solutions both for systems with and without channel diversity. Our solutions have provable performance guarantees and are amenable to practical implementation. Further, evaluation in realistic scenarios reveals close to optimal performance of our proposed solutions as well as the large benefits obtained by layering the PHY in OFDMA systems with channel diversity.},
+ acmid = {2107529},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Sundaresan, Karthikeyan and Rangarajan, Sampath},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107529},
+ isbn = {978-1-4503-0722-2},
+ keyword = {OFDMA, channel diversity, layered video, multicast, scheduling, super-position coding},
+ link = {http://doi.acm.org/10.1145/2107502.2107529},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {20:1--20:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Scheduling Algorithms for Video Multicasting with Channel Diversity in Wireless OFDMA Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Byun:2011:MMS:2107502.2107513,
+ abstract = {We model cognitive radio networks (CRNs) as a spectrum market where every primary user (PU) offer her subchannels with certain interference bound indicating the interference limit the PU can tolerate, and secondary users (SUs) purchase the right to access the subchannels while observing their budget constraints as well as the inference bound. In this spectrum market model, the utility of SU is defined as the achievable transmission rate in free space, and the utility of PU is given by the net profit the PU can make. Then we develop a market equilibrium in the context of Fisher model, and show that the equilibrium is obtained by solving an optimization problem called Eisenberg-Gale convex program. Furthermore, we develop a distributed algorithm with best response dynamics and price dynamics, and prove that its asymptotic solutions are equivalent to the solutions given by the convex program. Besides, we introduce adaptive step size to the price dynamics for faster convergence. With some numerical examples, we show that it helps to achieve faster convergence.},
+ acmid = {2107513},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Byun, Sang-Seon and Balasingham, Ilangko and Vasilakos, Athanasios V.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107513},
+ isbn = {978-1-4503-0722-2},
+ keyword = {Eisenberg-Gale convex program, Fisher market equilibrium, cognitive radio networks, market clearance},
+ link = {http://doi.acm.org/10.1145/2107502.2107513},
+ location = {Paris, France},
+ numpages = {9},
+ pages = {8:1--8:9},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {A Market-clearing Model for Spectrum Trade in Cognitive Radio Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Wan:2011:WCD:2107502.2107517,
+ abstract = {One of the most fundamental task of wireless networks is to provide coverage of a set of targets. Suppose that all nodes and targets lie in a plane, and all nodes have circular coverage ranges of arbitrary radii. The problem Minimum Wireless Cover (MWC) seeks the fewest nodes to cover the targets. If all nodes are associated with some positive prices, the problem Cheapest Wireless Cover (CWC) seeks a cheapest set of nodes to cover the targets. If all nodes have bounded lives, the problem Max-Life Wireless Cover (MLWC) seeks wireless coverage schedule of maximum life subject to the life constraints of individual nodes. In this paper, we present a polynomial time approximation scheme (PTAS) for MWC, and two randomized 2O(log* n)-approximation algorithms for CWC and MLWC respectively, where n is the number of nodes, and log* n is the iterated logarithm of n with base 2.},
+ acmid = {2107517},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Wan, Peng-Jun and Xu, Xiaohua and Wang, Zhu},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107517},
+ isbn = {978-1-4503-0722-2},
+ link = {http://doi.acm.org/10.1145/2107502.2107517},
+ location = {Paris, France},
+ numpages = {8},
+ pages = {11:1--11:8},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Wireless Coverage with Disparate Ranges},
+ year = {2011}
+}
+
+
+@inproceedings{Su:2011:TOR:2107502.2107528,
+ abstract = {This paper aims at achieving optimal rate allocation for data aggregation in wireless sensor networks. We first formulate this rate allocation problem as a network utility maximization problem. Due to its non-convexity, we take a couple of variable substitutions on the original problem and transform it into an approximate problem, which is convex. We then apply duality theory to decompose this approximate problem into a rate control subproblem and a scheduling subproblem. Based on this decomposition, a distributed algorithm for joint rate control and scheduling is designed, and proved to approach arbitrarily close to the optimum of the approximate problem. Finally, we show that our approximate solution can achieve near-optimal performance through both theoretical analysis and simulations.},
+ acmid = {2107528},
+ address = {New York, NY, USA},
+ articleno = {19},
+ author = {Su, Lu and Gao, Yan and Yang, Yong and Cao, Guohong},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107528},
+ isbn = {978-1-4503-0722-2},
+ keyword = {cross layer design, data aggregation, network utility optimization, rate allocation, scheduling, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107528},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {19:1--19:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Towards Optimal Rate Allocation for Data Aggregation in Wireless Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Jagannathan:2011:NSA:2107502.2107515,
+ abstract = {We consider a dynamic spectrum access system in which Secondary Users (SUs) choose to either acquire dedicated spectrum or to use spectrum-holes (white spaces) which belong to Primary Users (PUs). The tradeoff incorporated in this decision is between immediate yet costly transmission and free but delayed transmission (a consequence of both the possible appearance of PUs and sharing the spectrum holes with multiple SUs). We first consider a system with a single PU band, in which the SU decisions are fixed. Employing queueing-theoretic methods, we obtain explicit expressions for the expected delays associated with using the PU band. Based on that, we then consider self-interested SUs and study the interaction between them as a noncooperative game. We prove the existence and uniqueness of a symmetric Nash equilibrium, and characterize the equilibrium behavior explicitly. Using our equilibrium results, we show how to maximize revenue from renting dedicated bands to SUs. Finally, we extend the scope to a scenario with multiple PUs, show that the band-pricing analysis can be applied to some special cases, and provide numerical examples.},
+ acmid = {2107515},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Jagannathan, Krishna and Menache, Ishai and Zussman, Gil and Modiano, Eytan},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107515},
+ isbn = {978-1-4503-0722-2},
+ keyword = {Nash equilibrium, cognitive radio, decisions in queues, dynamic spectrum access, game theory, queueing theory},
+ link = {http://doi.acm.org/10.1145/2107502.2107515},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {10:1--10:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Non-cooperative Spectrum Access: The Dedicated vs. Free Spectrum Choice},
+ year = {2011}
+}
+
+
+@proceedings{2011:2107502,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0722-2},
+ key = {$\!\!$},
+ location = {Paris, France},
+ publisher = {ACM},
+ title = {MobiHoc '11: Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Ahmed:2011:OMV:2107502.2107509,
+ abstract = {We consider the problem of providing mobility support for Voice-over-IP (VoIP) traffic in small-scale enterprises. There is considerable interest in providing on-the-go support for VoIP through the use of WiFi-enabled smart phones. However, existing solutions either do not support client mobility or require client modifications, making them difficult to deploy in practice. In this paper, we present OmniVoice, an 802.11 compliant solution that supports mobility for VoIP traffic without any client modifications. To effectively support such traffic, OmniVoice eliminates client handoff delays and manages interference from non-VoIP background traffic. It achieves this by using (a) a single-channel WLAN design and (b) a lightweight central controller for scheduling non-interfering AP-to-client transmissions and dynamically associating clients. The controller minimizes interference with the help of an interference map that models potential exposed and hidden terminal conflicts in the WLAN, while allowing for the serialization of transmissions that would otherwise compete for medium access. We have implemented and extensively evaluated OmniVoice on a 40 node wireless testbed. OmniVoice meets the QoS requirements for VoIP in all operating scenarios and is unaffected by interference from non-VoIP traffic. In particular, OmniVoice provides 100% greater throughput and 130% greater uninterrupted connectivity time to mobile VoIP users as compared to an off-the-shelf 802.11 solution.},
+ acmid = {2107509},
+ address = {New York, NY, USA},
+ articleno = {5},
+ author = {Ahmed, Nabeel and Keshav, Srinivasan and Papagiannaki, Konstantina},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107509},
+ isbn = {978-1-4503-0722-2},
+ keyword = {VoIP, enterprises, interference, mobility},
+ link = {http://doi.acm.org/10.1145/2107502.2107509},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {5:1--5:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {OmniVoice: A Mobile Voice Solution for Small-scale Enterprises},
+ year = {2011}
+}
+
+
+@inproceedings{Ban:2011:LCT:2107502.2107519,
+ abstract = {A wormhole attack places two radio transceivers connected by a high capacity link and retransmits wireless signals from one antenna at the other. This creates a set of shortcut paths in the network, and may attract a lot of traffic to the wormhole link. The link thus gains control of a large fraction of network traffic which opens the door for more dangerous attacks afterwards. In this paper we introduce a wormhole detection and removal algorithm based on local connectivity tests. The basic idea is that the neighborhood of a wormhole contains two sets of nodes corresponding to two sides of the wormhole. The distance between these two sets is small when using paths that pass through the wormhole link, but is large when only regular network paths are considered. Thus we remove a small neighborhood that will contain potential wormhole links and check if a slightly larger neighborhood falls apart to multiple connected components. To accommodate spatial and temporal unpredictability of wireless communication links we abstract the network connectivity as an arbitrary graph so that the method does not assume any idealistic models (such as unit disk graph model). The algorithm uses purely local connectivity information, handles multiple wormhole attacks and generalizes to wireless networks deployed in 3D. It does not suffer from typical limitations in previous work such as the requirements of special hardware, communication models, synchronization, node density etc. In simulations, our method is seen to beat the state of the art solutions, in particular for cases where previous solutions experience poor performance.},
+ acmid = {2107519},
+ address = {New York, NY, USA},
+ articleno = {13},
+ author = {Ban, Xiaomeng and Sarkar, Rik and Gao, Jie},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107519},
+ isbn = {978-1-4503-0722-2},
+ keyword = {network security, wireless networks, wormhole attack},
+ link = {http://doi.acm.org/10.1145/2107502.2107519},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {13:1--13:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Local Connectivity Tests to Identify Wormholes in Wireless Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Tang:2011:EDM:2107502.2107533,
+ abstract = {Medium access control (MAC) protocols for wireless sensor networks face many challenges, including energy-efficient operation and robust support for varying traffic loads, in spite of effects such as wireless interference or even possible wireless jamming attacks. This paper presents the design and evaluation of the EM-MAC (Efficient Multichannel MAC) protocol, which addresses these challenges through the introduction of novel mechanisms for adaptive receiver-initiated multichannel rendezvous and predictive wake-up scheduling. EM-MAC substantially enhances wireless channel utilization and transmission efficiency while resisting wireless interference and jamming by enabling every node to dynamically optimize the selection of wireless channels it utilizes based on the channel conditions it senses, without use of any reserved control channel. EM-MAC achieves high energy efficiency by enabling a sender to predict the receiver's wake-up channel and wake-up time Implemented in TinyOS on MICAz motes, EM-MAC substantially outperformed other MAC protocols studied. EM-MAC maintained the lowest sender and receiver duty cycles, the lowest packet delivery latency, and 100% packet delivery ratio across all experiments. Our evaluation includes single-hop and multihop flows, as well as experiments with heavy ZigBee interference, constant ZigBee jamming, and Wi-Fi interference.},
+ acmid = {2107533},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Tang, Lei and Sun, Yanjun and Gurewitz, Omer and Johnson, David B.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107533},
+ isbn = {978-1-4503-0722-2},
+ keyword = {duty cycling, energy, interference, jamming, medium access control, multichannel, sensor networks},
+ link = {http://doi.acm.org/10.1145/2107502.2107533},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {23:1--23:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {EM-MAC: A Dynamic Multichannel Energy-efficient MAC Protocol for Wireless Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Xia:2011:DGR:2107502.2107504,
+ abstract = {With both computational complexity and storage space bounded by a small constant, greedy routing is recognized as an appealing approach to support scalable routing in wireless sensor networks. However, significant challenges have been encountered in extending greedy routing from 2D to 3D space. In this research we develop decentralized solutions to achieve greedy routing in 3D sensor networks. Our proposed approach is based on a unit tetrahedron cell (UTC) mesh structure. We propose a distributed algorithm to realize volumetric harmonic mapping of the UTC mesh under spherical boundary condition. It is a one-to-one map that yields virtual coordinates for each node in the network. Since a boundary has been mapped to a sphere, node-based greedy routing is always successful thereon. At the same time, we exploit the UTC mesh to develop a face-based greedy routing algorithm, and prove its success at internal nodes. To deliver a data packet to its destination, face-based and node-based greedy routing algorithms are employed alternately at internal and boundary UTCs, respectively. As far as we know, this is the first work that realizes truly deterministic greedy routing with constant-bounded storage and computation in 3D wireless sensor networks.},
+ acmid = {2107504},
+ address = {New York, NY, USA},
+ articleno = {1},
+ author = {Xia, Su and Yin, Xiaotian and Wu, Hongyi and Jin, Miao and Gu, Xianfeng David},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107504},
+ isbn = {978-1-4503-0722-2},
+ keyword = {3D sensor networks, harmonic mapping, routing},
+ link = {http://doi.acm.org/10.1145/2107502.2107504},
+ location = {Paris, France},
+ numpages = {10},
+ pages = {1:1--1:10},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Deterministic Greedy Routing with Guaranteed Delivery in 3D Wireless Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Hossmann:2011:PCC:2107502.2107526,
+ abstract = {Realistic mobility models are crucial for the simulation of Delay Tolerant and Opportunistic Networks. The long standing benchmark of reproducing realistic pairwise statistics (e.g., contact and inter-contact time distributions) is today mastered by state-of-the-art models. However, mobility models should also reflect the macroscopic community structure of who meets whom. While some existing models reproduce realistic community structure - reflecting groups of nodes who work or live together - they fail in correctly capturing what happens between such communities: they are often connected by few bridging links between nodes who socialize outside of the context and location of their home communities. In a first step, we analyze the bridging behavior in mobility traces and show how it differs to that of mobility models. By analyzing the context and location of contacts, we then show that it is the social nature of bridges which makes them differ from intra-community links. Based on these insights, we propose a Hypergraph to model time-synchronized meetings of nodes from different communities as a social overlay. Applying this as an extension to two existing mobility models we show that it reproduces correct bridging behavior while keeping other features of the original models intact.},
+ acmid = {2107526},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Hossmann, Theus and Spyropoulos, Thrasyvoulos and Legendre, Franck},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107526},
+ isbn = {978-1-4503-0722-2},
+ link = {http://doi.acm.org/10.1145/2107502.2107526},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {18:1--18:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Putting Contacts into Context: Mobility Modeling Beyond Inter-contact Times},
+ year = {2011}
+}
+
+
+@inproceedings{Zhang:2011:ECH:2107502.2107510,
+ abstract = {The ISM spectrum is becoming increasingly populated by emerging wireless networks. Spectrum sharing among the same network of devices can be arbitrated by MAC protocols (e.g., CSMA), but the coexistence between heterogeneous networks remains a challenge. The disparate power levels, asynchronous time slots, and incompatible PHY layers of heterogeneous networks severely degrade the effectiveness of traditional MAC. In this paper, we propose a new mechanism, called the Cooperative Busy Tone (CBT), that enables the reliable coexistence between two such networks, ZigBee and WiFi. CBT allows a separate ZigBee node to schedule a busy tone concurrently with the desired transmission, thereby improving the visibility of ZigBee devices to WiFi. Its core components include a frequency flip scheme that prevents the mutual interference between cooperative ZigBee nodes, and a busy tone scheduler that minimizes the interference to WiFi, for both CSMA and TDMA packets. To optimize CBT, we establish an analytical framework that relates its key design parameters to performance and cost. Both the analytical and detailed simulation results demonstrate CBT's significant throughput improvement over the legacy ZigBee protocol, with negligible performance loss to WiFi. The results are validated further by implementing CBT on sensor motes and software radios.},
+ acmid = {2107510},
+ address = {New York, NY, USA},
+ articleno = {6},
+ author = {Zhang, Xinyu and Shin, Kang G.},
+ booktitle = {Proceedings of the Twelfth ACM International Symposium on Mobile Ad Hoc Networking and Computing},
+ doi = {10.1145/2107502.2107510},
+ isbn = {978-1-4503-0722-2},
+ keyword = {coexistence of Zig-Bee (802.15.4) and WiFi (802.11) networks, coexistence of heterogeneous networks, modeling and analysis, software-radio-based protocol},
+ link = {http://doi.acm.org/10.1145/2107502.2107510},
+ location = {Paris, France},
+ numpages = {11},
+ pages = {6:1--6:11},
+ publisher = {ACM},
+ series = {MobiHoc '11},
+ title = {Enabling Coexistence of Heterogeneous Wireless Systems: Case for ZigBee and WiFi},
+ year = {2011}
+}
+
+

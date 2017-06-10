@@ -1,0 +1,1446 @@
+@inproceedings{Wang:2014:VUI:2594368.2602428,
+ abstract = {This video presents a demo of indoor localization in multiple settings. In the demo, a user walks with a smartphone and the user's location is shown on the phone's screen in real time. Our system, called Unsupervised Indoor Localization (UnLoc) utilizes the sensor data from smartphones to learn "invisible landmarks" in the environment. Example landmarks could be a unique magnetic fluctuation experienced when the phone is near a water-cooler, or a distinct gyroscope rotation when the user turns a corner. We use these indoor "landmarks" to periodically reset the user's location. To track the user between these landmarks, we use an optimized variant of dead reckoning, ultimately leading to a robust location tracking system. We call our system UnLoc, since the landmarks are generated in an unsupervised manner, requiring no manual effort or floorplan of the building. The demo describes the high level intuitions, shows UnLoc in operation, and shares experiences from running UnLoc in various real-world environments.},
+ acmid = {2602428},
+ address = {New York, NY, USA},
+ author = {Wang, He and Sen, Souvik and Mariakakis, Alex and Elgohary, Ahmed and Farid, Moustafa and Youssef, Moustafa and Roy Choudhury, Romit},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602428},
+ isbn = {978-1-4503-2793-0},
+ keyword = {landmarks, location, mobile phones, recursion, sensing},
+ link = {http://doi.acm.org/10.1145/2594368.2602428},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {393--393},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Unsupervised Indoor Localization (UnLoc): Beyond the Prototype},
+ year = {2014}
+}
+
+
+@inproceedings{AmiriSani:2014:DRS:2594368.2601471,
+ abstract = {A user nowadays owns a variety of mobile systems, including smartphones, tablets, smart glasses, and smart watches, each equipped with a plethora of I/O devices, such as cameras, speakers, microphones, sensors, and cellular modems. There are many interesting use cases in which an application running on one mobile system accesses I/O on another system, for three fundamental reasons. (i) Mobile systems can be in different physical locations or orientations. For example, one can control a smartphone's high-resolution camera from a tablet camera application to more easily capture a self-portrait. (ii) Mobile systems can serve different users. For example, one can a play music for another user if one's smartphone can access the other device's speaker. (iii) Certain mobile systems have unique I/O devices due to their distinct form factor and targeted use cases. For example, a user can make a phone call from her tablet using the modem and SIM card in her smartphone. Solutions exist for sharing I/O devices, e.g., for camera [1], speaker [2], and modem (for messaging) [3]. However, these solutions have three limitations. (i) They do not support unmodified applications. (ii) They do not expose all the functionality of an I/O device for sharing. (iii) They are I/O class-specific, requiring significant engineering effort to support new I/O devices. We demonstrate Rio (Remote I/O), an I/O sharing solution for mobile systems that overcomes all three aforementioned limitations. Rio adopts a split-stack I/O sharing model, in which the I/O stack is split between the two mobile systems at a certain boundary. All communications that cross this boundary are intercepted on the mobile system hosting the application and forwarded to the mobile system with the I/O device, where they are served by the rest of the I/O stack. Rio uses device files as its boundary of choice. Device files are used in Unix-like OSes, such as Android and iOS, to abstract many classes of I/O devices, providing an I/O class-agnostic boundary. The device file boundary supports I/O sharing for unmodified applications, as it is transparent to the application layer. It also exposes the full functionality of each I/O device to other mobile systems by allowing processes in one system to directly communicate with the device drivers in another. Rio is not the first system to exploit the device file boundary; our previous work, Paradice [5], uses device files as the boundary for I/O virtualization inside a single system. However, Rio faces a different set of challenges regarding how to properly exploit this boundary, as explained in the full paper [6]. In this demo, we use a prototype implementation of Rio for Android systems. Our implementation supports four important I/O classes: camera, audio devices such as speaker and microphone, sensors such as accelerometer, and cellular modem (for phone calls and SMS). It consists of about 7100 lines of code, of which less than 500 are specific to I/O classes. Rio also supports I/O sharing between heterogeneous mobile systems, including tablets and smartphones. See [4] for a video of the demo.},
+ acmid = {2601471},
+ address = {New York, NY, USA},
+ author = {Amiri Sani, Ardalan and Boos, Kevin and Yun, Min Hong and Zhong, Lin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601471},
+ isbn = {978-1-4503-2793-0},
+ keyword = {i/o, i/o sharing, mobile, remote i/o, rio},
+ link = {http://doi.acm.org/10.1145/2594368.2601471},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {343--343},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Rio: A System Solution for Sharing I/O Between Mobile Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Cuervo:2014:DKH:2594368.2601482,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601482},
+ address = {New York, NY, USA},
+ author = {Cuervo, Eduardo and Wolman, Alec and Cox, Landon and Saroiu, Stefan and Musuvathi, Madanlal and Razeen, Ali},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601482},
+ isbn = {978-1-4503-2793-0},
+ keyword = {code offload, collaborative rendering, distributed systems, video compression, videogame streaming},
+ link = {http://doi.acm.org/10.1145/2594368.2601482},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {345--345},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Kahawai: High-quality Mobile Gaming Using GPU Offload},
+ year = {2014}
+}
+
+
+@inproceedings{Nguyen:2014:PTR:2594368.2601458,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601458},
+ address = {New York, NY, USA},
+ author = {Nguyen, David T. and Zhou, Gang and Xing, Guoliang},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601458},
+ isbn = {978-1-4503-2793-0},
+ keyword = {app launch, i/o optimizations, smartphone app delay},
+ link = {http://doi.acm.org/10.1145/2594368.2601458},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {378--378},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Towards Reducing Smartphone Application Delay Through Read/Write Isolation},
+ year = {2014}
+}
+
+
+@proceedings{Borriello:2015:2742647,
+ abstract = {Welcome to MobiSys 2015, the 13th Conference on Mobile Systems, Applications, and Services. This year's technical program covers a wide and rich range of topics in mobile systems. The research themes include wearable computing, privacy and security, gaming, wireless networks, and more. We are delighted to anchor the technical program with keynote talks by Dr. Krishan Sabnani and Dr. Deborah Estrin. Drs. Sabnani and Estrin have been leading researchers in Internet design, wireless networks, and sensing for over twenty years. In addition to the keynotes, we have an exciting technical program that includes 29 full-length technical papers chosen by the technical program committee (TPC). This year, we had a record number of 219 submissions. To reduce the number of reviews each TPC member had to write, we augmented the TPC with an external review committee (ERC) of 30 experts. Most ERC members reviewed seven papers during the initial round of the review process. Our review process consisted of three rounds. In the first round, all submissions received three reviews, each written by a member of the TPC or ERC. If a reviewer recommended that a paper be accepted, the paper advanced to the second round. In the second round, papers received two or more additional reviews. At the end of the second round, reviewers discussed each remaining paper online to determine whether it should advance to the third round of decisions. The third round of decisions occurred during an all-day face-to-face meeting of the TPC. By the conclusion of this meeting, the TPC had identified the 29 papers in the program. Finally, all accepted papers were shepherded by a TPC member to ensure that the final manuscripts met the standards of the committee. We also took strict precautions throughout the review process to avoid conflicts of interest.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3494-5},
+ location = {Florence, Italy},
+ note = {104158},
+ publisher = {ACM},
+ title = {MobiSys '15: Proceedings of the 13th Annual International Conference on Mobile Systems, Applications, and Services},
+ year = {2015}
+}
+
+
+@inproceedings{Capurso:2014:PRV:2594368.2601456,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601456},
+ address = {New York, NY, USA},
+ author = {Capurso, Nicholas and Elsken, Eric and Payne, Donnell and Ma, Liran},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601456},
+ isbn = {978-1-4503-2793-0},
+ keyword = {accident detection, android, inexpensive, portable devices, raspberry pi, sensortag, smartphone, vehicle},
+ link = {http://doi.acm.org/10.1145/2594368.2601456},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {367--367},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: A Robust Vehicular Accident Detection System Using Inexpensive Portable Devices},
+ year = {2014}
+}
+
+
+@inproceedings{Hao:2014:PPU:2594368.2594390,
+ abstract = {Mobile app ecosystems have experienced tremendous growth in the last six years. This has triggered research on dynamic analysis of performance, security, and correctness properties of the mobile apps in the ecosystem. Exploration of app execution using automated UI actions has emerged as an important tool for this research. However, existing research has largely developed analysis-specific UI automation techniques, wherein the logic for exploring app execution is intertwined with the logic for analyzing app properties. PUMA is a programmable framework that separates these two concerns. It contains a generic UI automation capability (often called a Monkey) that exposes high-level events for which users can define handlers. These handlers can flexibly direct the Monkey's exploration, and also specify app instrumentation for collecting dynamic state information or for triggering changes in the environment during app execution. Targeted towards operators of app marketplaces, PUMA incorporates mechanisms for scaling dynamic analysis to thousands of apps. We demonstrate the capabilities of PUMA by analyzing seven distinct performance, security, and correctness properties for 3,600 apps downloaded from the Google Play store.},
+ acmid = {2594390},
+ address = {New York, NY, USA},
+ author = {Hao, Shuai and Liu, Bin and Nath, Suman and Halfond, William G.J. and Govindan, Ramesh},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594390},
+ isbn = {978-1-4503-2793-0},
+ keyword = {dynamic analysis, large scale, mobile apps, programming framework, separation of concerns, ui-automation},
+ link = {http://doi.acm.org/10.1145/2594368.2594390},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {204--217},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {PUMA: Programmable UI-automation for Large-scale Dynamic Analysis of Mobile Apps},
+ year = {2014}
+}
+
+
+@inproceedings{Lee:2014:DDU:2594368.2601474,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601474},
+ address = {New York, NY, USA},
+ author = {Lee, Kyungmin and Chu, David and Cuervo, Eduardo and Wolman, Alec and Flinn, Jason},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601474},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cloud gaming, speculation},
+ link = {http://doi.acm.org/10.1145/2594368.2601474},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {347--347},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: DeLorean: Using Speculation to Enable Low-latency Continuous Interaction for Mobile Cloud Gaming},
+ year = {2014}
+}
+
+
+@inproceedings{Rosen:2014:DMG:2594368.2601469,
+ abstract = {Mobilyzer is an open-source network measurement library that coordinates network measurement tasks among different applications, facilitates measurement task design, and allows for more effective measurement task management than in existing standalone approaches. Unifying various network tasks into one framework greatly simplifies the problem of developing, deploying and managing measurement tasks which may otherwise interfere with one another. An intelligent scheduler, coordinated by a central server, dynamically schedules tasks to run in the background, preserving the user's battery life and respecting limits set by the user on task frequency and data consumption. We will demo MobiPerf, an open-source mobile network measurement tool built using the Mobilyzer library. MobiPerf collects a wide range of network performance data, ranging from the latency and throughput measurements common in existing client-based measurement frameworks, to HTTP loading times for specific URLs, to inferring RRC state configuration parameters and their impact on performance. We will also demo an interface for viewing a large, open dataset of performance data from around the world collected by MobiPerf.},
+ acmid = {2601469},
+ address = {New York, NY, USA},
+ author = {Rosen, Sanae and Yao, Hongyi and Nikravesh, Ashkan and Jia, Yunhan and Choffnes, David and Mao, Z. Morley},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601469},
+ isbn = {978-1-4503-2793-0},
+ keyword = {4g, cellular networks, lte, network measurement libraries, network performance measurements},
+ link = {http://doi.acm.org/10.1145/2594368.2601469},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {353--353},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Mapping Global Mobile Performance Trends with Mobilyzer and mobiPerf},
+ year = {2014}
+}
+
+
+@inproceedings{AmiriSani:2014:VRS:2594368.2602434,
+ abstract = {Modern mobile systems are equipped with a diverse collection of I/O devices, including cameras, microphones, various sensors, and cellular modem. There exist many novel use cases for allowing an application on one mobile system to utilize I/O devices from another. This video demonstrates Rio, an I/O sharing solution that supports unmodified applications and realizes many of these novel use cases. Rio's design is common to many classes of I/O devices, significantly reducing the engineering effort to support new I/O devices. Moreover, it supports all the functionalities of an I/O device for sharing. Rio also supports I/O sharing between mobile systems of different form factors, including smartphones and tablets.},
+ acmid = {2602434},
+ address = {New York, NY, USA},
+ author = {Amiri Sani, Ardalan and Boos, Kevin and Yun, Min Hong and Zhong, Lin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602434},
+ isbn = {978-1-4503-2793-0},
+ keyword = {i/o, i/o sharing, mobile, remote i/o, rio},
+ link = {http://doi.acm.org/10.1145/2594368.2602434},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {386--386},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Rio: A System Solution for Sharing I/O Between Mobile Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Murase:2014:DHC:2594368.2601479,
+ abstract = {We study an instant messaging system between two smartphones, without the need of visually following the screen of the smartphones. In the sending side, a Morse-code-type touchscreen input is used to encode the message and a vibration in the receiver side to perceive the message.},
+ acmid = {2601479},
+ address = {New York, NY, USA},
+ author = {Murase, Keisuke and Kanaoka, Ryo and Thepvilojanapong, Niwat and Ito, Tsubasa and Lepp\"{a}nen, Teemu and Saito, Hiroki and Tobe, Yoshito},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601479},
+ isbn = {978-1-4503-2793-0},
+ keyword = {bluetooth, hand-to-hand communication, messaging with vibration},
+ link = {http://doi.acm.org/10.1145/2594368.2601479},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {350--350},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Hand-to-hand Communication Using Smartphones},
+ year = {2014}
+}
+
+
+@inproceedings{Mascarenas:2014:VRS:2594368.2602433,
+ abstract = {The goal of this work is to develop a new autonomous capability for remotely deploying precisely located sensor nodes without damaging the sensor nodes in the process. Over the course of the last decade there has been significant interest in research to deploy sensor networks. This research is driven by the fact that the costs associated with installing sensor networks can be very high. In order to rapidly deploy sensor networks consisting of large numbers of sensor nodes, alternative techniques must be developed to place the sensor nodes in the field. To date much of the research on sensor network deployment has focused on strategies that involve the random dispersion of sensor nodes [1]. In addition other researchers have investigated deployment strategies utilizing small unmanned aerial helicopters for dropping sensor networks from the air. [2]. The problem with these strategies is that often sensor nodes need to be very precisely located for their measurements to be of any use. The reason for this could be that the sensor being used only have limited range, or need to be properly coupled to the environment which they are sensing. The problem with simply dropping sensor nodes is that for many applications it is necessary to deploy sensor nodes horizontally. In addition, to properly install many types of sensors, the sensor must assume a specific pose relative to the object being measured. In order to address these challenges we are currently developing a technology to remotely and rapidly deploy precisely located sensor nodes. The remote sensor placement device being developed can be described as an intelligent gas gun (Figure 1). A laser rangefinder is used to measure the distance to a specified target sensor location. This distance is then used to estimate the amount of energy required to propel the sensor node to the target location with just enough additional energy left over to ensure the sensor node is able to attach itself to the target of interest. We are currently in the process of developing attachment mechanisms for steel, wood, fiberglass (Figure 2). In this demonstration we will perform a contained, live demo of our prototype pneumatic remote sensor placement device along with some prototype sensor attachment mechanisms we are developing.},
+ acmid = {2602433},
+ address = {New York, NY, USA},
+ author = {Mascarenas, David and Ott, Logan and Curtis, Aaron and Brambilla, Sara and Larson, Amy and Brumby, Steve and Farrar, Charles},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602433},
+ isbn = {978-1-4503-2793-0},
+ keyword = {sensor attachment, sensor network deployment, sensor placement},
+ link = {http://doi.acm.org/10.1145/2594368.2602433},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {388--388},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Remote Sensor Placement},
+ year = {2014}
+}
+
+
+@inproceedings{Sur:2014:AAC:2594368.2594380,
+ abstract = {High-quality, speaker-location-aware audio capturing has traditionally been realized using dedicated microphone arrays. But high cost and lack of portability prevents such systems from being widely adopted. Today's smartphones are relatively more convenient for audio recording, but the audio quality is much lower in noisy environment and speaker location cannot be readily obtained. In this paper, we design and implement Dia, which leverages smartphone cooperation to overcome the above limitations. Dia supports spontaneous setup, by allowing a group of users to rapidly assemble an array of smartphones to emulate a dedicated microphone array. It employs a novel framework to accurately synchronize the audio I/O clocks of the smartphones. The synchronized smartphone array further enables autodirective audio capturing, i.e., tracking the speaker's location, and beamforming the audio capturing towards the speaker to improve audio quality. We implement Dia on a testbed consisting of 8 Android phones. Our experiments demonstrate that Dia can synchronize the microphones of different smartphones with sample-level accuracy. It achieves high localization accuracy, and similar beamforming performance compared with a microphone array with perfect synchronization.},
+ acmid = {2594380},
+ address = {New York, NY, USA},
+ author = {Sur, Sanjib and Wei, Teng and Zhang, Xinyu},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594380},
+ isbn = {978-1-4503-2793-0},
+ keyword = {acoustic beamforming, acoustic localization, ad-hoc microphone array, smartphone synchronization},
+ link = {http://doi.acm.org/10.1145/2594368.2594380},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {28--41},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Autodirective Audio Capturing Through a Synchronized Smartphone Array},
+ year = {2014}
+}
+
+
+@inproceedings{Qian:2014:CRU:2594368.2594372,
+ abstract = {Multiple entities in the smartphone ecosystem employ various methods to provide better web browsing experience. In this paper, we take a first comprehensive examination of the resource usage of mobile web browsing by focusing on two important types of resources: bandwidth and energy. Using a novel traffic collection and analysis tool, we examine a wide spectrum of important factors including protocol overhead, TCP connection management, web page content, traffic timing dynamics, caching efficiency, and compression usage, for the most popular 500 websites. Our findings suggest that that all above factors at different layers can affect resource utilization for web browsing, as they often poorly interact with the underlying cellular networks. Based on our findings, we developed novel recommendations and detailed best practice suggestions for mobile web content, browser, network protocol, and smartphone OS design, to make mobile web browsing more resource efficient.},
+ acmid = {2594372},
+ address = {New York, NY, USA},
+ author = {Qian, Feng and Sen, Subhabrata and Spatscheck, Oliver},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594372},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cellular networks, energy consumption, http, mobile web, smartphones, spdy, ssl},
+ link = {http://doi.acm.org/10.1145/2594368.2594372},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {218--231},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Characterizing Resource Usage for Mobile Web Browsing},
+ year = {2014}
+}
+
+
+@inproceedings{Hammer:2014:PVS:2594368.2601457,
+ abstract = {This work presents a virtual sensing framework by exploiting operating system events for energy efficient context inference. Specifically, we present a novel set of features that can be extracted from virtual sensors and used to infer the logical status of mobile users, such as isWorking, isSocial, and isStressful. The preliminary results indicate promising inference performance and suggest a wide range of applications of the proposed framework.},
+ acmid = {2601457},
+ address = {New York, NY, USA},
+ author = {Hammer, Jon C. and Yan, Tingxin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601457},
+ isbn = {978-1-4503-2793-0},
+ keyword = {behavior inference, mobile devices, sensing framework, virtual sensor},
+ link = {http://doi.acm.org/10.1145/2594368.2601457},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {371--371},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: A Virtual Sensing Framework for Mobile Phones},
+ year = {2014}
+}
+
+
+@inproceedings{Park:2014:POH:2594368.2601461,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601461},
+ address = {New York, NY, USA},
+ author = {Park, Juyoung and Lee, Kuyeon and Kang, Kyungtae},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601461},
+ isbn = {978-1-4503-2793-0},
+ keyword = {ecg, heartbeat classification, mobile device, ontology},
+ link = {http://doi.acm.org/10.1145/2594368.2601461},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {379--379},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Ontology-based Heartbeat Classification for Mobile Electrocardiogram Monitoring},
+ year = {2014}
+}
+
+
+@inproceedings{Crussell:2014:MIA:2594368.2594391,
+ abstract = {Many Android applications are distributed for free but are supported by advertisements. Ad libraries embedded in the app fetch content from the ad provider and display it on the app's user interface. The ad provider pays the developer for the ads displayed to the user and ads clicked by the user. A major threat to this ecosystem is ad fraud, where a miscreant's code fetches ads without displaying them to the user or "clicks" on ads automatically. Ad fraud has been extensively studied in the context of web advertising but has gone largely unstudied in the context of mobile advertising. We take the first step to study mobile ad fraud perpetrated by Android apps. We identify two fraudulent ad behaviors in apps: 1) requesting ads while the app is in the background, and 2) clicking on ads without user interaction. Based on these observations, we developed an analysis tool, MAdFraud, which automatically runs many apps simultaneously in emulators to trigger and expose ad fraud. Since the formats of ad impressions and clicks vary widely between different ad providers, we develop a novel approach for automatically identifying ad impressions and clicks in three steps: building HTTP request trees, identifying ad request pages using machine learning, and detecting clicks in HTTP request trees using heuristics. We apply our methodology and tool to two datasets: 1) 130,339 apps crawled from 19 Android markets including Play and many third-party markets, and 2) 35,087 apps that likely contain malware provided by a security company. From analyzing these datasets, we find that about 30% of apps with ads make ad requests while in running in the background. In addition, we find 27 apps which generate clicks without user interaction. We find that the click fraud apps attempt to remain stealthy when fabricating ad traffic by only periodically sending clicks and changing which ad provider is being targeted between installations.},
+ acmid = {2594391},
+ address = {New York, NY, USA},
+ author = {Crussell, Jonathan and Stevens, Ryan and Chen, Hao},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594391},
+ isbn = {978-1-4503-2793-0},
+ keyword = {android, app testing, click fraud, data mining, network traffic classification, online advertising},
+ link = {http://doi.acm.org/10.1145/2594368.2594391},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {12},
+ pages = {123--134},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {MAdFraud: Investigating Ad Fraud in Android Applications},
+ year = {2014}
+}
+
+
+@inproceedings{Parate:2014:RRS:2594368.2594379,
+ abstract = {Smoking-induced diseases are known to be the leading cause of death in the United States. In this work, we design RisQ, a mobile solution that leverages a wristband containing a 9-axis inertial measurement unit to capture changes in the orientation of a person's arm, and a machine learning pipeline that processes this data to accurately detect smoking gestures and sessions in real-time. Our key innovations are four-fold: a) an arm trajectory-based method that extracts candidate hand-to-mouth gestures, b) a set of trajectory-based features to distinguish smoking gestures from confounding gestures including eating and drinking, c) a probabilistic model that analyzes sequences of hand-to-mouth gestures and infers which gestures are part of individual smoking sessions, and d) a method that leverages multiple IMUs placed on a person's body together with 3D animation of a person's arm to reduce burden of self-reports for labeled data collection. Our experiments show that our gesture recognition algorithm can detect smoking gestures with high accuracy (95.7%), precision (91%) and recall (81%). We also report a user study that demonstrates that we can accurately detect the number of smoking sessions with very few false positives over the period of a day, and that we can reliably extract the beginning and end of smoking session periods.},
+ acmid = {2594379},
+ address = {New York, NY, USA},
+ author = {Parate, Abhinav and Chiu, Meng-Chieh and Chadowitz, Chaniel and Ganesan, Deepak and Kalogerakis, Evangelos},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594379},
+ isbn = {978-1-4503-2793-0},
+ keyword = {inertial measurement unit, mobile computing, smoking detection, wearables},
+ link = {http://doi.acm.org/10.1145/2594368.2594379},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {13},
+ pages = {149--161},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {RisQ: Recognizing Smoking Gestures with Inertial Sensors on a Wristband},
+ year = {2014}
+}
+
+
+@proceedings{Chu:2013:2462456,
+ abstract = {Welcome to MobiSys 2013: The Eleventh International Conference on Mobile Systems, Applications, and Services. As the premier forum for presenting the latest research in mobile and wireless systems, this year's conference attracted a record number of 211 submissions, a sign of continuing vibrancy and increasing maturity of our community. In addition to the strong technical program covering virtually every major topic of mobile systems research, we've incorporated a new video program showcasing innovative ideas selected from submissions, and have continued the tradition of having an interactive demo and poster fest. The Technical Program Committee and Industrial Reviewer Panel are to be lauded for their extraordinary effort in vetting each paper with care during the rigorous review process. Each paper was assigned to three Program Committee members for a first round of reviews. Each of the 211 papers with at least one positive review (weak accept) was assigned two additional reviewers from the Program Committee in the second round. A paper with potential industrial applications was further assigned to an Industrial Reviewer Committee member. In all, the Program Committee members and industrial reviewers generated 866 reviews and the top 60 papers received at least 5 reviews. The Program Committee met for a full day at Jekyll Island, Georgia, USA. The Committee discussed the top 60 papers and accepted 33 papers for the program. Each of these 33 papers was shepherded by a member of the Program Committee, to ensure that recommendations made by the reviewers and during the Program Committee meeting were satisfactorily addressed. The resulting technical program is the fruit of labor by many. We want to thank all the authors of submitted papers. We are indebted to the Technical Program Committee and Industry Reviewer Panel for their extraordinary work in reviewing papers and providing feedback for the authors, and the Video Program Committee for reviewing and selecting the short videos. We hope you will find the program interesting and thought-provoking, and you will take this opportunity to share your ideas while also networking with other researchers and practitioners from around the world.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1672-9},
+ location = {Taipei, Taiwan},
+ note = {104138},
+ publisher = {ACM},
+ title = {MobiSys '13: Proceeding of the 11th Annual International Conference on Mobile Systems, Applications, and Services},
+ year = {2013}
+}
+
+
+@inproceedings{Landay:2014:BDT:2594368.2620048,
+ abstract = {There are many urgent problems facing the planet: a degrading environment, a healthcare system in crisis, and educational systems that are failing to produce creative, innovative thinkers to solve tomorrow's problems. Technology influences behavior, and I believe when we balance it with revolutionary design, we can reduce a family's energy and water use by 50%, double most people's daily physical activity, and educate any child anywhere in the world to a level of proficiency on par with the planet's best students. My research program tackles these grand challenges by using a new model of interdisciplinary research that takes a long view and encourages risk-taking and creativity. I will illustrate how we are addressing these grand challenges in our research by building systems that balance innovative user interfaces with novel activity inference technology. These systems have helped individuals stay fit, led families to be more sustainable in their everyday lives, and supported learners in acquiring second languages. I will also introduce the World Lab, a cross-cultural institute that embodies my balanced approach to attack the world's biggest problems today, while preparing the technology and design leaders of tomorrow. James Landay is a Professor of Information Science at Cornell Tech, specializing in human-computer interaction. He will become a Professor of Computer Science at Stanford in August, 2014. Previously, James was a Professor of Computer Science & Engineering at the University of Washington. His current research interests include Technology to Support Behavior Change, Demonstrational Interfaces, Mobile & Ubiquitous Computing, and User Interface Design Tools. He is the founder and co-director of the World Lab, a joint research and educational effort with Tsinghua University in Beijing. Landay received his BS in EECS from UC Berkeley in 1990 and MS and PhD in Computer Science from Carnegie Mellon University in 1993 and 1996, respectively. His PhD dissertation was the first to demonstrate the use of sketching in user interface design tools. He was previously the Laboratory Director of Intel Labs Seattle, a university affiliated research lab that explored the new usage models, applications, and technology for ubiquitous computing. He was also the chief scientist and co-founder of NetRaker, which was acquired by KeyNote Systems in 2004. From 1997 through 2003 he was a tenured professor in EECS at UC Berkeley. He was named to the ACM SIGCHI Academy in 2011. He currently serves on the NSF CISE Advisory Committee.},
+ acmid = {2620048},
+ address = {New York, NY, USA},
+ author = {Landay, James},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2620048},
+ isbn = {978-1-4503-2793-0},
+ keyword = {activity inference, design, fitness, hci, health, innovation, language learning, sustainability, ubiquitous computing},
+ link = {http://doi.acm.org/10.1145/2594368.2620048},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Balancing Design and Technology to Tackle Global Grand Challenges},
+ year = {2014}
+}
+
+
+@inproceedings{Nirjon:2014:CIL:2594368.2594378,
+ abstract = {Due to poor signal strength, multipath effects, and limited on-device computation power, common GPS receivers do not work indoors. This work addresses these challenges by using a steerable, high-gain directional antenna as the front-end of a GPS receiver along with a robust signal processing step and a novel location estimation technique to achieve direct GPS-based indoor localization. By leveraging the computing power of the cloud, we accommodate longer signals for acquisition, and remove the requirement of decoding timestamps or ephemeris data from GPS signals. We have tested our system in 31 randomly chosen spots inside five single-story, indoor environments such as stores, warehouses and shopping centers. Our experiments show that the system is capable of obtaining location fixes from 20 of these spots with a median error of less than 10 m, where all normal GPS receivers fail.},
+ acmid = {2594378},
+ address = {New York, NY, USA},
+ author = {Nirjon, Shahriar and Liu, Jie and DeJean, Gerald and Priyantha, Bodhi and Jin, Yuzhe and Hart, Ted},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594378},
+ isbn = {978-1-4503-2793-0},
+ keyword = {co-gps, coin-gps, indoor gps, instant gps},
+ link = {http://doi.acm.org/10.1145/2594368.2594378},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {301--314},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {COIN-GPS: Indoor Localization from Direct GPS Receiving},
+ year = {2014}
+}
+
+
+@inproceedings{Roy:2014:DIA:2594368.2601478,
+ abstract = {We present a demonstration of WalkCompass, a system to appear in the MobiSys 2014 main conference. WalkCompass exploits smartphone sensors to estimate the direction in which a user is walking. We find that several smartphone localization systems in the recent past, including our own, make a simplifying assumption that the user's walking direction is known. In trying to relax this assumption, we were not able to find a generic solution from past work. While intuition suggests that the walking direction should be detectable through the accelerometer, in reality this direction gets blended into various other motion patterns during the act of walking, including up and down bounce, side-to-side sway, swing of arms or legs, etc. WalkCompass analyzes the human walking dynamics to estimate the dominating forces and uses this knowledge to find the heading direction of the pedestrian. In the demonstration we will show the performance of this system when the user holds the smartphone on the palm. A collection of YouTube videos of the demo is posted at http://synrg.csl.illinois.edu/projects/ localization/walkcompass.},
+ acmid = {2601478},
+ address = {New York, NY, USA},
+ author = {Roy, Nirupam and Wang, He and Roy Choudhury, Romit},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601478},
+ isbn = {978-1-4503-2793-0},
+ keyword = {activity recognition, compass correction, force analysis, heading direction, localization, magnetic field, mobile phones, orientation, sensing},
+ link = {http://doi.acm.org/10.1145/2594368.2601478},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {354--354},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: I Am a Smartphone and I Can Tell My User's Walking Direction},
+ year = {2014}
+}
+
+
+@inproceedings{Ruth:2014:DUI:2594368.2601477,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601477},
+ address = {New York, NY, USA},
+ author = {R\"{u}th, Jan and Wirtz, Hanno and Wehrle, Klaus},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601477},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mobile communication, ubiquitous computing},
+ link = {http://doi.acm.org/10.1145/2594368.2601477},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {355--356},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Ubiquitous Interaction with Smart Objects},
+ year = {2014}
+}
+
+
+@proceedings{Campbell:2014:2594368,
+ abstract = {Welcome to MobiSys 2014, the 12th Conference on Mobile Systems, Applications, and Services. This year's technical program covers a wide range of topics in mobile systems. The program both deepens our understanding of several long-standing problems and explores an expanding set of emerging mobile applications and technologies. Topics include automated user-interface exploration, efficient resource usage, gesture recognition, localization, privacy and security, wearable computing, wireless networks, and more. We are thrilled to begin the technical program with a keynote talk by Professor James Landay of Cornell NYC Tech. Dr. Landay has been a leading researcher on human-computer interaction and ubiquitous computing for over twenty years. After the keynote, we have an exciting technical program that includes 25 full-length technical papers chosen by the technical program committee (TPC) from 185 submissions. As interest in the conference has grown over the last several years, so too has the review load for MobiSys TPCs. To reduce the number of reviews each TPC member had to write, we augmented the TPC with an external review committee (ERC) of experts. Most ERC members reviewed six papers during the initial round of the review process. Our review process consisted of three rounds of decisions. During the first round, all submissions received three or four reviews, each written by a member of the TPC or ERC. If a reviewer recommended that a paper be accepted, the paper advanced to the second round. During the second round, papers received three or four additional reviews, almost entirely from the TPC. At the end of the second round, reviewers discussed each remaining paper online to determine whether it should advance to the third round of decisions. The third round of decisions occurred during an all-day face-to-face meeting of the TPC. By the conclusion of this meeting, the TPC had identified the 25 papers in the program. Finally, all accepted papers were shepherded by a TPC member to ensure that the final manuscripts met the standards of the committee. We took strict precautions throughout the review process to avoid conflicts of interest. Furthermore, as the TPC chairs, we did not submit papers to avoid conflicts of interest.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2793-0},
+ location = {Bretton Woods, New Hampshire, USA},
+ note = {104148},
+ publisher = {ACM},
+ title = {MobiSys '14: Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ year = {2014}
+}
+
+
+@inproceedings{Yus:2014:DFP:2594368.2601473,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601473},
+ address = {New York, NY, USA},
+ author = {Yus, Roberto and Pappachan, Primal and Das, Prajit Kumar and Mena, Eduardo and Joshi, Anupam and Finin, Tim},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601473},
+ isbn = {978-1-4503-2793-0},
+ keyword = {google glass, policy sharing, privacy-aware pictures},
+ link = {http://doi.acm.org/10.1145/2594368.2601473},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {366--366},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: FaceBlock: Privacy-aware Pictures for Google Glass},
+ year = {2014}
+}
+
+
+@inproceedings{Salem:2014:PDB:2594368.2601452,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601452},
+ address = {New York, NY, USA},
+ author = {Salem, Ahmed and Nadeem, Tamer and Cetin, Mecit},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601452},
+ isbn = {978-1-4503-2793-0},
+ keyword = {android, bluetooth, crowd-sensing, machine learning, neighbour discovery},
+ link = {http://doi.acm.org/10.1145/2594368.2601452},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {382--382},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: DriveBlue: Can Bluetooth Enhance Your Driving Experience?},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:PPM:2594368.2601463,
+ abstract = {In this poster, we design and implement a mobile application and back-end management system to help field scientists manage data collection, improve real-time communication, and optimize power consumption during a scientific field study.},
+ acmid = {2601463},
+ address = {New York, NY, USA},
+ author = {Wang, Bo and Zhao, Xinghui and Chiu, David},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601463},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mobile, power},
+ link = {http://doi.acm.org/10.1145/2594368.2601463},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {383--383},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: A Power-aware Mobile App for Field Scientists},
+ year = {2014}
+}
+
+
+@inproceedings{Sherman:2014:UFG:2594368.2594375,
+ abstract = {This paper studies the security and memorability of free-form multitouch gestures for mobile authentication. Towards this end, we collected a dataset with a generate-test-retest paradigm where participants (N=63) generated free-form gestures, repeated them, and were later retested for memory. Half of the participants decided to generate one-finger gestures, and the other half generated multi-finger gestures. Although there has been recent work on template-based gestures, there are yet no metrics to analyze security of either template or free-form gestures. For example, entropy-based metrics used for text-based passwords are not suitable for capturing the security and memorability of free-form gestures. Hence, we modify a recently proposed metric for analyzing information capacity of continuous full-body movements for this purpose. Our metric computed estimated mutual information in repeated sets of gestures. Surprisingly, one-finger gestures had higher average mutual information. Gestures with many hard angles and turns had the highest mutual information. The best-remembered gestures included signatures and simple angular shapes. We also implemented a multitouch recognizer to evaluate the practicality of free-form gestures in a real authentication system and how they perform against shoulder surfing attacks. We discuss strategies for generating secure and memorable free-form gestures. We conclude that free-form gestures present a robust method for mobile authentication.},
+ acmid = {2594375},
+ address = {New York, NY, USA},
+ author = {Sherman, Michael and Clark, Gradeigh and Yang, Yulong and Sugrim, Shridatt and Modig, Arttu and Lindqvist, Janne and Oulasvirta, Antti and Roos, Teemu},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594375},
+ isbn = {978-1-4503-2793-0},
+ keyword = {gestures, memorability, mutual information, security},
+ link = {http://doi.acm.org/10.1145/2594368.2594375},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {176--189},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {User-generated Free-form Gestures for Authentication: Security and Memorability},
+ year = {2014}
+}
+
+
+@inproceedings{Wen:2014:PCV:2594368.2601460,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601460},
+ address = {New York, NY, USA},
+ author = {Wen, Hui and Li, Qiang and Han, Qi and Ge, Shiming and Sun, Limin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601460},
+ isbn = {978-1-4503-2793-0},
+ keyword = {crowdsourcing, event detection, video traffic surveillance},
+ link = {http://doi.acm.org/10.1145/2594368.2601460},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {384--384},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Crowdsourcing for Video Traffic Surveillance},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:THQ:2594368.2594382,
+ abstract = {We investigate using smartphone WiFi signals to track human queues, which are common in many business areas such as retail stores, airports, and theme parks. Real-time monitoring of such queues would enable a wealth of new applications, such as bottleneck analysis, shift assignments, and dynamic workflow scheduling. We take a minimum infrastructure approach and thus utilize a single monitor placed close to the service area along with transmitting phones. Our strategy extracts unique features embedded in signal traces to infer the critical time points when a person reaches the head of the queue and finishes service, and from these inferences we derive a person's waiting and service times. We develop two approaches in our system, one is directly feature-driven and the second uses a simple Bayesian network. Extensive experiments conducted both in the laboratory as well as in two public facilities demonstrate that our system is robust to real-world environments. We show that in spite of noisy signal readings, our methods can measure service and waiting times to within a $10$ second resolution.},
+ acmid = {2594382},
+ address = {New York, NY, USA},
+ author = {Wang, Yan and Yang, Jie and Chen, Yingying and Liu, Hongbo and Gruteser, Marco and Martin, Richard P.},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594382},
+ isbn = {978-1-4503-2793-0},
+ keyword = {human queue monitoring, received signal strength, smartphones, wifi},
+ link = {http://doi.acm.org/10.1145/2594368.2594382},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {13},
+ pages = {42--54},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Tracking Human Queues Using Single-point Signal Monitoring},
+ year = {2014}
+}
+
+
+@inproceedings{Brunette:2014:DOD:2594368.2601466,
+ abstract = {Open Data Kit (ODK) is an open-source, modular toolkit that enables organizations to build application-specific mobile information services in resource-constrained environments. Feedback from users and developers about limitations experienced with the ODK 1.x set of tools led to a redesign of the system architecture and the creation of new tools. This demonstration presents a revised tool suite called ODK 2.0. This expanded ODK toolkit aims to increase an organization's data collection and management capabilities by supporting data synchronization, adaptable workflows, more configurable presentation screens, and increasing the diversity of input types by enabling new data input methods on mobile devices.},
+ acmid = {2601466},
+ address = {New York, NY, USA},
+ author = {Brunette, Waylon and Sudar, Samuel and Borriello, Gaetano},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601466},
+ isbn = {978-1-4503-2793-0},
+ keyword = {data collection, information system, mobile, open data kit},
+ link = {http://doi.acm.org/10.1145/2594368.2601466},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {344--344},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Open Data Kit 2.0 Tool Suite},
+ year = {2014}
+}
+
+
+@inproceedings{Feeney:2014:PMI:2594368.2601449,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601449},
+ address = {New York, NY, USA},
+ author = {Feeney, Laura Marie},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601449},
+ isbn = {978-1-4503-2793-0},
+ keyword = {inter-network interference, sensor networks},
+ link = {http://doi.acm.org/10.1145/2594368.2601449},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {370--370},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Motivating an Inter-networking Architecture for WSN/IoT},
+ year = {2014}
+}
+
+
+@inproceedings{Mascarenas:2014:DRS:2594368.2601481,
+ abstract = {The goal of this work is to develop a new autonomous capability for remotely deploying precisely located sensor nodes without damaging the sensor nodes in the process. Over the course of the last decade there has been significant interest in research to deploy sensor networks. This research is driven by the fact that the costs associated with installing sensor networks can be very high. In order to rapidly deploy sensor networks consisting of large numbers of sensor nodes, alternative techniques must be developed to place the sensor nodes in the field. The goal of this work is to develop a new autonomous capability for remotely deploying precisely located sensor nodes without damaging the sensor nodes in the process. Over the course of the last decade there has been significant interest in research to deploy sensor networks. This research is driven by the fact that the costs associated with installing sensor networks can be very high. In order to rapidly deploy sensor networks consisting of large numbers of sensor nodes, alternative techniques must be developed to place the sensor nodes in the field. To date much of the research on sensor network deployment has focused on strategies that involve the random dispersion of sensor nodes [1]. In addition other researchers have investigated deployment strategies utilizing small unmanned aerial helicopters for dropping sensor networks from the air. [2]. The problem with these strategies is that often sensor nodes need to be very precisely located for their measurements to be of any use. The reason for this could be that the sensor being used only have limited range, or need to be properly coupled to the environment which they are sensing. The problem with simply dropping sensor nodes is that for many applications it is necessary to deploy sensor nodes horizontally. In addition, to properly install many types of sensors, the sensor must assume a specific pose relative to the object being measured. In order to address these challenges we are currently developing a technology to remotely and rapidly deploy precisely located sensor nodes. The remote sensor placement device being developed can be described as an intelligent gas gun (Figure 1). A laser rangefinder is used to measure the distance to a specified target sensor location. This distance is then used to estimate the amount of energy required to propel the sensor node to the target location with just enough additional energy left over to ensure the sensor node is able to attach itself to the target of interest. We are currently in the process of developing attachment mechanisms for steel, wood, fiberglass (Figure 2). In this demonstration we will perform a contained, live demo of our prototype pneumatic remote sensor placement device along with some prototype sensor attachment mechanisms we are developing.},
+ acmid = {2601481},
+ address = {New York, NY, USA},
+ author = {Mascarenas, David and Ott, Logan and Curtis, Aaron and Brambilla, Sara and Larson, Amy and Brumby, Steve and Farrar, Charles},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601481},
+ isbn = {978-1-4503-2793-0},
+ keyword = {sensor placement},
+ link = {http://doi.acm.org/10.1145/2594368.2601481},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {349--349},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: A Remote Sensor Placement Device for Scalable and Precise Deployment of Sensor Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Thilakarathna:2014:DYU:2594368.2601465,
+ abstract = {Yalut is a novel user-centric hybrid content sharing overlay for social networking. Yalut enables the users to retain control over their own data and preserve their privacy, whilst still using the popular centralized services. In this demonstration, we show the feasibility of Yalut by integrating the service with the popular social networking apps on Android devices, Mac and Windows desktop platforms. We show that it is possible to provide the benefits of distributed content sharing on top of the existing centralized services with minimal changes to the content sharing process.},
+ acmid = {2601465},
+ address = {New York, NY, USA},
+ author = {Thilakarathna, Kanchana and Guan, Xinlong and Seneviratne, Aruna},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601465},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cellular data traffic offloading, mobile social networking, user generated content sharing},
+ link = {http://doi.acm.org/10.1145/2594368.2601465},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {360--361},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Yalut -- User-centric Social Networking Overlay},
+ year = {2014}
+}
+
+
+@inproceedings{Aditya:2014:EPC:2594368.2594374,
+ abstract = {Mobile social apps provide sharing and networking opportunities based on a user's location, activity, and set of nearby users. A platform for these apps must meet a wide range of communication needs while ensuring users' control over their privacy. In this paper, we introduce EnCore, a mobile platform that builds on secure encounters between pairs of devices as a foundation for privacy-preserving communication. An encounter occurs whenever two devices are within Bluetooth radio range of each other, and generates a unique encounter ID and associated shared key. EnCore detects nearby users and resources, bootstraps named communication abstractions called events for groups of proximal users, and enables communication and sharing among event participants, while relying on existing network, storage and online social network services. At the same time, EnCore puts users in control of their privacy and the confidentiality of the information they share. Using an Android implementation of EnCore and an app for event-based communication and sharing, we evaluate EnCore's utility using a live testbed deployment with 35 users.},
+ acmid = {2594374},
+ address = {New York, NY, USA},
+ author = {Aditya, Paarijaat and Erd{\'e}lyi, Viktor and Lentz, Matthew and Shi, Elaine and Bhattacharjee, Bobby and Druschel, Peter},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594374},
+ isbn = {978-1-4503-2793-0},
+ keyword = {location-based services, mobile computing, pervasive computing, privacy, proximity-based services, social networking},
+ link = {http://doi.acm.org/10.1145/2594368.2594374},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {135--148},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {EnCore: Private, Context-based Communication for Mobile Social Apps},
+ year = {2014}
+}
+
+
+@inproceedings{Jain:2014:DRO:2594368.2601472,
+ abstract = {We propose an augmented reality system on off-the-shelves smartphones which allows random physical object tagging. At later times, such tags could be retrieved from different locations and orientations. Our approach does not require any additional infrastructure support, localization scheme, specialized camera, or modification to smartphone's operating system. Designed and developed for current generation smartphones, our application shows promising initial results with retrieval accuracy of 82% in indoor environment without noticeable impact on the user experience. If made commercially available, such system could be used in city tourism, infrastructure maintenance, and enabling new kind of social interactions.},
+ acmid = {2601472},
+ address = {New York, NY, USA},
+ author = {Jain, Puneet and Roy Choudhury, Romit},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601472},
+ isbn = {978-1-4503-2793-0},
+ keyword = {augmented reality, object tagging, real-time computer vision},
+ link = {http://doi.acm.org/10.1145/2594368.2601472},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {346--346},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Real-time Object Tagging and Retrieval},
+ year = {2014}
+}
+
+
+@inproceedings{Sherman:2014:VUF:2594368.2602429,
+ abstract = {This is a video demonstration for a full paper available in MobiSys'14 proceedings http://dx.doi.org/10.1145/2594368.2594375. The video demonstrates several forms of authentication on a common tablet, and compares them to our method for gesture-based authentication. Our method measures the security and memorability of user generated free-form gestures by estimating the mutual information of repeated gestures. We show examples of such gestures with high and low mutual information content. We also show what information from each is visible to a shoulder surfing attacker, and describe how our system is resistant to such an attack.},
+ acmid = {2602429},
+ address = {New York, NY, USA},
+ author = {Sherman, Michael and Clark, Gradeigh and Yang, Yulong and Sugrim, Shridatt and Modig, Arttu and Lindqvist, Janne and Oulasvirta, Antti and Roos, Teemu},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602429},
+ isbn = {978-1-4503-2793-0},
+ keyword = {gestures, memorability, mutual information, security},
+ link = {http://doi.acm.org/10.1145/2594368.2602429},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {391--391},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: User-generated Free-form Gestures for Authentication: Security and Memorability},
+ year = {2014}
+}
+
+
+@inproceedings{Mayberry:2014:IDW:2594368.2594388,
+ abstract = {Continuous, real-time tracking of eye gaze is valuable in a variety of scenarios including hands-free interaction with the physical world, detection of unsafe behaviors, leveraging visual context for advertising, life logging, and others. While eye tracking is commonly used in clinical trials and user studies, it has not bridged the gap to everyday consumer use. The challenge is that a real-time eye tracker is a power-hungry and computation-intensive device which requires continuous sensing of the eye using an imager running at many tens of frames per second, and continuous processing of the image stream using sophisticated gaze estimation algorithms. Our key contribution is the design of an eye tracker that dramatically reduces the sensing and computation needs for eye tracking, thereby achieving orders of magnitude reductions in power consumption and form-factor. The key idea is that eye images are extremely redundant, therefore we can estimate gaze by using a small subset of carefully chosen pixels per frame. We instantiate this idea in a prototype hardware platform equipped with a low-power image sensor that provides random access to pixel values, a low-power ARM Cortex M3 microcontroller, and a bluetooth radio to communicate with a mobile phone. The sparse pixel-based gaze estimation algorithm is a multi-layer neural network learned using a state-of-the-art sparsity-inducing regularization function that minimizes the gaze prediction error while simultaneously minimizing the number of pixels used. Our results show that we can operate at roughly 70mW of power, while continuously estimating eye gaze at the rate of 30 Hz with errors of roughly 3 degrees.},
+ acmid = {2594388},
+ address = {New York, NY, USA},
+ author = {Mayberry, Addison and Hu, Pan and Marlin, Benjamin and Salthouse, Christopher and Ganesan, Deepak},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594388},
+ isbn = {978-1-4503-2793-0},
+ keyword = {eye tracking, lifelog, neural network},
+ link = {http://doi.acm.org/10.1145/2594368.2594388},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {13},
+ pages = {82--94},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {iShadow: Design of a Wearable, Real-time Mobile Gaze Tracker},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:PIE:2594368.2601459,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601459},
+ address = {New York, NY, USA},
+ author = {Zhang, Desheng and He, Tian},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601459},
+ isbn = {978-1-4503-2793-0},
+ keyword = {data mining, transit systems},
+ link = {http://doi.acm.org/10.1145/2594368.2601459},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {385--385},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Improving Efficiency of Metropolitan-scale Transit Systems with Multi-mode Data Feeds},
+ year = {2014}
+}
+
+
+@inproceedings{Ha:2014:TWC:2594368.2594383,
+ abstract = {We describe the architecture and prototype implementation of an assistive system based on Google Glass devices for users in cognitive decline. It combines the first-person image capture and sensing capabilities of Glass with remote processing to perform real-time scene interpretation. The system architecture is multi-tiered. It offers tight end-to-end latency bounds on compute-intensive operations, while addressing concerns such as limited battery capacity and limited processing capability of wearable devices. The system gracefully degrades services in the face of network failures and unavailability of distant architectural tiers.},
+ acmid = {2594383},
+ address = {New York, NY, USA},
+ author = {Ha, Kiryong and Chen, Zhuo and Hu, Wenlu and Richter, Wolfgang and Pillai, Padmanabhan and Satyanarayanan, Mahadev},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594383},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cloud computing, cloud offload, cloudlet, cyber foraging, google glass, mobile computing, virtual machine, wearable computing},
+ link = {http://doi.acm.org/10.1145/2594368.2594383},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {68--81},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Towards Wearable Cognitive Assistance},
+ year = {2014}
+}
+
+
+@inproceedings{Prasad:2014:PBD:2594368.2601448,
+ abstract = {The ubiquity of smartphones and mobile and wearable devices allow people to collect information about their health, wellness and lifestyle and share with others. If it is not clear what they need to share to receive benefits, subjects (people whose information is collected) might share too much, thus disclosing unnecessary private information. On the other hand, concerned about disclosing personal information, subjects might share less than what the recipient needs and lose the opportunity to enjoy the benefits. This balance of disclosure and utility is important when the subject wants to receive some benefits, but is concerned about disclosing private information. We address this problem of balancing disclosure and utility of personal information collected by mobile technologies. We believe subjects can decide how best to share their information if they are aware of the benefits and risks of sharing. We developed ShareBuddy, a privacy-aware architecture that allows recipients to request information and specify the benefits the subjects will receive for sharing each piece of requested information; the architecture displays these benefits and warns subjects about the risks of sharing. We describe the ShareBuddy architecture in this poster.},
+ acmid = {2601448},
+ address = {New York, NY, USA},
+ author = {Prasad, Aarathi and Liang, Xiaohui and Kotz, David},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601448},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mobile devices, personal information, sharing controls},
+ link = {http://doi.acm.org/10.1145/2594368.2601448},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {380--381},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Balancing Disclosure and Utility of Personal Information},
+ year = {2014}
+}
+
+
+@inproceedings{Cornelius:2014:WSK:2594368.2594369,
+ abstract = {Body-area networks of pervasive wearable devices are increasingly used for health monitoring, personal assistance, entertainment, and home automation. In an ideal world, a user would simply wear their desired set of devices with no configuration necessary: the devices would discover each other, recognize that they are on the same person, construct a secure communications channel, and recognize the user to which they are attached. In this paper we address a portion of this vision by offering a wearable system that unobtrusively recognizes the person wearing it. Because it can recognize the user, our system can properly label sensor data or personalize interactions. Our recognition method uses bioimpedance, a measurement of how tissue responds when exposed to an electrical current. By collecting bioimpedance samples using a small wearable device we designed, our system can determine that (a)the wearer is indeed the expected person and (b)~the device is physically on the wearer's body. Our recognition method works with 98% balanced-accuracy under a cross-validation of a day's worth of bioimpedance samples from a cohort of 8 volunteer subjects. We also demonstrate that our system continues to recognize a subset of these subjects even several months later. Finally, we measure the energy requirements of our system as implemented on a Nexus~S smart phone and custom-designed module for the Shimmer sensing platform.},
+ acmid = {2594369},
+ address = {New York, NY, USA},
+ author = {Cornelius, Cory and Peterson, Ronald and Skinner, Joseph and Halter, Ryan and Kotz, David},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594369},
+ isbn = {978-1-4503-2793-0},
+ keyword = {bioimpedance, biometric, wearable},
+ link = {http://doi.acm.org/10.1145/2594368.2594369},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {13},
+ pages = {55--67},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {A Wearable System That Knows Who Wears It},
+ year = {2014}
+}
+
+
+@inproceedings{Nanda:2014:PSE:2594368.2601450,
+ abstract = {Wireless researchers face the practical challenge of evaluating the performance of new routing protocols for very large-scale heterogeneous mobile systems. While simulation platforms, tools and techniques have matured, doubts remain about the broad validity of simulated results when applied to real world situations. Wireless network emulation provides a middle ground between simulations and real-world testing. However, emulation environments are complex to run and cost-prohibitive for larger-scale tests. In order to maximize fidelity while managing complexity and costs, we developed a common framework that unifies simulation-based analysis and emulation experiment tools, in order to produce calibrated and scalable performance evaluations.},
+ acmid = {2601450},
+ address = {New York, NY, USA},
+ author = {Nanda, Soumendra and DeCleene, Brian and Firoiu, Victor and Leung, May and Song, Yingbo and Tao, Charles},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601450},
+ isbn = {978-1-4503-2793-0},
+ keyword = {emane, emulation, manet, scalability, simulation, wireless},
+ link = {http://doi.acm.org/10.1145/2594368.2601450},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {376--377},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Scalable Evaluation for Wireless Mobile Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Zhou:2014:NNN:2594368.2594376,
+ abstract = {The Near Field Communication (NFC) technology is gaining increasing popularity among mobile users. However, as a relatively new and developing technology, NFC may also introduce security threats that make mobile devices vulnerable to various malicious attacks. This work presents the first system study on the feasibility of and defense again passive NFC eavesdropping. Our experiments show that commodity NFC-enabled mobile devices can be eavesdropped from up to 240 cm away, which is at least an order of magnitude of the intended NFC communication distance. This finding challenges the general perception that NFC is largely immune to eavesdropping because of its short working range. We then present the design of a hardware security system called nShield. With a small form factor, nShield can be attached to the back of mobile devices to attenuate the signal strength against passive eavesdropping. At the same time, the absorbed RF energy is scavenged by nShield for its perpetual operation. nShield intelligently determines the right attenuation level that is just enough to sustain reliable data communication. We implement a prototype of nShield, and evaluate its performance via extensive experiments. Our results show that nShield has low power consumption (23 uW), can harvest significant amount of power (55 mW), and adaptively attenuates the signal strength of NFC in a variety of realistic settings, while only introducing insignificant delay (up to 2.2 s).},
+ acmid = {2594376},
+ address = {New York, NY, USA},
+ author = {Zhou, Ruogu and Xing, Guoliang},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594376},
+ isbn = {978-1-4503-2793-0},
+ keyword = {eavesdropping, energy harvesting, nfc, smartphone},
+ link = {http://doi.acm.org/10.1145/2594368.2594376},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {95--108},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {nShield: A Noninvasive NFC Security System for Mobiledevices},
+ year = {2014}
+}
+
+
+@inproceedings{Roy:2014:IAS:2594368.2594392,
+ abstract = {This paper describes WalkCompass, a system that exploits smartphone sensors to estimate the direction in which a user is walking. We find that several smartphone localization systems in the recent past, including our own, make a simplifying assumption that the user's walking direction is known. In trying to relax this assumption, we were not able to find a generic solution from past work. While intuition suggests that the walking direction should be detectable through the accelerometer, in reality this direction gets blended into various other motion patterns during the act of walking, including up and down bounce, side-to-side sway, swing of arms or legs, etc. Moreover, the walking direction is in the phone's local coordinate system (e.g., along Y axis), and translation to global directions, such as 45 degree North, can be challenging when the compass is itself erroneous. WalkCompass copes with these challenges and develops a stable technique to estimate the user's walking direction within a few steps. Results drawn from 15 different environments demonstrate median error of less than 8 degrees, across 6 different users, 3 surfaces, and 3 holding positions. While there is room for improvement, we believe our current system can be immediately useful to various applications centered around localization and human activity recognition.},
+ acmid = {2594392},
+ address = {New York, NY, USA},
+ author = {Roy, Nirupam and Wang, He and Roy Choudhury, Romit},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594392},
+ isbn = {978-1-4503-2793-0},
+ keyword = {activity recognition, compass correction, force analysis, heading direction, localization, magnetic field, mobile phones, orientation, sensing},
+ link = {http://doi.acm.org/10.1145/2594368.2594392},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {329--342},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {I Am a Smartphone and I Can Tell My User's Walking Direction},
+ year = {2014}
+}
+
+
+@inproceedings{Gummeson:2014:EHW:2594368.2594389,
+ abstract = {This paper presents a remote gesture input solution for interacting indirectly with user interfaces on mobile and wearable devices. The proposed solution uses a wearable ring platform worn on users index finger. The ring detects and interprets various gestures performed on any available surface, and wirelessly transmits the gestures to the remote device. The ring opportunistically harvests energy from an NFC-enabled phone for perpetual operation without explicit charging. We use a finger-tendon pressure-based solution to detect touch, and a light-weight audio based solution for detecting finger motion on a surface. The two level energy efficient classification algorithms identify 23 unique gestures that include tapping, swipes, scrolling, and strokes for hand written text entry. The classification algorithms have an average accuracy of 73% with no explicit user training. Our implementation supports 10 hours of interactions on a surface at 2 Hz gesture frequency. The prototype was built with off-the-shelf components has a size similar to a large ring.},
+ acmid = {2594389},
+ address = {New York, NY, USA},
+ author = {Gummeson, Jeremy and Priyantha, Bodhi and Liu, Jie},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594389},
+ isbn = {978-1-4503-2793-0},
+ keyword = {energy harvesting, gesture input, machine learning, near field communications, wearable computing},
+ link = {http://doi.acm.org/10.1145/2594368.2594389},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {162--175},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {An Energy Harvesting Wearable Ring Platform for Gestureinput on Surfaces},
+ year = {2014}
+}
+
+
+@inproceedings{Ki:2014:PRA:2594368.2601453,
+ abstract = {Today's mobile applications operate in a diverse set of environments, where it is difficult for a developer to know beforehand what conditions his or her application will be put under. For example, once deployed on an online application store, an application can be downloaded on different types of hardware, ranging from budget smartphones to high-end tablets. In addition, network conditions can vary widely from Wi-Fi to 3G to 4G. Mobile applications also need to co-exist with other applications that compete for resources at different times. Due to this diverse set of operating conditions, it is difficult to understand what problems are occurring in the wild for mobile applications. Moreover, it is even more difficult to reproduce problems in a lab environment where developers can debug the problems. Some platforms support bug reports and stack traces, but they are inadequate in scenarios when operating conditions and inputs are not consistent. To address these issues, we propose Retro, an automated, application-layer record and replay system for Android. Unlike previous record and replay systems, Retro aims to support mobile Android applications with three features. First, Retro provides an automated instrumentation framework that transforms a regular Android application into a traceable application. This means that Retro does not require any change in the Android platform; thus, it enables developers to distribute instrumented applications via online application stores. Through the instrumentation, Retro records application-layer events such as click events, sensor readings, method calls, and return values. In order to reduce the overhead of logging, Retro also uses a selective logging mechanism that decides which event types to log at runtime. Second, Retro provides a replayer that a developer can use in a lab environment to faithfully replay a recorded run. To maximize the ease of use, Retro seamlessly integrates this replay functionality into Android's existing development workflow by adding the replayer into the Android platform. This means that a developer can replay using a regular phone as well as an emulator. Also, Retro provides a VCR-like interface for replaying that is capable of forwarding and rewinding executions. Third, Retro examines Android-specific issues in enabling record and replay and incorporates design choices that are tailored towards Android. The goal for doing this is efficiency and faithfulness; by examining Android-specific issues, Retro can provide efficient recording and replaying functionalities as well as faithfulness in replaying.},
+ acmid = {2601453},
+ address = {New York, NY, USA},
+ author = {Ki, Taeyeon and Munipalle, Satyaditya and Dantu, Karthik and Ko, Steven Y. and Ziarek, Lukasz},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601453},
+ isbn = {978-1-4503-2793-0},
+ keyword = {android apps, debugging, record\&\#38;replay},
+ link = {http://doi.acm.org/10.1145/2594368.2601453},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {373--373},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Retro: An Automated, Application-layer Record and Replay for Android},
+ year = {2014}
+}
+
+
+@inproceedings{DU:2014:PSM:2594368.2601455,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601455},
+ address = {New York, NY, USA},
+ author = {DU, Zhanwei and Yang, Yongjian and Liao, Wu and Liu, Linlu and Liu, Lipeng},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601455},
+ isbn = {978-1-4503-2793-0},
+ keyword = {body area network, mobile, ontology model},
+ link = {http://doi.acm.org/10.1145/2594368.2601455},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {369--369},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Semi-automatic Monitoring Vital Parameters of Mobile Users},
+ year = {2014}
+}
+
+
+@inproceedings{Dhondge:2014:VWS:2594368.2602430,
+ abstract = {As smartphones gain their popularity, vulnerable road users (VRUs) are increasingly distracted by activities with their devices such as listening to music, watching videos, texting or making calls while walking or bicycling on the road. In spite of the development of various high-tech Car-to-Car (C2C) and Car-to-Infrastructure (C2I) communications for enhancing the traffic safety, protecting such VRUs from vehicles still relies heavily on traditional sound warning methods. Furthermore, as smartphones continue to become highly ubiquitous, VRUs are increasingly oblivious to safety related warning sounds. A traffic accident study shows the number of headphone-wearing VRUs involved in roadside accidents has increased by 300% in the last 10 years. Although recently a few Car2Pedestrian-communication methods have been proposed by various car manufacturers, their practical usage is limited, as they mostly require special communication devices to cope with the wide range of mobility, and also assume VRUs' active attention to the communication while walking. We propose a smartphone-based Car2X-communication system, named WiFi-Honk, which can alert the potential collisions to both VRUs and vehicles in order to especially protect the distracted VRUs. WiFi-Honk provides a practical safety means for the distracted VRUs without requiring any special device using WiFi of smartphone. WiFi-Honk removes the WiFi association overhead using the beacon stuffed WiFi communication with the geographic location, speed, and direction information of the smartphone replacing its SSID while operating in WiFi Direct/Hotspot mode, and also provides an efficient collision estimation algorithm to issue appropriate warnings. Our experimental and simulation studies validate that WiFi-Honk can successfully alert VRUs within a sufficient reaction time frame, even in high mobility environments.},
+ acmid = {2602430},
+ address = {New York, NY, USA},
+ author = {Dhondge, Kaustubh and Song, Sejun and Jang, Younghwan and Park, Hyungbae and Shin, Sunae and Choi, Baek-Young},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602430},
+ isbn = {978-1-4503-2793-0},
+ keyword = {car2x-communication, smartphone, wifi},
+ link = {http://doi.acm.org/10.1145/2594368.2602430},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {387--387},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: WiFi-honk: Smartphone-based Beacon Stuffed WiFi Car2X-communication System for Vulnerable Road User Safety},
+ year = {2014}
+}
+
+
+@inproceedings{Nguyen:2014:VSS:2594368.2602431,
+ abstract = {The smartphone has become an important part of our daily lives. However, the user experience is still far from being optimal. In particular, despite the rapid hardware upgrades, current smartphones often suffer various unpredictable delays during operation, e.g., when launching an application, leading to poor user experience. This video features our study of storage impact on smartphone application delay. We conduct the first large-scale measurement study on the I/O delay of Android using the data collected from our application running on 1009 devices within 130 days. We observe that Android devices spend up to 58% of their CPU active time waiting for storage I/Os to complete. This negatively affects the smartphone's overall application performance, and results in slow response time. Further investigation, among others, reveals that reads experience up to a 626% slowdown in the presence of concurrent writes. The obtained knowledge is used to design and implement a system called SmartIO that reduces the application delay by prioritizing reads over writes, and grouping them based on assigned priorities. SmartIO is implemented on the Android platform and evaluated extensively on several groups of popular applications. The results from the 20 researched applications demonstrate that SmartIO reduces launch delays by up to 37.8%, and run-time delays by up to 29.6%.},
+ acmid = {2602431},
+ address = {New York, NY, USA},
+ author = {Nguyen, David T. and Zhou, Gang and Xing, Guoliang},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602431},
+ isbn = {978-1-4503-2793-0},
+ keyword = {application launch, flash storage, i/o optimizations, smartphone application delay},
+ link = {http://doi.acm.org/10.1145/2594368.2602431},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {389--389},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Study of Storage Impact on Smartphone Application Delay},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:DPK:2594368.2601476,
+ abstract = {A well-known bottleneck of contemporary mobile devices is the inefficient and error-prone touchscreen keyboard. We have developed UbiK, an alternative portable text-entry method that allows user to type on a piece of paper, placed on solid surfaces like wood desktop. UbiK leverages the microphones on a mobile device to accurately localize the keystrokes through fine-grained acoustic fingerprinting. We have implemented UbiK as an Android application. Our experiments demonstrate that UbiK is able to achieve above 95% of localization accuracy. In this demonstration, we will show how Ubik works with an external paper keyboard (Figure 1) for a smartphone and a 7-inch tablet. User participation will be welcome in this live demo.},
+ acmid = {2601476},
+ address = {New York, NY, USA},
+ author = {Wang, Junjue and Zhao, Kaichen and Zhang, Xinyu and Peng, Chunyi},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601476},
+ isbn = {978-1-4503-2793-0},
+ keyword = {acoustic localization, mobile text-entry, paper keyboard, ubik},
+ link = {http://doi.acm.org/10.1145/2594368.2601476},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {365--365},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: A Paper Keyboard for Mobile Devices},
+ year = {2014}
+}
+
+
+@inproceedings{Molina-Markham:2014:PEC:2594368.2601454,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601454},
+ address = {New York, NY, USA},
+ author = {Molina-Markham, Andres and Peterson, Ronald A. and Skinner, Joseph and Halter, Ryan J. and Sorber, Jacob and Kotz, David},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601454},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mhealth, trustworthy, wearable},
+ link = {http://doi.acm.org/10.1145/2594368.2601454},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {374--375},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: Enabling Computational Jewelry for mHealth Applications},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:DAP:2594368.2601468,
+ abstract = {All printed documents and credentials are potentially subject to counterfeiting and forgery. Conventional counterfeiting solutions such as watermarking or printing with special-quality paper are not cost-effective. Certification via authorized chops/ stamps is low-cost but only provides a false sense of security/ authenticity. While embedding a serial number in the document for online verification is low-cost and secure, it is not applicable without Internet connection. We demonstrate AuthPaper (Authenticated Paper) to solve these problems by: 1) Digitally sign on the document to be protected; 2) Put the original content, digital signature and optionally the signer's certificate in a self-describing encapsulation; 3) Generate a 2D barcode (e.g. QR code) to carry the encapsulation and embed it as an integral part of the paper document. Note that the information carried in Authenticated QR Code is 40 to 50 times more than a typical one (≈50 Bytes). The biggest technical challenge is to scan and decode such densely packed codes in a robust manner. We have developed an Android application to address the challenge. In short, AuthPaper provides a secure, low-cost and offline method for document authentication.},
+ acmid = {2601468},
+ address = {New York, NY, USA},
+ author = {Li, Chak Man and Hu, Pili and Lau, Wing Cheong},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601468},
+ isbn = {978-1-4503-2793-0},
+ keyword = {2d barcode security, application of public-key cryptography},
+ link = {http://doi.acm.org/10.1145/2594368.2601468},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {348--348},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: AuthPaper - Protecting Paper-based Documents/Credentials Using Authenticated 2D Barcodes},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:SFR:2594368.2594373,
+ abstract = {Facial recognition is a popular biometric authentica-tion technique, but it is rarely used in practice for de-vice unlock or website / app login in smartphones, alt-hough most of them are equipped with a front-facing camera. Security issues (e.g. 2D media attack and vir-tual camera attack) and ease of use are two important factors that impede the prevalence of facial authentica-tion in mobile devices. In this paper, we propose a new sensor-assisted facial authentication method to over-come these limitations. Our system uses motion and light sensors to defend against 2D media attacks and virtual camera attacks without the penalty of authenti-cation speed. We conduct experiments to validate our method. Results show 95-97% detection rate and 2-3% false alarm rate over 450 trials in real-settings, indicat-ing high security obtained by the scheme ten times faster than existing 3D facial authentications (3 sec-onds compared to 30 seconds).},
+ acmid = {2594373},
+ address = {New York, NY, USA},
+ author = {Chen, Shaxun and Pande, Amit and Mohapatra, Prasant},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594373},
+ isbn = {978-1-4503-2793-0},
+ keyword = {biometric, mobile devices, mobile sensors, user authentication},
+ link = {http://doi.acm.org/10.1145/2594368.2594373},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {109--122},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Sensor-assisted Facial Recognition: An Enhanced Biometric Authentication System for Smartphones},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:DRH:2594368.2601480,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601480},
+ address = {New York, NY, USA},
+ author = {Wang, He and Bao, Xuan and Roy Choudhury, Romit and Nelakuditi, Srihari},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601480},
+ isbn = {978-1-4503-2793-0},
+ keyword = {augmented reality, distributed cameras, matching, recursion, smartphones, visual fingerprinting, wearable camera},
+ link = {http://doi.acm.org/10.1145/2594368.2601480},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {364--364},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Recognizing Humans Without Face Recognition},
+ year = {2014}
+}
+
+
+@inproceedings{Ravindranath:2014:ASF:2594368.2594377,
+ abstract = {This paper describes the design, implementation, and evaluation of VanarSena, an automated fault finder for mobile applications (``apps''). The techniques in VanarSena are driven by a study of 25 million real-world crash reports of Windows Phone apps reported in 2012. Our analysis indicates that a modest number of root causes are responsible for many observed failures, but that they occur in a wide range of places in an app, requiring a wide coverage of possible execution paths. VanarSena adopts a ``greybox'' testing method, instrumenting the app binary to achieve both coverage and speed. VanarSena runs on cloud servers: the developer uploads the app binary; VanarSena then runs several app ``monkeys'' in parallel to emulate user, network, and sensor data behavior, returning a detailed report of crashes and failures. We have tested VanarSena with 3000 apps from the Windows Phone store, finding that 1108 of them had failures; VanarSena uncovered 2969 distinct bugs in existing apps, including 1227 that were not previously reported. Because we anticipate VanarSena being used in regular regression tests, testing speed is important. VanarSena uses two techniques to improve speed. First, it uses a ``hit testing'' method to quickly emulate an app by identifying which user interface controls map to the same execution handlers in the code. Second, it generates a ProcessingCompleted event to accurately determine when to start the next interaction. These features are key benefits of VanarSena's greybox philosophy.},
+ acmid = {2594377},
+ address = {New York, NY, USA},
+ author = {Ravindranath, Lenin and Nath, Suman and Padhye, Jitendra and Balakrishnan, Hari},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594377},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mobile applications, reliability, software engineering, testing},
+ link = {http://doi.acm.org/10.1145/2594368.2594377},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {190--203},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Automatic and Scalable Fault Detection for Mobile Applications},
+ year = {2014}
+}
+
+
+@inproceedings{Rahman:2014:BMS:2594368.2594386,
+ abstract = {In this paper, we propose BodyBeat, a novel mobile sensing system for capturing and recognizing a diverse range of non-speech body sounds in real-life scenarios. Non-speech body sounds, such as sounds of food intake, breath, laughter, and cough contain invaluable information about our dietary behavior, respiratory physiology, and affect. The BodyBeat mobile sensing system consists of a custom-built piezoelectric microphone and a distributed computational framework that utilizes an ARM microcontroller and an Android smartphone. The custom-built microphone is designed to capture subtle body vibrations directly from the body surface without being perturbed by external sounds. The microphone is attached to a 3D printed neckpiece with a suspension mechanism. The ARM embedded system and the Android smartphone process the acoustic signal from the microphone and identify non-speech body sounds. We have extensively evaluated the BodyBeat mobile sensing system. Our results show that BodyBeat outperforms other existing solutions in capturing and recognizing different types of important non-speech body sounds.},
+ acmid = {2594386},
+ address = {New York, NY, USA},
+ author = {Rahman, Tauhidur and Adams, Alexander T. and Zhang, Mi and Cherry, Erin and Zhou, Bobby and Peng, Huaishu and Choudhury, Tanzeem},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594386},
+ isbn = {978-1-4503-2793-0},
+ keyword = {acoustic signal processing, embedded systems, mobile sensing, non-speech body sound},
+ link = {http://doi.acm.org/10.1145/2594368.2594386},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {12},
+ pages = {2--13},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {BodyBeat: A Mobile System for Sensing Non-speech Body Sounds},
+ year = {2014}
+}
+
+
+@inproceedings{Srivastava:2014:DPV:2594368.2601467,
+ abstract = {Consider the following scenario from the not-too-distant future: the CEO of a company is presenting his vision for the next quarter to a small group of co-workers. The CEO trusts everyone in the room, but many in attendance have smartphones and camera-equipped wearable computing devices running third-party apps. The CEO is worried that this third-party software could leak the highly confidential information in his slides and on the whiteboard. This raises the question: how can the CEO prevent apps with camera access from leaking company secrets? First, the CEO must have a way of identifying or marking visual secrets. Markings should be: (1) easy to create by hand and with digital tools, and (2) easy and efficient to recognize by software. Marking visual secrets by placing QR-codes or badges near them makes real-time recognition difficult due to scaling problems (particularly at far distances). Moreover, precisely encoding a two-dimensional region surrounding a visual secret in a QR-code or badge would be too awkward and slow for users. Finally, general-purpose object recognition is too slow and consumes too much energy. In this demo, we present PrivateEye, a system that prevents visual secrets from inadvertently leaking. PrivateEye consists of two pieces: (1) a specification for marking a two-dimensional space as secret, and (2) software on a recording device for recognizing markings and obscuring visual secrets in real-time. Figure 1(a) and 2(a) show examples of how PrivateEye users can define a region containing visual secrets by combining solid and dotted lines. Depending on the medium, users can define secret regions by hand (e.g., on a whiteboard) or use digital tools (e.g., within a presentation). PrivateEye is based on the principle that preventing leaks requires visual information to be withheld from third-party apps until the system can be confident that it is safe to reveal. As a result, PrivateEye works in three phases. Phase 1 requires the camera view to stabilize. During this phase, PrivateEye completely blurs the camera view so that apps cannot infer secret information from an image capture. Once the camera view stabilizes, PrivateEye enters Phase 2, in which the system detects all the rectangles in the camera view. At this point, all the detected rectangles appear blocked to the user (Figure 1(b) and 2(b)). PrivateEye then moves on to Phase 3. In this phase, the system searches each blocked rectangle for secret markings (i.e., dotted rectangles). PrivateEye can safely reveal the content of rectangles without secret markings to an app; however, the system must continue to block any rectangles containing secret markings. If PrivateEye detects that the camera view has changed, then it must return to Phase 1. During the demo, PrivateEye will be running on Google Nexus 4 and Google Glass. We plan to invite the audience to use one of these devices and view some of the objects already marked secret. We will also let them draw the markers around some text on a whiteboard. This will help the audience to understand the usability and effectiveness of PrivateEye.},
+ acmid = {2601467},
+ address = {New York, NY, USA},
+ author = {Srivastava, Animesh and Cox, Landon},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601467},
+ isbn = {978-1-4503-2793-0},
+ keyword = {privacy, security},
+ link = {http://doi.acm.org/10.1145/2594368.2601467},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {357--357},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Protecting Visual Secrets with Privateeye},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:UKS:2594368.2594384,
+ abstract = {A well-known bottleneck of contemporary mobile devices is the inefficient and error-prone touchscreen keyboard. In this paper, we propose UbiK, an alternative portable text-entry method that allows user to make keystrokes on conventional surfaces, e.g., wood desktop. UbiK enables text-input experience similar to that on a physical keyboard, but it only requires a keyboard outline printed on the surface or a piece of paper atop. The core idea is to leverage the microphone on a mobile device to accurately localize the keystrokes. To achieve fine-grained, centimeter scale granularity, UbiK extracts and optimizes the location-dependent multipath fading features from the audio signals, and takes advantage of the dual-microphone interface to improve signal diversity. We implement UbiK as an Android application. Our experiments demonstrate that UbiK is able to achieve above 95% of localization accuracy. Field trial involving first-time users shows that UbiK can significantly improve text-entry speed over current on-screen keyboards.},
+ acmid = {2594384},
+ address = {New York, NY, USA},
+ author = {Wang, Junjue and Zhao, Kaichen and Zhang, Xinyu and Peng, Chunyi},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594384},
+ isbn = {978-1-4503-2793-0},
+ keyword = {acoustic localization, mobile text-entry, paper keyboard, ubik},
+ link = {http://doi.acm.org/10.1145/2594368.2594384},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {14--27},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Ubiquitous Keyboard for Small Mobile Devices: Harnessing Multipath Fading for Fine-grained Keystroke Localization},
+ year = {2014}
+}
+
+
+@inproceedings{Ravindranath:2014:PPM:2594368.2594387,
+ abstract = {Generations of computer programmers are taught to prefetch network objects in computer science classes. In practice, prefetching can be harmful to the user's wallet when she is on a limited or pay-per-byte cellular data plan. Many popular, professionally-written smartphone apps today prefetch large amounts of network data that the typical user may never use. We present Procrastinator, which automatically decides when to fetch each network object that an app requests. This decision is made based on whether the user is on Wi-Fi or cellular, how many bytes are remaining on the user's data plan, and whether the object is needed at the present time. Procrastinator does not require app developer effort, nor app source code, nor OS changes -- it modifies the app binary to trap specific system calls and inject custom code. Our system can achieve as little as no savings to 4X reduction in total bytes transferred by an app, depending on the user and the app. These savings for the data-poor user come with a 300ms median latency penalty on LTE.},
+ acmid = {2594387},
+ address = {New York, NY, USA},
+ author = {Ravindranath, Lenin and Agarwal, Sharad and Padhye, Jitendra and Riederer, Chris},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594387},
+ isbn = {978-1-4503-2793-0},
+ keyword = {data cost, prefetching, static analysis},
+ link = {http://doi.acm.org/10.1145/2594368.2594387},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {13},
+ pages = {232--244},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Procrastinator: Pacing Mobile Apps' Usage of the Network},
+ year = {2014}
+}
+
+
+@inproceedings{Ho:2014:PMM:2594368.2601451,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2601451},
+ address = {New York, NY, USA},
+ author = {Ho, Bo-Jhang and Srivastava, Mani B.},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601451},
+ isbn = {978-1-4503-2793-0},
+ keyword = {smoking event, time sequence information},
+ link = {http://doi.acm.org/10.1145/2594368.2601451},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {372--372},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: M-Seven: Monitoring Smoking Event by Considering Time Sequence Information via iPhone M7 API},
+ year = {2014}
+}
+
+
+@inproceedings{Sudar:2014:VOD:2594368.2602532,
+ abstract = {Mobile devices are integral to the workflows of many organizations working in rural or disconnected contexts. Data is often collected on mobile phones and tablets using tools like Open Data Kit (ODK). However, some of the applications require users to revisit and update previously collected data, necessitating easy viewing of stored data. To make it easier for organizations to create flexible information services, we present ODK Tables, an Android tool that allows users to enter and curate data on mobile devices. Tables leverages web tools to make mobile app creation simple. It provides abstractions to make the process straightforward and allows app designers to access data through a JavaScript API. App designers can create a custom app using only a small number of HTML and JavaScript files. This facilitates the creation of a custom user interface but leaves storage, data management, and synchronization to the framework. The result is a fully featured Android app based on established web-based tools with full support for disconnected operation.},
+ acmid = {2602532},
+ address = {New York, NY, USA},
+ author = {Sudar, Samuel and Brunette, Waylon and Borriello, Gaetano},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602532},
+ isbn = {978-1-4503-2793-0},
+ keyword = {database viewing, disconnected operation, ictd, mobile app, odk, open data kit, synchronization},
+ link = {http://doi.acm.org/10.1145/2594368.2602532},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {392--392},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Open Data Kit Tables},
+ year = {2014}
+}
+
+
+@inproceedings{Ravindranath:2014:VPP:2594368.2602432,
+ abstract = {Many popular, professionally-written smartphone apps today prefetch large amounts of network data to improve performance. However, the typical user may not use all of this network data. When a user is on a limited or pay-per-byte cellular data plan, such as when roaming internationally, this prefetching behavior can cost her in overage fees on her cellular bill. This video demonstrates Procrastinator, which is a system that automatically decides when to fetch each network object that an app requests. This decision is made based on whether the user is on Wi-Fi or cellular, how many bytes are remaining on her data plan, and whether the object is needed at the present time. Procrastinator does not require app developer effort, nor app source code, nor OS changes -- it modifies the app binary to trap specific system calls and inject custom code. Our system can achieve as little as no savings to 4X reduction in total bytes transferred by an app, depending on the user and the app. These savings for the data-poor user come with a 300ms median latency penalty on LTE if the user goes to a part of the app where Procrastinator did not allow data to be prefetched. This video shows how main content on the primary page of apps is unaffected, and the delay that the user will typically experience if she goes to secondary pages in apps when she is running out of cellular data plan bytes.},
+ acmid = {2602432},
+ address = {New York, NY, USA},
+ author = {Ravindranath, Lenin and Agarwal, Sharad and Padhye, Jitendra and Riederer, Chris},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2602432},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cellular, prefetching, static analysis},
+ link = {http://doi.acm.org/10.1145/2594368.2602432},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {390--390},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Video: Procrastinator: Pacing Mobile Apps' Usage of the Network},
+ year = {2014}
+}
+
+
+@inproceedings{Tuncay:2014:DSD:2594368.2601475,
+ abstract = {SaveAlert is an adaptive framework for danger-detection using existing devices such as off-the-shelf smartphones and smartwatches. The framework can be extended to different sensors that could trigger distress signals to notify nearby users of potentially dangerous situations.},
+ acmid = {2601475},
+ address = {New York, NY, USA},
+ author = {Tuncay, Guliz Seray and Varshavskiy, Kirill and Kravets, Robin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601475},
+ isbn = {978-1-4503-2793-0},
+ keyword = {crowd dynamics, crowd monitoring, crowd sensing, danger detection, safety},
+ link = {http://doi.acm.org/10.1145/2594368.2601475},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {362--363},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: SaveAlert: Design for a Sensor-driven CrowdWatch Danger Detection System},
+ year = {2014}
+}
+
+
+@inproceedings{Mariakakis:2014:SSA:2594368.2594393,
+ abstract = {This paper presents SAIL, a Single Access Point Based Indoor Localization system. Although there have been advances in WiFi-based positioning techniques, we find that existing solutions either require a dense deployment of access points (APs), manual fingerprinting, energy hungry WiFi scanning, or sophisticated AP hardware. We design SAIL using a single commodity WiFi AP to avoid these restrictions. SAIL computes the distance between the client and an AP using the propagation delay of the signal traversing between the two, combines the distance with smartphone dead-reckoning techniques, and employs geometric methods to ultimately yield the client's location using a single AP. SAIL combines physical layer (PHY) information and human motion to compute the propagation delay of the direct path by itself, eliminating the adverse effect of multipath and yielding sub-meter distance estimation accuracy. Furthermore, SAIL systematically addresses some of the common challenges towards dead-reckoning using smartphone sensors and achieves 2-5x accuracy improvements over existing techniques. We have implemented SAIL on commodity wireless APs and smartphones. Evaluation in a large-scale enterprise environment with 10 mobile users demonstrates that SAIL can capture the user's location with a mean error of 2.3m using just a single AP.},
+ acmid = {2594393},
+ address = {New York, NY, USA},
+ author = {Mariakakis, Alex T. and Sen, Souvik and Lee, Jeongkeun and Kim, Kyu-Han},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594393},
+ isbn = {978-1-4503-2793-0},
+ keyword = {dead-reckoning, indoor location, sensing, smartphones, time-of-flight},
+ link = {http://doi.acm.org/10.1145/2594368.2594393},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {315--328},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {SAIL: Single Access Point-based Indoor Localization},
+ year = {2014}
+}
+
+
+@inproceedings{Thilakarathna:2014:DCP:2594368.2601464,
+ abstract = {Crowd-Cache is a novel crowd-sourced content caching system which provides cheap and convenient content access for mobile users. Our system exploits both transient colocation of devices and the spatial temporal correlation of content popularity, where users in a particular location and at specific times would be likely interested in similar content. We demonstrate the feasibility of Crowd-Cache system through a prototype implementation on Android smartphones.},
+ acmid = {2601464},
+ address = {New York, NY, USA},
+ author = {Thilakarathna, Kanchana and Jiang, Fangzhou and Mrabet, Sirine and Kaafar, Mohamed Ali and Seneviratne, Aruna and Mohapatra, Prasant},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601464},
+ isbn = {978-1-4503-2793-0},
+ keyword = {crowd sourcing, distributed caching, mobile content distribution},
+ link = {http://doi.acm.org/10.1145/2594368.2601464},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {358--359},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Crowd-cache -- Popular Content for Free},
+ year = {2014}
+}
+
+
+@inproceedings{Ding:2014:PSP:2594368.2601462,
+ abstract = {The fast increase of mobile traffic from smartphone-like devices has created a huge pressure for the cellular operators to manage the network infrastructure and resources. Offloading the mobile traffic to alternative networks such as WiFi is sought as a promising direction to solve this problem cost-effectively. According to our study and experimental findings, existing research proposals are lack of concern for the complexity of network deployment and device limitations, which impedes the solution deployment. To overcome such challenge, we propose SoftOffload, a programmable framework for collaborative mobile traffic offloading. SoftOffload takes the advantage of software defined networking (SDN) paradigm in terms of openness and extensibility. We have implemented the first prototype utilising the open source Floodlight platform.},
+ acmid = {2601462},
+ address = {New York, NY, USA},
+ author = {Ding, Aaron Yi and Crowcroft, Jon and Tarkoma, Sasu},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601462},
+ isbn = {978-1-4503-2793-0},
+ keyword = {mobile data offloading, software defined networking},
+ link = {http://doi.acm.org/10.1145/2594368.2601462},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {1},
+ pages = {368--368},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Poster: SoftOffload: A Programmable Approach Toward Collaborative Mobile Traffic Offloading},
+ year = {2014}
+}
+
+
+@inproceedings{AmiriSani:2014:RSS:2594368.2594370,
+ abstract = {Mobile systems are equipped with a diverse collection of I/O devices, including cameras, microphones, sensors, and modems. There exist many novel use cases for allowing an application on one mobile system to utilize I/O devices from another. This paper presents Rio, an I/O sharing solution that supports unmodified applications and exposes all the functionality of an I/O device for sharing. Rio's design is common to many classes of I/O devices, thus significantly reducing the engineering effort to support new I/O devices. Our implementation of Rio on Android consists of about 7100 total lines of code and supports four I/O classes with fewer than 500 class-specific lines of code. Rio also supports I/O sharing between mobile systems of different form factors, including smartphones and tablets. We show that Rio achieves performance close to that of local I/O for audio devices, sensors, and modem, but suffers noticeable performance degradation for camera due to network throughput limitations between the two systems, which is likely to be alleviated by emerging wireless standards.},
+ acmid = {2594370},
+ address = {New York, NY, USA},
+ author = {Amiri Sani, Ardalan and Boos, Kevin and Yun, Min Hong and Zhong, Lin},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594370},
+ isbn = {978-1-4503-2793-0},
+ keyword = {i/o, i/o sharing, mobile, remote i/o, rio},
+ link = {http://doi.acm.org/10.1145/2594368.2594370},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {259--272},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Rio: A System Solution for Sharing I/O Between Mobile Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Yan:2014:RAR:2594368.2594381,
+ abstract = {This paper presents RTDroid, a variant of Android that provides predictability to Android applications. Although there has been much interest in adopting Android in real-time contexts, surprisingly little work has been done to examine the suitability of Android for real-time systems. Existing work only provides solutions to traditional problems, including real-time garbage collection at the virtual machine layer and kernel-level real-time scheduling and resource management. While it is critical to address these issues, it is by no means sufficient. After all, Android is a vast system that is more than a Java virtual machine and a kernel. Thus, this paper goes beyond existing work and examines the internals of Android. We discuss the implications and challenges of adapting Android constructs and core system services for real-time and present a solution for each. Our system is unique in that it redesigns Android's internal components, replaces Android's Java VM (Dalvik) with a real-time VM, and leverages off-the-shelf real-time OSes. We demonstrate the feasibility and predictability of our solution by evaluating it on three different platforms---an x86 PC, a LEON3 embedded board, and a Nexus S smartphone. The evaluation results show that our design can successfully provide predictability to Android applications, even under heavy load.},
+ acmid = {2594381},
+ address = {New York, NY, USA},
+ author = {Yan, Yin and Cosgrove, Shaun and Anand, Varun and Kulkarni, Amit and Konduri, Sree Harsha and Ko, Steven Y. and Ziarek, Lukasz},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594381},
+ isbn = {978-1-4503-2793-0},
+ keyword = {android, mobile systems, real-time systems, smartphones},
+ link = {http://doi.acm.org/10.1145/2594368.2594381},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {273--286},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Real-time Android with RTDroid},
+ year = {2014}
+}
+
+
+@inproceedings{Shi:2014:CCA:2594368.2594385,
+ abstract = {The explosive growth of mobile data traffic poses severe pressure on cellular providers to better manage their finite spectrum. Proposed solutions such as congestion-pricing exist, but they degrade users' ability to use the network when they want. In this paper, we propose a fundamentally different approach - rather than reducing the aggregate busy hour traffic, we seek to smooth the peaks that cause congestion. Our approach is based on two key insights obtained from traffic traces of a large cellular provider. First, mobile traffic demonstrates high short-term variation so that delaying traffic for very short periods of time can significantly reduce peaks. Second, by making collaborative decisions on which traffic gets delayed and by how much across all users of a cell, the delays need not result in any degradation of user experience. We design a system, CoAST, to implement this approach using three key mechanisms: a protocol to allow mobile applications and providers to exchange traffic information, an incentive mechanism to incentivize mobile applications to collaboratively delay traffic at the right time, and mechanisms to delay application traffic. We provide extensive evaluations that show that CoAST reduces traffic peaks by up to 50% even for applications that are not thought to be delay-tolerant, e.g., streaming and web browsing, but which together account for 70% of all cellular traffic.},
+ acmid = {2594385},
+ address = {New York, NY, USA},
+ author = {Shi, Cong and Joshi, Kaustubh and Panta, Rajesh K. and Ammar, Mostafa H. and Zegura, Ellen W.},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594385},
+ isbn = {978-1-4503-2793-0},
+ keyword = {cellular networks, delay tolerance, peak throughput, scheduling},
+ link = {http://doi.acm.org/10.1145/2594368.2594385},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {245--258},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {CoAST: Collaborative Application-aware Scheduling of Last-mile Cellular Traffic},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:EVI:2594368.2594371,
+ abstract = {We explore the use of TV whitespace communication systems for providing robust connectivity to vehicles. A key challenge in this setup is the asymmetry in transmit power limits -- the fixed base station is allowed to communicate at up to 4 W, while the mobile gateways in vehicles are limited to 100 mW. This paper presents a specific solution to deal with this asymmetry in which whitespace transceivers are used in the downlink direction while a more traditional cellular path is used in the uplink one. While heterogeneous communication systems have been considered before (e.g., in some satellite networks), our solution explores some unique opportunities that arise in vehicular systems. In particular, we describe a system called Scout that uses a front radio at the head of a vehicle to look ahead and identify the best channel parameters to be used when the rear radio eventually reaches the forward post. We use these channel estimates to adapt a number of transmission mechanisms for improving the performance of flows through this heterogeneous network. We have implemented and deployed this system on moving vehicles in an urban environment, and demonstrated 3 -- 8× performance improvement over simpler alternatives that do not use the scouting technique.},
+ acmid = {2594371},
+ address = {New York, NY, USA},
+ author = {Zhang, Tan and Sen, Sayandeep and Banerjee, Suman},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2594371},
+ isbn = {978-1-4503-2793-0},
+ keyword = {heterogeneous network, power asymmetry, scouting radio, tv whitespaces, vehicular internet access},
+ link = {http://doi.acm.org/10.1145/2594368.2594371},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {14},
+ pages = {287--300},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Enhancing Vehicular Internet Connectivity Using Whitespaces, Heterogeneity, and a Scouting Radio},
+ year = {2014}
+}
+
+
+@inproceedings{Razeen:2014:DZI:2594368.2601470,
+ abstract = {Messaging app developers are beginning to take the security and privacy of their users' communication more seriously. Unfortunately, a recent study has shown that the developers of many popular apps incorrectly use cryptography. As a result, they make mistakes that may result in trivially broken encryption schemes. For example, the developers of Snapchat use a constant symmetric encryption key hardcoded into the app and it only takes 12 lines of Ruby to crack the encryption. In this work, we propose ZIPR (Zero-Interaction PRivacy), a system that relieves developers from the task of using cryptography correctly. Designed for text-messaging apps, ZIPR automatically negotiates shared secret keys, and encrypts and decrypts messages as users of these apps chat with each other. No manual intervention is required by users for them to enjoy secure messaging. There are two key ideas behind ZIPR. First, most text-messaging apps follow a basic UI scheme that contains (i) a text box for users to compose their message, (ii) a "send" button which they click on to send the message, and (iii) a list view to display sent and received messages. By intercepting events on these UI elements, ZIPR can manipulate the composed message before it is sent and before it is displayed. This allows the system to transparently encrypt and decrypt message data. The second key idea is that ZIPR can reuse the communication channel defined by an app to negotiate a shared secret key between two users. This is done by piggy-backing negotiation data on the messages users send to each other. A major advantage of this approach is that ZIPR can avoid the difficult task of establishing user identities. After all, a user of a text-messaging app is likely to carry out a conversation only with someone she knows, and both of them would have signed up for the chat service using some personal data such as their email addresses or phone numbers. Developers use ZIPR by tagging UI elements; no changes to their source code are required. This is similar to HTTPS where web developers only need to configure their servers with SSL certificates to encrypt data transmission with their users. However, unlike HTTPS, the end-to-end encryption in ZIPR takes place between the two users carrying out a conversation and not between a server and a user. This ensures that even if the app servers are compromised, users' messages would remain secure. ZIPR is implemented in Android 4.3 and works with existing apps with very few modifications. In this demo, we show that our current prototype works with several apps including Whatsapp, Facebook Messenger, and Skype. These apps required only four, five, and three lines of modification to their UI XML definition files, respectively. In Figure 1, we show a screenshot of Whatsapp running under ZIPR. In the first two messages exchanged between the users, a new shared secret key is negotiated. Subsequently, all following messages are securely transmitted, and these encrypted messages are prefixed with a ``*'' by ZIPR. We are currently extending our prototype to use the Android Keystore API and the TrustZone hardware to allow users to identify MitM attacks, and to store the secret keys securely. We are also porting other messaging apps, such as Viber, to ZIPR.},
+ acmid = {2601470},
+ address = {New York, NY, USA},
+ author = {Razeen, Ali and Cox, Landon},
+ booktitle = {Proceedings of the 12th Annual International Conference on Mobile Systems, Applications, and Services},
+ doi = {10.1145/2594368.2601470},
+ isbn = {978-1-4503-2793-0},
+ keyword = {secure communication, security \&\#38; privacy},
+ link = {http://doi.acm.org/10.1145/2594368.2601470},
+ location = {Bretton Woods, New Hampshire, USA},
+ numpages = {2},
+ pages = {351--352},
+ publisher = {ACM},
+ series = {MobiSys '14},
+ title = {Demo: Zero Interaction Private Messaging with ZIPR},
+ year = {2014}
+}
+
+
