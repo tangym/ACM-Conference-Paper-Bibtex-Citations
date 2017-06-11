@@ -1,0 +1,1284 @@
+@inproceedings{Kwak:2013:EPR:2465529.2465542,
+ abstract = {Recently several CSMA algorithms based on the Glauber dynamics model have been proposed for multihop wireless scheduling, as viable solutions to achieve the throughput optimality, yet are simple to implement. However, their delay performances still remain unsatisfactory, mainly due to the nature of the underlying Markov chains that imposes a fundamental constraint on how the link state can evolve over time. In this paper, we propose a new approach toward better queueing and delay performance, based on our observation that the algorithm needs not be Markovian, as long as it can be implemented in a distributed manner, achieving the same throughput optimality and better delay performance. Our approach hinges upon utilizing past state information observed by local link and then constructing a high-order Markov chain for the evolution of the feasible link schedules. Our proposed algorithm, named delayed CSMA, adds virtually no additional overhead onto the existing CSMA-based algorithms, achieves the throughput optimality under the usual choice of link weight as a function of queue length, and also provides much better delay performance by effectively resolving temporal link starvation problem. From our extensive simulations we observe that the delay under our algorithm can be often reduced by a factor of 20 over a wide range of scenarios, compared to the standard Glauber-dynamics-based CSMA algorithm.},
+ acmid = {2465542},
+ address = {New York, NY, USA},
+ author = {Kwak, Jaewook and Lee, Chul-Ho and Eun, Do Young},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465542},
+ isbn = {978-1-4503-1900-3},
+ keyword = {CSMA scheduling, delay performance, glauber dynamics, high-order markov chains},
+ link = {http://doi.acm.org/10.1145/2465529.2465542},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {353--354},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Exploiting the Past to Reduce Delay in CSMA Scheduling: A High-order Markov Chain Approach},
+ year = {2013}
+}
+
+
+@inproceedings{Sen:2013:ROM:2465529.2465756,
+ abstract = {We develop a reuse distance/stack distance based analytical modeling framework for efficient, online prediction of cache performance for a range of cache configurations and replacement policies LRU, PLRU, RANDOM, NMRU. Our framework unifies existing cache miss rate prediction techniques such as Smith's associativity model, Poisson variants, and hardware way-counter based schemes. We also show how to adapt LRU way-counters to work when the number of sets in the cache changes. As an example application, we demonstrate how results from our models can be used to select, based on workload access characteristics, last-level cache configurations that aim to minimize energy-delay product.},
+ acmid = {2465756},
+ address = {New York, NY, USA},
+ author = {Sen, Rathijit and Wood, David A.},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465756},
+ isbn = {978-1-4503-1900-3},
+ keyword = {LRU, NMRU, PLRU, cache, random, replacement policies, reuse distance, stack distance},
+ link = {http://doi.acm.org/10.1145/2465529.2465756},
+ location = {Pittsburgh, PA, USA},
+ numpages = {14},
+ pages = {279--292},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Reuse-based Online Models for Caches},
+ year = {2013}
+}
+
+
+@article{Tudor:2013:UEC:2494232.2465553,
+ abstract = {There is growing interest to replace traditional servers with low-power multicore systems such as ARM Cortex-A9. However, such systems are typically provisioned for mobile applications that have lower memory and I/O requirements than server application. Thus, the impact and extent of the imbalance between application and system resources in exploiting energy efficient execution of server workloads is unclear. This paper proposes a trace-driven analytical model for understanding the energy performance of server workloads on ARM Cortex-A9 multicore systems. Key to our approach is the modeling of the degrees of CPU core, memory and I/O resource overlap, and in estimating the number of cores and clock frequency that optimizes energy performance without compromising execution time. Since energy usage is the product of utilized power and execution time, the model first estimates the execution time of a program. CPU time, which accounts for both cores and memory response time, is modeled as an M/G/1 queuing system. Workload characterization of high performance computing, web hosting and financial computing applications shows that bursty memory traffic fits a Pareto distribution, and non-bursty memory traffic is exponentially distributed. Our analysis using these server workloads reveals that not all server workloads might benefit from higher number of cores or clock frequencies. Applying our model, we predict the configurations that increase energy efficiency by 10% without turning off cores, and up to one third with shutting down unutilized cores. For memory-bounded programs, we show that the limited memory bandwidth might increase both execution time and energy usage, to the point where energy cost might be higher than on a typical x64 multicore system. Lastly, we show that increasing memory and I/O bandwidth can improve both the execution time and the energy usage of server workloads on ARM Cortex-A9 systems.},
+ acmid = {2465553},
+ address = {New York, NY, USA},
+ author = {Tudor, Bogdan Marius and Teo, Yong Meng},
+ doi = {10.1145/2494232.2465553},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {analytical model, energy, low-power, multicore, performance, servers},
+ link = {http://doi.acm.org/10.1145/2494232.2465553},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {267--278},
+ publisher = {ACM},
+ title = {On Understanding the Energy Consumption of ARM-based Multicore Servers},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Mazauric:2013:CAC:2465529.2465752,
+ abstract = {This paper focuses on cascading line failures in the transmission system of the power grid. Such a cascade may have a devastating effect not only on the power grid but also on the interconnected communication networks. Recent large-scale power outages demonstrated the limitations of epidemic- and percolation-based tools in modeling the cascade evolution. Hence, based on a linearized power flow model (that substantially differs from the classical packet flow models), we obtain results regarding the various properties of a cascade. Specifically, we consider performance metrics such as the the distance between failures, the length of the cascade, and the fraction of demand (load) satisfied after the cascade. We show, for example, that due to the unique properties of the model: (i) the distance between subsequent failures can be arbitrarily large and the cascade may be arbitrarily long, (ii) a large set of initial line failures may have a smaller effect than a failure of one of the lines in the set, and (iii) minor changes to the network parameters may have a significant impact. Moreover, we show that finding the set of lines whose removal has the most significant impact (under various metrics) is NP-Hard. Moreover, we develop a fast algorithm to recompute the flows at each step of the cascade. The results can provide insight into the design of smart grid measurement and control algorithms that can mitigate a cascade.},
+ acmid = {2465752},
+ address = {New York, NY, USA},
+ author = {Mazauric, Dorian and Soltan, Saleh and Zussman, Gil},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465752},
+ isbn = {978-1-4503-1900-3},
+ keyword = {cascading failures, computational complexity, performance metrics, power grid, survivability},
+ link = {http://doi.acm.org/10.1145/2465529.2465752},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {337--338},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Computational Analysis of Cascading Failures in Power Networks},
+ year = {2013}
+}
+
+
+@article{Xu:2013:TAW:2494232.2465539,
+ abstract = {Datacenters consume an enormous amount of energy with significant financial and environmental costs. For geo-distributed datacenters, a workload management approach that routes user requests to locations with cheaper and cleaner electricity has been shown to be promising lately. We consider two key aspects that have not been explored in this approach. First, through empirical studies, we find that the energy efficiency of the cooling system depends directly on the ambient temperature, which exhibits a significant degree of geographical diversity. Temperature diversity can be used by workload management to reduce the overall cooling energy overhead. Second, energy consumption comes from not only interactive workloads driven by user requests, but also delay tolerant batch workloads that run at the back-end. The elastic nature of batch workloads can be exploited to further reduce the energy cost. In this work, we propose to make workload management for geo-distributed datacenters temperature aware. We formulate the problem as a joint optimization of request routing for interactive workloads and capacity allocation for batch workloads. We develop a distributed algorithm based on an m-block alternating direction method of multipliers (ADMM) algorithm that extends the classical 2-block algorithm. We prove the convergence and rate of convergence results under general assumptions. Trace-driven simulations demonstrate that our approach is able to provide 5%--20% overall cost savings for geo-distributed datacenters.},
+ acmid = {2465539},
+ address = {New York, NY, USA},
+ author = {Xu, Hong and Feng, Chen and Li, Baochun},
+ doi = {10.1145/2494232.2465539},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {ADMM, cooling efficiency, distributed optimization, energy, geo-distributed datacenters, request routing},
+ link = {http://doi.acm.org/10.1145/2494232.2465539},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {373--374},
+ publisher = {ACM},
+ title = {Temperature Aware Workload Management in Geo-distributed Datacenters},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Dai:2013:UAC:2465529.2465541,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2465541},
+ address = {New York, NY, USA},
+ author = {Dai, Chen and Lv, Chao and Li, Jiaxin and Zhang, Weihua and Zang, Binyu},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465541},
+ isbn = {978-1-4503-1900-3},
+ keyword = {computer architecture, multimedia retrieval, workload characterization},
+ link = {http://doi.acm.org/10.1145/2465529.2465541},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {377--378},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Understanding Architectural Characteristics of Multimedia Retrieval Workloads},
+ year = {2013}
+}
+
+
+@article{Zhu:2013:SSU:2494232.2465537,
+ abstract = {Hajek and Zhu recently showed that the BitTorrent protocol can become unstable when peers depart immediately after downloading all pieces of a file. In light of this result, Zhou et al. propose bundling swarms together, allowing peers to exchange pieces across different swarms, and claim that such "universal swarms" can increase BitTorrent's stability region. In this work, we formally characterize the stability region of universal swarms and show that they indeed exhibit excellent stability properties. In particular, bundling allows a single seed with limited upload capacity to serve an arbitrary number of disjoint swarms if the arrival rate of peers in each swarm is lower than the seed upload capacity. Our result also shows that the stability region is insensitive to peers' upload capacity, piece selection policies and number of swarms.},
+ acmid = {2465537},
+ address = {New York, NY, USA},
+ author = {Zhu, Ji and Ioannidis, Stratis and Hegde, Nidhi and Massoulie, Laurent},
+ doi = {10.1145/2494232.2465537},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {lyapunov stability, markov process, missing piece syndrome, multiple swarm p2p},
+ link = {http://doi.acm.org/10.1145/2494232.2465537},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {369--370},
+ publisher = {ACM},
+ title = {Stable and Scalable Universal Swarms},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Nelson:2013:DCA:2465529.2466584,
+ abstract = {Management and monitoring of data centers is a growing field of interest, with much current research, and the emergence of a variety of commercial products aiming to improve performance, resource utilization and energy efficiency of the computing infrastructure. Despite the large body of work on optimizing data center operations, few studies actually focus on discovering and tracking the physical layout of assets in these centers. Such asset tracking is a prerequisite to faithfully performing administration and any form of optimization that relies on physical layout characteristics. In this work, we describe an approach to completely automated asset tracking in data centers, employing a vision-based mobile robot in conjunction with an ability to manipulate the indicator LEDs in blade centers and storage arrays. Unlike previous large-scale asset-tracking methods, our approach does not require the tagging of assets (e.g., with RFID tags or barcodes), thus saving considerable expense and human labor. The approach is validated through a series of experiments in a production industrial data center.},
+ acmid = {2466584},
+ address = {New York, NY, USA},
+ author = {Nelson, John C. and Connell, Jonathan and Isci, Canturk and Lenchner, Jonathan},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2466584},
+ isbn = {978-1-4503-1900-3},
+ keyword = {asset tracking, data center, robot},
+ link = {http://doi.acm.org/10.1145/2465529.2466584},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {339--340},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Data Center Asset Tracking Using a Mobile Robot},
+ year = {2013}
+}
+
+
+@article{Gandhi:2013:EAM:2494232.2465760,
+ abstract = {The M/M/k/setup model, where there is a penalty for turning servers on, is common in data centers, call centers and manufacturing systems. Setup costs take the form of a time delay, and sometimes there is additionally a power penalty, as in the case of data centers. While the M/M/1/setup was exactly analyzed in 1964, no exact analysis exists to date for the M/M/k/setup with k>1. In this paper we provide the first exact, closed-form analysis for the M/M/k/setup and some of its important variants including systems in which idle servers delay for a period of time before turning off or can be put to sleep. Our analysis is made possible by our development of a new technique, Recursive Renewal Reward (RRR), for solving Markov chains with a repeating structure. RRR uses ideas from renewal reward theory and busy period analysis to obtain closed-form expressions for metrics of interest such as the transform of time in system and the transform of power consumed by the system. The simplicity, intuitiveness, and versatility of RRR makes it useful for analyzing Markov chains far beyond the M/M/k/setup. In general, RRR should be used to reduce the analysis of any 2-dimensional Markov chain which is infinite in at most one dimension and repeating to the problem of solving a system of polynomial equations. In the case where all transitions in the repeating portion of the Markov chain are skip-free and all up/down arrows are unidirectional, the resulting system of equations will yield a closed-form solution.},
+ acmid = {2465760},
+ address = {New York, NY, USA},
+ author = {Gandhi, Anshul and Doroudi, Sherwin and Harchol-Balter, Mor and Scheller-Wolf, Alan},
+ doi = {10.1145/2494232.2465760},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {performance, queueing theory, resource allocation},
+ link = {http://doi.acm.org/10.1145/2494232.2465760},
+ month = {jun},
+ number = {1},
+ numpages = {14},
+ pages = {153--166},
+ publisher = {ACM},
+ title = {Exact Analysis of the M/M/K/Setup Class of Markov Chains via Recursive Renewal Reward},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Shanmuganathan:2013:DCU:2494232.2465763,
+ abstract = {Current public cloud offerings sell capacity in the form of pre-defined virtual machine (VM) configurations to their tenants. Typically this means that tenants must purchase individual VM configurations based on the peak demands of the applications, or be restricted to only scale-out applications that can share a pool of VMs. This diminishes the value proposition of moving to a public cloud as compared to server consolidation in a private virtualized datacenter, where one gets the benefits of statistical multiplexing between VMs belonging to the same or different applications. Ideally one would like to enable a cloud tenant to buy capacity in bulk and benefit from statistical multiplexing among its workloads. This requires the purchased capacity to be dynamically and transparently allocated among the tenant's VMs that may be running on different servers, even across datacenters. In this paper, we propose two novel algorithms called BPX and DBS that are able to provide the cloud customer with the abstraction of buying bulk capacity. These algorithms dynamically allocate the bulk capacity purchased by a customer between its VMs based on their individual demands and user-set importance. Our algorithms are highly scalable and are designed to work in a large-scale distributed environment. We implemented a prototype of BPX as part of VMware's management software and showed that BPX is able to closely mimic the behavior of a centralized allocator in a distributed manner.},
+ acmid = {2465763},
+ address = {New York, NY, USA},
+ author = {Shanmuganathan, Ganesha and Gulati, Ajay and Varman, Peter},
+ doi = {10.1145/2494232.2465763},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {cloud computing, demand-based allocation, distributed algorithm, resource management},
+ link = {http://doi.acm.org/10.1145/2494232.2465763},
+ month = {jun},
+ number = {1},
+ numpages = {14},
+ pages = {67--80},
+ publisher = {ACM},
+ title = {Defragmenting the Cloud Using Demand-based Resource Allocation},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Liu:2013:DCD:2494232.2465740,
+ abstract = {Demand response is a crucial aspect of the future smart grid. It has the potential to provide significant peak demand reduction and to ease the incorporation of renewable energy into the grid. Data centers' participation in demand response is becoming increasingly important given the high and increasing energy consumption and the flexibility in demand management in data centers compared to conventional industrial facilities. In this extended abstract we briefly describe recent work in our full paper on two demand response schemes to reduce a data center's peak loads and energy expenditure: workload shifting and the use of local power generations. In our full paper, we conduct a detailed characterization study of coincident peak data over two decades from Fort Collins Utilities, Colorado and then develop two algorithms for data centers by combining workload scheduling and local power generation to avoid the coincident peak and reduce the energy expenditure. The first algorithm optimizes the expected cost and the second one provides a good worst-case guarantee for any coincident peak pattern. We evaluate these algorithms via numerical simulations based on real world traces from production systems. The results show that using workload shifting in combination with local generation can provide significant cost savings (up to 40% in the Fort Collins Utilities' case) compared to either alone.},
+ acmid = {2465740},
+ address = {New York, NY, USA},
+ author = {Liu, Zhenhua and Wierman, Adam and Chen, Yuan and Razon, Benjamin and Chen, Niangjun},
+ doi = {10.1145/2494232.2465740},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {coincident peak pricing, data center, demand response, online algorithm, workload shifting},
+ link = {http://doi.acm.org/10.1145/2494232.2465740},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {341--342},
+ publisher = {ACM},
+ title = {Data Center Demand Response: Avoiding the Coincident Peak via Workload Shifting and Local Generation},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Gan:2013:ECR:2494232.2465535,
+ abstract = {The optimal power flow (OPF) problem seeks to control the power generation/consumption to minimize the generation cost, and is becoming important for distribution networks. OPF is nonconvex and a second-order cone programming (SOCP) relaxation has been proposed to solve it. We prove that after a "small" modification to OPF, the SOCP relaxation is exact under a "mild" condition. Empirical studies demonstrate that the modification to OPF is "small" and that the "mild" condition holds for all test networks, including the IEEE 13-bus test network and practical networks with high penetration of distributed generation.},
+ acmid = {2465535},
+ address = {New York, NY, USA},
+ author = {Gan, Lingwen and Li, Na and Low, Steven and Topcu, Ufuk},
+ doi = {10.1145/2494232.2465535},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {exact convex relaxation, optimal power flow, second-order cone programming},
+ link = {http://doi.acm.org/10.1145/2494232.2465535},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {351--352},
+ publisher = {ACM},
+ title = {Exact Convex Relaxation for Optimal Power Flow in Distribution Networks},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Li:2013:SML:2494232.2465546,
+ abstract = {Solid state drives (SSDs) have seen wide deployment in mobiles, desktops,and data centers due to their high I/O performance and low energy consumption. As SSDs write data out-of-place, garbage collection (GC) is required to erase and reclaim space with invalid data. However, GC poses additional writes that hinder the I/O performance, while SSD blocks can only endure a finite number of erasures. Thus, there is a performance-durability tradeoff on the design space of GC. To characterize the optimal tradeoff, this paper formulates an analytical model that explores the full optimal design space of any GC algorithm. We first present a stochastic Markov chain model that captures the I/O dynamics of large-scale SSDs, and adapt the mean-field approach to derive the asymptotic steady-state performance. We further prove the model convergence and generalize the model for all types of workload. Inspired by this model, we propose a randomized greedy algorithm (RGA) that can operate along the optimal tradeoff curve with a tunable parameter. Using trace-driven simulation on DiskSim with SSD add-ons, we demonstrate how RGA can be parameterized to realize the performance-durability tradeoff.},
+ acmid = {2465546},
+ address = {New York, NY, USA},
+ author = {Li, Yongkun and Lee, Patrick P.C. and Lui, John C.S.},
+ doi = {10.1145/2494232.2465546},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {cleaning cost, garbage collection, mean field analysis, solid-state drives, stochastic modeling, wear-leveling},
+ link = {http://doi.acm.org/10.1145/2494232.2465546},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {179--190},
+ publisher = {ACM},
+ title = {Stochastic Modeling of Large-scale Solid-state Storage Systems: Analysis, Design Tradeoffs and Optimization},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Paschos:2013:SSP:2465529.2465747,
+ abstract = {We propose a resource allocation model that captures the interaction between legitimate users of a distributed service provisioning system with malicious intruders attempting to disrupt its operation. The system consists of a bank of servers providing service to incoming requests. Malicious intruders generate fake traffic to the servers attempting to degrade service provisioning. Legitimate traffic may be balanced using available mechanisms in order to mitigate the damage from the attack. We characterize the guaranteed region, i.e. the set of legitimate traffic intensities that are sustainable given specific intensities of the fake traffic, under the assumption that the fake traffic is routed using static policies. This assumption will be relaxed, allowing arbitrary routing policies, in the full version of this work.},
+ acmid = {2465747},
+ address = {New York, NY, USA},
+ author = {Paschos, Georgios S. and Tassiulas, Leandros},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465747},
+ isbn = {978-1-4503-1900-3},
+ keyword = {guaranteed sustainability, service provisioning system, stability},
+ link = {http://doi.acm.org/10.1145/2465529.2465747},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {371--372},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Sustainability of Service Provisioning Systems Under Attack},
+ year = {2013}
+}
+
+
+@article{Zhou:2013:PCG:2494232.2465545,
+ abstract = {Most spectrum distribution proposals today develop their allocation algorithms that use conflict graphs to capture interference relationships. The use of conflict graphs, however, is often questioned by the wireless community because of two issues. First, building conflict graphs requires significant overhead and hence generally does not scale to outdoor networks, and second, the resulting conflict graphs do not capture accumulative interference. In this paper, we use large-scale measurement data as ground truth to understand just how severe these issues are in practice, and whether they can be overcome. We build "practical" conflict graphs using measurement-calibrated propagation models, which remove the need for exhaustive signal measurements by interpolating signal strengths using calibrated models. These propagation models are imperfect, and we study the impact of their errors by tracing the impact on multiple steps in the process, from calibrating propagation models to predicting signal strength and building conflict graphs. At each step, we analyze the introduction, propagation and final impact of errors, by comparing each intermediate result to its ground truth counterpart generated from measurements. Our work produces several findings. Calibrated propagation models generate location-dependent prediction errors, ultimately producing conservative conflict graphs. While these "estimated conflict graphs" lose some spectrum utilization, their conservative nature improves reliability by reducing the impact of accumulative interference. Finally, we propose a graph augmentation technique that addresses any remaining accumulative interference, the last missing piece in a practical spectrum distribution system using measurement-calibrated conflict graphs.},
+ acmid = {2465545},
+ address = {New York, NY, USA},
+ author = {Zhou, Xia and Zhang, Zengbin and Wang, Gang and Yu, Xiaoxiao and Zhao, Ben Y. and Zheng, Haitao},
+ doi = {10.1145/2494232.2465545},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {conflict graphs, dynamic spectrum access, interference},
+ link = {http://doi.acm.org/10.1145/2494232.2465545},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {5--16},
+ publisher = {ACM},
+ title = {Practical Conflict Graphs for Dynamic Spectrum Distribution},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Paredes-Oliva:2013:FFR:2494232.2465743,
+ abstract = {Extracting knowledge from big network traffic data is a matter of foremost importance for multiple purposes ranging from trend analysis or network troubleshooting to capacity planning or traffic classification. An extremely useful approach to profile traffic is to extract and display to a network administrator the multi-dimensional hierarchical heavy hitters (HHHs) of a dataset. However, existing schemes for computing HHHs have several limitations: 1) they require significant computational overhead; 2) they do not scale to high dimensional data; and 3) they are not easily extensible. In this paper, we introduce a fundamentally new approach for extracting HHHs based on generalized frequent item-set mining (FIM), which allows to process traffic data much more efficiently and scales to much higher dimensional data than present schemes. Based on generalized FIM, we build and evaluate a traffic profiling system we call FaRNet. Our comparison with AutoFocus, which is the most related tool of similar nature, shows that FaRNet is up to three orders of magnitude faster.},
+ acmid = {2465743},
+ address = {New York, NY, USA},
+ author = {Paredes-Oliva, Ignasi and Barlet-Ros, Pere and Dimitropoulos, Xenofontas},
+ doi = {10.1145/2494232.2465743},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {data mining, network operation and management, traffic profiling},
+ link = {http://doi.acm.org/10.1145/2494232.2465743},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {355--356},
+ publisher = {ACM},
+ title = {FaRNet: Fast Recognition of High Multi-dimensional Network Traffic Patterns},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Wang:2013:AAC:2465529.2465536,
+ abstract = {Peak power management of datacenters has tremendous cost implications. While numerous mechanisms have been proposed to cap power consumption, real datacenter power consumption data is scarce. To address this gap, we collect power demands at multiple spatial and fine-grained temporal resolutions from the load of geo-distributed datacenters of Microsoft over 6 months. We conduct aggregate analysis of this data, to study its statistical properties. With workload characterization a key ingredient for systems design and evaluation, we note the importance of better abstractions for capturing power demands, in the form of peaks and valleys. We identify and characterize attributes for peaks and valleys, and important correlations across these attributes that can influence the choice and effectiveness of different power capping techniques. With the wide scope of exploitability of such characteristics for power provisioning and optimizations, we illustrate its benefits with two specific case studies.},
+ acmid = {2465536},
+ address = {New York, NY, USA},
+ author = {Wang, Di and Ren, Chuangang and Govindan, Sriram and Sivasubramaniam, Anand and Urgaonkar, Bhuvan and Kansal, Aman and Vaid, Kushagra},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465536},
+ isbn = {978-1-4503-1900-3},
+ keyword = {characteristics, datacenters, power demands},
+ link = {http://doi.acm.org/10.1145/2465529.2465536},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {333--334},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {ACE: Abstracting, Characterizing and Exploiting Peaks and Valleys in Datacenter Power Consumption},
+ year = {2013}
+}
+
+
+@inproceedings{Lu:2013:OEG:2465529.2465551,
+ abstract = {Microgrids represent an emerging paradigm of future electric power systems that can utilize both distributed and centralized generations. Two recent trends in microgrids are the integration of local renewable energy sources (such as wind farms) and the use of co-generation (i.e., to supply both electricity and heat). However, these trends also bring unprecedented challenges to the design of intelligent control strategies for microgrids. Traditional generation scheduling paradigms rely on perfect prediction of future electricity supply and demand. They are no longer applicable to microgrids with unpredictable renewable energy supply and with co-generation (that needs to consider both electricity and heat demand). In this paper, we study online algorithms for the microgrid generation scheduling problem with intermittent renewable energy sources and co-generation, with the goal of maximizing the cost-savings with local generation. Based on the insights from the structure of the offline optimal solution, we propose a class of competitive online algorithms, called CHASE (Competitive Heuristic Algorithm for Scheduling Energy-generation), that track the offline optimal in an online fashion. Under typical settings, we show that CHASE achieves the best competitive ratio among all deterministic online algorithms, and the ratio is no larger than a small constant 3. We also extend our algorithms to intelligently leverage on limited prediction of the future, such as near-term demand or wind forecast. By extensive empirical evaluations using real-world traces, we show that our proposed algorithms can achieve near offline-optimal performance. In a representative scenario, CHASE leads to around 20% cost reduction with no future look-ahead, and the cost reduction increases with the future look-ahead window.},
+ acmid = {2465551},
+ address = {New York, NY, USA},
+ author = {Lu, Lian and Tu, Jinlong and Chau, Chi-Kin and Chen, Minghua and Lin, Xiaojun},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465551},
+ isbn = {978-1-4503-1900-3},
+ keyword = {combined heat and power generation, energy generation scheduling, microgrids, online algorithm},
+ link = {http://doi.acm.org/10.1145/2465529.2465551},
+ location = {Pittsburgh, PA, USA},
+ numpages = {14},
+ pages = {53--66},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Online Energy Generation Scheduling for Microgrids with Intermittent Energy Sources and Co-generation},
+ year = {2013}
+}
+
+
+@proceedings{Harchol-Balter:2013:2465529,
+ abstract = {Welcome to SIGMETRICS 2013. SIGMETRICS is the flagship conference of the ACM special interest group for the computer systems performance evaluation community. This year marks the fortieth anniversary since SIGMETRICS (under its prior name, SIGME) held the First National SIGME Symposium on Measurement and Evaluation in 1973. The past four decades have seen enormous changes in the field of computer science, but the importance of measurement, modeling, and performance evaluation remains as critical as ever. This year's conference includes papers on topics that have been a mainstay since the founding of our SIG, including queuing, scheduling, resource allocation, and performance measurement. Application areas that have emerged in recent years, such as multicore systems, cellular networks, and energy optimization, continue to be represented in our program. Papers on solid-state storage have seen a significant uptick this year, and we have papers on some topics that are new to SIGMETRICS, including crowdsourcing and RFID systems. Interestingly, the program also shows a drop-off in topics that were hot just a brief while ago, such as social networks, BitTorrent, swarms, peer-to-peer, and MapReduce. We received 196 submissions to this year's conference, of which 26 appear in the program as full papers, which is a highly competitive acceptance ratio below 14%. An additional 28 submissions appear in the abbreviated form of poster presentations with brief summaries in the proceedings. As in some prior years, we performed reviews in two rounds. In the first round, each paper was assigned to four reviewers. In the second round, additional reviews were assigned to papers with fewer than three completed reviews and papers with highly divergent review opinions and fewer than two high-confidence reviews. We experimented with two changes to the review process this year. The first change to the review process was the addition of a rebuttal phase between the first and second review rounds, to give authors an opportunity to respond to questions raised in first-round reviews. To impede the addition of new substantive material in the rebuttals, and instead reserve rebuttals for merely highlighting information already contained in the submission, we strictly limited each rebuttal to 500 characters. It is not easy to gauge the effectiveness of the rebuttal process: There were many occasions during the PC meeting when reviewers commented on items in authors' rebuttals, which suggests that the rebuttals provided additional information; however, reviewers mostly found that their opinions were unchanged by what they read in the rebuttals. The second change to the review process was the use of rankings rather than ratings. Instead of rating their assigned papers with accept/reject recommendations, each PC member was asked to produce a list of assigned papers ordered by the reviewer's assessment of each paper's overall quality. Our intent was to eliminate the bias that is inherent in accept/reject recommendations because each reviewer has only a narrow view of the conference's submissions. Reviewers' individual rankings were combined into a global ranking using an algorithm similar to PageRank, and the top 60 papers were discussed at the PC meeting. During the PC meeting, whenever a paper was accepted, we identified any paper with global rank below 60 that at least one reviewer had ranked substantially higher than the accepted paper. The reviewer was given the option to add this other paper to the discussion list. About a dozen such additional papers were discussed, although none were accepted as full papers. We are pleased to present three awards to two of this year's papers. The SIGMETRICS Best Paper Award honors the overall best paper in each year's conference, and the Kenneth C. Sevcik Outstanding Student Paper Award honors an outstanding paper whose primary author is a student. This year, both awards are presented to an outstanding student paper that is also the overall best paper in the conference: "Queueing System Topologies with Limited Flexibility," by John N. Tsitsiklis and Kuang Xu. We are inaugurating a new award this year, the SIGMETRICS Best Practical Paper Award, to honor the best paper from among those whose research has the most direct practical applicability. This award is presented to "Practical Conflict Graphs for Dynamic Spectrum Distribution," by Xia Zhou, Zengbin Zhang, Gang Wang, Xiaoxiao Yu, Ben Y. Zhao, and Haitao Zheng.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1900-3},
+ location = {Pittsburgh, PA, USA},
+ publisher = {ACM},
+ title = {SIGMETRICS '13: Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ year = {2013}
+}
+
+
+@inproceedings{Balachandran:2013:UIV:2465529.2465534,
+ abstract = {Over the past few years video viewership over the Internet has risen dramatically and market predictions suggest that video will account for more than 50% of the traffic over the Internet in the next few years. Unfortunately, there has been signs that the Content Delivery Network (CDN) infrastructure is being stressed with the increasing video viewership load. Our goal in this paper is to provide a first step towards a principled understanding of how the content delivery infrastructure must be designed and provisioned to handle the increasing workload by analyzing video viewing behaviors and patterns in the wild. We analyze various viewing behaviors using a dataset consisting of over 30 million video sessions spanning two months of viewership from two large Internet video providers. In these preliminary results, we observe viewing patterns that have significant impact on the design of the video delivery infrastructure.},
+ acmid = {2465534},
+ address = {New York, NY, USA},
+ author = {Balachandran, Athula and Sekar, Vyas and Akella, Aditya and Seshan, Srinivasan},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465534},
+ isbn = {978-1-4503-1900-3},
+ keyword = {internet video, user behavior},
+ link = {http://doi.acm.org/10.1145/2465529.2465534},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {379--380},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Understanding Internet Video Viewing Behavior in the Wild},
+ year = {2013}
+}
+
+
+@article{Ciucu:2013:SBS:2494232.2465746,
+ abstract = {The practicality of the stochastic network calculus (SNC) is often questioned on grounds of potential looseness of its performance bounds. In this paper it is uncovered that for bursty arrival processes (specifically Markov-Modulated On-Off (MMOO)), whose amenability to per-flow analysis is typically proclaimed as a highlight of SNC, the bounds can unfortunately indeed be very loose (e.g., by several orders of magnitude off). In response to this uncovered weakness of SNC, the (Standard) per-flow bounds are herein improved by deriving a general sample-path bound, using martingale based techniques, which accommodates FIFO, SP, and EDF scheduling disciplines. The obtained (Martingale) bounds capture an additional exponential decay factor of O(e-α n) in the number of flows $n$, and are remarkably accurate even in multiplexing scenarios with few flows.},
+ acmid = {2465746},
+ address = {New York, NY, USA},
+ author = {Ciucu, Florin and Poloczek, Felix and Schmitt, Jens},
+ doi = {10.1145/2494232.2465746},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {martingale, stochastic network calculus},
+ link = {http://doi.acm.org/10.1145/2494232.2465746},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {367--368},
+ publisher = {ACM},
+ title = {Sharp Bounds in Stochastic Network Calculus},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Bouman:2013:DMT:2465529.2465759,
+ abstract = {We explore the achievable delay performance in wireless random-access networks. While relatively simple and inherently distributed in nature, suitably designed backlog-based random-access schemes provide the striking capability to match the optimal throughput performance of centralized scheduling mechanisms. The specific type of activation rules for which throughput optimality has been established, may however yield excessive backlogs and delays. Motivated by that issue, we examine whether the poor delay performance is inherent to the basic operation of these schemes, or caused by the specific kind of activation rules. We derive delay lower bounds for backlog-based activation rules, which offer fundamental insight in the cause of the excessive delays. For fixed activation rates we obtain lower bounds indicating that delays and mixing times can grow dramatically with the load in certain topologies as well.},
+ acmid = {2465759},
+ address = {New York, NY, USA},
+ author = {Bouman, Niek and Borst, Sem and van Leeuwaarden, Johan},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465759},
+ isbn = {978-1-4503-1900-3},
+ keyword = {delay performance, mixing times, random-access networks, wireless networks},
+ link = {http://doi.acm.org/10.1145/2465529.2465759},
+ location = {Pittsburgh, PA, USA},
+ numpages = {12},
+ pages = {117--128},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Delays and Mixing Times in Random-access Networks},
+ year = {2013}
+}
+
+
+@article{Stolyar:2013:LSS:2494232.2465547,
+ abstract = {We consider a large-scale service system model proposed in [14], which is motivated by the problem of efficient placement of virtual machines to physical host machines in a network cloud, so that the total number of occupied hosts is minimized. Customers of different types arrive to a system with an infinite number of servers. A server packing configuration is the vector k = {ki}, where ki is the number of type-i customers that the server "contains". Packing constraints are described by a fixed finite set of allowed configurations. Upon arrival, each customer is placed into a server immediately, subject to the packing constraints; the server can be idle or already serving other customers. After service completion, each customer leaves its server and the system. It was shown in [14] that a simple real-time algorithm, called Greedy, is asymptotically optimal in the sense of minimizing ∑k Xk1+α in the stationary regime, as the customer arrival rates grow to infinity. (Here α > 0, and Xk denotes the number of servers with configuration k.) In particular, when parameter α is small, and in the asymptotic regime where customer arrival rates grow to infinity, Greedy solves a problem approximating one of minimizing ∑k Xk, the number of occupied hosts. In this paper we introduce the algorithm called Greedy with sublinear Safety Stocks (GSS), and show that it asymptotically solves the exact problem of minimizing ∑k Xk. An important feature of the algorithm is that sublinear safety stocks of Xk are created automatically - when and where necessary - without having to determine a priori where they are required. Moreover, we also provide a tight characterization of the rate of convergence to optimality under GSS. The GSS algorithm is as simple as Greedy, and uses no more system state information than Greedy does.},
+ acmid = {2465547},
+ address = {New York, NY, USA},
+ author = {Stolyar, Alexander L. and Zhong, Yuan},
+ doi = {10.1145/2494232.2465547},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {fluid scale optimality, infinite-server system, local fluid scaling, markov chain, multi-dimensional bin packing, safety stocks},
+ link = {http://doi.acm.org/10.1145/2494232.2465547},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {41--52},
+ publisher = {ACM},
+ title = {A Large-scale Service System with Packing Constraints: Minimizing the Number of Occupied Servers},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Dong:2013:EAM:2465529.2465742,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2465742},
+ address = {New York, NY, USA},
+ author = {Dong, Mian and Lan, Tian and Zhong, Lin},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465742},
+ isbn = {978-1-4503-1900-3},
+ keyword = {energy accounting, energy management},
+ link = {http://doi.acm.org/10.1145/2465529.2465742},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {361--362},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {How Does Energy Accounting Matter for Energy Management?},
+ year = {2013}
+}
+
+
+@inproceedings{Aguilera:2013:TGD:2465529.2465768,
+ abstract = {Data center applications increasingly require a *geo-replicated* storage system, that is, a storage system replicated across many geographic locations. Geo-replication can reduce access latency, improve availability, and provide disaster tolerance. It turns out there are many techniques for geo-replication with different trade-offs. In this tutorial, we give an overview of these techniques, organized according to two orthogonal dimensions: level of synchrony (synchronous and asynchronous) and type of storage service (read-write, state machine, transaction). We explain the basic idea of these techniques, together with their applicability and trade-offs.},
+ acmid = {2465768},
+ address = {New York, NY, USA},
+ author = {Aguilera, Marcos K.},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465768},
+ isbn = {978-1-4503-1900-3},
+ keyword = {distributed systems, geo-distribution, geo-replication, replication, storage systems, tutorial},
+ link = {http://doi.acm.org/10.1145/2465529.2465768},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {385--386},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Tutorial on Geo-replication in Data Center Applications},
+ year = {2013}
+}
+
+
+@inproceedings{Jung:2013:RWH:2465529.2465548,
+ abstract = {Storage applications leveraging Solid State Disk (SSD) technology are being widely deployed in diverse computing systems. These applications accelerate system performance by exploiting several SSD-specific characteristics. However, modern SSDs have undergone a dramatic technology and architecture shift in the past few years, which makes widely held assumptions and expectations regarding them highly questionable. The main goal of this paper is to question popular assumptions and expectations regarding SSDs through an extensive experimental analysis using 6 state-of-the-art SSDs from different vendors. Our analysis leads to several conclusions which are either not reported in prior SSD literature, or contradict to current conceptions. For example, we found that SSDs are not biased toward read-intensive workloads in terms of performance and reliability. Specifically, random read performance of SSDs is worse than sequential and random write performance by 40% and 39% on average, and more importantly, the performance of sequential reads gets significantly worse over time. Further, we found that reads can shorten SSD lifetime more than writes, which is very unfortunate, given the fact that many existing systems/platforms already employ SSDs as read caches or in applications that are highly read intensive. We also performed a comprehensive study to understand the worst-case performance characteristics of our SSDs, and investigated the viability of recently proposed enhancements that are geared towards alleviating the worst-case performance challenges, such as TRIM commands and background-tasks. Lastly, we uncover the overheads of these enhancements and their limits, and discuss system-level implications.},
+ acmid = {2465548},
+ address = {New York, NY, USA},
+ author = {Jung, Myoungsoo and Kandemir, Mahmut},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465548},
+ isbn = {978-1-4503-1900-3},
+ keyword = {NAND flash, background task, buffer management, disturbance, garbage collection, parallelism, reliability, solid state disk, trim command},
+ link = {http://doi.acm.org/10.1145/2465529.2465548},
+ location = {Pittsburgh, PA, USA},
+ numpages = {14},
+ pages = {203--216},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Revisiting Widely Held SSD Expectations and Rethinking System-level Implications},
+ year = {2013}
+}
+
+
+@article{Cecchi:2013:SUM:2494232.2465550,
+ abstract = {We address the problem of developing a well-performing and implementable scheduler of users with wireless connection to the base station. The main feature of such real-life systems is that the quality conditions of the user channels are time-varying, which turn into the time-varying transmission rate due to different modulation and coding schemes. We assume that this phenomenon follows a Markovian law and most of the discussion is dedicated to the case of three quality conditions of each user, for which we characterize an optimal index policy and show that threshold policies (of giving higher priority to users with higher transmission rate) are not necessarily optimal. For the general case of arbitrary number of quality conditions we design a scheduler and propose its two practical approximations, and illustrate the performance of the proposed index-based schedulers and existing alternatives in a variety of simulation scenarios.},
+ acmid = {2465550},
+ address = {New York, NY, USA},
+ author = {Cecchi, Fabio and Jacko, Peter},
+ doi = {10.1145/2494232.2465550},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {markov decision processes, opportunistic scheduling, performance evaluation, stability, stochastic scheduling, wireless network},
+ link = {http://doi.acm.org/10.1145/2494232.2465550},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {129--140},
+ publisher = {ACM},
+ title = {Scheduling of Users with Markovian Time-varying Transmission Rates},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Valancius:2013:QBJ:2494232.2465762,
+ abstract = {Online service providers aim to provide good performance for an increasingly diverse set of applications and services. One of the most effective ways to improve service performance is to replicate the service closer to the end users. Replication alone, however, has its limits: while operators can replicate static content, wide-scale replication of dynamic content is not always feasible or cost effective. To improve the latency of such services many operators turn to Internet traffic engineering. In this paper, we study the benefits of performing replica-to-end-user mappings in conjunction with active Internet traffic engineering. We present the design of PECAN, a system that controls both the selection of replicas ("content routing") and the routes between the clients and their associated replicas ("network routing"). We emulate a replicated service that can perform both content and network routing by deploying PECAN on a distributed testbed. In our testbed, we see that jointly performing content and network routing can reduce round-trip latency by 4.3% on average over performing content routing alone (potentially reducing service response times by tens of milliseconds or more) and that most of these gains can be realized with no more than five alternate routes at each replica.},
+ acmid = {2465762},
+ address = {New York, NY, USA},
+ author = {Valancius, Vytautas and Ravi, Bharath and Feamster, Nick and Snoeren, Alex C.},
+ doi = {10.1145/2494232.2465762},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {content delivery, wide-area routing},
+ link = {http://doi.acm.org/10.1145/2494232.2465762},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {243--254},
+ publisher = {ACM},
+ title = {Quantifying the Benefits of Joint Content and Network Routing},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Schindler:2013:PAI:2465529.2479782,
+ abstract = {The advent of the so-called NoSQL databases has brought about a new model of using storage systems. While traditional relational database systems took advantage of features offered by centrally-managed, enterprise-class storage arrays, the new generation of database systems with weaker data consistency models is content with using and manag- ing locally attached individual storage devices and providing data reliability and availability through high-level software features and protocols. This tutorial aims to review the architecture of selected NoSQL DBs to lay the foundations for understanding how these new DB systems behave. In particular, it focuses on how (in)efficiently these new systems use I/O and other resources to accomplish their work. The tutorial examines the behavior of several NoSQL DBs with an emphasis on Cassandra - a popular NoSQL DB system. It uses I/O traces and resource utilization profiles captured in private cloud deployments that use both dedicated directly attached storage as well as shared networked storage.},
+ acmid = {2479782},
+ address = {New York, NY, USA},
+ author = {Schindler, Jiri},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2479782},
+ isbn = {978-1-4503-1900-3},
+ keyword = {NoSQL databases},
+ link = {http://doi.acm.org/10.1145/2465529.2479782},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {389--390},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Profiling and Analyzing the I/O Performance of NoSQL DBs},
+ year = {2013}
+}
+
+
+@article{Shafiq:2013:FLC:2494232.2465754,
+ abstract = {During crowded events, cellular networks face voice and data traffic volumes that are often orders of magnitude higher than what they face during routine days. Despite the use of portable base stations for temporarily increasing communication capacity and free Wi-Fi access points for offloading Internet traffic from cellular base stations, crowded events still present significant challenges for cellular network operators looking to reduce dropped call events and improve Internet speeds. For effective cellular network design, management, and optimization, it is crucial to understand how cellular network performance degrades during crowded events, what causes this degradation, and how practical mitigation schemes would perform in real-life crowded events. This paper makes a first step towards this end by characterizing the operational performance of a tier-1 cellular network in the United States during two high-profile crowded events in 2012. We illustrate how the changes in population distribution, user behavior, and application workload during crowded events result in significant voice and data performance degradation, including more than two orders of magnitude increase in connection failures. Our findings suggest two mechanisms that can improve performance without resorting to costly infrastructure changes: radio resource allocation tuning and opportunistic connection sharing. Using trace-driven simulations, we show that more aggressive release of radio resources via 1-2 seconds shorter RRC timeouts as compared to routine days helps to achieve better tradeoff between wasted radio resources, energy consumption, and delay during crowded events; and opportunistic connection sharing can reduce connection failures by 95% when employed by a small number of devices in each cell sector.},
+ acmid = {2465754},
+ address = {New York, NY, USA},
+ author = {Shafiq, Muhammad Zubair and Ji, Lusheng and Liu, Alex X. and Pang, Jeffrey and Venkataraman, Shobha and Wang, Jia},
+ doi = {10.1145/2494232.2465754},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {cellular network, crowded events, performance},
+ link = {http://doi.acm.org/10.1145/2494232.2465754},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {17--28},
+ publisher = {ACM},
+ title = {A First Look at Cellular Network Performance During Crowded Events},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Jaggard:2013:DSP:2494232.2465765,
+ abstract = {We present a framework for the design and analysis of probing methods to monitor network performance, an important technique for collecting measurements in tasks such as fault detection. We use this framework to study the interaction among numerous, possibly conflicting, optimization goals in the design of a probing algorithm. We present a rigorous definition of a probing-algorithm design problem that can apply broadly to network-measurement scenarios. We also present several metrics relevant to the analysis of probing algorithms, including probing frequency and network coverage, communication and computational overhead, and the amount of algorithm state required. We show inherent tradeoffs among optimization goals and give hardness results for achieving some combinations of optimization goals. We also consider the possibility of developing approximation algorithms for achieving some of the goals and describe a randomized approach as an alternative, evaluating it using our framework. Our work aids future development of low-overhead probing techniques and introduces principles from IP-based networking to theoretically grounded approaches for concurrent path-selection problems.},
+ acmid = {2465765},
+ address = {New York, NY, USA},
+ author = {Jaggard, Aaron D. and Kopparty, Swara and Ramachandran, Vijay and Wright, Rebecca N.},
+ doi = {10.1145/2494232.2465765},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {coupon-collector's problem, design-space tradeoffs, hardness results, network-performance analysis, probing algorithms, probing metrics and complexity measures, randomized probing},
+ link = {http://doi.acm.org/10.1145/2494232.2465765},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {105--116},
+ publisher = {ACM},
+ title = {The Design Space of Probing Algorithms for Network-performance Measurement},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Peng:2013:MTA:2494232.2466585,
+ abstract = {Multi-path TCP (MP-TCP) has the potential to greatly improve application performance by using multiple paths transparently. We propose a fluid model for a large class of MP-TCP algorithms and identify design criteria that guarantee the existence, uniqueness, and stability of system equilibrium. We characterize algorithm parameters for TCP-friendliness and prove an inevitable tradeoff between responsiveness and friendliness. We discuss the implications of these properties on the behavior of existing algorithms and motivate a new design that generalizes existing algorithms. We use ns2 simulations to evaluate the proposed algorithm and illustrate its superior overall performance.},
+ acmid = {2466585},
+ address = {New York, NY, USA},
+ author = {Peng, Qiuyu and Walid, Anwar and Low, Steven H.},
+ doi = {10.1145/2494232.2466585},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {congestion control, multipath TCP},
+ link = {http://doi.acm.org/10.1145/2494232.2466585},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {305--316},
+ publisher = {ACM},
+ title = {Multipath TCP Algorithms: Theory and Design},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Cintra:2013:CIP:2465529.2465755,
+ abstract = {Much attention has been given recently to a set of promising non-volatile memory technologies, such as PCM, STT-MRAM, and ReRAM. These, however, have limited endurance relative to DRAM. Potential solutions to this endurance challenge exist in the form of fine-grain wear leveling techniques and aggressive error tolerance approaches. While the existing approaches to wear leveling and error tolerance are sound and demonstrate true potential, their studies have been limited in that i) they have not considered the interactions between wear leveling and error tolerance and ii) they have assumed a simple write endurance failure model where all cells fail uniformly. In this paper we perform a thorough study and characterize such interactions and the effects of more realistic non-uniform endurance models under various workloads, both synthetic and derived from benchmarks. This study shows that, for instance, variability in the endurance of cells significantly affects wear leveling and error tolerance mechanisms and the values of their tuning parameters. It also shows that these mechanisms interact in subtle ways, sometimes cancelling and sometimes boosting each other's impact on overall endurance of the device.},
+ acmid = {2465755},
+ address = {New York, NY, USA},
+ author = {Cintra, Marcelo and Linkewitsch, Niklas},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465755},
+ isbn = {978-1-4503-1900-3},
+ keyword = {error correction, non-volatile memories, wear leveling},
+ link = {http://doi.acm.org/10.1145/2465529.2465755},
+ location = {Pittsburgh, PA, USA},
+ numpages = {12},
+ pages = {217--228},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Characterizing the Impact of Process Variation on Write Endurance Enhancing Techniques for Non-volatile Memory Systems},
+ year = {2013}
+}
+
+
+@article{Nair:2013:FHP:2494232.2466587,
+ abstract = {Heavy-tails are a continual source of excitement and confusion across disciplines as they are repeatedly "discovered" in new contexts. This is especially true within computer systems, where heavy-tails seemingly pop up everywhere -- from degree distributions in the internet and social networks to file sizes and interarrival times of workloads. However, despite nearly a decade of work on heavy-tails they are still treated as mysterious, surprising, and even controversial. The goal of this tutorial is to show that heavy-tailed distributions need not be mysterious and should not be surprising or controversial. In particular, we will demystify heavy-tailed distributions by showing how to reason formally about their counter-intuitive properties; we will highlight that their emergence should be expected (not surprising) by showing that a wide variety of general processes lead to heavy-tailed distributions; and we will highlight that most of the controversy surrounding heavy-tails is the result of bad statistics, and can be avoided by using the proper tools.},
+ acmid = {2466587},
+ address = {New York, NY, USA},
+ author = {Nair, Jayakrishnan and Wierman, Adam and Zwart, Bert},
+ doi = {10.1145/2494232.2466587},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {heavy-tailed distributions},
+ link = {http://doi.acm.org/10.1145/2494232.2466587},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {387--388},
+ publisher = {ACM},
+ title = {The Fundamentals of Heavy-tails: Properties, Emergence, and Identification},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Ghiassi-Farrokhfal:2013:FSP:2494232.2465744,
+ abstract = {The high variability of solar power due to intrinsic diurnal variability, as well as additional stochastic variations due to cloud cover, have made it difficult for solar farms to participate in electricity markets that require pre-committed constant power generation. We study the use of battery storage to 'firm' solar power, that is, to remove variability so that such a pre-commitment can be made. Due to the high cost of storage, it is necessary to size the battery parsimoniously, choosing the minimum size to meet a certain reliability guarantee. Inspired by recent work that identifies an isomorphism between batteries and network buffers, we introduce a new model for solar power generation that models it as a stochastic traffic source. This permits us to use techniques from the stochastic network calculus to both size storage and to maximize the revenue that a solar farm owner can make from the day-ahead power market. Using a 10-year of recorded solar irradiance, we show that our approach attains 93% of the maximum revenue in a summer day that would have been achieved in daily market had the entire solar irradiance trace been known ahead of time.},
+ acmid = {2465744},
+ address = {New York, NY, USA},
+ author = {Ghiassi-Farrokhfal, Yashar and Keshav, Srinivasan and Rosenberg, Catherine and Ciucu, Florin},
+ doi = {10.1145/2494232.2465744},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {electricity market, solar power modelling, stochastic network calculus},
+ link = {http://doi.acm.org/10.1145/2494232.2465744},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {357--358},
+ publisher = {ACM},
+ title = {Firming Solar Power},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Maltz:2013:CCS:2465529.2465767,
+ abstract = {Data centers are fascinating places, where the massive scale required to deliver on-line services like web search and cloud hosting turns minor issues into major challenges that must be addressed in the design of the physical infrastructure and the software platform. In this talk, I'll briefly overview the kinds of applications that run in mega-data centers and the workloads they place on the infrastructure. I'll then describe a number of challenges seen in Microsoft's data centers, with the goals of posing questions more than describing solutions and explaining how economic factors, technology issues, and software design interact when creating low-latency, low-cost, high availability services.},
+ acmid = {2465767},
+ address = {New York, NY, USA},
+ author = {Maltz, David A.},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465767},
+ isbn = {978-1-4503-1900-3},
+ keyword = {cloud data centers, costs, network challenges},
+ link = {http://doi.acm.org/10.1145/2465529.2465767},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {3--4},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Challenges in Cloud Scale Data Centers},
+ year = {2013}
+}
+
+
+@article{Shahzad:2013:POT:2494232.2465549,
+ abstract = {Radio Frequency Identification (RFID) systems are widely used in various applications such as supply chain management, inventory control, and object tracking. Identifying RFID tags in a given tag population is the most fundamental operation in RFID systems. While the Tree Walking (TW) protocol has become the industrial standard for identifying RFID tags, little is known about the mathematical nature of this protocol and only some ad-hoc heuristics exist for optimizing it. In this paper, first, we analytically model the TW protocol, and then using that model, propose the Tree Hopping (TH) protocol that optimizes TW both theoretically and practically. The key novelty of TH is to formulate tag identification as an optimization problem and find the optimal solution that ensures the minimal average number of queries. With this solid theoretical underpinning, for different tag population sizes ranging from 100 to 100K tags, TH significantly outperforms the best prior tag identification protocols on the metrics of the total number of queries per tag, the total identification time per tag, and the average number of responses per tag by an average of 50%, 10%, and 30%, respectively, when tag IDs are uniformly distributed in the ID space, and of 26%, 37%, and 26%, respectively, when tag IDs are non-uniformly distributed.},
+ acmid = {2465549},
+ address = {New York, NY, USA},
+ author = {Shahzad, Muhammad and Liu, Alex X.},
+ doi = {10.1145/2494232.2465549},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {RFID, identification, tags},
+ link = {http://doi.acm.org/10.1145/2494232.2465549},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {293--304},
+ publisher = {ACM},
+ title = {Probabilistic Optimal Tree Hopping for RFID Identification},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Yu:2013:AGA:2494232.2465540,
+ abstract = {Recently, graphics processing units (GPUs) have opened up new opportunities for speeding up general-purpose parallel applications due to their massive computational power and up to hundreds of thousands of threads enabled by programming models such as CUDA. However, due to the serial nature of existing micro-architecture simulators, these massively parallel architectures and workloads need to be simulated sequentially. As a result, simulating GPGPU architectures with typical benchmarks and input data sets is extremely time-consuming. This paper addresses the GPGPU architecture simulation challenge by generating miniature, yet representative GPGPU kernels. We first summarize the static characteristics of an existing GPGPU kernel in a profile, and analyze its dynamic behavior using the novel concept of the divergence flow statistics graph (DFSG). We subsequently use a GPGPU kernel synthesizing framework to generate a miniature proxy of the original kernel, which can reduce simulation time significantly. The key idea is to reduce the number of simulated instructions by decreasing per-thread iteration counts of loops. Our experimental results show that our approach can accelerate GPGPU architecture simulation by a factor of 88X on average and up to 589X with an average IPC relative error of 5.6%.},
+ acmid = {2465540},
+ address = {New York, NY, USA},
+ author = {Yu, Zhibin and Eeckhout, Lieven and Goswami, Nilanjan and Li, Tao and John, Lizy and Jin, Hai and Xu, Chengzhong},
+ doi = {10.1145/2494232.2465540},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {general purpose graphics processing unit (GPGPU), micro-architecture simulation, performance},
+ link = {http://doi.acm.org/10.1145/2494232.2465540},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {331--332},
+ publisher = {ACM},
+ title = {Accelerating GPGPU Architecture Simulation},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Wang:2013:GNL:2494232.2465741,
+ abstract = {Different from the IP-based routers, Named Data Networking routers forward packets by content names, which consist of characters and have variable and unbounded length. This kind of complex name constitution plus the huge-sized name routing table makes wire speed name lookup an extremely challenging task. Greedy name lookup mechanism is proposed to speed up name lookup by dynamically adjusting the search path against the changes of the prefix table. Meanwhile, we elaborate a string-oriented perfect hash table to reduce memory consumption which stores the signature of the key in the entry instead of the key itself. Extensive experimental results on a commodity PC server with 3 million name prefix entries demonstrate that greedy name lookup mechanism achieves 57.14 million searches per second using only 72.95 MB memory.},
+ acmid = {2465741},
+ address = {New York, NY, USA},
+ author = {Wang, Yi and Tai, Dongzhe and Zhang, Ting and Lu, Jianyuan and Xu, Boyang and Dai, Huichen and Liu, Bin},
+ doi = {10.1145/2494232.2465741},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {name lookup, named data networking, perfect hash table},
+ link = {http://doi.acm.org/10.1145/2494232.2465741},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {359--360},
+ publisher = {ACM},
+ title = {Greedy Name Lookup for Named Data Networking},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Li:2013:TPH:2465529.2465750,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2465750},
+ address = {New York, NY, USA},
+ author = {Li, Ming and Lukyanenko, Andrey and Tarkoma, Sasu and Cui, Yong and Yl\"{a}-J\"{a}\"{a}ski, Antti},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465750},
+ isbn = {978-1-4503-1900-3},
+ keyword = {MPTCP, NS-3, TCP, flow control, systematic coding},
+ link = {http://doi.acm.org/10.1145/2465529.2465750},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {375--376},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Tolerating Path Heterogeneity in Multipath TCP with Bounded Receive Buffers},
+ year = {2013}
+}
+
+
+@proceedings{Sanghavi:2014:2591971,
+ abstract = {It is our pleasure to welcome you to SIGMETRICS 2014. SIGMETRICS is the flagship conference of the ACM special interest group for the computer systems performance evaluation community. This year's conference continues the long-standing SIGMETRICS tradition to publish the highestquality research on the development and application of state-of-the-art, broadly applicable analytic, simulation, and measurement-based performance evaluation techniques. We are pleased to present a diverse set of papers in areas such as sensor, mobile and wireless networks, queuing and scheduling, msocial networks, memory technologies, large-scale measurement studies, system tracing and monitoring, data center resource provisioning and energy management. Our authors hail from 13 countries on 4 continents and represent both academia and industry. SIGMETRICS 2014 received 237 submissions, the second highest number since the founding of this SIG. Of these, we accepted 40 papers, the largest in the history of the conference, while still maintaining a highly competitive acceptance rate of 16.8%. During the review process, the Program Committee provided 4-6 reviews for each paper and made extensive use of HotCRP's Comment feature for online discussions. The Program Committee then met in person in a 1.5-day meeting on February 7-8, 2014, in Toronto, Canada, and selected 40 papers to be included as full papers in the technical program. In addition, 31 papers were invited as 2-page posters, and the authors of 30 of these papers accepted our invitation. As an experiment, we invited for the first time also all authors of full papers to present a poster version of their paper during one of the breaks at the conference to foster interaction between authors and attendees. We used Eddie Kohler's excellent HotCRP software to manage all stages of the review process, from submission to author notification.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2789-3},
+ location = {Austin, Texas, USA},
+ publisher = {ACM},
+ title = {SIGMETRICS '14: The 2014 ACM International Conference on Measurement and Modeling of Computer Systems},
+ year = {2014}
+}
+
+
+@inproceedings{VanHoudt:2013:MFM:2465529.2465543,
+ abstract = {Garbage collection (GC) algorithms play a key role in reducing the write amplification in flash-based solid state drives, where the write amplification affects the lifespan and speed of the drive. This paper introduces a mean field model to assess the write amplification and the distribution of the number of valid pages per block for a class C of GC algorithms. Apart from the Random GC algorithm, class C includes two novel GC algorithms: the d-Choices GC algorithm, that selects d blocks uniformly at random and erases the block containing the least number of valid pages among the $d$ selected blocks, and the Random++ GC algorithm, that repeatedly selects another block uniformly at random until it finds a block with a lower than average number of valid blocks. Using simulation experiments we show that the proposed mean field model is highly accurate in predicting the write amplification (for drives with $N=50000$ blocks). We further show that the d-Choices GC algorithm has a write amplification close to that of the Greedy GC algorithm even for small d values, e.g., d = 10, and offers a more attractive trade-off between its simplicity and its performance than the Windowed GC algorithm introduced and analyzed in earlier studies. The Random++ algorithm is shown to be less effective as it is even inferior to the FIFO algorithm when the number of pages $b$ per block is large (e.g., for b ≥ 64).},
+ acmid = {2465543},
+ address = {New York, NY, USA},
+ author = {Van Houdt, Benny},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465543},
+ isbn = {978-1-4503-1900-3},
+ keyword = {flash-based solid state drives, garbage collection, mean field, write amplification},
+ link = {http://doi.acm.org/10.1145/2465529.2465543},
+ location = {Pittsburgh, PA, USA},
+ numpages = {12},
+ pages = {191--202},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {A Mean Field Model for a Class of Garbage Collection Algorithms in Flash-based Solid State Drives},
+ year = {2013}
+}
+
+
+@inproceedings{Sharma:2013:DCS:2465529.2465764,
+ abstract = {Several major Internet service providers today also offer content distribution services. The emergence of such "network-CDNs" (NCDNs) is driven both by market forces as well as the cost of carrying ever-increasing volumes of traffic across their backbones. An NCDN has the flexibility to determine both where content is placed and how traffic is routed within the network. However NCDNs today continue to treat traffic engineering independently from content placement and request redirection decisions. In this paper, we investigate the interplay between content distribution strategies and traffic engineering and ask whether or how an NCDN should address these concerns in a joint manner. Our experimental analysis, based on traces from a large content distribution network and real ISP topologies, shows that realistic (i.e., history-based) joint optimization strategies offer little benefit (and often significantly underperform) compared to simple and "unplanned" strategies for routing and placement such as InverseCap and LRU. We also find that the simpler strategies suffice to achieve network cost and user-perceived latencies close to those of a joint-optimal strategy with future knowledge.},
+ acmid = {2465764},
+ address = {New York, NY, USA},
+ author = {Sharma, Abhigyan and Venkataramani, Arun and Sitaraman, Ramesh K.},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465764},
+ isbn = {978-1-4503-1900-3},
+ keyword = {content distribution, network CDN, traffic engineering},
+ link = {http://doi.acm.org/10.1145/2465529.2465764},
+ location = {Pittsburgh, PA, USA},
+ numpages = {14},
+ pages = {229--242},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Distributing Content Simplifies ISP Traffic Engineering},
+ year = {2013}
+}
+
+
+@inproceedings{Arvidsson:2013:DUD:2465529.2465538,
+ abstract = {Quantifying quality of experience for network applications is challenging as it is a subjective metric with multiple dimensions such as user expectation, satisfaction, and overall experience. Today, despite various techniques to support differentiated Quality of Service (QoS), the operators still lack of automated methods to translate QoS to QoE, especially for general web applications. In this work, we take the approach of identifying unsatisfactory performance by searching for user initiated early terminations of web transactions from passive monitoring. However, user early abortions can be caused by other factors such as loss of interests. Therefore, naively using them to represent user dissatisfaction will result in large false positives. In this paper, we propose a systematic method for inferring user dissatisfaction from the set of early abortion behaviors observed from identifying the traffic traces. We conduct a comprehensive analysis on the user acceptance of throughput and response time, and compare them with the traditional MOS metric. Then we present the characteristics of early cancelation from dimensions like the types of URLs and objects. We evaluate our approach on four data sets collected in both wireline network and a wireless cellular network.},
+ acmid = {2465538},
+ address = {New York, NY, USA},
+ author = {Arvidsson, Ake and Zhang, Ying},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465538},
+ isbn = {978-1-4503-1900-3},
+ keyword = {QoE, passive monitoring},
+ link = {http://doi.acm.org/10.1145/2465529.2465538},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {345--346},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Detecting User Dissatisfaction and Understanding the Underlying Reasons},
+ year = {2013}
+}
+
+
+@inproceedings{Moharir:2013:OLB:2465529.2465751,
+ abstract = {In several data center settings, each arriving job may only be served by one of a subset of servers. Such a graph constraint can arise due to several reasons. One is locality of the data needed by a job; for example, in content farms (e.g. in Netflix or YouTube) a video request can only be served by a machine that possesses a copy. Motivated by this, we consider a setting where each job, on arrival, reveals a deadline and a subset of servers that can serve it. The job needs to be immediately allocated to one of these servers, and cannot be moved thereafter. Our objective is to maximize the fraction of jobs that are served before their deadlines. For this online load balancing problem, we prove an upper bound of 1-1/e on the competitive ratio of non-preemptive online algorithms for systems with a large number of servers. We propose an algorithm - INSERT RANKING - which achieves this upper bound. The algorithm makes decisions in a correlated random way and it is inspired by the work of Karp, Vazirani and Vazirani on online matching for bipartite graphs. We also show that two more natural algorithm, based on independent randomness, are strictly suboptimal, with a competitive ratio of 1/2.},
+ acmid = {2465751},
+ address = {New York, NY, USA},
+ author = {Moharir, Sharayu and Sanghavi, Sujay and Shakkottai, Sanjay},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465751},
+ isbn = {978-1-4503-1900-3},
+ keyword = {content delivery networks, matchings},
+ link = {http://doi.acm.org/10.1145/2465529.2465751},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {363--364},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Online Load Balancing Under Graph Constraints},
+ year = {2013}
+}
+
+
+@article{Peserico:2013:EP:2494232.2479781,
+ abstract = {We study a generalization of the classic paging problem where memory capacity can vary over time - a property of many modern computing realities, from cloud computing to multi-core and energy-optimized processors. We show that good performance in the "classic" case provides no performance guarantees when memory capacity fluctuates: roughly speaking, moving from static to dynamic capacity can mean the difference between optimality within a factor 2 in space, time and energy, and suboptimality by an arbitrarily large factor. Surprisingly, several classic paging algorithms still perform remarkably well, maintaining that factor 2 optimality even if faced with adversarial capacity fluctuations - without taking those fluctuations into explicit account!},
+ acmid = {2479781},
+ address = {New York, NY, USA},
+ author = {Peserico, Enoch},
+ doi = {10.1145/2494232.2479781},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {adaptive, capacity, cloud, competitive, energy, multicore, online, paging},
+ link = {http://doi.acm.org/10.1145/2494232.2479781},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {349--350},
+ publisher = {ACM},
+ title = {Elastic Paging},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Sundaresan:2013:WPB:2465529.2465745,
+ abstract = {We present the first large-scale analysis of Web performance bottlenecks as measured from broadband access networks, using data collected from extensive home router deployments. We analyze the limits of throughput on improving Web performance and identify the contribution of critical factors such as DNS lookups and TCP connection establishment to Web page load times. We find that, as broadband speeds continue to increase, other factors such as TCP connection setup time, server response time, and network latency are often dominant performance bottlenecks. Thus, realizing a "faster Web" requires not only higher download throughput, but also optimizations to reduce both client and server-side latency.},
+ acmid = {2465745},
+ address = {New York, NY, USA},
+ author = {Sundaresan, Srikanth and Magharei, Nazanin and Feamster, Nick and Teixeira, Renata and Crawford, Sam},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465745},
+ isbn = {978-1-4503-1900-3},
+ keyword = {bottlenecks, broadband networks, web performance},
+ link = {http://doi.acm.org/10.1145/2465529.2465745},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {383--384},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Web Performance Bottlenecks in Broadband Access Networks},
+ year = {2013}
+}
+
+
+@inproceedings{Prabhakar:2013:DLN:2465529.2465766,
+ abstract = {In many of the challenges faced by the modern world, from overcrowded transportation systems to overstretched healthcare systems, large benefits for society come about from small changes by very many individuals. We survey the problems and the cost they impose on society, and describe a framework for designing "nudge engines"---algorithms, incentives and technology for influencing human behavior. We present a model for analyzing their effectiveness and results from transportation pilots conducted in Bangalore, at Stanford and in Singapore, and a wellness program for the employees of Accenture-USA.},
+ acmid = {2465766},
+ address = {New York, NY, USA},
+ author = {Prabhakar, Balaji},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465766},
+ isbn = {978-1-4503-1900-3},
+ keyword = {behavioral economics, big data, cloud services, experiments and pilots, mathematical models, sensing engines, societal neworks, transportation},
+ link = {http://doi.acm.org/10.1145/2465529.2465766},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Designing Large-scale Nudge Engines},
+ year = {2013}
+}
+
+
+@inproceedings{Saez:2013:DFP:2465529.2465532,
+ abstract = {Symmetric-ISA (instruction set architecture) asymmetric-performance multicore processors (AMPs) were shown to deliver higher performance per watt and area than symmetric CMPs for applications with diverse architectural requirements. So, it is likely that future multicore processors will combine big power-hungry fast cores and small low-power slow ones. In this paper, we propose a novel thread scheduling algorithm that aims to improve the throughput-fairness trade-off on AMP systems. Our experimental evaluation on real hardware and using scheduler implementations on a general-purpose operating system, reveals that our proposal delivers a better throughput-fairness trade-off than previous schedulers for a wide variety of multi-application workloads including single-threaded and multithreaded applications.},
+ acmid = {2465532},
+ address = {New York, NY, USA},
+ author = {S\'{a}ez, Juan Carlos and Castro, Fernando and Chaver, Daniel and Prieto, Manuel},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465532},
+ isbn = {978-1-4503-1900-3},
+ keyword = {asymmetric multicore, operating systems, scheduling},
+ link = {http://doi.acm.org/10.1145/2465529.2465532},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {343--344},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Delivering Fairness and Priority Enforcement on Asymmetric Multicore Systems via OS Scheduling},
+ year = {2013}
+}
+
+
+@article{Kim:2013:RCD:2494232.2465753,
+ abstract = {Large-scale websites are predominantly built as a service-oriented architecture. Here, services are specialized for a certain task, run on multiple machines, and communicate with each other to serve a user's request. An anomalous change in a metric of one service can propagate to other services during this communication, resulting in overall degradation of the request. As any such degradation is revenue impacting, maintaining correct functionality is of paramount concern: it is important to find the root cause of any anomaly as quickly as possible. This is challenging because there are numerous metrics or sensors for a given service, and a modern website is usually composed of hundreds of services running on thousands of machines in multiple data centers. This paper introduces MonitorRank, an algorithm that can reduce the time, domain knowledge, and human effort required to find the root causes of anomalies in such service-oriented architectures. In the event of an anomaly, MonitorRank provides a ranked order list of possible root causes for monitoring teams to investigate. MonitorRank uses the historical and current time-series metrics of each sensor as its input, along with the call graph generated between sensors to build an unsupervised model for ranking. Experiments on real production outage data from LinkedIn, one of the largest online social networks, shows a 26% to 51% improvement in mean average precision in finding root causes compared to baseline and current state-of-the-art methods.},
+ acmid = {2465753},
+ address = {New York, NY, USA},
+ author = {Kim, Myunghwan and Sumbaly, Roshan and Shah, Sam},
+ doi = {10.1145/2494232.2465753},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {anomaly correlation, call graph, monitoring, service-oriented architecture},
+ link = {http://doi.acm.org/10.1145/2494232.2465753},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {93--104},
+ publisher = {ACM},
+ title = {Root Cause Detection in a Service-oriented Architecture},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Karger:2013:ECM:2465529.2465761,
+ abstract = {Crowdsourcing systems like Amazon's Mechanical Turk have emerged as an effective large-scale human-powered platform for performing tasks in domains such as image classification, data entry, recommendation, and proofreading. Since workers are low-paid (a few cents per task) and tasks performed are monotonous, the answers obtained are noisy and hence unreliable. To obtain reliable estimates, it is essential to utilize appropriate inference algorithms (e.g. Majority voting) coupled with structured redundancy through task assignment. Our goal is to obtain the best possible trade-off between reliability and redundancy. In this paper, we consider a general probabilistic model for noisy observations for crowd-sourcing systems and pose the problem of minimizing the total price (i.e. redundancy) that must be paid to achieve a target overall reliability. Concretely, we show that it is possible to obtain an answer to each task correctly with probability 1-ε as long as the redundancy per task is O((K/q) log (K/ε)), where each task can have any of the $K$ distinct answers equally likely, q is the crowd-quality parameter that is defined through a probabilistic model. Further, effectively this is the best possible redundancy-accuracy trade-off any system design can achieve. Such a single-parameter crisp characterization of the (order-)optimal trade-off between redundancy and reliability has various useful operational consequences. Further, we analyze the robustness of our approach in the presence of adversarial workers and provide a bound on their influence on the redundancy-accuracy trade-off. Unlike recent prior work [GKM11, KOS11, KOS11], our result applies to non-binary (i.e. K>2) tasks. In effect, we utilize algorithms for binary tasks (with inhomogeneous error model unlike that in [GKM11, KOS11, KOS11]) as key subroutine to obtain answers for K-ary tasks. Technically, the algorithm is based on low-rank approximation of weighted adjacency matrix for a random regular bipartite graph, weighted according to the answers provided by the workers.},
+ acmid = {2465761},
+ address = {New York, NY, USA},
+ author = {Karger, David R. and Oh, Sewoong and Shah, Devavrat},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465761},
+ isbn = {978-1-4503-1900-3},
+ keyword = {crowdsourcing, human computation, low-rank matrix, random graphs},
+ link = {http://doi.acm.org/10.1145/2465529.2465761},
+ location = {Pittsburgh, PA, USA},
+ numpages = {12},
+ pages = {81--92},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Efficient Crowdsourcing for Multi-class Labeling},
+ year = {2013}
+}
+
+
+@proceedings{Harrison:2012:2254756,
+ abstract = {It's a great pleasure to welcome you to the 12th joint ACM SIGMETRICS and IFIP PERFORMANCE International Conference, hosted by the Department of Computing, Imperial College London - one week after the Queen's Silver Jubilee celebrations and six weeks before the 2012 Olympic Games, just the other side of Town. In fact we chose these dates so as to avoid clashing with Her Majesty's special week, which might have been compromised by an event of such stature! This year's conference enhances the tradition of both of its constituents' being the premier fora for state-ofthe-art research in performance modeling and measurement techniques, tools and applications in the American and Europe continents, respectively. We have assembled a superb technical program with 31 full papers of the highest quality and 23 posters highlighting innovative research; further details are provided in the Program Chairs' Welcome that follows. Contributors come from 18 different countries in 3 continents; 49 papers have (co-)authors from academic institutions and 22 have industrial (co-)authors. This year we have increased the numbers of Tutorials and Workshops. On Monday, 11th June there are five tutorials and two workshops: the ever-popular GreenMetrics and, for the first time, W-PIN. My thanks to Cati Lladó for her organizing the tutorials and expanding this aspect of the conference. On Friday we have three more innovative Workshops: the long-established MAMA, a new one PADE and a Hands-on Tutorial-Workshop NetFPGA. We hope as many of you as possible will take advantage of these excellent satellite events.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1097-0},
+ location = {London, England, UK},
+ note = {81901201},
+ publisher = {ACM},
+ title = {SIGMETRICS '12: Proceedings of the 12th ACM SIGMETRICS/PERFORMANCE Joint International Conference on Measurement and Modeling of Computer Systems},
+ year = {2012}
+}
+
+
+@article{Andrew:2013:TTM:2494232.2465533,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2465533},
+ address = {New York, NY, USA},
+ author = {Andrew, Lachlan and Barman, Siddharth and Ligett, Katrina and Lin, Minghong and Meyerson, Adam and Roytman, Alan and Wierman, Adam},
+ doi = {10.1145/2494232.2465533},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {learning theory, online algorithms},
+ link = {http://doi.acm.org/10.1145/2494232.2465533},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {329--330},
+ publisher = {ACM},
+ title = {A Tale of Two Metrics: Simultaneous Bounds on Competitiveness and Regret},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Kong:2013:DMD:2465529.2465531,
+ abstract = {In this work, we explore techniques that can automatically classify malware variants into their corresponding families. Our framework extracts structural information from malware programs as attributed function call graphs, further learns discriminant malware distance metrics, finally adopts an ensemble of classifiers for automated malware classification. Experimental results show that our method is able to achieve high classification accuracy.},
+ acmid = {2465531},
+ address = {New York, NY, USA},
+ author = {Kong, Deguang and Yan, Guanhua},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465531},
+ isbn = {978-1-4503-1900-3},
+ keyword = {control flow graph, distance learning, ensemble, function call graph, malware, structure},
+ link = {http://doi.acm.org/10.1145/2465529.2465531},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {347--348},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Discriminant Malware Distance Learning on Structuralinformation for Automated Malware Classification},
+ year = {2013}
+}
+
+
+@article{Simha:2013:HLF:2494232.2465552,
+ abstract = {Synchronously logging updates to persistent storage first and then asynchronously committing these updates to their rightful storage locations is a well-known and heavily used technique to improve the sustained throughput of write-intensive disk-based data processing systems, whose latency and throughput accordingly are largely determined by the latency and throughput of the underlying logging mechanism. The conventional wisdom is that logging operations are relatively straightforward to optimize because the associated disk access pattern is largely sequential. However, it turns out that to achieve both high throughput and low latency for fine-grained logging operations, whose payload size is smaller than a disk sector, is extremely challenging. This paper describes the experiences and lessons we have gained from building a disk logging system that can successfully deliver over 1.2 million 256-byte logging operations per second, with the average logging latency below 1 msec.},
+ acmid = {2465552},
+ address = {New York, NY, USA},
+ author = {Simha, Dilip Nijagal and Chiueh, Tzi-cker and Rajagopalan, Ganesh Karuppur and Bose, Pallav},
+ doi = {10.1145/2494232.2465552},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {hard disk, high throughput, logging, low latency},
+ link = {http://doi.acm.org/10.1145/2494232.2465552},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {255--266},
+ publisher = {ACM},
+ title = {High-throughput Low-latency Fine-grained Disk Logging},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Ding:2013:CMI:2494232.2466586,
+ abstract = {Despite the tremendous market penetration of smartphones, their utility has been and will remain severely limited by their battery life. A major source of smartphone battery drain is accessing the Internet over cellular or WiFi connection when running various apps and services. Despite much anecdotal evidence of smartphone users experiencing quicker battery drain in poor signal strength, there has been limited understanding of how often smartphone users experience poor signal strength and the quantitative impact of poor signal strength on the phone battery drain. The answers to such questions are essential for diagnosing and improving cellular network services and smartphone battery life and help to build more accurate online power models for smartphones, which are building blocks for energy profiling and optimization of smartphone apps. In this paper, we conduct the first measurement and modeling study of the impact of wireless signal strength on smartphone energy consumption. Our study makes four contributions. First, through analyzing traces collected on 3785 smartphones for at least one month, we show that poor signal strength of both 3G and WiFi is routinely experienced by smartphone users, both spatially and temporally. Second, we quantify the extra energy consumption on data transfer induced by poor wireless signal strength. Third, we develop a new power model for WiFi and 3G that incorporates the signal strength factor and significantly improves the modeling accuracy over the previous state of the art. Finally, we perform what-if analysis to quantify the potential energy savings from opportunistically delaying network traffic by exploring the dynamics of signal strength experienced by users.},
+ acmid = {2466586},
+ address = {New York, NY, USA},
+ author = {Ding, Ning and Wagner, Daniel and Chen, Xiaomeng and Pathak, Abhinav and Hu, Y. Charlie and Rice, Andrew},
+ doi = {10.1145/2494232.2466586},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {battery drain, energy, power model, signal strength, smartphone},
+ link = {http://doi.acm.org/10.1145/2494232.2466586},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {29--40},
+ publisher = {ACM},
+ title = {Characterizing and Modeling the Impact of Wireless Signal Strength on Smartphone Battery Drain},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Tsitsiklis:2013:QST:2465529.2465757,
+ abstract = {We study a multi-server model with n flexible servers and rn queues, connected through a fixed bipartite graph, where the level of flexibility is captured by the average degree, d(n), of the queues. Applications in content replication in data centers, skill-based routing in call centers, and flexible supply chains are among our main motivations. We focus on the scaling regime where the system size n tends to infinity, while the overall traffic intensity stays fixed. We show that a large capacity region (robustness) and diminishing queueing delay (performance) are jointly achievable even under very limited flexibility (d(n) l n). In particular, when d(n) gg ln n , a family of random-graph-based interconnection topologies is (with high probability) capable of stabilizing all admissible arrival rate vectors (under a bounded support assumption), while simultaneously ensuring a diminishing queueing delay, of order ln n/ d(n), as n-> ∞. Our analysis is centered around a new class of virtual-queue-based scheduling policies that rely on dynamically constructed partial matchings on the connectivity graph.},
+ acmid = {2465757},
+ address = {New York, NY, USA},
+ author = {Tsitsiklis, John N. and Xu, Kuang},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465757},
+ isbn = {978-1-4503-1900-3},
+ keyword = {asymptotics, expander graph, flexibility, partial resource pooling, queueing system, random graph},
+ link = {http://doi.acm.org/10.1145/2465529.2465757},
+ location = {Pittsburgh, PA, USA},
+ numpages = {12},
+ pages = {167--178},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Queueing System Topologies with Limited Flexibility},
+ year = {2013}
+}
+
+
+@article{Potharaju:2013:EAI:2494232.2465749,
+ abstract = {As cloud services continue to grow, a key requirement is delivering an 'always-on' experience to end users. Of the several factors affecting service availability, network failures in the hosting datacenters have received little attention. This paper presents a preliminary analysis of intra-datacenter and inter-datacenter network failures from a service perspective. We describe an empirical study analyzing and correlating network failure events over an year across multiple datacenters in a service provider. Our broader goal is to outline steps leveraging existing network mechanisms to improve end-to-end service availability.},
+ acmid = {2465749},
+ address = {New York, NY, USA},
+ author = {Potharaju, Rahul and Jain, Navendu},
+ doi = {10.1145/2494232.2465749},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {data center networks, geo-distributed services},
+ link = {http://doi.acm.org/10.1145/2494232.2465749},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {335--336},
+ publisher = {ACM},
+ title = {An Empirical Analysis of Intra- and Inter-datacenter Network Failures for Geo-distributed Services},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Kambadur:2013:PSP:2494232.2465748,
+ abstract = {As software scalability lags behind hardware parallelism, understanding scaling behavior is more important than ever. This paper demonstrates how to use Parallel Block Vector (PBV) profiles to measure the scaling properties of multithreaded programs from a new perspective: the basic block's view. Through this lens, we guide users through quick and simple methods to produce high-resolution application scaling analyses. This method requires no manual program modification, new hardware, or lengthy simulations, and captures the impact of architecture, operating systems, threading models, and inputs. We apply these techniques to a set of parallel benchmarks, and, as an example, demonstrate that when it comes to scaling, functions in an application do not behave monolithically.},
+ acmid = {2465748},
+ address = {New York, NY, USA},
+ author = {Kambadur, Melanie and Tang, Kui and Lopez, Joshua and Kim, Martha A.},
+ doi = {10.1145/2494232.2465748},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {basic block vectors, parallel software, scaling},
+ link = {http://doi.acm.org/10.1145/2494232.2465748},
+ month = {jun},
+ number = {1},
+ numpages = {2},
+ pages = {365--366},
+ publisher = {ACM},
+ title = {Parallel Scaling Properties from a Basic Block View},
+ volume = {41},
+ year = {2013}
+}
+
+
+@inproceedings{Jiang:2013:USS:2465529.2465530,
+ abstract = {In this paper, we conduct a comprehensive study of SMS spam in a large cellular network in the US. Using one year of user reported spam messages to the network carrier, we devise text clustering techniques to group associated spam messages in order to identify SMS spam campaigns and spam activities. Our analysis shows that spam campaigns can last for months and have a wide impact on the cellular network. Combining with SMS network records collected during the same time, we find that spam numbers within the same activity often exhibit strong similarity in terms of their sending patterns, tenure and geolocations. Our analysis sheds light on the intentions and strategies of SMS spammers and provides unique insights in developing better method for detecting SMS spam.},
+ acmid = {2465530},
+ address = {New York, NY, USA},
+ author = {Jiang, Nan and Jin, Yu and Skudlark, Ann and Zhang, Zhi-Li},
+ booktitle = {Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems},
+ doi = {10.1145/2465529.2465530},
+ isbn = {978-1-4503-1900-3},
+ keyword = {SMS spam, cellular network, clustering, detection},
+ link = {http://doi.acm.org/10.1145/2465529.2465530},
+ location = {Pittsburgh, PA, USA},
+ numpages = {2},
+ pages = {381--382},
+ publisher = {ACM},
+ series = {SIGMETRICS '13},
+ title = {Understanding SMS Spam in a Large Cellular Network},
+ year = {2013}
+}
+
+
+@article{Tan:2013:TAU:2494232.2465544,
+ abstract = {Scalable routing for large-scale wireless networks needs to find near shortest paths with low state on each node, preferably sub-linear with the network size. Two approaches are considered promising toward this goal: compact routing and geometric routing (geo-routing). To date the two lines of research have been largely independent, perhaps because of the distinct principles they follow. In particular, it remains unclear how they compare with each other in the worst case, despite extensive experimental results showing the superiority of one or another in particular cases. We develop a novel Trap Array topology model that provides a unified framework to uncover the limiting behavior of ten representative geo-routing algorithms. We present a series of new theoretical results, in comparison with the performance of compact routing as a baseline. In light of their pros and cons, we further design a Compact Geometric Routing (CGR) algorithm that attempts to leverage the benefits of both approaches. Theoretic analysis and simulations show the advantages of the topology model and the algorithm.},
+ acmid = {2465544},
+ address = {New York, NY, USA},
+ author = {Tan, Guang and Yin, Zhimeng and Jiang, Hongbo},
+ doi = {10.1145/2494232.2465544},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {geometric routing, scalability},
+ link = {http://doi.acm.org/10.1145/2494232.2465544},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {317--328},
+ publisher = {ACM},
+ title = {Trap Array: A Unified Model for Scalability Evaluation of Geometric Routing},
+ volume = {41},
+ year = {2013}
+}
+
+
+@article{Simatos:2013:LID:2494232.2465758,
+ abstract = {Recent advances have resulted in queue-based algorithms for medium access control which operate in a distributed fashion, and yet achieve the optimal throughput performance of centralized scheduling algorithms. However, fundamental performance bounds reveal that the "cautious" activation rules involved in establishing throughput optimality tend to produce extremely large delays, typically growing exponentially in 1/(1-r), with r the load of the system, in contrast to the usual linear growth. Motivated by that issue, we explore to what extent more "aggressive" schemes can improve the delay performance. Our main finding is that aggressive activation rules induce a lingering effect, where individual nodes retain possession of a shared resource for excessive lengths of time even while a majority of other nodes idle. Using central limit theorem type arguments, we prove that the idleness induced by the lingering effect may cause the delays to grow with 1/(1-r) at a quadratic rate. To the best of our knowledge, these are the first mathematical results illuminating the lingering effect and quantifying the performance impact. In addition extensive simulation experiments are conducted to illustrate and validate the various analytical results.},
+ acmid = {2465758},
+ address = {New York, NY, USA},
+ author = {Simatos, Florian and Bouman, Niek and Borst, Sem},
+ doi = {10.1145/2494232.2465758},
+ issn = {0163-5999},
+ issue_date = {June 2013},
+ journal = {SIGMETRICS Perform. Eval. Rev.},
+ keyword = {delay performance, distributed scheduling algorithms, heavy traffic scaling, wireless networks},
+ link = {http://doi.acm.org/10.1145/2494232.2465758},
+ month = {jun},
+ number = {1},
+ numpages = {12},
+ pages = {141--152},
+ publisher = {ACM},
+ title = {Lingering Issues in Distributed Scheduling},
+ volume = {41},
+ year = {2013}
+}
+
+
