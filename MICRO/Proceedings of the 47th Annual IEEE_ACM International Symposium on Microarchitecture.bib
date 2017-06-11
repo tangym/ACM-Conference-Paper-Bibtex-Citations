@@ -1,0 +1,1073 @@
+@inproceedings{Zhang:2014:SPQ:2742155.2742197,
+ abstract = {One of the key challenges for improving efficiency in warehouse scale computers (WSCs) is to improve server utilization while guaranteeing the quality of service (QoS) of latency-sensitive applications. To this end, prior work has proposed techniques to precisely predict performance and QoS interference to identify 'safe' application co-locations. However, such techniques are only applicable to resources shared across cores. Achieving such precise interference prediction on real-system simultaneous multithreading (SMT) architectures has been a significantly challenging open problem due to the complexity introduced by sharing resources within a core. In this paper, we demonstrate through a real-system investigation that the fundamental difference between resource sharing behaviors on CMP and SMT architectures calls for a redesign of the way we model interference. For SMT servers, the interference on different shared resources, including private caches, memory ports, as well as integer and floating-point functional units, do not correlate with each other. This insight suggests the necessity of decoupling interference into multiple resource sharing dimensions. In this work, we propose SMiTe, a methodology that enables precise performance prediction for SMT co-location on real-system commodity processors. With a set of Rulers, which are carefully designed software stressors that apply pressure to a multidimensional space of shared resources, we quantify application sensitivity and contentiousness in a decoupled manner. We then establish a regression model to combine the sensitivity and contentiousness in different dimensions to predict performance interference. Using this methodology, we are able to precisely predict the performance interference in SMT co-location with an average error of 2.80% on SPEC CPU2006 and 1.79% on Cloud Suite. Our evaluation shows that SMiTe allows us to improve the utilization of WSCs by up to 42.57% while enforcing an application's QoS requirements.},
+ acmid = {2742197},
+ address = {Washington, DC, USA},
+ author = {Zhang, Yunqi and Laurenzano, Michael A. and Mars, Jason and Tang, Lingjia},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.53},
+ isbn = {978-1-4799-6998-2},
+ keyword = {datacenter, quality of service, simultaneous multithreading, warehouse scale computer},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.53},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {406--418},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {SMiTe: Precise QoS Prediction on Real-System SMT Processors to Improve Utilization in Warehouse Scale Computers},
+ year = {2014}
+}
+
+
+@inproceedings{Lustig:2014:PSV:2742155.2742219,
+ abstract = {We present PipeCheck, a methodology and automated tool for verifying that a particular microarchitecture correctly implements the consistency model required by its architectural specification. PipeCheck adapts the notion of a "happens before" graph from architecture-level analysis techniques to the microarchitecture space. Each node in the "micro architecturally happens before" (μhb) graph represents not only a memory instruction, but also a particular location (e.g., Pipeline stage) within the microarchitecture. Architectural specifications such as "preserved program order" are then treated as propositions to be verified, rather than simply as assumptions. PipeCheck allows an architect to easily and rigorously test whether a microarchitecture is stronger than, equal in strength to, or weaker than its architecturally-specified consistency model. We also specify and analyze the behavior of common micro architectural optimizations such as speculative load reordering which technically violate formal architecture-level definitions. We evaluate PipeCheck using a library of established litmus tests on a set of open-source pipelines. Using PipeCheck, we were able to validate the largest pipeline, the Open SPARC T2, in just minutes. We also identified a bug in the O3 pipeline of the gem5 simulator.},
+ acmid = {2742219},
+ address = {Washington, DC, USA},
+ author = {Lustig, Daniel and Pellauer, Michael and Martonosi, Margaret},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.38},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.38},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {635--646},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {PipeCheck: Specifying and Verifying Microarchitectural Enforcement of Memory Consistency Models},
+ year = {2014}
+}
+
+
+@inproceedings{Nair:2014:CEP:2742155.2742161,
+ abstract = {Stacked memory modules are likely to be tightly integrated with the processor. It is vital that these memory modules operate reliably, as memory failure can require the replacement of the entire socket. To make matters worse, stacked memory designs are susceptible to newer failure modes (for example, due to faulty through-silicon vias, or TSVs) that can cause large portions of memory, such as a bank, to become faulty. To avoid data loss from large-granularity failures, the memory system may use symbol-based codes that stripe the data for a cache line across several banks (or channels). Unfortunately, such data-striping reduces memory level parallelism causing significant slowdown and higher power consumption. This paper proposes Citadel, a robust memory architecture that allows the memory system to retain each cache line within one bank, thus allowing high performance, lower power and efficiently protects the stacked memory from large-granularity failures. Citadel consists of three components, TSV-Swap, which can tolerate both faulty data-TSVs and faulty address-TSVs, Tri Dimensional Parity (3DP), which can tolerate column failures, row failures, and bank failures, and Dynamic Dual Granularity Sparing (DDS), which can mitigate permanent faults by dynamically sparing faulty memory regions either at a row granularity or at a bank granularity. Our evaluations with real-world data for DRAM failures show that Citadel provides performance and power similar to maintaining the entire cache line in the same bank, and yet provides 700x higher reliability than Chip Kill-like ECC codes.},
+ acmid = {2742161},
+ address = {Washington, DC, USA},
+ author = {Nair, Prashant J. and Roberts, David A. and Qureshi, Moinuddin K.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.57},
+ isbn = {978-1-4799-6998-2},
+ keyword = {DRAM, Error Correcting Code, Faults, Resilience, Stacked Memory, Through Silicon Vias},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.57},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {51--62},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Citadel: Efficiently Protecting Stacked Memory from Large Granularity Failures},
+ year = {2014}
+}
+
+
+@inproceedings{Volos:2014:BBM:2742155.2742210,
+ abstract = {With the end of Dennard scaling, server power has emerged as the limiting factor in the quest for more capable dataenters. Without the benefit of supply voltage scaling, it is essential to lower the energy per operation to improve server efficiency. As the industry moves to lean-core server processors, the energy bottleneck is shifting toward main memory as a chief source of server energy consumption in modern dataenters. Maximizing the energy efficiency of today's DRAM chips and interfaces requires amortizing the costly DRAM page activations over multiple row buffer accesses. This work introduces Bulk Memory Access Prediction and Streaming, or BuMP. We make the observation that a significant fraction (59-79%) of all memory accesses fall into DRAM pages with high access density, meaning that the majority of their cache blocks will be accessed within a modest time frame of the first access. Accesses to high-density DRAM pages include not only memory reads in response to load instructions, but also reads stemming from store instructions as well as memory writes upon a dirty LLC eviction. The remaining accesses go to low-density pages and virtually unpredictable reference patterns (e.g., hashed key lookups). BuMP employs a low-cost predictor to identify high-density pages and triggers bulk transfer operations upon the first read or write to the page. In doing so, BuMP enforces high row buffer locality where it is profitable, thereby reducing DRAM energy per access by 23%, and improves server throughput by 11% across a wide range of server applications.},
+ acmid = {2742210},
+ address = {Washington, DC, USA},
+ author = {Volos, Stavros and Picorel, Javier and Falsafi, Babak and Grot, Boris},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.44},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.44},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {545--557},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {BuMP: Bulk Memory Access Prediction and Streaming},
+ year = {2014}
+}
+
+
+@inproceedings{Wilkening:2014:CAV:2742155.2742185,
+ abstract = {Reliability is an important design constraint in modern microprocessors, and one of the fundamental reliability challenges is combating the effects of transient faults. This requires extensive analysis, including significant fault modelling allow architects to make informed reliability tradeoffs. Recent data shows that multi-bit transient faults are becoming more common, increasing from 0.5% of static random-access memory (SRAM) faults in 180nm to 3.9% in 22nm. Such faults are predicted to be even more prevalent in smaller technology nodes. Therefore, accurately modeling the effects of multi-bit transient faults is increasingly important to the microprocessor design process. Architecture vulnerability factor (AVF) analysis is a method to model the effects of single-bit transient faults. In this paper, we propose a method to calculate AVFs for spatial multibittransient faults (MB-AVFs) and provide insights that can help reduce the impact of these faults. First, we describe a novel multi-bit AVF analysis approach for detected uncorrected errors (DUEs) and show how to measure DUE MB-AVFs in a performance simulator. We then extend our approach to measure silent data corruption (SDC) MB-AVFs. We find that MB-AVFs are not derivable from single-bit AVFs. We also find that larger fault modes have higher MB-AVFs. Finally, we present a case study on using MB-AVF analysis to optimize processor design, yielding SDC reductions of 86% in a GPU vector register file.},
+ acmid = {2742185},
+ address = {Washington, DC, USA},
+ author = {Wilkening, Mark and Sridharan, Vilas and Li, Si and Previlon, Fritz and Gurumurthi, Sudhanva and Kaeli, David R.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.15},
+ isbn = {978-1-4799-6998-2},
+ keyword = {fault tolerance, reliability, soft errors},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.15},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {293--305},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Calculating Architectural Vulnerability Factors for Spatial Multi-bit Transient Faults},
+ year = {2014}
+}
+
+
+@inproceedings{Godycki:2014:ERF:2742155.2742194,
+ abstract = {Recent work has shown that monolithic integration of voltage regulators will be feasible in the near future, enabling reduced system cost and the potential for fine-grain voltage scaling (FGVS). More specifically, on-chip switched-capacitor regulators appear to offer an attractive trade-off in terms of integration complexity, power density, power efficiency, and response time. In this paper, we use architecture-level modeling to explore a new dynamic voltage/frequency scaling controller called the fine-grain synchronization controller (FG-SYNC+). FG-SYNC+ enables improved performance and energy efficiency at similar average power for multithreaded applications with activity imbalance. We then use circuit-level modeling to explore various approaches to organizing on-chip voltage regulation, including a new approach called reconfigurable power distribution networks (RPDNs). RPDNs allow one regulator to "borrow" energy storage from regulators associated with underutilized cores resulting in improved area/power efficiency and faster response times. We evaluate FG-SYNC+ and RPDN using a vertically integrated research methodology, and our results demonstrate a 10 -- 50% performance and 10 -- 70% energy-efficiency improvement on the majority of the applications studied compared to no FGVS, yet RPDN uses 40% less area compared to a more traditional per-core regulation scheme.},
+ acmid = {2742194},
+ address = {Washington, DC, USA},
+ author = {Godycki, Waclaw and Torng, Christopher and Bukreyev, Ivan and Apsel, Alyssa and Batten, Christopher},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.52},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.52},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {381--393},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Enabling Realistic Fine-Grain Voltage Scaling with Reconfigurable Power Distribution Networks},
+ year = {2014}
+}
+
+
+@proceedings{Prvulovic:2015:2830772,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4034-2},
+ location = {Waikiki, Hawaii},
+ publisher = {ACM},
+ title = {MICRO-48: Proceedings of the 48th International Symposium on Microarchitecture},
+ year = {2015}
+}
+
+
+@inproceedings{Kim:2014:MSD:2742155.2742204,
+ abstract = {GPUs are being widely used to accelerate different workloads and multi-GPU systems can provide higher performance with multiple discrete GPUs interconnected together. However, there are two main communication bottlenecks in multi-GPU systems -- accessing remote GPU memory and the communication between GPU and the host CPU. Recent advances in multi-GPU programming, including unified virtual addressing and unified memory from NVIDIA, has made programming simpler but the costly remote memory access still makes multi-GPU programming difficult. In order to overcome the communication limitations, we propose to leverage the memory network based on hybrid memory cubes (HMCs) to simplify multi-GPU memory management and improve programmability. In particular, we propose scalable kernel execution (SKE) where multiple GPUs are viewed as a single virtual GPU as a single kernel can be executed across multiple GPUs without modifying the source code. To fully enable the benefits of SKE, we explore alternative memory network designs in a multi-GPU system. We propose a GPU memory network (GMN) to simplify data sharing between the discrete GPUs while a CPU memory network (CMN) is used to simplify data communication between the host CPU and the discrete GPUs. These two types of networks can be combined to create a unified memory network (UMN) where the communication bottleneck in multi-GPU can be significantly minimized as both the CPU and GPU share the memory network. We evaluate alternative network designs and propose a sliced flattened butterfly topology for the memory network that scales better than previously proposed alternative topologies by removing local HMC channels. In addition, we propose an overlay network organization for unified memory network to minimize the latency for CPU access while providing high bandwidth for the GPUs. We evaluate trade-offs between the different memory network organization and show how UMN significantly reduces the communication bottleneck in multi-GPU systems.},
+ acmid = {2742204},
+ address = {Washington, DC, USA},
+ author = {Kim, Gwangsun and Lee, Minseok and Jeong, Jiyun and Kim, John},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.55},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Flattened butterfly, Hybrid Memory Cubes, Memory network, Multi-GPU},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.55},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {484--495},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Multi-GPU System Design with Memory Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:CUC:2742155.2742177,
+ abstract = {As we increasingly rely on computers to process and manage our personal data, safeguarding sensitive information from malicious hackers is a fast growing concern. Among many forms of information leakage, covert timing channels operate by establishing an illegitimate communication channel between two processes and through transmitting information via timing modulation, thereby violating the underlying system's security policy. Recent studies have shown the vulnerability of popular computing environments, such as cloud computing, to these covert timing channels. In this work, we propose a new micro architecture-level framework, CC-Hunter, that detects the possible presence of covert timing channels on shared hardware. Our experiments demonstrate that Chanter is able to successfully detect different types of covert timing channels at varying bandwidths and message patterns.},
+ acmid = {2742177},
+ address = {Washington, DC, USA},
+ author = {Chen, Jie and Venkataramani, Guru},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.42},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Algorithms, Covert timing channels, Detection, Shared hardware},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.42},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {216--228},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {CC-Hunter: Uncovering Covert Timing Channels on Shared Processor Hardware},
+ year = {2014}
+}
+
+
+@inproceedings{Miguel:2014:LVA:2742155.2742169,
+ abstract = {Approximate computing explores opportunities that emerge when applications can tolerate error or inexactness. These applications, which range from multimedia processing to machine learning, operate on inherently noisy and imprecise data. We can trade-off some loss in output value integrity for improved processor performance and energy-efficiency. As memory accesses consume substantial latency and energy, we explore load value approximation, a micro architectural technique to learn value patterns and generate approximations for the data. The processor uses these approximate data values to continue executing without incurring the high cost of accessing memory, removing load instructions from the critical path. Load value approximation can also inhibit approximated loads from accessing memory, resulting in energy savings. On a range of PARSEC workloads, we observe up to 28.6% speedup (8.5% on average) and 44.1% energy savings (12.6% on average), while maintaining low output error. By exploiting the approximate nature of applications, we draw closer to the ideal latency and energy of accessing memory.},
+ acmid = {2742169},
+ address = {Washington, DC, USA},
+ author = {Miguel, Joshua San and Badr, Mario and Jerger, Natalie Enright},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.22},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.22},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {127--139},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Load Value Approximation},
+ year = {2014}
+}
+
+
+@inproceedings{Bertran:2014:VNM:2742155.2742193,
+ abstract = {Voltage noise characterization is an essential aspect of optimizing the shipped voltage of high-end processor based systems. Voltage noise, i.e. Variations in the supply voltage due to transient fluctuations on current, can negatively affect the robustness of the design if it is not properly characterized. Modeling and estimation of voltage noise in a pre-silicon setting is typically inadequate because it is difficult to model the chip/system packaging and power distribution network (PDN) parameters very precisely. Therefore, a systematic, direct measurement-based characterization of voltage noise in a post-silicon setting is mandatory in validating the robustness of the design. In this paper, we present a direct measurement-based voltage noise characterization of a state-of-the-art mainframe class multicoreprocessor. We develop a systematic methodology to generate noise stress marks. We study the sensitivity of noise in relation to the different parameters involved in noise generation: (a) stimulus sequence frequency, (b) supply current delta, (c) number of noise events and, (d) degree of alignment or synchronization of events in a multi-core context. By sensing per-core noise in a multi-core chip, we characterize the noise propagation across the cores. This insight opens up new opportunities for noise mitigation via workload mappings and dynamic voltage guard banding.},
+ acmid = {2742193},
+ address = {Washington, DC, USA},
+ author = {Bertran, Ramon and Buyuktosunoglu, Alper and Bose, Pradip and Slegel, Timothy J. and Salem, Gerard and Carey, Sean and Rizzolo, Richard F. and Strach, Thomas},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.12},
+ isbn = {978-1-4799-6998-2},
+ keyword = {dI/dt, dynamic guardbanding, inductive noise, multi-core hardware measurements, noise-aware workload mapping, stressmark generation, voltage droop},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.12},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {368--380},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Voltage Noise in Multi-Core Processors: Empirical Characterization and Optimization Opportunities},
+ year = {2014}
+}
+
+
+@inproceedings{Fuchs:2014:LMP:2742155.2742209,
+ abstract = {Memory prefetchers predict streams of memory addresses that are likely to be accessed by recurring invocations of a static instruction. They identify an access pattern and prefetch the data that is expected to be accessed by pending invocations of the said instruction. A stream, or a prefetch context, is thus typically composed of a trigger instruction and an access pattern. Recurring code blocks, such as loop iterations may, however, include multiple memory instructions. Accurate data prefetching for recurring code blocks thus requires tight coordination across multiple prefetch contexts. This paper presents the code block working set (CBWS) prefetcher, which captures the working set of complete loop iterations using a single context. The prefetcher is based on the observation that code block working sets are highly interdependent across tight loop iterations. Using automated annotation of tight loops, the prefetcher tracks and predicts the working sets of complete loop iterations. The proposed CBWS prefetcher is evaluated using a set of benchmarks from the SPEC CPU2006, PARSEC, SPLASH and Parboil suites. Our evaluation shows that the CBWS prefetcher improves the performance of existing prefetchers when dealing with tight loops. For example, we show that the integration of the CBWS prefetcher with the state-of-the-art spatial memory streaming (SMS) prefetcher achieves an average speedup of 1.16× (up to 4×), compared to the standalone SMS prefetcher.},
+ acmid = {2742209},
+ address = {Washington, DC, USA},
+ author = {Fuchs, Adi and Mannor, Shie and Weiser, Uri and Etsion, Yoav},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.27},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.27},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {533--544},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Loop-Aware Memory Prefetching Using Code Block Working Sets},
+ year = {2014}
+}
+
+
+@proceedings{Flautner:2014:2742155,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {Washington, DC, USA},
+ isbn = {978-1-4799-6998-2},
+ issn = {1072-4451},
+ location = {Cambridge, United Kingdom},
+ publisher = {IEEE Computer Society},
+ title = {MICRO-47: Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2014}
+}
+
+
+@inproceedings{Laurenzano:2014:PCA:2742155.2742212,
+ abstract = {Rampant dynamism due to load fluctuations, co-runner changes, and varying levels of interference poses a threat to application quality of service (QoS) and has limited our ability to allow co-locations in modern warehouse scale computers (WSCs). Instruction set features such as the non-temporal memory access hints found in modern ISAs (both ARM and x86) may be useful in mitigating these effects. However, despite the challenge of this dynamism and the availability of an instruction set mechanism that might help address the problem, a key capability missing in the system software stack in modern WSCs is the ability to dynamically transform (and re-transform) the executing application code to apply these instruction set features when necessary. In this work we introduce protean code, a novel approach for enacting arbitrary compiler transformations at runtime for native programs running on commodity hardware with negligible (<1%) overhead. The fundamental insight behind the underlying mechanism of protean code is that, instead of maintaining full control throughout the program's execution as with traditional dynamic optimizers, protean code allows the original binary to execute continuously and diverts control flow only at a set of virtualized points, allowing rapid and seamless rerouting to the new code variants. In addition, the protean code compiler embeds IR with high-level semantic information into the program, empowering the dynamic compiler to perform rich analysis and transformations online with little overhead. Using a fully functional protean code compiler and runtime built on LLVM, we design PC3D, Protean Code for Cache Contention in Datacenters. PC3D dynamically employs non-temporal access hints to achieve utilization improvements of up to 2.8x (1.5x on average) higher than state-of-the-art contention mitigation runtime techniques at a QoS target of 98%.},
+ acmid = {2742212},
+ address = {Washington, DC, USA},
+ author = {Laurenzano, Michael A. and Zhang, Yunqi and Tang, Lingjia and Mars, Jason},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.21},
+ isbn = {978-1-4799-6998-2},
+ keyword = {cache, compiler, datacenter, dynamic compiler, optimization, resource sharing, warehouse scale computer},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.21},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {558--570},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Protean Code: Achieving Near-Free Online Code Transformations for Warehouse Scale Computers},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:FSH:2742155.2742191,
+ abstract = {As shared last level caches are widely used in many-core CMPs to boost system performance, partitioning a large shared cache among multiple concurrently running applications becomes increasingly important in order to reduce destructive interference. However, while recent works start to show the promise of using replacement-based partitioning schemes, such existing schemes either suffer from the severe associativity degradation when the number of partitions is high, or lack the ability to precisely partition the whole cache which leads to decreased resource efficiency. In this paper, we propose Futility Scaling (FS), a novel replacement-based cache partitioning scheme that can precisely partition the whole cache while still maintaining high associativity even with a large number of partitions. The futility of a cache line represents the uselessness of this line to application performance and can be ranked in different ways by various policies, e.g., LRU and LFU. The idea of FS is to control the size of a partition by properly scaling the futility of its cache lines. We study the properties of FS on both associativity and sizing in an analytical framework, and present a feedback-based implementation of FS that incurs little overhead in practice. Simulation results show that, FS improves performance over previously proposed Vantage and Prism by up to 6.0% and 13.7%, respectively.},
+ acmid = {2742191},
+ address = {Washington, DC, USA},
+ author = {Wang, Ruisheng and Chen, Lizhong},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.46},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.46},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {356--367},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Futility Scaling: High-Associativity Cache Partitioning},
+ year = {2014}
+}
+
+
+@inproceedings{Lee:2014:RFA:2742155.2742181,
+ abstract = {CPU architects perform a series of slow timing simulations to explore large processor design space. To minimize the exploration overhead, architects make their best efforts to accelerate each simulation step as well as reduce the number of simulations by predicting the exact performance of designs. However, the existing methods are either too slow to overcome the large number of design points, or inaccurate to safely substitute extra simulation steps with performance predictions. In this paper, we propose RpStacks, a fast and accurate processor design space exploration method to 1) identify the current design point's key performance bottlenecks and 2) estimate the exact impacts of latency adjustments without launching an extra step of simulations. The key idea is to selectively collect the information about performance-critical events from a single simulation, construct a small number of event stacks describing the latency of distinctive execution paths, and estimate the overall performance as well as stall-event composition using the stacks. Our proposed method significantly outperforms the existing design space exploration methods in terms of both the latency and the accuracy. For investigating 1,000 design points, RpStacks achieves 26 times speedup on average over a variety of applications while showing high accuracy, when compared to a popular x86 timing simulator.},
+ acmid = {2742181},
+ address = {Washington, DC, USA},
+ author = {Lee, Jaewon and Jang, Hanhwi and Kim, Jangwoo},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.26},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Design space exploration, Performance analysis, Simulation},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.26},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {255--267},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {RpStacks: Fast and Accurate Processor Design Space Exploration Using Representative Stall-Event Stacks},
+ year = {2014}
+}
+
+
+@proceedings{Farrens:2013:2540708,
+ abstract = {The program includes 39 papers selected from 239 submissions. The program committee (PC) of 40 distinguished experts used a two-round review process. In the first round, all papers received 2 reviews from PC members and one review from an external expert. The 169 papers with at least one review with a positive score for overall merit were promoted to the second round. In the second round, papers received at least one review from a PC member and one review from an external expert, for a minimum total of 5 reviews per paper. Nevertheless, we solicited up to 7 reviews for some papers in order to provide additional expert opinions for the selection process. Overall, 363 reviewers submitted 1,105 paper reviews.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2638-4},
+ location = {Davis, California},
+ publisher = {ACM},
+ title = {MICRO-46: Proceedings of the 46th Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2013}
+}
+
+
+@inproceedings{Kim:2014:AIA:2742155.2742164,
+ abstract = {Although GPGPUs are traditionally used to accelerate workloads with regular control and memory-access structure, recent work has shown that GPGPUs can also achieve significant speedups on more irregular algorithms. Data-driven implementations of irregular algorithms are algorithmically more efficient than topology-driven implementations, but issues with memory contention and memory-access irregularity can make the former perform worse in certain cases. In this paper, we propose a novel fine-grain hardware work list for GPGPUs that addresses the weaknesses of data-driven implementations. We detail multiple work redistribution schemes of varying complexity that can be employed to improve load balancing. Furthermore, a virtualization mechanism supports seamless work spilling to memory. A convenient shared work list software API is provided to simplify using our proposed mechanisms when implementing irregular algorithms. We evaluate challenging irregular algorithms from the Lonestar GPU benchmark suite on a cycle-level simulator. Our findings show that data-driven implementations running on a GPGPU using the hardware work list outperform highly optimized software-based implementations of these benchmarks running on a baseline GPGPU with speedups ranging from 1.2 -- 2.4× and marginal area overhead.},
+ acmid = {2742164},
+ address = {Washington, DC, USA},
+ author = {Kim, Ji and Batten, Christopher},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.24},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.24},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {75--87},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Accelerating Irregular Algorithms on GPGPUs Using Fine-Grain Hardware Worklists},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:PEO:2742155.2742165,
+ abstract = {GPU is often equipped with complex memory systems, including global memory, texture memory, shared memory, constant memory, and various levels of cache. Where to place the data is important for the performance of a GPU program. However, the decision is difficult for a programmer to make because of architecture complexity and the sensitivity of suitable data placements to input and architecture changes. This paper presents PORPLE, a portable data placement engine that enables a new way to solve the data placement problem. PORPLE consists of a mini specification language, a source-to-source compiler, and a runtime data placer. The language allows an easy description of a memory system; the compiler transforms a GPU program into a form amenable to runtime profiling and data placement; the placer, based on the memory description and data access patterns, identifies on the fly appropriate placement schemes for data and places them accordingly. PORPLE is distinctive in being adaptive to program inputs and architecture changes, being transparent to programmers (in most cases), and being extensible to new memory architectures. Our experiments on three types of GPU systems show that PORPLE is able to consistently find optimal or near-optimal placement despite the large differences among GPU architectures and program inputs, yielding up to 2.08X (1.59X on average) speedups on a set of regular and irregular GPU benchmarks.},
+ acmid = {2742165},
+ address = {Washington, DC, USA},
+ author = {Chen, Guoyang and Wu, Bo and Li, Dong and Shen, Xipeng},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.20},
+ isbn = {978-1-4799-6998-2},
+ keyword = {GPU, cache, compiler, data placement, hardware specification language},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.20},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {88--100},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {PORPLE: An Extensible Optimizer for Portable Data Placement on GPU},
+ year = {2014}
+}
+
+
+@inproceedings{Lee:2014:EDS:2742155.2742166,
+ abstract = {Data-parallel architectures must provide efficient support for complex control-flow constructs to support sophisticated applications coded in modern single-program multiple-data languages. As these architectures have wide data paths that process a single instruction across parallel threads, a mechanism is needed to track and sequence threads as they traverse potentially divergent control paths through the program. The design space for divergence management ranges from software-only approaches where divergence is explicitly managed by the compiler, to hardware solutions where divergence is managed implicitly by the micro architecture. In this paper, we explore this space and propose a new predication-based approach for handling control-flow structures in data-parallel architectures. Unlike prior predication algorithms, our new compiler analyses and hardware instructions consider the commonality of predication conditions across threads to improve efficiency. We prototype our algorithms in a production compiler and evaluate the tradeoffs between software and hardware divergence management on current GPU silicon. We show that our compiler algorithms make a predication-only architecture competitive in performance to one with hardware support for tracking divergence.},
+ acmid = {2742166},
+ address = {Washington, DC, USA},
+ author = {Lee, Yunsup and Grover, Vinod and Krashinsky, Ronny and Stephenson, Mark and Keckler, Stephen W. and Asanovi\'{c}, Krste},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.48},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.48},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {101--113},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Exploring the Design Space of SPMD Divergence Management on Data-Parallel Architectures},
+ year = {2014}
+}
+
+
+@inproceedings{Jerger:2014:NAS:2742155.2742202,
+ abstract = {Silicon interposer technology ("2.5D" stacking) enables the integration of multiple memory stacks with a processor chip, thereby greatly increasing in-package memory capacity while largely avoiding the thermal challenges of 3D stacking DRAM on the processor. Systems employing interposers for memory integration use the interposer to provide point-to-point interconnects between chips. However, these interconnects only utilize a fraction of the interposer's overall routing capacity, and in this work we explore how to take advantage of this otherwise unused resource. We describe a general approach for extending the architecture of a network-on-chip (NoC) to better exploit the additional routing resources of the silicon interposer. We propose an asymmetric organization that distributes the NoC across both a multi-core chip and the interposer, where each sub-network is different from the other in terms of the traffic types, topologies, the use or non-use of concentration, direct vs. Indirect network organizations, and other network attributes. Through experimental evaluation, we show that exploiting the otherwise unutilized routing resources of the interposer can lead to significantly better performance.},
+ acmid = {2742202},
+ address = {Washington, DC, USA},
+ author = {Jerger, Natalie Enright and Kannan, Ajaykumar and Li, Zimo and Loh, Gabriel H.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.61},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.61},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {458--470},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {NoC Architectures for Silicon Interposer Systems: Why Pay for More Wires when You Can Get Them (from Your Interposer) for Free?},
+ year = {2014}
+}
+
+
+@inproceedings{Khudia:2014:HSC:2742155.2742187,
+ abstract = {A growing number of applications from various domains such as multimedia, machine learning and computer vision are inherently fault tolerant. However, for these soft workloads, not all computations are fault tolerant (e.g., a loop trip count). In this paper, we propose a compiler-based approach that takes advantage of soft computations inherent in the aforementioned class of workloads to bring down the cost of software-only transient fault detection. The technique works by identifying a small subset of critical variables that are necessary for correct macro-operation of the program. Traditional duplication and comparison are used to protect these variables. For the remaining variables and temporaries that only affect the micro-operation of the program, strategic expected value checks are inserted into the code. Intuitively, a computation-chain result near the expected value is either correct or close enough to the correct result so that it does not matter for non-critical variables. Overall, the proposed solution has, on average, only 19.5% performance overhead and reduces the number of silent data corruptions from 15% down to 7.3% and user-visible silent data corruptions from 3.4% down to 1.2% in comparison to an unmodified application. This unacceptable silent data corruption rate is even lower than a traditional full duplication scheme that has, on average, 57% overhead.},
+ acmid = {2742187},
+ address = {Washington, DC, USA},
+ author = {Khudia, Daya Shanker and Mahlke, Scott},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.33},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Compiler Analysis, Soft Errors},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.33},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {319--330},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Harnessing Soft Computations for Low-Budget Fault Tolerance},
+ year = {2014}
+}
+
+
+@inproceedings{Ahn:2014:MVP:2742155.2742195,
+ abstract = {Although time-sharing CPUs has been an essential technique to virtualize CPUs for threads and virtual machines, most of the commercial operating systems and hypervisors maintain relatively coarse-grained time slices to mitigate the costs of context switching. However, the proliferation of system virtualization poses a new challenge for the coarse-grained time sharing techniques, since operating systems are running on virtual CPUs. The current system stack was designed under the assumption that operating systems can seize CPU resources at any moment. However, for the guest operating system on a virtual machine (VM), such assumption cannot be guaranteed, since virtual CPUs of VMs share limited physical cores. Due to the time-sharing of physical cores, the execution of a virtual CPU is not contiguous, with a gap between the virtual and real time spaces. Such a virtual time discontinuity problem leads to significant inefficiency for lock and interrupt handling, which rely on the immediate availability of CPUs whenever the operating system requires computation. This paper investigates the impact of virtual time discontinuity problem for lock and interrupt handling in guest operating systems. To reduce the gap between virtual and physical time spaces, the paper proposes to shorten time slices for CPU virtualization to reduce scheduling latencies of virtual CPUs. However, shortening time slices may lead to the increased overhead of context switching costs across virtual machines. We explore the design space of architectural solutions to reduce context switching overheads with low-cost context-aware cache insertion policies combined with a state-of-the-art context prefetcher.},
+ acmid = {2742195},
+ address = {Washington, DC, USA},
+ author = {Ahn, Jeongseob and Park, Chang Hyun and Huh, Jaehyuk},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.49},
+ isbn = {978-1-4799-6998-2},
+ keyword = {context prefetch, context preservation, virtual time discontinuity, virtualization},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.49},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {394--405},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Micro-Sliced Virtual Processors to Hide the Effect of Discontinuous CPU Availability for Consolidated Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Gandhi:2014:EMV:2742155.2742173,
+ abstract = {Virtualization provides value for many workloads, but its cost rises for workloads with poor memory access locality. This overhead comes from translation look aside buffer (TLB) misses where the hardware performs a 2D page walk (up to 24 memory references on x86-64) rather than a native TLB miss (up to only 4 memory references). The first dimension translates guest virtual addresses to guest physical addresses, while the second translates guest physical addresses to host physical addresses. This paper proposes new hardware using direct segments with three new virtualized modes of operation that significantly speed-up virtualized address translation. Further, this paper proposes two novel techniques to address important limitations of original direct segments. First, self-ballooning reduces fragmentation in physical memory, and addresses the architectural input/output (I/O) gap in x86-64. Second, an escape filter provides alternate translations for exceptional pages within a direct segment (e.g., Physical pages with permanent hard faults). We emulate the proposed hardware and prototype the software in Linux with KVM on x86-64. One mode --- VMM Direct --- reduces address translation overhead to near-native without guest application or OS changes (2% slower than native on average), while a more aggressive mode --- Dual Direct --- on big-memory workloads performs better-than-native with near-zero translation overhead.},
+ acmid = {2742173},
+ address = {Washington, DC, USA},
+ author = {Gandhi, Jayneel and Basu, Arkaprava and Hill, Mark D. and Swift, Michael M.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.37},
+ isbn = {978-1-4799-6998-2},
+ keyword = {translation lookaside buffer, virtual machines, virtual memory, virtualization},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.37},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {178--189},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Efficient Memory Virtualization: Reducing Dimensionality of Nested Page Walks},
+ year = {2014}
+}
+
+
+@inproceedings{Lee:2014:LMN:2742155.2742163,
+ abstract = {Recent work has explored using higher level languages to improve programmer productivity on GPUs. These languages often utilize high level computation patterns (e.g., Map and Reduce) that encode parallel semantics to enable automatic compilation to GPU kernels. However, the problem of efficiently mapping patterns to GPU hardware becomes significantly more difficult when the patterns are nested, which is common in non-trivial applications. To address this issue, we present a general analysis framework for automatically and efficiently mapping nested patterns onto GPUs. The analysis maps nested patterns onto a logical multidimensional domain and parameterizes the block size and degree of parallelism in each dimension. We then add GPU-specific hard and soft constraints to prune the space of possible mappings and select the best mapping. We also perform multiple compiler optimizations that are guided by the mapping to avoid dynamic memory allocations and automatically utilize shared memory within GPU kernels. We compare the performance of our automatically selected mappings to hand-optimized implementations on multiple benchmarks and show that the average performance gap on 7 out of 8 benchmarks is 24%. Furthermore, our mapping strategy outperforms simple 1D mappings and existing 2D mappings by up to 28.6x and 9.6x respectively.},
+ acmid = {2742163},
+ address = {Washington, DC, USA},
+ author = {Lee, HyoukJoong and Brown, Kevin J. and Sujeeth, Arvind K. and Rompf, Tiark and Olukotun, Kunle},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.23},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.23},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {63--74},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Locality-Aware Mapping of Nested Parallel Patterns on GPUs},
+ year = {2014}
+}
+
+
+@inproceedings{Bacha:2014:UEF:2742155.2742186,
+ abstract = {Low-voltage computing is emerging as a promising energy-efficient solution to power-constrained environments. Unfortunately, low-voltage operation presents significant reliability challenges, including increased sensitivity to static and dynamic variability. To prevent errors, safety guard bands can be added to the supply voltage. While these guard bands are feasible at higher supply voltages, they are prohibitively expensive at low voltages, to the point of negating most of the energy savings. Voltage speculation techniques have been proposed to dynamically reduce voltage margins. Most require additional hardware to be added to the chip to correct or prevent timing errors caused by excessively aggressive speculation. This paper presents a mechanism for safely guiding voltage speculation using direct feedback from ECC-protected cache lines. We conduct extensive testing of an Intel Itanium processor running at low voltages. We find that as voltage margins are reduced, certain ECC-protected cache lines consistently exhibit correctable errors. We propose a hardware mechanism for continuously probing these cache lines to fine tune supply voltage at core granularity within a chip. Moreover, we demonstrate that this mechanism is sufficiently sensitive to detect and adapt to voltage noise caused by fluctuations in chip activity. We evaluate a proof-of-concept implementation of this mechanism in an Itanium-based server. We show that this solution lowers supply voltage by 18% on average, reducing power consumption by an average of 33% while running a mix of benchmark applications.},
+ acmid = {2742186},
+ address = {Washington, DC, USA},
+ author = {Bacha, Anys and Teodorescu, Radu},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.54},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.54},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {306--318},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Using ECC Feedback to Guide Voltage Speculation in Low-Voltage Processors},
+ year = {2014}
+}
+
+
+@inproceedings{Sethia:2014:EDT:2742155.2742220,
+ abstract = {GPUs use thousands of threads to provide high performance and efficiency. In general, if one thread of a kernel uses one of the resources (compute, bandwidth, data cache) more heavily, there will be significant contention for that resource due to the large number of identical concurrent threads. This contention will eventually saturate the performance of the kernel due to contention for the bottleneck resource, while at the same time leaving other resources underutilized. To overcome this problem, a runtime system that can tune the hardware to match the characteristics of a kernel can effectively mitigate the imbalance between resource requirements of kernels and the hardware resources present on the GPU. We propose Equalizer, a low overhead hardware runtime system, that dynamically monitors the resource requirements of a kernel and manages the amount of onchip concurrency, core frequency and memory frequency to adapt the hardware to best match the needs of the running kernel. Equalizer provides efficiency in two modes. Firstly, it can save energy without significant performance degradation by throttling under-utilized resources. Secondly, it can boost bottleneck resources to reduce contention and provide higher performance without significant energy increase. Across a spectrum of 27 kernels, Equalizer achieves 15% savings in energy mode and 22% speedup in performance mode.},
+ acmid = {2742220},
+ address = {Washington, DC, USA},
+ author = {Sethia, Ankit and Mahlke, Scott},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.16},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Dynamic Voltage and Frequency Scaling, GPGPUs, Resource Utilization, Runtime System},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.16},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {647--658},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Equalizer: Dynamic Tuning of GPU Resources for Efficient Execution},
+ year = {2014}
+}
+
+
+@inproceedings{Evtyushkin:2014:IFA:2742155.2742175,
+ abstract = {We consider the problem of how to provide an execution environment where the application's secrets are safe even in the presence of malicious system software layers. We propose Iso-X --- a flexible, fine-grained hardware-supported framework that provides isolation for security-critical pieces of an application such that they can execute securely even in the presence of untrusted system software. Isolation in Iso-X is achieved by creating and dynamically managing compartments to host critical fragments of code and associated data. Iso-X provides fine-grained isolation at the memory-page level, flexible allocation of memory, and a low-complexity, hardware-only trusted computing base. Iso-X requires minimal additional hardware, a small number of new ISA instructions to manage compartments, and minimal changes to the operating system which need not be in the trusted computing base. The run-time performance overhead of Iso-X is negligible and even the overhead of creating and destroying compartments is modest. Iso-X offers higher memory flexibility than the recently proposed SGX design from Intel, allowing both fluid partitioning of the vailable memory space and dynamic growth of compartments. An FPGA implementation of Iso-X runtime mechanisms shows a negligible impact on the processor cycle time.},
+ acmid = {2742175},
+ address = {Washington, DC, USA},
+ author = {Evtyushkin, Dmitry and Elwell, Jesse and Ozsoy, Meltem and Ponomarev, Dmitry and Ghazaleh, Nael Abu and Riley, Ryan},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.25},
+ isbn = {978-1-4799-6998-2},
+ keyword = {hardware security, isolated execution},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.25},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {190--202},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Iso-X: A Flexible Architecture for Hardware-Managed Isolated Execution},
+ year = {2014}
+}
+
+
+@inproceedings{Ding:2014:CSO:2742155.2742213,
+ abstract = {Many prior compiler-based optimization schemes focused exclusively on cache data locality. However, cache locality is only one part of the overall performance of applications running on emerging multicores or manycores. For example, memory stalls could constitute a very large fraction of execution time even in cache-optimized codes, and one of the main reasons for this is lack of memory-level parallelism. Motivated by this, we propose a compiler-based Bank-Level Parallelism (BLP) optimization scheme that uses loop tile scheduling. More specifically, we first use Cache Miss Equations to predict where the last-level cache miss will happen in each tile, and then identify the set of memory banks that will be accessed in each tile. Using this information, two tile scheduling algorithms are proposed to maximize BLP, each targeting a different scenario. We further discuss how our compiler-based scheme can be enhanced to consider memory controller-level parallelism and row-buffer locality. Our experimental evaluation using 11 multithreaded applications shows that the proposed BLP optimization can improve average BLP by 17.1% on average, resulting in a 9.2% reduction in average memory access latency. Furthermore, considering memory controller-level parallelism and row-buffer locality (in addition to BLP) takes our average improvement in memory access latency to 22.2%.},
+ acmid = {2742213},
+ address = {Washington, DC, USA},
+ author = {Ding, Wei and Guttman, Diana and Kandemir, Mahmut},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.34},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.34},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {571--582},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Compiler Support for Optimizing Memory Bank-Level Parallelism},
+ year = {2014}
+}
+
+
+@inproceedings{Callan:2014:PMM:2742155.2742179,
+ abstract = {This paper presents a new metric, which we call Signal Available to Attacker (SAVAT), that measures the side channel signal created by a specific single-instruction difference in program execution, i.e. The amount of signal made available to a potential attacker who wishes to decide whether the program has executed instruction/event A or instruction/event B. We also devise a practical methodology for measuring SAVAT in real systems using only user-level access permissions and common measurement equipment. Finally, we perform a case study where we measure electromagnetic (EM) emanations SAVAT among 11 different instructions for three different laptop systems. Our findings from these experiments confirm key intuitive expectations, e.g. That SAVAT between on-chip instructions and off-chip memory accesses tends to be higher than between two on-chip instructions. However, we find that particular instructions, such as integer divide, have much higher SAVAT than other instructions in the same general category (integer arithmetic), and that last-level-cache hits and misses have similar (high) SAVAT. Overall, we confirm that our new metric and methodology can help discover the most vulnerable aspects of a processor architecture or a program, and thus inform decision-making about how to best manage the overall side channel vulnerability of a processor, a program, or a system.},
+ acmid = {2742179},
+ address = {Washington, DC, USA},
+ author = {Callan, Robert and Zaji\'{c}, Alenka and Prvulovic, Milos},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.39},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.39},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {242--254},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {A Practical Methodology for Measuring the Side-Channel Signal Available to the Attacker for Instruction-Level Events},
+ year = {2014}
+}
+
+
+@inproceedings{Jeloka:2014:HHS:2742155.2742203,
+ abstract = {This paper proposes a novel 3D switch, called 'Hi-Rise', that employs high-radix switches to efficiently route data across multiple stacked layers of dies. The proposed interconnect is hierarchical and composed of two switches per silicon layer and a set of dedicated layer to layer channels. However, a hierarchical 3D switch can lead to unfair arbitration across different layers. To address this, the paper proposes a unique class-based arbitration scheme that is fully integrated into the switching fabric, and is easy to implement. It makes the 3D hierarchical switch's fairness comparable to that of a flat 2D switch with least recently granted arbitration. The 3D switch is evaluated for different radices, number of stacked layers, and different 3D integration technologies. A 64-radix, 128-bit width, 4-layer Hi-Rise evaluated in a 32nm technology has a throughput of 10.65 Tbps for uniform random traffic. Compared to a 2D design this corresponds to a 15% improvement in throughput, a 33% area reduction, a 20% latency reduction, and a 38% energy per transaction reduction.},
+ acmid = {2742203},
+ address = {Washington, DC, USA},
+ author = {Jeloka, Supreet and Das, Reetuparna and Dreslinski, Ronald G. and Mudge, Trevor and Blaauw, David},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.45},
+ isbn = {978-1-4799-6998-2},
+ keyword = {3D Integration, Arbitration, High-Radix Switch},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.45},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {471--483},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Hi-Rise: A High-Radix Switch for 3D Integration with Single-cycle Arbitration},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:DMS:2742155.2742217,
+ abstract = {Many companies are deploying services, either for consumers or industry, which are largely based on machine-learning algorithms for sophisticated processing of large amounts of data. The state-of-the-art and most popular such machine-learning algorithms are Convolutional and Deep Neural Networks (CNNs and DNNs), which are known to be both computationally and memory intensive. A number of neural network accelerators have been recently proposed which can offer high computational capacity/area ratio, but which remain hampered by memory accesses. However, unlike the memory wall faced by processors on general-purpose workloads, the CNNs and DNNs memory footprint, while large, is not beyond the capability of the on-chip storage of a multi-chip system. This property, combined with the CNN/DNN algorithmic characteristics, can lead to high internal bandwidth and low external communications, which can in turn enable high-degree parallelism at a reasonable area cost. In this article, we introduce a custom multi-chip machine-learning architecture along those lines. We show that, on a subset of the largest known neural network layers, it is possible to achieve a speedup of 450.65x over a GPU, and reduce the energy by 150.31x on average for a 64-chip system. We implement the node down to the place and route at 28nm, containing a combination of custom storage and computational units, with industry-grade interconnects.},
+ acmid = {2742217},
+ address = {Washington, DC, USA},
+ author = {Chen, Yunji and Luo, Tao and Liu, Shaoli and Zhang, Shijin and He, Liqiang and Wang, Jia and Li, Ling and Chen, Tianshi and Xu, Zhiwei and Sun, Ninghui and Temam, Olivier},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.58},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.58},
+ location = {Cambridge, United Kingdom},
+ numpages = {14},
+ pages = {609--622},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {DaDianNao: A Machine-Learning Supercomputer},
+ year = {2014}
+}
+
+
+@inproceedings{Gope:2014:BBP:2742155.2742208,
+ abstract = {Prior research in neutrally-inspired perceptron predictors and Geometric History Length-based TAGE predictors has shown significant improvements in branch prediction accuracy by exploiting correlations in long branch histories. However, not all branches in the long branch history provide useful context. Biased branches resolve as either taken or not-taken virtually every time. Including them in the branch predictor's history does not directly contribute any useful information, but all existing history-based predictors include them anyway. In this work, we propose Bias-Free branch predictors theatre structured to learn correlations only with non-biased conditional branches, aka. Branches whose dynamic behaviorvaries during a program's execution. This, combined with arecency-stack-like management policy for the global history register, opens up the opportunity for a modest history length to include much older and much richer context to predict future branches more accurately. With a 64KB storage budget, the Bias-Free predictor delivers 2.49 MPKI (mispredictions per1000 instructions), improves by 5.32% over the most accurate neural predictor and achieves comparable accuracy to that of the TAGE predictor with fewer predictor tables or better accuracy with same number of tables. This eventually will translate to lower energy dissipated in the memory arrays per prediction.},
+ acmid = {2742208},
+ address = {Washington, DC, USA},
+ author = {Gope, Dibakar and Lipasti, Mikko H.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.32},
+ isbn = {978-1-4799-6998-2},
+ keyword = {branch correlation, branch filtering},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.32},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {521--532},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Bias-Free Branch Predictor},
+ year = {2014}
+}
+
+
+@inproceedings{Gulur:2014:BDC:2742155.2742160,
+ abstract = {In this paper, we present Bi-Modal Cache - a flexible stacked DRAM cache organization which simultaneously achieves several objectives: (i) improved cache hit ratio, (ii) moving the tag storage overhead to DRAM, (iii) lower cache hit latency than tags-in-SRAM, and (iv) reduction in off-chip bandwidth wastage. The Bi-Modal Cache addresses the miss rate versus off-chip bandwidth dilemma by organizing the data in a bi-modal fashion - blocks with high spatial locality are organized as large blocks and those with little spatial locality as small blocks. By adaptively selecting the right granularity of storage for individual blocks at run-time, the proposed DRAM cache organization is able to make judicious use of the available DRAM cache capacity as well as reduce the off-chip memory bandwidth consumption. The Bi-Modal Cache improves cache hit latency despite moving the metadata to DRAM by means of a small SRAM based Way Locator. Further by leveraging the tremendous internal bandwidth and capacity that stacked DRAM organizations provide, the Bi-Modal Cache enables efficient concurrent accesses to tags and data to reduce hit time. Through detailed simulations, we demonstrate that the Bi-Modal Cache achieves overall performance improvement (in terms of Average Normalized Turnaround Time (ANTT)) of 10.8%, 13.8% and 14.0% in 4-core, 8-core and 16-core workloads respectively.},
+ acmid = {2742160},
+ address = {Washington, DC, USA},
+ author = {Gulur, Nagendra and Mehendale, Mahesh and Manikantan, R. and Govindarajan, R.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.36},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.36},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {38--50},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Bi-Modal DRAM Cache: A Scalable and Effective Die-Stacked DRAM Cache},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:ACM:2742155.2742190,
+ abstract = {With the SIMT execution model, GPUs can hidememory latency through massive multithreading for many applications that have regular memory access patterns. To support applications with irregular memory access patterns, cache hierarchies have been introduced to GPU architectures to capture temporal and spatial locality and mitigate the effect of irregular accesses. However, GPU caches exhibit poor efficiency due to the mismatch of the throughput-oriented execution model and its cache hierarchy design, which limits system performance and energy-efficiency. The massive amount of memory requests generated by GPU scause cache contention and resource congestion. Existing CPUcache management policies that are designed for multicore systems, can be suboptimal when directly applied to GPUcaches. We propose a specialized cache management policy for GPGPUs. The cache hierarchy is protected from contention by the bypass policy based on reuse distance. Contention and resource congestion are detected at runtime. To avoid oversaturatingon-chip resources, the bypass policy is coordinated with warp throttling to dynamically control the active number of warps. We also propose a simple predictor to dynamically estimate the optimal number of active warps that can take full advantage of the cache space and on-chip resources. Experimental results show that cache efficiency is significantly improved and on-chip resources are better utilized for cache sensitive benchmarks. This results in a harmonic mean IPCimprovement of 74% and 17% (maximum 661% and 44% IPCimprovement), compared to the baseline GPU architecture and optimal static warp throttling, respectively.},
+ acmid = {2742190},
+ address = {Washington, DC, USA},
+ author = {Chen, Xuhao and Chang, Li-Wen and Rodrigues, Christopher I. and Lv, Jie and Wang, Zhiying and Hwu, Wen-Mei},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.11},
+ isbn = {978-1-4799-6998-2},
+ keyword = {GPGPU, bypass, cache management, warp throttling},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.11},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {343--355},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Adaptive Cache Management for Energy-Efficient GPU Computing},
+ year = {2014}
+}
+
+
+@inproceedings{Huang:2014:GGP:2742155.2742182,
+ abstract = {GPU has become a first-order computing platform. Nonetheless, not many performance modeling techniques have been developed for architecture studies. Several GPU analytical performance models have been proposed, but they mostly target application optimizations rather than the study of different architecture design options. Interval analysis is a relatively accurate performance modeling technique, which traverses the instruction trace and uses functional simulators, e.g., cache simulator, to track the stall events that cause performance loss. It shows hundred times of speedup compared to detailed timing simulations and better accuracy compared to pure analytical models. However, previous techniques are limited to CPUs and not applicable to multithreaded architectures. In this work, we propose GPUMech, an interval analysis-based performance modeling technique for GPU architectures. GPUMech models multithreading and resource contentions caused by memory divergence. We compare GPUMech with a detailed timing simulator and show that on average, GPUMechhas 13.2% error for modeling the round-robin scheduling policy and 14.0% error for modeling the greedy-then-oldest policy while achieving a 97x faster simulation speed. In addition, GPUMech generates CPI stacks, which help hardware/software developers to visualize performance bottlenecks of a kernel.},
+ acmid = {2742182},
+ address = {Washington, DC, USA},
+ author = {Huang, Jen-Cheng and Lee, Joo Hwan and Kim, Hyesoon and Lee, Hsien-Hsin S.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.59},
+ isbn = {978-1-4799-6998-2},
+ keyword = {GPGPU, interval analysis, performance modeling, simulation},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.59},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {268--279},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {GPUMech: GPU Performance Modeling Technique Based on Interval Analysis},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:RFC:2742155.2742176,
+ abstract = {Correctly functioning caches have been shown to leak critical secrets like encryption keys, through various types of cache side-channel attacks. This nullifies the security provided by strong encryption and allows confidentiality breaches, impersonation attacks and fake services. Hence, future cache designs must consider security, ideally without degrading performance and power efficiency. We introduce a new classification of cache side channel attacks: contention based attacks and reuse based attacks. Previous secure cache designs target only contention based attacks, and we show that they cannot defend against reuse based attacks. We show the surprising insight that the fundamental demand fetch policy of a cache is a security vulnerability that causes the success of reuse based attacks. We propose a novel random fill cache architecture that replaces demand fetch with random cache fill within a configurable neighborhood window. We show that our random fill cache does not degrade performance, and in fact, improves the performance for some types of applications. We also show that it provides information-theoretic security against reuse based attacks.},
+ acmid = {2742176},
+ address = {Washington, DC, USA},
+ author = {Liu, Fangfei and Lee, Ruby B.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.28},
+ isbn = {978-1-4799-6998-2},
+ keyword = {cache, cache collision attacks, computer architecture, secure caches, security, side channel attacks},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.28},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {203--215},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Random Fill Cache Architecture},
+ year = {2014}
+}
+
+
+@inproceedings{Su:2014:POP:2742155.2742200,
+ abstract = {Performance, power, and energy (PPE) are critical aspects of modern computing. It is challenging to accurately predict, in real time, the effect of dynamic voltage and frequency scaling (DVFS) on PPE across a wide range of voltages and frequencies. This results in the use of reactive, iterative, and inefficient algorithms for dynamically finding good DVFS states. We propose PPEP, an online PPE prediction framework that proactively and rapidly searches the DVFS space. PPEP uses hardware events to implement both a cycles-per-instruction (CPI) model as well as a per-core power model in order to predict PPE across all DVFS states. We verify on modern AMD CPUs that the PPEP power model achieves an average error of 4.6% (2.8% standard deviation) on 152 benchmark combinations at 5 distinct voltage-frequency states. Predicting average chip power across different DVFS states achieves an average error of 4.2% with a 3.6% standard deviation. Further, we demonstrate the usage of PPEP by creating and evaluating a highly responsive power capping mechanism that can meet power targets in a single step. PPEP also provides insights for future development of DVFS technologies. For example, we find that it is important to carefully consider background workloads for DVFS policies and that enabling north bridge DVFS can offer up to 20% additional energy saving or a 1.4x performance improvement.},
+ acmid = {2742200},
+ address = {Washington, DC, USA},
+ author = {Su, Bo and Gu, Junli and Shen, Li and Huang, Wei and Greathouse, Joseph L. and Wang, Zhiying},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.17},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.17},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {445--457},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {PPEP: Online Performance, Power, and Energy Prediction Framework and DVFS Space Exploration},
+ year = {2014}
+}
+
+
+@inproceedings{Srinath:2014:ASI:2742155.2742214,
+ abstract = {Hardware specialization is an increasingly common technique to enable improved performance and energy efficiency in spite of the diminished benefits of technology scaling. This paper proposes a new approach called explicit loop specialization (XLOOPS) based on the idea of elegantly encoding inter-iteration loop dependence patterns in the instruction set. XLOOPS supports a variety of inter-iteration data-and control-dependence patterns for both single and nested loops. The XLOOPS hardware/software abstraction requires only lightweight changes to a general-purpose compiler to generate XLOOPS binaries and enables executing these binaries on: (1) traditional microarchitectures with minimal performance impact, (2) specialized microarchitectures to improve performance and/or energy efficiency, and (3) adaptive microarchitectures that can seamlessly migrate loops between traditional and specialized execution to dynamically trade-off performance vs. energy efficiency. We evaluate XLOOPS using a vertically integrated research methodology and show compelling performance and energy efficiency improvements compared to both simple and complex general-purpose processors.},
+ acmid = {2742214},
+ address = {Washington, DC, USA},
+ author = {Srinath, Shreesha and Ilbeyi, Berkin and Tan, Mingxing and Liu, Gai and Zhang, Zhiru and Batten, Christopher},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.31},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.31},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {583--595},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Architectural Specialization for Inter-Iteration Loop Dependence Patterns},
+ year = {2014}
+}
+
+
+@inproceedings{Mckeown:2014:EDE:2742155.2742199,
+ abstract = {Computation is increasingly moving to the data enter. Thus, the energy used by CPUs in the data centeris gaining importance. The centralization of computation in the data center has also led to much commonality between the applications running there. For example, there are many instances of similar or identical versions of the Apache web server running in a large data center. Many of these applications, such as bulk image resizing or video Transco ding, favor increasing throughput over single stream performance. In this work, we propose Execution Drafting, an architectural technique for executing identical instructions from different programs or threads on the same multithreaded core, such that they flow down the pipe consecutively, or draft. Drafting reduces switching and removes the need to fetch and decode drafted instructions, thereby saving energy. Drafting can also reduce the energy of the execution and commit stages of a pipeline when drafted instructions have similar operands, such as when loading constants. We demonstrate Execution Drafting saving energy when executing the same application with different data, as well as different programs operating on different data, as is the case for different versions of the same program. We evaluate hardware techniques to identify when to draft and analyze the hardware overheads of Execution Drafting implemented in an Open SPARC T1 core. We show that Execution Drafting can result in substantial performance per energy gains (up to 20%) in a data center without decreasing throughput or dramatically increasing latency.},
+ acmid = {2742199},
+ address = {Washington, DC, USA},
+ author = {Mckeown, Michael and Balkind, Jonathan and Wentzlaff, David},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.43},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Cloud Computing, Computation Deduplication, Data Center Computing, Energy Efficiency, Energy Efficient Computing, Microarchitecture, Multithreading},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.43},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {432--444},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Execution Drafting: Energy Efficiency Through Computation Deduplication},
+ year = {2014}
+}
+
+
+@inproceedings{Aktas:2014:CLO:2742155.2742178,
+ abstract = {The construction of trustworthy systems demands that the execution of every piece of code is validated as genuine, that is, the executed codes do exactly what they are supposed to do. Pre-execution validations of code integrity fail to detect run time compromises like code injection, return and jump-oriented programming, and illegal dynamic linking of program modules. We propose and evaluate a generalized mechanism called REV (for Run-time Execution Validator) that can be easily integrated into a contemporary out-of-order processor to validate, as the program executes, the control flow path and instructions executed along the control flow path. To prevent memory from being tainted by compromised code, REV also prevents updates to the memory from a basic block until its execution has been authenticated. Although control flow signature based authentication of an execution has been suggested before for software testing and for restricted cases of embedded systems, their extensions to out-of-order cores is a non-incremental effort from a micro architectural standpoint. Unlike REV, the existing solutions do not scale with binary sizes, require binaries to be altered or require new ISA support and also fail to contain errors and, in general, impose a heavy performance penalty. We show, using a detailed cycle-accurate micro architectural simulator for an out-of-order pipeline implementing the X86 ISA that the performance overhead of REV is limited to 1.87% on the average across the SPEC 2006 benchmarks.},
+ acmid = {2742178},
+ address = {Washington, DC, USA},
+ author = {Aktas, Erdem and Afram, Furat and Ghose, Kanad},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.18},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Computer Security, Control-Flow Integrity, Control-Flow Validation, Hardware Security, Secure Execution, Trusted Computing, component},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.18},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {229--241},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Continuous, Low Overhead, Run-Time Validation of Program Executions},
+ year = {2014}
+}
+
+
+@inproceedings{Lockhart:2014:PUF:2742155.2742183,
+ abstract = {Technology trends prompting architects to consider greater heterogeneity and hardware specialization have exposed an increasing need for vertically integrated research methodologies that can effectively assess performance, area, and energy metrics of future architectures. However, constructing such a methodology with existing tools is a significant challenge due to the unique languages, design patterns, and tools used in functional-level (FL), cycle-level (CL), and register-transfer-level (RTL) modeling. We introduce a new framework called PyMTL that aims to close this computer architecture research methodology gap by providing a unified design environment for FL, CL, and RTL modeling. PyMTL leverages the Python programming language to create a highly productive domain-specific embedded language for concurrent-structural modeling and hardware design. While the use of Python as a modeling and framework implementation language provides considerable benefits in terms of productivity, it comes at the cost of significantly longer simulation times. We address this performance-productivity gap with a hybrid JIT compilation and JIT specialization approach. We introduce Sim JIT, a custom JIT specialization engine that automatically generates optimized C++ for CL and RTL models. To reduce the performance impact of the remaining unspecialized code, we combine Sim JIT with an off-the-shelf Python interpreter with a meta-tracing JIT compiler (PyPy). Sim JIT+PyPy provides speedups of up to 72× for CL models and 200× for RTL models, bringing us within 4--6× of optimized C++ code while providing significant benefits in terms of productivity and usability.},
+ acmid = {2742183},
+ address = {Washington, DC, USA},
+ author = {Lockhart, Derek and Zibrat, Gary and Batten, Christopher},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.50},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.50},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {280--292},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {PyMTL: A Unified Framework for Vertically Integrated Computer Architecture Research},
+ year = {2014}
+}
+
+
+@inproceedings{Yang:2014:DRL:2742155.2742205,
+ abstract = {Network topology plays a vital role in chip design, it largely determines network cost (power and area) and significantly impacts communication performance in many-core architectures. Conventional topologies such as a 2D mesh have drawbacks including high diameter as the network scales and poor load balancing for the center nodes. We propose a methodology to design random topologies for on-chip networks. Random topologies provide better scalability in terms of network diameter and provide inherent load balancing. As a proof-of-concept for random on-chip topologies, we explore a novel set of networks -- do decs -- and illustrate how they reduce network diameter with randomized low-radix router connections. While a 4 × 4 mesh has a diameter of 6, our dodec has a diameter of 4 with lower cost. By introducing randomness, dodec networks exhibit more uniform message latency. By using low-radix routers, dodec networks simplify the router microarchitecture and attain 20% area and 22% power reduction compared to mesh routers while delivering the same overall application performance for PARSEC.},
+ acmid = {2742205},
+ address = {Washington, DC, USA},
+ author = {Yang, Haofan and Tripathi, Jyoti and Jerger, Natalie Enright and Gibson, Dan},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.19},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.19},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {496--508},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Dodec: Random-Link, Low-Radix On-Chip Networks},
+ year = {2014}
+}
+
+
+@inproceedings{Albericio:2014:WWP:2742155.2742207,
+ abstract = {Improving branch prediction accuracy is essential in enabling high-performance processors to find more concurrency and to improve energy efficiency by reducing wrong path instruction execution, a paramount concern in today's power-constrained computing landscape. Branch prediction traditionally considers past branch outcomes as a linear, continuous bit stream through which it searches for patterns and correlations. The state-of-the-art TAGE predictor and its variants follow this approach while varying the length of the global history fragments they consider. This work identifies a construct, inherent to several applications that challenges existing, linear history based branch prediction strategies. It finds that applications have branches that exhibit multi-dimensional correlations. These are branches with the following two attributes: 1) they are enclosed within nested loops, and 2) they exhibit correlation across iterations of the outer loops. Folding the branch history and interpreting it as a multidimensional piece of information, exposes these cross-iteration correlations allowing predictors to search for more complex correlations in the history space with lower cost. We present wormhole, a new side-predictor that exploits these multidimensional histories. Wormhole is integrated alongside ISL-TAGE and leverages information from its existing side-predictors. Experiments show that the wormhole predictor improves accuracy more than existing side-predictors, some of which are commercially available, with a similar hardware cost. Considering 40 diverse application traces, the wormhole predictor reduces MPKI by an average of 2.53% and 3.15% on top of 4KB and 32KB ISL-TAGE predictors respectively. When considering the top four workloads that exhibit multi-dimensional history correlations, Wormhole achieves 22% and 20% MPKI average reductions over 4KB and 32KB ISL-TAGE.},
+ acmid = {2742207},
+ address = {Washington, DC, USA},
+ author = {Albericio, Jorge and Miguel, Joshua San and Jerger, Natalie Enright and Moshovos, Andreas},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.40},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.40},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {509--520},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Wormhole: Wisely Predicting Multidimensional Branches},
+ year = {2014}
+}
+
+
+@inproceedings{Yedlapalli:2014:SMT:2742155.2742172,
+ abstract = {Handheld devices are ubiquitous in today's world. With their advent, we also see a tremendous increase in device-user interactivity and real-time data processing needs. Media (audio/video/camera) and gaming use-cases are gaining substantial user attention and are defining product successes. The combination of increasing demand from these use-cases and having to run them at low power (from a battery) means that architects have to carefully study the applications and optimize the hardware and software stack together to gain significant optimizations. In this work, we study workloads from these domains and identify the memory subsystem (system agent) to be a critical bottleneck to performance scaling. We characterize the lifetime of the "frame-based" data used in these workloads through the system and show that, by communicating at frame granularity, we miss significant performance optimization opportunities, caused by large IP-to-IP data reuse distances. By carefully breaking these frames into sub-frames, while maintaining correctness, we demonstrate substantial gains with limited hardware requirements. Specifically, we evaluate two techniques, flow-buffering and IP-IP short-circuiting, and show that these techniques bring both power-performance benefits and enhanced user experience.},
+ acmid = {2742172},
+ address = {Washington, DC, USA},
+ author = {Yedlapalli, Praveen and Nachiappan, Nachiappan Chidambaram and Soundararajan, Niranjan and Sivasubramaniam, Anand and Kandemir, Mahmut T. and Das, Chita R.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.60},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.60},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {166--177},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Short-Circuiting Memory Traffic in Handheld Platforms},
+ year = {2014}
+}
+
+
+@inproceedings{Jevdjic:2014:UCS:2742155.2742159,
+ abstract = {Recent research advocates large die-stacked DRAM caches in many core servers to break the memory latency and bandwidth wall. To realize their full potential, die-stacked DRAM caches necessitate low lookup latencies, high hit rates and the efficient use of off-chip bandwidth. Today's stacked DRAM cache designs fall into two categories based on the granularity at which they manage data: block-based and page-based. The state-of-the-art block-based design, called Alloy Cache, collocates a tag with each data block (e.g., 64B) in the stacked DRAM to provide fast access to data in a single DRAM access. However, such a design suffers from low hit rates due to poor temporal locality in the DRAM cache. In contrast, the state-of-the-art page-based design, called Footprint Cache, organizes the DRAM cache at page granularity (e.g., 4KB), but fetches only the blocks that will likely be touched within a page. In doing so, the Footprint Cache achieves high hit rates with moderate on-chip tag storage and reasonable lookup latency. However, multi-gigabyte stacked DRAM caches will soon be practical and needed by server applications, thereby mandating tens of MBs of tag storage even for page-based DRAM caches. We introduce a novel stacked-DRAM cache design, Unison Cache. Similar to Alloy Cache's approach, Unison Cache incorporates the tag metadata directly into the stacked DRAM to enable scalability to arbitrary stacked-DRAM capacities. Then, leveraging the insights from the Footprint Cache design, Unison Cache employs large, page-sized cache allocation units to achieve high hit rates and reduction in tag overheads, while predicting and fetching only the useful blocks within each page to minimize the off-chip traffic. Our evaluation using server workloads and caches of up to 8GB reveals that Unison cache improves performance by 14% compared to Alloy Cache due to its high hit rate, while outperforming the state-of-the art page-based designs that require impractical SRAM-based tags of around 50MB.},
+ acmid = {2742159},
+ address = {Washington, DC, USA},
+ author = {Jevdjic, Djordje and Loh, Gabriel H. and Kaynak, Cansu and Falsafi, Babak},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.51},
+ isbn = {978-1-4799-6998-2},
+ keyword = {3D die stacking, DRAM, caches, memory, servers},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.51},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {25--37},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Unison Cache: A Scalable and Effective Die-Stacked DRAM Cache},
+ year = {2014}
+}
+
+
+@inproceedings{Zhao:2014:FFH:2742155.2742171,
+ abstract = {Byte-addressable nonvolatile memories promise a new technology, persistent memory, which incorporates desirable attributes from both traditional main memory (byte-addressability and fast interface) and traditional storage (data persistence). To support data persistence, a persistent memory system requires sophisticated data duplication and ordering control for write requests. As a result, applications that manipulate persistent memory (persistent applications) have very different memory access characteristics than traditional (non-persistent) applications, as shown in this paper. Persistent applications introduce heavy write traffic to contiguous memory regions at a memory channel, which cannot concurrently service read and write requests, leading to memory bandwidth underutilization due to low bank-level parallelism, frequent write queue drains, and frequent bus turnarounds between reads and writes. These characteristics undermine the high-performance and fairness offered by conventional memory scheduling schemes designed for non-persistent applications. Our goal in this paper is to design a fair and high-performance memory control scheme for a persistent memory based system that runs both persistent and non-persistent applications. Our proposal, FIRM, consists of three key ideas. First, FIRM categorizes request sources as non-intensive, streaming, random and persistent, and forms batches of requests for each source. Second, FIRM strides persistent memory updates across multiple banks, thereby improving bank-level parallelism and hence memory bandwidth utilization of persistent memory accesses. Third, FIRM schedules read and write request batches from different sources in a manner that minimizes bus turnarounds and write queue drains. Our detailed evaluations show that, compared to five previous memory scheduler designs, FIRM provides significantly higher system performance and fairness.},
+ acmid = {2742171},
+ address = {Washington, DC, USA},
+ author = {Zhao, Jishen and Mutlu, Onur and Xie, Yuan},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.47},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.47},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {153--165},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {FIRM: Fair and High-Performance Memory Control for Persistent Memory Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Sim:2014:THM:2742155.2742158,
+ abstract = {Recent technology advancements allow for the integration of large memory structures on-die or as a die-stacked DRAM. Such structures provide higher bandwidth and faster access time than off-chip memory. Prior work has investigated using the large integrated memory as a cache, or using it as part of a heterogeneous memory system under management of the OS. Using this memory as a cache would waste a large fraction of total memory space, especially for the systems where stacked memory could be as large as off-chip memory. An OS managed heterogeneous memory system, on the other hand, requires costly usage-monitoring hardware to migrate frequently-used pages, and is often unable to capture pages that are highly utilized for short periods of time. This paper proposes a practical, low-cost architectural solution to efficiently enable using large fast memory as Part-of-Memory (PoM) seamlessly, without the involvement of the OS. Our PoM architecture effectively manages two different types of memory (slow and fast) combined to create a single physical address space. To achieve this, PoM implements the ability to dynamically remap regions of memory based on their access patterns and expected performance benefits. Our proposed PoM architecture improves performance by 18.4% over static mapping and by 10.5% over an ideal OS-based dynamic remapping policy.},
+ acmid = {2742158},
+ address = {Washington, DC, USA},
+ author = {Sim, Jaewoong and Alameldeen, Alaa R. and Chishti, Zeshan and Wilkerson, Chris and Kim, Hyesoon},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.56},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Die-Stacking, Hardware Management, Heterogeneous Memory, Stacked DRAM},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.56},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {13--24},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Transparent Hardware Management of Stacked DRAM As Part of Memory},
+ year = {2014}
+}
+
+
+@inproceedings{Chou:2014:CTM:2742155.2742157,
+ abstract = {This paper analyzes the trade-offs in architecting stacked DRAM either as part of main memory or as a hardware-managed cache. Using stacked DRAM as part of main memory increases the effective capacity, but obtaining high performance from such a system requires Operating System (OS) support to migrate data at a page-granularity. Using stacked DRAM as a hardware cache has the advantages of being transparent to the OS and perform data management at a line-granularity but suffers from reduced main memory capacity. This is because the stacked DRAM cache is not part of the memory address space. Ideally, we want the stacked DRAM to contribute towards capacity of main memory, and still maintain the hardware-based fine-granularity of a cache. We propose CAMEO, a hardware-based CAche-like MEmory Organization that not only makes stacked DRAM visible as part of the memory address space but also exploits data locality on a fine-grained basis. CAMEO retains recently accessed data lines in stacked DRAM and swaps out the victim line to off chip memory. Since CAMEO can change the physical location of a line dynamically, we propose a low overhead Line Location Table (LLT) that tracks the physical location of all data lines. We also propose an accurate Line Location Predictor (LLP) to avoid the serialization of the LLT look-up and memory access. We evaluate a system that has 4GB stacked memory and 12GB off-chip memory. Using stacked DRAM as a cache improves performance by 50%, using as part of main memory improves performance by 33%, whereas CAMEO improves performance by 78%. Our proposed design is very close to an idealized memory system that uses the 4GB stacked DRAM as a hardware-managed cache and also increases the main memory capacity by an additional 4GB.},
+ acmid = {2742157},
+ address = {Washington, DC, USA},
+ author = {Chou, Chiachen and Jaleel, Aamer and Qureshi, Moinuddin K.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.63},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.63},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {1--12},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {CAMEO: A Two-Level Memory Organization with Capacity of Main Memory and Flexibility of Hardware-Managed Cache},
+ year = {2014}
+}
+
+
+@inproceedings{Kayiran:2014:MGC:2742155.2742167,
+ abstract = {Heterogeneous architectures consisting of general-purpose CPUs and throughput-optimized GPUs are projected to be the dominant computing platforms for many classes of applications. The design of such systems is more complex than that of homogeneous architectures because maximizing resource utilization while minimizing shared resource interference between CPU and GPU applications is difficult. We show that GPU applications tend to monopolize the shared hardware resources, such as memory and network, because of their high thread-level parallelism (TLP), and discuss the limitations of existing GPU-based concurrency management techniques when employed in heterogeneous systems. To solve this problem, we propose an integrated concurrency management strategy that modulates the TLP in GPUs to control the performance of both CPU and GPU applications. This mechanism considers both GPU core state and system-wide memory and network congestion information to dynamically decide on the level of GPU concurrency to maximize system performance. We propose and evaluate two schemes: one (CM-CPU) for boosting CPU performance in the presence of GPU interference, the other (CM-BAL) for improving both CPU and GPU performance in a balanced manner and thus overall system performance. Our evaluations show that the first scheme improves average CPU performance by 24%, while reducing average GPU performance by 11%. The second scheme provides 7% average performance improvement for both CPU and GPU applications. We also show that our solution allows the user to control performance trade-offs between CPUs and GPUs.},
+ acmid = {2742167},
+ address = {Washington, DC, USA},
+ author = {Kayiran, Onur and Nachiappan, Nachiappan Chidambaram and Jog, Adwait and Ausavarungnirun, Rachata and Kandemir, Mahmut T. and Loh, Gabriel H. and Mutlu, Onur and Das, Chita R.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.62},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.62},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {114--126},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Managing GPU Concurrency in Heterogeneous Architectures},
+ year = {2014}
+}
+
+
+@inproceedings{Diamond:2014:AMI:2742155.2742170,
+ abstract = {Modern high performance processors require memory systems that can provide access to data at a rate that is well matched to the processor's computation rate. Common to such systems is the organization of memory into local high speed memory banks that can be accessed in parallel. Associative look up of values is made efficient through indexing instead of associative memories. These techniques lose effectiveness when data locations are not mapped uniformly to the banks or cache locations, leading to bottlenecks that arise from excess demand on a subset of locations. Address mapping is most easily performed by indexing the banks using a mod (2 N) indexing scheme, but such schemes interact poorly with the memory access patterns of many computations, making resource conflicts a significant memory system bottleneck. Previous work has assumed that prime moduli are the best choices to alleviate conflicts and has concentrated on finding efficient implementations for them. In this paper, we introduce a new scheme called Arbitrary Modulus Indexing (AMI) that can be implemented efficiently for all moduli, matching or improving the efficiency of the best existing schemes for primes while allowing great flexibility in choosing a modulus to optimize cost/performance trade-offs. We also demonstrate that, for a memory-intensive workload on a modern replay-style GPU architecture, prime moduli are not in general the best choices for memory bank and cache set mappings. Applying AMI to set of memory intensive benchmarks eliminates 98% of bank and set conflicts, resulting in an average speedup of 24% over an aggressive baseline system and a 64% average reduction in memory system replays at reasonable implementation cost.},
+ acmid = {2742170},
+ address = {Washington, DC, USA},
+ author = {Diamond, Jeffrey R. and Fussell, Donald S. and Keckler, Stephen W.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.13},
+ isbn = {978-1-4799-6998-2},
+ keyword = {GPU caches, fast division and modulus, index schemes, prime banking, replay architectures},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.13},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {140--152},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Arbitrary Modulus Indexing},
+ year = {2014}
+}
+
+
+@inproceedings{Sardashti:2014:SCC:2742155.2742189,
+ abstract = {Cache compression seeks the benefits of a larger cache with the area and power of a smaller cache. Ideally, a compressed cache increases effective capacity by tightly compacting compressed blocks, has low tag and metadata overheads, and allows fast lookups. Previous compressed cache designs, however, fail to achieve all these goals. In this paper, we propose the Skewed Compressed Cache (SCC), a new hardware compressed cache that lowers overheads and increases performance. SCC tracks super blocks to reduce tag overhead, compacts blocks into a variable number of sub-blocks to reduce internal fragmentation, but retains a direct tag-data mapping to find blocks quickly and eliminate extra metadata (i.e., no backward pointers). SCC does this using novel sparse super-block tags and a skewed associative mapping that takes compressed size into account. In our experiments, SCC provides on average 8% (up to 22%) higher performance, and on average 6% (up to 20%) lower total energy, achieving the benefits of the recent Decoupled Compressed Cache [26] with a factor of 4 lower area overhead and lower design complexity.},
+ acmid = {2742189},
+ address = {Washington, DC, USA},
+ author = {Sardashti, Somayeh and Seznec, Andr{\'e} and Wood, David A.},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.41},
+ isbn = {978-1-4799-6998-2},
+ keyword = {cache design, component, compression, energy, performance},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.41},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {331--342},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Skewed Compressed Caches},
+ year = {2014}
+}
+
+
+@inproceedings{Shioya:2014:FEA:2742155.2742198,
+ abstract = {Smart phones and tablets have recently become widespread and dominant in the computer market. Users require that these mobile devices provide a high-quality experience and an even higher performance. Hence, major developers adopt out-of-order superscalar processors as application processors. However, these processors consume much more energy than in-order superscalar processors, because a large amount of energy is consumed by the hardware for dynamic instruction scheduling. We propose a Front-end Execution Architecture (FXA). FXA has two execution units: an out-of-order execution unit (OXU) and an in-order execution unit (IXU). The OXU is the execution core of a common out-of-order superscalar processor. In contrast, the IXU comprises functional units and a bypass network only. The IXU is placed at the processor front end and executes instructions without scheduling. Fetched instructions are first fed to the IXU, and the instructions that are already ready or become ready to execute by the resolution of their dependencies through operand bypassing in the IXU are executed in-order. Not ready instructions go through the IXU as a NOP, thereby, its pipeline is not stalled, and instructions keep flowing. The not-ready instructions are then dispatched to the OXU, and are executed out-of-order. The IXU does not include dynamic scheduling logic, and its energy consumption is consequently small. Evaluation results show that FXA can execute over 50% of instructions using IXU, thereby making it possible to shrink the energy-consuming OXU without incurring performance degradation. As a result, FXA achieves both a high performance and low energy consumption. We evaluated FXA compared with conventional out-of-order/in-order superscalar processors after ARM big. LITTLE architecture. The results show that FXA achieves performance improvements of 67% at the maximum and 7.4% on geometric mean in SPECCPU INT 2006 benchmark suite relative to a conventional superscalar processor (big), while reducing the energy consumption by 86% at the issue queue and 17% in the whole processor. The performance/energy ratio (the inverse of the energy-delay product) of FXA is 25% higher than that of a conventional superscalar processor (big) and 27% higher than that of a conventional in-order superscalar processor (LITTLE).},
+ acmid = {2742198},
+ address = {Washington, DC, USA},
+ author = {Shioya, Ryota and Goshima, Masahiro and Ando, Hideki},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.35},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Core Microarchitecture, Energy Efficiency, Hybrid In-Order/Out-of-Order Core},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.35},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {419--431},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {A Front-end Execution Architecture for High Energy Efficiency},
+ year = {2014}
+}
+
+
+@inproceedings{Kadjo:2014:BBP:2742155.2742218,
+ abstract = {For decades, the primary tools in alleviating the "Memory Wall" have been large cache hierarchies and data prefetchers. Both approaches, become more challenging in modern, Chip-multiprocessor (CMP) design. Increasing the last-level cache (LLC) size yields diminishing returns in terms of performance per Watt; given VLSI power scaling trends, this approach becomes hard to justify. These trends also impact hardware budgets for prefetchers. Moreover, in the context of CMPs running multiple concurrent processes, prefetching accuracy is critical to prevent cache pollution effects. These concerns point to the need for a light-weight prefetcher with high accuracy. Existing data prefetchers may generally be classified as low-overhead and low accuracy (Next-n, Stride, etc.) or high-overhead and high accuracy (STeMS, ISB). We propose B-Fetch: a data prefetcher driven by branch prediction and effective address value speculation. B-Fetch leverages control flow prediction to generate an expected future path of the executing application. It then speculatively computes the effective address of the load instructions along that path based upon a history of past register transformations. Detailed simulation using a cycle accurate simulator shows a geometric mean speedup of 23.4% for single-threaded workloads, improving to 28.6% for multi-application workloads over a baseline system without prefetching. We find that B-Fetch outperforms an existing "best-of-class" light-weight prefetcher under single-threaded and multi programmed workloads by 9% on average, with 65% less storage overhead.},
+ acmid = {2742218},
+ address = {Washington, DC, USA},
+ author = {Kadjo, David and Kim, Jinchun and Sharma, Prabal and Panda, Reena and Gratz, Paul and Jimenez, Daniel},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.29},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Bfetch, Branch Prediction, Chip-Multiprocessors, Data Cache, Prefetching},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.29},
+ location = {Cambridge, United Kingdom},
+ numpages = {12},
+ pages = {623--634},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {B-Fetch: Branch Prediction Directed Prefetching for Chip-Multiprocessors},
+ year = {2014}
+}
+
+
+@inproceedings{Song:2014:CCO:2742155.2742221,
+ abstract = {Applications executing on multicore processors can now easily offload computations to manycore processors, such as Intel Xeon Phi coprocessors. However, it requires high levels of expertise and effort to tune such offloaded applications to realize high-performance execution. Previous efforts have focused on optimizing the execution of offloaded computations on manycore processors. However, we observe that the data transfer overhead between multicore and manycore processors, and the limited device memories of manycore processors often constrain the performance gains that are possible by offloading computations. In this paper, we present three source-to-source compiler optimizations that can significantly improve the performance of applications that offload computations to manycore processors. The first optimization automatically transforms offloaded codes to enable data streaming, which overlaps data transfer between multicore and manycore processors with computations on these processors to hide data transfer overhead. This optimization is also designed to minimize the memory usage on manycore processors, while achieving the optimal performance. The second compiler optimization re-orders computations to regularize irregular memory accesses. It enables data streaming and factorization on manycore processors, even when the memory access patterns in the original source codes are irregular. Finally, our new shared memory mechanism provides efficient support for transferring large pointer-based data structures between hosts and manycore processors. Our evaluation shows that the proposed compiler optimizations benefit 9 out of 12 benchmarks. Compared with simply offloading the original parallel implementations of these benchmarks, we can achieve 1.16x-52.21x speedups.},
+ acmid = {2742221},
+ address = {Washington, DC, USA},
+ author = {Song, Linhai and Feng, Min and Ravi, Nishkam and Yang, Yi and Chakradhar, Srimat},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.30},
+ isbn = {978-1-4799-6998-2},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.30},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {659--671},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {COMP: Compiler Optimizations for Manycore Processors},
+ year = {2014}
+}
+
+
+@inproceedings{Yi:2014:SCO:2742155.2742215,
+ abstract = {General purpose compilers aim to extract the best average performance for all possible user applications. Due to the lack of specializations for different types of computations, compiler attained performance often lags behind those of the manually optimized libraries. In this paper, we demonstrate a new approach, programmable composition, to enable the specialization of compiler optimizations without compromising their generality. Our approach uses a single pass of source-level analysis to recognize a common pattern among dense matrix computations. It then tags the recognized patterns to trigger a sequence of general-purpose compiler optimizations specially composed for them. We show that by allowing different optimizations to adequately communicate with each other through a set of coordination handles and dynamic tags inserted inside the optimized code, we can specialize the composition of general-purpose compiler optimizations to attain a level of performance comparable to those of manually written assembly code by experts, thereby allowing selected computations in applications to benefit from similar levels of optimizations as those manually applied by experts.},
+ acmid = {2742215},
+ address = {Washington, DC, USA},
+ author = {Yi, Qing and Wang, Qian and Cui, Huimin},
+ booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2014.14},
+ isbn = {978-1-4799-6998-2},
+ keyword = {Automatic programming, Computer science, Computers and information processing, Programming},
+ link = {http://dx.doi.org/10.1109/MICRO.2014.14},
+ location = {Cambridge, United Kingdom},
+ numpages = {13},
+ pages = {596--608},
+ publisher = {IEEE Computer Society},
+ series = {MICRO-47},
+ title = {Specializing Compiler Optimizations Through Programmable Composition for Dense Matrix Computations},
+ year = {2014}
+}
+
+
