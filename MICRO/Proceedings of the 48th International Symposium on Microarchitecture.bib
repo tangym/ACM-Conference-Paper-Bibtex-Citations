@@ -1,0 +1,1233 @@
+@inproceedings{Sembrant:2015:LTP:2830772.2830815,
+ abstract = {Modern processors employ large structures (IQ, LSQ, register file, etc.) to expose instruction-level parallelism (ILP) and memory-level parallelism (MLP). These resources are typically allocated to instructions in program order. This wastes resources by allocating resources to instructions that are not yet ready to be executed and by eagerly allocating resources to instructions that are not part of the application's critical path. This work explores the possibility of allocating pipeline resources only when needed to expose MLP, and thereby enabling a processor design with significantly smaller structures, without sacrificing performance. First we identify the classes of instructions that should not reserve resources in program order and evaluate the potential performance gains we could achieve by delaying their allocations. We then use this information to "park" such instructions in a simpler, and therefore more efficient, Long Term Parking (LTP) structure. The LTP stores instructions until they are ready to execute, without allocating pipeline resources, and thereby keeps the pipeline available for instructions that can generate further MLP. LTP can accurately and rapidly identify which instructions to park, park them before they execute, wake them when needed to preserve performance, and do so using a simple queue instead of a complex IQ. We show that even a very simple queue-based LTP design allows us to significantly reduce IQ (64 → 32) and register file (128 → 96) sizes while retaining MLP performance and improving energy efficiency.},
+ acmid = {2830815},
+ address = {New York, NY, USA},
+ author = {Sembrant, Andreas and Carlson, Trevor and Hagersten, Erik and Black-Shaffer, David and Perais, Arthur and Seznec, Andr{\'e} and Michaud, Pierre},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830815},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830815},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {334--346},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Long Term Parking (LTP): Criticality-aware Resource Allocation in OOO Processors},
+ year = {2015}
+}
+
+
+@inproceedings{Jeon:2015:GRF:2830772.2830784,
+ abstract = {To support massive number of parallel thread contexts, Graphics Processing Units (GPUs) use a huge register file, which is responsible for a large fraction of GPU's total power and area. The conventional belief is that a large register file is inevitable for accommodating more parallel thread contexts, and technology scaling makes it feasible to incorporate ever increasing size of register file. In this paper, we demonstrate that the register file size need not be large to accommodate more threads context. We first characterize the useful lifetime of a register and show that register lifetimes vary drastically across various registers that are allocated to a kernel. While some registers are alive for the entire duration of the kernel execution, some registers have a short lifespan. We propose GPU register file virtualization that allows multiple warps to share physical registers. Since warps may be scheduled for execution at different points in time, we propose to proactively release dead registers from one warp and re-allocate them to a different warp that may occur later in time, thereby reducing the needless demand for physical registers. By using register virtualization, we shrink the architected register space to a smaller physical register space. By under-provisioning the physical register file to be smaller than the architected register file we reduce dynamic and static power consumption. We then develop a new register throttling mechanism to run applications that exceed the size of the under-provisioned register file without any deadlock. Our evaluation shows that even after halving the architected register file size using our proposed GPU register file virtualization applications run successfully with negligible performance overhead.},
+ acmid = {2830784},
+ address = {New York, NY, USA},
+ author = {Jeon, Hyeran and Ravi, Gokul Subramanian and Kim, Nam Sung and Annavaram, Murali},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830784},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPGPU, energy-efficient computing, microarchitecture, register file},
+ link = {http://doi.acm.org/10.1145/2830772.2830784},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {420--432},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {GPU Register File Virtualization},
+ year = {2015}
+}
+
+
+@inproceedings{Lo:2015:PPT:2830772.2830776,
+ abstract = {Many modern mobile and desktop applications involve real-time interactions with users. For these interactive applications, tasks must complete in a reasonable amount of time in order to provide a responsive user experience. Conversely, completing a task faster than the limits of human perception does not improve the user experience. Thus, for energy efficiency, tasks should be run just fast enough to meet the response-time requirement instead of wasting energy by running faster. In this paper, we present a predictive DVFS controller that predicts the execution time of a job before it executes in order to appropriately set the DVFS level to just meet user response-time deadlines. Our results show 56% energy savings compared to running tasks at the maximum frequency with almost no deadline misses. This is 27% more energy savings than the default Linux interactive power governor, which also shows 2% deadline misses on average.},
+ acmid = {2830776},
+ address = {New York, NY, USA},
+ author = {Lo, Daniel and Song, Taejoon and Suh, G. Edward},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830776},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DVFS, energy efficiency, run-time prediction},
+ link = {http://doi.acm.org/10.1145/2830772.2830776},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {508--520},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Prediction-guided Performance-energy Trade-off for Interactive Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Miguel:2015:DCA:2830772.2830790,
+ abstract = {Modern processors contain large last level caches (LLCs) that consume substantial energy and area yet are imperative for high performance. Cache designs have improved dramatically by considering reference locality. Data values are also a source of optimization. Compression and deduplication exploit data values to use cache storage more efficiently resulting in smaller caches without sacrificing performance. In multi-megabyte LLCs, many identical or similar values may be cached across multiple blocks simultaneously. This redundancy effectively wastes cache capacity. We observe that a large fraction of cache values exhibit approximate similarity. More specifically, values across cache blocks are not identical but are similar. Coupled with approximate computing which observes that some applications can tolerate error or inexactness, we leverage approximate similarity to design a novel LLC architecture: the Doppelgänger cache. The Doppelgänger cache associates the tags of multiple similar blocks with a single data array entry to reduce the amount of data stored. Our design achieves 1.55×, 2.55× and 1.41× reductions in LLC area, dynamic energy and leakage energy without harming performance nor incurring high application error.},
+ acmid = {2830790},
+ address = {New York, NY, USA},
+ author = {Miguel, Joshua San and Albericio, Jorge and Moshovos, Andreas and Jerger, Natalie Enright},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830790},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830790},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {50--61},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Doppelg\"{A}Nger: A Cache for Approximate Computing},
+ year = {2015}
+}
+
+
+@inproceedings{Seznec:2015:IML:2830772.2830831,
+ abstract = {The most efficient branch predictors proposed in academic literature exploit both global branch history and local branch history. However, local history branch predictor components introduce major design challenges, particularly for the management of speculative histories. Therefore, most effective hardware designs use only global history components and very limited forms of local histories such as a loop predictor. The wormhole (WH) branch predictor was recently introduced to exploit branch outcome correlation in multidimensional loops. For some branches encapsulated in a multidimensional loop, their outcomes are correlated with those of the same branch in neighbor iterations, but in the previous outer loop iteration. Unfortunately, the practical implementation of the WH predictor is even more challenging than the implementation of local history predictors. In this paper, we introduce practical predictor components to exploit this branch outcome correlation in multidimensional loops: the IMLI-based predictor components. The iteration index of the inner most loop in an application can be efficiently monitored at instruction fetch time using the Inner Most Loop Iteration (IMLI) counter. The outcomes of some branches are strongly correlated with the value of this IMLI counter. A single PC+IMLI counter indexed table, the IMLI-SIC table, added to a neural component of any recent predictor (TAGE-based or perceptron-inspired) captures this correlation. Moreover, using the IMLI counter, one can efficiently manage the very long local histories of branches that are targeted by the WH predictor. A second IMLI-based component, IMLI-OH, allows for tracking the same set of hard-to-predict branches as WH. Managing the speculative states of the IMLI-based predictor components is quite simple. Our experiments show that augmenting a state-of-the-art global history predictor with IMLI components outperforms previous state-of-the-art academic predictors leveraging local and global history at much lower hardware complexity (i.e., smaller storage budget, smaller number of tables and simpler management of speculative states).},
+ acmid = {2830831},
+ address = {New York, NY, USA},
+ author = {Seznec, Andr{\'e} and Miguel, Joshua San and Albericio, Jorge},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830831},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830831},
+ location = {Waikiki, Hawaii},
+ numpages = {11},
+ pages = {347--357},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {The Inner Most Loop Iteration Counter: A New Dimension in Branch History},
+ year = {2015}
+}
+
+
+@inproceedings{Ren:2015:TES:2830772.2830802,
+ abstract = {Emerging byte-addressable nonvolatile memories (NVMs) promise persistent memory, which allows processors to directly access persistent data in main memory. Yet, persistent memory systems need to guarantee a consistent memory state in the event of power loss or a system crash (i.e., crash consistency). To guarantee crash consistency, most prior works rely on programmers to (1) partition persistent and transient memory data and (2) use specialized software interfaces when updating persistent memory data. As a result, taking advantage of persistent memory requires significant programmer effort, e.g., to implement new programs as well as modify legacy programs. Use cases and adoption of persistent memory can therefore be largely limited. In this paper, we propose a hardware-assisted DRAM+NVM hybrid persistent memory design, Transparent Hybrid NVM (ThyNVM), which supports software-transparent crash consistency of memory data in a hybrid memory system. To efficiently enforce crash consistency, we design a new dual-scheme checkpointing mechanism, which efficiently overlaps checkpointing time with application execution time. The key novelty is to enable checkpointing of data at multiple granularities, cache block or page granularity, in a coordinated manner. This design is based on our insight that there is a tradeoff between the application stall time due to checkpointing and the hardware storage overhead of the metadata for checkpointing, both of which are dictated by the granularity of checkpointed data. To get the best of the tradeoff, our technique adapts the checkpointing granularity to the write locality characteristics of the data and coordinates the management of multiple-granularity updates. Our evaluation across a variety of applications shows that ThyNVM performs within 4.9% of an idealized DRAM-only system that can provide crash consistency at no cost.},
+ acmid = {2830802},
+ address = {New York, NY, USA},
+ author = {Ren, Jinglei and Zhao, Jishen and Khan, Samira and Choi, Jongmoo and Wu, Yongwei and Mutlu, Onur},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830802},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830802},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {672--685},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {ThyNVM: Enabling Software-transparent Crash Consistency in Persistent Memory Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Seshadri:2015:GDI:2830772.2830820,
+ abstract = {Many data structures (e.g., matrices) are typically accessed with multiple access patterns. Depending on the layout of the data structure in physical address space, some access patterns result in non-unit strides. In existing systems, which are optimized to store and access cache lines, non-unit strided accesses exhibit low spatial locality. Therefore, they incur high latency, and waste memory bandwidth and cache space. We propose the Gather-Scatter DRAM (GS-DRAM) to address this problem. We observe that a commodity DRAM module contains many chips. Each chip stores a part of every cache line mapped to the module. Our idea is to enable the memory controller to access multiple values that belong to a strided pattern from different chips using a single read/write command. To realize this idea, GS-DRAM first maps the data of each cache line to different chips such that multiple values of a strided access pattern are mapped to different chips. Second, instead of sending a separate address to each chip, GS-DRAM maps each strided pattern to a small pattern ID that is communicated to the module. Based on the pattern ID, each chip independently computes the address of the value to be accessed. The cache line returned by the module contains different values of the strided pattern gathered from different chips. We show that this approach enables GS-DRAM to achieve near-ideal memory bandwidth and cache utilization for many common access patterns. We design an end-to-end system to exploit GS-DRAM. Our evaluations show that 1) for in-memory databases, GS-DRAM obtains the best of the row store and the column store layouts, in terms of both performance and energy, and 2) for matrix-matrix multiplication, GS-DRAM seamlessly enables SIMD optimizations and outperforms the best tiled layout. Our framework is general, and can benefit many modern data-intensive applications.},
+ acmid = {2830820},
+ address = {New York, NY, USA},
+ author = {Seshadri, Vivek and Mullins, Thomas and Boroumand, Amirali and Mutlu, Onur and Gibbons, Phillip B. and Kozuch, Michael A. and Mowry, Todd C.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830820},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DRAM, SIMD, caches, energy, in-memory databases, memory bandwidth, performance, strided accesses},
+ link = {http://doi.acm.org/10.1145/2830772.2830820},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {267--280},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Gather-scatter DRAM: In-DRAM Address Translation to Improve the Spatial Locality of Non-unit Strided Accesses},
+ year = {2015}
+}
+
+
+@inproceedings{Kaynak:2015:CUI:2830772.2830785,
+ abstract = {Multi-megabyte instruction working sets of server workloads defy the capacities of latency-critical instruction-supply components of a core; the instruction cache (L1-I) and the branch target buffer (BTB). Recent work has proposed dedicated prefetching techniques aimed separately at L1-I and BTB, resulting in high metadata costs and/or only modest performance improvements due to the complex control-flow histories required to effectively fill the two components ahead of the core's fetch stream. This work makes the observation that the metadata for both the L1-I and BTB prefetchers require essentially identical information; the control-flow history. While the L1-I prefetcher necessitates the history at block granularity, the BTB requires knowledge of individual branches inside each block. To eliminate redundant metadata and multiple prefetchers, we introduce Confluence -- a frontend design with unified metadata for prefetching into both L1-I and BTB, whose contents are synchronized. Confluence leverages a stream-based prefetcher to proactively fill both components ahead of the core's fetch stream. The prefetcher maintains the control-flow history at block granularity and for each instruction block brought into the L1-I, eagerly inserts the set of branch targets contained in the block into the BTB. Confluence provides 85% of the performance improvement provided by an ideal frontend (with a perfect L1-I and BTB) with 1% area overhead per core, while the highest-performance alternative delivers only 62% of the ideal performance improvement with a per-core area overhead of 8%.},
+ acmid = {2830785},
+ address = {New York, NY, USA},
+ author = {Kaynak, Cansu and Grot, Boris and Falsafi, Babak},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830785},
+ isbn = {978-1-4503-4034-2},
+ keyword = {branch prediction, instruction streaming},
+ link = {http://doi.acm.org/10.1145/2830772.2830785},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {166--177},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Confluence: Unified Instruction Supply for Scale-out Servers},
+ year = {2015}
+}
+
+
+@inproceedings{McFarlin:2015:BJA:2830772.2830781,
+ abstract = {Indirect branches have historically been a challenge for microarchitectures and code generators alike. The recent steady increase in indirect branch predictability has translated into continual performance improvements especially for Out-of-Order processors which benefit more readily from improvements in branch prediction. In contrast, in-order processors which rely on code generators for performance are still challenged by indirect branches; they are a frequent source of issue stalls and the large number of indirect branch targets and unbiased nature of indirect branches complicate the use of traditional branch handling techniques like assert conversion and predication. To address these limitations, we propose an ISA enhancement with associated code transformation and hardware support that collectively enable the current trend of improved indirect branch predictability to be directly leveraged by code-generators for in-orders. By separating the prediction point of an indirect branch from its resolution point, we enable code generators to emit schedules which more readily match those found by the Out-of-Order. Our technique is particularly beneficial to those processors which leverage dynamic binary translation and optimization such as Transmeta's Efficeon and more recently Nvidia's Project Denver. On a set of indirect branch intensive benchmarks from SPEC 2006, 2000 and 95, we achieve a Geomean speedup on a 4-wide of 11%. We further demonstrate speedups of 23% and 14% speedup on PHP and Python benchmarks.},
+ acmid = {2830781},
+ address = {New York, NY, USA},
+ author = {McFarlin, Daniel S. and Zilles, Craig},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830781},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830781},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {370--382},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Bungee Jumps: Accelerating Indirect Branches Through HW/SW Co-design},
+ year = {2015}
+}
+
+
+@inproceedings{Arelakis:2015:HHC:2830772.2830823,
+ abstract = {Proposed cache compression schemes make design-time assumptions on value locality to reduce decompression latency. For example, some schemes assume that common values are spatially close whereas other schemes assume that null blocks are common. Most schemes, however, assume that value locality is best exploited by fixed-size data types (e.g., 32-bit integers). This assumption falls short when other data types, such as floating-point numbers, are common. This paper makes two contributions. First, HyComp -- a hybrid cache compression scheme -- selects the best-performing compression scheme, based on heuristics that predict data types. Data types considered are pointers, integers, floating-point numbers and the special (and trivial) case of null blocks. Second, this paper contributes with a compression method that exploits value locality in data types with predefined semantic value fields, e.g., as in the exponent and the mantissa in floating-point numbers. We show that HyComp, augmented with the proposed floating-point-number compression method, offers superior performance in comparison with prior art.},
+ acmid = {2830823},
+ address = {New York, NY, USA},
+ author = {Arelakis, Angelos and Dahlgren, Fredrik and Stenstrom, Per},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830823},
+ isbn = {978-1-4503-4034-2},
+ keyword = {cache compression, floating-point data, huffman coding, hybrid compression, value locality},
+ link = {http://doi.acm.org/10.1145/2830772.2830823},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {38--49},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {HyComp: A Hybrid Cache Compression Method for Selection of Data-type-specific Compression Methods},
+ year = {2015}
+}
+
+
+@inproceedings{Vamanan:2015:TEL:2830772.2830779,
+ abstract = {Online Search (OLS) is a key component of many popular Internet services. Datacenters running OLS consume significant amounts of energy. However, reducing their energy is challenging due to their tight response time requirements. A key aspect of OLS is that each user query goes to all or many of the nodes in the cluster, so that the overall time budget is dictated by the tail of the replies' latency distribution; replies see latency variations both in the network and compute. Previous work proposes to achieve load-proportional energy by slowing down the computation at lower datacenter loads based directly on response times (i.e., at lower loads, the proposal exploits the average slack in the time budget provisioned for the peak load). In contrast, we propose TimeTrader to reduce energy by exploiting the latency slack in the sub-critical replies which arrive before the deadline (e.g., 80% of replies are 3-4x faster than the tail). This slack is present at all loads and subsumes the previous work's load-related slack. While the previous work shifts the leaves' response time distribution to consume the slack at lower loads, TimeTrader reshapes the distribution at all loads by slowing down individual sub-critical nodes without increasing missed deadlines. TimeTrader exploits slack in both the network and compute budgets. Further, TimeTrader leverages Earliest Deadline First scheduling to largely decouple critical requests from the queuing delays of sub-critical requests which can then be slowed down without hurting critical requests. A combination of real-system measurements and at-scale simulations shows that without adding to missed deadlines, TimeTrader saves 15% and 40% energy at 90% and 30% loading, respectively, in a datacenter with 512 nodes, whereas previous work saves 0% and 30%. Further, as a proof-of-concept, we build a small-scale real implementation to evaluate TimeTrader and show 10-30% energy savings.},
+ acmid = {2830779},
+ address = {New York, NY, USA},
+ author = {Vamanan, Balajee and Sohail, Hamza Bin and Hasan, Jahangir and Vijaykumar, T. N.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830779},
+ isbn = {978-1-4503-4034-2},
+ keyword = {datacenter, incast, latency tail, online data-intensive (OLDI) applications, online search (OLS)},
+ link = {http://doi.acm.org/10.1145/2830772.2830779},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {585--597},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {TimeTrader: Exploiting Latency Tail to Save Datacenter Energy for Online Search},
+ year = {2015}
+}
+
+
+@proceedings{Prvulovic:2015:2830772,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4034-2},
+ location = {Waikiki, Hawaii},
+ publisher = {ACM},
+ title = {MICRO-48: Proceedings of the 48th International Symposium on Microarchitecture},
+ year = {2015}
+}
+
+
+@inproceedings{Jeffrey:2015:SAO:2830772.2830777,
+ abstract = {We present Swarm, a novel architecture that exploits ordered irregular parallelism, which is abundant but hard to mine with current software and hardware techniques. In this architecture, programs consist of short tasks with programmer-specified timestamps. Swarm executes tasks speculatively and out of order, and efficiently speculates thousands of tasks ahead of the earliest active task to uncover ordered parallelism. Swarm builds on prior TLS and HTM schemes, and contributes several new techniques that allow it to scale to large core counts and speculation windows, including a new execution model, speculation-aware hardware task management, selective aborts, and scalable ordered commits. We evaluate Swarm on graph analytics, simulation, and database benchmarks. At 64 cores, Swarm achieves 51--122× speedups over a single-core system, and out-performs software-only parallel algorithms by 3--18×.},
+ acmid = {2830777},
+ address = {New York, NY, USA},
+ author = {Jeffrey, Mark C. and Subramanian, Suvinay and Yan, Cong and Emer, Joel and Sanchez, Daniel},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830777},
+ isbn = {978-1-4503-4034-2},
+ keyword = {fine-grain parallelism, irregular parallelism, multicore, ordered parallelism, speculative execution, synchronization},
+ link = {http://doi.acm.org/10.1145/2830772.2830777},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {228--241},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {A Scalable Architecture for Ordered Parallelism},
+ year = {2015}
+}
+
+
+@inproceedings{Nguyen:2015:MMC:2830772.2830828,
+ abstract = {Cache compression has largely focused on improving single-stream application performance. In contrast, this work proposes utilizing cache compression to improve application throughput for manycore processors while potentially harming single-stream performance. The growing interest in throughput-oriented manycore architectures and widening disparity between on-chip resources and off-chip bandwidth motivate re-evaluation of utilizing costly compression to conserve off-chip memory bandwidth. This work proposes MORC, a Many-core ORiented Compressed Cache architecture that compresses hundreds of cache lines together to maximize compression ratio. By looking across cache lines, MORC is able to achieve compression ratios beyond compression schemes which only compress within a single cache line. MORC utilizes a novel log-based cache organization which selects cache lines that are filled into the cache close in time as candidates to compress together. The proposed design not only compresses cache data, but also cache tags together to further save storage. Future manycore processors will likely have reduced cache sizes and less bandwidth per core than current multicore processors. We evaluate MORC on such future many-core processors utilizing the SPEC2006 benchmark suite. We find that MORC offers 37% more throughput than uncompressed caches and 17% more throughput than the next best cache compression scheme, while simultaneously reducing 17% of memory system energy compared to uncompressed caches.},
+ acmid = {2830828},
+ address = {New York, NY, USA},
+ author = {Nguyen, Tri M. and Wentzlaff, David},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830828},
+ isbn = {978-1-4503-4034-2},
+ keyword = {caches, compression, manycore},
+ link = {http://doi.acm.org/10.1145/2830772.2830828},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {76--88},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {MORC: A Manycore-oriented Compressed Cache},
+ year = {2015}
+}
+
+
+@inproceedings{Zhang:2015:FPI:2830772.2830787,
+ abstract = {Oblivious RAM (ORAM) is a cryptographic primitive that can prevent information leakage in the access trace to untrusted external memory. It has become an important component in modern secure processors. However, the major obstacle of adopting an ORAM design is the significantly induced overhead in memory accesses. Recently, Path ORAM has attracted attentions from researchers because of its simplicity in algorithms and efficiency in reducing memory access overhead. However, we observe that there exist a lot of redundant memory accesses during the process of ORAM requests. Moreover, we further argue that these redundant memory accesses can be removed without harming security of ORAM. Based on this observation, we propose a novel Fork Path ORAM scheme. By leveraging three optimization techniques, namely, path merging, ORAM request scheduling, and merging-aware caching, Fork Path ORAM can efficiently remove these redundant memory accesses. Based on this scheme, a detailed ORAM controller architecture is proposed and comprehensive experiments are performed. Compared to traditional Path ORAM approaches, our Fork Path ORAM can reduce overall performance overhead and power consumption of memory system by 58% and 38%, respectively, with negligible design overhead.},
+ acmid = {2830787},
+ address = {New York, NY, USA},
+ author = {Zhang, Xian and Sun, Guangyu and Zhang, Chao and Zhang, Weiqi and Liang, Yun and Wang, Tao and Chen, Yiran and Di, Jia},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830787},
+ isbn = {978-1-4503-4034-2},
+ keyword = {access merging, oblivious RAM, request scheduling},
+ link = {http://doi.acm.org/10.1145/2830772.2830787},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {102--114},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Fork Path: Improving Efficiency of ORAM by Removing Redundant Memory Accesses},
+ year = {2015}
+}
+
+
+@inproceedings{Ahn:2015:DFS:2830772.2830794,
+ abstract = {Conventional servers have achieved high performance by employing fast CPUs to run compute-intensive workloads, while making operating systems manage relatively slow I/O devices through memory accesses and interrupts. However, as the emerging workloads are becoming heavily data-intensive and the emerging devices (e.g., NVM storage, high-bandwidth NICs, and GPUs) come to enable low-latency and high-bandwidth device operations, the traditional host-centric server architectures fail to deliver high performance due to their inefficient device handling mechanisms. Furthermore, without resolving the architecture inefficiency, the performance loss will continue to increase as the emerging devices become faster. In this paper, we propose DCS, a novel device-centric server architecture to fully exploit the potential of the emerging devices so that the server performance nicely scales with the performance of the devices. The key idea of DCS is to orchestrate the devices to directly communicate with each other while selectively bypassing the host. The host becomes responsible for only few device-related operations (e.g., filesystem lookup). In this way, DCS achieves high I/O performance by direct inter-device communications and high computation performance by fully utilizing the host-side resources. To implement DCS, we introduce DCS Engine, a custom hardware device to orchestrate devices via standard I/O protocols (i.e., PCIe and NVMe), along with its device driver and user-level library. We show that our FPGA-based DCS prototype significantly improves the performance of emerging server workloads and the architecture will nicely scale with the performance of the devices.},
+ acmid = {2830794},
+ address = {New York, NY, USA},
+ author = {Ahn, Jaehyung and Kwon, Dongup and Kim, Youngsok and Ajdari, Mohammadamin and Lee, Jaewon and Kim, Jangwoo},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830794},
+ isbn = {978-1-4503-4034-2},
+ keyword = {I/O optimizations, device-to-device communications, server architecture, storage systems},
+ link = {http://doi.acm.org/10.1145/2830772.2830794},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {559--571},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {DCS: A Fast and Scalable Device-centric Server Architecture},
+ year = {2015}
+}
+
+
+@inproceedings{Nath:2015:CPM:2830772.2830826,
+ abstract = {This paper presents CRISP, the first runtime analytical model of performance in the face of changing frequency in a GPGPU. It shows that prior models not targeted at a GPGPU fail to account for important characteristics of GPGPU execution, including the high degree of overlap between memory access and computation and the frequency of store-related stalls. CRISP provides significantly greater accuracy than prior runtime performance models, being within 4% on average when scaling frequency by up to 7X. Using CRISP to drive a runtime energy efficiency controller yields a 10.7% improvement in energy-delay product, vs 6.2% attainable via the best prior performance model.},
+ acmid = {2830826},
+ address = {New York, NY, USA},
+ author = {Nath, Rajib and Tullsen, Dean},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830826},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DVFS, GPGPU, critical path},
+ link = {http://doi.acm.org/10.1145/2830772.2830826},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {281--293},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {The CRISP Performance Model for Dynamic Voltage and Frequency Scaling in a GPGPU},
+ year = {2015}
+}
+
+
+@inproceedings{Kannan:2015:EID:2830772.2830808,
+ abstract = {Silicon interposers enable the integration of multiple stacks of in-package memory to provide higher bandwidth or lower energy for memory accesses. Once the interposer has been paid for, there are new opportunities to exploit the interposer. Recent work considers using the routing resources of the interposer to improve the network-on-chip's (NoC) capabilities. In this work, we exploit the interposer to "disintegrate" a multi-core CPU chip into smaller chips that individually and collectively cost less to manufacture than a single large chip. However, this fragments the overall NoC, which decreases performance as core-to-core messages between chips must now route through the interposer. We study the performance-cost trade-offs of interposer based, multi-chip, multi-core systems and propose new interposer NoC organizations to mitigate the performance challenges while preserving the cost benefits.},
+ acmid = {2830808},
+ address = {New York, NY, USA},
+ author = {Kannan, Ajaykumar and Jerger, Natalie Enright and Loh, Gabriel H.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830808},
+ isbn = {978-1-4503-4034-2},
+ keyword = {die stacking, network-on-chip, silicon interposer},
+ link = {http://doi.acm.org/10.1145/2830772.2830808},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {546--558},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Enabling Interposer-based Disintegration of Multi-core Processors},
+ year = {2015}
+}
+
+
+@proceedings{Flautner:2014:2742155,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {Washington, DC, USA},
+ isbn = {978-1-4799-6998-2},
+ issn = {1072-4451},
+ location = {Cambridge, United Kingdom},
+ publisher = {IEEE Computer Society},
+ title = {MICRO-47: Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2015:ECR:2830772.2830774,
+ abstract = {We present Coup, a technique to lower the cost of updates to shared data in cache-coherent systems. Coup exploits the insight that many update operations, such as additions and bitwise logical operations, are commutative: they produce the same final result regardless of the order they are performed in. Coup allows multiple private caches to simultaneously hold update-only permission to the same cache line. Caches with update-only permission can locally buffer and coalesce updates to the line, but cannot satisfy read requests. Upon a read request, Coup reduces the partial updates buffered in private caches to produce the final value. Coup integrates seamlessly into existing coherence protocols, requires inexpensive hardware, and does not affect the memory consistency model. We apply Coup to speed up single-word updates to shared data. On a simulated 128-core, 8-socket system, Coup accelerates state-of-the-art implementations of update-heavy algorithms by up to 2.4×.},
+ acmid = {2830774},
+ address = {New York, NY, USA},
+ author = {Zhang, Guowei and Horn, Webb and Sanchez, Daniel},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830774},
+ isbn = {978-1-4503-4034-2},
+ keyword = {cache coherence, coherence protocol, commutativity},
+ link = {http://doi.acm.org/10.1145/2830772.2830774},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {13--25},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Exploiting Commutativity to Reduce the Cost of Updates to Shared Data in Cache-coherent Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Raasch:2015:FAA:2830772.2830829,
+ abstract = {The rate of particle induced soft errors in a processor increases in proportion to the number of bits. This soft error rate (SER) can limit the performance of a system by placing an effective limit on the number of cores, nodes or clusters. The vulnerability of bits in a processor to soft errors can be represented by their architectural vulnerability factor (AVF), defined as the probability that a bit corruption results in a user-visible error. Analytical models such as architecturally correct execution (ACE) lifetime analysis enable AVF estimation at high speed by operating at a level of abstraction well above that of RTL. However, sequential elements do not lend themselves to this type of analysis because these bits are not typically included in the abstracted ACE model. Brute force methods, such as statistical fault injection (SFI), enable register level detail but at the expense of computation speed. We have developed a novel approach that marries the computational speed of the analytical approach with the level of detail of the brute force approach. Our methodology introduces the concept of "port AVFs" computed by ACE analysis on a performance model and applies these values to a node graph extracted from RTL. We employ rules derived from set theory that let us propagate these port AVFs throughout the node graph using an iterative relaxation technique. This enables us to generate statistically significant AVFs for all sequential nodes in a given processor design in a fast and accurate manner. We use this approach to compute the sequential AVF for all nodes in a modern microprocessor and show good correlation with beam test measurements on silicon.},
+ acmid = {2830829},
+ address = {New York, NY, USA},
+ author = {Raasch, Steven and Biswas, Arijit and Stephan, Jon and Racunas, Paul and Emer, Joel},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830829},
+ isbn = {978-1-4503-4034-2},
+ keyword = {ACE analysis, AVF, fault injection, fault simulation, reliability, sequentials, soft error},
+ link = {http://doi.acm.org/10.1145/2830772.2830829},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {738--749},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {A Fast and Accurate Analytical Technique to Compute the AVF of Sequential Bits in a Processor},
+ year = {2015}
+}
+
+
+@inproceedings{Chen:2015:ETP:2830772.2830798,
+ abstract = {Many mobile applications utilize hardware accelerators for computation-intensive tasks. Often these tasks involve real-time user interactions and must finish within a certain amount of time for smooth user experience. In this paper, we propose a DVFS framework for hardware accelerators involving real-time user interactions. The framework automatically generates a predictor for each accelerator that predicts its execution time, and sets a DVFS level to just meet the response time requirement. Our evaluation results show, compared to running each accelerator at a constant frequency, our DVFS framework achieves 36.7% energy savings on average across a set of accelerators, while only missing 0.4% of the deadlines. The energy savings are only 3.8% less than an optimal DVFS scheme. We show with the introduction of a boost level, the deadline misses can be completely eliminated while still achieving 36.4% energy savings.},
+ acmid = {2830798},
+ address = {New York, NY, USA},
+ author = {Chen, Tao and Rucker, Alexander and Suh, G. Edward},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830798},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DVFS, energy efficiency, hardware accelerator},
+ link = {http://doi.acm.org/10.1145/2830772.2830798},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {457--469},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Execution Time Prediction for Energy-efficient Hardware Accelerators},
+ year = {2015}
+}
+
+
+@inproceedings{Sinclair:2015:EGS:2830772.2830821,
+ abstract = {As GPUs have become increasingly general purpose, applications with more general sharing patterns and fine- grained synchronization have started to emerge. Unfortunately, conventional GPU coherence protocols are fairly simplistic, with heavyweight requirements for synchronization accesses. Prior work has tried to resolve these inefficiencies by adding scoped synchronization to conventional GPU coherence protocols, but the resulting memory consistency model, heterogeneous-race-free (HRF), is more complex than the common data-race-free (DRF) model. This work applies the DeNovo coherence protocol to GPUs and compares it with conventional GPU coherence under the DRF and HRF consistency models. The results show that the complexity of the HRF model is neither necessary nor sufficient to obtain high performance. DeNovo with DRF provides a sweet spot in performance, energy, overhead, and memory consistency model complexity. Specifically, for benchmarks with globally scoped fine-grained synchronization, compared to conventional GPU with HRF (GPU+HRF), DeNovo+DRF provides 28% lower execution time and 51% lower energy on average. For benchmarks with mostly locally scoped fine-grained synchronization, GPU+HRF is slightly better -- however, this advantage requires a more complex consistency model and is eliminated with a modest enhancement to DeNovo+DRF. Further, if HRF's complexity is deemed acceptable, then DeNovo+HRF is the best protocol.},
+ acmid = {2830821},
+ address = {New York, NY, USA},
+ author = {Sinclair, Matthew D. and Alsop, Johnathan and Adve, Sarita V.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830821},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPGPU, cache coherence, data-race-free models, memory consistency models, synchronization},
+ link = {http://doi.acm.org/10.1145/2830772.2830821},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {647--659},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Efficient GPU Synchronization Without Scopes: Saying No to Complex Consistency Models},
+ year = {2015}
+}
+
+
+@inproceedings{Du:2015:NAC:2830772.2830789,
+ abstract = {A vast array of devices, ranging from industrial robots to self-driven cars or smartphones, require increasingly sophisticated processing of real-world input data (image, voice, radio, ...). Interestingly, hardware neural network accelerators are emerging again as attractive candidate architectures for such tasks. The neural network algorithms considered come from two, largely separate, domains: machine-learning and neuroscience. These neural networks have very different characteristics, so it is unclear which approach should be favored for hardware implementation. Yet, few studies compare them from a hardware perspective. We implement both types of networks down to the layout, and we compare the relative merit of each approach in terms of energy, speed, area cost, accuracy and functionality. Within the limit of our study (current SNN and machine-learning NN algorithms, current best effort at hardware implementation efforts, and workloads used in this study), our analysis helps dispel the notion that hardware neural network accelerators inspired from neuroscience, such as SNN+STDP, are currently a competitive alternative to hardware neural networks accelerators inspired from machine-learning, such as MLP+BP: not only in terms of accuracy, but also in terms of hardware cost for realistic implementations, which is less expected. However, we also outline that SNN+STDP carry potential for reduced hardware cost compared to machine-learning networks at very large scales, if accuracy issues can be controlled (or for applications where they are less important). We also identify the key sources of inaccuracy of SNN+STDP which are less related to the loss of information due to spike coding than to the nature of the STDP learning algorithm. Finally, we outline that for the category of applications which require permanent online learning and moderate accuracy, SNN+STDP hardware accelerators could be a very cost-efficient solution.},
+ acmid = {2830789},
+ address = {New York, NY, USA},
+ author = {Du, Zidong and Ben-Dayan Rubin, Daniel D. and Chen, Yunji and He, Liqiang and Chen, Tianshi and Zhang, Lei and Wu, Chengyong and Temam, Olivier},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830789},
+ isbn = {978-1-4503-4034-2},
+ keyword = {accelerator, comparison, neuromorphic},
+ link = {http://doi.acm.org/10.1145/2830772.2830789},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {494--507},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Neuromorphic Accelerators: A Comparison Between Neuroscience and Machine-learning Approaches},
+ year = {2015}
+}
+
+
+@inproceedings{Fu:2015:CDR:2830772.2830832,
+ abstract = {Designing massive scale cache coherence systems has been an elusive goal. Whether it be on large-scale GPUs, future thousand-core chips, or across million-core warehouse scale computers, having shared memory, even to a limited extent, improves programmability. This work sidesteps the traditional challenges of creating massively scalable cache coherence by restricting coherence to flexible subsets (domains) of a system's total cores and home nodes. This paper proposes Coherence Domain Restriction (CDR), a novel coherence framework that enables the creation of thousand to million core systems that use shared memory while maintaining low storage and energy overhead. Inspired by the observation that the majority of cache lines are only shared by a subset of cores either due to limited application parallelism or limited page sharing, CDR restricts the coherence domain from global cache coherence to VM-level, application-level, or page-level. We explore two types of restriction, one which limits the total number of sharers that can access a coherence domain and one which limits the number and location of home nodes that partake in a coherence domain. Each independent coherence domain only tracks the cores in its domain instead of the whole system, thereby removing the need for a coherence scheme built on top of CDR to scale. Sharer Restriction achieves constant storage overhead as core count increases while Home Restriction provides localized communication enabling higher performance. Unlike previous systems, CDR is flexible and does not restrict the location of the home nodes or sharers within a domain. We evaluate CDR in the context of a 1024-core chip and in the novel application of shared memory to a 1,000,000-core warehouse scale computer. Sharer Restriction results in significant area savings, while Home Restriction in the 1024-core chip and 1,000,000-core system increases performance by 29% and 23.04x respectively when comparing with global home placement. We implemented the entire CDR framework in a 25-core processor taped out in IBM's 32nm SOI process and present a detailed area characterization.},
+ acmid = {2830832},
+ address = {New York, NY, USA},
+ author = {Fu, Yaosheng and Nguyen, Tri M. and Wentzlaff, David},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830832},
+ isbn = {978-1-4503-4034-2},
+ keyword = {cache coherence, home placement, shared memory},
+ link = {http://doi.acm.org/10.1145/2830772.2830832},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {686--698},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Coherence Domain Restriction on Large Scale Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Guo:2015:EPE:2830772.2830788,
+ abstract = {Over the last decade, the looming power wall has spurred a flurry of interest in developing heterogeneous systems with hardware accelerators. The questions, then, are what and how accelerators should be designed, and what software support is required. Our accelerator design approach stems from the observation that many efficient and portable software implementations rely on high performance software libraries with well-established application programming interfaces (APIs). We propose the integration of hardware accelerators on 3D-stacked memory that explicitly targets the memory-bounded operations within high performance libraries. The fixed APIs with limited configurability simplify the design of the accelerators, while ensuring that the accelerators have wide applicability. With our software support that automatically converts library APIs to accelerator invocations, an additional advantage of our approach is that library-based legacy code automatically gains the benefit of memory-side accelerators without requiring a reimplementation. On average, the legacy code using our proposed MEmory Accelerated Library (MEALib) improves performance and energy efficiency for individual operations in Intel's Math Kernel Library (MKL) by 38x and 75x, respectively. For a real-world signal processing application that employs Intel MKL, MEALib attains more than 10x better energy efficiency.},
+ acmid = {2830788},
+ address = {New York, NY, USA},
+ author = {Guo, Qi and Low, Tze-Meng and Alachiotis, Nikolaos and Akin, Berkin and Pileggi, Larry and Hoe, James C. and Franchetti, Franz},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830788},
+ isbn = {978-1-4503-4034-2},
+ keyword = {3D DRAM, accelerator, energy efficiency, library},
+ link = {http://doi.acm.org/10.1145/2830772.2830788},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {750--761},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Enabling Portable Energy Efficiency with Memory Accelerated Library},
+ year = {2015}
+}
+
+
+@inproceedings{Kloosterman:2015:WSR:2830772.2830830,
+ abstract = {Although graphics processing units (GPUs) are capable of high compute throughput, their memory systems need to supply the arithmetic pipelines with data at a sufficient rate to avoid stalls. For benchmarks that have divergent access patterns or cause the L1 cache to run out of resources, the link between the GPU's load/store unit and the L1 cache becomes a bottleneck in the memory system, leading to low utilization of compute resources. While current GPU memory systems are able to coalesce requests between threads in the same warp, we identify a form of spatial locality between threads in multiple warps. We use this locality, which is overlooked in current systems, to merge requests being sent to the L1 cache. This relieves the bottleneck between the load/store unit and the cache, and provides an opportunity to prioritize requests to minimize cache thrashing. Our implementation, WarpPool, yields a 38% speedup on memory throughput-limited kernels by increasing the throughput to the L1 by 8% and the reducing the number of L1 misses by 23%. We also demonstrate that WarpPool can improve GPU programmability by achieving high performance without the need to optimize workloads' memory access patterns. A Verilog implementation including place-and route shows WarpPool requires 1.0% added GPU area and 0.8% added power.},
+ acmid = {2830830},
+ address = {New York, NY, USA},
+ author = {Kloosterman, John and Beaumont, Jonathan and Wollman, Mick and Sethia, Ankit and Dreslinski, Ron and Mudge, Trevor and Mahlke, Scott},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830830},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPGPU, memory coalescing, memory divergence},
+ link = {http://doi.acm.org/10.1145/2830772.2830830},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {433--444},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {WarpPool: Sharing Requests with Inter-warp Coalescing for Throughput Processors},
+ year = {2015}
+}
+
+
+@inproceedings{Bacha:2015:AHC:2830772.2830814,
+ abstract = {Hardware-assisted security is emerging as a promising avenue for protecting computer systems. Hardware based solutions, such as Physical Unclonable Functions (PUF), enable system authentication by relying on the physical attributes of the silicon to serve as fingerprints. A variety of PUF designs have been proposed by researchers, with some gaining commercial success. Virtually all of these systems require dedicated PUF hardware to be built into the processor or System-on-Chip (SoC), increasing the cost of deployment in the field. This paper presents Authenticache, a novel, low-cost PUF design that does not require dedicated hardware support. Instead, it leverages on-chip error correction logic already built into many processor caches. As a result, Authenticache can be deployed and used by many off-the-shelf processors with minimal costs. We prototype, evaluate, and test the design on a real system, in addition to conducting extensive simulations. We find Authenticache to have high identifiability, as well as excellent resilience to measurement and environmental noise. Authenticache can withstand up to 142% of noise while maintaining a misidentification rate that is below 1 ppm.},
+ acmid = {2830814},
+ address = {New York, NY, USA},
+ author = {Bacha, Anys and Teodorescu, Radu},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830814},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830814},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {128--140},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Authenticache: Harnessing Cache ECC for System Authentication},
+ year = {2015}
+}
+
+
+@inproceedings{Yu:2015:IIM:2830772.2830807,
+ abstract = {Machine learning, graph analytics and sparse linear algebra-based applications are dominated by irregular memory accesses resulting from following edges in a graph or non-zero elements in a sparse matrix. These accesses have little temporal or spatial locality, and thus incur long memory stalls and large bandwidth requirements. A traditional streaming or striding prefetcher cannot capture these irregular access patterns. A majority of these irregular accesses come from indirect patterns of the form A[B[i]]. We propose an efficient hardware indirect memory prefetcher (IMP) to capture this access pattern and hide latency. We also propose a partial cacheline accessing mechanism for these prefetches to reduce the network and DRAM bandwidth pressure from the lack of spatial locality. Evaluated on 7 applications, IMP shows 56% speedup on average (up to 2.3×) compared to a baseline 64 core system with streaming prefetchers. This is within 23% of an idealized system. With partial cacheline accessing, we see another 9.4% speedup on average (up to 46.6%).},
+ acmid = {2830807},
+ address = {New York, NY, USA},
+ author = {Yu, Xiangyao and Hughes, Christopher J. and Satish, Nadathur and Devadas, Srinivas},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830807},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830807},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {178--190},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {IMP: Indirect Memory Prefetcher},
+ year = {2015}
+}
+
+
+@inproceedings{Pham:2015:LPL:2830772.2830773,
+ abstract = {Large pages have long been used to mitigate address translation overheads on big-memory systems, particularly in virtualized environments where TLB miss overheads are severe. We show, however, that far from being a panacea, large pages are used sparingly by modern virtualization software. This is because large pages often preclude lightweight memory management, which can outweigh their Translation Lookaside Buffer (TLB) benefits. For example, they reduce opportunities to deduplicate memory among virtual machines in overcommitted systems, interfere with lightweight memory monitoring, and hamper the agility of virtual machine (VM) migrations. While many of these problems are particularly severe in overcommitted systems with scarce memory resources, they can (and often do) exist generally in cloud deployments. In response, virtualization software often (though it doesn't have to) splinters guest operating system (OS) large pages into small system physical pages, sacrificing address translation performance for overall system-level benefits. We introduce simple hardware that bridges this fundamental conflict, using speculative techniques to group contiguous, aligned small page translations such that they approach the address translation performance of large pages. Our Generalized Large-page Utilization Enhancements (GLUE) allow system hypervisors to splinter large pages for agile memory management, while retaining almost all of the TLB performance of unsplintered large pages.},
+ acmid = {2830773},
+ address = {New York, NY, USA},
+ author = {Pham, Binh and Vesel\'{y}, J\'{a}n and Loh, Gabriel H. and Bhattacharjee, Abhishek},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830773},
+ isbn = {978-1-4503-4034-2},
+ keyword = {TLB, speculation, virtual memory, virtualization},
+ link = {http://doi.acm.org/10.1145/2830772.2830773},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {1--12},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Large Pages and Lightweight Memory Management in Virtualized Environments: Can You Have It Both Ways?},
+ year = {2015}
+}
+
+
+@inproceedings{Kim:2015:VAS:2830772.2830825,
+ abstract = {A key role of virtualization is to give an illusion that a consolidated workload runs on a dedicated machine although the underlying resources are actively shared by multiple workloads. Technical advances have enabled a virtual machine (VM) to exercise many shared resources of a machine in a transparent and isolated manner. However, such an illusion of resource dedication has not been supported for the last-level cache (LLC), although the LLC is the largest on-chip shared resource with a significant performance impact. In this paper, we propose vCache--architectural support to provide a transparent and isolated virtual LLC (vLLC) for each VM and interfaces to manage the vLLC. More specifically, this study first proposes architectural support for the guest OS of a VM to index the LLC with its guest physical address instead of a host physical address. This in turn allows that the guest OS transparently view its vLLC and preserve the effectiveness of its page placement policy. Second, this study extends the architectural support for each VM to keep its vLLC strongly isolated from other VMs. Such resource dedication is critical to offer performance isolation and preserve vLLC transparency for each VM in a highly consolidated machine. With little hardware overhead, vCache can facilitate various unchartered vLLC capacity-based services for the public clouds while providing up to 17% higher performance than a traditional virtualized system.},
+ acmid = {2830825},
+ address = {New York, NY, USA},
+ author = {Kim, Daehoon and Kim, Hwanju and Kim, Nam Sung and Huh, Jaehyuk},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830825},
+ isbn = {978-1-4503-4034-2},
+ keyword = {page coloring, performance isolation, virtual LLC, virtualization},
+ link = {http://doi.acm.org/10.1145/2830772.2830825},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {623--634},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {vCache: Architectural Support for Transparent and Isolated Virtual LLCs in Virtualized Environments},
+ year = {2015}
+}
+
+
+@inproceedings{Lu:2015:IDL:2830772.2830827,
+ abstract = {The evolution of DRAM technology has been driven by capacity and bandwidth during the last decade. In contrast, DRAM access latency stays relatively constant and is trending to increase. Much efforts have been devoted to tolerate memory access latency but these techniques have reached the point of diminishing returns. Having shorter bitline and wordline length in a DRAM device will reduce the access latency. However by doing so it will impact the array efficiency. In the mainstream market, manufacturers are not willing to trade capacity for latency. Prior works had proposed hybrid-bitline DRAM design to overcome this problem. However, those methods are either intrusive to the circuit and layout of the DRAM design, or there is no direct way to migrate data between the fast and slow levels. In this paper, we proposed a novel asymmetric DRAM with capability to perform low cost data migration between subarrays. Having this design we determined a simple management mechanism and explored many management related policies. We showed that with this new design and our simple management technique we could achieve 7.25% and 11.77% performance improvement in single- and multi-programming workloads, respectively, over a system with traditional homogeneous DRAM. This gain is above 80% of the potential performance gain of a system based on a hypothetical DRAM which is made out of short bitlines entirely.},
+ acmid = {2830827},
+ address = {New York, NY, USA},
+ author = {Lu, Shih-Lien and Lin, Ying-Chen and Yang, Chia-Lin},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830827},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830827},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {255--266},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Improving DRAM Latency with Dynamic Asymmetric Subarray},
+ year = {2015}
+}
+
+
+@inproceedings{Yan:2015:CMI:2830772.2830786,
+ abstract = {Mobile users always require an excellent user experience which is the top challenge faced by today's mobile device designers and producers. Mobile devices are battery constrained, thus developing energy-saving techniques to extend the battery life is critical in terms of the user experience. Since the discrepancy between the device energy and battery energy consumption is becoming large when the battery is approaching to depleted, the battery energy-savings mechanisms (instead of the previously explored device energy-saving mechanisms) that target at the low battery level are highly desirable. Besides the battery life, mobile users demand a good system responsiveness, which is also an essential component in the user experience. In this paper, we mainly focus on the mobile devices with the low battery level. We first introduce the concept of Quality of Experience (QoE), which quantitatively combines the two major factors (i.e., the battery life, and performance) into an integrated metric. We then characterize the QoE by capturing various users' psychological changes during the low battery phase, which affect the users' preference on battery life or performance. We further explore a QoE model that includes the online battery and performance models. Finally, we propose a QoE-aware frequency governor which dynamically changes the CPU frequency to achieve the optimal QoE at the low battery phase for different users at different environments. Our experiment results show that our QoE-aware frequency governor improves the QoE significantly.},
+ acmid = {2830786},
+ address = {New York, NY, USA},
+ author = {Yan, Kaige and Zhang, Xingyao and Fu, Xin},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830786},
+ isbn = {978-1-4503-4034-2},
+ keyword = {battery, mobile devices, quality-of-experience},
+ link = {http://doi.acm.org/10.1145/2830772.2830786},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {713--724},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Characterizing, Modeling, and Improving the QoE of Mobile Devices with Low Battery Level},
+ year = {2015}
+}
+
+
+@inproceedings{Olson:2015:BCS:2830772.2830819,
+ abstract = {As hardware accelerators proliferate, there is a desire to logically integrate them more tightly with CPUs through interfaces such as shared virtual memory. Although this integration has programmability and performance benefits, it may also have serious security and fault isolation implications, especially when accelerators are designed by third parties. Unchecked, accelerators could make incorrect memory accesses, causing information leaks, data corruption, or crashes not only for processes running on the accelerator, but for the rest of the system as well. Unfortunately, current security solutions are insufficient for providing memory protection from tightly integrated untrusted accelerators. We propose Border Control, a sandboxing mechanism which guarantees that the memory access permissions in the page table are respected by accelerators, regardless of design errors or malicious intent. Our hardware implementation of Border Control provides safety against improper memory accesses with a space overhead of only 0.006% of system physical memory per accelerator. We show that when used with a current highly demanding accelerator, this initial Border Control implementation has on average a 0.15% runtime overhead relative to the unsafe baseline.},
+ acmid = {2830819},
+ address = {New York, NY, USA},
+ author = {Olson, Lena E. and Power, Jason and Hill, Mark D. and Wood, David A.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830819},
+ isbn = {978-1-4503-4034-2},
+ keyword = {accelerators, hardware sandboxing, memory protection},
+ link = {http://doi.acm.org/10.1145/2830772.2830819},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {470--481},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Border Control: Sandboxing Accelerators},
+ year = {2015}
+}
+
+
+@inproceedings{Liu:2015:SSA:2830772.2830822,
+ abstract = {General-purpose computing on Graphics Processing Units (GPGPUs) became increasingly popular for a wide range of applications beyond traditional graphic rendering workloads. GPGPU exploits parallelism in applications via multithreading to hide memory latencies, and handles control complexity by barrier synchronizations. Warp scheduling algorithms have been optimized to increase memory latency hiding capability, improve cache behavior, or alleviate branch divergence. To date, there is no scheduler that accounts for the synchronization behavior among warps under the presence of multiple warp schedulers. In this paper, we develop a warp scheduling algorithm that is synchronization aware. The key observation is that excessive stall cycles may be introduced due to synchronizing warps residing in different warp schedulers. We propose that schedulers coordinate with each other to avoid warps from being blocked on a barrier for overly long. Such coordination will dynamically reorder the execution sequence of warps so that they are issued in proximity when a barrier is encountered. Performance evaluations demonstrate that our proposed coordinated schedulers can improve the performance of synchronization-rich benchmarks by 10% on average when compared to the state-of-the-art non-coordinating schedulers.},
+ acmid = {2830822},
+ address = {New York, NY, USA},
+ author = {Liu, Jiwei and Yang, Jun and Melhem, Rami},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830822},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPGPU, multiple warp schedulers, synchronization},
+ link = {http://doi.acm.org/10.1145/2830772.2830822},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {383--394},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {SAWS: Synchronization Aware GPGPU Warp Scheduling for Multiple Independent Warp Schedulers},
+ year = {2015}
+}
+
+
+@inproceedings{Nikolaou:2015:MID:2830772.2830804,
+ abstract = {Total Cost of Ownership (TCO) is a key optimization metric for the design of a datacenter. This paper proposes, for the first time, a framework for modeling the implications of DRAM failures and DRAM error protection techniques on the TCO of a datacenter. The framework captures the Effects and interactions of several key parameters including: the choice of DRAM protection technique (e.g. single vs dual channel Chipkill), device width (x4 or x8), memory size, power, FITs for various failure modes, the performance, power and temperature overheads of a protection technique for a given service and mixes of collocated services. The usefulness of the proposed framework is demonstrated through several case studies that identify the best DRAM protection technique in each case, in terms of TCO. Interestingly, our analysis reveals that among the three DRAM protection techniques considered, there is no one that is always superior to all the others. Moreover, each technique is better than the others for some cases. This underlines the importance and the need of the proposed framework for making optimal memory protection datacenter design decisions. As part of this work, we analyze and report the performance and power with single channel and dual channel Chipkill on real hardware when running a web search benchmark alone and collocated with benchmarks of varying memory intensity. This analysis reveals that the choice of memory protection can have serious performance and TCO ramifications depending on the memory characteristics of collocated services. Other analysis reveals that, for the datacenter and services assumed in this study, when using Chipkill protection it can be beneficial for TCO to use DRAM with 100x the failure rate of a baseline DRAM as long as the cost per DIMM is at least a dollar less compared to the baseline.},
+ acmid = {2830804},
+ address = {New York, NY, USA},
+ author = {Nikolaou, Panagiota and Sazeides, Yiannakis and Ndreu, Lorena and Kleanthous, Marios},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830804},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DRAM, co-running services, datacenters, online and offline services, reliability, total cost of ownership},
+ link = {http://doi.acm.org/10.1145/2830772.2830804},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {572--584},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Modeling the Implications of DRAM Failures and Protection Techniques on Datacenter TCO},
+ year = {2015}
+}
+
+
+@inproceedings{Padmanabha:2015:DDS:2830772.2830791,
+ abstract = {InOrder (InO) cores achieve limited performance because their inability to dynamically reorder instructions prevents them from exploiting Instruction-Level-Parallelism. Conversely, Out-of-Order (OoO) cores achieve high performance by aggressively speculating past stalled instructions and creating highly optimized issue schedules. It has been observed that these issue schedules tend to repeat for sequences of instructions with predictable control and data-flow. An equally provisioned InO core can potentially achieve OoO's performance at a fraction of the energy cost if provided with an OoO schedule. In the context of a fine-grained heterogeneous multicore system composed of a big (OoO) core and a little (InO) core, we could offload recurring issue schedules from the big to the little core, to achieve energy-efficiency while maintaining performance. To this end, we introduce the DynaMOS architecture. Recurring issue schedules may contain instructions that speculate across branches, utilize renamed registers to eliminate false dependencies, and reorder memory operations. DynaMOS provisions little with an OinO mode to replay a speculative schedule while ensuring program correctness. Any divergence from the recorded instruction sequence causes execution to restart in program order from a previously checkpointed state. On a system capable of switching between big and little cores rapidly with low overheads, DynaMOS schedules 38% of execution on the little on average, increasing utilization of the energy-efficient core by 2.9X over prior work. This amounts to energy savings of 32% over execution on only big core, with an allowable 5% performance loss.},
+ acmid = {2830791},
+ address = {New York, NY, USA},
+ author = {Padmanabha, Shruti and Lukefahr, Andrew and Das, Reetuparna and Mahlke, Scott},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830791},
+ isbn = {978-1-4503-4034-2},
+ keyword = {energy-efficiency, fine-grained phase prediction, heterogeneous processors},
+ link = {http://doi.acm.org/10.1145/2830772.2830791},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {322--333},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {DynaMOS: Dynamic Schedule Migration for Heterogeneous Cores},
+ year = {2015}
+}
+
+
+@inproceedings{Ham:2015:DDS:2830772.2830800,
+ abstract = {Today's computers employ significant heterogeneity to meet performance targets at manageable power. In adopting increased compute specialization, however, the relative amount of time spent on memory or communication latency has increased. System and software optimizations for memory and communication often come at the costs of increased complexity and reduced portability. We propose Decoupled Supply-Compute (DeSC) as a way to attack memory bottlenecks automatically, while maintaining good portability and low complexity. Drawing from Decoupled Access Execute (DAE) approaches, our work updates and expands on these techniques with increased specialization and automatic compiler support. Across the evaluated workloads, DeSC offers an average of 2.04x speedup over baseline (on homogeneous CMPs) and 1.56x speedup when a DeSC data supplier feeds data to a hardware accelerator. Achieving performance very close to what a perfect cache hierarchy would offer, DeSC offers the performance gains of specialized communication acceleration while maintaining useful generality across platforms.},
+ acmid = {2830800},
+ address = {New York, NY, USA},
+ author = {Ham, Tae Jun and Arag\'{o}n, Juan L. and Martonosi, Margaret},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830800},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DeSC, accelerators, communication management, decoupled architecture},
+ link = {http://doi.acm.org/10.1145/2830772.2830800},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {191--203},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {DeSC: Decoupled Supply-compute Communication Management for Heterogeneous Architectures},
+ year = {2015}
+}
+
+
+@inproceedings{deLucas:2015:UPR:2830772.2830783,
+ abstract = {Smartphones have become powerful computing systems able to carry out complex tasks, such as web browsing, image processing and gaming, among others. Graphics animation applications such as 3D games represent a large percentage of downloaded applications for mobile devices and the trend is towards more complex and realistic scenes with accurate 3D physics simulations, like those in laptops and desktops. Collision detection (CD) is one of the main algorithms used in any physics kernel. However, real-time highly accurate CD is very expensive in terms of energy consumption and this parameter is of paramount importance for mobile devices since it has a direct effect on the autonomy of the system. In this work, we propose an energy-efficient, high-fidelity CD scheme that leverages some intermediate results of the rendering pipeline. It also adds a new and simple hardware block to the GPU pipeline that works in parallel with it and completes the remaining parts of the CD task with extremely low power consumption and more speed than traditional schemes. Using commercial Android applications, we show that our scheme reduces the energy consumption of the CD by 99.8% (i.e., 448x times smaller) on average. Furthermore, the execution time required for CD in our scheme is almost three orders of magnitude smaller (600x speedup) than the time required by a conventional technique executed in a CPU. These dramatic benefits are accompanied by a higher fidelity CD analysis (i.e., with finer granularity), which improves the quality and realism of the application.},
+ acmid = {2830783},
+ address = {New York, NY, USA},
+ author = {de Lucas, Enrique and Marcuello, Pedro and Parcerisa, Joan-Manuel and Gonz\'{a}lez, Antonio},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830783},
+ isbn = {978-1-4503-4034-2},
+ keyword = {image based collision detection, mobile GPU, rendering},
+ link = {http://doi.acm.org/10.1145/2830772.2830783},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {445--456},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Ultra-low Power Render-based Collision Detection for CPU/GPU Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Hashemi:2015:FRE:2830772.2830812,
+ abstract = {Runahead execution dynamically expands the instruction window of an out of order processor to generate memory level parallelism (MLP) while the core would otherwise be stalled. Unfortunately, runahead has the disadvantage of requiring the front-end to remain active to supply instructions. We propose a new structure (the Runahead Buffer) for supplying these instructions. We note that cache misses are often caused by repetitive, short dependence chains. We store these dependence chains in the runahead buffer. During runahead, the runahead buffer is used to supply instructions. This generates 2x more MLP than traditional runahead on average because the core can run further ahead. It also saves energy since the front-end can be clock-gated, reducing dynamic energy consumption. Over a no-prefetching/prefetching baseline, the result is a performance benefit of 17.2%/7.8% and an energy reduction of 6.7%/4.5% respectively. Traditional runahead with additional energy optimizations results in a performance benefit of 12.1%/5.9% but an energy increase of 9.5%/5.4%. Finally, we propose a hybrid policy that switches between the runahead buffer and traditional runahead, maximizing performance.},
+ acmid = {2830812},
+ address = {New York, NY, USA},
+ author = {Hashemi, Milad and Patt, Yale N.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830812},
+ isbn = {978-1-4503-4034-2},
+ keyword = {energy efficiency, memory wall, runahead execution},
+ link = {http://doi.acm.org/10.1145/2830772.2830812},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {358--369},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Filtered Runahead Execution with a Runahead Buffer},
+ year = {2015}
+}
+
+
+@inproceedings{Fang:2015:FSU:2830772.2830809,
+ abstract = {We propose the Unified Automata Processor (UAP), a new architecture that provides general and efficient support for finite automata (FA). The UAP supports a wide range of existing finite automata models (DFAs, NFAs, A-DFAs, JFAs, counting-DFAs, and counting-NFAs), and future novel FA models. Evaluation on realistic workloads shows that UAP implements all models efficiently, achieving line rates 94.5% of ideal. A single UAP lane delivers line rates 50x greater than software approaches on CPUs and GPUs. Scaling UAP to 64 lanes achieves FA transition throughputs as high as 295 Gbps, more than 100x higher than CPUs and GPUs, and even exceeding ASIC approaches such as IBM's RegX by 6x. With efficient support for multiple input streams, UAP achieves throughputs that saturate even high speed stacked DRAM memory systems. The UAP design and implementation is efficient in instructions executed, memory references, and energy. UAP achieves a 1.2 Ghz clock rate (32nm TSMC CMOS), and a 64-lane UAP requires only 2.2 mm2 and 563 mW. At these levels of performance and energy-efficiency, UAP is a promising candidate for integration into general-purpose computing architectures.},
+ acmid = {2830809},
+ address = {New York, NY, USA},
+ author = {Fang, Yuanwei and Hoang, Tung T. and Becchi, Michela and Chien, Andrew A.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830809},
+ isbn = {978-1-4503-4034-2},
+ keyword = {computer architecture, custom architecture, data processing, energy-efficient, finite automata, pattern-matching, processor},
+ link = {http://doi.acm.org/10.1145/2830772.2830809},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {533--545},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Fast Support for Unstructured Data Processing: The Unified Automata Processor},
+ year = {2015}
+}
+
+
+@inproceedings{Leng:2015:SLV:2830772.2830811,
+ abstract = {Energy efficiency of GPU architectures has emerged as an important aspect of computer system design. In this paper, we explore the energy benefits of reducing the GPU chip's voltage to the safe limit, i.e. Vmin point. We perform such a study on several commercial off-the-shelf GPU cards. We find that there exists about 20% voltage guardband on those GPUs spanning two architectural generations, which, if "eliminated" completely, can result in up to 25% energy savings on one of the studied GPU cards. The exact improvement magnitude depends on the program's available guardband, because our measurement results unveil a program dependent Vmin behavior across the studied programs. We make fundamental observations about the program-dependent Vmin behavior. We experimentally determine that the voltage noise has a larger impact on Vmin compared to the process and temperature variation, and the activities during the kernel execution cause large voltage droops. From these findings, we show how to use a kernel's microarchitectural performance counters to predict its Vmin value accurately. The average and maximum prediction errors are 0.5% and 3%, respectively. The accurate Vmin prediction opens up new possibilities of a cross-layer dynamic guardbanding scheme for GPUs, in which software predicts and manages the voltage guardband, while the functional correctness is ensured by a hardware safety net mechanism.},
+ acmid = {2830811},
+ address = {New York, NY, USA},
+ author = {Leng, Jingwen and Buyuktosunoglu, Alper and Bertran, Ramon and Bose, Pradip and Reddi, Vijay Janapa},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830811},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830811},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {294--307},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Safe Limits on Voltage Reduction Efficiency in GPUs: A Direct Measurement Approach},
+ year = {2015}
+}
+
+
+@inproceedings{Chen:2015:FLO:2830772.2830818,
+ abstract = {Supporting dynamic parallelism is important for GPU to benefit a broad range of applications. There are currently two fundamental ways for programs to exploit dynamic parallelism on GPU: a software-based approach with software-managed worklists, and a hardware-based approach through dynamic subkernel launches. Neither is satisfactory. The former is complicated to program and is often subject to some load imbalance; the latter suffers large runtime overhead. In this work, we propose free launch, a new software approach to overcoming the shortcomings of both methods. It allows programmers to use subkernel launches to express dynamic parallelism. It employs a novel compiler-based code transformation named subkernel launch removal to replace the subkernel launches with the reuse of parent threads. Coupled with an adaptive task assignment mechanism, the transformation reassigns the tasks in the subkernels to the parent threads with a good load balance. The technique requires no hardware extensions, immediately deployable on existing GPUs. It keeps the programming convenience of the subkernel launch-based approach while avoiding its large runtime overhead. Meanwhile, its superior load balancing makes it outperform manual worklist-based techniques by 3X on average.},
+ acmid = {2830818},
+ address = {New York, NY, USA},
+ author = {Chen, Guoyang and Shen, Xipeng},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830818},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPU, compiler, dynamic parallelism, optimization, runtime adaptation, thread reuse},
+ link = {http://doi.acm.org/10.1145/2830772.2830818},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {407--419},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Free Launch: Optimizing GPU Dynamic Kernel Launches Through Thread Reuse},
+ year = {2015}
+}
+
+
+@inproceedings{Zu:2015:AGS:2830772.2830824,
+ abstract = {The traditional guardbanding approach to ensure processor reliability is becoming obsolete because it always over-provisions voltage and wastes a lot of energy. As a next-generation alternative, adaptive guardbanding dynamically adjusts chip clock frequency and voltage based on timing margin measured at runtime. With adaptive guardbanding, voltage guardband is only provided when needed, thereby promising significant energy efficiency improvement. In this paper, we provide the first full-system analysis of adaptive guardbanding's implications using a POWER7+ multicore. On the basis of a broad collection of hardware measurements, we show the benefits of adaptive guardbanding in a practical setting are strongly dependent upon workload characteristics and chip-wide multicore activity. A key finding is that adaptive guardbanding's benefits diminish as the number of active cores increases, and they are highly dependent upon the workload running. Through a series of analysis, we show these high-level system effects are the result of interactions between the application characteristics, architecture and the underlying voltage regulator module's loadline effect and IR drop effects. To that end, we introduce adaptive guardband scheduling to reclaim adaptive guardbanding's efficiency under different enterprise scenarios. Our solution reduces processor power consumption by 6.2% over a highly optimized system, effectively doubling adaptive guardbanding's original improvement. Our solution also avoids malicious workload mappings to guarantee application QoS in the face of adaptive guardbanding hardware's variable performance.},
+ acmid = {2830824},
+ address = {New York, NY, USA},
+ author = {Zu, Yazhou and Lefurgy, Charles R. and Leng, Jingwen and Halpern, Matthew and Floyd, Michael S. and Reddi, Vijay Janapa},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830824},
+ isbn = {978-1-4503-4034-2},
+ keyword = {di/dt effect, energy efficiency, operating margin, scheduling, voltage drop},
+ link = {http://doi.acm.org/10.1145/2830772.2830824},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {308--321},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Adaptive Guardband Scheduling to Improve System-level Efficiency of the POWER7+},
+ year = {2015}
+}
+
+
+@inproceedings{Kasture:2015:RFA:2830772.2830797,
+ abstract = {Latency-critical workloads (e.g., web search), common in datacenters, require stable tail (e.g., 95th percentile) latencies of a few milliseconds. Servers running these workloads are kept lightly loaded to meet these stringent latency targets. This low utilization wastes billions of dollars in energy and equipment annually. Applying dynamic power management to latency-critical workloads is challenging. The fundamental issue is coping with their inherent short-term variability: requests arrive at unpredictable times and have variable lengths. Without knowledge of the future, prior techniques either adapt slowly and conservatively or rely on application-specific heuristics to maintain tail latency. We propose Rubik, a fine-grain DVFS scheme for latency-critical workloads. Rubik copes with variability through a novel, general, and efficient statistical performance model. This model allows Rubik to adjust frequencies at sub-millisecond granularity to save power while meeting the target tail latency. Rubik saves up to 66% of core power, widely outperforms prior techniques, and requires no application-specific tuning. Beyond saving core power, Rubik robustly adapts to sudden changes in load and system performance. We use this capability to design RubikColoc, a colocation scheme that uses Rubik to allow batch and latency-critical work to share hardware resources more aggressively than prior techniques. RubikColoc reduces datacenter power by up to 31% while using 41% fewer servers than a datacenter that segregates latency-critical and batch work, and achieves 100% core utilization.},
+ acmid = {2830797},
+ address = {New York, NY, USA},
+ author = {Kasture, Harshad and Bartolini, Davide B. and Beckmann, Nathan and Sanchez, Daniel},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830797},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DVFS, colocation, interference, isolation, latency-critical, power management, quality of service, tail latency},
+ link = {http://doi.acm.org/10.1145/2830772.2830797},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {598--610},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Rubik: Fast Analytical Power Management for Latency-critical Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Shevgoor:2015:EPC:2830772.2830793,
+ abstract = {Prior work in hardware prefetching has focused mostly on either predicting regular streams with uniform strides, or predicting irregular access patterns at the cost of large hardware structures. This paper introduces the Variable Length Delta Prefetcher (VLDP), which builds up delta histories between successive cache line misses within physical pages, and then uses these histories to predict the order of cache line misses in new pages. One of VLDP's distinguishing features is its use of multiple prediction tables, each of which stores predictions based on a different length of input history. For example, the first prediction table takes as input only the single most recent delta between cache misses within a page, and attempts to predict the next cache miss in that page. The second prediction table takes as input a sequence of the two most recent deltas between cache misses within a page, and also attempts to predict the next cache miss in that page, and so on with additional tables. Longer histories generally yield more accurate predictions, so VLDP prefers to make predictions based on the longest history table that has a matching entry. Using a global history of patterns it has seen in the past, VLDP is able to issue prefetches without having to wait for additional per-page confirmation, and it is even able to prefetch patterns that show no repetition within a physical page. VLDP does not use the program counter (PC) to make its predictions, but our evaluation shows that it out-performs the highest-performing PC-based prefetcher by 7.1%, and the highest performing prefetcher that doesn't employ the PC by 5.8%.},
+ acmid = {2830793},
+ address = {New York, NY, USA},
+ author = {Shevgoor, Manjunath and Koladiya, Sahil and Balasubramonian, Rajeev and Wilkerson, Chris and Pugsley, Seth H. and Chishti, Zeshan},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830793},
+ isbn = {978-1-4503-4034-2},
+ keyword = {prefetching},
+ link = {http://doi.acm.org/10.1145/2830772.2830793},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {141--152},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Efficiently Prefetching Complex Address Patterns},
+ year = {2015}
+}
+
+
+@inproceedings{Lee:2015:AAC:2830772.2830833,
+ abstract = {Although mobile devices have been evolved enough to support complex mobile programs, performance of the mobile devices is lagging behind performance of servers. To bridge the performance gap, computation offloading allows a mobile device to remotely execute heavy tasks at servers. However, due to architectural differences between mobile devices and servers, most existing computation offloading systems rely on virtual machines, so they cannot offload native applications. Some offloading systems can offload native mobile applications, but their applicability is limited to well-analyzable simple applications. This work presents automatic cross-architecture computation offloading for general-purpose native applications with a prototype framework that is called Native Offloader. At compile-time, Native Offloader automatically finds heavy tasks without any annotation, and generates offloading-enabled native binaries with memory unification for a mobile device and a server. At run-time, Native Offloader efficiently supports seamless migration between the mobile device and the server with a unified virtual address space and communication optimization. Native Offloader automatically offloads 17 native C applications from SPEC CPU2000 and CPU2006 benchmark suites without a virtual machine, and achieves a geomean program speedup of 6.42× and battery saving of 82.0%.},
+ acmid = {2830833},
+ address = {New York, NY, USA},
+ author = {Lee, Gwangmu and Park, Hyunjoon and Heo, Seonyeong and Chang, Kyung-Ah and Lee, Hyogun and Kim, Hanjun},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830833},
+ isbn = {978-1-4503-4034-2},
+ keyword = {mobile cloud computing, native computation offloading},
+ link = {http://doi.acm.org/10.1145/2830772.2830833},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {521--532},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Architecture-aware Automatic Computation Offload for Native Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Xie:2015:ECR:2830772.2830813,
+ abstract = {The key to high performance on GPUs lies in the massive threading to enable thread switching and hide the latency of function unit and memory access. However, running with the maximum thread-level parallelism (TLP) does not necessarily lead to the optimal performance due to the excessive thread contention for cache resource. As a result, thread throttling techniques are employed to limit the number of threads that concurrently execute to preserve the data locality. On the other hand, GPUs are equipped with a large register file to enable fast context switch between threads. However, thread throttling techniques that are designed to mitigate cache contention, lead to under utilization of registers. Register allocation is a significant factor for performance as it not just determines the single-thread performance, but indirectly affects the TLP. The design space of register allocation and TLP presents new opportunities for performance optimization. However, the complicated correlation between the two factors inevitably lead to many performance dynamics and uncertainties. In this paper, we propose Coordinated Register Allocation and Thread-level parallelism (CRAT), a compiler-based performance optimization framework. In order to achieve this goal, CRAT first enables effective register allocation. Given a register per-thread limit, CRAT allocates the registers by analyzing the lifetime of variables. To reduce the spilling cost, CRAT spills the registers to shared memory when possible. Then, CRAT explores the design space by first pruning the design points that cause serious Ll cache thrashing and register under utilization. After that, CRAT employs a prediction model to find the best tradeoff between the single-thread performance and TLP. We evaluate CRAT using a set of representative workloads on GPUs. Experimental results indicate that compared to the optimal thread throttling technique, our framework achieves performance improvement up to 1.79X (geometric mean 1.25X).},
+ acmid = {2830813},
+ address = {New York, NY, USA},
+ author = {Xie, Xiaolong and Liang, Yun and Li, Xiuhong and Wu, Yudong and Sun, Guangyu and Wang, Tao and Fan, Dongrui},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830813},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830813},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {395--406},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Enabling Coordinated Register Allocation and Thread-level Parallelism Optimization for GPUs},
+ year = {2015}
+}
+
+
+@inproceedings{Gong:2015:CHR:2830772.2830799,
+ abstract = {Adaptive-granularity memory architectures have been considered mainly because of main memory bottleneck and power efficiency. Meanwhile, highly reliable protection schemes are getting popular especially in large computing systems. Unfortunately, conventional ECC mechanisms including Chipkill require a large number of symbols to guarantee strong protection with acceptable overhead. We propose a novel memory protection scheme called CLEAN (Chipkill-LEvel reliable and Access granularity Negotiable), which enables us to balance the contradicting demands of fine-grained (FG) access and strong & efficient ECC. To close a potentially significant detection coverage gap due to CLEAN's detection mechanism coupled with permanent faults, we design a simple mechanism access granularity enforcement. By enforcing coarse-grained (CG) access, we can get only the advantage of higher protection comparable to Chipkill instead of achieving the adaptive access granularity together. CLEAN showed Chipkill level reliability as well as improvement in performance, system and memory power efficiency by up to 11.8%, 10.8% and 64.9% with mixes of SPEC2006 benchmarks.},
+ acmid = {2830799},
+ address = {New York, NY, USA},
+ author = {Gong, Seong-Lyong and Rhu, Minsoo and Kim, Jungrae and Chung, Jinsuk and Erez, Mattan},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830799},
+ isbn = {978-1-4503-4034-2},
+ keyword = {DRAM memory, adaptive granularity memory system, chipkill, reliability},
+ link = {http://doi.acm.org/10.1145/2830772.2830799},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {611--622},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {CLEAN-ECC: High Reliability ECC for Adaptive Granularity Memory System},
+ year = {2015}
+}
+
+
+@inproceedings{Singh:2015:EES:2830772.2830778,
+ abstract = {GPU programming models such as CUDA and OpenCL are starting to adopt a weaker data-race-free (DRF-0) memory model, which does not guarantee any semantics for programs with data-races. Before standardizing the memory model interface for GPUs, it is imperative that we understand the tradeoffs of different memory models for these devices. While there is a rich memory model literature for CPUs, studies on architectural mechanisms and performance costs for enforcing memory ordering constraints in GPU accelerators have been lacking. This paper shows that the performance cost of SC and TSO compared to DRF-0 is insignificant for most GPGPU applications, due to warp-level parallelism and in-order execution. For the remaining challenging applications that exhibit significant overhead for SC, we show that commonly employed memory ordering optimizations in CPUs are either expensive or in effective for GPUs. We propose a GPU-specific non-speculative SC design that takes advantage of high spatial locality and temporally private data in GPU applications. Results show that the proposed design is effective in eliminating the performance gap between SC and DRF-0 in GPUs.},
+ acmid = {2830778},
+ address = {New York, NY, USA},
+ author = {Singh, Abhayendra and Aga, Shaizeen and Narayanasamy, Satish},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830778},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPUs, OpenCL, memory consistency model},
+ link = {http://doi.acm.org/10.1145/2830772.2830778},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {699--712},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Efficiently Enforcing Strong Memory Ordering in GPUs},
+ year = {2015}
+}
+
+
+@inproceedings{Ardalani:2015:CPP:2830772.2830780,
+ abstract = {GPUs have become prevalent and more general purpose, but GPU programming remains challenging and time consuming for the majority of programmers. In addition, it is not always clear which codes will benefit from getting ported to GPU. Therefore, having a tool to estimate GPU performance for a piece of code before writing a GPU implementation is highly desirable. To this end, we propose Cross-Architecture Performance Prediction (XAPP), a machine-learning based technique that uses only single-threaded CPU implementation to predict GPU performance. Our paper is built on the two following insights: i) Execution time on GPU is a function of program properties and hardware characteristics. ii) By examining a vast array of previously implemented GPU codes along with their CPU counterparts, we can use established machine learning techniques to learn this correlation between program properties, hardware characteristics and GPU execution time. We use an adaptive two-level machine learning solution. Our results show that our tool is robust and accurate: we achieve 26.9% average error on a set of 24 real-world kernels. We also discuss practical usage scenarios for XAPP.},
+ acmid = {2830780},
+ address = {New York, NY, USA},
+ author = {Ardalani, Newsha and Lestourgeon, Clint and Sankaralingam, Karthikeyan and Zhu, Xiaojin},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830780},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPU, cross-platform prediction, machine learning, performance modeling},
+ link = {http://doi.acm.org/10.1145/2830772.2830780},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {725--737},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Cross-architecture Performance Prediction (XAPP) Using CPU Code to Predict GPU Performance},
+ year = {2015}
+}
+
+
+@inproceedings{Song:2015:MLI:2830772.2830806,
+ abstract = {Data movement over long and highly capacitive interconnects is responsible for a large fraction of the energy consumed in nanometer ICs. DDRx, the most broadly adopted family of DRAM interfaces, contributes significantly to the overall system energy in a wide range of computer systems. To reduce the energy cost of data transfers, DDR4 adopts a pseudo open-drain IO circuit that consumes power only when transmitting or receiving a 0, which makes the IO energy proportional to the number of 0s transferred over the data bus. A data bus invert (DBI) coding technique is therefore supported by the DDR4 standard to encode each byte using a small number of 0s. Although sparse coding techniques that are more advanced than DBI can reduce the IO power further, the relatively high bandwidth overhead of these codes has heretofore prevented their application to the DDRx bus. This paper presents MiL (More is Less), a novel data communication framework built on top of DDR4, which exploits the data bus under-utilization caused by DRAM timing constraints to selectively apply sparse codes, thereby reducing the IO energy without compromising system performance. Evaluation results on a set of eleven parallel applications show that MiL can reduce the average IO interface energy by 49%, and the average DRAM system energy by 8% when added on top of a conventional DDR4 system, with less than 2% performance degradation on average.},
+ acmid = {2830806},
+ address = {New York, NY, USA},
+ author = {Song, Yanwei and Ipek, Engin},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830806},
+ isbn = {978-1-4503-4034-2},
+ keyword = {energy-efficient design, memory interfaces, sparse representation},
+ link = {http://doi.acm.org/10.1145/2830772.2830806},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {242--254},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {More is Less: Improving the Energy Efficiency of Data Movement via Opportunistic Use of Sparse Codes},
+ year = {2015}
+}
+
+
+@inproceedings{Khorasani:2015:EWE:2830772.2830796,
+ abstract = {GPU's SIMD architecture is a double-edged sword confronting parallel tasks with control flow divergence. On the one hand, it provides a high performance yet power-efficient platform to accelerate applications via massive parallelism; however, on the other hand, irregularities induce inefficiencies due to the warp's lockstep traversal of all diverging execution paths. In this work, we present a software (compiler) technique named Collaborative Context Collection (CCC) that increases the warp execution efficiency when faced with thread divergence incurred either by different intra-warp task assignment or by intra-warp load imbalance. CCC collects the relevant registers of divergent threads in a warp-specific stack allocated in the fast shared memory, and restores them only when the perfect utilization of warp lanes becomes feasible. We propose code transformations to enable applicability of CCC to variety of program segments with thread divergence. We also introduce optimizations to reduce the cost of CCC and to avoid device occupancy limitation or memory divergence. We have developed a framework that automates application of CCC to CUDA generated intermediate PTX code. We evaluated CCC on real-world applications and multiple scenarios using synthetic programs. CCC improves the warp execution efficiency of real-world benchmarks by up to 56% and achieves an average speedup of 1.69x (maximum 3.08x).},
+ acmid = {2830796},
+ address = {New York, NY, USA},
+ author = {Khorasani, Farzad and Gupta, Rajiv and Bhuyan, Laxmi N.},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830796},
+ isbn = {978-1-4503-4034-2},
+ keyword = {CCC, GPGPU, GPU, SIMD, SIMT, context stack, divergence, warp, warp execution},
+ link = {http://doi.acm.org/10.1145/2830772.2830796},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {204--215},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Efficient Warp Execution in Presence of Divergence with Collaborative Context Collection},
+ year = {2015}
+}
+
+
+@inproceedings{Voitsechov:2015:CFC:2830772.2830817,
+ abstract = {We propose the hybrid dataflow/von Neumann vector graph instruction word (VGIW) architecture. This data-parallel architecture concurrently executes each basic block's dataflow graph (graph instruction word) for a vector of threads, and schedules the different basic blocks based on von Neumann control flow semantics. The VGIW processor dynamically coalesces all threads that need to execute a specific basic block into a thread vector and, when the block is scheduled, executes the entire thread vector concurrently. The proposed control flow coalescing model enables the VGIW architecture to overcome the control flow divergence problem, which greatly impedes the performance and power efficiency of data-parallel architectures. Furthermore, using von Neumann control flow semantics enables the VGIW architecture to overcome the limitations of the recently proposed single-graph multiple-flows (SGMF) dataflow GPGPU, which is greatly constrained in the size of the kernels it can execute. Our evaluation shows that VGIW can achieve an average speedup of 3× (up to 11×) over an NVIDIA GPGPU, while providing an average 1.75× better energy efficiency (up to 7×).},
+ acmid = {2830817},
+ address = {New York, NY, USA},
+ author = {Voitsechov, Dani and Etsion, Yoav},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830817},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPGPU, SIMD, dataflow, reconfigurable architectures},
+ link = {http://doi.acm.org/10.1145/2830772.2830817},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {216--227},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Control Flow Coalescing on a Hybrid Dataflow/Von Neumann GPGPU},
+ year = {2015}
+}
+
+
+@inproceedings{Zhu:2015:MIE:2830772.2830792,
+ abstract = {Enterprise Web applications are moving towards server-side scripting using managed languages. Within this shifting context, event-driven programming is emerging as a crucial programming model to achieve scalability. In this paper, we study the microarchitectural implications of server-side scripting, JavaScript in particular, from a unique event-driven programming model perspective. Using the Node.js framework, we come to several critical microarchitectural conclusions. First, unlike traditional server-workloads such as CloudSuite and BigDataBench that are based on the conventional thread-based execution model, event-driven applications are heavily single-threaded, and as such they require significant single-thread performance. Second, the single-thread performance is severely limited by the front-end inefficiencies of today's server processor microarchitecture, ultimately leading to overall execution inefficiencies. The front-end inefficiencies stem from the unique combination of limited intra-event code reuse and large inter-event reuse distance. Third, through a deep understanding of event-specific characteristics, architects can mitigate the front-end inefficiencies of the managed-language-based event-driven execution via a combination of instruction cache insertion policy and prefetcher.},
+ acmid = {2830792},
+ address = {New York, NY, USA},
+ author = {Zhu, Yuhao and Richins, Daniel and Halpern, Matthew and Reddi, Vijay Janapa},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830792},
+ isbn = {978-1-4503-4034-2},
+ keyword = {JavaScript, event-driven, microarchitecture, prefetcher},
+ link = {http://doi.acm.org/10.1145/2830772.2830792},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {762--774},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Microarchitectural Implications of Event-driven Server-side Web Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Shafiee:2015:AIL:2830772.2830795,
+ abstract = {Trusted applications frequently execute in tandem with untrusted applications on personal devices and in cloud environments. Since these co-scheduled applications share hardware resources, the latencies encountered by the untrusted application betray information about whether the trusted applications are accessing shared resources or not. Prior studies have shown that such information leaks can be used by the untrusted application to decipher keys or launch covert-channel attacks. Prior work has also proposed techniques to eliminate information leakage in various shared resources. The best known solution to eliminate information leakage in the memory system incurs high performance penalties. This work develops a comprehensive approach to eliminate timing channels in the memory controller that has two key elements: (i) We shape the memory access behavior of each thread so that it has an unchanging memory access pattern. (ii) We show how efficient memory access pipelines can be constructed to process the resulting memory accesses without introducing any resource conflicts. We mathematically show that the proposed system yields zero information leakage. We then show that various page mapping policies can impact the throughput of our secure memory system. We also introduce techniques to re-order requests from different threads to boost performance without leaking information. Our best solution offers throughput that is 27% lower than that of an optimized non-secure baseline, and that is 69% higher than the best known competing scheme.},
+ acmid = {2830795},
+ address = {New York, NY, USA},
+ author = {Shafiee, Ali and Gundu, Akhila and Shevgoor, Manjunath and Balasubramonian, Rajeev and Tiwari, Mohit},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830795},
+ isbn = {978-1-4503-4034-2},
+ keyword = {hardware security},
+ link = {http://doi.acm.org/10.1145/2830772.2830795},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {89--101},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Avoiding Information Leakage in the Memory Controller with Fixed Service Policies},
+ year = {2015}
+}
+
+
+@inproceedings{Subramanian:2015:ASM:2830772.2830803,
+ abstract = {In a multi-core system, interference at shared resources (such as caches and main memory) slows down applications running on different cores. Accurately estimating the slowdown of each application has several benefits: e.g., it can enable shared resource allocation in a manner that avoids unfair application slowdowns or provides slowdown guarantees. Unfortunately, prior works on estimating slowdowns either lead to inaccurate estimates, do not take into account shared caches, or rely on a priori application knowledge. This severely limits their applicability. In this work, we propose the Application Slowdown Model (ASM), a new technique that accurately estimates application slowdowns due to interference at both the shared cache and main memory, in the absence of a priori application knowledge. ASM is based on the observation that the performance of each application is strongly correlated with the rate at which the application accesses the shared cache. Thus, ASM reduces the problem of estimating slowdown to that of estimating the shared cache access rate of the application had it been run alone on the system. To estimate this for each application, ASM periodically 1) minimizes interference for the application at the main memory, 2) quantifies the interference the application receives at the shared cache, in an aggregate manner for a large set of requests. Our evaluations across 100 workloads show that ASM has an average slowdown estimation error of only 9.9%, a 2.97x improvement over the best previous mechanism. We present several use cases of ASM that leverage its slowdown estimates to improve fairness, performance and provide slowdown guarantees. We provide detailed evaluations of three such use cases: slowdown-aware cache partitioning, slowdown-aware memory bandwidth partitioning and an example scheme to provide soft slowdown guarantees. Our evaluations show that these new schemes perform significantly better than state-of-the-art cache partitioning and memory scheduling schemes.},
+ acmid = {2830803},
+ address = {New York, NY, USA},
+ author = {Subramanian, Lavanya and Seshadri, Vivek and Ghosh, Arnab and Khan, Samira and Mutlu, Onur},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830803},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830803},
+ location = {Waikiki, Hawaii},
+ numpages = {14},
+ pages = {62--75},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {The Application Slowdown Model: Quantifying and Controlling the Impact of Inter-application Interference at Shared Caches and Main Memory},
+ year = {2015}
+}
+
+
+@inproceedings{Manerkar:2015:CUM:2830772.2830782,
+ abstract = {In parallel systems, memory consistency models and cache coherence protocols establish the rules specifying which values will be visible to each instruction of parallel programs. Despite their central importance, verifying their correctness has remained a major challenge, due both to informal or incomplete specifications and to difficulties in scaling verification to cover their operations comprehensively. While coherence and consistency are often specified and verified independently at an architectural level, many systems implement performance enhancements that tightly interweave coherence and consistency at a microarchitectural level in ways that make verification of consistency difficult. This paper introduces CCICheck, a tool and technique supporting static verification of the coherence-consistency interface (CCI). CCICheck enumerates and checks families of microarchitectural happens-before (µhb) graphs that describe how a particular coherence protocol combines with a particular processor's pipelines and memory hierarchy to enforce the requirements of a given consistency model. To support tractable CCI verification, CCICheck introduces the ViCL (Value in Cache Lifetime), an abstraction which allows the µhb graphs to cleanly represent CCI events relevant to consistency verification, including demand fetching, cache line invalidation, coherence protocol windows of vulnerability, and partially incoherent cache hierarchies. We implement CCICheck as an automated tool and demonstrate its use on a number of case studies. We also show its tractability across a wide range of litmus tests.},
+ acmid = {2830782},
+ address = {New York, NY, USA},
+ author = {Manerkar, Yatin A. and Lustig, Daniel and Pellauer, Michael and Martonosi, Margaret},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830782},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830782},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {26--37},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {CCICheck: Using \&Micro;Hb Graphs to Verify the Coherence-consistency Interface},
+ year = {2015}
+}
+
+
+@inproceedings{Gray:2015:ICC:2830772.2830775,
+ abstract = {Weakly consistent multiprocessors such as ARM and IBM POWER have been with us for decades, but their subtle programmer-visible concurrency behaviour remains challenging, both to implement and to use; the traditional architecture documentation, with its mix of prose and pseudocode, leaves much unclear. In this paper we show how a precise architectural envelope model for such architectures can be defined, taking IBM POWER as our example. Our model specifies, for an arbitrary test program, the set of all its allowable executions, not just those of some particular implementation. The model integrates an operational concurrency model with an ISA model for the fixed-point non-vector user-mode instruction set (largely automatically derived from the vendor pseudocode, and expressed in a new ISA description language). The key question is the interface between these two: allowing all the required concurrency behaviour, without overcommitting to some particular microarchitectural implementation, requires a novel abstract structure. Our model is expressed in a mathematically rigorous language that can be automatically translated to an executable test-oracle tool; this lets one either interactively explore or exhaustively compute the set of all allowed behaviours of intricate test cases, to provide a reference for hardware and software development.},
+ acmid = {2830775},
+ address = {New York, NY, USA},
+ author = {Gray, Kathryn E. and Kerneis, Gabriel and Mulligan, Dominic and Pulte, Christopher and Sarkar, Susmit and Sewell, Peter},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830775},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830775},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {635--646},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {An Integrated Concurrency and core-ISA Architectural Envelope Definition, and Test Oracle, for IBM POWER Multiprocessors},
+ year = {2015}
+}
+
+
+@inproceedings{Joshi:2015:EPB:2830772.2830805,
+ abstract = {Emerging non-volatile memory technologies enable fast, fine-grained persistence compared to slow block-based devices. In order to ensure consistency of persistent state, dirty cache lines need to be periodically flushed from caches and made persistent in an order specified by the persistency model. A persist barrier is one mechanism for enforcing this ordering. In this paper, we first show that current persist barrier implementations, flowing to certain ordering dependencies, add cache line flushes to the critical path. Our main contribution is an efficient persist barrier, that reduces the number of cache line ushes happening in the critical path. We evaluate our proposed persist barrier by using it to enforce two persistency models: buffered epoch persistency with programmer inserted barriers; and buffered strict persistency in bulk mode with hardware inserted barriers. Experimental evaluations using micro-benchmarks (buffered epoch persistency) and multi-threaded workloads (buffered strict persistency) show that using our persist barrier improves performance by 22% and 20% respectively over the state-of-the-art.},
+ acmid = {2830805},
+ address = {New York, NY, USA},
+ author = {Joshi, Arpit and Nagarajan, Vijay and Cintra, Marcelo and Viglas, Stratis},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830805},
+ isbn = {978-1-4503-4034-2},
+ keyword = {data persistence, multicore, non-voaltile memory, persist barrier},
+ link = {http://doi.acm.org/10.1145/2830772.2830805},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {660--671},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Efficient Persist Barriers for Multicores},
+ year = {2015}
+}
+
+
+@inproceedings{Arthur:2015:LDI:2830772.2830801,
+ abstract = {Arbitrary code injection pervades as a central issue in computer security where attackers seek to exploit the software attack surface. A key component in many exploits today is the successful execution of a control-flow attack. Control-Data Isolation (CDI) has emerged as a work which eliminates the root cause of contemporary control-flow attacks: indirect control flow instructions. These instructions are replaced by direct control flow edges dictated by the programmer and encoded into the application by the compiler. By subtracting the root cause of control-flow attack, Control-Data Isolation sidesteps the vulnerabilities and restrictive threat models adopted by other solutions in this space (e.g., Control-Flow Integrity). The CDI approach, while eliminating contemporary control-flow attacks, introduces non-trivial overheads to validate indirect targets at runtime. In this work we introduce novel architectural support to accelerate the execution of CDI-compliant code. Through the addition of an edge cache, we are able to cache legal indirect target edges and eliminate nearly all execution overhead for indirection-free applications. We demonstrate that through memoization of compiler-confirmed control flow transitions, overheads are reduced from 19% to 0.5% on average for Control-Data Isolated applications. Additionally, we show that the edge cache can efficiently provide the double-duty of predicting multi-way branch targets, thus providing even speedups for some CDI-compliant executions, compared to an architecture with unsophisticated indirect control prediction (e.g., BTB).},
+ acmid = {2830801},
+ address = {New York, NY, USA},
+ author = {Arthur, William and Madeka, Sahil and Das, Reetuparna and Austin, Todd},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830801},
+ isbn = {978-1-4503-4034-2},
+ keyword = {CFG inegrity, control-data isolation, control-flow attack, indirect control flow, program transformation, secure computation, security architectures, security policies, software vulnerabilities},
+ link = {http://doi.acm.org/10.1145/2830772.2830801},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {115--127},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Locking Down Insecure Indirection with Hardware-based Control-data Isolation},
+ year = {2015}
+}
+
+
+@inproceedings{Yazdanbakhsh:2015:NAG:2830772.2830810,
+ abstract = {Graphics Processing Units (GPUs) can accelerate diverse classes of applications, such as recognition, gaming, data analytics, weather prediction, and multimedia. Many of these applications are amenable to approximate execution. This application characteristic provides an opportunity to improve GPU performance and efficiency. Among approximation techniques, neural accelerators have been shown to provide significant performance and efficiency gains when augmenting CPU processors. However, the integration of neural accelerators within a GPU processor has remained unexplored. GPUs are, in a sense, many-core accelerators that exploit large degrees of data-level parallelism in the applications through the SIMT execution model. This paper aims to harmoniously bring neural and GPU accelerators together without hindering SIMT execution or adding excessive hardware overhead. We introduce a low overhead neurally accelerated architecture for GPUs, called NGPU, that enables scalable integration of neural accelerators for large number of GPU cores. This work also devises a mechanism that controls the tradeoff between the quality of results and the benefits from neural acceleration. Compared to the baseline GPU architecture, cycle-accurate simulation results for NGPU show a 2.4× average speedup and a 2.8× average energy reduction within 10% quality loss margin across a diverse set of benchmarks. The proposed quality control mechanism retains a 1.9× average speedup and a 2.1× energy reduction while reducing the degradation in the quality of results to 2.5%. These benefits are achieved by less than 1% area overhead.},
+ acmid = {2830810},
+ address = {New York, NY, USA},
+ author = {Yazdanbakhsh, Amir and Park, Jongse and Sharma, Hardik and Lotfi-Kamran, Pejman and Esmaeilzadeh, Hadi},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830810},
+ isbn = {978-1-4503-4034-2},
+ keyword = {GPU, approximate computing, neural processing unit},
+ link = {http://doi.acm.org/10.1145/2830772.2830810},
+ location = {Waikiki, Hawaii},
+ numpages = {12},
+ pages = {482--493},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Neural Acceleration for GPU Throughput Processors},
+ year = {2015}
+}
+
+
+@inproceedings{Atta:2015:SAP:2830772.2830816,
+ abstract = {This work revisits precomputation prefetching targeting long access latency loads with access patterns that are hard to predict. It presents Ekivolos, a precomputation prefetcher system that automatically builds prefetching slices that contain enough control flow instructions to faithfully and autonomously recreate the program's access behavior without inducing monitoring and execution overhead on the main thread. Ekivolos departs from the traditional notion of creating optimized short slices. In contrast, it shows that even longer slices can run ahead of the main thread and perform useful prefetches as long as they are sufficiently accurate. Ekivolos operates on arbitrary application binaries and takes advantage of the observed execution paths in creating its slices. On a set of emerging workloads Ekivolos outperforms three state-of-the-art hardware prefetchers and previously proposed precomputation-based prefetchers.},
+ acmid = {2830816},
+ address = {New York, NY, USA},
+ author = {Atta, Islam and Tong, Xin and Srinivasan, Vijayalakshmi and Baldini, Ioana and Moshovos, Andreas},
+ booktitle = {Proceedings of the 48th International Symposium on Microarchitecture},
+ doi = {10.1145/2830772.2830816},
+ isbn = {978-1-4503-4034-2},
+ link = {http://doi.acm.org/10.1145/2830772.2830816},
+ location = {Waikiki, Hawaii},
+ numpages = {13},
+ pages = {153--165},
+ publisher = {ACM},
+ series = {MICRO-48},
+ title = {Self-contained, Accurate Precomputation Prefetching},
+ year = {2015}
+}
+
+
