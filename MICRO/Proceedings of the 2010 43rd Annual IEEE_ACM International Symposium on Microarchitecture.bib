@@ -1,0 +1,1054 @@
+@inproceedings{Vallejo:2010:ASF:1934902.1934974,
+ abstract = {Many shared-memory parallel systems use lock-based synchronization mechanisms to provide mutual exclusion or reader-writer access to memory locations. Software locks are inefficient either in memory usage, lock transfer time, or both. Proposed hardware locking mechanisms are either too specific (for example, requiring static assignment of threads to cores and vice-versa), support a limited number of concurrent locks, require tag values to be associated with every memory location, rely on the low latencies of single-chip multicore designs or are slow in adversarial cases such as suspended threads in a lock queue. Additionally, few proposals cover reader-writer locks and their associated fairness issues. In this paper we introduce the Lock Control Unit (LCU) which is an acceleration mechanism collocated with each core to explicitly handle fast reader-writer locking. By associating a unique thread-id to each lock request we decouple the hardware lock from the requestor core. This provides correct and efficient execution in the presence of thread migration. By making the LCU logic autonomous from the core, it seamlessly handles thread preemption. Our design offers richer semantics than previous proposals, such as try lock support while providing direct core-to-core transfers. We evaluate our proposal with micro benchmarks, a fine-grain Software Transactional Memory system and programs from the Parsec and Splash parallel benchmark suites. The lock transfer time decreases in up to 30\% when compared to previous hardware proposals. Transactional Memory systems limited by reader-locking congestion boost up to 3x while still preserving graceful fairness and starvation freedom properties. Finally, commonly used applications achieve speedups up to a 7% when compared to software models.},
+ acmid = {1934974},
+ address = {Washington, DC, USA},
+ author = {Vallejo, Enrique and Beivide, Ramon and Cristal, Adrian and Harris, Tim and Vallejo, Fernando and Unsal, Osman and Valero, Mateo},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.12},
+ isbn = {978-0-7695-4299-7},
+ keyword = {reader-writer locks, fairness, Lock Control Unit},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.12},
+ numpages = {12},
+ pages = {275--286},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Architectural Support for Fair Reader-Writer Locking},
+ year = {2010}
+}
+
+
+@inproceedings{Chung:2010:AAE:1934902.1935010,
+ abstract = {Advanced Synchronization Facility (ASF) is an AMD64 hardware extension for lock-free data structures and transactional memory. It provides a speculative region that atomically executes speculative accesses in the region. Five new instructions are added to demarcate the region, use speculative accesses selectively, and control the speculative hardware context. Programmers can use speculative regions to build flexible multi-word atomic primitives with no additional software support by relying on the minimum guarantee of available ASF hardware resources for lock-free programming. Transactional programs with high-level TM language constructs can either be compiled directly to the ASF code or be linked to software TM systems that use ASF to accelerate transactional execution. In this paper we develop an out-of-order hardware design to implement ASF on a future AMD processor and evaluate it with an in-house simulator. The experimental results show that the combined use of the L1 cache and the LS unit is very helpful for the performance robustness of ASF-based lock free data structures, and that the selective use of speculative accesses enables transactional programs to scale with limited ASF hardware resources.},
+ acmid = {1935010},
+ address = {Washington, DC, USA},
+ author = {Chung, Jaewoong and Yen, Luke and Diestelhorst, Stephan and Pohlack, Martin and Hohmuth, Michael and Christie, David and Grossman, Dan},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.40},
+ isbn = {978-0-7695-4299-7},
+ keyword = {transactional memory, lock-free programming, x86 architecture},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.40},
+ numpages = {12},
+ pages = {39--50},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {ASF: AMD64 Extension for Lock-Free Data Structures and Transactional Memory},
+ year = {2010}
+}
+
+
+@inproceedings{2010:CA:1934902.1935000,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935000},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.57},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.57},
+ pages = {C1--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Cover Art},
+ year = {2010}
+}
+
+
+@inproceedings{Etsion:2010:TSO:1934902.1935014,
+ abstract = {We present \emph{Task Super scalar}, an abstraction of instruction-level out-of-order pipeline that operates at the task-level. Like ILP pipelines, which uncover parallelism in a sequential instruction stream, task super scalar uncovers task-level parallelism among tasks generated by a sequential thread. Utilizing intuitive programmer annotations of task inputs and outputs, the task super scalar pipeline dynamically detects inter-task data dependencies, identifies task-level parallelism, and executes tasks out-of-order. Furthermore, we propose a design for a distributed task super scalar pipeline front end, that can be embedded into any many core fabric, and manages cores as functional units. We show that our proposed mechanism is capable of driving hundreds of cores simultaneously with non-speculative tasks, which allows our pipeline to sustain work windows consisting of tens of thousands of tasks. We further show that our pipeline can maintain a decode rate faster than 60ns per task and dynamically uncover data dependencies among as many as \tilde 50,000 in-flight tasks, using 7MB of on-chip eDRAM storage. This configuration achieves speedups of 95–255x (average 183x) over sequential execution for nine scientific benchmarks, running on a simulated CMP with 256 cores. Task super scalar thus enables programmers to exploit many core systems effectively, while simultaneously simplifying their programming model.},
+ acmid = {1935014},
+ address = {Washington, DC, USA},
+ author = {Etsion, Yoav and Cabarcas, Felipe and Rico, Alejandro and Ramirez, Alex and Badia, Rosa M. and Ayguade, Eduard and Labarta, Jesus and Valero, Mateo},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.13},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Out-of-order execution, CMP/manycore, task superscalar, parallel programming},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.13},
+ numpages = {12},
+ pages = {89--100},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Task Superscalar: An Out-of-Order Task Pipeline},
+ year = {2010}
+}
+
+
+@inproceedings{2010:MR:1934902.1935006,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935006},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.8},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.8},
+ pages = {xiv--xv},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {MICRO 2010 Reviewers},
+ year = {2010}
+}
+
+
+@inproceedings{Chen:2010:ASS:1934902.1934995,
+ abstract = {Current trends signal an imminent crisis in the simulation of future CMPs (Chip Multiprocessors). Future micro-architectures will offer more and more thread contexts to execute parallel programs, but the execution speed of each thread will not improve at the same pace. CMPs with 10’s or even100’s of cores are envisioned. Simulating these future CMP sefficiently without compromising accuracy is a challenge. Slack simulation is a general parallel simulation paradigm which provides flexible trade-offs between simulation accuracy and speed. Simulation threads do not synchronize after every target core cycle as in cycle-by-cycle simulation. Rather a maximum slack (the slack bound) is enforced between the clocks of all simulated cores. A slack simulation may become inaccurate because of simulation violations. Such violations occur when a resource is accessed by two cores in different order in the simulation and in the target system. We introduce and demonstrate techniques to detect violations, to adapt the simulation slack to maintain a target violation rate, and to checkpoint and rollback a slack simulation when violations are detected. We show some simulation performance/accuracy data for a set of five Splash benchmarks in the context of an 8-core CMP with a snooping cache coherence protocol simulated on Slack Sim, our universal slack simulation platform.},
+ acmid = {1934995},
+ address = {Washington, DC, USA},
+ author = {Chen, Jainwei and Dabbiru, Lakshmi Kumar and Wong, Daniel and Annavaram, Murali and Dubois, Michel},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.47},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Measuring, Modeling, simulation and parallel simulation},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.47},
+ numpages = {12},
+ pages = {523--534},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Adaptive and Speculative Slack Simulations of CMPs on CMPs},
+ year = {2010}
+}
+
+
+@inproceedings{2010:CP:1934902.1935003,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935003},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.3},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.3},
+ pages = {iv--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Copyright Page},
+ year = {2010}
+}
+
+
+@inproceedings{Ouyang:2010:LHP:1934902.1934986,
+ abstract = {Providing quality-of-service (QoS) for concurrent tasks in many-core architectures is becoming important, especially for real-time applications. QoS support for on-chip shared resources (such as shared cache, bus, and memory controllers)in chip-multiprocessors has been investigated in recent years. Unlike other shared resources, network-on-chip (NoC) does not typically have central arbitration of accesses to the shared resource. Instead, each router shares the responsibility of resource allocation. While such distributed nature benefits the scalable performance of NoC, it also dramatically complicates the problem of providing QoS support for individual flows. Existing approaches to address this problem suffer from various shortcomings such as low network utilization and weak QoS guarantees. In this work, we propose LOFT No architecture which features both high network utilization and strong QoS guarantees. LOFT is based on the combination of two mechanisms: a) locally-synchronized frames (LSF), which is a distributed frame-based scheduling mechanism that provides flexible QoS guarantees to different flows and b)flit-reservation (FRS), which is a flow-control mechanism integrated in LSF that improves network utilization. The experimental results show that LOFT delivers flexible and reliable QoS guarantees while sufficiently utilizes available network capacity to gain high overall throughput.},
+ acmid = {1934986},
+ address = {Washington, DC, USA},
+ author = {Ouyang, Jin and Xie, Yuan},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.21},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.21},
+ numpages = {12},
+ pages = {409--420},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {LOFT: A High Performance Network-on-Chip Providing Quality-of-Service Support},
+ year = {2010}
+}
+
+
+@inproceedings{Srikantaiah:2010:STH:1934902.1934978,
+ abstract = {Translation Look-aside Buffers (TLBs) are vital hardware support for virtual memory management in high performance computer systems and have a momentous influence on overall system performance. Numerous techniques to reduce TLB miss latencies including the impact of TLB size, associativity, multilevel hierarchies, super pages, and prefetching have been well studied in the context of uniprocessors. However, with Chip Multiprocessors (CMPs) becoming the standard design point of processor architectures, it is imperative that we review the design and organization of TLBs in the context of CMPs. In this paper, we propose to improve system performance by means of a novel way of organizing TLBs called Synergistic TLBs. Synergistic TLB is different from per-core private TLB organization in three ways: (i) it provides capacity sharing of TLBs by facilitating storing of victim translations from one TLB in another to emulate a distributed shared TLB (DST), (ii) it supports translation migration for maximizing the utilization of TLB capacity, and (iii) it supports translation replication to avoid excess latency for remote TLB accesses. We explore all the design points in this design space and find that an optimal point exists for high performance address translation. Our evaluation with both multiprogrammed (SPEC 2006 applications) and multithreaded workloads (PARSEC applications) shows that Synergistic TLBs can eliminate, respectively, 44.3% and 31.2% of the TLB misses, on average. It also improves the weighted speedup of multiprogrammed application mixes by 25.1% and performance of multithreaded applications by 27.3%, on average.},
+ acmid = {1934978},
+ address = {Washington, DC, USA},
+ author = {Srikantaiah, Shekhar and Kandemir, Mahmut},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.26},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Synergistic TLB, CMP, translation replication, translation migration},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.26},
+ numpages = {12},
+ pages = {313--324},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Synergistic TLBs for High Performance Address Translation in Chip Multiprocessors},
+ year = {2010}
+}
+
+
+@inproceedings{Muzahid:2010:ACA:1934902.1934975,
+ abstract = {A particularly insidious type of concurrency bug is atomicity violations. While there has been substantial work on automatic detection of atomicity violations, each existing technique has focused on a certain type of atomic region. To address this limitation, this paper presents Atom Tracker, a comprehensive approach to atomic region inference and violation detection. Atom Tracker is the first scheme to (1) automatically infer generic atomic regions (not limited by issues such as the number of variables accessed, the number of instructions included, or the type of code construct the region is embedded in) and (2) automatically detect violations of them at runtime with negligible execution overhead. Atom Tracker provides novel algorithms to infer generic atomic regions and to detect atomicity violations of them. Moreover, we present a hardware implementation of the violation detection algorithm that leverages cache coherence state transitions in a multiprocessor. In our evaluation, we take eight atomicity violation bugs from real-world codes like Apache, MySql, and Mozilla, and show that Atom Tracker detects them all. In addition, Atom Tracker automatically infers all of the atomic regions in a set of micro benchmarks accurately. Finally, we also show that the hardware implementation induces a negligible execution time overhead of 0.2–4.0% and, therefore, enables Atom Tracker to find atomicity violations on-the-fly in production runs.},
+ acmid = {1934975},
+ address = {Washington, DC, USA},
+ author = {Muzahid, Abdullah and Otsuki, Norimasa and Torrellas, Josep},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.32},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Concurrency Bug, Atomic Region, Atomicity Violation, Hardware, Signature},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.32},
+ numpages = {11},
+ pages = {287--297},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {AtomTracker: A Comprehensive Approach to Atomic Region Inference and Violation Detection},
+ year = {2010}
+}
+
+
+@inproceedings{Kim:2010:SSA:1934902.1934996,
+ abstract = {As multicore processors are deployed in mainstream computing, the need for software tools to help parallelize programs is increasing dramatically. Data-dependence profiling is an important technique to exploit parallelism in programs. More specifically, manual or automatic parallelization can use the outcomes of data-dependence profiling to guide where to parallelize in a program. However, state-of-the-art data-dependence profiling techniques are not scalable as they suffer from two major issues when profiling large and long-running applications: (1) runtime overhead and (2) memory overhead. Existing data-dependence profilers are either unable to profile large-scale applications or only report very limited information. In this paper, we propose a scalable approach to data-dependence profiling that addresses both runtime and memory overhead in a single framework. Our technique, called SD3, reduces the runtime overhead by parallelizing the dependence profiling step itself. To reduce the memory overhead, we compress memory accesses that exhibit stride patterns and compute data dependences directly in a compressed format. We demonstrate that SD3 reduces the runtime overhead when profiling SPEC 2006 by a factor of 4.1X and 9.7X on eight cores and 32 cores, respectively. For the memory overhead, we successfully profile SPEC 2006 with the reference input, while the previous approaches fail even with the train input. In some cases, we observe more than a 20X improvement in memory consumption and a 16X speedup in profiling time when 32 cores are used.},
+ acmid = {1934996},
+ address = {Washington, DC, USA},
+ author = {Kim, Minjang and Kim, Hyesoon and Luk, Chi-Keung},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.49},
+ isbn = {978-0-7695-4299-7},
+ keyword = {profiling, data dependence, parallel programming, program analysis, compression, parallelization},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.49},
+ numpages = {12},
+ pages = {535--546},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {SD3: A Scalable Approach to Dynamic Data-Dependence Profiling},
+ year = {2010}
+}
+
+
+@inproceedings{Kim:2010:SSP:1934902.1935007,
+ abstract = {While clusters of commodity servers and switches are the most popular form of large-scale parallel computers, many programs are not easily parallelized for execution upon them. In particular, high inter-node communication cost and lack of globally shared memory appear to make clusters suitable only for server applications with abundant task-level parallelism and scientific applications with regular and independent units of work. Clever use of pipeline parallelism (DSWP), thread-level speculation (TLS), and speculative pipeline parallelism (Spec-DSWP) can mitigate the costs of inter-thread communication on shared memory multicore machines. This paper presents Distributed Software Multi-threaded Transactional memory (DSMTX), a runtime system which makes these techniques applicable to non-shared memory clusters, allowing them to efficiently address inter-node communication costs. Initial results suggest that DSMTX enables efficient cluster execution of a wider set of application types. For 11 sequential C programs parallelized for a 4-core 32-node (128 total core) cluster without shared memory, DSMTX achieves a geomean speedup of 49x. This compares favorably to the 15x speedup achieved by our implementation of TLS-only support for clusters.},
+ acmid = {1935007},
+ address = {Washington, DC, USA},
+ author = {Kim, Hanjun and Raman, Arun and Liu, Feng and Lee, Jae W. and August, David I.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.19},
+ isbn = {978-0-7695-4299-7},
+ keyword = {loop-level parallelism, multi-threaded transactions, pipelined parallelism, software transactional memory, thread-level speculation, distributed systems},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.19},
+ numpages = {12},
+ pages = {3--14},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Scalable Speculative Parallelization on Commodity Clusters},
+ year = {2010}
+}
+
+
+@inproceedings{Khan:2010:SDB:1934902.1934977,
+ abstract = {Last-level caches (LLCs) are large structures with significant power requirements. They can be quite inefficient. On average, a cache block in a 2MB LRU-managed LLC is dead 86% of the time, i.e., it will not be referenced again before it is evicted. This paper introduces sampling dead block prediction, a technique that samples program counters (PCs) to determine when a cache block is likely to be dead. Rather than learning from accesses and evictions from every set in the cache, a sampling predictor keeps track of a small number of sets using partial tags. Sampling allows the predictor to use far less state than previous predictors to make predictions with superior accuracy. Dead block prediction can be used to drive a dead block replacement and bypass optimization. A sampling predictor can reduce the number of LLC misses over LRU by 11.7% for memory-intensive single-thread benchmarks and 23% for multi-core workloads. The reduction in misses yields a geometric mean speedup of 5.9% for single-thread benchmarks and a geometric mean normalized weighted speedup of 12.5% for multi-core workloads. Due to the reduced state and number of accesses, the sampling predictor consumes only 3.1% of the of the dynamic power and 1.2% of the leakage power of a baseline 2MB LLC, comparing favorably with more costly techniques. The sampling predictor can even be used to significantly improve a cache with a default random replacement policy.},
+ acmid = {1934977},
+ address = {Washington, DC, USA},
+ author = {Khan, Samira Manabi and Tian, Yingying and Jimenez, Daniel A.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.24},
+ isbn = {978-0-7695-4299-7},
+ keyword = {microarchitecture, cache, dead block prediction},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.24},
+ numpages = {12},
+ pages = {175--186},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Sampling Dead Block Prediction for Last-Level Caches},
+ year = {2010}
+}
+
+
+@inproceedings{Seong:2010:SSE:1934902.1935016,
+ abstract = {As technology scaling poses a threat to DRAM scaling due to physical limitations such as limited charge, alternative memory technologies including several emerging non-volatile memories are being explored as possible DRAM replacements. One main roadblock for wider adoption of these new memories is the limited write endurance, which leads to wear-out related permanent failures. Furthermore, technology scaling increases the variation in cell lifetime resulting in early failures of many cells. Existing error correcting techniques are primarily devised for recovering from transient faults and are not suitable for recovering from permanent stuck-at faults, which tend to increase gradually with repeated write cycles. In this paper, we propose SAFER, a novel hardware-efficient multi-bit stuck-at fault error recovery scheme for resistive memories, which can function in conjunction with existing wear-leveling techniques. SAFER exploits the key attribute that a failed cell with a stuck-at value is still readable, making it possible to continue to use the failed cell to store data, thereby reducing the hardware overhead for error recovery. SAFER partitions a data block dynamically while ensuring that there is at most one fail bit per partition and uses single error correction techniques per partition for fail recovery. SAFER increases the number of recoverable fails and achieves better lifetime improvement with smaller hardware overhead relative to recently proposed Error Correcting Pointers and even ideal hamming coding scheme.},
+ acmid = {1935016},
+ address = {Washington, DC, USA},
+ author = {Seong, Nak Hee and Woo, Dong Hyuk and Srinivasan, Vijayalakshmi and Rivers, Jude A. and Lee, Hsien-Hsin S.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.46},
+ isbn = {978-0-7695-4299-7},
+ keyword = {multi-bit error correction, stuck-at fault recovery, reliability, write endurance, resistive memory, phase-change memory},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.46},
+ numpages = {10},
+ pages = {115--124},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {SAFER: Stuck-At-Fault Error Recovery for Memories},
+ year = {2010}
+}
+
+
+@inproceedings{Qian:2010:SSC:1934902.1934989,
+ abstract = {Recently-proposed architectures that continuously operate onatomic blocks of instructions (also called chunks) can boost the programmability and performance of shared-memory multiprocessing. However, they must support chunk operations very efficiently. In particular, in lazy conflict-detection environments, it is key that they provide scalable chunk commits. Unfortunately, current proposals typically fail to enable maximum overlap of conflict-free chunk commits. This paper presents a novel directory-based protocol that enables highly-overlapped, scalable chunk commits. The protocol, called Scalable Bulk, builds on the previously-proposed BulkSCprotocol. It introduces three general hardware primitives for scalable commit: preventing access to a set of directory entries, grouping directory modules, and initiating the commit optimistically. Our results with SPLASH-2 and PARSEC codes with up to 64 processors show that Scalable Bulk enables highly-overlapped chunk commits and delivers scalable performance. Unlike previously proposed schemes, it removes practically all commit stalls.},
+ acmid = {1934989},
+ address = {Washington, DC, USA},
+ author = {Qian, Xuehai and Ahn, Wonsun and Torrellas, Josep},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.29},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Scalable cache coherence, Memory system, Multiprocessors, Atomic block},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.29},
+ numpages = {12},
+ pages = {447--458},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {ScalableBulk: Scalable Cache Coherence for Atomic Blocks in a Lazy Environment},
+ year = {2010}
+}
+
+
+@inproceedings{Nair:2010:AST:1934902.1935017,
+ abstract = {Soft error reliability is increasingly becoming a first-order design concern for microprocessors, as a result of higher transistor counts, shrinking device geometries and lowering of operating voltages. It is important for designers to be able to validate whether the Soft Error Rate (SER) targets of their design have been met, and help end users select the processor best suited to their reliability goals. The knowledge of the observable worst-case SER allows designers to select their design point, and bound the worst-case vulnerability at that design point. We highlight the lack of a methodology for evaluation of the overall observable worst-case SER. Hence, there is a clear need for a so called stress mark that can demonstrably approach the observable worst-case SER. The worst-case thus obtained can be used to identify reliability bottlenecks, validate safety margins used for reliability design and identify inadequacies in benchmark suites used to evaluate SER. Starting from a comprehensive study about how micro architecture-dependent program characteristics affect soft errors, we derive the insights needed to develop an automated and flexible methodology for generating a stress mark that approaches the maximum SER of an out-of-order processor. We demonstrate how our methodology enables architects to quantify the impact of SER-mitigation mechanisms on the worst-case SER of the processor. The stress mark achieves 1.4X higher SER in the core, 2.5X higher SER in DL1 and DTLB, and 1.5X higher SER in L2 as compared to the highest SER induced by SPEC CPU2006 and MiBench programs.},
+ acmid = {1935017},
+ address = {Washington, DC, USA},
+ author = {Nair, Arun Arvind and John, Lizy Kurian and Eeckhout, Lieven},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.34},
+ isbn = {978-0-7695-4299-7},
+ keyword = {AVF stressmark, soft errors, reliability},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.34},
+ numpages = {12},
+ pages = {125--136},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {AVF Stressmark: Towards an Automated Methodology for Bounding the Worst-Case Vulnerability to Soft Errors},
+ year = {2010}
+}
+
+
+@proceedings{Carro:2011:2155620,
+ abstract = {This year, we present to you a technical program consisting of 44 technical papers, selected from among 209 submissions by a Program Committee composed of 43 active researchers and practitioners in our field. The challenge of selecting which papers to accept among the 209 submissions was significant. To support this selection process, we solicited at least four reviews for each paper, and the vast majority of the papers had five reviews. A typical paper was reviewed by three program committee members and two other experts in our field. Overall, 1018 reviews were generated (on average, 4.9 reviews per paper), 629 of which came from the program committee members and 389 from experts outside of the program committee. For all papers but one, at least two of the reviewers indicated that they are at least Knowledgeable: know most if not all of the relevant work, understand the problem very well, and for 81% of the papers the average level of expertise among its reviewers was at least Knowledgeable. This year we tried a new approach to how author responses to reviews are handled - we asked both PC and external reviewers to read all of the reviews and the authors responses, and provide a separate post-rebuttal score that will be used to decide which papers will be discussed in the program committee meeting. We are especially grateful to our external reviewers for doing this - some of them reviewed and then graded four papers, which makes their workload about 25% of that assigned to the average PC member. We introduced a set of detailed formatting rules that made it possible to set a reasonable limit of 28 pages for submissions. Our goal was to reduce the variance in the amount of work each PC member and each reviewer had to perform while encouraging authors to succinctly present their work.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1053-6},
+ location = {Porto Alegre, Brazil},
+ publisher = {ACM},
+ title = {MICRO-44: Proceedings of the 44th Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2011}
+}
+
+
+@inproceedings{Kim:2010:VSF:1934902.1934990,
+ abstract = {Virtualization has been rapidly expanding its applications in numerous server and desktop environments to improve the utilization and manageability of physical systems. Such proliferation of virtualized systems opens a new opportunity to improve the scalability of future multi-core architectures. Among the scalability bottlenecks in multi-cores, cache coherence has been a critical problem. Although snoop-based protocols have been dominating commercial multi-core designs, it has been difficult to scale them for more cores, as snooping protocols require high network bandwidth and power consumption for snooping all the caches. In this paper, we propose a novel snoop-based cache coherence protocol, called virtual snooping, for virtualized multi-core architectures. Virtual snooping exploits memory isolation across virtual machines and prevents unnecessary snoop requests from crossing the virtual machine boundaries. Each virtual machine becomes a virtual snoop domain, consisting of a subset of the cores in a system. However, in real virtualized systems, virtual machines cannot partition the cores perfectly without any data sharing across the snoop partitions. This paper investigates three factors, which break the memory isolation among virtual machines: data sharing with a hyper visor, virtual machine relocation, and content-based data sharing. In this paper, we explore the design space of virtual snooping with experiments on real virtualized systems and approximate simulations. The results show that virtual snooping can reduce snoops significantly even if virtual machines migrate frequently. We also propose mechanisms to address content-based data sharing by exploiting its read-only property.},
+ acmid = {1934990},
+ address = {Washington, DC, USA},
+ author = {Kim, Daehoon and Kim, Hwanju and Huh, Jaehyuk},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.16},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.16},
+ numpages = {12},
+ pages = {459--470},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Virtual Snooping: Filtering Snoops in Virtualized Multi-cores},
+ year = {2010}
+}
+
+
+@inproceedings{Kotha:2010:APB:1934902.1934997,
+ abstract = {Today, nearly all general-purpose computers are parallel, but nearly all software running on them is serial. However bridging this disconnect by manually rewriting source code in parallel is prohibitively expensive. Automatic parallelization technology is therefore an attractive alternative. We present a method to perform automatic parallelization in a binary rewriter. The input to the binary rewriter is the serial binary executable program and the output is a parallel binary executable. The advantages of parallelization in a binary rewriter versus a compiler include (i) compatibility with all compilers and languages, (ii) high economic feasibility from avoiding repeated compiler implementation, (iii) applicability to legacy binaries, and (iv) applicability to assembly-language programs. Adapting existing parallelizing compiler methods that work on source code to work on binary programs instead is a significant challenge. This is primarily because symbolic and array index information used in existing compiler parallelizers is not available in a binary. We show how to adapt existing parallelization methods to achieve equivalent parallelization from a binary without such information. Preliminary results using our x86 binary rewriter called Second Write on a suite of dense-matrix regular programs including the externally developed Polybench suite of benchmarks shows an average speedup of 5.1 from binary and 5.7 from source with 8 threads compared to the input serial binary on an x86 Xeon E5530 machine, and 14.7 from binary and 15.4 from source with 32 threads compared to the input serial binary on a SPARC T2. Such regular loops are an important component of scientific and multi-media workloads, and are even present to a limited extent in otherwise non-regular programs.},
+ acmid = {1934997},
+ address = {Washington, DC, USA},
+ author = {Kotha, Aparna and Anand, Kapil and Smithson, Matthew and Yellareddy, Greeshma and Barua, Rajeev},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.27},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Automatic Parallelization, Binary Rewriting, Affine Dependence Analysis},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.27},
+ numpages = {11},
+ pages = {547--557},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Automatic Parallelization in a Binary Rewriter},
+ year = {2010}
+}
+
+
+@inproceedings{Chung:2010:SHC:1934902.1935024,
+ abstract = {To extend the exponential performance scaling of future chip multiprocessors, improving energy efficiency has become a first-class priority. Single-chip heterogeneous computing has the potential to achieve greater energy efficiency by combining traditional processors with unconventional cores (U-cores) such as custom logic, FPGAs, or GPGPUs. Although U-cores are effective at increasing performance, their benefits can also diminish given the scarcity of projected bandwidth in the future. To understand the relative merits between different approaches in the face of technology constraints, this work builds on prior modeling of heterogeneous multicores to support U-cores. Unlike prior models that trade performance, power, and area using well-known relationships between simple and complex processors, our model must consider the less-obvious relationships between conventional processors and a diverse set of U-cores. Further, our model supports speculation of future designs from scaling trends predicted by the ITRS road map. The predictive power of our model depends upon U-core-specific parameters derived by measuring performance and power of tuned applications on today's state-of-the-art multicores, GPUs, FPGAs, and ASICs. Our results reinforce some current-day understandings of the potential and limitations of U-cores and also provides new insights on their relative merits.},
+ acmid = {1935024},
+ address = {Washington, DC, USA},
+ author = {Chung, Eric S. and Milder, Peter A. and Hoe, James C. and Mai, Ken},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.36},
+ isbn = {978-0-7695-4299-7},
+ keyword = {itrs, technology scaling, heterogeneous, multicore, fpga, gpu, asic},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.36},
+ numpages = {12},
+ pages = {225--236},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Single-Chip Heterogeneous Computing: Does the Future Include Custom Logic, FPGAs, and GPGPUs?},
+ year = {2010}
+}
+
+
+@inproceedings{Kim:2010:TCM:1934902.1935012,
+ abstract = {In a modern chip-multiprocessor system, memory is a shared resource among multiple concurrently executing threads. The memory scheduling algorithm should resolve memory contention by arbitrating memory access in such a way that competing threads progress at a relatively fast and even pace, resulting in high system throughput and fairness. Previously proposed memory scheduling algorithms are predominantly optimized for only one of these objectives: no scheduling algorithm provides the best system throughput and best fairness at the same time. This paper presents a new memory scheduling algorithm that addresses system throughput and fairness separately with the goal of achieving the best of both. The main idea is to divide threads into two separate clusters and employ different memory request scheduling policies in each cluster. Our proposal, Thread Cluster Memory scheduling (TCM), dynamically groups threads with similar memory access behavior into either the latency-sensitive (memory-non-intensive) or the bandwidth-sensitive (memory-intensive) cluster. TCM introduces three major ideas for prioritization: 1) we prioritize the latency-sensitive cluster over the bandwidth-sensitive cluster to improve system throughput, 2) we introduce a ``niceness'' metric that captures a thread's propensity to interfere with other threads, 3) we use niceness to periodically shuffle the priority order of the threads in the bandwidth-sensitive cluster to provide fair access to each thread in a way that reduces inter-thread interference. On the one hand, prioritizing memory-non-intensive threads significantly improves system throughput without degrading fairness, because such ``light'' threads only use a small fraction of the total available memory bandwidth. On the other hand, shuffling the priority order of memory-intensive threads improves fairness because it ensures no thread is disproportionately slowed down or starved. We evaluate TCM on a wide variety of multiprogrammed workloads and compare its performance to four previously proposed scheduling algorithms, finding that TCM achieves both the best system throughput and fairness. Averaged over 96 workloads on a 24-core system with 4 memory channels, TCM improves system throughput and reduces maximum slowdown by 4.6%/38.6% compared to ATLAS (previous work providing the best system throughput) and 7.6%/4.6% compared to PAR-BS (previous work providing the best fairness).},
+ acmid = {1935012},
+ address = {Washington, DC, USA},
+ author = {Kim, Yoongu and Papamichael, Michael and Mutlu, Onur and Harchol-Balter, Mor},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.51},
+ isbn = {978-0-7695-4299-7},
+ keyword = {memory scheduling, memory access behavior, fairness, system throughput, thread cluster, niceness},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.51},
+ numpages = {12},
+ pages = {65--76},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Thread Cluster Memory Scheduling: Exploiting Differences in Memory Access Behavior},
+ year = {2010}
+}
+
+
+@inproceedings{Lee:2010:PDA:1934902.1934994,
+ abstract = {Emerging many-core chip multiprocessors will integrate dozens of small processing cores with an on-chip interconnect consisting of point-to-point links. The interconnect enables the processing cores to not only communicate, but to share common resources such as main memory resources and I/O controllers. In this work, we propose an arbitration scheme to enable equality of service (EoS) in access to a chip’s shared resources. That is, we seek to remove any bias in a core’s access to a shared resource based on its location in the CMP. We propose using probabilistic arbitration combined with distance-based weights to achieve EoS and overcome the limitation of conventional round-robin arbiter. We describe how nonlinear weights need to be used with probabilistic arbiters and propose three different arbitration weight metrics – fixed weight, constantly increasing weight, and variably increasing weight. By only modifying the arbitration of an on-chip router, we do not require any additional buffers or virtual channels and create a simple, low-cost mechanism for achieving EoS. We evaluate our arbitration scheme across a wide range of traffic patterns. In addition to providing EoS, the proposed arbitration has additional benefits which include providing quality-of-service features (such as differentiated service) and providing fairness in terms of both throughput and latency that approaches the global fairness achieved with age-base arbitration – thus, providing a more stable network by achieving high sustained throughput beyond saturation.},
+ acmid = {1934994},
+ address = {Washington, DC, USA},
+ author = {Lee, Michael M. and Kim, John and Abts, Dennis and Marty, Michael and Lee, Jae W.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.18},
+ isbn = {978-0-7695-4299-7},
+ keyword = {on-chip network, age-based arbitration, fairness, quality of service (QoS)},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.18},
+ numpages = {11},
+ pages = {509--519},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Probabilistic Distance-Based Arbitration: Providing Equality of Service for Many-Core CMPs},
+ year = {2010}
+}
+
+
+@inproceedings{Shioya:2010:RCS:1934902.1934976,
+ abstract = {A register cache has been proposed to solve the problems of the huge register files of recent super scalar processors. The register cache reduces the effective access latency of the register file for IPC improvement, simplifies the bypass network, and reduces the ports of the main register file. Though the primary purpose of the previous works is to improve IPC, the misses on the register cache may degrade the IPC. We propose Non-Latency-Oriented Register Cache System (NORCS). Though the effects of NORCS are the same as the conventional systems, it is free from register cache miss penalties that the conventional systems suffer from. In NORCS, the register cache itself is not different from that of the conventional systems. The difference is that the instruction pipeline has stages to read the main register file, which all instructions go through regardless of register cache hit / miss. Therefore, the instruction pipeline of NORCS is not immediately disturbed by the register cache misses. For a realistic 4-way super scalar processor, NORCS can simplify the bypass network to the same complexity as a 1-cycle-latency register file, and reduce the ports of the main register file from 12 to 4. CACTI simulation shows that the area and power consumption are reduced to 24.9% and 31.9% compared to the baseline model without register cache. Though these results are not different from the conventional systems, IPCs differ greatly. IPC of the conventional system decreases to 83.1% because of the cache miss penalties, while that of NORCS is retained at 98.0%.},
+ acmid = {1934976},
+ address = {Washington, DC, USA},
+ author = {Shioya, Ryota and Horio, Kazuo and Goshima, Masahiro and Sakai, Shuichi},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.43},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Register file, Register Cache, Instruction pipeline, Instruction level parallelism, Low-energy Technologies},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.43},
+ numpages = {12},
+ pages = {301--312},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Register Cache System Not for Latency Reduction Purpose},
+ year = {2010}
+}
+
+
+@inproceedings{Dubach:2010:PMD:1934902.1934992,
+ abstract = {Adaptive micro architectures are a promising solution for designing high-performance, power-efficient microprocessors. They offer the ability to tailor computational resources to the specific requirements of different programs or program phases. They have the potential to adapt the hardware cost-effectively at runtime to any application's needs. However, one of the key challenges is how to dynamically determine the best architecture configuration at any given time, for any new workload. This paper proposes a novel control mechanism based on a predictive model for micro architectural adaptivity control. This model is able to efficiently control adaptivity by monitoring the behaviour of an application's different phases at runtime. We show that using this model on SPEC 2000, we double the energy/performance efficiency of the processor when compared to the best static configuration tuned for the whole benchmark suite. This represents 74\% of the improvement available if we knew the best micro architecture for each program phase ahead of time. In addition, we show that the overheads associated with the implementation of our scheme have a negligible impact on performance and power.},
+ acmid = {1934992},
+ address = {Washington, DC, USA},
+ author = {Dubach, Christophe and Jones, Timothy M. and Bonilla, Edwin V. and O'Boyle, Michael F. P.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.14},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.14},
+ numpages = {12},
+ pages = {485--496},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {A Predictive Model for Dynamic Microarchitectural Adaptivity Control},
+ year = {2010}
+}
+
+
+@inproceedings{Aydonat:2010:HSR:1934902.1935008,
+ abstract = {Today's transactional memory systems implement the two-phase-locking (2PL) algorithm which aborts transactions every time a conflict happens. 2PL is a simple algorithm that provides fast transactional operations. However, it limits concurrency in applications with high contention by increasing the rate of aborts. More relaxed algorithms that can commit conflicting transactions have recently been shown to provide better concurrency both in software and hardware. However, existing approaches for implementing such algorithms increase latencies of transactional operations, require complex hardware support and alter standard cache coherence protocols. In this paper, we discuss how a relaxed concurrency control algorithm can be efficiently implemented in hardware. More specifically, we use a technique which approximates conflict-serializability and implement it in hardware on top a base hardware transactional memory system that provides support for isolation and conflict detection. Our novel hardware scheme is based on recording conflicts as they occur, instead of aborting transactions. Transactions serialize at commit time according to these conflicts by sending broadcast messages. Our evaluation of this hardware scheme using a simulator and standard benchmarks shows that it captures the benefits of conflict-serializability. Applications with long transactions and high contention benefit the most, abort rates are reduced up to 7.2 times and the performance is improved up to 66%. We argue that this improvement comes with little additional hardware complexity and requires no changes to the transactional programming model.},
+ acmid = {1935008},
+ address = {Washington, DC, USA},
+ author = {Aydonat, Utku and Abdelrahman, Tarek S.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.25},
+ isbn = {978-0-7695-4299-7},
+ keyword = {hardware transactional memory, serializability, synchronization, two-phase-locking, conflict-serializability},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.25},
+ numpages = {12},
+ pages = {15--26},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Hardware Support for Relaxed Concurrency Control in Transactional Memory},
+ year = {2010}
+}
+
+
+@inproceedings{Barik:2010:ESV:1934902.1935022,
+ abstract = {Accelerating program performance via SIMD vector units is very common in modern processors, as evidenced by the use of SSE, MMX, VSE, and VSX SIMD instructions in multimedia, scientific, and embedded applications. To take full advantage of the vector capabilities, a compiler needs to generate efficient vector code automatically. However, most commercial and open-source compilers fall short of using the full potential of vector units, and only generate vector code for simple innermost loops. In this paper, we present the design and implementation of anauto-vectorization framework in the back-end of a dynamic compiler that not only generates optimized vector code but is also well integrated with the instruction scheduler and register allocator. The framework includes a novel{\em compile-time efficient dynamic programming-based} vector instruction selection algorithm for straight-line code that expands opportunities for vectorization in the following ways: (1) {\em scalar packing} explores opportunities of packing multiple scalar variables into short vectors, (2)judicious use of {\em shuffle} and {\em horizontal} vector operations, when possible, and (3) {\em algebraic reassociation} expands opportunities for vectorization by algebraic simplification. We report performance results on the impact of auto-vectorization on a set of standard numerical benchmarks using the Jikes RVM dynamic compilation environment. Our results show performance improvement of up to 57.71\% on an Intel Xeon processor, compared tonon-vectorized execution, with a modest increase in compile-time in the range from 0.87\% to 9.992\%. An investigation of the SIMD parallelization performed by v11.1 of the Intel Fortran Compiler (IFC) on three benchmarks shows that our system achieves speedup with vectorization in all three cases and IFC does not. Finally, a comparison of our approach with an implementation of the Super word Level Parallelization (SLP) algorithm from~\cite{larsen00}, shows that our approach yields a performance improvement of up to 13.78\% relative to SLP.},
+ acmid = {1935022},
+ address = {Washington, DC, USA},
+ author = {Barik, Rajkishore and Zhao, Jisheng and Sarkar, Vivek},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.38},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Vectorization, Instruction Selection, Dynamic Programming, Dynamic Optimization},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.38},
+ numpages = {12},
+ pages = {201--212},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Efficient Selection of Vector Instructions Using  Dynamic Programming},
+ year = {2010}
+}
+
+
+@inproceedings{Watkins:2010:RRH:1934902.1934993,
+ abstract = {This paper presents ReMAP, a reconfigurable architecture geared towards accelerating and parallelizing applications within a heterogeneous CMP. In ReMAP, threads share a common reconfigurable fabric that can be configured for individual thread computation or fine-grained communication with integrated computation. The architecture supports both fine-grained point-to-point communication for pipeline parallelization and fine-grained barrier synchronization. The combination of communication and configurable computation within ReMAP provides the unique ability to perform customized computation while data is transferred between cores, and to execute custom global functions after barrier synchronization. ReMAP demonstrates significantly higher performance and energy efficiency compared to hard-wired communication-only mechanisms, and over what can ideally be achieved by allocating the fabric area to additional or more powerful cores.},
+ acmid = {1934993},
+ address = {Washington, DC, USA},
+ author = {Watkins, Matthew A. and Albonesi, David H.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.15},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.15},
+ numpages = {12},
+ pages = {497--508},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {ReMAP: A Reconfigurable Heterogeneous Multicore Architecture},
+ year = {2010}
+}
+
+
+@inproceedings{Jaleel:2010:ANC:1934902.1935019,
+ abstract = {Inclusive caches are commonly used by processors to simplify cache coherence. However, the trade-off has been lower performance compared to non-inclusive and exclusive caches. Contrary to conventional wisdom, we show that the limited performance of inclusive caches is mostly due to inclusion victims—lines that are evicted from the core caches to satisfy the inclusion property—and not the reduced cache capacity of the hierarchy due to the duplication of data. These inclusion victims are incorrectly chosen for replacement because the last-level cache (LLC) is unaware of the temporal locality of lines in the core caches. We propose Temporal Locality Aware (TLA) cache management policies to allow an inclusive LLC to be aware of the temporal locality of lines in the core caches. We propose three TLA policies: Temporal Locality Hints (TLH), Early Core Invalidation (ECI), and Query Based Selection (QBS). All three policies improve inclusive cache performance without requiring any additional hardware structures. In fact, QBS performs similar to a non-inclusive cache hierarchy.},
+ acmid = {1935019},
+ address = {Washington, DC, USA},
+ author = {Jaleel, Aamer and Borch, Eric and Bhandaru, Malini and Steely Jr., Simon C. and Emer, Joel},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.52},
+ isbn = {978-0-7695-4299-7},
+ keyword = {inclusion, non-inclusion, exclusion, replacement},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.52},
+ numpages = {12},
+ pages = {151--162},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Achieving Non-Inclusive Cache Performance with Inclusive Caches: Temporal Locality Aware (TLA) Cache Management Policies},
+ year = {2010}
+}
+
+
+@proceedings{2010:1934902,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {Washington, DC, USA},
+ isbn = {978-0-7695-4299-7},
+ issn = {1072-4451},
+ key = {$\!\!$},
+ publisher = {IEEE Computer Society},
+ title = {MICRO '43: Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2010}
+}
+
+
+@inproceedings{Stuecheli:2010:ERT:1934902.1934983,
+ abstract = {High density memory is becoming more important as many execution streams are consolidated onto single chip many-core processors. DRAM is ubiquitous as a main memory technology, but while DRAM’s per-chip density and frequency continue to scale, the time required to refresh its dynamic cells has grown at an alarming rate. This paper shows how currently-employed methods to schedule refresh operations are ineffective in mitigating the significant performance degradation caused by longer refresh times. Current approaches are deficient– they do not effectively exploit the flexibility of DRAMs to postpone refresh operations. This work proposes dynamically reconfigurable predictive mechanisms that exploit the full dynamic range allowed in the JEDEC DDRx SDRAM specifications. The proposed mechanisms are shown to mitigate much of the penalties seen with dense DRAM devices. We refer to the overall scheme as Elastic Refresh, in that the refresh policy is stretched to fit the currently executing workload, such that the maximum benefit of the DRAM flexibility is realized. We extend the GEMS on SIMICS tool-set to include Elastic Refresh. Simulations show the proposed solution provides a 10% average performance improvement over existing techniques across the entire SPEC CPU suite, and up to a 41%improvement for certain workloads.},
+ acmid = {1934983},
+ address = {Washington, DC, USA},
+ author = {Stuecheli, Jeffrey and Kaseridis, Dimitris and C.Hunter, Hillery and John, Lizy K.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.22},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.22},
+ numpages = {10},
+ pages = {375--384},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Elastic Refresh: Techniques to Mitigate Refresh Penalties in High Density Memory},
+ year = {2010}
+}
+
+
+@inproceedings{Caulfield:2010:MHS:1934902.1934984,
+ abstract = {Emerging non-volatile memory technologies such as phase change memory (PCM) promise to increase storage system performance by a wide margin relative to both conventional disks and flash-based SSDs. Realizing this potential will require significant changes to the way systems interact with storage devices as well as a rethinking of the storage devices themselves. This paper describes the architecture of a prototype PCIe-attached storage array built from emulated PCM storage called Moneta. Moneta provides a carefully designed hardware/software interface that makes issuing and completing accesses atomic. The atomic management interface, combined with hardware scheduling optimizations, and an optimized storage stack increases performance for small, random accesses by 18x and reduces software overheads by 60%. Moneta array sustain 2.8~GB/s for sequential transfers and 541K random 4~KB~IO operations per second (8x higher than a state-of-the-art flash-based SSD). Moneta can perform a 512-byte write in 9~us (5.6x faster than the SSD). Moneta provides a harmonic mean speedup of 2.1x and a maximum speed up of 9x across a range of file system, paging, and database workloads. We also explore trade-offs in Moneta's architecture between performance, power, memory organization, and memory latency.},
+ acmid = {1934984},
+ address = {Washington, DC, USA},
+ author = {Caulfield, Adrian M. and De, Arup and Coburn, Joel and Mollow, Todor I. and Gupta, Rajesh K. and Swanson, Steven},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.33},
+ isbn = {978-0-7695-4299-7},
+ keyword = {software IO optimizations, non-volatile memories, phase change memories, storage systems},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.33},
+ numpages = {11},
+ pages = {385--395},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Moneta: A High-Performance Storage Array Architecture for Next-Generation, Non-volatile Memories},
+ year = {2010}
+}
+
+
+@inproceedings{Cheng:2010:MLR:1934902.1935011,
+ abstract = {Memory Wall is a well-known obstacle to processor performance improvement. The popularity of multi-core architecture will further exaggerate the problem since the memory resource is shared by all cores. Interferences among requests from different cores may prolong the latency of memory accesses thereby degrading the system performance. To tackle the problem, this paper proposes to decouple application threads into compute and memory tasks, and restrict the number of concurrent memory tasks to avoid the interference among memory requests. Yet with this scheduling restriction, a CPU core may unnecessarily stay idle, which incurs adverse impact on the overall performance. Therefore, we develop a memory thread throttling mechanism that tunes the allowable memory threads dynamically under workload variation to improve system performance. The proposed run-time mechanism monitors memory and computation ratios of a program for phase detection. It then decides the memory thread constraint for the next program phase based on an analytical model that can estimate system performance under different constraint values. To prove the concept, we prototype the mechanism in some real-world applications as well as synthetic workloads. We evaluate their performance on real machines. The experimental results demonstrate up to 20% speedup with a pool of synthetic workloads on an Intel i7 (Nehalem) machine and match with the speedup estimated by the proposed analytical model. Furthermore, the intelligent run-time scheduling leads to a geometric mean of 12% performance improvement for real-world applications on the same hardware.},
+ acmid = {1935011},
+ address = {Washington, DC, USA},
+ author = {Cheng, Hsiang-Yun and Lin, Chung-Hsiang and Li, Jian and Yang, Chia-Lin},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.39},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.39},
+ numpages = {12},
+ pages = {53--64},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Memory Latency Reduction via Thread Throttling},
+ year = {2010}
+}
+
+
+@inproceedings{Nistor:2010:ICD:1934902.1935026,
+ abstract = {Developing multithreaded programs in shared-memory systems is difficult. One key reason is the nondeterminism of thread interaction, which may result in one code input producing different outputs in different runs. Unfortunately, enforcing determinism by construction typically comes at a performance, hardware, or programmability cost. An alternative is to check during testing whether code is deterministic. This paper presents Instant Check, a novel technique that checks determinism with a very small runtime overhead while requiring only a minor hardware extension. During code testing, Instant-Check can check whether the code under test ends up in a deterministic state in various runs. The idea is to compute a 64-bit hash of the memory state and compare the hashes of different test runs that have the same input. If two runs have different hashes, Instant-Check reports state nondeterminism. For efficient operation, Instant Checkuses on-the-fly incremental hashing in hardware. The hash is kept in a per-core 64-bit register, which trivially supports virtualization, migration, and context switching. We use Instant Check to understand the determinism properties of 17 popular applications, including Sphinx3, PBZip2, PARSEC, and SPLASH-2. Instant Check incurs a negligible average runtime overhead of 0.3% over native testing runs. We also show how using Instant Check programmers can find bugs and discuss other applications of fast memory-state hashing. While using Instant Check, we found a real bug in the widely used PARSEC benchmark.},
+ acmid = {1935026},
+ address = {Washington, DC, USA},
+ author = {Nistor, Adrian and Marinov, Darko and Torrellas, Josep},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.55},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Determinism, Memory State Hash, Incremental Hashing},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.55},
+ numpages = {12},
+ pages = {251--262},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {InstantCheck: Checking the Determinism of Parallel Programs Using On-the-Fly Incremental Hashing},
+ year = {2010}
+}
+
+
+@inproceedings{Yu:2010:TCB:1934902.1934973,
+ abstract = {Parallel programming is hard, because it is impractical to test all possible thread interleavings. One promising approach to improve a multi-threaded program’s reliability is to constrain a production run’s thread interleavings in such a way that untested interleavings are avoided as much as possible. Such an approach would avoid hard-to-test rare thread interleavings in production runs, and thereby improve correctness. However, a key challenge in realizing this goal is in determining thread interleaving constraints from the tested correct interleavings, and enforcing them efficiently in production runs. In this paper, we propose a new method to determine thread interleaving constraints from the tested interleavings in the form of lifeguard transactions (LifeTxes). An untested code region initially is contained in a single LifeTx. As the code region is tested over more thread interleavings, its original LifeTx is automatically split into multiple smaller LifeTxes so that the newly tested interleavings are permitted in production runs. To efficiently enforce LifeTx constraints in production runs, we propose a hardware design similar to the eager conflict detection capability that exist in a conventional hardware transactional memory (TM) systems, but without the need for versioning, rollback and unbounded TM support.We show that 11 out of 14 real concurrency bugs in programs like Apache, MySQL and Mozilla could be avoided using the proposed approach for a negligible performance overhead.},
+ acmid = {1934973},
+ address = {Washington, DC, USA},
+ author = {Yu, Jie and Narayanasamy, Satish},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.56},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Parallel Programming, Concurrency Bugs, Software Reliability},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.56},
+ numpages = {12},
+ pages = {263--274},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Tolerating Concurrency Bugs Using Transactions As Lifeguards},
+ year = {2010}
+}
+
+
+@inproceedings{Gupta:2010:ECB:1934902.1934979,
+ abstract = {Single-thread performance, reliability and power efficiency are critical design challenges of future multicore systems. Although point solutions have been proposed to address these issues, a more fundamental change to the fabric of multicore systems is necessary to seamlessly combat these challenges. Towards this end, this paper proposes Core Genesis, a dynamically adaptive multiprocessor fabric that blurs out individual core boundaries, and encourages resource sharing across cores for performance, fault tolerance and customized processing. Further, as a manifestation of this vision, the paper provides details of a unified performance-reliability solution that can assemble variable-width processors from a network of potentially broken) pipeline stage-level resources. This design relies on interconnection flexibility, micro architectural innovations, and compiler directed instruction steering, to merge pipeline resources for high single-thread performance. The same flexibility enables it to route around broken components, achieving sub-core level defect isolation. Together, the resulting fabric consists of a pool of pipeline stage-level resources that can be fluidly allocated for accelerating single-thread performance, throughput computing, or tolerating failures.},
+ acmid = {1934979},
+ address = {Washington, DC, USA},
+ author = {Gupta, Shantanu and Feng, Shuguang and Ansari, Amin and Mahlke, Scott},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.30},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Multicores, Performance, Reliability, Reconfigurable Architecture},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.30},
+ numpages = {12},
+ pages = {325--336},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Erasing Core Boundaries for Robust and Configurable Performance},
+ year = {2010}
+}
+
+
+@inproceedings{Steffen:2010:ISE:1934902.1935025,
+ abstract = {Wide Single Instruction, Multiple Thread (SIMT)architectures often require a static allocation of thread groups that are executed in lockstep throughout the entire application kernel. Individual thread branching is supported by executing all control ﬂow paths for threads in a thread group and only committing the results of threads on the current control path. While convergence algorithms are used to maximize processorefficiency during branching operations, applications requiring complex control ﬂow often result in low processor efficiency due to the length and quantity of control paths. Global rendering algorithms are an example of a class of application that can be accelerated using a large number of independent parallel threads that each require complex control ﬂow, resulting in comparatively low efficiency on SIMT processors. To improve processor utilization for global rendering algorithms, we introduce a SIMT architecture that allows for threads to be created dynamically at runtime. Large application kernels are broken down into smaller code blocks we call µ-kernels that dynamically created threads can execute. These runtime µ-kernels allow for the removal of branching statements that would cause divergence within a thread group, and result in new threads being created and grouped with threads beginning execution of the same µ-kernel. In our evaluation of SIMT processor efficiency for a global rendering algorithms, dynamicµ-kernels improved processor performance by an average of1.4×.},
+ acmid = {1935025},
+ address = {Washington, DC, USA},
+ author = {Steffen, Michael and Zambreno, Joseph},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.45},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.45},
+ numpages = {12},
+ pages = {237--248},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Improving SIMT Efficiency of Global Rendering Algorithms with Architectural Support for Dynamic Micro-Kernels},
+ year = {2010}
+}
+
+
+@inproceedings{2010:MPC:1934902.1935005,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935005},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.5},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.5},
+ pages = {xi--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Message from the Program Chair},
+ year = {2010}
+}
+
+
+@inproceedings{Jafri:2010:AFC:1934902.1934988,
+ abstract = {As chip multiprocessors scale the number of on chip cores, the superior scalability of multihop networks compared to buses and crossbars makes multihop networks the choice interconnection strategy. However, a significant part of the networks’ energy is consumed in the buffers used to handle link contention via back pressured routing. Recent work proposes to apply well-known backpressure less routing techniques, which eliminate buffers, and hence buffer power(static and dynamic), at the cost of some misrouting/dropping upon link contention (misrouted/dropped flits are eventually recovered/retransmitted). At low loads, misrouting (dropping)is rare and hence backpressure less routing performs well. Unfortunately, backpressure less routers incur significant misrouting/dropping under high loads and saturate at lower throughputs than back pressured networks, resulting in poorer performance and energy. We make the key observation that because load varies significantly across applications, back pressureless and back pressured networks are not robust in performance-energy across the spectrum of high and low loads. That is, at high loads backpressure less networks suffer considerable performance and energy disadvantage compared to back pressured networks, and the energy disadvantage reverse sat low loads. To address this robustness issue, we propose a novel adaptive flow control (AFC) router which dynamically adapts between back pressured and backpressure less flow control. AFC employs three novel mechanisms, namely local contention thresholds, gossip-induced mode-switch, and lazy VCallocation. The first mechanism maximizes performance (and minimizes energy) in the common case, and the second mechanism ensures correctness in corner cases. The third mechanism exploits flit-by-flit routing in AFC’s back pressured mode to simplify VC allocation and reduces the buffer requirements by a factor of two in AFC’s back pressured mode. Simulations using commercial workloads and SPLASH-2 confirm AFC’srobustness by showing that AFC achieves performance and energy that are closer to that of the better of backpressure and backpressure less networks.},
+ acmid = {1934988},
+ address = {Washington, DC, USA},
+ author = {Jafri, Syed Ali Raza and Hong, Yu-Ju and Thottethodi, Mithuna and Vijaykumar, T. N.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.48},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Interconnection networks, flow control},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.48},
+ numpages = {12},
+ pages = {433--444},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Adaptive Flow Control for Robust Performance and Energy},
+ year = {2010}
+}
+
+
+@inproceedings{2010:TPI:1934902.1935002,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935002},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.2},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.2},
+ pages = {iii--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Title Page Iii},
+ year = {2010}
+}
+
+
+@inproceedings{Zhang:2010:FCS:1934902.1934991,
+ abstract = {We propose an architectural design methodology for designing formally verifiable cache coherence protocols, called Fractal Coherence. Properly designed to be fractal in behavior, the proposed family of cache coherence protocols can be formally verified correct for systems with an arbitrary number of cores, using existing, automated formal tools. We show, by designing and implementing a specific Fractal Coherence protocol, called Tree Fractal, that Fractal Coherence protocols can attain comparable performance to traditional snooping and directory protocols.},
+ acmid = {1934991},
+ address = {Washington, DC, USA},
+ author = {Zhang, Meng and Lebeck, Alvin R. and Sorin, Daniel J.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.11},
+ isbn = {978-0-7695-4299-7},
+ keyword = {multicore, cache coherence, formal verification},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.11},
+ numpages = {12},
+ pages = {471--482},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Fractal Coherence: Scalably Verifiable Cache Coherence},
+ year = {2010}
+}
+
+
+@inproceedings{Gunadi:2010:CAC:1934902.1935015,
+ abstract = {Bias temperature instability, hot-carrier injection, and gate-oxide wear out will cause severe lifetime degradation in the performance and the reliability of future CMOS devices. The design guard band to counter these negative effects will be too expensive, largely due to the worst-case behavior induced by the uneven utilization of devices on the chip. To mitigate these effects over a chip’s lifetime, this paper proposes Colt, a simple yet holistic scheme to balance the utilization of devices in a processor by equalizing the duty cycle ratio of circuits’internal nodes and the usage frequency of devices. Colt relies on alternating true-and complement-mode operations to equalize the duty cycle ratio of signals (thus the utilization of devices) inmost data path and storage devices. Colt also employs a pseudorandom indexing scheme to balance the usage of entries in storage structures that often exhibit highly uneven utilization of entries. Finally, an operand-swapping scheme equalizes utilization of the left and right operand data paths. The proposed mechanisms impose trivial overhead in area, complexity, power, and performance, while recapturing 27% of aging-induced performance degradation and improving meantime to failure by an estimated 40%.},
+ acmid = {1935015},
+ address = {Washington, DC, USA},
+ author = {Gunadi, Erika and Sinkar, Abhisek A. and Kim, Nam Sung and Lipasti, Mikko H.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.37},
+ isbn = {978-0-7695-4299-7},
+ keyword = {design, reliability, BTI, HCI, gate oxide wearout},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.37},
+ numpages = {12},
+ pages = {103--114},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Combating Aging with the Colt Duty Cycle Equalizer},
+ year = {2010}
+}
+
+
+@inproceedings{2010:MGC:1934902.1935004,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935004},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.4},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.4},
+ pages = {x--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Message from the General Co-Chairs},
+ year = {2010}
+}
+
+
+@inproceedings{Vogelsang:2010:UEC:1934902.1934982,
+ abstract = {Energy consumption has become a major constraint on the capabilities of computer systems. In large systems the energy consumed by Dynamic Random Access Memories (DRAM) is a significant part of the total energy consumption. It is possible to calculate the energy consumption of currently available DRAMs from their datasheets, but datasheets don’t allow extrapolation to future DRAM technologies and don’t show how other changes like increasing bandwidth requirements change DRAM energy consumption. This paper first presents a flexible DRAM power model which uses a description of DRAM architecture, technology and operation to calculate power usage and verifies it against datasheet values. Then the model is used together with assumptions about the DRAM roadmap to extrapolate DRAM energy consumption to future DRAM generations. Using this model we evaluate some of the proposed DRAM power reduction schemes.},
+ acmid = {1934982},
+ address = {Washington, DC, USA},
+ author = {Vogelsang, Thomas},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.42},
+ isbn = {978-0-7695-4299-7},
+ keyword = {DRAM, power},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.42},
+ numpages = {12},
+ pages = {363--374},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Understanding the Energy Consumption of Dynamic Random Access Memories},
+ year = {2010}
+}
+
+
+@inproceedings{Reddi:2010:VSC:1934902.1935013,
+ abstract = {Parameter variations have become a dominant challenge in microprocessor design. Voltage variation is especially daunting because it happens so rapidly. We measure and characterize voltage variation in a running Intel Core2 Duo processor. By sensing on-die voltage as the processor runs single-threaded, multi-threaded, and multi-program workloads, we determine the average supply voltage swing of the processor to be only 4 percent, far from the processor's 14percent worst-case operating voltage margin. While such large margins guarantee correctness, they penalize performance and power efficiency. We investigate and quantify the benefits of designing a processor for typical-case (rather than worst-case) voltage swings, assuming that a fail-safe mechanism protects it from infrequently occurring large voltage fluctuations. With today's processors, such resilient designs could yield 15 percent to 20 percent performance improvements. But we also show that in future systems, these gains could be lost as increasing voltage swings intensify the frequency of fail-safe recoveries. After characterizing micro architectural activity that leads to voltage swings within multi-core systems, we show that a voltage-noise-aware thread scheduler in software can co-schedule phases of different programs to mitigate error recovery overheads in future resilient processor designs.},
+ acmid = {1935013},
+ address = {Washington, DC, USA},
+ author = {Reddi, Vijay Janapa and Kanev, Svilen and Kim, Wonyoung and Campanoni, Simone and Smith, Michael D. and Wei, Gu-Yeon and Brooks, David},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.35},
+ isbn = {978-0-7695-4299-7},
+ keyword = {dI/dt, inductive noise, error resiliency, voltage droop, hw/sw co-design, thread scheduling, hardware reliability},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.35},
+ numpages = {12},
+ pages = {77--88},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Voltage Smoothing: Characterizing and Mitigating Voltage Noise in Production Processors via Software-Guided Thread Scheduling},
+ year = {2010}
+}
+
+
+@inproceedings{2010:RP:1934902.1934999,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1934999},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.54},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.54},
+ pages = {562--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Roster Page},
+ year = {2010}
+}
+
+
+@inproceedings{Miller:2010:PGT:1934902.1934981,
+ abstract = {Energy efficiency is a primary concern for microprocessor designers. A very effective approach to improving the energy efficiency of a chip is to lower its supply voltage to very close to the transitor's threshold voltage, into what is called the near-thresold region. This reduces power consumption dramatically but also decreases reliability by orders of magnitude, especially for SRAM structures such as caches. This paper presents Parichute, a novel and powerful error correction technique based on turbo product codes that allows caches to continue to operate in near-threshold, while trading off some cache capacity to store error correction information. Our Parichute-based cache implementation is flexible, allowing protection to be disabled in error-free high voltage operation and selectively enabled as the voltage is lowered and the error rate increases. Parichute is also self-testing and variation-aware, allowing selective protection of cache sections that exhibit errors at higher supply voltages because of process variation. Parichute achieves significantly stronger error correction compared to prior cache protection techniques, enabling 2X to 4X higher cache capacity at low voltages. Our results also show that a system with a Parichute-protected L2 cache can achieve a 34% reduction in system energy (processor and DRAM) compared to a system operating at nominal voltage.},
+ acmid = {1934981},
+ address = {Washington, DC, USA},
+ author = {Miller, Timothy N. and Thomas, Renji and Dinan, James and Adcock, Bruce and Teodorescu, Radu},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.28},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.28},
+ numpages = {12},
+ pages = {351--362},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Parichute: Generalized Turbocode-Based Error Correction for Near-Threshold Caches},
+ year = {2010}
+}
+
+
+@inproceedings{Lupon:2010:DAH:1934902.1935009,
+ abstract = {Most Hardware Transactional Memory (HTM) implementations choose fixed version and conflict management policies at design time. While eager HTM systems store transactional state in-place in memory and resolve conflicts when they are produced, lazy HTM systems buffer the transactional state in specialized hardware and defer the resolution of conflicts until commit time. Each scheme has its strengths and weaknesses, but, unfortunately, both approaches are too inflexible in the way they manage data versioning and transactional contention. Thus, fixed HTM systems may result in a significant performance opportunity loss when they execute complex transactional applications. In this paper, we present DynTM (Dynamically Adaptable HTM), the first fully-flexible HTM system that permits the simultaneous execution of transactions using complementary version and conflict management strategies. In the heart of DynTM is a novel coherence protocol that allows tracking conflicts among eager and lazy transactions. Both the eager and the lazy execution modes of DynTM exhibit very high performance compared to modern HTM systems. For example, the DynTM lazy execution mode implements local commits to improve on previous proposals. In addition, lazy transactions share the majority of hardware support with eager transactions, reducing substantially the hardware cost compared to other lazy HTM systems. By utilizing a simple predictor to decide the best execution mode for each transaction at runtime, DynTM obtains an average speedup of 34% over HTM systems that employ fixed version and conflict management policies.},
+ acmid = {1935009},
+ address = {Washington, DC, USA},
+ author = {Lupon, Marc and Magklis, Grigorios and Gonzalez, Antonio},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.23},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Hardware Transactional Memory, Dynamically Adaptable HTM, DynTM},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.23},
+ numpages = {12},
+ pages = {27--38},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {A Dynamically Adaptable Hardware Transactional Memory},
+ year = {2010}
+}
+
+
+@inproceedings{2010:TPI:1934902.1935001,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1935001},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.1},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.1},
+ pages = {i--},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Title Page I},
+ year = {2010}
+}
+
+
+@inproceedings{Zhan:2010:SSM:1934902.1935020,
+ abstract = {Efficient management of last level caches (LLCs) plays an important role in bridging the performance gap between processor cores and main memory. This paper is motivated by two key observations, based on our study of LLCs: 1) the capacity demand is highly non-uniform and dynamic at the set level, and 2) neither spatial nor temporal LLC management schemes, working separately as in prior work, can consistently and robustly deliver the best performance under different circumstances. Therefore, we propose a novel adaptive scheme, called STEM, which concurrently and dynamically manages both spatial and temporal dimensions of capacity demands at the set level. In the proposed scheme, a set-level monitor captures the temporal and spatial capacity demands of individual working sets and judiciously pairs off sets with complementary capacity demands so that the underutilized set in each pair can cooperatively cache the other’s victim blocks. The controller also decides on the best temporal sharing patterns for the coupled sets in the event of inter-set space sharing. Further, if the LLC controller cannot find a complementary set for a particular set, STEM can still decide on the best set-level replacement policy for it. Our extensive execution-driven simulation data shows that the proposed scheme performs robustly and consistently well under various conditions.},
+ acmid = {1935020},
+ address = {Washington, DC, USA},
+ author = {Zhan, Dongyuan and Jiang, Hong and Seth, Sharad C.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.31},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Chip Multiprocessors, Last Level Cache Management, Set-Level Non-Uniformity of Capacity Demands, Cooperative Caching},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.31},
+ numpages = {12},
+ pages = {163--174},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {STEM: Spatiotemporal Management of Capacity for Intra-core Last Level Caches},
+ year = {2010}
+}
+
+
+@proceedings{Albonesi:2009:1669112,
+ abstract = {We are pleased to present this year's technical program. Both papers and keynotes represent a broad spectrum of exciting ideas relevant to the computer architecture community in the near and the long term. This year we had 209 submissions. Program Committee (PC) members were not allowed to coauthor more than two submissions each. The reviewing process involved 34 PC members and 244 external reviewers. We assigned all PC and external reviews for those papers for which we did not have a conflict. In cases where one of us had a conflict, the other one assigned the reviews; and in the few cases where we both had a conflict, a third PC member assigned the reviews and led the discussion at the PC meeting. We made sure each paper had adequate expert coverage in both the PC and externally, and that each paper had high-quality reviews returned. In the end, 998 reviews were filed--an average of 4.8 reviews per submission. All reviews were made available for comment by the authors during the response period. To make the final decision for each paper, the PC carefully considered the reviews and author responses. The PC meeting was held on July 25 at Newark Airport. All 34 PC members were in attendance, many traveling great distances to be there. At the meeting, every paper was eligible for discussion. Conflicts were handled using the hot-seat model in all cases and prior to revealing the paper about to be discussed. Papers with PC members as co-authors were not handled as a separate category. Overall, the PC meeting was very collegial and constructive, and we strived to reach consensus on each paper. In the end, 52 papers were selected, 4 of which co-authored by PC members, constituting a 24.9% acceptance rate.},
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-798-1},
+ location = {New York, New York},
+ publisher = {ACM},
+ title = {MICRO 42: Proceedings of the 42Nd Annual IEEE/ACM International Symposium on Microarchitecture},
+ year = {2009}
+}
+
+
+@inproceedings{Bakhoda:2010:TON:1934902.1934987,
+ abstract = {As the number of cores and threads in many core compute accelerators such as Graphics Processing Units (GPU) increases, so does the importance of on-chip interconnection network design. This paper explores throughput-effective network-on-chips (NoC) for future many core accelerators that employ bulk-synchronous parallel (BSP) programming models such as CUDA and OpenCL. A hardware optimization is "throughput-effective" if it improves parallel application level performance per unit chip area. We evaluate performance of future looking workloads using detailed closed-loop simulations modeling compute nodes, NoC and the DRAM memory system. We start from a mesh design with bisection bandwidth balanced with off-chip demand. Accelerator workloads tend to demand high off-chip memory bandwidth which results in a many-to-few traffic pattern when coupled with expected technology constraints of slow growth in pins-per-chip. Leveraging these observations we reduce NoC area by proposing a "checkerboard", NoCwhich alternates between conventional full-routers and half-routers with limited connectivity. Checkerboard employs a new oblivious routing algorithm that maintains a minimum hop-count for architectures that place L2 cache banks at the half-router nodes. Next, we show that increasing network injection bandwidth for the large amount of read reply traffic at the nodes connected to DRAM controllers alleviates a significant fraction of the remaining imbalance resulting from the many-to-few traffic pattern. The combined effect of the above optimizations with an improved placement of memory controllers in the mesh and channel slicing improves application throughput per unit area by 25.4%.},
+ acmid = {1934987},
+ address = {Washington, DC, USA},
+ author = {Bakhoda, Ali and Kim, John and Aamodt, Tor M.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.50},
+ isbn = {978-0-7695-4299-7},
+ keyword = {NoC, Compute accelerator, GPGPU},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.50},
+ numpages = {12},
+ pages = {421--432},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Throughput-Effective On-Chip Networks for Manycore Accelerators},
+ year = {2010}
+}
+
+
+@inproceedings{2010:AI:1934902.1934998,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1934998},
+ address = {Washington, DC, USA},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.53},
+ isbn = {978-0-7695-4299-7},
+ key = {$\!\!$},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.53},
+ numpages = {3},
+ pages = {559--561},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Author Index},
+ year = {2010}
+}
+
+
+@inproceedings{Sanchez:2010:ZDW:1934902.1935021,
+ abstract = {The ever-increasing importance of main memory latency and bandwidth is pushing CMPs towards caches with higher capacity and associativity. Associativity is typically improved by increasing the number of ways. This reduces conflict misses, but increases hit latency and energy, placing a stringent trade-off on cache design. We present the zcache, a cache design that allows much higher associativity than the number of physical ways (e.g. a 64-associative cache with 4 ways). The zcache draws on previous research on skew-associative caches and cuckoo hashing. Hits, the common case, require a single lookup, incurring the latency and energy costs of a cache with a very low number of ways. On a miss, additional tag lookups happen off the critical path, yielding an arbitrarily large number of replacement candidates for the incoming block. Unlike conventional designs, the zcache provides associativity by increasing the number of replacement candidates, but not the number of cache ways. To understand the implications of this approach, we develop a general analysis framework that allows to compare associativity across different cache designs (e.g. a set-associative cache and a zcache) by representing associativity as a probability distribution. We use this framework to show that for zcaches, associativity depends only on the number of replacement candidates, and is independent of other factors (such as the number of cache ways or the workload). We also show that, for the same number of replacement candidates, the associativity of a zcache is superior than that of a set-associative cache for most workloads. Finally, we perform detailed simulations of multithreaded and multiprogrammed workloads on a large-scale CMP with zcache as the last-level cache. We show that zcaches provide higher performance and better energy efficiency than conventional caches without incurring the overheads of designs with a large number of ways.},
+ acmid = {1935021},
+ address = {Washington, DC, USA},
+ author = {Sanchez, Daniel and Kozyrakis, Christos},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.20},
+ isbn = {978-0-7695-4299-7},
+ keyword = {cache, associativity, performance, multi-core, energy efficiency},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.20},
+ numpages = {12},
+ pages = {187--198},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {The ZCache: Decoupling Ways and Associativity},
+ year = {2010}
+}
+
+
+@inproceedings{Ahn:2010:PAC:1934902.1934985,
+ abstract = {As the number of cores on a single chip increases with more recent technologies, a packet-switched on-chip interconnection network has become a de facto communication paradigm for chip multiprocessors (CMPs). However, it is inevitable to suffer from high communication latency due to the increasing number of hops. In this paper, we attempt to accelerate network communication by exploiting communication temporal locality with minimal additional hardware cost in the existing state-of-the-art router architecture. We observe that packets frequently traverse through the same path chosen by previous packets due to repeated communication patterns, such as frequent pair-wise communication. Motivated by our observation, we propose a pseudo-circuit scheme. With previous communication patterns, the scheme reserves crossbar connections creating pseudo-circuits, sharable partial circuits within a single router. It reuses the previous arbitration information to bypass switch arbitration if the next flit traverses through the same pseudo-circuit. To accelerate communication performance further, we also propose two aggressive schemes, pseudo-circuit speculation and buffer bypassing. Pseudo-circuit speculation creates more pseudo-circuits using unallocated crossbar connections while buffer bypassing skips buffer writes to eliminate one pipeline stage.},
+ acmid = {1934985},
+ address = {Washington, DC, USA},
+ author = {Ahn, Minseon and Kim, Eun Jung},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.10},
+ isbn = {978-0-7695-4299-7},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.10},
+ numpages = {10},
+ pages = {399--408},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Pseudo-Circuit: Accelerating Communication for On-Chip Interconnection Networks},
+ year = {2010}
+}
+
+
+@inproceedings{Deng:2010:FEI:1934902.1935018,
+ abstract = {This paper proposes Flex Core, a hybrid processor architecture where an on-chip reconfigurable fabric (FPGA) is tightly coupled with the main processing core. Flex Core provides an efficient platform that can support a broad range of run-time monitoring and bookkeeping techniques. Unlike using custom hardware, which is more efficient but often extremely difficult and expensive to incorporate into a modern microprocessor, the Flex Core architecture allows parallel monitoring and bookkeeping functions to be dynamically added to the processing core and adapt to application needs even after the chip has been fabricated. At the same time, Flex Core is far more efficient than software implementations because its fine-grained reconfigurable architecture closely matches bit level operations of typical monitoring schemes and allows monitoring schemes to operate in parallel to the monitored core. In fact, our experimental results show that monitoring on Flex Core can almost match the performance of full ASIC implementations. To evaluate the Flex Core architecture, we implemented an RTL prototype along with several extensions including uninitialized memory read checking, dynamic information flow tracking, array bound checking, and soft error checking. The prototypes demonstrate that the architecture can support a range of monitoring extensions with different characteristics in an efficient manner. Flex Core takes moderate silicon area and results in far better performance and energy efficiency than software.},
+ acmid = {1935018},
+ address = {Washington, DC, USA},
+ author = {Deng, Daniel Y. and Lo, Daniel and Malysa, Greg and Schneider, Skyler and Suh, G. Edward},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.17},
+ isbn = {978-0-7695-4299-7},
+ keyword = {Coprocessing Architecture, Reconfigurability, Security, Reliability},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.17},
+ numpages = {12},
+ pages = {137--148},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Flexible and Efficient Instruction-Grained Run-Time Monitoring Using On-Chip Reconfigurable Fabric},
+ year = {2010}
+}
+
+
+@inproceedings{Long:2010:MMF:1934902.1934980,
+ abstract = {Parallelism is the key to continued performance scaling in modern microprocessors. Yet we observe that this parallelism can often contain a surprising amount of instruction redundancy. We propose to exploit this redundancy to improve performance and decrease energy consumption. We propose a multi-threading micro-architecture, Minimal Multi-Threading (MMT), that leverages register renaming and the instruction window to combine the fetch and execution of identical instructions between threads in SPMD applications. While many techniques exploit intra-thread similarities by detecting when a later instruction may use an earlier result, MMT exploits inter-thread similarities by, whenever possible, fetching instructions from different threads together and only splitting them if the computation is unique. With two threads, our design achieves a speedup of 1.15(geometric mean) over a two-thread traditional SMT with a trace cache. With four threads, our design achieves a speedup of 1.25 (geometric mean) over a traditional SMT processor with four-threads and a trace cache. These correspond to speedups of 1.5 and 1.84 over a traditional out-of-order processor. Moreover, our performance increases inmost applications with no power increase because the increase in overhead is countered with a decrease in cache accesses, leading to a decrease in energy consumption for all applications.},
+ acmid = {1934980},
+ address = {Washington, DC, USA},
+ author = {Long, Guoping and Franklin, Diana and Biswas, Susmit and Ortiz, Pablo and Oberg, Jason and Fan, Dongrui and Chong, Frederic T.},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.41},
+ isbn = {978-0-7695-4299-7},
+ keyword = {SMT, Instruction Redundancy, Parallel Processing},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.41},
+ numpages = {12},
+ pages = {337--348},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Minimal Multi-threading: Finding and Removing Redundant Instructions in Multi-threaded Processors},
+ year = {2010}
+}
+
+
+@inproceedings{Lee:2010:MAP:1934902.1935023,
+ abstract = {We consider the problem of how to improve memory latency tolerance in massively multithreaded GPGPUs when the thread-level parallelism of an application is not sufficient to hide memory latency. One solution used in conventional CPU systems is prefetching, both in hardware and software. However, we show that straightforwardly applying such mechanisms to GPGPU systems does not deliver the expected performance benefits and can in fact hurt performance when not used judiciously. This paper proposes new hardware and software prefetching mechanisms tailored to GPGPU systems, which we refer to as many-thread aware prefetching (MT-prefetching) mechanisms. Our software MT-prefetching mechanism, called inter-thread prefetching, exploits the existence of common memory access behavior among fine-grained threads. For hardware MT-prefetching, we describe a scalable prefetcher training algorithm along with a hardware-based inter-thread prefetching mechanism. In some cases, blindly applying prefetching degrades performance. To reduce such negative effects, we propose an adaptive prefetch throttling scheme, which permits automatic GPGPU application- and hardware-specific adjustment. We show that adaptation reduces the negative effects of prefetching and can even improve performance. Overall, compared to the state-of-the-art software and hardware prefetching, our MT-prefetching improves performance on average by 16%(software pref.) / 15% (hardware pref.) on our benchmarks.},
+ acmid = {1935023},
+ address = {Washington, DC, USA},
+ author = {Lee, Jaekyu and Lakshminarayana, Nagesh B. and Kim, Hyesoon and Vuduc, Richard},
+ booktitle = {Proceedings of the 2010 43rd Annual IEEE/ACM International Symposium on Microarchitecture},
+ doi = {10.1109/MICRO.2010.44},
+ isbn = {978-0-7695-4299-7},
+ keyword = {prefetching, GPGPU, prefetch throttling},
+ link = {http://dx.doi.org/10.1109/MICRO.2010.44},
+ numpages = {12},
+ pages = {213--224},
+ publisher = {IEEE Computer Society},
+ series = {MICRO '43},
+ title = {Many-Thread Aware Prefetching Mechanisms for GPGPU Applications},
+ year = {2010}
+}
+
+
