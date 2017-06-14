@@ -1,0 +1,964 @@
+@inproceedings{Li:2017:PCM:3018743.3019025,
+ abstract = {In the many-core era, the performance of MPI collectives is more dependent on the intra-node communication component. However, the communication algorithms generally inherit from the inter-node version and ignore the cache complexity. We propose cache-oblivious algorithms for MPI all-to-all operations, in which data blocks are copied into the receive buffers in Morton order to exploit data locality. Experimental results on different many-core architectures show that our cache-oblivious implementations significantly outperform the naive implementations based on shared heap and the highly optimized MPI libraries.},
+ acmid = {3019025},
+ address = {New York, NY, USA},
+ author = {Li, Shigang and Zhang, Yunquan and Hoefler, Torsten},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019025},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache-oblivious algorithms, many-core, mpi_alltoall},
+ link = {http://doi.acm.org/10.1145/3018743.3019025},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {445--446},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Cache-Oblivious MPI All-to-All Communications on Many-Core Architectures},
+ year = {2017}
+}
+
+
+@inproceedings{Wu:2017:PRP:3018743.3019039,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {3019039},
+ address = {New York, NY, USA},
+ author = {Wu, Mingyu and Guan, Haibing and Zang, Binyu and Chen, Haibo},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019039},
+ isbn = {978-1-4503-4493-7},
+ keyword = {machine learning, managed runtime, vector},
+ link = {http://doi.acm.org/10.1145/3018743.3019039},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {457--458},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Recovering Performance for Vector-based Machine Learning on Managed Runtime},
+ year = {2017}
+}
+
+
+@inproceedings{Chabbi:2017:EAP:3018743.3018768,
+ abstract = {The popularity of Non-Uniform Memory Access (NUMA) architectures has led to numerous locality-preserving hierarchical lock designs, such as HCLH, HMCS, and cohort locks. Locality-preserving locks trade fairness for higher throughput. Hence, some instances of acquisitions can incur long latencies, which may be intolerable for certain applications. Few locks admit a waiting thread to abandon its protocol on a timeout. State-of-the-art abortable locks are not fully locality aware, introduce high overheads, and unsuitable for frequent aborts. Enhancing locality-aware locks with lightweight timeout capability is critical for their adoption. In this paper, we design and evaluate the HMCS-T lock, a Hierarchical MCS (HMCS) lock variant that admits a timeout. HMCS-T maintains the locality benefits of HMCS while ensuring aborts to be lightweight. HMCS-T offers the progress guarantee missing in most abortable queuing locks. Our evaluations show that HMCS-T offers the timeout feature at a moderate overhead over its HMCS analog. HMCS-T, used in an MPI runtime lock, mitigated the poor scalability of an MPI+OpenMP BFS code and resulted in 4.3x superior scaling.},
+ acmid = {3018768},
+ address = {New York, NY, USA},
+ author = {Chabbi, Milind and Amer, Abdelhalim and Wen, Shasha and Liu, Xu},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018768},
+ isbn = {978-1-4503-4493-7},
+ keyword = {abortable lock, hierarchical lock, mcs lock, numa, queuing lock, spin lock, synchronization, timeout lock},
+ link = {http://doi.acm.org/10.1145/3018743.3018768},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {61--74},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {An Efficient Abortable-locking Protocol for Multi-level NUMA Systems},
+ year = {2017}
+}
+
+
+@inproceedings{Dai:2017:PII:3018743.3019037,
+ abstract = {Large-scale graphs are becoming critical in various domains such as social network, scientific application, knowledge discovery, and even system software, etc. Many of those use cases require large-scale high-performance graph databases, which are designed for serving continuous updates from the clients, and at the same time, answering complex queries towards the current graph in an on-line manner. Those operations in graph databases, also referred as OLTP (online transaction processing) operations, need specific design and implementation in graph partitioning algorithms. In this study, we designed an incremental online graph partitioning (IOGP), optimized for OLTP workloads. It is designed to achieve better locality, generate balanced partitions, and increase the parallelism for accessing hotspots of the graph. Our evaluation results on both real world and synthetic graphs in both simulation and real system confirm a better performance on graph queries (as much as 2X) with small overheads during graph insertion (less than 10%).},
+ acmid = {3019037},
+ address = {New York, NY, USA},
+ author = {Dai, Dong and Zhang, Wei and Chen, Yong},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019037},
+ isbn = {978-1-4503-4493-7},
+ keyword = {graph database, graph partition, oltp},
+ link = {http://doi.acm.org/10.1145/3018743.3019037},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {439--440},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: IOGP: An Incremental Online Graph Partitioning for Large-Scale Distributed Graph Databases},
+ year = {2017}
+}
+
+
+@inproceedings{Jiang:2017:GPS:3018743.3018772,
+ abstract = {Semi-structured data emerge in many domains, especially in web analytics and business intelligence. However, querying such data is inherently sequential due to the nested structure of input data. Existing solutions pessimistically enumerate all execution paths to circumvent dependencies, yielding sub-optimal performance and limited scalability. This paper presents GAP, a parallelization scheme that, for the first time, leverages the grammar of the input data to boost the parallelization efficiency. GAP leverages static analysis to infer feasible execution paths for specific con- texts based on the grammar of the semi-structured data. It can eliminate unnecessary paths without compromising the correctness. In the absence of a pre-defined grammar, GAP switches into a speculative execution mode and takes potentially incomplete grammar extracted either from prior inputs. Together, the dual-mode GAP reduces the execution paths from all paths to a minimum, therefore maximizing the parallelization efficiency and scalability. The benefits of path elimination go beyond reducing extra computation -- it also enables the use of more efficient data structures, which further improves the efficiency. An evaluation on a large set of standard benchmarks with diverse queries shows that GAP yields significant efficiency increase and boosts the speedup of the state-of-the-art from 2.9X to 17.6X on a 20-core ma- chine for a set of 200 queries.},
+ acmid = {3018772},
+ address = {New York, NY, USA},
+ author = {Jiang, Lin and Zhao, Zhijia},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018772},
+ isbn = {978-1-4503-4493-7},
+ keyword = {grammar, parallel pushdown transducer, parallelization, pushdown transducer, speculation, xml, xpath},
+ link = {http://doi.acm.org/10.1145/3018743.3018772},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {371--383},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Grammar-aware Parallelization for Scalable XPath Querying},
+ year = {2017}
+}
+
+
+@inproceedings{Arbel-Raviv:2017:PRD:3018743.3019035,
+ abstract = {Lock-free algorithms guarantee progress by having threads help one another. Complex lock-free operations facilitate helping by creating descriptor objects that describe how other threads should help them. In many lock-free algorithms, a new descriptor is allocated for each operation. After an operation completes, its descriptor must be reclaimed by a memory reclamation scheme. Allocating and reclaiming descriptors introduces significant space and time overhead. We present a transformation for a class of lock-free algorithms that allows each thread to efficiently reuse a single descriptor. Experiments on a variety of workloads show that our transformation yields significant improvements over implementations that reclaim descriptors.},
+ acmid = {3019035},
+ address = {New York, NY, USA},
+ author = {Arbel-Raviv, Maya and Brown, Trevor},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019035},
+ isbn = {978-1-4503-4493-7},
+ keyword = {concurrent data structures, lock-free, synchronization},
+ link = {http://doi.acm.org/10.1145/3018743.3019035},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {429--430},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Reuse, Don'T Recycle: Transforming Algorithms That Throw Away Descriptors},
+ year = {2017}
+}
+
+
+@inproceedings{Awan:2017:SCM:3018743.3018769,
+ abstract = {Availability of large data sets like ImageNet and massively parallel computation support in modern HPC devices like NVIDIA GPUs have fueled a renewed interest in Deep Learning (DL) algorithms. This has triggered the development of DL frameworks like Caffe, Torch, TensorFlow, and CNTK. However, most DL frameworks have been limited to a single node. In order to scale out DL frameworks and bring HPC capabilities to the DL arena, we propose, S-Caffe; a scalable and distributed Caffe adaptation for modern multi-GPU clusters. With an in-depth analysis of new requirements brought forward by the DL frameworks and limitations of current communication runtimes, we present a co-design of the Caffe framework and the MVAPICH2-GDR MPI runtime. Using the co-design methodology, we modify Caffe's workflow to maximize the overlap of computation and communication with multi-stage data propagation and gradient aggregation schemes. We bring DL-Awareness to the MPI runtime by proposing a hierarchical reduction design that benefits from CUDA-Aware features and provides up to a massive 133x speedup over OpenMPI and 2.6x speedup over MVAPICH2 for 160 GPUs. S-Caffe successfully scales up to 160 K-80 GPUs for GoogLeNet (ImageNet) with a speedup of 2.5x over 32 GPUs. To the best of our knowledge, this is the first framework that scales up to 160 GPUs. Furthermore, even for single node training, S-Caffe shows an improvement of 14\% and 9\% over Nvidia's optimized Caffe for 8 and 16 GPUs, respectively. In addition, S-Caffe achieves up to 1395 samples per second for the AlexNet model, which is comparable to the performance of Microsoft CNTK.},
+ acmid = {3018769},
+ address = {New York, NY, USA},
+ author = {Awan, Ammar Ahmad and Hamidouche, Khaled and Hashmi, Jahanzeb Maqbool and Panda, Dhabaleswar K.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018769},
+ isbn = {978-1-4503-4493-7},
+ keyword = {caffe, cuda-aware mpi, deep learning, distributed training, mpi\_reduce},
+ link = {http://doi.acm.org/10.1145/3018743.3018769},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {193--205},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {S-Caffe: Co-designing MPI Runtimes and Caffe for Scalable Deep Learning on Modern GPU Clusters},
+ year = {2017}
+}
+
+
+@inproceedings{Chen:2017:ESF:3018743.3018748,
+ abstract = {Modern GPUs are broadly adopted in many multitasking environments, including data centers and smartphones. However, the current support for the scheduling of multiple GPU kernels (from different applications) is limited, forming a major barrier for GPU to meet many practical needs. This work for the first time demonstrates that on existing GPUs, efficient preemptive scheduling of GPU kernels is possible even without special hardware support. Specifically, it presents EffiSha, a pure software framework that enables preemptive scheduling of GPU kernels with very low overhead. The enabled preemptive scheduler offers flexible support of kernels of different priorities, and demonstrates significant potential for reducing the average turnaround time and improving the system overall throughput of programs that time share a modern GPU.},
+ acmid = {3018748},
+ address = {New York, NY, USA},
+ author = {Chen, Guoyang and Zhao, Yue and Shen, Xipeng and Zhou, Huiyang},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018748},
+ isbn = {978-1-4503-4493-7},
+ keyword = {average turnaround time, gpu, os, overall system throughput, preemptive scheduling, software framework},
+ link = {http://doi.acm.org/10.1145/3018743.3018748},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {3--16},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {EffiSha: A Software Framework for Enabling Effficient Preemptive Scheduling of GPU},
+ year = {2017}
+}
+
+
+@inproceedings{Schardl:2017:TEF:3018743.3018758,
+ abstract = {This paper explores how fork-join parallelism, as supported by concurrency platforms such as Cilk and OpenMP, can be embedded into a compiler's intermediate representation (IR). Mainstream compilers typically treat parallel linguistic constructs as syntactic sugar for function calls into a parallel runtime. These calls prevent the compiler from performing optimizations across parallel control constructs. Remedying this situation is generally thought to require an extensive reworking of compiler analyses and code transformations to handle parallel semantics. Tapir is a compiler IR that represents logically parallel tasks asymmetrically in the program's control flow graph. Tapir allows the compiler to optimize across parallel control constructs with only minor changes to its existing analyses and code transformations. To prototype Tapir in the LLVM compiler, for example, we added or modified about 6000 lines of LLVM's 4-million-line codebase. Tapir enables LLVM's existing compiler optimizations for serial code -- including loop-invariant-code motion, common-subexpression elimination, and tail-recursion elimination -- to work with parallel control constructs such as spawning and parallel loops. Tapir also supports parallel optimizations such as loop scheduling.},
+ acmid = {3018758},
+ address = {New York, NY, USA},
+ author = {Schardl, Tao B. and Moses, William S. and Leiserson, Charles E.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018758},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cilk, compiling, control-flow graph, fork-join parallelism, llvm, multicore, openmp, optimization, par- allel computing, serial semantics, tapir},
+ link = {http://doi.acm.org/10.1145/3018743.3018758},
+ location = {Austin, Texas, USA},
+ numpages = {17},
+ pages = {249--265},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Tapir: Embedding Fork-Join Parallelism into LLVM's Intermediate Representation},
+ year = {2017}
+}
+
+
+@inproceedings{Battig:2017:SCS:3018743.3018747,
+ abstract = {We explore a programming approach for concurrency that synchronizes all accesses to shared memory by default. Synchronization takes place by ensuring that all program code runs inside atomic sections even if the program code has external side effects. Threads are mapped to atomic sections that a programmer must explicitly split to increase concurrency. A naive implementation of this approach incurs a large amount of overhead. We show how to reduce this overhead to make the approach suitable for realistic application programs on existing hardware. We present an implementation technique based on a special-purpose software transactional memory system. To reduce the overhead, the technique exploits properties of managed, object-oriented programming languages as well as intraprocedural static analyses and uses field-level granularity locking in combination with transactional I/O to provide good scaling properties. We implemented the synchronized-by-default (SBD) approach for the Java language and evaluate its performance for six programs from the DaCapo benchmark suite. The evaluation shows that, compared to explicit synchronization, the SBD approach has an overhead between 0.4% and 102% depending on the benchmark and the number of threads, with a mean (geom.) of 23.9%.},
+ acmid = {3018747},
+ address = {New York, NY, USA},
+ author = {B\"{a}ttig, Martin and Gross, Thomas R.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018747},
+ isbn = {978-1-4503-4493-7},
+ keyword = {atomic blocks, concurrency, parallel programming, synchronization, transactional memory},
+ link = {http://doi.acm.org/10.1145/3018743.3018747},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {299--312},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Synchronized-by-Default Concurrency for Shared-Memory Systems},
+ year = {2017}
+}
+
+
+@inproceedings{Ren:2017:EVM:3018743.3018763,
+ abstract = {Modern hardware contains parallel execution resources that are well-suited for data-parallelism-vector units-and task parallelism-multicores. However, most work on parallel scheduling focuses on one type of hardware or the other. In this work, we present a scheduling framework that allows for a unified treatment of task- and data-parallelism. Our key insight is an abstraction, task blocks, that uniformly handles data-parallel iterations and task-parallel tasks, allowing them to be scheduled on vector units or executed independently as multicores. Our framework allows us to define schedulers that can dynamically select between executing task- blocks on vector units or multicores. We show that these schedulers are asymptotically optimal, and deliver the maximum amount of parallelism available in computation trees. To evaluate our schedulers, we develop program transformations that can convert mixed data- and task-parallel pro- grams into task block-based programs. Using a prototype instantiation of our scheduling framework, we show that, on an 8-core system, we can simultaneously exploit vector and multicore parallelism to achieve 14×-108× speedup over sequential baselines.},
+ acmid = {3018763},
+ address = {New York, NY, USA},
+ author = {Ren, Bin and Krishnamoorthy, Sriram and Agrawal, Kunal and Kulkarni, Milind},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018763},
+ isbn = {978-1-4503-4493-7},
+ keyword = {data parallelism, general scheduler, task parallelism},
+ link = {http://doi.acm.org/10.1145/3018743.3018763},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {117--130},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Exploiting Vector and Multicore Parallelism for Recursive, Data- and Task-Parallel Programs},
+ year = {2017}
+}
+
+
+@inproceedings{Rajbhandari:2017:OFI:3018743.3018771,
+ abstract = {The four-index integral transform is a fundamental and computationally demanding calculation used in many computational chemistry suites such as NWChem. It transforms a four-dimensional tensor from one basis to another. This transformation is most efficiently implemented as a sequence of four tensor contractions that each contract a four- dimensional tensor with a two-dimensional transformation matrix. Differing degrees of permutation symmetry in the intermediate and final tensors in the sequence of contractions cause intermediate tensors to be much larger than the final tensor and limit the number of electronic states in the modeled systems. Loop fusion, in conjunction with tiling, can be very effective in reducing the total space requirement, as well as data movement. However, the large number of possible choices for loop fusion and tiling, and data/computation distribution across a parallel system, make it challenging to develop an optimized parallel implementation for the four-index integral transform. We develop a novel approach to address this problem, using lower bounds modeling of data movement complexity. We establish relationships between available aggregate physical memory in a parallel computer system and ineffective fusion configurations, enabling their pruning and consequent identification of effective choices and a characterization of optimality criteria. This work has resulted in the development of a significantly improved implementation of the four-index transform that enables higher performance and the ability to model larger electronic systems than the current implementation in the NWChem quantum chemistry software suite.},
+ acmid = {3018771},
+ address = {New York, NY, USA},
+ author = {Rajbhandari, Samyam and Rastello, Fabrice and Kowalski, Karol and Krishnamoorthy, Sriram and Sadayappan, P.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018771},
+ isbn = {978-1-4503-4493-7},
+ keyword = {4-index, communication optimization, distributed algorithm, four-index, fusion, lower bounds, optimal schedule, optimizing 4-index transform, parallel algorithm, processor mapping, scheduling, tensor contraction, tensors},
+ link = {http://doi.acm.org/10.1145/3018743.3018771},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {327--340},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Optimizing the Four-Index Integral Transform Using Data Movement Lower Bounds Analysis},
+ year = {2017}
+}
+
+
+@inproceedings{Tang:2017:SIC:3018743.3018745,
+ abstract = {Fault tolerance is increasingly important in high performance computing due to the substantial growth of system scale and decreasing system reliability. In-memory/diskless checkpoint has gained extensive attention as a solution to avoid the IO bottleneck of traditional disk-based checkpoint methods. However, applications using previous in-memory checkpoint suffer from little available memory space. To provide high reliability, previous in-memory checkpoint methods either need to keep two copies of checkpoints to tolerate failures while updating old checkpoints or trade performance for space by flushing in-memory checkpoints into disk. In this paper, we propose a novel in-memory checkpoint method, called self-checkpoint, which can not only achieve the same reliability of previous in-memory checkpoint methods, but also increase the available memory space for applications by almost 50%. To validate our method, we apply the self-checkpoint to an important problem, fault tolerant HPL. We implement a scalable and fault tolerant HPL based on this new method, called SKT-HPL, and validate it on two large-scale systems. Experimental results with 24,576 processes show that SKT-HPL achieves over 95% of the performance of the original HPL. Compared to the state-of-the-art in-memory checkpoint method, it improves the available memory size by 47% and the performance by 5%.},
+ acmid = {3018745},
+ address = {New York, NY, USA},
+ author = {Tang, Xiongchao and Zhai, Jidong and Yu, Bowen and Chen, Wenguang and Zheng, Weimin},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018745},
+ isbn = {978-1-4503-4493-7},
+ keyword = {fault tolerance, fault-tolerant hpl, in-memory checkpoint, memory consumption},
+ link = {http://doi.acm.org/10.1145/3018743.3018745},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {401--413},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Self-Checkpoint: An In-Memory Checkpoint Method Using Less Space and Its Practice on Fault-Tolerant HPL},
+ year = {2017}
+}
+
+
+@proceedings{Sarkar:2017:3018743,
+ abstract = {It is our great pleasure to welcome you to PPoPP 2017, the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming held in Austin, Texas during February 4-8, 2017, and co-located with the CGO 2017 and HPCA 2017 conferences. This year's symposium continues and reinforces the PPoPP tradition of publishing leading work on all aspects of parallel programming, including foundational and theoretical aspects, techniques, languages, compilers, runtime systems, tools, and practical experiences. Given the pervasiveness of parallel architectures in the general consumer market, PPoPP, with its interest in new parallel workloads, techniques and productivity tools for parallel programming, is becoming more relevant than ever to the computer science community. PPoPP 2017 received 132 submissions from countries all over the world. The submitted papers underwent a rigorous two-phase review process. To maintain fairness and uniform standards, the review process was double-blind, throughout. Almost all of the 132 submissions were reviewed in the first phase by four members of the combined PC and ERC. (A very small fraction received three reviews in the first phase.) All papers were assigned a discussion lead from the PC. After the first rebuttal phase and ongoing online discussions, reviewers reached a consensus to relegate half of the submissions. Their authors were subsequently notified and given the choice of withdrawing their papers. The submissions for which there was no clear consensus or that had only three reviews (very few) were retained for the second evaluation stage. In the second phase, the remaining papers received at least two additional reviews exclusively from PC members and some external specialists. After a second rebuttal period, PC and ERC members continued their online discussions and grouped papers in top, bottom and discuss categories. Finally, 35 PC members met in person over two half days from noon, November 5th through the afternoon of November 6th at the Department of Computer Science in Rice University, Houston, TX, and concluded the meeting by accepting (or conditionally accepting) a total of 29 papers. The 14 conditionally accepted papers were shepherded by volunteer PC members, and the final version was made available to all original reviewers for their approval. All in all, this process resulted in a manageable average load of 12 papers for PC members, 6 papers for ERC members, offered all authors the possibility to respond to all reviews, and helped ensure that reviewing efforts were focused on where they were needed the most. Because many quality papers could not be accommodated as regular contributions, all papers retained for the second review phase were invited to be presented as posters at the conference. As a result, 17 posters were included in the proceedings as 2 page abstracts. The posters were presented during a special two-hour late afternoon session. All authors of accepted papers were given the option of participating in a joint CGO-PPoPP Artifact Evaluation (AE) process. The AE process is intended to encourage researchers to conduct experiments in a reproducible way, to package experimental work-flows and all related materials for broad availability, and ultimately, to enable fair comparison of published techniques. This year saw a considerable increase in the amount of submitted artifacts: 27 versus 18 two years ago, almost equally split between CGO and PPoPP. The Artifact Evaluation Committee of 41 researchers and engineers spent two weeks validating and evaluating the artifacts. Each submission received at least three reviews and only eight of them fell below acceptance criteria. To help educate authors about result reproducibility, these papers were shepherded during a week's time by the AE Committee. Concurrently, the AE committee successfully tried an "open reviewing model", i.e., asked the community to publicly evaluate several artifacts already available at Github, Gila and other project hosting services. This enabled us to find additional external reviewers with access to HPC servers or proprietary benchmarks and tools. At the end of this process all submissions qualified to receive the AE seal and their authors were encouraged to submit a two page Artifact Appendix to document the process. The success of a major conference like PPoPP very much depends on the hard work of all members of the organizing committee who volunteer their time in this service. We thank all PC and ERC members for their thoughtful reviews and extensive online discussions, with special thanks to the PC members who came from all over the world to the meeting in Houston and deliberated for two half days and read additional papers overnight to produce the PPoPP 2017 program. Several of the PC members volunteered to shepherd papers, and deserve special thanks for their efforts. The AE process was lengthy and demanding, and the AE Chairs, Wonsun Ahn (for PPoPP) and Joe Devietti (for CGO) and their team did an amazing job on that Herculean task.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4493-7},
+ location = {Austin, Texas, USA},
+ publisher = {ACM},
+ title = {PPoPP '17: Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year = {2017}
+}
+
+
+@inproceedings{Zhao:2017:PIH:3018743.3019023,
+ abstract = {This paper presents a prototype infrastructure for addressing the barriers for effective accumulation, sharing, and reuse of the various types of knowledge for high performance parallel computing.},
+ acmid = {3019023},
+ address = {New York, NY, USA},
+ author = {Zhao, Yue and Liao, Chunhua and Shen, Xipeng},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019023},
+ isbn = {978-1-4503-4493-7},
+ keyword = {hpc, knowledge graph, ontology},
+ link = {http://doi.acm.org/10.1145/3018743.3019023},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {461--462},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: An Infrastructure for HPC Knowledge Sharing and Reuse},
+ year = {2017}
+}
+
+
+@inproceedings{Sato:2017:NIT:3018743.3018767,
+ abstract = {Debugging intermittently occurring bugs within MPI applications is challenging, and message races, a condition in which two or more sends race to match with a receive, are one of the common root causes. Many debugging tools have been proposed to help programmers resolve them, but their runtime interference perturbs the timing such that subtle races often cannot be reproduced with debugging tools. We present novel noise injection techniques to expose message races even under a tool's control. We first formalize this race problem in the context of non-deterministic parallel applications and use this analysis to determine an effective noise-injection strategy to uncover them. We codified these techniques in NINJA (Noise INJection Agent) that exposes these races without modification to the application. Our evaluations on synthetic cases as well as a real-world bug in Hypre-2.10.1 show that NINJA significantly helps expose races.},
+ acmid = {3018767},
+ address = {New York, NY, USA},
+ author = {Sato, Kento and Ahn, Dong H. and Laguna, Ignacio and Lee, Gregory L. and Schulz, Martin and Chambreau, Christopher M.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018767},
+ isbn = {978-1-4503-4493-7},
+ keyword = {debugging, mpi, non-determinism},
+ link = {http://doi.acm.org/10.1145/3018743.3018767},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {89--101},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Noise Injection Techniques to Expose Subtle and Unintended Message Races},
+ year = {2017}
+}
+
+
+@inproceedings{Balaji:2017:PAP:3018743.3019030,
+ abstract = {Synchronization and data movement are the key impediments to an efficient parallel execution. To ensure that data shared by multiple threads remain consistent, the programmer must use synchronization (e.g., mutex locks) to serialize threads' accesses to data. This limits parallelism because it forces threads to sequentially access shared resources. Additionally, systems use cache coherence to ensure that processors always operate on the most up-to-date version of a value even in the presence of private caches. Coherence protocol implementations cause processors to serialize their accesses to shared data, further limiting parallelism and performance.},
+ acmid = {3019030},
+ address = {New York, NY, USA},
+ author = {Balaji, Vignesh and Tirumala, Dhruva and Lucia, Brandon},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019030},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache-coherence, commutativity, shared memory parallel programming},
+ link = {http://doi.acm.org/10.1145/3018743.3019030},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {431--432},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: An Architecture and Programming Model for Accelerating Parallel Commutative Computations via Privatization},
+ year = {2017}
+}
+
+
+@inproceedings{Bhattacharyya:2017:PHE:3018743.3019027,
+ abstract = {In this work, we introduce and experimentally evaluate a new hybrid software-hardware Transactional Memory prototype based on Intel's Haswell TSX architecture. Our prototype extends the applicability of the existing hardware support for TM by interposing a hybrid fall-back layer before the sequential, big-lock fall-back path, used by standard TSX-supported solutions in order to guarantee progress. In our experimental evaluation we use SynQuake, a realistic game benchmark modeled after Quake. Our results show that our hybrid transactional system,which we call HythTM, is able to reduce the number of transactions that go to the sequential software layer, hence avoiding hardware transaction aborts and loss of parallelism. HythTM optimizes application throughput and scalability up to 5.05x, when compared to the hardware TM with sequential fall-back path.},
+ acmid = {3019027},
+ address = {New York, NY, USA},
+ author = {Bhattacharyya, Arnamoy and Dai Wang, Mike and Burcea, Mihai and Ding, Yi and Deng, Allen and Varikooty, Sai and Hossain, Shafaaf and Amza, Cristiana},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019027},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache-coherence, commutativity, shared memory parallel programming},
+ link = {http://doi.acm.org/10.1145/3018743.3019027},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {433--434},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: HythTM: Extending the Applicability of Intel TSX Hardware Transactional Support},
+ year = {2017}
+}
+
+
+@inproceedings{Firoz:2017:PDC:3018743.3019036,
+ abstract = {In distributed computing, parallel overheads such as \emph{synchronization overhead} may hinder performance. We introduce the idea of \emph{Distributed Control} (DC) where global synchronization is reduced to \emph{termination detection} and each worker proceeds ahead optimistically, based on the local knowledge of the global computation. To avoid "wasted'' work, \DC relies on local work prioritization. However, the work order obtained by local prioritization is susceptible to interference from the runtime. We show that employing effective scheduling policies and optimizations in the runtime, in conjunction with eliminating global barriers, improves performance in two graph applications: single-source shortest paths and connected components.},
+ acmid = {3019036},
+ address = {New York, NY, USA},
+ author = {Firoz, Jesun Shariar and Kanewala, Thejaka Amila and Zalewski, Marcin and Barnas, Martina and Lumsdaine, Andrew},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019036},
+ isbn = {978-1-4503-4493-7},
+ keyword = {connected components, distributed runtimes, graph processing, single- source shortest paths},
+ link = {http://doi.acm.org/10.1145/3018743.3019036},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {441--442},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Distributed Control: The Benefits of Eliminating Global Synchronization via Effective Scheduling},
+ year = {2017}
+}
+
+
+@inproceedings{Ben-Nun:2017:GAM:3018743.3018756,
+ abstract = {Nodes with multiple GPUs are becoming the platform of choice for high-performance computing. However, most applications are written using bulk-synchronous programming models, which may not be optimal for irregular algorithms that benefit from low-latency, asynchronous communication. This paper proposes constructs for asynchronous multi-GPU programming, and describes their implementation in a thin runtime environment called Groute. Groute also implements common collective operations and distributed work-lists, enabling the development of irregular applications without substantial programming effort. We demonstrate that this approach achieves state-of-the-art performance and exhibits strong scaling for a suite of irregular applications on 8-GPU and heterogeneous systems, yielding over 7x speedup for some algorithms.},
+ acmid = {3018756},
+ address = {New York, NY, USA},
+ author = {Ben-Nun, Tal and Sutton, Michael and Pai, Sreepathi and Pingali, Keshav},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018756},
+ isbn = {978-1-4503-4493-7},
+ keyword = {asynchronous programming, irregular algorithms, multi-gpu},
+ link = {http://doi.acm.org/10.1145/3018743.3018756},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {235--248},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Groute: An Asynchronous Multi-GPU Programming Model for Irregular Computations},
+ year = {2017}
+}
+
+
+@inproceedings{Zhang:2017:UGM:3018743.3018755,
+ abstract = {In this paper, we present a methodology to understand GPU microarchitectural features and improve performance for compute-intensive kernels. The methodology relies on a reverse engineering approach to crack the GPU ISA encodings in order to build a GPU assembler. An assembly microbenchmark suite correlates microarchitectural features with their performance factors to uncover instruction-level and memory hierarchy preferences. We use SGEMM as a running example to show the ways to achieve bare-metal performance tuning. The performance boost is achieved by tuning FFMA throughput by activating dual-issue, eliminating register bank conflicts, adding non-FFMA instructions with little penalty, and choosing proper width of global/shared load instructions. On NVIDIA Kepler K20m, we develop a faster SGEMM with 3.1Tflop/s performance and 88% efficiency; the performance is 15% higher than cuBLAS7.0. Applying these optimizations to convolution, the implementation gains 39%-62% performance improvement compared with cuDNN4.0. The toolchain is an attempt to automatically crack different GPU ISA encodings and build an assembler adaptively for the purpose of performance enhancements to applications on GPUs.},
+ acmid = {3018755},
+ address = {New York, NY, USA},
+ author = {Zhang, Xiuxia and Tan, Guangming and Xue, Shuangbai and Li, Jiajia and Zhou, Keren and Chen, Mingyu},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018755},
+ isbn = {978-1-4503-4493-7},
+ keyword = {assembler, convolution, gpu, performance, reverse-engineering gpu isa encoding, sgemm},
+ link = {http://doi.acm.org/10.1145/3018743.3018755},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {31--43},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Understanding the GPU Microarchitecture to Achieve Bare-Metal Performance Tuning},
+ year = {2017}
+}
+
+
+@inproceedings{Cohen:2017:LLS:3018743.3018753,
+ abstract = {Data-structures can benefit from dynamic data layout modifications when the size or the shape of the data structure changes during the execution, or when different phases in the program execute different workloads. However, in a modern multi-core environment, layout modifications involve costly synchronization overhead. In this paper we propose a novel layout lock that incurs a negligible overhead for reads and a small overhead for updates of the data structure. We then demonstrate the benefits of layout changes and also the advantages of the layout lock as its supporting synchronization mechanism for two data structures. In particular, we propose a concurrent binary search tree, and a concurrent array set, that benefit from concurrent layout modifications using the proposed layout lock. Experience demonstrates performance advantages and integration simplicity.},
+ acmid = {3018753},
+ address = {New York, NY, USA},
+ author = {Cohen, Nachshon and Tal, Arie and Petrank, Erez},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018753},
+ isbn = {978-1-4503-4493-7},
+ keyword = {concurrent data structures, data layout, synchronization},
+ link = {http://doi.acm.org/10.1145/3018743.3018753},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {17--29},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Layout Lock: A Scalable Locking Paradigm for Concurrent Data Layout Modifications},
+ year = {2017}
+}
+
+
+@inproceedings{Ou:2017:CCD:3018743.3018749,
+ abstract = {Concurrent data structures often provide better performance on multi-core processors but are significantly more difficult to design and test than their sequential counterparts. The C/C++11 standard introduced a weak memory model with support for low-level atomic operations such as compare and swap (CAS). While low-level atomic operations can significantly improve the performance of concurrent data structures, they introduce non-intuitive behaviors that can increase the difficulty of developing code. In this paper, we develop a correctness model for concurrent data structures that make use of atomic operations. Based on this correctness model, we present CDSSPEC, a specification checker for concurrent data structures under the C/C++11 memory model. We have evaluated CDSSPEC on 10 concurrent data structures, among which CDSSPEC detected 3 known bugs and 93% of the injected bugs.},
+ acmid = {3018749},
+ address = {New York, NY, USA},
+ author = {Ou, Peizhao and Demsky, Brian},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018749},
+ isbn = {978-1-4503-4493-7},
+ keyword = {c/c++11, concurrent data structure, concurrent data structure correctness, concurrent data structure specifications, relaxed memory models},
+ link = {http://doi.acm.org/10.1145/3018743.3018749},
+ location = {Austin, Texas, USA},
+ numpages = {15},
+ pages = {45--59},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Checking Concurrent Data Structures Under the C/C++11 Memory Model},
+ year = {2017}
+}
+
+
+@inproceedings{Steele:2017:UBP:3018743.3018757,
+ abstract = {We describe a SIMD technique for drawing values from multiple discrete distributions, such as sampling from the random variables of a mixture model, that avoids computing a complete table of partial sums of the relative probabilities. A table of alternate ("butterfly-patterned") form is faster to compute, making better use of coalesced memory accesses; from this table, complete partial sums are computed on the fly during a binary search. Measurements using CUDA 7.5 on an NVIDIA Titan Black GPU show that this technique makes an entire machine-learning application that uses a Latent Dirichlet Allocation topic model with 1024 topics about about 13% faster (when using single-precision floating-point data) or about 35% faster (when using double-precision floating-point data) than doing a straightforward matrix transposition after using coalesced accesses.},
+ acmid = {3018757},
+ address = {New York, NY, USA},
+ author = {Steele,Jr., Guy L. and Tristan, Jean-Baptiste},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018757},
+ isbn = {978-1-4503-4493-7},
+ keyword = {butterfly, coalesced memory access, discrete distribution, gpu, latent dirichlet allocation, lda, machine learning, memory bottleneck, multithreading, parallel computing, random sampling, simd, transposed memory access},
+ link = {http://doi.acm.org/10.1145/3018743.3018757},
+ location = {Austin, Texas, USA},
+ numpages = {15},
+ pages = {341--355},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Using Butterfly-Patterned Partial Sums to Draw from Discrete Distributions},
+ year = {2017}
+}
+
+
+@inproceedings{Chowdhury:2017:PPE:3018743.3019031,
+ abstract = {Standard cache-oblivious recursive divide-and-conquer algorithms for evaluating dynamic programming recurrences have optimal serial cache complexity but often have lower parallelism compared with iterative wavefront algorithms due to artificial dependencies among subtasks. Very recently cache-oblivious recursive wavefront (COW) algorithms have been introduced which do not have any artificial dependencies. Though COW algorithms are based on fork-join primitives, they extensively use atomic operations, and as a result, performance guarantees provided by state-of-the-art schedulers for programs with fork-join primitives do not apply. In this work, we show how to systematically transform standard cache-oblivious recursive divide-and-conquer algorithms into recursive wavefront algorithms to achieve optimal parallel cache complexity and high parallelism under state-of-the-art schedulers for fork-join programs. Unlike COW algorithms these new algorithms do not use atomic operations. Instead, they use closed-form formulas to compute at what time each recursive function must be launched in order to achieve high parallelism without losing cache performance. The resulting implementations are arguably much simpler than implementations of known COW algorithms.},
+ acmid = {3019031},
+ address = {New York, NY, USA},
+ author = {Chowdhury, Rezaul and Ganapathi, Pramod and Tang, Yuan and Tithi, Jesmin Jahan},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019031},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache-oblivious, divide-and-conquer, dynamic programming, parallel, recursive wavefront},
+ link = {http://doi.acm.org/10.1145/3018743.3019031},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {435--436},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Provably Efficient Scheduling of Cache-Oblivious Wavefront Algorithms},
+ year = {2017}
+}
+
+
+@proceedings{Asenjo:2016:2851141,
+ abstract = {It is our great pleasure to welcome you to the 21st ACM Symposium on Principles and Practice of Parallel Programming --- PPoPP'16, in Barcelona, Spain. For the first time, PPoPP is to be held in Europe and we hope you enjoy the history, culture, cuisine and cosmopolitan atmosphere of the thriving and spectacular city of Barcelona. PPoPP is the leading forum for work on all aspects of parallel programming, including foundational and theoretical aspects, techniques, tools, and practical experiences. Given the rise of parallel architectures into the consumer market (desktops, laptops, and mobile devices), we made an effort to attract work that addresses new parallel workloads, techniques and tools that attempt to improve the productivity of parallel programming, and work towards improved synergy with such emerging architectures.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4092-2},
+ location = {Barcelona, Spain},
+ publisher = {ACM},
+ title = {PPoPP '16: Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year = {2016}
+}
+
+
+@inproceedings{Sabne:2017:MIC:3018743.3018765,
+ abstract = {Computed Tomography (CT) Image Reconstruction is an important technique used in a variety of domains, including medical imaging, electron microscopy, non-destructive testing and transportation security. Model-based Iterative Reconstruction (MBIR) using Iterative Coordinate Descent (ICD) is a CT algorithm that produces state-of-the-art results in terms of image quality. However, MBIR is highly computationally intensive and challenging to parallelize, and has traditionally been viewed as impractical in applications where reconstruction time is critical. We present the first GPU-based algorithm for ICD-based MBIR. The algorithm leverages the recently-proposed concept of SuperVoxels, and efficiently exploits the three levels of parallelism available in MBIR to better utilize the GPU hardware resources. We also explore data layout transformations to obtain more coalesced accesses and several GPU-specific optimizations for MBIR that boost performance. Across a suite of 3200 test cases, our GPU implementation obtains a geometric mean speedup of 4.43X over a state-of-the-art multi-core implementation on a 16-core iso-power CPU.},
+ acmid = {3018765},
+ address = {New York, NY, USA},
+ author = {Sabne, Amit and Wang, Xiao and Kisner, Sherman J. and Bouman, Charles A. and Raghunathan, Anand and Midkiff, Samuel P.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018765},
+ isbn = {978-1-4503-4493-7},
+ keyword = {computed tomography, graphics processing units, iterative coordinate descent, model based iterative reconstruction},
+ link = {http://doi.acm.org/10.1145/3018743.3018765},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {207--220},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Model-based Iterative CT Image Reconstruction on GPUs},
+ year = {2017}
+}
+
+
+@inproceedings{Wang:2017:ESC:3018743.3018752,
+ abstract = {While hardware transactional memory (HTM) has recently been adopted to construct efficient concurrent search tree structures, such designs fail to deliver scalable performance under contention. In this paper, we first conduct a detailed analysis on an HTM-based concurrent B+Tree, which uncovers several reasons for excessive HTM aborts induced by both false and true conflicts under contention. Based on the analysis, we advocate Eunomia, a design pattern for search trees which contains several principles to reduce HTM aborts, including splitting HTM regions with version-based concurrency control to reduce HTM working sets, partitioned data layout to reduce false conflicts, proactively detecting and avoiding true conflicts, and adaptive concurrency control. To validate their effectiveness, we apply such designs to construct a scalable concurrent B+Tree using HTM. Evaluation using key-value store benchmarks on a 20-core HTM-capable multi-core machine shows that Eunomia leads to 5X-11X speedup under high contention, while incurring small overhead under low contention.},
+ acmid = {3018752},
+ address = {New York, NY, USA},
+ author = {Wang, Xin and Zhang, Weihua and Wang, Zhaoguo and Wei, Ziyun and Chen, Haibo and Zhao, Wenyun},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018752},
+ isbn = {978-1-4503-4493-7},
+ keyword = {concurrent search tree, hardware transactional memory, opportunistic consistency},
+ link = {http://doi.acm.org/10.1145/3018743.3018752},
+ location = {Austin, Texas, USA},
+ numpages = {15},
+ pages = {385--399},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Eunomia: Scaling Concurrent Search Trees Under Contention Using HTM},
+ year = {2017}
+}
+
+
+@inproceedings{Menon:2017:PAL:3018743.3019033,
+ abstract = {Many HPC applications require dynamic load balancing to achieve high performance and system utilization. Different applications have different characteristics and hence require different load balancing strategies. Invocation of a suboptimal load balancing strategy can lead to inefficient execution. We propose Meta-Balancer, a framework to automatically decide the best load balancing strategy. It employs randomized decision forests, a machine learning method, to learn a model for choosing the best load balancing strategy for an application represented by a set of features that capture the application characteristics.},
+ acmid = {3019033},
+ address = {New York, NY, USA},
+ author = {Menon, Harshitha and Chandrasekar, Kavitha and Kale, Laxmikant V.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019033},
+ isbn = {978-1-4503-4493-7},
+ keyword = {hpc, load balancing, machine learning, runtime system},
+ link = {http://doi.acm.org/10.1145/3018743.3019033},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {447--448},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Automated Load Balancer Selection Based on Application Characteristics},
+ year = {2017}
+}
+
+
+@inproceedings{Vollmer:2017:SSC:3018743.3018746,
+ abstract = {A core, but often neglected, aspect of a programming language design is its memory (consistency) model. Sequential consistency~(SC) is the most intuitive memory model for programmers as it guarantees sequential composition of instructions and provides a simple abstraction of shared memory as a single global store with atomic read and writes. Unfortunately, SC is widely considered to be impractical due to its associated performance overheads.  Perhaps contrary to popular opinion, this paper demonstrates that SC is achievable with acceptable performance overheads for mainstream languages that minimize mutable shared heap. In particular, we modify the Glasgow Haskell Compiler to insert fences on all writes to shared mutable memory accessed in nonfunctional parts of the program. For a benchmark suite containing 1,279 programs, SC adds a geomean overhead of less than 0.4\% on an x86 machine.  The efficiency of SC arises primarily due to the isolation provided by the Haskell type system between purely functional and thread-local imperative computations on the one hand, and imperative computations on the global heap on the other. We show how to use new programming idioms to further reduce the SC overhead; these create a virtuous cycle of less overhead and even stronger semantic guarantees (static data-race freedom).},
+ acmid = {3018746},
+ address = {New York, NY, USA},
+ author = {Vollmer, Michael and Scott, Ryan G. and Musuvathi, Madanlal and Newton, Ryan R.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018746},
+ isbn = {978-1-4503-4493-7},
+ keyword = {functional programming, memory models, sequential consistency},
+ link = {http://doi.acm.org/10.1145/3018743.3018746},
+ location = {Austin, Texas, USA},
+ numpages = {16},
+ pages = {283--298},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap},
+ year = {2017}
+}
+
+
+@inproceedings{Moreira:2017:FCR:3018743.3018751,
+ abstract = {Programming languages such as C for CUDA, OpenCL or ISPC have contributed to increase the programmability of SIMD accelerators and graphics processing units. However, these languages still lack the flexibility offered by low-level SIMD programming on explicit vectors. To close this expressiveness gap while preserving performance, this paper introduces the notion of \ourinvention{} (CREV). CREV allows changing the dimension of vectorization during the execution of a kernel, exposing it as a nested parallel kernel call. CREV affords programmability close to dynamic parallelism, a feature that allows the invocation of kernels from inside kernels, but at much lower cost. In this paper, we present a formal semantics of CREV, and an implementation of it on the ISPC compiler. We have used CREV to implement some classic algorithms, including string matching, depth first search and Bellman-Ford, with minimum effort. These algorithms, once compiled by ISPC to Intel-based vector instructions, are as fast as state-of-the-art implementations, yet much simpler. Thus, CREV gives developers the elegance of dynamic programming, and the performance of explicit SIMD programming.},
+ acmid = {3018751},
+ address = {New York, NY, USA},
+ author = {Moreira, Rubens E.A. and Collange, Sylvain and Quint\~{a}o Pereira, Fernando Magno},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018751},
+ isbn = {978-1-4503-4493-7},
+ keyword = {function, programmability, simd, simt},
+ link = {http://doi.acm.org/10.1145/3018743.3018751},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {313--326},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Function Call Re-Vectorization},
+ year = {2017}
+}
+
+
+@inproceedings{Ramalhete:2017:PPM:3018743.3019021,
+ abstract = {RCU is, among other things, a well known mechanism for memory reclamation that is meant to be used in languages without an automatic Garbage Collector, unfortunately, it requires operating system support, which is currently provided only in Linux. An alternative is to use Userspace RCU (URCU) which has two variants that can be deployed on other operating systems, named \emph{Memory Barrier} and \emph{Bullet Proof}. We present a novel algorithm that implements the three core APIs of RCU: \texttt{rcu\_read\_lock()}, \texttt{rcu\_read\_unlock()}, and \texttt{synchronize\_rcu()}. Our algorithm uses one mutual exclusion lock and two reader-writer locks with \texttt{trylock()} capabilities, which means it does not need a language with a memory model or atomics API, and as such, it can be easily implemented in almost any language, regardless of the underlying CPU architecture, or operating system.},
+ acmid = {3019021},
+ address = {New York, NY, USA},
+ author = {Ramalhete, Pedro and Correia, Andreia},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019021},
+ isbn = {978-1-4503-4493-7},
+ keyword = {locks, rcu},
+ link = {http://doi.acm.org/10.1145/3018743.3019021},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {451--452},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: Poor Man's URCU},
+ year = {2017}
+}
+
+
+@inproceedings{Steele:2017:TNO:3018743.3018773,
+ abstract = {The most popular programming language in computer science has no compiler or interpreter. Its definition is not written down in any one place. It has changed a lot over the decades, and those changes have introduced ambiguities and inconsistencies. Today, dozens of variations are in use, and its complexity has reached the point where it needs to be re-explained, at least in part, every time it is used. Much effort has been spent in hand-translating between this language and other languages that do have compilers. The language is quite amenable to parallel computation, but this fact has gone unexploited. In this talk we will summarize the history of the language, highlight the variations and some of the problems that have arisen, and propose specific solutions. We suggest that it is high time that this language be given a complete formal specification, and that compilers, IDEs, and proof-checkers be created to support it, so that all the best tools and techniques of our trade may be applied to it also.},
+ acmid = {3018773},
+ address = {New York, NY, USA},
+ author = {Steele,Jr., Guy L.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018773},
+ isbn = {978-1-4503-4493-7},
+ keyword = {compilers, programming languages, specifications},
+ link = {http://doi.acm.org/10.1145/3018743.3018773},
+ location = {Austin, Texas, USA},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {It's Time for a New Old Language},
+ year = {2017}
+}
+
+
+@inproceedings{Matveev:2017:MPC:3018743.3018766,
+ abstract = {The current design trend in large scale machine learning is to use distributed clusters of CPUs and GPUs with MapReduce-style programming. Some have been led to believe that this type of horizontal scaling can reduce or even eliminate the need for traditional algorithm development, careful parallelization, and performance engineering. This paper is a case study showing the contrary: that the benefits of algorithms, parallelization, and performance engineering, can sometimes be so vast that it is possible to solve "cluster-scale" problems on a single commodity multicore machine. Connectomics is an emerging area of neurobiology that uses cutting edge machine learning and image processing to extract brain connectivity graphs from electron microscopy images. It has long been assumed that the processing of connectomics data will require mass storage, farms of CPU/GPUs, and will take months (if not years) of processing time. We present a high-throughput connectomics-on-demand system that runs on a multicore machine with less than 100 cores and extracts connectomes at the terabyte per hour pace of modern electron microscopes.},
+ acmid = {3018766},
+ address = {New York, NY, USA},
+ author = {Matveev, Alexander and Meirovitch, Yaron and Saribekyan, Hayk and Jakubiuk, Wiktor and Kaler, Tim and Odor, Gergely and Budden, David and Zlateski, Aleksandar and Shavit, Nir},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018766},
+ isbn = {978-1-4503-4493-7},
+ keyword = {machine learning, multicore programming},
+ link = {http://doi.acm.org/10.1145/3018743.3018766},
+ location = {Austin, Texas, USA},
+ numpages = {15},
+ pages = {267--281},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {A Multicore Path to Connectomics-on-Demand},
+ year = {2017}
+}
+
+
+@inproceedings{Moscovici:2017:PGS:3018743.3019032,
+ abstract = {We propose a design for a fine-grained lock-based skiplist optimized for Graphics Processing Units (GPUs). While GPUs are often used to accelerate streaming parallel computations, it remains a significant challenge to efficiently offload concurrent computations with more complicated data-irregular access and fine-grained synchronization. Natural building blocks for such computations would be concurrent data structures, such as skiplists, which are widely used in general purpose computations. Our design utilizes array-based nodes which are accessed and updated by warp-cooperative functions, thus taking advantage of the fact that GPUs are most efficient when memory accesses are coalesced and execution divergence is minimized. The proposed design has been implemented, and measurements demonstrate improved performance of up to 2.6x over skiplist designs for the GPU existing today.},
+ acmid = {3019032},
+ address = {New York, NY, USA},
+ author = {Moscovici, Nurit and Cohen, Nachshon and Petrank, Erez},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019032},
+ isbn = {978-1-4503-4493-7},
+ keyword = {data structures, gpu, simd, skip list},
+ link = {http://doi.acm.org/10.1145/3018743.3019032},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {449--450},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: A GPU-Friendly Skiplist Algorithm},
+ year = {2017}
+}
+
+
+@inproceedings{Shudler:2017:IPC:3018743.3018770,
+ abstract = {Task-based programming offers an elegant way to express units of computation and the dependencies among them, making it easier to distribute the computational load evenly across multiple cores. However, this separation of problem decomposition and parallelism requires a sufficiently large input problem to achieve satisfactory efficiency on a given number of cores. Unfortunately, finding a good match between input size and core count usually requires significant experimentation, which is expensive and sometimes even impractical. In this paper, we propose an automated empirical method for finding the isoefficiency function of a task-based program, binding efficiency, core count, and the input size in one analytical expression. This allows the latter two to be adjusted according to given (realistic) efficiency objectives. Moreover, we not only find (i) the actual isoefficiency function but also (ii) the function one would yield if the program execution was free of resource contention and (iii) an upper bound that could only be reached if the program was able to maintain its average parallelism throughout its execution. The difference between the three helps to explain low efficiency, and in particular, it helps to differentiate between resource contention and structural conflicts related to task dependencies or scheduling. The insights gained can be used to co-design programs and shared system resources.},
+ acmid = {3018770},
+ address = {New York, NY, USA},
+ author = {Shudler, Sergei and Calotoiu, Alexandru and Hoefler, Torsten and Wolf, Felix},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018770},
+ isbn = {978-1-4503-4493-7},
+ keyword = {co-design, isoefficiency, parallel programming, performance analysis, performance modeling, tasking},
+ link = {http://doi.acm.org/10.1145/3018743.3018770},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {131--143},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Isoefficiency in Practice: Configuring and Understanding the Performance of Task-based Applications},
+ year = {2017}
+}
+
+
+@inproceedings{Wu:2017:SDC:3018743.3018750,
+ abstract = {This paper presents an algorithm based fault tolerance method to harden three two-sided matrix factorizations against soft errors: reduction to Hessenberg form, tridiagonal form, and bidiagonal form. These two sided factorizations are usually the prerequisites to computing eigenvalues/eigenvectors and singular value decomposition. Algorithm based fault tolerance has been shown to work on three main one-sided matrix factorizations: LU, Cholesky, and QR, but extending it to cover two sided factorizations is non-trivial because there are no obvious \textit{offline, problem} specific maintenance of checksums. We thus develop an \textit{online, algorithm} specific checksum scheme and show how to systematically adapt the two sided factorization algorithms used in LAPACK and ScaLAPACK packages to introduce the algorithm based fault tolerance. The resulting ABFT scheme can detect and correct arithmetic errors \textit{continuously} during the factorizations that allow timely error handling. Detailed analysis and experiments are conducted to show the cost and the gain in resilience. We demonstrate that our scheme covers a significant portion of the operations of the factorizations. Our checksum scheme achieves high error detection coverage and error correction coverage compared to the state of the art, with low overhead and high scalability.},
+ acmid = {3018750},
+ address = {New York, NY, USA},
+ author = {Wu, Panruo and DeBardeleben, Nathan and Guan, Qiang and Blanchard, Sean and Chen, Jieyang and Tao, Dingwen and Liang, Xin and Ouyang, Kaiming and Chen, Zizhong},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018750},
+ isbn = {978-1-4503-4493-7},
+ keyword = {abft, algorithm based fault tolerance, eigenvalue decomposition, singular value decomposition, svd},
+ link = {http://doi.acm.org/10.1145/3018743.3018750},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {415--427},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Silent Data Corruption Resilient Two-sided Matrix Factorizations},
+ year = {2017}
+}
+
+
+@inproceedings{Luo:2017:TDS:3018743.3018759,
+ abstract = {On modern multi-core processors, independent workloads often interfere with each other by competing for shared cache space. However, for multi-threaded workloads, where a single copy of data can be accessed by multiple threads, the threads can cooperatively share cache. Because data sharing consolidates the collective working set of threads, the effective size of shared cache becomes larger than it would have been when data are not shared. This paper presents a new theory of data sharing. It includes (1) a new metric called the shared footprint to mathematically compute the amount of data shared by any group of threads in any size cache, and (2) a linear-time algorithm to measure shared footprint by scanning the memory trace of a multi-threaded program. The paper presents the practical implementation and evaluates the new theory using 14 PARSEC and SPEC OMP benchmarks, including an example use of shared footprint in program optimization.},
+ acmid = {3018759},
+ address = {New York, NY, USA},
+ author = {Luo, Hao and Li, Pengcheng and Ding, Chen},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018759},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache, locality, model, multithreading, performance},
+ link = {http://doi.acm.org/10.1145/3018743.3018759},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {103--115},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Thread Data Sharing in Cache: Theory and Measurement},
+ year = {2017}
+}
+
+
+@inproceedings{Utterback:2017:PRR:3018743.3018764,
+ abstract = {Record-and-replay systems are useful tools for debugging non-deterministic parallel programs by first recording an execution and then replaying that execution to produce the same access pattern. Existing record-and-replay systems generally target thread-based execution models, and record the behaviors and interleavings of individual threads. Dynamic multithreaded languages and libraries, such as the Cilk family, OpenMP, TBB, etc., do not have a notion of threads. Instead, these languages provide a processor-oblivious model of programming, where programs expose task-parallelism using high-level constructs such as spawn/sync without regard to the number of threads/cores available to run the program. Thread-based record-and-replay would violate the processor-oblivious nature of these programs, as they incorporate the number of threads into the recorded information, constraining the replayed execution to the same number of threads. In this paper, we present a processor-oblivious record-and-replay scheme for such languages where record and replay can use different number of processors and both are scheduled using work stealing. We provide theoretical guarantees for our record and replay scheme --- namely that record is optimal for programs with one lock and replay is near-optimal for all cases. In addition, we implemented this scheme in the Cilk Plus runtime system and our evaluation indicates that processor-obliviousness does not cause substantial overheads.},
+ acmid = {3018764},
+ address = {New York, NY, USA},
+ author = {Utterback, Robert and Agrawal, Kunal and Lee, I-Ting Angelina and Kulkarni, Milind},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018764},
+ isbn = {978-1-4503-4493-7},
+ keyword = {deterministic replay, dynamic program analysis, reproducible debugging, work stealing},
+ link = {http://doi.acm.org/10.1145/3018743.3018764},
+ location = {Austin, Texas, USA},
+ numpages = {17},
+ pages = {145--161},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Processor-Oblivious Record and Replay},
+ year = {2017}
+}
+
+
+@inproceedings{Jiang:2017:CSM:3018743.3018760,
+ abstract = {Finite State Machine (FSM) is the key kernel behind many popular applications, including regular expression matching, text tokenization, and Huffman decoding. Parallelizing FSMs is extremely difficult because of the strong dependencies and unpredictable memory accesses. Previous efforts have largely focused on multi-core parallelization, and used different approaches, including {\em speculative} and {\em enumerative} execution, both of which have been effective but also have limitations. With increasing width and improving flexibility in SIMD instruction sets, this paper focuses on combining SIMD and multi/many-core parallelism for FSMs. We have developed a novel strategy, called {\em enumerative speculation}. Instead of speculating on a single state as in speculative execution or enumerating all possible states as in enumerative execution, our strategy speculates transitions from several possible states, reducing the prediction overheads of speculation approach and the large amount of redundant work in the enumerative approach. A simple lookback approach produces a set of guessed states to achieve high speculation success rates in our enumerative speculation. We evaluate our method with four popular FSM applications: Huffman decoding, regular expression matching, HTML tokenization, and Div7. We obtain up to 2.5x speedup using SIMD on one core and up to 95x combining SIMD with 60 cores of an Intel Xeon Phi. On a single core, we outperform the best single-state speculative execution version by an average of 1.6x, and in combining SIMD and many-core parallelism, outperform enumerative execution by an average of 2x.},
+ acmid = {3018760},
+ address = {New York, NY, USA},
+ author = {Jiang, Peng and Agrawal, Gagan},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018760},
+ isbn = {978-1-4503-4493-7},
+ keyword = {enumerative speculation, finite state machines, simd},
+ link = {http://doi.acm.org/10.1145/3018743.3018760},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {179--191},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Combining SIMD and Many/Multi-core Parallelism for Finite State Machines with Enumerative Speculation},
+ year = {2017}
+}
+
+
+@inproceedings{Basin:2017:KKM:3018743.3018761,
+ abstract = {Modern big data processing platforms employ huge in-memory key-value (KV) maps. Their applications simultaneously drive high-rate data ingestion and large-scale analytics. These two scenarios expect KV-map implementations that scale well with both real-time updates and large atomic scans triggered by range queries. We present KiWi, the first atomic KV-map to efficiently support simultaneous large scans and real-time access. The key to achieving this is treating scans as first class citizens,and organizing the data structure around them. KiWi provides wait-free scans, whereas its put operations are lightweight and lock-free. It optimizes memory management jointly with data structure access.We implement KiWi and compare it to state-of-the-art solutions. Compared to other KV-maps providing atomic scans, KiWi performs either long scans or concurrent puts an order of magnitude faster. Its scans are twice as fast as non-atomic ones implemented via iterators in the Java skiplist.},
+ acmid = {3018761},
+ address = {New York, NY, USA},
+ author = {Basin, Dmitry and Bortnikov, Edward and Braginsky, Anastasia and Golan-Gueta, Guy and Hillel, Eshcar and Keidar, Idit and Sulamy, Moshe},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018761},
+ isbn = {978-1-4503-4493-7},
+ keyword = {lock-free key-value map, wait-free atomic scans},
+ link = {http://doi.acm.org/10.1145/3018743.3018761},
+ location = {Austin, Texas, USA},
+ numpages = {13},
+ pages = {357--369},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {KiWi: A Key-Value Map for Scalable Real-Time Analytics},
+ year = {2017}
+}
+
+
+@inproceedings{Cohen:2017:PST:3018743.3019026,
+ abstract = {State teleportation is a new technique for exploiting hardware transactional memory (HTM) to improve existing synchronization and memory management schemes for highly-concurrent data structures. When applied to fine-grained locking, a thread holding the lock for a node launches a hardware transaction that traverses multiple successor nodes, acquires the lock for the last node reached, and releases the lock on the starting node, skipping lock acquisitions for intermediate nodes. When applied to lock-free data structures, a thread visiting a node protected by a hazard pointer launches a hardware transaction that traverses multiple successor nodes, and publishes the hazard pointer only for the last node reached, skipping the memory barriers needed to publish intermediate hazard pointers. Experimental results show that these applications of state teleportation can substantially increase the performance of both lock-based and lock-free data structures.},
+ acmid = {3019026},
+ address = {New York, NY, USA},
+ author = {Cohen, Nachshon and Herlihy, Maurice and Petrank, Erez and Wald, Elias},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019026},
+ isbn = {978-1-4503-4493-7},
+ keyword = {concurrent data structures, hand-over-hand, hazard pointers, lock-free, memory management, non-blocking, teleportation},
+ link = {http://doi.acm.org/10.1145/3018743.3019026},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {437--438},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: State Teleportation via Hardware Transactional Memory},
+ year = {2017}
+}
+
+
+@inproceedings{Ramalhete:2017:PWQ:3018743.3019022,
+ abstract = {Queues are a widely deployed data structure. They are used extensively in many multi threaded applications, or as a communication mechanism between threads or processes. We propose a new linearizable multi-producer-multi-consumer queue we named Turn queue, with wait-free progress bounded by the number of threads, and with wait-free bounded memory reclamation. Its main characteristics are: a simple algorithm that does no memory allocation apart from creating the node that is placed in the queue, a new wait-free consensus algorithm using only the atomic instruction compare-and-swap (CAS), and is easy to plugin with other algorithms for either enqueue or dequeue methods.},
+ acmid = {3019022},
+ address = {New York, NY, USA},
+ author = {Ramalhete, Pedro and Correia, Andreia},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019022},
+ isbn = {978-1-4503-4493-7},
+ keyword = {low latency, non-blocking queue, wait-free},
+ link = {http://doi.acm.org/10.1145/3018743.3019022},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {453--454},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: A Wait-Free Queue with Wait-Free Memory Reclamation},
+ year = {2017}
+}
+
+
+@inproceedings{Zhang:2017:PPC:3018743.3019024,
+ abstract = {This work considers the problem of availability for memory models that throw consistency exceptions. We define a new memory model called RIx based on isolation of synchronization-free regions and a new approach called Avalon that provides RIx. Our evaluation shows that Avalon and RIx substantially reduce consistency exceptions, by 1-3 orders of magnitude and sometimes eliminate them completely. Furthermore, our exploration provides new, compelling points in the performance-availability tradeoff space.},
+ acmid = {3019024},
+ address = {New York, NY, USA},
+ author = {Zhang, Minjia and Biswas, Swarnendu and Bond, Michael D.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019024},
+ isbn = {978-1-4503-4493-7},
+ keyword = {availability, concurrency, memory model, region isolation, runtime system},
+ link = {http://doi.acm.org/10.1145/3018743.3019024},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {459--460},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: On the Problem of Consistency Exceptions in the Context of Strong Memory Models},
+ year = {2017}
+}
+
+
+@inproceedings{Acar:2017:CSC:3018743.3018762,
+ abstract = {Over the past two decades, many concurrent data structures have been designed and implemented. Nearly all such work analyzes concurrent data structures empirically, omitting asymptotic bounds on their efficiency, partly because of the complexity of the analysis needed, and partly because of the difficulty of obtaining relevant asymptotic bounds: when the analysis takes into account important practical factors, such as contention, it is difficult or even impossible to prove desirable bounds. In this paper, we show that considering structured concurrency or relaxed concurrency models can enable establishing strong bounds, also for contention. To this end, we first present a dynamic relaxed counter data structure that indicates the non-zero status of the counter. Our data structure extends a recently proposed data structure, called SNZI, allowing our structure to grow dynamically in response to the increasing degree of concurrency in the system. Using the dynamic SNZI data structure, we then present a concurrent data structure for series-parallel directed acyclic graphs (sp-dags), a key data structure widely used in the implementation of modern parallel programming languages. The key component of sp-dags is an in-counter data structure that is an instance of our dynamic SNZI. We analyze the efficiency of our concurrent sp-dags and in-counter data structures under nested-parallel computing paradigm. This paradigm offers a structured model for concurrency. Under this model, we prove that our data structures require amortized (1) shared memory steps, including contention. We present an implementation and an experimental evaluation that suggests that the sp-dags data structure is practical and can perform well in practice.},
+ acmid = {3018762},
+ address = {New York, NY, USA},
+ author = {Acar, Umut A. and Ben-David, Naama and Rainey, Mike},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018762},
+ isbn = {978-1-4503-4493-7},
+ keyword = {concurrency, concurrent data structures, contention, contention bounds, analytical bounds, indicators, snzi, nested parallelism, non-blocking data structures, series-parallel dags, structured concurrency},
+ link = {http://doi.acm.org/10.1145/3018743.3018762},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {75--88},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Contention in Structured Concurrency: Provably Efficient Dynamic Non-Zero Indicators for Nested Parallelism},
+ year = {2017}
+}
+
+
+@inproceedings{Jo:2017:PMA:3018743.3019034,
+ abstract = {Various existing optimization and memory consistency management techniques for GPU applications rely on memory access patterns of kernels. However, they suffer from poor practicality because they require explicit user interventions to extract kernel memory access patterns. This paper proposes an automatic memory-access-pattern analysis framework called MAPA. MAPA is based on a source-level analysis technique derived from traditional symbolic analyses and a run-time pattern selection technique. The experimental results show that MAPA properly analyzes 116 real-world OpenCL kernels from Rodinia and Parboil.},
+ acmid = {3019034},
+ address = {New York, NY, USA},
+ author = {Jo, Gangwon and Jung, Jaehoon and Park, Jiyoung and Lee, Jaejin},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019034},
+ isbn = {978-1-4503-4493-7},
+ keyword = {auto-tuning, compiler, gpgpu, memory access pattern, opencl, optimization, symbolic analysis},
+ link = {http://doi.acm.org/10.1145/3018743.3019034},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {443--444},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: MAPA: An Automatic Memory Access Pattern Analyzer for GPU Applications},
+ year = {2017}
+}
+
+
+@inproceedings{Yeh:2017:PFG:3018743.3018754,
+ abstract = {Massively multithreaded GPUs achieve high throughput by running thousands of threads in parallel. To fully utilize the hardware, workloads spawn work to the GPU in bulk by launching large tasks, where each task is a kernel that contains thousands of threads that occupy the entire GPU. GPUs face severe underutilization and their performance benefits vanish if the tasks are narrow, i.e., they contain < 500 threads. Latency-sensitive applications in network, signal, and image processing that generate a large number of tasks with relatively small inputs are examples of such limited parallelism. This paper presents Pagoda, a runtime system that virtualizes GPU resources, using an OS-like daemon kernel called MasterKernel. Tasks are spawned from the CPU onto Pagoda as they become available, and are scheduled by the MasterKernel at the warp granularity. Experimental results demonstrate that Pagoda achieves a geometric mean speedup of 5.70x over PThreads running on a 20-core CPU, 1.51x over CUDA-HyperQ, and 1.69x over GeMTC, the state-of- the-art runtime GPU task scheduling system.},
+ acmid = {3018754},
+ address = {New York, NY, USA},
+ author = {Yeh, Tsung Tai and Sabne, Amit and Sakdhnagool, Putt and Eigenmann, Rudolf and Rogers, Timothy G.},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018754},
+ isbn = {978-1-4503-4493-7},
+ keyword = {gpu runtime system, task parallelism, utilization},
+ link = {http://doi.acm.org/10.1145/3018743.3018754},
+ location = {Austin, Texas, USA},
+ numpages = {14},
+ pages = {221--234},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Pagoda: Fine-Grained GPU Resource Virtualization for Narrow Tasks},
+ year = {2017}
+}
+
+
+@inproceedings{Prajapati:2017:SAA:3018743.3018744,
+ abstract = {Stencil computations are an important class of compute and data intensive programs that occur widely in scientific and engineeringapplications. A number of tools use sophisticated tiling, parallelization, and memory mapping strategies, and generate code that relies on vendor-supplied compilers. This code has a number of parameters, such as tile sizes, that are then tuned via empirical exploration. We develop a model that guides such a choice. Our model is a simple set of analytical functions that predict the execution time of the generated code. It is deliberately optimistic, since tile sizes and, moreover, the optimistic assumptions are intended to enable we are targeting modeling and parameter selections yielding highly tuned codes. We experimentally validate the model on a number of 2D and 3D stencil codes, and show that the root mean square error in the execution time is less than 10% for the subset of the codes that achieve performance within 20% of the best. Furthermore, based on using our model, we are able to predict tile sizes that achieve a further improvement of 9% on average.},
+ acmid = {3018744},
+ address = {New York, NY, USA},
+ author = {Prajapati, Nirmal and Ranasinghe, Waruna and Rajopadhye, Sanjay and Andonov, Rumen and Djidjev, Hristo and Grosser, Tobias},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3018744},
+ isbn = {978-1-4503-4493-7},
+ keyword = {analytical models, gpgpu, hybrid hexagonal classic tiling, performance prediction, polyhedral method, stencils},
+ link = {http://doi.acm.org/10.1145/3018743.3018744},
+ location = {Austin, Texas, USA},
+ numpages = {15},
+ pages = {163--177},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {Simple, Accurate, Analytical Time Modeling and Optimal Tile Size Selection for GPGPU Stencils},
+ year = {2017}
+}
+
+
+@inproceedings{Tang:2017:PSA:3018743.3019029,
+ abstract = {It's important to hit a space-time balance for a real-world algorithm to achieve high performance on modern shared-memory multi-core or many-core systems. However, a large class of dynamic programs with more than $O(1)$ dependency achieve optimality either in space or time, but not both. In the literature, the problem is known as the fundamental space-time tradeoff. By exploiting properly on the runtime system, we show that our STAR (Space-Time Adaptive and Reductive) technique can help these dynamic programs to achieve sublinear parallel time bounds while still maintaining work-, space-, and cache-optimality in a processor- and cache-oblivious fashion.},
+ acmid = {3019029},
+ address = {New York, NY, USA},
+ author = {Tang, Yuan and You, Ronghui},
+ booktitle = {Proceedings of the 22Nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ doi = {10.1145/3018743.3019029},
+ isbn = {978-1-4503-4493-7},
+ keyword = {cache-oblivious algorithm, dynamic program, shared-memory multicore system, space-time balance},
+ link = {http://doi.acm.org/10.1145/3018743.3019029},
+ location = {Austin, Texas, USA},
+ numpages = {2},
+ pages = {455--456},
+ publisher = {ACM},
+ series = {PPoPP '17},
+ title = {POSTER: STAR (Space-Time Adaptive and Reductive) Algorithms for Real-World Space-Time Optimality},
+ year = {2017}
+}
+
+
