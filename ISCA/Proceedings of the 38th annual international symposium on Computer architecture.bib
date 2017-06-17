@@ -1,0 +1,947 @@
+@article{Barr:2011:SMS:2024723.2000101,
+ abstract = {Data-intensive computing applications are using more and more memory and are placing an increasing load on the virtual memory system. While the use of large pages can help alleviate the overhead of address translation, they limit the control the operating system has over memory allocation and protection. We present a novel device, the SpecTLB, that exploits the predictable behavior of reservation-based physical memory allocators to interpolate address translations. Our device provides speculative translations for many TLB misses on small pages without referencing the page table. While these interpolations must be confirmed, doing so can be done in parallel with speculative execution. This effectively hides the execution latency of these TLB misses. In simulation, the SpecTLB is able to overlap an average of 57% of page table walks with successful speculative execution over a wide variety of applications. We also show that the SpecTLB outperforms a state-of-the-art TLB prefetching scheme for virtually all tested applications with significant TLB miss rates. Moreover, we show that the SpecTLB is efficient since mispredictions are extremely rare, occurring in less than 1% of TLB misses. In essense, the SpecTLB effectively enables the use of small pages to achieve fine-grained allocation and protection, while avoiding the associated latency penalties of small pages.},
+ acmid = {2000101},
+ address = {New York, NY, USA},
+ author = {Barr, Thomas W. and Cox, Alan L. and Rixner, Scott},
+ doi = {10.1145/2024723.2000101},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {memory management, tlb},
+ link = {http://doi.acm.org/10.1145/2024723.2000101},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {307--318},
+ publisher = {ACM},
+ title = {SpecTLB: A Mechanism for Speculative Address Translation},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Ferrucci:2011:IW:2024723.2019525,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2019525},
+ address = {New York, NY, USA},
+ author = {Ferrucci, David A.},
+ doi = {10.1145/2024723.2019525},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ link = {http://doi.acm.org/10.1145/2024723.2019525},
+ month = {jun},
+ number = {3},
+ pages = {--},
+ publisher = {ACM},
+ title = {IBM's Watson/DeepQA},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Meisner:2011:PMO:2000064.2000103,
+ abstract = {Much of the success of the Internet services model can be attributed to the popularity of a class of workloads that we call Online Data-Intensive (OLDI) services. These workloads perform significant computing over massive data sets per user request but, unlike their offline counterparts (such as MapReduce computations), they require responsiveness in the sub-second time scale at high request rates. Large search products, online advertising, and machine translation are examples of workloads in this class. Although the load in OLDI services can vary widely during the day, their energy consumption sees little variance due to the lack of energy proportionality of the underlying machinery. The scale and latency sensitivity of OLDI workloads also make them a challenging target for power management techniques. We investigate what, if anything, can be done to make OLDI systems more energy-proportional. Specifically, we evaluate the applicability of active and idle low-power modes to reduce the power consumed by the primary server components (processor, memory, and disk), while maintaining tight response time constraints, particularly on 95th-percentile latency. Using Web search as a representative example of this workload class, we first characterize a production Web search workload at cluster-wide scale. We provide a fine-grain characterization and expose the opportunity for power savings using low-power modes of each primary server component. Second, we develop and validate a performance model to evaluate the impact of processor- and memory-based low-power modes on the search latency distribution and consider the benefit of current and foreseeable low-power modes. Our results highlight the challenges of power management for this class of workloads. In contrast to other server workloads, for which idle low-power modes have shown great promise, for OLDI workloads we find that energy-proportionality with acceptable query latency can only be achieved using coordinated, full-system active low-power modes.},
+ acmid = {2000103},
+ address = {New York, NY, USA},
+ author = {Meisner, David and Sadler, Christopher M. and Barroso, Luiz Andr{\'e} and Weber, Wolf-Dietrich and Wenisch, Thomas F.},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000103},
+ isbn = {978-1-4503-0472-6},
+ keyword = {power management, servers},
+ link = {http://doi.acm.org/10.1145/2000064.2000103},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {319--330},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Power Management of Online Data-intensive Services},
+ year = {2011}
+}
+
+
+@inproceedings{Alameldeen:2011:ECD:2000064.2000118,
+ abstract = {Voltage scaling is one of the most effective mechanisms to improve microprocessors' energy efficiency. However, processors cannot operate reliably below a minimum voltage, Vccmin, since hardware structures may fail. Cell failures in large memory arrays (e.g., caches) typically determine Vccmin for the whole processor. We observe that most cache lines exhibit zero or one failures at low voltages. However, a few lines, especially in large caches, exhibit multi-bit failures and increase Vccmin. Previous solutions either significantly reduce cache capacity to enable uniform error correction across all lines, or significantly increase latency and bandwidth overheads when amortizing the cost of error-correcting codes (ECC) over large lines. In this paper, we propose a novel cache architecture that uses variable-strength error-correcting codes (VS-ECC). In the common case, lines with zero or one failures use a simple and fast ECC. A small number of lines with multi-bit failures use a strong multi-bit ECC that requires some additional area and latency. We present a novel dynamic cache characterization mechanism to determine which lines will exhibit multi-bit failures. In particular, we use multi-bit correction to protect a fraction of the cache after switching to low voltage, while dynamically testing the remaining lines for multi-bit failures. Compared to prior multi-bit-correcting proposals, VS-ECC significantly reduces power and energy, avoids significant reductions in cache capacity, incurs little area overhead, and avoids large increases in latency and bandwidth.},
+ acmid = {2000118},
+ address = {New York, NY, USA},
+ author = {Alameldeen, Alaa R. and Wagner, Ilya and Chishti, Zeshan and Wu, Wei and Wilkerson, Chris and Lu, Shih-Lien},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000118},
+ isbn = {978-1-4503-0472-6},
+ keyword = {cache design, error-correcting codes, low-voltage design, variable-strength codes},
+ link = {http://doi.acm.org/10.1145/2000064.2000118},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {461--472},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Energy-efficient Cache Design Using Variable-strength Error-correcting Codes},
+ year = {2011}
+}
+
+
+@article{Gebhart:2011:EMM:2024723.2000093,
+ abstract = {Modern graphics processing units (GPUs) use a large number of hardware threads to hide both function unit and memory access latency. Extreme multithreading requires a complicated thread scheduler as well as a large register file, which is expensive to access both in terms of energy and latency. We present two complementary techniques for reducing energy on massively-threaded processors such as GPUs. First, we examine register file caching to replace accesses to the large main register file with accesses to a smaller structure containing the immediate register working set of active threads. Second, we investigate a two-level thread scheduler that maintains a small set of active threads to hide ALU and local memory access latency and a larger set of pending threads to hide main memory latency. Combined with register file caching, a two-level thread scheduler provides a further reduction in energy by limiting the allocation of temporary register cache resources to only the currently active subset of threads. We show that on average, across a variety of real world graphics and compute workloads, a 6-entry per-thread register file cache reduces the number of reads and writes to the main register file by 50% and 59% respectively. We further show that the active thread count can be reduced by a factor of 4 with minimal impact on performance, resulting in a 36% reduction of register file energy.},
+ acmid = {2000093},
+ address = {New York, NY, USA},
+ author = {Gebhart, Mark and Johnson, Daniel R. and Tarjan, David and Keckler, Stephen W. and Dally, William J. and Lindholm, Erik and Skadron, Kevin},
+ doi = {10.1145/2024723.2000093},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {energy-efficiency, multi-threading, register file organization, throughput computing},
+ link = {http://doi.acm.org/10.1145/2024723.2000093},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {235--246},
+ publisher = {ACM},
+ title = {Energy-efficient Mechanisms for Managing Thread Context in Throughput Processors},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Agarwal:2011:FIF:2024723.2000070,
+ abstract = {Blocked-execution multiprocessor architectures continuously run atomic blocks of instructions --- also called Chunks. Such architectures can boost both performance and software productivity, and enable unique compiler optimization opportunities. Unfortunately, they are handicapped in that, if they use large chunks to minimize chunk-commit overhead and to enable more compiler optimization, inter-thread data conflicts may lead to frequent chunk squashes. In this paper, we present automatic techniques to form chunks in these architectures to minimize the cycles lost to squashes. We start by characterizing the operations that frequently cause squashes. We call them Squash Hazards. We then propose squash-removing algorithms tailored to these Squash Hazards. We also describe a software framework called FlexBulk that profiles the code and transforms it following these algorithms. We evaluate FlexBulk on 16-threaded PARSEC and SPLASH-2 codes running on a simulated machine. The results show that, with 17,000-instruction chunks, FlexBulk eliminates, on average, over 90% of the squash cycles in the applications. As a result, compared to a baseline execution with 2,000-instruction chunks as in previous work, the applications run on average 1.43x faster.},
+ acmid = {2000070},
+ address = {New York, NY, USA},
+ author = {Agarwal, Rishi and Torrellas, Josep},
+ doi = {10.1145/2024723.2000070},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {atomic block execution, speculation, thread squash},
+ link = {http://doi.acm.org/10.1145/2024723.2000070},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {33--44},
+ publisher = {ACM},
+ title = {FlexBulk: Intelligently Forming Atomic Blocks in Blocked-execution Multiprocessors to Minimize Squashes},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Greathouse:2011:DSR:2000064.2000084,
+ abstract = {Dynamic data race detectors are an important mechanism for creating robust parallel programs. Software race detectors instrument the program under test, observe each memory access, and watch for inter-thread data sharing that could lead to concurrency errors. While this method of bug hunting can find races that are normally difficult to observe, it also suffers from high runtime overheads. It is not uncommon for commercial race detectors to experience 300x slowdowns, limiting their usage. This paper presents a hardware-assisted demand-driven race detector. We are able to observe cache events that are indicative of data sharing between threads by taking advantage of hardware available on modern commercial microprocessors. We use these to build a race detector that is only enabled when it is likely that inter-thread data sharing is occurring. When little sharing takes place, this demand-driven analysis is much faster than contemporary continuous-analysis tools without a large loss of detection accuracy. We modified the race detector in Intel(R) Inspector XE to utilize our hardware-based sharing indicator and were able to achieve performance increases of 3x and 10x in two parallel benchmark suites and 51x for one particular program.},
+ acmid = {2000084},
+ address = {New York, NY, USA},
+ author = {Greathouse, Joseph L. and Ma, Zhiqiang and Frank, Matthew I. and Peri, Ramesh and Austin, Todd},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000084},
+ isbn = {978-1-4503-0472-6},
+ keyword = {cache coherency, data race detection, demand analysis, performance counters},
+ link = {http://doi.acm.org/10.1145/2000064.2000084},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {165--176},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Demand-driven Software Race Detection Using Hardware Performance Counters},
+ year = {2011}
+}
+
+
+@proceedings{Lu:2012:2337159,
+ abstract = {It is an honor to introduce the technical program for the 39th International Symposium on Computer Architecture (ISCA 2012). This symposium is the premier forum for new ideas and results in the area of computer architecture. This year's program includes 47 papers on a broad set of topics, keynotes from Jeff Hawkins (Numenta) and Justin Rattner (Intel), and a set of workshops and tutorials coordinated by Alaa Alameldeen and Benjamin Lee. ISCA 2012 received 262 paper submissions --- the highest number in over twenty years. I assigned each paper to 4 Program Committee (PC) members and 1 senior external reviewer to review. By directly assigning external reviews, I felt I could reduce the load of the PC members (who did not have to solicit or interact with external reviewers) and ensure the highest reviewing standards. Given that I had 50 PC members, each PC member had to review, on average, about 21 papers personally. Overall, I believe that all of the PC members and external reviewers showed a very high degree of professionalism and fairness in their reviews. After all the reviews were collected, a Rebuttal Period allowed the authors to respond to the reviews. Then, PC members read the 5 reviews and the authors' response for the papers they had read, and engaged in a week-long discussion with other PC reviewers of the same paper(s) via email. At the end of this process, each PC member had to explicitly assign a grade to each of the papers she/he had reviewed. The papers' average grade was used to order the discussion of papers at the PC meeting. The whole review process was double blind.},
+ address = {Washington, DC, USA},
+ isbn = {978-1-4503-1642-2},
+ location = {Portland, Oregon},
+ publisher = {IEEE Computer Society},
+ title = {ISCA '12: Proceedings of the 39th Annual International Symposium on Computer Architecture},
+ year = {2012}
+}
+
+
+@inproceedings{Cuesta:2011:IED:2000064.2000076,
+ abstract = {To meet the demand for more powerful high-performance shared-memory servers, multiprocessor systems must incorporate efficient and scalable cache coherence protocols, such as those based on directory caches. However, the limited directory cache size of the increasingly larger systems may cause frequent evictions of directory entries and, consequently, invalidations of cached blocks, which severely degrades system performance. A significant percentage of the referred memory blocks are only accessed by one processor (even in parallel applications) and, therefore, do not require coherence maintenance. Taking advantage of techniques that dynamically identify those private blocks, we propose to deactivate the coherence protocol for them and to treat them as uniprocessor systems do. The protocol deactivation allows directory caches to omit the tracking of an appreciable quantity of blocks, which reduces their load and increases their effective size. Since the operating system collaborates on the detection of private blocks, our proposal only requires minor modifications. Simulation results show that, thanks to our proposal, directory caches can avoid the tracking of about 57% of the accessed blocks and their capacity can be better exploited. This contributes either to shorten the runtime of parallel applications by 15% while keeping directory cache size or to maintain system performance while using directory caches 8 times smaller.},
+ acmid = {2000076},
+ address = {New York, NY, USA},
+ author = {Cuesta, Blas A. and Ros, Alberto and G\'{o}mez, Mar\'{\i}a E. and Robles, Antonio and Duato, Jos{\'e} F.},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000076},
+ isbn = {978-1-4503-0472-6},
+ keyword = {cache coherence, coherence deactivation, directory cache, efficiency, multiprocessor, operating system, private block},
+ link = {http://doi.acm.org/10.1145/2000064.2000076},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {93--104},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Increasing the Effectiveness of Directory Caches by Deactivating Coherence for Private Memory Blocks},
+ year = {2011}
+}
+
+
+@article{Ma:2011:SPC:2024723.2000117,
+ abstract = {Optimizing the performance of a multi-core microprocessor within a power budget has recently received a lot of attention. However, most existing solutions are centralized and cannot scale well with the rapidly increasing level of core integration. While a few recent studies propose power control algorithms for many-core architectures, those solutions assume that the workload of every core is independent and therefore cannot effectively allocate power based on thread criticality to accelerate multi-threaded parallel applications, which are expected to be the primary workloads of many-core architectures. This paper presents a scalable power control solution for many-core microprocessors that is specifically designed to handle realistic workloads, i.e., a mixed group of single-threaded and multi-threaded applications. Our solution features a three-layer design. First, we adopt control theory to precisely control the power of the entire chip to its chip-level budget by adjusting the aggregated frequency of all the cores on the chip. Second, we dynamically group cores running the same applications and then partition the chip-level aggregated frequency quota among different groups for optimized overall microprocessor performance. Finally, we partition the group-level frequency quota among the cores in each group based on the measured thread criticality for shorter application completion time. As a result, our solution can optimize the microprocessor performance while precisely limiting the chip-level power consumption below the desired budget. Empirical results on a 12-core hardware testbed show that our control solution can provide precise power control, as well as 17% and 11% better application performance than two state-of-the-art solutions, on average, for mixed PARSEC and SPEC benchmarks. Furthermore, our extensive simulation results for 32, 64, and 128 cores, as well as overhead analysis for up to 4,096 cores, demonstrate that our solution is highly scalable to many-core architectures.},
+ acmid = {2000117},
+ address = {New York, NY, USA},
+ author = {Ma, Kai and Li, Xue and Chen, Ming and Wang, Xiaorui},
+ doi = {10.1145/2024723.2000117},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {chip multiprocessor, control theory, many-core architecture, power capping, power control, scalability, thread criticality},
+ link = {http://doi.acm.org/10.1145/2024723.2000117},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {449--460},
+ publisher = {ACM},
+ title = {Scalable Power Control for Many-core Architectures Running Multi-threaded Applications},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Kannan:2011:ARH:2024723.2019526,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2019526},
+ address = {New York, NY, USA},
+ author = {Kannan, Ravi},
+ doi = {10.1145/2024723.2019526},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ link = {http://doi.acm.org/10.1145/2024723.2019526},
+ month = {jun},
+ number = {3},
+ pages = {--},
+ publisher = {ACM},
+ title = {Algorithms: Recent Highlights and Challenges},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Gaur:2011:BIA:2024723.2000075,
+ abstract = {Inclusive last-level caches (LLCs) waste precious silicon estate due to cross-level replication of cache blocks. As the industry moves toward cache hierarchies with larger inner levels, this wasted cache space leads to bigger performance losses compared to exclusive LLCs. However, exclusive LLCs make the design of replacement policies more challenging. While in an inclusive LLC a block can gather a filtered access history, this is not possible in an exclusive design because the block is de-allocated from the LLC on a hit. As a result, the popular least-recently-used replacement policy and its approximations are rendered ineffective and proper choice of insertion ages of cache blocks becomes even more important in exclusive designs. On the other hand, it is not necessary to fill every block into an exclusive LLC. This is known as selective cache bypassing and is not possible to implement in an inclusive LLC because that would violate inclusion. This paper explores insertion and bypass algorithms for exclusive LLCs. Our detailed execution-driven simulation results show that a combination of our best insertion and bypass policies delivers an improvement of up to 61.2% and on average (geometric mean) 3.4% in terms of instructions retired per cycle (IPC) for 97 single-threaded dynamic instruction traces spanning selected SPEC 2006 and server applications, running on a 2 MB 16-way exclusive LLC compared to a baseline exclusive design in the presence of well-tuned multi-stream hardware prefetchers. The corresponding improvements in throughput for 35 4-way multi-programmed workloads running with an 8 MB 16-way shared exclusive LLC are 20.6% (maximum) and 2.5% (geometric mean).},
+ acmid = {2000075},
+ address = {New York, NY, USA},
+ author = {Gaur, Jayesh and Chaudhuri, Mainak and Subramoney, Sreenivas},
+ doi = {10.1145/2024723.2000075},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {bypass policy, exclusive last-level cache, insertion policy},
+ link = {http://doi.acm.org/10.1145/2024723.2000075},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {81--92},
+ publisher = {ACM},
+ title = {Bypass and Insertion Algorithms for Exclusive Last-level Caches},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Manoochehri:2011:CCP:2000064.2000091,
+ abstract = {Due to shrinking feature sizes processors are becoming more vulnerable to soft errors. Write-back caches are particularly vulnerable since they hold dirty data that do not exist in other memory levels. While conventional error correcting codes can protect write-back caches, it has been shown that they are expensive in terms of area and power. This paper proposes a reliable write-back cache called Correctable Parity Protected Cache (CPPC) which adds error correction capability to a parity-protected cache. For this purpose, CPPC augments a write-back parity-protected cache with two registers: the first register stores the XOR of all data written to the cache and the second register stores the XOR of all dirty data that are removed from the cache. CPPC relies on parity to detect a fault and then on the two XOR registers to correct faults. By a novel combination of byte shifting and parity interleaving CPPC corrects both single and spatial multi-bit faults to provide a high degree of reliability. We compare CPPC with one-dimensional parity, SECDED (Single Error Correction Double Error Detection) and two-dimensional parity-protected caches. Our experimental results show that CPPC provides a high level of reliability while its overheads are less than the overheads of SECDED and two-dimensional parity.},
+ acmid = {2000091},
+ address = {New York, NY, USA},
+ author = {Manoochehri, Mehrtash and Annavaram, Murali and Dubois, Michel},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000091},
+ isbn = {978-1-4503-0472-6},
+ keyword = {cache, parity, reliability},
+ link = {http://doi.acm.org/10.1145/2000064.2000091},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {223--234},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {CPPC: Correctable Parity Protected Cache},
+ year = {2011}
+}
+
+
+@article{Sudhakrishnan:2011:REB:2024723.2000090,
+ abstract = {Verification of modern processors is an expensive, time consuming, and challenging task. Although it is estimated that over half of total design time is spent on verification, we often find processors with bugs released into the market. This paper proposes an architecture that tolerates, not just the typically infrequent bugs found in current processors, but a significantly larger set of bugs. The objective is to allow for a much quicker time to market. We propose an architecture built around Beta Cores, which are cores partially verified. Our proposal intelligently activates and deactivates a simple single issue in-order Checker Core to verify a buggy superscalar out-oforder Beta Core.  Our Beta Core Solution (BCS), which includes the Beta Core, the Checker Core, and the logic to detect potentially buggy situations consumes just 5% more power than the stand-alone Beta Core. We also show that performance is only slightly diminished with an average slowdown of 1.6%. By leveraging program signatures,our BCS only needs a simple in-order Checker Core, at half the frequency, to verify a complex 4 issue out-of-order Beta Core. The BCS architecture allows for a decrease in verification effort and thus a quicker time to market.},
+ acmid = {2000090},
+ address = {New York, NY, USA},
+ author = {Sudhakrishnan, Sangeetha and Dicochea, Rigo and Renau, Jose},
+ doi = {10.1145/2024723.2000090},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {defects, microprocessors, verification},
+ link = {http://doi.acm.org/10.1145/2024723.2000090},
+ month = {jun},
+ number = {3},
+ numpages = {10},
+ pages = {213--222},
+ publisher = {ACM},
+ title = {Releasing Efficient Beta Cores to Market Early},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Ma:2011:DER:2024723.2000113,
+ abstract = {With the emergence of many-core architectures, it is quite likely that multiple applications will run concurrently on a system. Existing locally and globally adaptive routing algorithms largely overlook issues associated with workload consolidation. The shortsightedness of locally adaptive routing algorithms limits performance due to poor network congestion avoidance. Globally adaptive routing algorithms attack this issue by introducing a congestion propagation network to obtain network status information beyond neighboring nodes. However, they may suffer from intra- and inter-application interference during output port selection for consolidated workloads, coupling the behavior of otherwise independent applications and negatively affecting performance. To address these two issues, we propose Destination-Based Adaptive Routing (DBAR). We design a novel low-cost congestion propagation network that leverages both local and non-local network information for more accurate congestion estimates. Thus, DBAR offers effective adaptivity for congestion beyond neighboring nodes. More importantly, by integrating the destination into the selection function, DBAR mitigates intra- and inter-application interference and offers dynamic isolation among regions. Experimental results show that DBAR can offer better performance than the best baseline algorithm for all measured configurations; it is well suited for workload consolidation. The wiring overhead of DBAR is low and DBAR provides improvement in the energy-delay product for medium and high injection rates.},
+ acmid = {2000113},
+ address = {New York, NY, USA},
+ author = {Ma, Sheng and Enright Jerger, Natalie and Wang, Zhiying},
+ doi = {10.1145/2024723.2000113},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {networks-on-chip, routing algorithm, workload consolidation},
+ link = {http://doi.acm.org/10.1145/2024723.2000113},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {413--424},
+ publisher = {ACM},
+ title = {DBAR: An Efficient Routing Algorithm to Support Multiple Concurrent Applications in Networks-on-chip},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Binkert:2011:ROF:2000064.2000116,
+ abstract = {For large-scale networks, high-radix switches reduce hop and switch count, which decreases latency and power. The ITRS projections for signal-pin count and per-pin bandwidth are nearly flat over the next decade, so increased radix in electronic switches will come at the cost of less per-port bandwidth. Silicon nanophotonic technology provides a long-term solution to this problem. We first compare the use of photonic I/O against an all-electrical, Cray YARC inspired baseline. We compare the power and performance of switches of radix 64, 100, and 144 in the 45, 32, and 22 nm technology steps. In addition with the greater off-chip bandwidth enabled by photonics, the high power of electrical components inside the switch becomes a problem beyond radix 64. We propose an optical switch architecture that exploits highspeed optical interconnects to build a flat crossbar with multiplewriter, single-reader links. Unlike YARC, which uses small buffers at various stages, the proposed design buffers only at input and output ports. This simplifies the design and enables large buffers, capable of handling ethernet-size packets. To mitigate head-of-line blocking and maximize switch throughput, we use an arbitration scheme that allows each port to make eight requests and use two grants. The bandwidth of the optical crossbar is also doubled to to provide a 2x internal speedup. Since optical interconnects have high static power, we show that it is critical to balance the use of optical and electrical components to get the best energy efficiency. Overall, the adoption of photonic I/O allows 100,000 port networks to be constructed with less than one third the power of equivalent all-electronic networks. A further 50% reduction in power can be achieved by using photonics within the switch components. Our best optical design performs similarly to YARC for small packets while consuming less than half the power, and handles 80% more load for large message traffic.},
+ acmid = {2000116},
+ address = {New York, NY, USA},
+ author = {Binkert, Nathan and Davis, Al and Jouppi, Norman P. and McLaren, Moray and Muralimanohar, Naveen and Schreiber, Robert and Ahn, Jung Ho},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000116},
+ isbn = {978-1-4503-0472-6},
+ keyword = {high-radix, photonics, router, switch},
+ link = {http://doi.acm.org/10.1145/2000064.2000116},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {437--448},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {The Role of Optics in Future High Radix Switch Design},
+ year = {2011}
+}
+
+
+@inproceedings{Demme:2011:RIA:2000064.2000107,
+ abstract = {On-chip performance counters play a vital role in computer architecture research due to their ability to quickly provide insights into application behaviors that are time consuming to characterize with traditional methods. The usefulness of modern performance counters, however, is limited by inefficient techniques used today to access them. Current access techniques rely on imprecise sampling or heavyweight kernel interaction forcing users to choose between precision or speed and thus restricting the use of performance counter hardware. In this paper, we describe new methods that enable precise, lightweight interfacing to on-chip performance counters. These low-overhead techniques allow precise reading of virtualized counters in low tens of nanoseconds, which is one to two orders of magnitude faster than current access techniques. Further, these tools provide several fresh insights on the behavior of modern parallel programs such as MySQL and Firefox, which were previously obscured (or impossible to obtain) by existing methods for characterization. Based on case studies with our new access methods, we discuss seven implications for computer architects in the cloud era and three methods for enhancing hardware counters further. Taken together, these observations have the potential to open up new avenues for architecture research.},
+ acmid = {2000107},
+ address = {New York, NY, USA},
+ author = {Demme, John and Sethumadhavan, Simha},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000107},
+ isbn = {978-1-4503-0472-6},
+ keyword = {hardware performance counters, locking, performance evaluation},
+ link = {http://doi.acm.org/10.1145/2000064.2000107},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {353--364},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Rapid Identification of Architectural Bottlenecks via Precise Event Counting},
+ year = {2011}
+}
+
+
+@article{Sanchez:2011:VSE:2024723.2000073,
+ abstract = {Cache partitioning has a wide range of uses in CMPs, from guaranteeing quality of service and controlled sharing to security-related techniques. However, existing cache partitioning schemes (such as way-partitioning) are limited to coarse-grain allocations, can only support few partitions, and reduce cache associativity, hurting performance. Hence, these techniques can only be applied to CMPs with 2-4 cores, but fail to scale to tens of cores. We present Vantage, a novel cache partitioning technique that overcomes the limitations of existing schemes: caches can have tens of partitions with sizes specified at cache line granularity, while maintaining high associativity and strong isolation among partitions. Vantage leverages cache arrays with good hashing and associativity, which enable soft-pinning a large portion of cache lines. It enforces capacity allocations by controlling the replacement process. Unlike prior schemes, Vantage provides strict isolation guarantees by partitioning most (e.g. 90%) of the cache instead of all of it. Vantage is derived from analytical models, which allow us to provide strong guarantees and bounds on associativity and sizing independent of the number of partitions and their behaviors. It is simple to implement, requiring around 1.5% state overhead and simple changes to the cache controller. We evaluate Vantage using extensive simulations. On a 32-core system, using 350 multiprogrammed workloads and one partition per core, partitioning the last-level cache with conventional techniques degrades throughput for 71% of the workloads versus an unpartitioned cache (by 7% average, 25% maximum degradation), even when using 64-way caches. In contrast, Vantage improves throughput for 98% of the workloads, by 8% on average (up to 20%), using a 4-way cache.},
+ acmid = {2000073},
+ address = {New York, NY, USA},
+ author = {Sanchez, Daniel and Kozyrakis, Christos},
+ doi = {10.1145/2024723.2000073},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {cache partitioning, multi-core, qos, shared cache},
+ link = {http://doi.acm.org/10.1145/2024723.2000073},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {57--68},
+ publisher = {ACM},
+ title = {Vantage: Scalable and Efficient Fine-grain Cache Partitioning},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Crago:2011:OEM:2000064.2000079,
+ abstract = {We present OUTRIDER, an architecture for throughput-oriented processors that provides memory latency tolerance to improve performance on highly threaded workloads. OUTRIDER enables a single thread of execution to be presented to the architecture as multiple decoupled instruction streams that separate memory-accessing and memory-consuming instructions. The key insight is that by decoupling the instruction streams, the processor pipeline can tolerate memory latency in a way similar to out-of-order designs while relying on a low-complexity in-order micro-architecture. Moreover, instead of adding more threads as is done in modern GPUs, OUTRIDER can tolerate memory latency with fewer threads and reduced contention for resources shared amongst threads. We demonstrate that OUTRIDER can outperform single threaded cores by 23-131% and a 4-way simultaneous multithreaded core by up to 87% on data parallel applications in a 1024-core system. Moreover, OUTRIDER achieves these performance gains without incurring the overhead of additional hardware thread contexts, which results in improved area efficiency compared to a multithreaded core.},
+ acmid = {2000079},
+ address = {New York, NY, USA},
+ author = {Crago, Neal Clayton and Patel, Sanjay Jeram},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000079},
+ isbn = {978-1-4503-0472-6},
+ keyword = {accelerator, computer architecture, memory latency},
+ link = {http://doi.acm.org/10.1145/2000064.2000079},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {117--128},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {OUTRIDER: Efficient Memory Latency Tolerance with Decoupled Strands},
+ year = {2011}
+}
+
+
+@article{Yu:2011:SHM:2024723.2000094,
+ abstract = {Large register files are common in highly multi-threaded architectures such as GPUs. This paper presents a hybrid memory design that tightly integrates embedded DRAM into SRAM cells with a main application to reducing area and power consumption of multi-threaded register files. In the hybrid memory, each SRAM cell is augmented with multiple DRAM cells so that multiple bits can be stored in each cell. This configuration results in significant area and energy savings compared to the SRAM array with the same capacity due to compact DRAM cells. On other hand, the hybrid memory requires explicit data movements in order to access DRAM contexts. In order to minimize context switching impact, we introduce write-back buffers, background context switching, and context-aware thread scheduling, to the processor pipeline and the scheduler. Circuit and architecture simulations of GPU benchmarks suites show significant savings in register file area (38%) and energy (68%) over the traditional SRAM implementation, with minimal (1.4%) performance loss.},
+ acmid = {2000094},
+ address = {New York, NY, USA},
+ author = {Yu, Wing-kei S. and Huang, Ruirui and Xu, Sarah Q. and Wang, Sung-En and Kan, Edwin and Suh, G. Edward},
+ doi = {10.1145/2024723.2000094},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {dram, fine-grain multithreading, gpgpu, gpu, hybrid memory, memory, register file, sram},
+ link = {http://doi.acm.org/10.1145/2024723.2000094},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {247--258},
+ publisher = {ACM},
+ title = {SRAM-DRAM Hybrid Memory with Applications to Efficient Register Files in Fine-grained Multi-threading},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Ebrahimi:2011:PSR:2024723.2000081,
+ abstract = {Chip multiprocessors (CMPs) share a large portion of the memory subsystem among multiple cores. Recent proposals have addressed high-performance and fair management of these shared resources; however, none of them take into account prefetch requests. Without prefetching, significant performance is lost, which is why existing systems prefetch. By not taking into account prefetch requests, recent shared-resource management proposals often significantly degrade both performance and fairness, rather than improve them in the presence of prefetching. This paper is the first to propose mechanisms that both manage the shared resources of a multi-core chip to obtain high-performance and fairness, and also exploit prefetching. We apply our proposed mechanisms to two resource-based management techniques for memory scheduling and one source-throttling-based management technique for the entire shared memory system. We show that our mechanisms improve the performance of a 4-core system that uses network fair queuing, parallelism-aware batch scheduling, and fairness via source throttling by 11.0%, 10.9%, and 11.3% respectively, while also significantly improving fairness.},
+ acmid = {2000081},
+ address = {New York, NY, USA},
+ author = {Ebrahimi, Eiman and Lee, Chang Joo and Mutlu, Onur and Patt, Yale N.},
+ doi = {10.1145/2024723.2000081},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {fairness, multi-core, prefetching, shared resources},
+ link = {http://doi.acm.org/10.1145/2024723.2000081},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {141--152},
+ publisher = {ACM},
+ title = {Prefetch-aware Shared Resource Management for Multi-core Systems},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Sun:2011:MME:2000064.2000109,
+ abstract = {In recent years, the increasing number of processor cores and limited increases in main memory bandwidth have led to the problem of the bandwidth wall, where memory bandwidth is becoming a performance bottleneck. This is especially true for emerging latency-insensitive, bandwidth-sensitive applications. Designing the memory hierarchy for a platform with an emphasis on maximizing bandwidth within a fixed power budget becomes one of the key challenges. To facilitate architects to quickly explore the design space of memory hierarchies, we propose an analytical performance model called Moguls. The Moguls model estimates the performance of an application on a system, using the bandwidth demand of the application for a range of cache capacities and the bandwidth provided by the system with those capacities. We show how to extend this model with appropriate approximations to optimize a cache hierarchy under a power constraint. The results show how many levels of cache should be designed, and what the capacity, bandwidth, and technology of each level should be. In addition, we study memory hierarchy design with hybrid memory technologies, which shows the benefits of using multiple technologies for future computing systems.},
+ acmid = {2000109},
+ address = {New York, NY, USA},
+ author = {Sun, Guangyu and Hughes, Christopher J. and Kim, Changkyu and Zhao, Jishen and Xu, Cong and Xie, Yuan and Chen, Yen-Kuang},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000109},
+ isbn = {978-1-4503-0472-6},
+ keyword = {bandwidth, memory hierarchy, memory model, power consumption, throughput computing},
+ link = {http://doi.acm.org/10.1145/2000064.2000109},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {377--388},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Moguls: A Model to Explore the Memory Hierarchy for Bandwidth Improvements},
+ year = {2011}
+}
+
+
+@inproceedings{Govindan:2011:BLT:2000064.2000105,
+ abstract = {Datacenter power consumption has a significant impact on both its recurring electricity bill (Op-ex) and one-time construction costs (Cap-ex). Existing work optimizing these costs has relied primarily on throttling devices or workload shaping, both with performance degrading implications. In this paper, we present a novel knob of energy buffer (eBuff) available in the form of UPS batteries in datacenters for this cost optimization. Intuitively, eBuff stores energy in UPS batteries during "valleys" - periods of lower demand, which can be drained during "peaks" - periods of higher demand. UPS batteries are normally used as a fail-over mechanism to transition to captive power sources upon utility failure. Furthermore, frequent discharges can cause UPS batteries to fail prematurely. We conduct detailed analysis of battery operation to figure out feasible operating regions given such battery lifetime and datacenter availability concerns. Using insights learned from this analysis, we develop peak reduction algorithms that combine the UPS battery knob with existing throttling based techniques for minimizing datacenter power costs. Using an experimental platform, we offer insights about Op-ex savings offered by eBuff for a wide range of workload peaks/valleys, UPS provisioning, and application SLA constraints. We find that eBuff can be used to realize 15-45% peak power reduction, corresponding to 6-18% savings in Op-ex across this spectrum. eBuff can also play a role in reducing Cap-ex costs by allowing tighter overbooking of power infrastructure components and we quantify the extent of such Cap-ex savings. To our knowledge, this is the first paper to exploit stored energy - typically lying untapped in the datacenter - to address the peak power draw problem.},
+ acmid = {2000105},
+ address = {New York, NY, USA},
+ author = {Govindan, Sriram and Sivasubramaniam, Anand and Urgaonkar, Bhuvan},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000105},
+ isbn = {978-1-4503-0472-6},
+ keyword = {battery, datacenter, peak power},
+ link = {http://doi.acm.org/10.1145/2000064.2000105},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {341--352},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Benefits and Limitations of Tapping into Stored Energy for Datacenters},
+ year = {2011}
+}
+
+
+@inproceedings{Mishra:2011:AOI:2000064.2000074,
+ abstract = {Emerging memory technologies such as STT-RAM, PCRAM, and resistive RAM are being explored as potential replacements to existing on-chip caches or main memories for future multi-core architectures. This is due to the many attractive features these memory technologies posses: high density, low leakage, and non-volatility. However, the latency and energy overhead associated with the write operations of these emerging memories has become a major obstacle in their adoption. Previous works have proposed various circuit and architectural level solutions to mitigate the write overhead. In this paper, we study the integration of STT-RAM in a 3D multi-core environment and propose solutions at the on-chip network level to circumvent the write overhead problem in the cache architecture with STT-RAM technology. Our scheme is based on the observation that instead of staggering requests to a write-busy STT-RAM bank, the network should schedule requests to other idle cache banks for effectively hiding the latency. Thus, we prioritize cache accesses to the idle banks by delaying accesses to the STT-RAM cache banks that are currently serving long latency write requests. Through a detailed characterization of the cache access patterns of 42 applications, we propose an efficient mechanism to facilitate such delayed writes to cache banks by (a) accurately estimating the busy time of each cache bank through logical partitioning of the cache layer and (b) prioritizing packets in a router requesting accesses to idle banks. Evaluations on a 3D architecture, consisting of 64 cores and 64 STT-RAM cache banks, show that our proposed approach provides 14% average IPC improvement for multi-threaded benchmarks, 19% instruction throughput benefits for multi-programmed workloads, and 6% latency reduction compared to a recently proposed write buffering mechanism.},
+ acmid = {2000074},
+ address = {New York, NY, USA},
+ author = {Mishra, Asit K. and Dong, Xiangyu and Sun, Guangyu and Xie, Yuan and Vijaykrishnan, N. and Das, Chita R.},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000074},
+ isbn = {978-1-4503-0472-6},
+ keyword = {arbitration, mram, network on chip, router, stt-ram},
+ link = {http://doi.acm.org/10.1145/2000064.2000074},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {69--80},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Architecting On-chip Interconnects for Stacked 3D STT-RAM Caches in CMPs},
+ year = {2011}
+}
+
+
+@article{Carpenter:2011:CGS:2024723.2000097,
+ abstract = {As microprocessor chips integrate a growing number of cores, the issue of interconnection becomes more important for overall system performance and efficiency. Compared to traditional distributed shared-memory architecture, chip-multiprocessors offer a different set of design constraints and opportunities. As a result, a conventional packet-relay multiprocessor interconnect architecture is a valid, but not necessarily optimal, design point. For example, the advantage of off-the-shelf interconnect and the in-field scalability of the interconnect are less important in a chip-multiprocessor. On the other hand, even with worsening wire delays,packet switching represents a non-trivial component of overall latency. In this paper, we show that with straight forward optimizations, the traffic between different cores can be kept relatively low. This in turn allows simple shared-medium interconnects to be built using communication circuits driving transmission lines. This architecture offers extremely low latencies and can support a large number of cores without the need for packet switching, eliminating costly routers.},
+ acmid = {2000097},
+ address = {New York, NY, USA},
+ author = {Carpenter, Aaron and Hu, Jianyun and Xu, Jie and Huang, Michael and Wu, Hui},
+ doi = {10.1145/2024723.2000097},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {on-chip interconnect, transmission lines},
+ link = {http://doi.acm.org/10.1145/2024723.2000097},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {271--282},
+ publisher = {ACM},
+ title = {A Case for Globally Shared-medium On-chip Interconnect},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Hashmi:2011:AAF:2000064.2000066,
+ abstract = {Recent advances in the neuroscientific understanding of the brain are bringing about a tantalizing opportunity for building synthetic machines that perform computation in ways that differ radically from traditional Von Neumann machines. These brain-like architectures, which are premised on our understanding of how the human neocortex computes, are highly fault-tolerant, averaging results over large numbers of potentially faulty components, yet manage to solve very difficult problems more reliably than traditional algorithms. A key principle of operation for these architectures is that of automatic abstraction: independent features are extracted from highly disordered inputs and are used to create abstract invariant representations of the external entities. This feature extraction is applied hierarchically, leading to increasing levels of abstraction at higher levels in the hierarchy. This paper describes and evaluates a biologically plausible computational model for this process, and highlights the inherent fault tolerance of the biologically-inspired algorithm. We introduce a stuck-at fault model for such cortical networks, and describe how this model maps to hardware faults that can occur on commodity GPGPU cores used to realize the model in software. We show experimentally that the model software implementation can intrinsically preserve its functionality in the presence of faulty hardware, without requiring any reprogramming or recompilation. This model is a first step towards developing a comprehensive and biologically plausible understanding of the computational algorithms and microarchitecture of computing systems that mimic the human cortex, and to applying them to the robust implementation of tasks on future computing systems built of faulty components.},
+ acmid = {2000066},
+ address = {New York, NY, USA},
+ author = {Hashmi, Atif and Berry, Hugues and Temam, Olivier and Lipasti, Mikko},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000066},
+ isbn = {978-1-4503-0472-6},
+ keyword = {automatic abstraction, fault tolerance, neuromorphic architectures},
+ link = {http://doi.acm.org/10.1145/2000064.2000066},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {1--10},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Automatic Abstraction and Fault Tolerance in Cortical Microachitectures},
+ year = {2011}
+}
+
+
+@article{Biswas:2011:FFF:2024723.2000104,
+ abstract = {Local thermal hot-spots in microprocessors lead to worst-case provisioning of global cooling resources, especially in large-scale systems where cooling power can be 50~100% of IT power. Further, the efficiency of cooling solutions degrade non-linearly with supply temperature. Recent advances in active cooling techniques have shown on-chip thermoelectric coolers (TECs) to be very efficient at selectively eliminating small hot-spots. Applying current to a superlattice TEC-film that is deposited between silicon and the heat spreader results in a Peltier effect, which spreads the heat and lowers the temperature of the hot-spot significantly and improves chip reliability. In this paper, we propose that hot-spot mitigation using thermoelectric coolers can be used as a power management mechanism to allow global coolers to be provisioned for a better worst case temperature leading to substantial savings in cooling power. In order to quantify the potential power savings from using TECs in data center servers, we present a detailed power model that integrates on-chip dynamic and leakage power sour-ces, heat diffusion through the entire chip, TEC and global cooler efficiencies, and all their mutual interactions. Our multi-scale analysis shows that, for a typical data center, TECs allow global coolers to operate at higher temperatures without degrading chip lifetime, and thus save ~27% cooling power on average while providing the same processor reliability as a data center running at 288K.},
+ acmid = {2000104},
+ address = {New York, NY, USA},
+ author = {Biswas, Susmit and Tiwari, Mohit and Sherwood, Timothy and Theogarajan, Luke and Chong, Frederic T.},
+ doi = {10.1145/2024723.2000104},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {active cooling, cooling power, data center, tec},
+ link = {http://doi.acm.org/10.1145/2024723.2000104},
+ month = {jun},
+ number = {3},
+ numpages = {10},
+ pages = {331--340},
+ publisher = {ACM},
+ title = {Fighting Fire with Fire: Modeling the Datacenter-scale Effects of Targeted Superlattice Thermal Management},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Gunadi:2011:CCR:2000064.2000068,
+ abstract = {Conventional high-performance processors utilize register renaming and complex broadcast-based scheduling logic to steer instructions into a small number of heavily-pipelined execution lanes. This requires multiple complex structures and repeated dependency resolution, imposing a significant dynamic power overhead. This paper advocates in-place execution of instructions, a power-saving, pipeline-free approach that consolidates rename, issue, and bypass logic into one structure---the CRIB---while simultaneously eliminating the need for a multiported register file, instead storing architected state in a simple rank of latches. CRIB achieves the high IPC of an out-of-order machine while keeping the execution core clean, simple, and low power. The datapath within a CRIB structure is purely combinational, eliminating most of the clocked elements in the core while keeping a fully synchronous yet high-frequency design. Experimental results match the IPC and cycle time of a baseline out-of-order design while reducing dynamic energy consumption by more than 60% in affected structures.},
+ acmid = {2000068},
+ address = {New York, NY, USA},
+ author = {Gunadi, Erika and Lipasti, Mikko H.},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000068},
+ isbn = {978-1-4503-0472-6},
+ keyword = {microarchitecture, power, register renaming},
+ link = {http://doi.acm.org/10.1145/2000064.2000068},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {23--32},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {CRIB: Consolidated Rename, Issue, and Bypass},
+ year = {2011}
+}
+
+
+@article{Tang:2011:IMS:2024723.2000099,
+ abstract = {In this paper we study the impact of sharing memory resources on five Google datacenter applications: a web search engine, bigtable, content analyzer, image stitching, and protocol buffer. While prior work has found neither positive nor negative effects from cache sharing across the PARSEC benchmark suite, we find that across these datacenter applications, there is both a sizable benefit and a potential degradation from improperly sharing resources. There are four main contributions of this paper. First, we present a study of the importance of thread-to-core mapping for applications in the datacenter as threads can be mapped to share or to not share caches and bus bandwidth. Second, we investigate the impact of co-locating threads from multiple applications with diverse memory behavior and discover that the best mapping for a given application changes de- pending on its co-runner. Third, we investigate the application characteristics that impact performance in the various thread-to-core mapping scenarios. Finally, we present both a heuristics-based and an adaptive approach to arrive at good thread-to-core decisions in the datacenter. We observe performance swings of up to 25% for web search, and 40% for other key applications, simply based on how application threads are mapped to cores. By employing our adaptive thread to core mapper the performance of the datacenter applications presented in this work improved by up to 22% over status quo thread-to-core mapping and performs within 3% of optimal.},
+ acmid = {2000099},
+ address = {New York, NY, USA},
+ author = {Tang, Lingjia and Mars, Jason and Vachharajani, Neil and Hundt, Robert and Soffa, Mary Lou},
+ doi = {10.1145/2024723.2000099},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {contention, datacenter, multicore, thread scheduling, thread-to-core mapping, workload characterization},
+ link = {http://doi.acm.org/10.1145/2024723.2000099},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {283--294},
+ publisher = {ACM},
+ title = {The Impact of Memory Subsystem Resource Sharing on Datacenter Applications},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Esmaeilzadeh:2011:DSE:2000064.2000108,
+ abstract = {Since 2005, processor designers have increased core counts to exploit Moore's Law scaling, rather than focusing on single-core performance. The failure of Dennard scaling, to which the shift to multicore parts is partially a response, may soon limit multicore scaling just as single-core scaling has been curtailed. This paper models multicore scaling limits by combining device scaling, single-core scaling, and multicore scaling to measure the speedup potential for a set of parallel workloads for the next five technology generations. For device scaling, we use both the ITRS projections and a set of more conservative device scaling parameters. To model single-core scaling, we combine measurements from over 150 processors to derive Pareto-optimal frontiers for area/performance and power/performance. Finally, to model multicore scaling, we build a detailed performance model of upper-bound performance and lower-bound core power. The multicore designs we study include single-threaded CPU-like and massively threaded GPU-like multicore chip organizations with symmetric, asymmetric, dynamic, and composed topologies. The study shows that regardless of chip organization and topology, multicore scaling is power limited to a degree not widely appreciated by the computing community. Even at 22 nm (just one year from now), 21% of a fixed-size chip must be powered off, and at 8 nm, this number grows to more than 50%. Through 2024, only 7.9x average speedup is possible across commonly used parallel workloads, leaving a nearly 24-fold gap from a target of doubled performance per generation.},
+ acmid = {2000108},
+ address = {New York, NY, USA},
+ author = {Esmaeilzadeh, Hadi and Blem, Emily and St. Amant, Renee and Sankaralingam, Karthikeyan and Burger, Doug},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000108},
+ isbn = {978-1-4503-0472-6},
+ keyword = {dark silicon, modeling, multicore, power, technology scaling},
+ link = {http://doi.acm.org/10.1145/2000064.2000108},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {365--376},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Dark Silicon and the End of Multicore Scaling},
+ year = {2011}
+}
+
+
+@proceedings{Iyer:2011:2000064,
+ abstract = {It is a great honor for me to introduce the program of the 38th Annual International Symposium on Computer Architecture. This symposium is the premier forum for new ideas and experimental results in the area of computer architecture. It has a long tradition of attracting the most impactful research results in this area, and this year is no exception. It has been a great pleasure to work with the very talented and professional team of colleagues that accepted to serve in the program committee for this year's edition. Their dedication and high quality work has been key to maintain the high standards of excellence of the conference. I want to thank all of them for their generous effort for reviewing papers and selecting the final program. I also want to thank all the authors who worked very hard to submit their papers to the conference. The high quality of many of the submitted papers made the selection task very intense and difficult. This year we received 208 papers and each of them went through a thorough review process. Each paper was reviewed by at least 4 members of the program committee and 1 external reviewer. This representedmore than 1000 reviews. As an indication of the professionalism of the PC members and external reviewers, I want to highlight that I received all the requested reviews in time, with no exception. After all reviews were submitted, authors were given the opportunity to see them and rebut any issue raised by the reviewers before the PC meeting. As a last step for preparation for the PC meeting, PC members were requested to read all reviews and rebuttals of their assigned papers and re-score them taking into account the opinions of the other reviewers and the response of the authors. The paper selection was done during the PC meeting that was held at the O'Hare airport in Chicago on February 19, 2011. All PC members but one participated in the meeting. The meeting lasted all day, starting at 8:00am and finishing at 7:00pm with just a very short break for lunch. In the meeting, we discussed every paper that any PC member felt we should discuss. At the end, we selected 40 papers for presentation and publication in the proceedings, which represents an acceptance rate of 19%.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0472-6},
+ location = {San Jose, California, USA},
+ note = {415114},
+ publisher = {ACM},
+ title = {ISCA '11: Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ year = {2011}
+}
+
+
+@article{Grot:2011:KHN:2024723.2000112,
+ abstract = {Today's chip-level multiprocessors (CMPs) feature up to a hundred discrete cores, and with increasing levels of integration, CMPs with hundreds of cores, cache tiles, and specialized accelerators are anticipated in the near future. In this paper, we propose and evaluate technologies to enable networks-on-chip (NOCs) to support a thousand connected components (Kilo-NOC) with high area and energy efficiency, good performance, and strong quality-of-service (QOS) guarantees. Our analysis shows that QOS support burdens the network with high area and energy costs. In response, we propose a new lightweight topology-aware QOS architecture that provides service guarantees for applications such as consolidated servers on CMPs and real-time SOCs. Unlike prior NOC quality-of-service proposals which require QOS support at every network node, our scheme restricts the extent of hardware support to portions of the die, reducing router complexity in the rest of the chip. We further improve network area- and energy-efficiency through a novel flow control mechanism that enables a single-network, low-cost elastic buffer implementation. Together, these techniques yield a heterogeneous Kilo-NOC architecture that consumes 45% less area and 29% less power than a state-of-the-art QOS-enabled NOC without these features.},
+ acmid = {2000112},
+ address = {New York, NY, USA},
+ author = {Grot, Boris and Hestness, Joel and Keckler, Stephen W. and Mutlu, Onur},
+ doi = {10.1145/2024723.2000112},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {networks-on-chip (noc), quality-of-service (qos)},
+ link = {http://doi.acm.org/10.1145/2024723.2000112},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {401--412},
+ publisher = {ACM},
+ title = {Kilo-NOC: A Heterogeneous Network-on-chip Architecture for Scalability and Service Guarantees},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Yoon:2011:AGM:2024723.2000100,
+ abstract = {We propose adaptive granularity to combine the best of fine-grained and coarse-grained memory accesses. We augment virtual memory to allow each page to specify its preferred granularity of access based on spatial locality and error-tolerance tradeoffs. We use sector caches and sub-ranked memory systems to implement adaptive granularity. We also show how to incorporate adaptive granularity into memory access scheduling. We evaluate our architecture with and without ECC using memory intensive benchmarks from the SPEC, Olden, PARSEC, SPLASH2, and HPCS benchmark suites and micro-benchmarks. The evaluation shows that performance is improved by 61% without ECC and 44% with ECC in memory-intensive applications, while the reduction in memory power consumption (29% without ECC and 14% with ECC) and traffic (78% without ECC and 66% with ECC) is significant.},
+ acmid = {2000100},
+ address = {New York, NY, USA},
+ author = {Yoon, Doe Hyun and Jeong, Min Kyu and Erez, Mattan},
+ doi = {10.1145/2024723.2000100},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {access granularity, ecc, main memory},
+ link = {http://doi.acm.org/10.1145/2024723.2000100},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {295--306},
+ publisher = {ACM},
+ title = {Adaptive Granularity Memory Systems: A Tradeoff Between Storage Efficiency and Throughput},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Tiwari:2011:CUM:2024723.2000087,
+ abstract = {High assurance systems used in avionics, medical implants, and cryptographic devices often rely on a small trusted base of hardware and software to manage the rest of the system. Crafting the core of such a system in a way that achieves flexibility, security, and performance requires a careful balancing act. Simple static primitives with hard partitions of space and time are easier to analyze formally, but strict approaches to the problem at the hardware level have been extremely restrictive, failing to allow even the simplest of dynamic behaviors to be expressed. Our approach to this problem is to construct a minimal but configurable architectural skeleton. This skeleton couples a critical slice of the low level hardware implementation with a microkernel in a way that allows information flow properties of the entire construction to be statically verified all the way down to its gate-level implementation. This strict structure is then made usable by a runtime system that delivers more traditional services (e.g. communication interfaces and long-living contexts) in a way that is decoupled from the information flow properties of the skeleton. To test the viability of this approach we design, test, and statically verify the information-flow security of a hardware/software system complete with support for unbounded operation, inter-process communication, pipelined operation, and I/O with traditional devices. The resulting system is provably sound even when adversaries are allowed to execute arbitrary code on the machine, yet is flexible enough to allow caching, pipelining, and other common case optimizations.},
+ acmid = {2000087},
+ address = {New York, NY, USA},
+ author = {Tiwari, Mohit and Oberg, Jason K. and Li, Xun and Valamehr, Jonathan and Levin, Timothy and Hardekopf, Ben and Kastner, Ryan and Chong, Frederic T. and Sherwood, Timothy},
+ doi = {10.1145/2024723.2000087},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {gate level information flow tracking, high assurance systems, non-interference},
+ link = {http://doi.acm.org/10.1145/2024723.2000087},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {189--200},
+ publisher = {ACM},
+ title = {Crafting a Usable Microkernel, Processor, and I/O System with Strict and Provable Information Flow Security},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Udipi:2011:CMC:2024723.2000115,
+ abstract = {It is well-known that memory latency, energy, capacity, bandwidth, and scalability will be critical bottlenecks in future large-scale systems. This paper addresses these problems, focusing on the interface between the compute cores and memory, comprising the physical interconnect and the memory access protocol. For the physical interconnect, we study the prudent use of emerging silicon-photonic technology to reduce energy consumption and improve capacity scaling. We conclude that photonics are effective primarily to improve socket-edge bandwidth by breaking the pin barrier, and for use on heavily utilized links. For the access protocol, we propose a novel packet based interface that relinquishes most of the tight control that the memory controller holds in current systems and allows the memory modules to be more autonomous, improving flexibility and interoperability. The key enabler here is the introduction of a 3D-stacked interface die that allows both these optimizations without modifying commodity memory dies. The interface die handles all conversion between optics and electronics, as well as all low-level memory device control functionality. Communication beyond the interface die is fully electrical, with TSVs between dies and low-swing wires on-die. We show that such an approach results in substantially lowered energy consumption, reduced latency, better scalability to large capacities, and better support for heterogeneity and interoperability.},
+ acmid = {2000115},
+ address = {New York, NY, USA},
+ author = {Udipi, Aniruddha N. and Muralimanohar, Naveen and Balasubramonian, Rajeev and Davis, Al and Jouppi, Norman P.},
+ doi = {10.1145/2024723.2000115},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {3d stacking, communication protocols, dram, photonics},
+ link = {http://doi.acm.org/10.1145/2024723.2000115},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {425--436},
+ publisher = {ACM},
+ title = {Combining Memory and a Controller with Photonics Through 3D-stacking to Enable Scalable and Energy-efficient Systems},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Mishra:2011:CHO:2000064.2000111,
+ abstract = {Network-on-chip (NoC) has become a critical shared resource in the emerging Chip Multiprocessor (CMP) era. Most prior NoC designs have used the same type of router across the entire network. While this homogeneous network design eases the burden on a network designer, partitioning the resources equally among all routers across the network does not lead to optimal resource usage, and hence, affects the performance-power envelope. In this work, we propose to apportion the resources in an NoC to leverage the non-uniformity in network resource demand. Our proposal includes partitioning the network resources, specifically buffers and links, in an optimal manner. This approach results in redistributing resources such that routers that require more resources are allocated more buffers and wider links compared to routers demanding fewer resources. This results in a novel heterogeneous network, called HeteroNoC, which is composed of two types of routers -- small power efficient routers, and big high performance routers. We evaluate a number of heterogeneous network configurations, composed of big and small routers, and show that giving more resources to routers along the diagonals in a mesh network provides maximum benefits in terms of performance and power. We also show the potential benefits of the HeteroNoC design by co-evaluating it with memory-controllers and configuring it with an asymmetric CMP consisting of heterogeneous cores.},
+ acmid = {2000111},
+ address = {New York, NY, USA},
+ author = {Mishra, Asit K. and Vijaykrishnan, N. and Das, Chita R.},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000111},
+ isbn = {978-1-4503-0472-6},
+ keyword = {heterogeneous networks, network on chip},
+ link = {http://doi.acm.org/10.1145/2000064.2000111},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {389--400},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {A Case for Heterogeneous On-chip Interconnects for CMPs},
+ year = {2011}
+}
+
+
+@article{Chhabra:2011:ISN:2024723.2000086,
+ abstract = {Emerging technologies for building non-volatile main memory (NVMM) systems suffer from a security vulnerability where information lingers on long after the system is powered down, enabling an attacker with physical access to the system to extract sensitive information off the memory. The goal of this study is to find a solution for such a security vulnerability. We introduce i-NVMM, a data privacy protection scheme for NVMM, where the main memory is encrypted incrementally, i.e. different data in the main memory is encrypted at different times depending on whether the data is predicted to still be useful to the processor. The motivation behind incremental encryption is the observation that the working set of an application is much smaller than its resident set. By identifying the working set and encrypting remaining part of the resident set, i-NVMM can keep the majority of the main memory encrypted at all times without penalizing performance by much. Our experiments demonstrate promising results. i-NVMM keeps 78% of the main memory encrypted across SPEC2006 benchmarks, yet only incurs 3.7% execution time overhead, and has a negligible impact on the write endurance of NVMM, all achieved with a relatively simple hardware support in the memory module.},
+ acmid = {2000086},
+ address = {New York, NY, USA},
+ author = {Chhabra, Siddhartha and Solihin, Yan},
+ doi = {10.1145/2024723.2000086},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {hardware attacks, incremental encryption, non-volatile main memory, privacy, security},
+ link = {http://doi.acm.org/10.1145/2024723.2000086},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {177--188},
+ publisher = {ACM},
+ title = {i-NVMM: A Secure Non-volatile Main Memory System with Incremental Encryption},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Barroso:2011:WCE:2024723.2019527,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2019527},
+ address = {New York, NY, USA},
+ author = {Barroso, Luiz Andre},
+ doi = {10.1145/2024723.2019527},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ link = {http://doi.acm.org/10.1145/2024723.2019527},
+ month = {jun},
+ number = {3},
+ pages = {--},
+ publisher = {ACM},
+ title = {Warehouse-Scale Computing: Entering the Teenage Decade},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Lee:2011:ETP:2024723.2000080,
+ abstract = {We present a taxonomy and modular implementation approach for data-parallel accelerators, including the MIMD, vector-SIMD, subword-SIMD, SIMT, and vector-thread (VT) architectural design patterns. We have developed a new VT microarchitecture, Maven, based on the traditional vector-SIMD microarchitecture that is considerably simpler to implement and easier to program than previous VT designs. Using an extensive design-space exploration of full VLSI implementations of many accelerator design points, we evaluate the varying tradeoffs between programmability and implementation efficiency among the MIMD, vector-SIMD, and VT patterns on a workload of microbenchmarks and compiled application kernels. We find the vector cores provide greater efficiency than the MIMD cores, even on fairly irregular kernels. Our results suggest that the Maven VT microarchitecture is superior to the traditional vector-SIMD architecture, providing both greater efficiency and easier programmability.},
+ acmid = {2000080},
+ address = {New York, NY, USA},
+ author = {Lee, Yunsup and Avizienis, Rimas and Bishara, Alex and Xia, Richard and Lockhart, Derek and Batten, Christopher and Asanovi\'{c}, Krste},
+ doi = {10.1145/2024723.2000080},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {data-parallel accelerators, maven, simplified vector-thread architectures, simplified vt architectures, vector-thread architectures, vt architectures},
+ link = {http://doi.acm.org/10.1145/2024723.2000080},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {129--140},
+ publisher = {ACM},
+ title = {Exploring the Tradeoffs Between Programmability and Efficiency in Data-parallel Accelerators},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Nomura:2011:SDP:2024723.2000089,
+ abstract = {With technology scaling, manufacture-time and in-field permanent faults are becoming a fundamental problem. Multi-core architectures with spares can tolerate them by detecting and isolating faulty cores, but the required fault detection coverage becomes effectively 100% as the number of permanent faults increases. Dual-modular redundancy(DMR) can provide 100% coverage without assuming device-level fault models, but its overhead is excessive. In this paper, we explore a simple and low-overhead mechanism we call Sampling-DMR: run in DMR mode for a small percentage (1% of the time for example) of each periodic execution window (5 million cycles for example). Although Sampling-DMR can leave some errors undetected, we argue the permanent fault coverage is 100% because it can detect all faults eventually. Sampling-DMR thus introduces a system paradigm of restricting all permanent faults' effects to small finite windows of error occurrence. We prove an ultimate upper bound exists on total missed errors and develop a probabilistic model to analyze the distribution of the number of undetected errors and detection latency. The model is validated using full gate-level fault injection experiments for an actual processor running full application software. Sampling-DMR outperforms conventional techniques in terms of fault coverage, sustains similar detection latency guarantees, and limits energy and performance overheads to less than 2%.},
+ acmid = {2000089},
+ address = {New York, NY, USA},
+ author = {Nomura, Shuou and Sinclair, Matthew D. and Ho, Chen-Han and Govindaraju, Venkatraman and de Kruijf, Marc and Sankaralingam, Karthikeyan},
+ doi = {10.1145/2024723.2000089},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {dmr, fault tolerance, permanent fault, reliability, sampling},
+ link = {http://doi.acm.org/10.1145/2024723.2000089},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {201--212},
+ publisher = {ACM},
+ title = {Sampling + DMR: Practical and Low-overhead Permanent Fault Detection},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Choudhary:2011:FCS:2024723.2000067,
+ abstract = {A growing body of work has compiled a strong case for the single-ISA heterogeneous multi-core paradigm. A single-ISA heterogeneous multi-core provides multiple, differently-designed superscalar core types that can streamline the execution of diverse programs and program phases. No prior research has addressed the 'Achilles' heel of this paradigm: design and verification effort is multiplied by the number of different core types. This work frames superscalar processors in a canonical form, so that it becomes feasible to quickly design many cores that differ in the three major superscalar dimensions: superscalar width, pipeline depth, and sizes of structures for extracting instruction-level parallelism (ILP). From this idea, we develop a toolset, called FabScalar, for automatically composing the synthesizable register-transfer-level (RTL) designs of arbitrary cores within a canonical superscalar template. The template defines canonical pipeline stages and interfaces among them. A Canonical Pipeline Stage Library (CPSL) provides many implementations of each canonical pipeline stage, that differ in their superscalar width and depth of sub-pipelining. An RTL generation tool uses the template and CPSL to automatically generate an overall core of desired configuration. Validation experiments are performed along three fronts to evaluate the quality of RTL designs generated by FabScalar: functional and performance (instructions-per-cycle (IPC)) validation, timing validation (cycle time), and confirmation of suitability for standard ASIC flows. With FabScalar, a chip with many different superscalar core types is conceivable.},
+ acmid = {2000067},
+ address = {New York, NY, USA},
+ author = {Choudhary, Niket K. and Wadhavkar, Salil V. and Shah, Tanmay A. and Mayukh, Hiran and Gandhi, Jayneel and Dwiel, Brandon H. and Navada, Sandeep and Najaf-abadi, Hashem H. and Rotenberg, Eric},
+ doi = {10.1145/2024723.2000067},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {custom processors, heterogeneous (asymmetric) multi-core, instruction-level parallelism (ilp), superscalar processors},
+ link = {http://doi.acm.org/10.1145/2024723.2000067},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {11--22},
+ publisher = {ACM},
+ title = {FabScalar: Composing Synthesizable RTL Designs of Arbitrary Cores Within a Canonical Superscalar Template},
+ volume = {39},
+ year = {2011}
+}
+
+
+@proceedings{Seznec:2010:1815961,
+ abstract = {On behalf of the Program Committee we are pleased to welcome you to the 2010 International Symposium on Computer Architecture held in Saint Malo, France. It has been a great honor for us to serve as PC chairs of the prestigious ISCA conference. The ISCA conference is well known in the community as the forerunner in Computer Architecture because of its unique ability to provide, under one roof, maximum exposure for the newest ideas in the field. It is the responsibility of this conference to shape the direction Computer Architecture will take in the future and to promote its enormous potential. Traditionally, the technical program of ISCA included some of the best research work in Computer Architecture, from the academia and industry. This year's ISCA program is as strong as ever, a testimonial to the continued vitality of Computer Architecture research. This year's program features papers on today's "hot" computer architecture topics, including energy efficiency designs, caches, memory subsystems, accelerator architecture, evaluation techniques, reliability and fault tolerance. This year we feature a unique QOB (Quantitative Out of the Box) session that emphasizes qualitative new innovative papers vs. thorough quantitative analysis papers. We hope you will enjoy and learn from the presentations and the papers. The conference papers selection is the fruit of a long and rigorous process. The conference is grateful to all of the authors for the time and effort invested in submitting their best work. 245 papers were submitted to the conference, out of which the Program Committee selected 44 papers to be presented in the ISCA 2010 conference (18% acceptance rate). We have been fortunate to recruit an outstanding Program Committee of 46 members that took the overwhelming task of selecting the best papers. Committee members contributed their time and expertise towards the goal of making this conference a success. We would like to deeply thank each and every Program Committee member. Only now we understand the enormous load they took on themselves: reviewing the submitted papers (we performed a total of 1200 reviews), interacting with other PC members and participating in the full day PC meeting marathon at the O'Hare Airport in Chicago (February 20th 2010).},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0053-7},
+ location = {Saint-Malo, France},
+ note = {415106},
+ publisher = {ACM},
+ title = {ISCA '10: Proceedings of the 37th Annual International Symposium on Computer Architecture},
+ year = {2010}
+}
+
+
+@article{Kwon:2011:VPA:2024723.2000071,
+ abstract = {Performance-asymmetric multi-cores consist of heterogeneous cores, which support the same ISA, but have different computing capabilities. To maximize the throughput of asymmetric multi-core systems, operating systems are responsible for scheduling threads to different types of cores. However, system virtualization poses a challenge for such asymmetric multi-cores, since virtualization hides the physical heterogeneity from guest operating systems. In this paper, we explore the design space of hypervisor schedulers for asymmetric multi-cores, which do not require asymmetry-awareness from guest operating systems. The proposed scheduler characterizes the efficiency of each virtual core, and map the virtual core to the most area-efficient physical core. In addition to the overall system throughput, we consider two important aspects of virtualizing asymmetric multi-cores: performance fairness among virtual machines and performance scalability for changing availability of fast and slow cores. We have implemented an asymmetry-aware scheduler in the open-source Xen hypervisor. Using applications with various characteristics, we evaluate how effectively the proposed scheduler can improve system throughput without asymmetry-aware operating systems. The modified scheduler improves the performance of the Xen credit scheduler by as much as 40% on a 12-core system with four fast and eight slow cores. The results show that even the VMs scheduled to slow cores have relatively low performance degradations, and the scheduler provides scalable performance with increasing fast core counts.},
+ acmid = {2000071},
+ address = {New York, NY, USA},
+ author = {Kwon, Youngjin and Kim, Changdae and Maeng, Seungryoul and Huh, Jaehyuk},
+ doi = {10.1145/2024723.2000071},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {asymmetric multi-core, fairness, scheduling, virtualization},
+ link = {http://doi.acm.org/10.1145/2024723.2000071},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {45--56},
+ publisher = {ACM},
+ title = {Virtualizing Performance Asymmetric Multi-core Systems},
+ volume = {39},
+ year = {2011}
+}
+
+
+@article{Oh:2011:TSM:2024723.2000078,
+ abstract = {As the number of cores on a single-chip grows, scalable barrier synchronization becomes increasingly difficult to implement. In software implementations, such as the tournament barrier, a larger number of cores results in a longer latency for each round and a larger number of rounds. Hardware barrier implementations require significant dedicated wiring, e.g., using a reduction (arrival) tree and a notification (release) tree, and multiple instances of this wiring are needed to support multiple barriers (e.g., when concurrently executing multiple parallel applications). This paper presents TLSync, a novel hardware barrier implementation that uses the high-frequency part of the spectrum in a transmission-line broadcast network, thus leaving the transmission line network free for non-modulated (baseband) data transmission. In contrast to other implementations of hardware barriers, TLSync allows multiple thread groups to each have its own barrier. This is accomplished by allocating different bands in the radio-frequency spectrum to different groups. Our circuit-level and electromagnetic models show that the worst-case latency for a TLSync barrier is 4ns to 10ns, depending on the size of the frequency band allocated to each group, and our cycle-accurate architectural simulations show that low-latency TLSync barriers provide significant performance and scalability benefits to barrier-intensive applications.},
+ acmid = {2000078},
+ address = {New York, NY, USA},
+ author = {Oh, Jungju and Prvulovic, Milos and Zajic, Alenka},
+ doi = {10.1145/2024723.2000078},
+ issn = {0163-5964},
+ issue_date = {June 2011},
+ journal = {SIGARCH Comput. Archit. News},
+ keyword = {barrier, multi-core, synchronization, transmission line},
+ link = {http://doi.acm.org/10.1145/2024723.2000078},
+ month = {jun},
+ number = {3},
+ numpages = {12},
+ pages = {105--116},
+ publisher = {ACM},
+ title = {TLSync: Support for Multiple Fast Barriers Using On-chip Transmission Lines},
+ volume = {39},
+ year = {2011}
+}
+
+
+@inproceedings{Fu:2011:ATM:2000064.2000096,
+ abstract = {Applications' traffic tends to be bursty and the location of hot-spot nodes moves as time goes by. This will significantly aggregate the blocking problem of wormhole-routed Network-on-Chip (NoC). Most of state-of-the-art traffic balancing solutions are based on fully adaptive routing algorithms which may introduce large time/space overhead to routers. Partially adaptive routing algorithms, on the other hand, are time/space efficient, but lack of even or sufficient routing adaptiveness. Reconfigurable routing algorithms could provide on-demand routing adaptiveness for reducing blocking, but most of them are off-line solutions due to the lack of a practical model to dynamically generate deadlock-free routing algorithms. In this paper, we propose the abacus-turn-model (AbTM) for designing time/space-efficient reconfigurable wormhole routing algorithms. Unlike the original turn model, AbTM exploits dynamic communication patterns in applications to reduce the routing latency and chip area requirements. We apply forbidden turns dynamically to preserve deadlock-free operations. Our AbTM routing architecture has two distinct advantages: First, the AbTM leads to a new router architecture without adding virtual channels and routing table. This reconfigurable architecture updates the routing path once the communication pattern changes, and always provides full adaptiveness to hot-spot directions to reduce network blocking. Secondly, the reconfiguration scheme has a good scalability because all operations are carried out between neighbors. We demonstrate these advantages through extensive simulation experiments. The experimental results are indeed encouraging and prove its applicability with scalable performance in large-scale NoC applications.},
+ acmid = {2000096},
+ address = {New York, NY, USA},
+ author = {Fu, Binzhang and Han, Yinhe and Ma, Jun and Li, Huawei and Li, Xiaowei},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000096},
+ isbn = {978-1-4503-0472-6},
+ keyword = {network-on-chip (noc), reconfigurable routing},
+ link = {http://doi.acm.org/10.1145/2000064.2000096},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {259--270},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {An Abacus Turn Model for Time/Space-efficient Reconfigurable Routing},
+ year = {2011}
+}
+
+
+@inproceedings{Agarwal:2011:RSC:2000064.2000083,
+ abstract = {As we move to large manycores, the hardware-based global check-pointing schemes that have been proposed for small shared-memory machines do not scale. Scalability barriers include global operations, work lost to global rollback, and inefficiencies in imbalanced or I/O-intensive loads. Scalable checkpointing requires tracking inter-thread dependences and building the checkpoint and rollback operations around dynamic groups of communicating processors.  To address this problem, this paper introduces Rebound, the first hardware-based scheme for coordinated local checkpointing in multiprocessors with directory based cache coherence. Rebound leverages the transactions of a directory protocol to track inter-thread dependences. In addition, it boosts checkpointing efficiency by: (i) delaying the writeback of data to safe memory at checkpoints, (ii) supporting operation with multiple checkpoints, and (iii) optimizing checkpointing at barrier synchronization. Finally, Rebound introduces distributed algorithms for checkpointing and rollback sets of processors. Simulations of parallel programs with up to 64 threads show that Rebound is scalable and has very low overhead. For 64 processors, its average performance overhead is only 2%, compared to 15% for global checkpointing.},
+ acmid = {2000083},
+ address = {New York, NY, USA},
+ author = {Agarwal, Rishi and Garg, Pranav and Torrellas, Josep},
+ booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+ doi = {10.1145/2000064.2000083},
+ isbn = {978-1-4503-0472-6},
+ keyword = {faults, scalable checkpointing, shared-memory multiprocessors},
+ link = {http://doi.acm.org/10.1145/2000064.2000083},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {153--164},
+ publisher = {ACM},
+ series = {ISCA '11},
+ title = {Rebound: Scalable Checkpointing for Coherent Shared Memory},
+ year = {2011}
+}
+
+
