@@ -1,0 +1,1342 @@
+@inproceedings{Nanongkai:2011:TUL:1993806.1993853,
+ abstract = {We consider the problem of performing a random walk in a distributed network. Given bandwidth constraints, the goal of the problem is to minimize the number of rounds required to obtain a random walk sample. Das Sarma et al. [PODC'10] show that a random walk of length l on a network of diameter D can be performed in Õ(√{l D}+D) time. A major question left open is whether there exists a faster algorithm, especially whether the multiplication of √{l} and √{D} is necessary. In this paper, we show a tight unconditional lower bound on the time complexity of distributed random walk computation. Specifically, we show that for any n, D, and D ≤ l ≤ (n/(D3 log n))1/4, performing a random walk of length Θ(l) on an n-node network of diameter D requires Ω(√{lD}+D) time. This bound is unconditional, i.e., it holds for any (possibly randomized) algorithm. To the best of our knowledge, this is the first lower bound that the diameter plays a role of multiplicative factor. Our bound shows that the algorithm of Das Sarma et al. is time optimal. Our proof technique introduces a new connection between bounded-round communication complexity and distributed algorithm lower bounds with D as a trade-off parameter, strengthening the previous study by Das Sarma et al. [STOC'11]. In particular, we make use of the bounded-round communication complexity of the pointer chasing problem. Our technique can be of independent interest and may be useful in showing non-trivial lower bounds on the complexity of other fundamental distributed computing problems.},
+ acmid = {1993853},
+ address = {New York, NY, USA},
+ author = {Nanongkai, Danupon and Das Sarma, Atish and Pandurangan, Gopal},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993853},
+ isbn = {978-1-4503-0719-2},
+ keyword = {communication complexity, distributed algorithms, lower bound, randomwalk, time complexity},
+ link = {http://doi.acm.org/10.1145/1993806.1993853},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {257--266},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {A Tight Unconditional Lower Bound on Distributed Randomwalk Computation},
+ year = {2011}
+}
+
+
+@inproceedings{Liu:2011:NSO:1993806.1993876,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1993876},
+ address = {New York, NY, USA},
+ author = {Liu, Yujie and Spear, Michael F.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993876},
+ isbn = {978-1-4503-0719-2},
+ keyword = {linearizability, lock-free data structures, shared memory},
+ link = {http://doi.acm.org/10.1145/1993806.1993876},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {345--346},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {A Nonblocking Set Optimized for Querying the Minimum Value},
+ year = {2011}
+}
+
+
+@inproceedings{Golab:2011:CSC:1993806.1993822,
+ abstract = {We consider asynchronous multiprocessor systems where processes communicate by accessing shared memory. Exchange of information among processes in such a multiprocessor necessitates costly memory accesses called remote memory references (RMRs), which generate communication on the interconnect joining processors and main memory. In this paper we compare two popular shared memory architecture models, namely the ca che-coherent (CC) and distributed shared memory (DSM) models, in terms of their power for solving synchronization problems efficiently with respect to RMRs. The particular problem we consider entails one process sending a "signal" to a subset of other processes. We show that a variant of this problem can be solved very efficiently with respect to RMRs in the CC model, but not so in the DSM model, even when we consider amortized RMR complexity. To our knowledge, this is the first separation in terms of amortized RMR complexity between the CC and DSM models. It is also the first separation in terms of RMR complexity (for asynchronous systems) that does not rely in any way on wait-freedom---the requirement that a process makes progress in a bounded number of its own steps.},
+ acmid = {1993822},
+ address = {New York, NY, USA},
+ author = {Golab, Wojciech},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993822},
+ isbn = {978-1-4503-0719-2},
+ keyword = {shared memory models},
+ link = {http://doi.acm.org/10.1145/1993806.1993822},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {109--118},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {A Complexity Separation Between the Cache-coherent and Distributed Shared Memory Models},
+ year = {2011}
+}
+
+
+@inproceedings{Jaffe:2011:IMM:1993806.1993819,
+ abstract = {The memory consistency model is a fundamental system property characterizing a multiprocessor. The relative merits of strict versus relaxed memory models have been widely debated in terms of their impact on performance, hardware complexity and programmability. This paper adds a new dimension to this discussion: the impact of memory models on software reliability. By allowing some instructions to reorder, weak memory models may expand the window between critical memory operations. This can increase the chance of an undesirable thread-interleaving, thus allowing an otherwise-unlikely concurrency bug to manifest. To explore this phenomenon, we define and study a probabilistic model of shared-memory parallel programs that takes into account such reordering. We use this model to formally derive bounds on the vulnerability to concurrency bugs of different memory models. Our results show that for 2 concurrent threads, weaker memory models do indeed have a higher likelihood of allowing bugs. On the other hand, we show that as the number of parallel, buggy threads increases, the gap between the different memory models becomes proportionally insignificant, and thus the importance of using a strict memory model diminishes.},
+ acmid = {1993819},
+ address = {New York, NY, USA},
+ author = {Jaffe, Alexander and Moscibroda, Thomas and Effinger-Dean, Laura and Ceze, Luis and Strauss, Karin},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993819},
+ isbn = {978-1-4503-0719-2},
+ keyword = {memory consistency models, probabilistic analysis, sequential consistency, software reliability, total store order, weak ordering},
+ link = {http://doi.acm.org/10.1145/1993806.1993819},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {89--98},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Impact of Memory Models on Software Reliability in Multiprocessors},
+ year = {2011}
+}
+
+
+@inproceedings{Dani:2011:SRS:1993806.1993833,
+ abstract = {We consider the classical secret sharing problem in the case where all agents are selfish but rational. In recent work, Kol and Naor show that in the non-simultaneous communciation model (i.e. when rushing is possible), there is no Nash equilibrium that ensures all agents learn the secret. However, they describe a mechanism for this problem that is an ε-Nash equilibrium, i.e. it is close to an equilibrium in the sense that no player can gain more than ε utility by deviating from it. Unfortunately, the Kol and Naor mechanism, and, to the best of our knowledge, all previous mechanisms for this problem require each agent to send O(n) messages in expectation, where n is the number of agents. This may be problematic for some applications of rational secret sharing such as secure multiparty computation and simulation of a mediator. We address this issue by describing a mechanism for rational n-out-of-n secret sharing that is an ε-Nash equilibrium, and is scalable in the sense that it requires each agent to send only an expected O(1) bits. Moreover, the latency of our mechanism is O(log n) in expectation, compared to O(n) expected latency for the Kol and Naor result. We also design mechanisms for a relaxed variant of rational m-out-of-n secret sharing where m = Θ(n) that require each processor to send O(log n) bits and have O(\log n) latency. Our mechanisms are non-cryptographic, and are not susceptible to backwards induction.},
+ acmid = {1993833},
+ address = {New York, NY, USA},
+ author = {Dani, Varsha and Movahedi, Mahnush and Rodriguez, Yamel and Saia, Jared},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993833},
+ isbn = {978-1-4503-0719-2},
+ keyword = {cryptography, game theory, multiparty computation, secret sharing},
+ link = {http://doi.acm.org/10.1145/1993806.1993833},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {187--196},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Scalable Rational Secret Sharing},
+ year = {2011}
+}
+
+
+@inproceedings{Patt-Shamir:2011:RCD:1993806.1993851,
+ abstract = {We consider the model of fully connected networks, where in each round each node can send an O(log n)-bit message to each other node (this is the CONGEST model with diameter 1). It is known that in this model, min-weight spanning trees can be found in O(log log n) rounds. In this paper we show that distributed sorting, where each node has at most n items, can be done in time O(log log n) as well. It is also shown that selection can be done in O(1) time. (Using a concurrent result by Lenzen and Wattenhofer, the complexity of sorting is further reduced to constant.) Our algorithms are randomized, and the stated complexity bounds hold with high probability.},
+ acmid = {1993851},
+ address = {New York, NY, USA},
+ author = {Patt-Shamir, Boaz and Teplitsky, Marat},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993851},
+ isbn = {978-1-4503-0719-2},
+ keyword = {communication complexity, congest model, distributed sorting, network algorithms},
+ link = {http://doi.acm.org/10.1145/1993806.1993851},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {249--256},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Round Complexity of Distributed Sorting: Extended Abstract},
+ year = {2011}
+}
+
+
+@inproceedings{Censor-Hillel:2011:SUR:1993806.1993818,
+ abstract = {In this paper we study the problem of building a connected dominating set with constant degree (CCDS) in the dual graph radio network model [4,9,10]. This model includes two types of links: reliable, which always deliver messages, and unreliable, which sometimes fail to deliver messages. Real networks compensate for this differing quality by deploying low-layer detection protocols to filter unreliable from reliable links. With this in mind, we begin by presenting an algorithm that solves the CCDS problem in the dual graph model under the assumption that every process u is provided a local link detector set consisting of every neighbor connected to u by a reliable link. The algorithm solves the CCDS problem in O(Δ\log2 n/b + log3 n) rounds, with high probability, where Δ is the maximum degree in the reliable link graph, n is the network size, and b is an upper bound in bits on the message size. The algorithm works by first building a Maximal Independent Set (MIS) in log3 n time, and then leveraging the local topology knowledge to efficiently connect nearby MIS processes. A natural follow up question is whether the link detector must be perfectly reliable to solve the CCDS problem. With this in mind, we first describe an algorithm that builds a CCDS in O(Δpolylog(n)) time under the assumption of O(1) unreliable links included in each link detector set. We then prove this algorithm to be (almost) tight by showing that the possible inclusion of only a single unreliable link in each process's local link detector set is sufficient to require Ω(Δ) rounds to solve the CCDS problem, regardless of message size. We conclude by discussing how to apply our algorithm in the setting where the topology of reliable and unreliable links can change over time.},
+ acmid = {1993818},
+ address = {New York, NY, USA},
+ author = {Censor-Hillel, Keren and Gilbert, Seth and Kuhn, Fabian and Lynch, Nancy and Newport, Calvin},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993818},
+ isbn = {978-1-4503-0719-2},
+ keyword = {connected dominating set, dual graphs, maximal independent set, unreliable networks},
+ link = {http://doi.acm.org/10.1145/1993806.1993818},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {79--88},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Structuring Unreliable Radio Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Mosteiro:2011:UCR:1993806.1993838,
+ abstract = {Recent work on shared-resource contention resolution has yielded fruitful results for local area networks and radio networks, although either the solution is suboptimal [2] or a (possibly loose) upper bound on the number of users needs to be known [5]. In this work, we present the first (two) protocols for contention resolution in radio networks that are asymptotically optimal (with high probability), work without collision detection, and do not require information about the number of contenders. In addition to the theoretical analysis, the protocols are evaluated and contrasted with the previous work by extensive simulations.},
+ acmid = {1993838},
+ address = {New York, NY, USA},
+ author = {Mosteiro, Miguel A. and Fernandez Anta, Antonio and Mu\~{n}oz, Jorge Ramon},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993838},
+ isbn = {978-1-4503-0719-2},
+ keyword = {contention resolution, radio networks, selection},
+ link = {http://doi.acm.org/10.1145/1993806.1993838},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {211--212},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Unbounded Contention Resolution in Multiple-access Channels},
+ year = {2011}
+}
+
+
+@inproceedings{Cormode:2011:TDA:1993806.1993839,
+ abstract = {The area of distributed monitoring requires tracking the value of a function of distributed data as new observations are made. An important case is when attention is restricted to only a recent time period, such as the last hour of readings---the sliding window case. In this announcement, we outline a novel paradigm for handling such monitoring problems, which we dub the "forward/backward" approach. This provides clean solutions for several fundamental problems, such as counting, tracking frequent items, and maintaining order statistics. We obtain efficient protocols for these problems that improve on previous work, and are easy to implement. Specifically, we obtain optimal O(k/ε log(ε n/k)) communication per window of n updates for tracking counts and heavy hitters with accuracy ε across k sites; and near-optimal communication of O(k/epsilon log2(1/ε) log (n/k)) for quantiles.},
+ acmid = {1993839},
+ address = {New York, NY, USA},
+ author = {Cormode, Graham and Yi, Ke},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993839},
+ isbn = {978-1-4503-0719-2},
+ keyword = {data streams, sliding window},
+ link = {http://doi.acm.org/10.1145/1993806.1993839},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {213--214},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Tracking Distributed Aggregates over Time-based Sliding Windows},
+ year = {2011}
+}
+
+
+@inproceedings{Korman:2011:FCS:1993806.1993866,
+ abstract = {This paper demonstrates the usefulness of distributed local verification of proofs, as a tool for the design of algorithms. In particular, it introduces a somewhat generalized notion of distributed local proofs, and utilizes it for improving the memory size complexity, while obtaining time efficiency too. As a result, we show that optimizing the memory size carries at most a small cost in terms of time, in the context of Minimum Spanning Tree (MST). That is, we present algorithms that are both time and space efficient for constructing an MST, for verifying it, and for detecting the location of the faults. This involves several steps that may be considered contributions in themselves. First, we generalize the notion of local proofs, trading off the locality (or, really, the time complexity) for memory efficiency. This adds a dimension to the study of distributed local proofs, that has been gaining attention recently. Second, as opposed to previous studies that presented only the labels verification part of a proof labeling schemes, we present here also a space and time efficient distributed self stabilizing marker algorithm to generates those labels. This presents proof labeling schemes as an algorithmic tool. Finally, we show how to enhance a known transformer that makes input/output algorithms self stabilizing. It now takes as input an efficient construction algorithm and an efficient self stabilizing proof labeling scheme, and produces an efficient self stabilizing algorithm. When used for MST, the transformer produces a memory optimal (i.e., O(log n) bits per node) self stabilizing algorithm, whose time complexity, namely, O(n), is significantly better even than that of previous algorithms that where not space optimal. (The time complexity of previous MST algorithms that used ©(log2 n) memory bits per node was O(n2), and the time for optimal space algorithms was O(n|E|).) Our MST algorithm also has the important property that, if faults occur after the construction ended, then they are detected by some nodes within O(log2 n) time in synchronous networks, or within O(? log2 n) time in asynchronous ones. This property is inherited from the specific proof labeling scheme we construct. It answers an open problem posed by Awerbuch and Varghese (FOCS 1991). We also show that ©(log n) time is necessary if the memory size is restricted to O(log n) bits, even in synchronous networks. Another property is that if f faults occurred, then, within the required detection time above, they are detected by some node in the O(f log n) locality of each of the faults. We also show how to improve the above detection time and locality, at the expense of some increase in the memory.},
+ acmid = {1993866},
+ address = {New York, NY, USA},
+ author = {Korman, Amos and Kutten, Shay and Masuzawa, Toshimitsu},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993866},
+ isbn = {978-1-4503-0719-2},
+ keyword = {MST, distributed algorithms, distributed verification, fault detection, local proof checking, locality, self stabilization},
+ link = {http://doi.acm.org/10.1145/1993806.1993866},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {311--320},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Fast and Compact Self Stabilizing Verification, Computation, and Fault Detection of an MST},
+ year = {2011}
+}
+
+
+@inproceedings{Wang:2011:TBS:1993806.1993877,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1993877},
+ address = {New York, NY, USA},
+ author = {Wang, Jiaqi and Welch, Jennifer and Lee, Hyunyoung},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993877},
+ isbn = {978-1-4503-0719-2},
+ keyword = {bounds on time complexity, linearizability, partially synchronous system, shared objects},
+ link = {http://doi.acm.org/10.1145/1993806.1993877},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {347--348},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Time Bounds for Shared Objects in Partially Synchronous Systems},
+ year = {2011}
+}
+
+
+@proceedings{Gavoille:2011:1993806,
+ abstract = {This volume contains 34 extended abstracts and 31 brief announcements selected for the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC), held on June 6-8, 2011, in San Jose, California, USA, as part of the 5th Federated Computing Research Conference (FCRC). The program committee selected these papers among 129 regular submissions, and 34 additional brief announcements submissions. The selection of the papers was done electronically using Easychair, in two phases. During the first phase, which lasted slightly more than one month, each paper was reviewed by at least three program committee members, with the help of external referees. During the second phase, which lasted more than two weeks, the papers have been discussed and compared, until the program committee eventually converges to the final list. It is expected that many of these papers will appear in more polished form in refereed scientific journals. A selection of papers has been invited to appear in the Journal of the ACM, and to a special issue of Distributed Computing dedicated to PODC 2011. The program committee has delivered the PODC 2011 Best Paper Award to the paper "The Space Complexity of Long-Lived and One-Shot Timestamp Implementations" by Maryam Helmi, Lisa Higham, Eduardo Pacheco and Philipp Woelfel. The PODC 2011 Best Student Paper Award has been delivered to the paper "Distributed Deterministic Edge Coloring using Bounded Neighborhood Independence" by Leonid Barenboim and Michael Elkin.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0719-2},
+ location = {San Jose, California, USA},
+ note = {536110},
+ publisher = {ACM},
+ title = {PODC '11: Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Pettarin:2011:TBI:1993806.1993882,
+ abstract = {Motivated by the growing interest in mobile systems, we study the dynamics of information dissemination between agents moving independently on a plane. Formally, we consider k mobile agents performing independent random walks on an n-node grid. At time 0, each agent is located at a random node of the grid and one agent has a rumor. The spread of the rumor is governed by a dynamic communication graph process {Gt(r)|t ≥ 0}, where two agents are connected by an edge in Gt(r) iff their distance at time t is within their transmission radius r. Modeling the physical reality that the speed of radio transmission is much faster than the motion of the agents, we assume that the rumor can travel throughout a connected component of Gt before the graph is altered by the motion. We study the broadcast time TB of the system, which is the time it takes for all agents to know the rumor. We focus on the sparse case (below the percolation point rc ≈ √n/k) where, with high probability, no connected component in Gt has more than a logarithmic number of agents and the broadcast time is dominated by the time it takes for many independent random walks to meet one other. Quite surprisingly, we show that for a system below the percolation point, the broadcast time does not depend on the transmission radius. In fact, we prove that TB = Θ(n/√k) for any 0 ≤ r < rc, even when the transmission range is significantly larger than the mobility range in one step, giving a tight characterization up to logarithmic factors. Our result complements a recent result of Peres et al. (SODA 2011) who showed that above the percolation point the broadcast time is polylogarithmic in k.},
+ acmid = {1993882},
+ address = {New York, NY, USA},
+ author = {Pettarin, Alberto and Pietracaprina, Andrea and Pucci, Geppino and Upfal, Eli},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993882},
+ isbn = {978-1-4503-0719-2},
+ keyword = {broadcast, information dissemination, mobile networks, multiple random walks},
+ link = {http://doi.acm.org/10.1145/1993806.1993882},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {355--362},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Tight Bounds on Information Dissemination in Sparse Mobile Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Korman:2011:TML:1993806.1993814,
+ abstract = {Numerous sophisticated local algorithm were suggested in the literature for various fundamental problems. Notable examples are the MIS and (Δ+1)-coloring algorithms by Barenboim and Elkin [6], by Kuhn [22], and by Panconesi and Srinivasan [33], as well as the OΔ2-coloring algorithm by Linial [27]. Unfortunately, most known local algorithms (including, in particular, the aforementioned algorithms) are non-uniform, that is, they assume that all nodes know good estimations of one or more global parameters of the network, e.g., the maximum degree Δ or the number of nodes n. This paper provides a rather general method for transforming a non-uniform local algorithm into a uniform one. Furthermore, the resulting algorithm enjoys the same asymptotic running time as the original non-uniform algorithm. Our method applies to a wide family of both deterministic and randomized algorithms. Specifically, it applies to almost all of the state of the art non-uniform algorithms regarding MIS and Maximal Matching, as well as to many results concerning the coloring problem. (In particular, it applies to all aforementioned algorithms.) To obtain our transformations we introduce a new distributed tool called pruning algorithms, which we believe may be of independent interest.},
+ acmid = {1993814},
+ address = {New York, NY, USA},
+ author = {Korman, Amos and Sereni, Jean-S{\'e}bastien and Viennot, Laurent},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993814},
+ isbn = {978-1-4503-0719-2},
+ keyword = {coloring, distributed algorithm, global knowledge, maximal matching, mis, parameters},
+ link = {http://doi.acm.org/10.1145/1993806.1993814},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {49--58},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Toward More Localized Local Algorithms: Removing Assumptions Concerning Global Knowledge},
+ year = {2011}
+}
+
+
+@inproceedings{Golab:2011:ACP:1993806.1993834,
+ abstract = {Motivated by the increasing popularity of eventually consistent key-value stores as a commercial service, we address two important problems related to the consistency properties in a history of operations on a read/write register (i.e., the start time, finish time, argument, and response of every operation). First, we consider how to detect a consistency violation as soon as one happens. To this end, we formulate a specification for online verification algorithms, and we present such algorithms for several well-known consistency properties. Second, we consider how to quantify the severity of the violations, if a history is found to contain consistency violations. We investigate two quantities: one is the staleness of the reads, and the other is the commonality of violations. For staleness, we further consider time-based staleness and operation-count-based staleness. We present efficient algorithms that compute these quantities. We believe that addressing these problems helps both key-value store providers and users adopt data consistency as an important aspect of key-value store offerings.},
+ acmid = {1993834},
+ address = {New York, NY, USA},
+ author = {Golab, Wojciech and Li, Xiaozhou and Shah, Mehul A.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993834},
+ isbn = {978-1-4503-0719-2},
+ keyword = {atomicity, consistency, key-value store},
+ link = {http://doi.acm.org/10.1145/1993806.1993834},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {197--206},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Analyzing Consistency Properties for Fun and Profit},
+ year = {2011}
+}
+
+
+@inproceedings{Pandurangan:2011:XLS:1993806.1993865,
+ abstract = {We consider the problem of self-healing in reconfigurable networks (e.g. peer-to-peer and wireless mesh networks) that are under repeated attack by an omniscient adversary and propose a fully distributed algorithm, Xheal, that maintains good expansion and spectral properties of the network, also keeping the network connected. Moreover, Xheal does this while allowing only low stretch and degree increase per node. The algorithm heals global properties like expansion and stretch while only doing local changes and using only local information. We use a model similar to that used in recent work on self-healing. In our model, over a sequence of rounds, an adversary either inserts a node with arbitrary connections or deletes an arbitrary node from the network. The network responds by quick "repairs," which consist of adding or deleting edges in an efficient localized manner. These repairs preserve the edge expansion, spectral gap, and network stretch, after adversarial deletions, without increasing node degrees by too much, in the following sense. At any point in the algorithm, the expansion of the graph will be either 'better' than the expansion of the graph formed by considering only the adversarial insertions (not the adversarial deletions) or the expansion will be, at least, a constant. Also, the stretch i.e. the distance between any pair of nodes in the healed graph is no more than a O(log n) factor. Similarly, at any point, a node v whose degree would have been d in the graph with adversarial insertions only, will have degree at most O(κ d) in the actual graph, for a small parameter κ. We also provide bounds on the second smallest eigenvalue of the Laplacian which captures key properties such as mixing time, conductance, congestion in routing etc. Our distributed data structure has low amortized latency and bandwidth requirements. Our work improves over the self-healing algorithms Forgiving tree [PODC 2008] and Forgiving graph [PODC 2009] in that we are able to give guarantees on degree and stretch, while at the same time preserving the expansion and spectral properties of the network.},
+ acmid = {1993865},
+ address = {New York, NY, USA},
+ author = {Pandurangan, Gopal and Trehan, Amitabh},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993865},
+ isbn = {978-1-4503-0719-2},
+ keyword = {distributed, expanders, expansion, local, randomized, reconfiguration, self-healing, spectral properties},
+ link = {http://doi.acm.org/10.1145/1993806.1993865},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {301--310},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Xheal: Localized Self-healing Using Expanders},
+ year = {2011}
+}
+
+
+@inproceedings{Haeupler:2011:FID:1993806.1993885,
+ abstract = {We use network coding to improve the speed of distributed computation in the dynamic network model of Kuhn, Lynch and Oshman [STOC '10]. In this model an adversary adaptively chooses a new network topology in every round, making even basic distributed computations challenging. Kuhn et al. show that n nodes, each starting with a d-bit token, can broadcast them to all nodes in time O(n2) using b-bit messages, where b > d + log n. Their algorithms take the natural approach of token forwarding: in every round each node broadcasts some particular token it knows. They prove matching Ω(n2) lower bounds for a natural class of token forwarding algorithms and an Ω(n log n) lower bound that applies to all token-forwarding algorithms. We use network coding, transmitting random linear combinations of tokens, to break both lower bounds. Our algorithm's performance is quadratic in the message size b, broadcasting the n tokens in roughly d/b2 * n2 rounds. For b = d = Θ(log n) our algorithms use O(n2/log n) rounds, breaking the first lower bound, while for larger message sizes we obtain linear-time algorithms. We also consider networks that change only every T rounds, and achieve an additional factor T2 speedup. This contrasts with related lower and upper bounds of Kuhn et al. implying that for natural token-forwarding algorithms a speedup of T, but not more, can be obtained. Lastly, we give a general way to derandomize random linear network coding, that also leads to new deterministic information dissemination algorithms.},
+ acmid = {1993885},
+ address = {New York, NY, USA},
+ author = {Haeupler, Bernhard and Karger, David},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993885},
+ isbn = {978-1-4503-0719-2},
+ keyword = {dynamic networks, gossip, multicast, network coding},
+ link = {http://doi.acm.org/10.1145/1993806.1993885},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {381--390},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Faster Information Dissemination in Dynamic Networks via Network Coding},
+ year = {2011}
+}
+
+
+@inproceedings{Barenboim:2011:DDE:1993806.1993825,
+ abstract = {We study the edge-coloring problem in the message-passing model of distributed computing. This is one of the most fundamental problems in this area. Currently, the best-known deterministic algorithms for (2Δ-1)-edge-coloring requires O(Δ) + log* n time [23], where Δ is the maximum degree of the input graph. Also, recent results of [5] for vertex-coloring imply that one can get an O(Δ)-edge-coloring in O(Δµ" log n) time, and an O(Δ1 + µ)-edge-coloring in O(log Δ log n) time, for an arbitrarily small constant µ > 0. In this paper we devise a significantly faster deterministic edge-coloring algorithm. Specifically, our algorithm computes an O(Δ)-edge-coloring in O(Δµ) + log* n time, and an O(Δ1 + µ)-edge-coloring in O(log Δ) + log* n time. This result improves the state-of-the-art running time for deterministic edge-coloring with this number of colors in almost the entire range of maximum degree Δ. Moreover, it improves it exponentially in a wide range of Δ, specifically, for 2©(log* n) ≤ Δ ≤ polylog(n). In addition, for small values of Δ (up to log1 - ? n, for some fixed Δ > 0) our deterministic algorithm outperforms all the existing randomized algorithms for this problem. On our way to these results we study the vertex-coloring problem on graphs with bounded neighborhood independence. This is a large family of graphs, which strictly includes line graphs of r-hypergraphs (i.e., hypergraphs in which each hyperedge contains r or less vertices) for r = O(1), and graphs of bounded growth. We devise a very fast deterministic algorithm for vertex-coloring graphs with bounded neighborhood independence. This algorithm directly gives rise to our edge-coloring algorithms, which apply to general graphs. Our main technical contribution is a subroutine that computes an O(Δ/p)-defective p-vertex coloring of graphs with bounded neighborhood independence in O(p2) + log* n time, for a parameter p, 1 d p d Δ. In all previous efficient distributed routines for m-defective p-coloring the product m Å p is super-linear in Δ. In our routine this product is linear in Δ, and this enables us to speed up the coloring drastically.},
+ acmid = {1993825},
+ address = {New York, NY, USA},
+ author = {Barenboim, Leonid and Elkin, Michael},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993825},
+ isbn = {978-1-4503-0719-2},
+ keyword = {defective-coloring, legal-coloring, line-graphs},
+ link = {http://doi.acm.org/10.1145/1993806.1993825},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {129--138},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Distributed Deterministic Edge Coloring Using Bounded Neighborhood Independence},
+ year = {2011}
+}
+
+
+@inproceedings{Konjevod:2011:RCR:1993806.1993879,
+ abstract = {We study the compact routing problem in networks whose shortest path metrics are decomposable. Decomposable metrics are more general than doubling metrics, growth-bounded metrics, and metrics induced by graphs excluding Kr,r as a minor. In this work, we present both name-dependent and name-independent constant stretch compact routing schemes for bounded decomposable metrics with polylogarithmic storage requirements at each node and polylogarithmic packet headers. Our work is the first to design compact routing schemes with constant stretch for networks as general as decomposable metrics.},
+ acmid = {1993879},
+ address = {New York, NY, USA},
+ author = {Konjevod, Goran and Richa, Andr{\'e}a W. and Xia, Donglin and Zhou, Ling},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993879},
+ isbn = {978-1-4503-0719-2},
+ keyword = {compact routing, decomposable metrics, randomized algorithms},
+ link = {http://doi.acm.org/10.1145/1993806.1993879},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {351--352},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Randomized Compact Routing in Decomposable Metrics},
+ year = {2011}
+}
+
+
+@inproceedings{Payer:2011:SVS:1993806.1993869,
+ abstract = {Maintaining data structure semantics of concurrent queues such as first-in first-out (FIFO) ordering requires expensive synchronization mechanisms which limit scalability. However, deviating from the original semantics of a given data structure may allow for a higher degree of scalability and yet be tolerated by many concurrent applications. We introduce the notion of a k-FIFO queue which may be out of FIFO order up to a constant k (called semantical deviation). Implementations of k-FIFO queues may be distributed and therefore be accessed unsynchronized while still being starvation-free. We show that k-FIFO queues whose implementations are based on state-of-the-art FIFO queues, which typically do not scale under high contention, provide scalability. Moreover, probabilistic versions of k-FIFO queues improve scalability further but only bound semantical deviation with high probability.},
+ acmid = {1993869},
+ address = {New York, NY, USA},
+ author = {Payer, Hannes and Roeck, Harald and Kirsch, Christoph M. and Sokolova, Ana},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993869},
+ isbn = {978-1-4503-0719-2},
+ keyword = {concurrent data-structures, multiprocessors, synchronization},
+ link = {http://doi.acm.org/10.1145/1993806.1993869},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {331--332},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Scalability Versus Semantics of Concurrent FIFO Queues},
+ year = {2011}
+}
+
+
+@inproceedings{Park:2011:GMC:1993806.1993862,
+ abstract = {In the multiple choice balls into bins problem, each ball is placed into the least loaded one out of d bins chosen independently and uniformly at random (i.u.r.}). It is known that the maximum load after n balls are placed into n bins is ln ln n/ln d + O(1). In this paper, we consider a variation of the standard multiple choice process. For k<d, we place k balls at a time into k least loaded bins among d possible locations chosen i.u.r. We provide the maximum load in terms of k, d and n. The maximum load in the standard multiple choice problem can be derived from our general formulation as a special case with k=1. More interestingly, our result indicates that, for any d ≤ (ln n)Θ(1) and k < d, the maximum load is still O(ln ln n). Our allocation scheme can be employed as optimal file replication and data partition policies in distributed file systems and databases. When a new file is created, k copies/fragments of the file are stored into k least loaded among d randomly chosen servers, where k is a tunable parameter that may depend on the level of load balance, file availability, fault tolerance, and popularity or size of a file.},
+ acmid = {1993862},
+ address = {New York, NY, USA},
+ author = {Park, Gahyun},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993862},
+ isbn = {978-1-4503-0719-2},
+ keyword = {load balance, multiple choice},
+ link = {http://doi.acm.org/10.1145/1993806.1993862},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {297--298},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {A Generalization of Multiple Choice Balls-into-bins},
+ year = {2011}
+}
+
+
+@inproceedings{Moscibroda:2011:RME:1993806.1993817,
+ abstract = {We study the behavior of mutual exclusion algorithms in the presence of unreliable shared memory subject to transient memory faults. It is well-known that classical 2-process mutual exclusion algorithms, such as Dekker and Peterson's algorithms, are not fault-tolerant; in this paper we ask what degree of fault tolerance can be achieved using the same restricted resources as Dekker and Peterson's algorithms, namely, three binary read/write registers. We show that if one memory fault can occur, it is not possible to guarantee both mutual exclusion and deadlock-freedom using three binary registers; this holds in general when fewer than 2f+1 binary registers are used and f may be faulty. Hence we focus on algorithms that guarantee (a) mutual exclusion and starvation-freedom in fault-free executions, and (b) only mutual exclusion in faulty executions. We show that using only three binary registers it is possible to design an 2-process mutual exclusion algorithm which tolerates a single memory fault in this manner. Further, by replacing one read/write register with a test&set register, we can guarantee mutual exclusion in executions where one variable experiences unboundedly many faults. In the more general setting where up to f registers may be faulty, we show that it is not possible to guarantee mutual exclusion using 2f + 1 binary read/write registers if each faulty register can exhibit unboundedly many faults. On the positive side, we show that an n-variable single-fault tolerant algorithm satisfying certain conditions can be transformed into an ((n-1)f + 1)-variable f-fault tolerant algorithm with the same progress guarantee as the original. In combination with our three-variable algorithm, this implies that there is a (2f+1)-variable mutual exclusion algorithm tolerating a single fault in up to f variables without violating mutual exclusion.},
+ acmid = {1993817},
+ address = {New York, NY, USA},
+ author = {Moscibroda, Thomas and Oshman, Rotem},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993817},
+ isbn = {978-1-4503-0719-2},
+ keyword = {fault tolerance, mutual exclusion, transient memory faults},
+ link = {http://doi.acm.org/10.1145/1993806.1993817},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {69--78},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Resilience of Mutual Exclusion Algorithms to Transient Memory Faults},
+ year = {2011}
+}
+
+
+@inproceedings{Kothapalli:2011:DGC:1993806.1993812,
+ abstract = {This paper considers the question of how many colors a distributed graph coloring algorithm would need to use if it had only k rounds available, for any positive integer k. In our main result, we present an algorithm that runs in O(k) rounds for any k bounded below by ©(log log n) and bounded above by O(√log n), and uses O(a Å n1/k) colors to color a graph with arboricity a. This result is optimal since the palette size matches the lower bound of Barenboim and Elkin (PODC 2008). This result is achieved via the use of several new results developed in this paper on coloring graphs whose edges have been acyclically oriented. For example, suppose that G is an n-vertex, acyclically oriented graph with maximum out-degree Δo. We present an algorithm that, for any k ≥ 2 loglog n, runs in O(k) rounds on G to produce an (i) O(Δo)-coloring when Δo Δ ©(maxkn2/k2log1+1/k n, 2k) and an (ii) O(Δo Å n2/k2)-coloring when Δo ∈ Ω(maxk log1+1/k n, 2k). These results are useful in any setting where it is possible to efficiently compute acyclic orientations of a graph with Δo << Δ. We derive non-trivial bounds on the palette size even when k < 2 loglog n. Our main technical contributions can be summarized as: (i) developing a k-round version of the algorithm of Kothapalli et al. (IPDPS 2006) which computes an O(?)-coloring of a graph in O(√log n) rounds, and (ii) developing an oriented version of the Brooks-Vizing coloring result of Grable and Panconesi (SODA 1998).},
+ acmid = {1993812},
+ address = {New York, NY, USA},
+ author = {Kothapalli, Kishore and Pemmaraju, Sriram},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993812},
+ isbn = {978-1-4503-0719-2},
+ keyword = {distributed algorithms, graph coloring, oriented graphs, symmetry breaking},
+ link = {http://doi.acm.org/10.1145/1993806.1993812},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {31--40},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Distributed Graph Coloring in a Few Rounds},
+ year = {2011}
+}
+
+
+@inproceedings{Dragojevic:2011:PHT:1993806.1993821,
+ abstract = {Dynamic memory management is a significant source of complexity in the design and implementation of practical concurrent data structures. We study how hardware transactional memory (HTM) can be used to simplify and streamline memory reclamation for such data structures. We propose and evaluate several new HTM-based algorithms for the "Dynamic Collect" problem that lies at the heart of many modern memory management algorithms. We demonstrate that HTM enables simpler and faster solutions, with better memory reclamation properties, than prior approaches. Despite recent theoretical arguments that HTM provides no worst-case advantages, our results support the claim that HTM can provide significantly better common-case performance, as well as reduced conceptual complexity.},
+ acmid = {1993821},
+ address = {New York, NY, USA},
+ author = {Dragojevi\'{c}, Aleksandar and Herlihy, Maurice and Lev, Yossi and Moir, Mark},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993821},
+ isbn = {978-1-4503-0719-2},
+ keyword = {hardware, memory management, synchronization, transactional memory},
+ link = {http://doi.acm.org/10.1145/1993806.1993821},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {99--108},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {On the Power of Hardware Transactional Memory to Simplify Memory Management},
+ year = {2011}
+}
+
+
+@inproceedings{Holzer:2011:IDM:1993806.1993842,
+ abstract = {This article presents an algorithm for detecting and disseminating information in a single-hop multi-channel wireless network: k arbitrary nodes have information they want to share with the entire network. Neither the nodes that have information nor the number k of these nodes are known initially. This communication primitive lies between the two other fundamental primitives regarding information dissemination: broadcasting (one-to-all communication) and gossiping (total information exchange). The time complexity of the algorithm is linear in the number of information items and thus asymptotically optimal with respect to time. The algorithm does not require collision detection and thanks to using several channels the lower bound of Ω(k+log n) established for single-channel communication can be broken.},
+ acmid = {1993842},
+ address = {New York, NY, USA},
+ author = {Holzer, Stephan S. and Pignolet, Yvonne Anne and Smula, Jasmin and Wattenhofer, Roger},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993842},
+ isbn = {978-1-4503-0719-2},
+ keyword = {information dissemination, multiple channels, no collision detection, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/1993806.1993842},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {219--220},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Information Dissemination on Multiple Channels},
+ year = {2011}
+}
+
+
+@inproceedings{Mozo:2011:BDQ:1993806.1993841,
+ abstract = {In this brief announcement we propose B-Neck, a max-min fair distributed algorithm that is also quiescent. As far as we know, B-Neck is the first max-min fair distributed algorithm that does not require a continuous injection of control traffic to compute the rates. When changes occur, affected sessions are asynchronously informed, so they can start the process of computing their new rate (i.e., sessions do not need to poll the network for changes). The correctness of B-Neck is formally proved, and extensive simulations are conducted. In them it is shown that B-Neck converges relatively fast and behaves nicely in presence of sessions arriving and departing.},
+ acmid = {1993841},
+ address = {New York, NY, USA},
+ author = {Mozo, Alberto and L\'{o}pez-Presa, Jose Luis and Fern\'{a}ndez Anta, Antonio},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993841},
+ isbn = {978-1-4503-0719-2},
+ keyword = {distributed algorithms, max-min fairness, quiescence},
+ link = {http://doi.acm.org/10.1145/1993806.1993841},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {217--218},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {B-neck: A Distributed and Quiescent Max-min Fair Algorithm},
+ year = {2011}
+}
+
+
+@inproceedings{Dobre:2011:CRA:1993806.1993816,
+ abstract = {We study the time-complexity of robust atomic read/write storage from fault-prone storage components in asynchronous message-passing systems. Robustness here means wait-free tolerating the largest possible number t of Byzantine storage component failures (optimal resilience) without relying on data authentication. We show that no single-writer multiple-reader (SWMR) robust atomic storage implementation exists if (a) read operations complete in less than four communication round-trips (rounds), and (b) the time complexity of write operations is constant. More precisely, we present two lower bounds. The first is a read lower bound stating that three rounds of communication are necessary to read from a SWMR robust atomic storage. The second is a write lower bound, showing that Ω(log(t)) write rounds are necessary to read in three rounds from such a storage. Applied to known results, our lower bounds close a fundamental gap: we show that time-optimal robust atomic storage can be obtained using well-known transformations from regular to atomic storage and existing time-optimal regular storage implementations.},
+ acmid = {1993816},
+ address = {New York, NY, USA},
+ author = {Dobre, Dan and Guerraoui, Rachid and Majuntke, Matthias and Suri, Neeraj and Vukoli\'{c}, Marko},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993816},
+ isbn = {978-1-4503-0719-2},
+ keyword = {lower bounds},
+ link = {http://doi.acm.org/10.1145/1993806.1993816},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {59--68},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Complexity of Robust Atomic Storage},
+ year = {2011}
+}
+
+
+@inproceedings{Zhu:2011:SPC:1993806.1993867,
+ abstract = {Peer-to-peer (P2P) communication in networks for file distribution and other applications is a powerful multiplier of network utility, due to its ability to exploit parallelism in a distributed way. As new variations are engineered, to provide less impact on service providers and to provide better quality of service, it is important to have a theoretical underpinning, to weigh the effectiveness of various methods for enhancing the service. This paper focuses on the stationary portion of file download in an unstructured P2P network, which typically follows for many hours after a flash crowd initiation. The contribution of the paper is to identify how much help is needed from the seeds, either fixed seeds or peers dwelling in the system after obtaining the complete file, to stabilize the system. It is shown that dominant cause for instability is the missing piece syndrome, whereby one piece becomes very rare in the network. It is shown that very little dwell time is necessary--even if there is very little help from a fixed seed, peers need to dwell on average no longer than it takes to upload one additional piece, after they have obtained a complete collection.},
+ acmid = {1993867},
+ address = {New York, NY, USA},
+ author = {Zhu, Ji and Hajek, Bruce},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993867},
+ isbn = {978-1-4503-0719-2},
+ keyword = {branching process, foster-lyapunov stability, markov process, missing piece syndrome, peer to peer, random peer contact, random useful piece upload},
+ link = {http://doi.acm.org/10.1145/1993806.1993867},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {321--330},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Stability of a Peer-to-peer Communication System},
+ year = {2011}
+}
+
+
+@inproceedings{Viry:2011:PDP:1993806.1993875,
+ abstract = {We describe an extension of the Java language with parallel programming primitives inspired by pi-calculus and outline the advantages compared to other parallel programming approaches.},
+ acmid = {1993875},
+ address = {New York, NY, USA},
+ author = {Viry, Patrick},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993875},
+ isbn = {978-1-4503-0719-2},
+ keyword = {language extensions, parallelism},
+ link = {http://doi.acm.org/10.1145/1993806.1993875},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {343--344},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Parallel and Distributed Programming Extensions for Mainstream Languages Based on Pi-calculus},
+ year = {2011}
+}
+
+
+@inproceedings{Radeva:2011:PRA:1993806.1993880,
+ abstract = {Partial Reversal (PR) is a link reversal algorithm which ensures that an initially directed acyclic graph (DAG) is eventually a destination-oriented DAG. While proofs exist to establish the acyclicity property of PR, they rely on assigning labels to either the nodes or the edges in the graph. In this work we show that such labeling is not necessary and outline a simpler direct proof of the acyclicity property.},
+ acmid = {1993880},
+ address = {New York, NY, USA},
+ author = {Radeva, Tsvetomira and Lynch, Nancy},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993880},
+ isbn = {978-1-4503-0719-2},
+ keyword = {graph algorithms, link reversal, partial reversal},
+ link = {http://doi.acm.org/10.1145/1993806.1993880},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {353--354},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Partial Reversal Acyclicity},
+ year = {2011}
+}
+
+
+@inproceedings{Avin:2011:OOI:1993806.1993883,
+ abstract = {In this paper we study gossip based information spreading with bounded message sizes. We use algebraic gossip to disseminate k distinct messages to all n nodes in a network. For arbitrary networks we provide a new upper bound for uniform algebraic gossip of O((k + log n + D)Δ) rounds with high probability, where D and Δ are the diameter and the maximum degree in the network, respectively. For many topologies and selections of k this bound improves previous results, in particular, for graphs with a constant maximum degree it implies that uniform gossip is order optimal and the stopping time is Θ(k + D). To eliminate the factor of Δ from the upper bound we propose a non-uniform gossip protocol, TAG, which is based on algebraic gossip and an arbitrary spanning tree protocol S. The stopping time of TAG is O(k+ log n + d(S) + t(S)), where t(S) is the stopping time of the spanning tree protocol, and d(S) is the diameter of the spanning tree. We provide two general cases in which this bound leads to an order optimal protocol. The first is for k=Ω(n), where, using a simple gossip broadcast protocol that creates a spanning tree in at most linear time, we show that TAG finishes after Θ(n) rounds for any graph. The second uses a sophisticated, recent gossip protocol to build a fast spanning tree on graphs with large weak conductance. In turn, this leads to the optimally of TAG on these graphs for k=Ω(polylog(n)). The technique used in our proofs relies on queuing theory, which is an interesting approach that can be useful in future gossip analysis.},
+ acmid = {1993883},
+ address = {New York, NY, USA},
+ author = {Avin, Chen and Borokhovich, Michael and Censor-Hillel, Keren and Lotker, Zvi},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993883},
+ isbn = {978-1-4503-0719-2},
+ keyword = {algebraic gossip, gossip, network coding, tight bounds},
+ link = {http://doi.acm.org/10.1145/1993806.1993883},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {363--372},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Order Optimal Information Spreading Using Algebraic Gossip},
+ year = {2011}
+}
+
+
+@inproceedings{Lenzen:2011:MT:1993806.1993813,
+ abstract = {A maximal independent set on a graph is an inclusion-maximal set of mutually non-adjacent nodes. This basic symmetry breaking structure is vital for many distributed algorithms, which by now has been fueling the search for fast local algorithms to find such sets over several decades. In this paper, we present a solution with randomized running time O(√log n log log n) on trees, improving roughly quadratically on the state-of-the-art bound. Our algorithm is uniform and nodes need to exchange merely O(log n) many bits with high probability. In contrast to previous techniques achieving sublogarithmic running times, our approach does not rely on any bound on the number of independent neighbors (possibly with regard to an orientation of the edges).},
+ acmid = {1993813},
+ address = {New York, NY, USA},
+ author = {Lenzen, Christoph and Wattenhofer, Roger},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993813},
+ isbn = {978-1-4503-0719-2},
+ keyword = {asymptotic analysis, maximal independent set, optimal bit complexity, symmetry breaking},
+ link = {http://doi.acm.org/10.1145/1993806.1993813},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {41--48},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {MIS on Trees},
+ year = {2011}
+}
+
+
+@inproceedings{Baldoni:2011:VBR:1993806.1993845,
+ abstract = {This paper studies the problem of building a byzantine fault tolerant storage service in a distributed system affected by servers join and leave (i.e., servers churn). We show a bound for ensuring both validity of read operations and the persistence of a value written by a write operation. This bound correlates the churn rate, the number of faulty processes and the time taken by register operations (i.e., join, read and write operations).},
+ acmid = {1993845},
+ address = {New York, NY, USA},
+ author = {Baldoni, Roberto and Bonomi, Silvia and Soltani Nezhad, Amir},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993845},
+ isbn = {978-1-4503-0719-2},
+ keyword = {byzantine failure, churn, dynamic distributed systems, regular register},
+ link = {http://doi.acm.org/10.1145/1993806.1993845},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {225--226},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Validity Bound of Regular Registers with Churn and Byzantine Processes},
+ year = {2011}
+}
+
+
+@inproceedings{Imbs:2011:USB:1993806.1993857,
+ abstract = {This brief announcement introduces the family of generalized symmetry breaking (GSB) tasks, that includes election, renaming and many other symmetry breaking tasks. Differently from agreement tasks, a GSB task is "inputless", in the sense that processes do not propose values; the task specifies only the symmetry breaking requirement, independently of the system's initial state (where processes differ only on their identifiers). Among various results characterizing the family of GSB tasks, it is shown that (non adaptive) perfect renaming is universal for all GSB tasks.},
+ acmid = {1993857},
+ address = {New York, NY, USA},
+ author = {Imbs, Damien and Rajsbaum, Sergio and Raynal, Michel},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993857},
+ isbn = {978-1-4503-0719-2},
+ keyword = {agreement, coordination, decision task, disagreement, distributed computability, election, renaming, symmetry breaking, universal construction, wait-freedom},
+ link = {http://doi.acm.org/10.1145/1993806.1993857},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {287--288},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Universe of Symmetry Breaking Tasks},
+ year = {2011}
+}
+
+
+@inproceedings{Basescu:2011:RDS:1993806.1993843,
+ abstract = {A key-value store (KVS) offers functions for storing and retrieving values associated with unique keys. KVSs have become widely used as shared storage solutions for Internet-scale distributed applications. We present a fault-tolerant wait-free efficient algorithm that emulates a multi-reader multi-writer register from a set of KVS replicas in an asynchronous environment. Our implementation serves an unbounded number of clients that use the storage. It tolerates crashes of a minority of the KVSs and crashes of any number of clients. We provide two variants of our algorithm: one implementing an atomic register and one implementing a regular register; the latter does not require read operations to store data at the underlying KVSs. We note that applying state-of-the-art reliable storage solutions to this scenario is either impossible or prohibitively inefficient.},
+ acmid = {1993843},
+ address = {New York, NY, USA},
+ author = {Basescu, Cristina and Cachin, Christian and Eyal, Ittay and Haas, Robert and Vukolic, Marko},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993843},
+ isbn = {978-1-4503-0719-2},
+ keyword = {cloud storage, distributed storage},
+ link = {http://doi.acm.org/10.1145/1993806.1993843},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {221--222},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Robust Data Sharing with Key-value Stores},
+ year = {2011}
+}
+
+
+@inproceedings{Garay:2011:ASB:1993806.1993832,
+ abstract = {We consider the classical problem of synchronous broadcast with dishonest majority, when a public-key infrastructure and digital signatures are available. In a surprising result, Hirt and Zikas (Eurocrypt 2010) recently observed that all existing protocols for this task are insecure against an adaptive adversary who can choose which parties to corrupt as the protocol progresses. Moreover, they prove an impossibility result for adaptively secure broadcast in their setting. We argue that the communication model adopted by Hirt and Zikas is unrealistically pessimistic. We revisit the problem of adaptively secure broadcast in a more natural synchronous model (with rushing), and show that broadcast is possible in this setting for an arbitrary number of corruptions. Our positive result holds under a strong, simulation-based definition in the universal-composability framework. We also study the impact of adaptive attacks on protocols for secure multi-party computation where broadcast is used as a sub-routine.},
+ acmid = {1993832},
+ address = {New York, NY, USA},
+ author = {Garay, Juan A. and Katz, Jonathan and Kumaresan, Ranjit and Zhou, Hong-Sheng},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993832},
+ isbn = {978-1-4503-0719-2},
+ keyword = {adaptive security, broadcast, cryptographic protocols, fault-tolerant distributed computing},
+ link = {http://doi.acm.org/10.1145/1993806.1993832},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {179--186},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Adaptively Secure Broadcast, Revisited},
+ year = {2011}
+}
+
+
+@inproceedings{King:2011:CCC:1993806.1993855,
+ abstract = {Imagine that Alice wants to send a message m to Bob, and that Carol wants to prevent this. Assume there is a communication channel between Alice and Bob, but that Carol is capable of blocking this channel. Furthermore, there is a cost of S dollars to send on the channel, L dollars to listen on the channel and J to block the channel. How much will Alice and Bob need to spend in order to guarantee transmission of m? This problem abstracts many types of conflict in information networks including: jamming attacks in wireless networks and distributed denial-of-service (DDoS) attacks on the Internet, where the costs to Alice, Bob and Carol represent an expenditure of energy or network resources. The problem allows us to quantitatively analyze the economics of information exchange in an adversarial setting and ask: Is communication cheaper than censorship? We answer this question in the affirmative by showing that it is significantly more costly for Carol to block communication of m than for Alice to communicate it to Bob. Specifically, if S, L and J are fixed constants, and Carol spends a total of B dollars trying to block m, then Alice and Bob must spend only O(Bφ - 1 + 1)=O(B.62+1) dollars in expectation to transmit m, where φ = (1 + √5)/2 is the golden ratio. Surprisingly, this result holds even if (1) B is unknown to both Alice and Bob; (2) Carol knows the algorithms of Alice and Bob, but not their random bits; and (3) Carol has total knowledge of past actions of both players. Finally, we apply our work to two problems: (1) DoS attacks in wireless sensor networks and (2) application-level DDoS attacks in a wired client-server scenario. Our applications show how our results can provide an additional tool in mitigating such attacks.},
+ acmid = {1993855},
+ address = {New York, NY, USA},
+ author = {King, Valerie and Saia, Jared and Young, Maxwell},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993855},
+ isbn = {978-1-4503-0719-2},
+ keyword = {byzantine fault tolerance, distributed denial-of-service attacks, energy efficiency, jamming attacks, wireless sensor networks},
+ link = {http://doi.acm.org/10.1145/1993806.1993855},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {277--286},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Conflict on a Communication Channel},
+ year = {2011}
+}
+
+
+@inproceedings{Davtyan:2011:RNS:1993806.1993860,
+ abstract = {Traditional approaches to network supercomputing employ a master process and a large number of potentially undependable worker processes that must perform a collection of tasks on behalf of the master. In such a centralized scheme, the master process is a performance bottleneck and a single point of failure. This work develops an original approach that eliminates the master and instead uses a decentralized algorithm, where each worker is able to determine locally that all tasks have been performed, and to collect locally the results of all tasks. The failure model assumes that the average probability of a worker returning a wrong result is inferior to 1/2. A randomized synchronous algorithm for n processes and n tasks is presented. The algorithm terminates in Θ(log n) rounds, and it is proved that upon termination the workers know the results of all tasks with high probability, and that these results are correct with high probability. The message complexity of the algorithm is Θ(n log n), and the bit complexity is O(n2 log3 n).},
+ acmid = {1993860},
+ address = {New York, NY, USA},
+ author = {Davtyan, Seda and Konwar, Kishori M. and Shvartsman, Alexander A.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993860},
+ isbn = {978-1-4503-0719-2},
+ keyword = {distributed algorithms, fault-tolerance, internet supercomputing, randomized algorithms},
+ link = {http://doi.acm.org/10.1145/1993806.1993860},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {293--294},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Robust Network Supercomputing Without Centralized Control},
+ year = {2011}
+}
+
+
+@inproceedings{Majuntke:2011:FCR:1993806.1993837,
+ abstract = {So far, all implementations providing fork-consistent semantics are based on objects with read-modify-write capabilities (also termed servers). We propose constructions of fork-consistent shared objects from single-writer multiple-reader(SWMR) read/write base registers, that are strictly weaker than servers. Our shared object constructions provide linearizability if all base registers behave correctly, and gracefully degrade to either fork-linearizability or weak fork-linearizability if any number of registers fails Byzantine. We make the following contributions: (a) A fork-linearizable construction of a universal type where operations are allowed to abort under concurrency, and (b) a weak fork-linearizable implementation of a shared memory that ensures wait-freedom when the registers are correct.},
+ acmid = {1993837},
+ address = {New York, NY, USA},
+ author = {Majuntke, Matthias and Dobre, Dan and Suri, Neeraj},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993837},
+ isbn = {978-1-4503-0719-2},
+ keyword = {atomic storage, byzantine, fork-consistency},
+ link = {http://doi.acm.org/10.1145/1993806.1993837},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {209--210},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Fork-consistent Constructions from Registers},
+ year = {2011}
+}
+
+
+@inproceedings{Montresor:2011:DKD:1993806.1993836,
+ abstract = {Among the novel metrics used to study the relative importance of nodes in complex networks, k-core decomposition has found a number of applications in areas as diverse as sociology, proteinomics, graph visualization, and distributed system analysis and design. This paper proposes new distributed algorithms for the computation of the k-core decomposition of a network, with the purpose of (i) enabling the run-time computation of k-cores in "live" distributed systems and (ii) allowing the decomposition, over a set of connected machines, of very large graphs, that cannot be hosted in a single machine. Lower bounds on the algorithms complexity are given, and an exhaustive experimental analysis on real-world graphs is provided.},
+ acmid = {1993836},
+ address = {New York, NY, USA},
+ author = {Montresor, Alberto and De Pellegrini, Francesco and Miorandi, Daniele},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993836},
+ isbn = {978-1-4503-0719-2},
+ keyword = {k-core decomposition},
+ link = {http://doi.acm.org/10.1145/1993806.1993836},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {207--208},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Distributed K-core Decomposition},
+ year = {2011}
+}
+
+
+@inproceedings{Alistarh:2011:OAS:1993806.1993850,
+ abstract = {We give two new randomized algorithms for strong renaming, both of which work against an adaptive adversary in asynchronous shared memory. The first uses repeated sampling over a sequence of arrays of decreasing size to assign unique names to each of n processes with step complexity O(log3 n). The second transforms any sorting network into a strong adaptive renaming protocol, with an expected cost equal to the depth of the sorting network. Using an AKS sorting network, this gives a strong adaptive renaming algorithm with step complexity O(log k), where k is the contention in the current execution. We show this to be optimal based on a classic lower bound of Jayanti. We also show that any such strong renaming protocol can be used to build a monotone-consistent counter with logarithmic step complexity (at the cost of adding a max register) or a linearizable fetch-and-increment register (at the cost of increasing the step complexity by a logarithmic factor).},
+ acmid = {1993850},
+ address = {New York, NY, USA},
+ author = {Alistarh, Dan and Aspnes, James and Censor-Hillel, Keren and Gilbert, Seth and Zadimoghaddam, Morteza},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993850},
+ isbn = {978-1-4503-0719-2},
+ keyword = {adaptive algorithms, distributed computing, lower bounds, renaming, shared memory, sorting networks},
+ link = {http://doi.acm.org/10.1145/1993806.1993850},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {239--248},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Optimal-time Adaptive Strong Renaming, with Applications to Counting},
+ year = {2011}
+}
+
+
+@inproceedings{Koppol:2011:IDT:1993806.1993878,
+ abstract = {We show that existing methods for primary-backup replication may disrupt the timing behavior of an underlying service to the extent of making it unusable. We prove that the problem is inherent to the primary-backup model.},
+ acmid = {1993878},
+ address = {New York, NY, USA},
+ author = {Koppol, Pramod and Namjoshi, Kedar and Stathopoulos, Thanos and Wilfong, Gordon},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993878},
+ isbn = {978-1-4503-0719-2},
+ keyword = {fault-tolerance, knowledge, primary-backup, replication},
+ link = {http://doi.acm.org/10.1145/1993806.1993878},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {349--350},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Inherent Difficulty of Timely Primary-backup Replication},
+ year = {2011}
+}
+
+
+@proceedings{Kowalski:2012:2332432,
+ abstract = {It is our great pleasure to welcome you to the 2012 ACM Symposium on Principles of Distributed Computing -- PODC'12. This year's symposium continues its tradition of being the premier forum for presentation of research results in the area of theoretical distributed computing. During the years PODC has been the stage where many landmark results that have increased our understanding of this exciting and, in the Internet era, fundamental research endeavor have been presented. In the best tradition of theoretical discovery, the insights that have been provided have not only elucidated fundamental conceptual issues but also found their way in the real world of systems and applications. The mission of the symposium remains that of providing a high quality international forum for the timely dissemination and discussion of ideas at the frontier of current knowledge in the area of theoretical distributed computing. The call for papers attracted 142 submissions from the Americas, Asia, and Europe. The program committee met in Rome and accepted 35 papers and 26 brief announcements that cover a wide variety of topics. In addition, this year the program includes an industrial panel where colleagues from leading technological companies will share with us their experience with the challenges presented by real, large-scale distributed systems. The keynote speech will be by David Peleg, whose outstanding research record sets a gold standard for the field. Finally, this year PODC hosts the ceremony for the 2012 Edsger W. Dijkstra Prize.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1450-3},
+ location = {Madeira, Portugal},
+ note = {536120},
+ publisher = {ACM},
+ title = {PODC '12: Proceedings of the 2012 ACM Symposium on Principles of Distributed Computing},
+ year = {2012}
+}
+
+
+@inproceedings{Afek:2011:BUC:1993806.1993823,
+ abstract = {We consider the power of objects in the unbounded concurrency shared memory model, where there is an infinite set of processes and the number of processes active concurrently may increase without bound. By studying this model we obtain new results and observations that are relevant and meaningful to the standard bounded concurrency model. First we resolve an open problem from 2006 and provide, contrary to what was conjectured, an unbounded concurrency wait-free implementation of a swap object from 2-consensus objects. This construction resolves another puzzle that has eluded us for a long time, that of considerably simplifying a 16 year old complicated bounded concurrency swap construction. A further insight to the traditional bounded concurrency model that we obtain by studying the unbounded concurrency model, is a refinement of the top level of the wait-free hierarchy, the class of infinite-consensus number objects. First we resolve an open question of Merritt and Taubenfeld from 2003, showing that having n-consensus objects for all n does not imply consensus under unbounded concurrency. I.e., consensus alone, treated as a black box, cannot be "boosted" in this way. We continue to show an infinite-number consensus object that while able to perform consensus for any n-bounded concurrency (n unknown in advance) cannot solve consensus in the face of unbounded concurrency. This divides the infinite-consensus class of objects into two, those that can solve consensus for unbounded concurrency, and those that cannot.},
+ acmid = {1993823},
+ address = {New York, NY, USA},
+ author = {Afek, Yehuda and Morrison, Adam and Wertheim, Guy},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993823},
+ isbn = {978-1-4503-0719-2},
+ keyword = {Common2, consensus, swap, unbounded concurrency, wait-free},
+ link = {http://doi.acm.org/10.1145/1993806.1993823},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {119--128},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {From Bounded to Unbounded Concurrency Objects and Back},
+ year = {2011}
+}
+
+
+@inproceedings{Liang:2011:EMC:1993806.1993809,
+ abstract = {In this paper, we present an efficient deterministic algorithm for consensus in presence of Byzantine failures. Our algorithm achieves consensus on an L-bit value with communication complexity O(nL + n4L0.5 + n6) bits, in a network consisting of n processors with up to t Byzantine failures, such that t<n/3. For large enough L, communication complexity of the proposed algorithm becomes O(nL) bits, linear in the number of processors. To achieve this goal, the algorithm performs consensus on a long message (L bits), in multiple generations, each generation performing consensus on a part of the input message. The failure-free execution of each generation is made efficient by using a combination of two techniques: error detection coding, and processor clique formation based on matching input values proposed by the processors. By keeping track of faulty behavior over the different generations, the algorithm can ensure that most generations of the algorithm are failure-free. With parameterization, our algorithm is able to achieve a large class of validity conditions for consensus, while maintaining linear communication complexity. With a suitable choice of the error detection code, and using a clique of an appropriate size, the communication cost can be traded off with the strength of the validity condition. The proposed algorithm requires no cryptographic techniques.},
+ acmid = {1993809},
+ address = {New York, NY, USA},
+ author = {Liang, Guanfeng and Vaidya, Nitin},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993809},
+ isbn = {978-1-4503-0719-2},
+ keyword = {byzantine agreement, consensus, distributed computing},
+ link = {http://doi.acm.org/10.1145/1993806.1993809},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {11--20},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Error-free Multi-valued Consensus with Byzantine Failures},
+ year = {2011}
+}
+
+
+@inproceedings{Jaggard:2011:DCR:1993806.1993870,
+ abstract = {We present our recent work (ICS 2011) on dynamic environments in which computational nodes, or decision makers, follow simple and unsophisticated rules of behavior (e.g., repeatedly "best replying" to others' actions, and minimizing "regret") that have been extensively studied in game theory and economics. We aim to understand when convergence of the resulting dynamics to an equilibrium point is guaranteed if nodes' interaction is not synchronized (e.g., as in Internet protocols and large-scale markets). We take the first steps of this research agenda. We exhibit a general non-convergence result and consider its implications across a wide variety of interesting and timely applications: routing, congestion control, game theory, social networks and circuit design. We also consider the relationship between classical nontermination results in distributed computing theory and our result, explore the impact of scheduling on convergence, study the computational and communication complexity of asynchronous dynamics and present some basic observations regarding the effects of asynchrony on no-regret dynamics.},
+ acmid = {1993870},
+ address = {New York, NY, USA},
+ author = {Jaggard, Aaron D. and Schapira, Michael and Wright, Rebecca N.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993870},
+ isbn = {978-1-4503-0719-2},
+ keyword = {adaptive heuristics, convergence, game dynamics, self stabilization},
+ link = {http://doi.acm.org/10.1145/1993806.1993870},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {333--334},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Distributed Computing with Rules of Thumb},
+ year = {2011}
+}
+
+
+@inproceedings{Dolev:2011:RAP:1993806.1993858,
+ abstract = {Players in a game are assumed to be totally rational and absolutely smart. However, in reality all players may act in non-rational ways and may fail to understand and find their best actions. In particular, participants in social interactions, such as lotteries and auctions, cannot be expected to always find by themselves the "best-reply" to any situation. Indeed, agents may consult with others about the possible outcome of their actions. It is then up to the counselee to assure the rationality of the consultant's advice. We present a distributed computer system infrastructure, named rationality authority, that allows safe consultation among (possibly biased) parties. The parties' advices are adapted only after verifying their feasibility and optimality by standard formal proof checkers. The rationality authority design considers computational constraints, as well as privacy and security issues, such as verification methods that do not reveal private preferences. Some of the techniques resembles zero-knowledge proofs. A non-cooperative game is presented by the game inventor along with its (possibly intractable) equilibrium. The game inventor advises playing by this equilibrium and offers a checkable proof for the equilibrium feasibility and optimality. Standard verification procedures, provided by trusted (according to their reputation) verification procedures, are used to verify the proof. Thus, the proposed rationality authority infrastructure facilitates the applications of game theory in several important real-life scenarios by the use of computing systems.},
+ acmid = {1993858},
+ address = {New York, NY, USA},
+ author = {Dolev, Shlomi and Panagopoulou, Panagiota N. and Rabie, Mika\"{e}l and Schiller, Elad M. and Spirakis, Paul G.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993858},
+ isbn = {978-1-4503-0719-2},
+ keyword = {game authority, game theory, privacy, rationality authority},
+ link = {http://doi.acm.org/10.1145/1993806.1993858},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {289--290},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Rationality Authority for Provable Rational Behavior},
+ year = {2011}
+}
+
+
+@inproceedings{Nisan:2011:IDG:1993806.1993871,
+ abstract = {Under many distributed protocols, the prescribed behavior for participants is to behave greedily, i.e., to repeatedly "best respond" to the others' actions. We present recent work (Proc. ICS'11) where we tackle the following general question: "When is it best for a long-sighted participant to adhere to a distributed greedy protocol?". We take a game-theoretic approach and exhibit a class of games where greedy behavior (i.e., repeated best-response) is incentive compatible for all players. We identify several environments of interest that fall within this class, thus establishing the incentive compatibility of the natural distributed greedy protocol for each. These environments include models of the Border Gateway Protocol (BGP) [4], which handles routing on the Internet, and of the Transmission Control Protocol (TCP) [3], and also stable-roommates assignments [2] and cost-sharing [5], which have been extensively studied in economic theory.},
+ acmid = {1993871},
+ address = {New York, NY, USA},
+ author = {Nisan, Noam and Schapira, Michael and Valiant, Gregory and Zohar, Aviv},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993871},
+ isbn = {978-1-4503-0719-2},
+ keyword = {game theory, greedy protocols},
+ link = {http://doi.acm.org/10.1145/1993806.1993871},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {335--336},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Incentive-compatible Distributed Greedy Protocols},
+ year = {2011}
+}
+
+
+@inproceedings{Schindelhauer:2011:NSL:1993806.1993844,
+ abstract = {We consider an anchor-free, relative localization and synchronization problem where a set of n receiver nodes and m wireless signal sources are independently, uniformly, and randomly distributed in a disk in the plane. The signals can be distinguished and their capture times can be measured. At the beginning neither the positions of the signal sources and receivers are known nor the sending moments of the signals. Now each receiver captures each signal after its constant speed journey over the unknown distance between signal source and receiver position. Given these nm capture times the task is to compute the relative distances between all synchronized receivers. In a more generalized setting the receiver nodes have no synchronized clocks and need to be synchronized from the capture times of the stolen signals.},
+ acmid = {1993844},
+ address = {New York, NY, USA},
+ author = {Schindelhauer, Christian and Lotker, Zvi and Wendeberg, Johannes},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993844},
+ isbn = {978-1-4503-0719-2},
+ keyword = {TDOA, localization, synchronization},
+ link = {http://doi.acm.org/10.1145/1993806.1993844},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {223--224},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Network Synchronization and Localization Based on Stolen Signals},
+ year = {2011}
+}
+
+
+@proceedings{Richa:2010:1835698,
+ abstract = {This volume contains 39 regular papers and 48 brief announcements selected for the on Principles of Distributed Computing, held on July 25-28 in Zurich, Switzerland. 179 papers were submitted to the regular papers track, and 57 were submitted to the brief announcements track. The selection of papers was done by the program committee in a meeting that took place in EPFL, Lausanne, on April 9, 2010, following electronic discussions. Richard van de Stadt handled the electronic submissions and discussions with CyberChairPro. This volume also includes abstracts of keynotes by Hagit Attiya, Eric Brewer and Pierre Fraigniaud. The conference also hosted the 60th birthday celebration of Danny Dolev and Eli Gafni, with talks from Hagit Attiya, Yehuda Afek, Amotz Bar-Noy, Idit Keidar, Rachid Guerraoui, Michael Merritt, Sergio Rajsbaum and Nir Shavit. It is expected that many of these papers will appear in more polished form in refereed journals. A selection of papers has been invited to appear in the Journal of the ACM and a special issue of Distributed Computing dedicated to PODC 2010. The program committee decided to share the best paper award between two papers: Deterministic Distributed Vertex Coloring in Polylogarithmic Time by Barenboim and Elkin, and Breaking the O(n2) Bit Barrier: Scalable Byzantine Agreement with an Adaptive Adversary, by Saia and King.},
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-888-9},
+ location = {Zurich, Switzerland},
+ note = {536100},
+ publisher = {ACM},
+ title = {PODC '10: Proceedings of the 29th ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Garg:2011:ABA:1993806.1993840,
+ abstract = {The Byzantine Agreement (BA) problem requires non-faulty processes to agree on a common value. In many applications, it is important that the processes agree on the correct value. In this paper, we present a problem called Accurate Byzantine Agreement with Feedback (ABAF) in which all processes receive common feedback from the environment indicating if the value they agreed upon was correct or not (accuracy). We present an algorithm that solves the ABAF problem based on a standard solution to the BA problem and a multiplicative method to maintain and update process weights indicative of how often they are correct. We make guarantees on the accuracy of the algorithm based on assumptions on the accuracy of the processes and the proportion of faulty and non-faulty processes in the system. For each iteration, if the weight of accurate processes is at least 3/4th the weight of the non-faulty processes, the algorithm always decides on the correct value. When the non-faulty processes are accurate with probability greater than 1/2, the algorithm decides on the correct value with very high probability after some initial number of mistakes. In fact, among n processes, if there exists even one process which is accurate for all iterations, the algorithm is wrong only O(log n) times for any large number of iterations of the algorithm.},
+ acmid = {1993840},
+ address = {New York, NY, USA},
+ author = {Garg, Vijay K. and Bridgman, John and Balasubramanian, Bharath},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993840},
+ isbn = {978-1-4503-0719-2},
+ keyword = {byzantine agreement, multiplicative weight update},
+ link = {http://doi.acm.org/10.1145/1993806.1993840},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {215--216},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Accurate Byzantine Agreement with Feedback},
+ year = {2011}
+}
+
+
+@inproceedings{Biely:2011:EIP:1993806.1993846,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1993846},
+ address = {New York, NY, USA},
+ author = {Biely, Martin and Robinson, Peter and Schmid, Ulrich},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993846},
+ isbn = {978-1-4503-0719-2},
+ keyword = {asynchonous system, failure detectors, impossibility, k-set agreement},
+ link = {http://doi.acm.org/10.1145/1993806.1993846},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {227--228},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Easy Impossibility Proofs for K-set Agreement in Message Passing Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Khabbazian:2011:TRM:1993806.1993884,
+ abstract = {Multiple-message broadcast, or k-broadcast, is one of the fundamental problems in network communication. In short, there are k packets distributed across the network, each of them has to be delivered to all other nodes. We consider this task in the model of multi-hop radio network, in which n nodes interact by transmitting and receiving messages. A message transmitted at a round reaches all neighbors of the transmitter at the end of the same round, but may not be successfully received by some, or even all, of these neighbors. More specifically, a node receives a message at a round if this is the only message that has reached this node in this round. Due to this specific interference-prone nature of radio networks, many communication tasks become more challenging and more costly than in other types of networks, especially in ad-hoc setting in which each node knows only its own id and linear estimates on the basic network parameters, such as the number of nodes n, diameter D and maximum node degree Δ. We design a new randomized k-broadcast algorithm combining the bestof two worlds: efficient randomized transmission schedules and network coding. We show that our algorithm accomplishes multi-broadcast in O(log Δ) amortized number of communication rounds per packet, with high probability. This improves over the best previous solution of Bar-Yehuda, Israeli and Itai, which guarantees only O(log Δ log n) of amortized number of rounds per packet, with high probability.},
+ acmid = {1993884},
+ address = {New York, NY, USA},
+ author = {Khabbazian, Majid and Kowalski, Dariusz R.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993884},
+ isbn = {978-1-4503-0719-2},
+ keyword = {multiple-message broadcast, radio networks, randomized algorithm},
+ link = {http://doi.acm.org/10.1145/1993806.1993884},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {373--380},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Time-efficient Randomized Multiple-message Broadcast in Radio Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Kentros:2011:SAP:1993806.1993847,
+ abstract = {We present and analyze a wait-free deterministic algorithm for solving the at-most-once problem: how m fail-prone processes perform asynchronously n tasks at most once using shared memory. Our algorithmic strategy provides for the first time nearly optimal effectiveness, which is a measure that expresses the total number of tasks completed in the worst case. Our algorithm's effectiveness equals n-2m+2. This is up to an additive factor of m close to the known effectiveness lower bound n-m+1 and improves on the previously best known deterministic solutions that have effectiveness only n-log m o(n). We also present a work and space complexity analysis for suitable ranges of the algorithm parameters and demonstrate further that (i) we can achieve work O(nm log n log m) and simultaneously effectiveness of n-3m2-m+2, which is asymptotically optimal for any m=o(√n),(ii) we can achieve optimal work up to logarithmic factors Õ(n) and asymptotically optimal effectiveness whenever m=o(3√n).},
+ acmid = {1993847},
+ address = {New York, NY, USA},
+ author = {Kentros, Sotirios and Kiayias, Aggelos},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993847},
+ isbn = {978-1-4503-0719-2},
+ keyword = {at-most-once semantics, shared memory},
+ link = {http://doi.acm.org/10.1145/1993806.1993847},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {229--230},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Solving the At-most-once Problem with Nearly Optimal Effectiveness},
+ year = {2011}
+}
+
+
+@inproceedings{Dinitz:2011:FSB:1993806.1993830,
+ abstract = {A natural requirement for many distributed structures is fault-tolerance: after some failures in the underlying network, whatever remains from the structure should still be effective for whatever remains from the network. In this paper we examine spanners of general graphs that are tolerant to vertex failures, and significantly improve their dependence on the number of faults r for all stretch bounds. For stretch k e 3 we design a simple transformation that converts every k-spanner construction with at most f(n) edges into an r-fault-tolerant k-spanner construction with at most O(r3 log n) Å f(2n/r) edges. Applying this to standard greedy spanner constructions gives r-fault tolerant k-spanners with Õ(r2 n1+2/k+1) edges. The previous construction by Chechik, Langberg, Peleg, and Roddity [STOC 2009] depends similarly on n but exponentially on r (approximately like kr). For the case of k=2 and unit edge-lengths, an O(r log n)-approximation is known from recent work of Dinitz and Krauthgamer [STOC 2011], in which several spanner results are obtained using a common approach of rounding a natural flow-based linear programming relaxation. Here we use a different (stronger) LP relaxation and improve the approximation ratio to O(log n), which is, notably, independent of the number of faults r. We further strengthen this bound in terms of the maximum degree by using the Lovasz Local Lemma. Finally, we show that most of our constructions are inherently local by designing equivalent distributed algorithms in the LOCAL model of distributed computation.},
+ acmid = {1993830},
+ address = {New York, NY, USA},
+ author = {Dinitz, Michael and Krauthgamer, Robert},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993830},
+ isbn = {978-1-4503-0719-2},
+ keyword = {approximation algorithms, fault tolerance, spanners},
+ link = {http://doi.acm.org/10.1145/1993806.1993830},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {169--178},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Fault-tolerant Spanners: Better and Simpler},
+ year = {2011}
+}
+
+
+@inproceedings{Yu:2011:SCM:1993806.1993872,
+ abstract = {This paper focuses on designing incentive mechanisms for overlay multicast systems. Existing proposals on the problem are no longer able to provide proper incentives when rational users collude or launch sybil attacks. To overcome this key limitation, we propose a novel decentralized DCast multicast protocol and prove that it offers a novel concept of safety-net guarantee: A user running the protocol will always obtain at least a reasonably good utility despite the deviation of any number of rational users that potentially collude or launch sybil attacks.},
+ acmid = {1993872},
+ address = {New York, NY, USA},
+ author = {Yu, Haifeng and Gibbons, Phillip B. and Shi, Chenwei},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993872},
+ isbn = {978-1-4503-0719-2},
+ keyword = {dcast, multicast, rational collusion, sybil attack},
+ link = {http://doi.acm.org/10.1145/1993806.1993872},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {337--338},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Sustaining Collaboration in Multicast Despite Rational Collusion},
+ year = {2011}
+}
+
+
+@inproceedings{Backes:2011:SSN:1993806.1993874,
+ abstract = {We present a cryptographic framework to achieve access control, privacy of social relations, secrecy of resources, and anonymity of users in social networks. The main idea is to use pseudonyms to hide user identities, signatures on pseudonyms to establish social relations, and zero-knowledge proofs on these signatures to demonstrate the existence of the corresponding social relations without sacrificing user anonymity. Our framework is generally applicable and, in particular, constitutes an ideal plug-in for decentralized social networks. We formally verified the aforementioned security properties using ProVerif, an automated theorem prover for cryptographic protocols. We also conducted an experimental evaluation to demonstrate the efficiency and the scalability of our framework.},
+ acmid = {1993874},
+ address = {New York, NY, USA},
+ author = {Backes, Michael and Maffei, Matteo and Pecina, Kim},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993874},
+ isbn = {978-1-4503-0719-2},
+ keyword = {anonymity in distributed systems, cryptographic protocols, formal verification, social network security},
+ link = {http://doi.acm.org/10.1145/1993806.1993874},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {341--342},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Securing Social Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Steinova:2011:HAM:1993806.1993861,
+ abstract = {The design of a scalable overlay network to support decentralized topic-based publish/subscribe communication is nowadays a problem of a great importance. We investigate here special instances of one such design problem called Minimum Topic-Connected Overlay. Given a collection of users together with the lists of topics they are interested in, the aim is to connect these users to a network by a minimum number of edges such that every graph induced by users interested in a common topic is connected. We investigate instances where in addition the number of users interested in a particular topic is bounded by a constant d > 2. It is known that the general Topic-Connected Overlay is Ω(log n) hard to approximate and approximable by a logarithmic factor. For our special instances, we design a one-to-one reduction to special instances of the hitting set problem. This allows us to present the first constant approximation algorithm, the first kernelization and the first nontrivial exact algorithm for the special instances discussed.},
+ acmid = {1993861},
+ address = {New York, NY, USA},
+ author = {Steinova, Monika},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993861},
+ isbn = {978-1-4503-0719-2},
+ keyword = {approximation, optimization problem, overlay networks, pub/sub},
+ link = {http://doi.acm.org/10.1145/1993806.1993861},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {295--296},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {On the Hardness and Approximation of Minimum Topic-connected Overlay},
+ year = {2011}
+}
+
+
+@inproceedings{Delporte-Gallet:2011:BAH:1993806.1993810,
+ abstract = {So far, the distributed computing community has either assumed that all the processes of a distributed system have distinct identifiers or, more rarely, that the processes are anonymous and have no identifiers. These are two extremes of the same general model: namely, n processes use l different authenticated identifiers, where 1 ≤ l ≤ n. In this paper, we ask how many identifiers are actually needed to reach agreement in a distributed system with t Byzantine processes. We show that having 3t+1 identifiers is necessary and sufficient for agreement in the synchronous case but, more surprisingly, the number of identifiers must be greater than n+3t/2 in the partially synchronous case. This demonstrates two differences from the classical model (which has l=n): there are situations where relaxing synchrony to partial synchrony renders agreement impossible; and, in the partially synchronous case, increasing the number of correct processes can actually make it harder to reach agreement. The impossibility proofs use the fact that a Byzantine process can send multiple messages to the same recipient in a round. We show that removing this ability makes agreement easier: then, t+1 identifiers are sufficient for agreement, even in the partially synchronous model.},
+ acmid = {1993810},
+ address = {New York, NY, USA},
+ author = {Delporte-Gallet, Carole and Fauconnier, Hugues and Guerraoui, Rachid and Kermarrec, Anne-Marie and Ruppert, Eric and Tran-The, Hung},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993810},
+ isbn = {978-1-4503-0719-2},
+ keyword = {agreement, byzantine failures, consensus, identifiers, lower bounds, synchrony},
+ link = {http://doi.acm.org/10.1145/1993806.1993810},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {21--30},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Byzantine Agreement with Homonyms},
+ year = {2011}
+}
+
+
+@inproceedings{Juba:2011:REC:1993806.1993873,
+ abstract = {We present the first end-user protocol, guaranteeing the delivery of messages, that automatically adapts to any new packet format that is obtained by applying a short, efficient function to packets from an earlier protocol.},
+ acmid = {1993873},
+ address = {New York, NY, USA},
+ author = {Juba, Brendan},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993873},
+ isbn = {978-1-4503-0719-2},
+ keyword = {interoperability, packet network, semantic communication},
+ link = {http://doi.acm.org/10.1145/1993806.1993873},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {339--340},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Reliable End-user Communication Under a Changing Packet Network Protocol},
+ year = {2011}
+}
+
+
+@inproceedings{Bansal:2011:MCM:1993806.1993854,
+ abstract = {We study a basic resource allocation problem that arises in cloud computing environments. The physical network of the cloud is represented as a graph with vertices denoting servers and edges corresponding to communication links. A workload is a set of processes with processing requirements and mutual communication requirements. The workloads arrive and depart over time, and the resource allocator must map each workload upon arrival to the physical network. We consider the objective of minimizing the congestion. We show that solving a subproblem about mapping a single workload to the physical graph essentially suffices to solve the general problem. In particular, an α-approximation for this single mapping problem gives an O(α log nD)-competitive algorithm for the general problem, where n is the number of nodes in the physical network and D is the maximum to minimum workload duration ratio. We also show how to solve the single mapping problem for two natural class of workloads, namely depth-d-trees and complete-graph workloads. For depth-d tree, we give an nO(d) time O(d2 log (nd))-approximation based on a strong LP relaxation inspired by the Sherali-Adams hierarchy.},
+ acmid = {1993854},
+ address = {New York, NY, USA},
+ author = {Bansal, Nikhil and Lee, Kang-Won and Nagarajan, Viswanath and Zafer, Murtaza},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993854},
+ isbn = {978-1-4503-0719-2},
+ keyword = {approximation algorithms, cloud computing, congestion minimization, graph mapping},
+ link = {http://doi.acm.org/10.1145/1993806.1993854},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {267--276},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Minimum Congestion Mapping in a Cloud},
+ year = {2011}
+}
+
+
+@inproceedings{Herlihy:2011:TWO:1993806.1993849,
+ abstract = {Decision tasks require that nonfaulty processes make decisions based on their input values. Simultaneous decision tasks require that nonfaulty processes decide in the same round. Most decision tasks have known worst-case lower bounds. Most also have known worst-case optimal protocols that halt in the number of rounds given by the worst-case lower bound, and some have early-stopping protocols that can halt earlier than the worst-case lower bound (sometimes in as early as two rounds). We consider what might be called earliest-possible protocols for simultaneous decision tasks. We present a new technique that converts worst-case optimal decision protocols into all-case optimal simultaneous decision protocols: For every behavior of the adversary, the all-case optimal protocol decides as soon as any protocol can decide in a run with the same adversarial behavior. Examples to which this can be applied include set consensus, condition-based consensus, renaming and order-preserving renaming. Some of these tasks can be solved significantly faster than the classical simultaneous consensus task. A byproduct of the analysis is a proof that improving on the worst-case bound for any simultaneous task by even a single round is as hard as reaching simultaneous consensus.},
+ acmid = {1993849},
+ address = {New York, NY, USA},
+ author = {Herlihy, Maurice P. and Moses, Yoram and Tuttle, Mark R.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993849},
+ isbn = {978-1-4503-0719-2},
+ keyword = {k-set agreement, common knowledge, condition-based consensus, consensus, crash failure model, renaming, synchronous message passing model, topology},
+ link = {http://doi.acm.org/10.1145/1993806.1993849},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {231--238},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Transforming Worst-case Optimal Solutions for Simultaneous Tasks into All-case Optimal Solutions},
+ year = {2011}
+}
+
+
+@inproceedings{Goldreich:2011:TGC:1993806.1993863,
+ abstract = {We put forward a general theory of goal-oriented communication, where communication is not an end in itself, but rather a means to achieving some goals of the communicating parties. Focusing on goals provides a framework for addressing the problem of potential "misunderstanding" during communication, where the misunderstanding arises from lack of initial agreement on what protocol and/or language is being used in communication. Despite the enormous diversity among the goals of communication, we propose a simple model that captures all goals.},
+ acmid = {1993863},
+ address = {New York, NY, USA},
+ author = {Goldreich, Oded and Juba, Brendan and Sudan, Madhu},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993863},
+ isbn = {978-1-4503-0719-2},
+ keyword = {semantic communication},
+ link = {http://doi.acm.org/10.1145/1993806.1993863},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {299--300},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {A Theory of Goal-oriented Communication},
+ year = {2011}
+}
+
+
+@inproceedings{Toft:2011:SDS:1993806.1993859,
+ abstract = {This work considers data structures based on multi-party computation (MPC) primitives: structuring secret (e.g. secret shared and potentially unknown) data such that it can both be queried and updated efficiently. Implementing an oblivious RAM (ORAM) using MPC allows any existing data structure to be realized using MPC primitives, however, by focusing on a specific example -- a priority queue -- it is shown that it is possible to achieve much better results than the generic solutions can provide. Moreover, the techniques differ significantly from existing ORAM constructions. Indeed it has recently been shown that any information theoretically secure ORAM with n memory locations requires at least log n random bits per read/write to hide the access pattern. In contrast, the present construction achieves security with a completely deterministic access pattern.},
+ acmid = {1993859},
+ address = {New York, NY, USA},
+ author = {Toft, Tomas},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993859},
+ isbn = {978-1-4503-0719-2},
+ keyword = {reactive functionalities, secure multi-party computation},
+ link = {http://doi.acm.org/10.1145/1993806.1993859},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {291--292},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Secure Data Structures Based on Multi-party Computation},
+ year = {2011}
+}
+
+
+@inproceedings{Retvari:2011:CPR:1993806.1993828,
+ abstract = {This paper takes a first step towards generalizing compact routing to arbitrary routing policies that favor a broader set of path attributes beyond path length. Using the formalism of routing algebras we identify the algebraic requirements for a routing policy to be realizable with sublinear size routing tables and we show that a wealth of practical policies can be classified by our results. By generalizing the notion of stretch, we also discover the algebraic validity of compact routing schemes considered so far and we show that there are routing policies for which one cannot expect sublinear scaling even if permitting arbitrary constant stretch.},
+ acmid = {1993828},
+ address = {New York, NY, USA},
+ author = {R{\'e}tv\'{a}ri, G\'{a}bor and Guly\'{a}s, Andr\'{a}s and Heszberger, Zal\'{a}n and Csernai, M\'{a}rton and B\'{\i}r\'{o}, J\'{o}zsef J.},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993828},
+ isbn = {978-1-4503-0719-2},
+ keyword = {compact routing, policy routing, routing algebras},
+ link = {http://doi.acm.org/10.1145/1993806.1993828},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {149--158},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Compact Policy Routing},
+ year = {2011}
+}
+
+
+@inproceedings{Kuhn:2011:CCD:1993806.1993808,
+ abstract = {We study several variants of coordinated consensus in dynamic networks. We assume a synchronous model, where the communication graph for each round is chosen by a worst-case adversary. The network topology is always connected, but can change completely from one round to the next. The model captures mobile and wireless networks, where communication can be unpredictable. In this setting we study the fundamental problems of eventual, simultaneous, and Δ-coordinated consensus, as well as their relationship to other distributed problems, such as determining the size of the network. We show that in the absence of a good initial upper bound on the size of the network, eventual consensus is as hard as computing deterministic functions of the input, e.g., the minimum or maximum of inputs to the nodes. We also give an algorithm for computing such functions that is optimal in every execution. Next, we show that simultaneous consensus can never be achieved in less than n - 1 rounds in any execution, where n is the size of the network; consequently, simultaneous consensus is as hard as computing an upper bound on the number of nodes in the network. For Δ-coordinated consensus, we show that if the ratio between nodes with input 0 and input 1 is bounded away from 1, it is possible to decide in time n-Θ(√ nΔ), where Δ bounds the time from the first decision until all nodes decide. If the dynamic graph has diameter D, the time to decide is min{O(nD/Δ),n-Ω(nΔ/D)}, even if D is not known in advance. Finally, we show that (a) there is a dynamic graph such that for every input, no node can decide before time n-O(Δ0.28n0.72); and (b) for any diameter D = O(Δ), there is an execution with diameter D where no node can decide before time Ω(nD / Δ). To our knowledge, our work constitutes the first study of Δ-coordinated consensus in general graphs.},
+ acmid = {1993808},
+ address = {New York, NY, USA},
+ author = {Kuhn, Fabian and Oshman, Rotem and Moses, Yoram},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993808},
+ isbn = {978-1-4503-0719-2},
+ keyword = {common knowledge, consensus, coordination, distributed algorithms, dynamic networks},
+ link = {http://doi.acm.org/10.1145/1993806.1993808},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {1--10},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Coordinated Consensus in Dynamic Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Goos:2011:LCP:1993806.1993829,
+ abstract = {This work studies decision problems from the perspective of nondeterministic distributed algorithms. For a yes instance there must exist a proof that can be verified with a distributed algorithm: all nodes must accept a valid proof, and at least one node must reject an invalid proof. We focus on locally checkable proofs that can be verified with a constant-time distributed algorithm. For example, it is easy to prove that a graph is bipartite: the locally checkable proof gives a 2-colouring of the graph, which only takes 1 bit per node. However, it is more difficult to prove that a graph is not bipartite - it turns out that any locally checkable proof requires ©(log n) bits per node. In this work we classify graph problems according to their local proof complexity, i.e., how many bits per node are needed in a locally checkable proof. We establish tight or near-tight results for classical graph properties such as the chromatic number. We show that the proof complexities form a natural hierarchy of complexity classes: for many classical graph problems, the proof complexity is either 0, (1), (log n), or poly(n) bits per node. Among the most difficult graph properties are symmetric graphs, which require ©(n²) bits per node, and non-3-colourable graphs, which require ©(n²/log n) bits per node - any pure graph property admits a trivial proof of size O(n²).},
+ acmid = {1993829},
+ address = {New York, NY, USA},
+ author = {G\"{o}\"{o}s, Mika and Suomela, Jukka},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993829},
+ isbn = {978-1-4503-0719-2},
+ keyword = {decision problems, graph properties, local algorithms, nondeterministic algorithms, proof complexity},
+ link = {http://doi.acm.org/10.1145/1993806.1993829},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {159--168},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {Locally Checkable Proofs},
+ year = {2011}
+}
+
+
+@inproceedings{Helmi:2011:SCL:1993806.1993826,
+ abstract = {This paper is concerned with the problem of implementing an unbounded timestamp object from multi-writer atomic registers, in an asynchronous distributed system of n processors with distinct identifiers where timestamps are taken from an arbitrary universe. Ellen, Fatourou and Ruppert [7] showed that √n/2-O(1) registers are required for any obstruction-free implementation of long-lived timestamp systems from atomic registers (meaning processors can repeatedly get timestamps). We improve this existing lower bound in two ways. First we establish a lower bound of n/6 - O(1) registers for the obstruction-free long-lived timestamp problem. Previous such linear lower bounds were only known for constrained versions of the timestamp problem. This bound is asymptotically tight; Ellen, Fatourou and Ruppert [7] constructed a wait-free algorithm that uses n-1 registers. Second we show that √(n)-O(1) registers are required for any obstruction-free implementation of one-shot timestamp systems (meaning each processor can get a timestamp at most once). We show that this bound is also asymptotically tight by providing a wait-free one-shot timestamp system that uses fewer than 2√n registers, thus establishing a space complexity gap between one-shot and long-lived timestamp systems.},
+ acmid = {1993826},
+ address = {New York, NY, USA},
+ author = {Helmi, Maryam and Higham, Lisa and Pacheco, Eduardo and Woelfel, Philipp},
+ booktitle = {Proceedings of the 30th Annual ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing},
+ doi = {10.1145/1993806.1993826},
+ isbn = {978-1-4503-0719-2},
+ keyword = {shared memory, solo-termination, space complexity, timestamps, wait-free},
+ link = {http://doi.acm.org/10.1145/1993806.1993826},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {139--148},
+ publisher = {ACM},
+ series = {PODC '11},
+ title = {The Space Complexity of Long-lived and One-shot Timestamp Implementations},
+ year = {2011}
+}
+
+
