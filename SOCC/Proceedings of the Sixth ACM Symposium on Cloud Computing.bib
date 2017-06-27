@@ -1,0 +1,748 @@
+@inproceedings{Cui:2015:UDT:2806777.2806839,
+ abstract = {Time series analysis is commonly used when monitoring data centers, networks, weather, and even human patients. In most cases, the raw time series data is massive, from millions to billions of data points, and yet interactive analyses require low (e.g., sub-second) latency. Aperture transforms raw time series data, during ingest, into compact summarized representations that it can use to efficiently answer queries at runtime. Aperture handles a range of complex queries, from correlating hundreds of lengthy time series to predicting anomalies in the data. Aperture achieves much of its high performance by executing queries on data summaries, while providing a bound on the information lost when transforming data. By doing so, Aperture can reduce query latency as well as the data that needs to be stored and analyzed to answer a query. Our experiments on real data show that Aperture can provide one to four orders of magnitude lower query response time, while incurring only 10% ingest time overhead and less than 20% error in accuracy.},
+ acmid = {2806839},
+ address = {New York, NY, USA},
+ author = {Cui, Henggang and Keeton, Kimberly and Roy, Indrajit and Viswanathan, Krishnamurthy and Ganger, Gregory R.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806839},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806839},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {395--407},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Using Data Transformations for Low-latency Time Series Analysis},
+ year = {2015}
+}
+
+
+@inproceedings{Islam:2015:EIF:2806777.2806846,
+ abstract = {Elasticity is the defining feature of cloud computing. Performance analysts and adaptive system designers rely on representative benchmarks for evaluating elasticity for cloud applications under realistic reproducible workloads. A key feature of web workloads is burstiness or high variability at fine timescales. In this paper, we explore the innate interaction between fine-scale burstiness and elasticity and quantify the impact from the cloud consumer's perspective. We propose a novel methodology to model workloads with fine-scale burstiness so that they can resemble the empirical stylized facts of the arrival process. Through an experimental case study, we extract insights about the implications of fine-scale burstiness for elasticity penalty and adaptive resource scaling. Our findings demonstrate the detrimental effect of fine-scale burstiness on the elasticity of cloud applications.},
+ acmid = {2806846},
+ address = {New York, NY, USA},
+ author = {Islam, Sadeka and Venugopal, Srikumar and Liu, Anna},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806846},
+ isbn = {978-1-4503-3651-2},
+ keyword = {burstiness, cloud computing, elasticity},
+ link = {http://doi.acm.org/10.1145/2806777.2806846},
+ location = {Kohala Coast, Hawaii},
+ numpages = {12},
+ pages = {250--261},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Evaluating the Impact of Fine-scale Burstiness on Cloud Elasticity},
+ year = {2015}
+}
+
+
+@inproceedings{Pundir:2015:ZZR:2806777.2806934,
+ abstract = {Distributed graph processing systems largely rely on proactive techniques for failure recovery. Unfortunately, these approaches (such as checkpointing) entail a significant overhead. In this paper, we argue that distributed graph processing systems should instead use a reactive approach to failure recovery. The reactive approach trades off completeness of the result (generating a slightly inaccurate result) while reducing the overhead during failure-free execution to zero. We build a system called Zorro that imbues this reactive approach, and integrate Zorro into two graph processing systems -- PowerGraph and LFGraph. When a failure occurs, Zorro opportunistically exploits vertex replication inherent in today's graph processing systems to quickly rebuild the state of failed servers. Experiments using real-world graphs demonstrate that Zorro is able to recover over 99% of the graph state when 6--12% of the servers fail, and between 87--95% when half the cluster fails. Furthermore, using various graph processing algorithms, Zorro incurs little to no accuracy loss in all experimental failure scenarios, and achieves a worst-case accuracy of 97%.},
+ acmid = {2806934},
+ address = {New York, NY, USA},
+ author = {Pundir, Mayank and Leslie, Luke M. and Gupta, Indranil and Campbell, Roy H.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806934},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806934},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {195--208},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Zorro: Zero-cost Reactive Failure Recovery in Distributed Graph Processing},
+ year = {2015}
+}
+
+
+@inproceedings{Hetherington:2015:MSS:2806777.2806836,
+ abstract = {This paper tackles the challenges of obtaining more efficient data center computing while maintaining low latency, low cost, programmability, and the potential for workload consolidation. We introduce GNoM, a software framework enabling energy-efficient, latency bandwidth optimized UDP network and application processing on GPUs. GNoM handles the data movement and task management to facilitate the development of high-throughput UDP network services on GPUs. We use GNoM to develop MemcachedGPU, an accelerated key-value store, and evaluate the full system on contemporary hardware. MemcachedGPU achieves ~10 GbE line-rate processing of ~13 million requests per second (MRPS) while delivering an efficiency of 62 thousand RPS per Watt (KRPS/W) on a high-performance GPU and 84.8 KRPS/W on a low-power GPU. This closely matches the throughput of an optimized FPGA implementation while providing up to 79% of the energy-efficiency on the low-power GPU. Additionally, the low-power GPU can potentially improve cost-efficiency (KRPS/$) up to 17% over a state-of-the-art CPU implementation. At 8 MRPS, MemcachedGPU achieves a 95-percentile RTT latency under 300μs on both GPUs. An offline limit study on the low-power GPU suggests that MemcachedGPU may continue scaling throughput and energy-efficiency up to 28.5 MRPS and 127 KRPS/W respectively.},
+ acmid = {2806836},
+ address = {New York, NY, USA},
+ author = {Hetherington, Tayler H. and O'Connor, Mike and Aamodt, Tor M.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806836},
+ isbn = {978-1-4503-3651-2},
+ keyword = {GPU, data center, key-value store},
+ link = {http://doi.acm.org/10.1145/2806777.2806836},
+ location = {Kohala Coast, Hawaii},
+ numpages = {15},
+ pages = {43--57},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {MemcachedGPU: Scaling-up Scale-out Key-value Stores},
+ year = {2015}
+}
+
+
+@inproceedings{Wu:2015:GRM:2806777.2806849,
+ abstract = {GraM is an efficient and scalable graph engine for a large class of widely used graph algorithms. It is designed to scale up to multicores on a single server, as well as scale out to multiple servers in a cluster, offering significant, often over an order-of-magnitude, improvement over existing distributed graph engines on evaluated graph algorithms. GraM is also capable of processing graphs that are significantly larger than previously reported. In particular, using 64 servers (1,024 physical cores), it performs a PageRank iteration in 140 seconds on a synthetic graph with over one trillion edges, setting a new milestone for graph engines. GraM's efficiency and scalability comes from a judicious architectural design that exploits the benefits of multi-core and RDMA. GraM uses a simple message-passing based scaling architecture for both scaling up and scaling out to expose inherent parallelism. It further benefits from a specially designed multi-core aware RDMA-based communication stack that preserves parallelism in a balanced way and allows overlapping of communication and computation. A high degree of parallelism often comes at the cost of lower efficiency due to resource fragmentation. GraM is equipped with an adaptive mechanism that evaluates the cost and benefit of parallelism to decide the appropriate configuration. Combined, these mechanisms allow GraM to scale up and out with high efficiency.},
+ acmid = {2806849},
+ address = {New York, NY, USA},
+ author = {Wu, Ming and Yang, Fan and Xue, Jilong and Xiao, Wencong and Miao, Youshan and Wei, Lan and Lin, Haoxiang and Dai, Yafei and Zhou, Lidong},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806849},
+ isbn = {978-1-4503-3651-2},
+ keyword = {RDMA, graph computation engine, scalability},
+ link = {http://doi.acm.org/10.1145/2806777.2806849},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {408--421},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {GraM: Scaling Graph Computation to the Trillions},
+ year = {2015}
+}
+
+
+@inproceedings{Delimitrou:2015:TRS:2806777.2806779,
+ abstract = {Scheduling diverse applications in large, shared clusters is particularly challenging. Recent research on cluster scheduling focuses either on scheduling speed, using sampling to quickly assign resources to tasks, or on scheduling quality, using centralized algorithms that search for the resources that improve both task performance and cluster utilization. We present Tarcil, a distributed scheduler that targets both scheduling speed and quality. Tarcil uses an analytically derived sampling framework that adjusts the sample size based on load, and provides statistical guarantees on the quality of allocated resources. It also implements admission control when sampling is unlikely to find suitable resources. This makes it appropriate for large, shared clusters hosting short- and long-running jobs. We evaluate Tarcil on clusters with hundreds of servers on EC2. For highly-loaded clusters running short jobs, Tarcil improves task execution time by 41% over a distributed, sampling-based scheduler. For more general scenarios, Tarcil achieves near-optimal performance for 4× and 2× more jobs than sampling-based and centralized schedulers respectively.},
+ acmid = {2806779},
+ address = {New York, NY, USA},
+ author = {Delimitrou, Christina and Sanchez, Daniel and Kozyrakis, Christos},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806779},
+ isbn = {978-1-4503-3651-2},
+ keyword = {QoS, cloud computing, datacenters, resource-efficiency, scalability, scheduling},
+ link = {http://doi.acm.org/10.1145/2806777.2806779},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {97--110},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Tarcil: Reconciling Scheduling Speed and Quality in Large Shared Clusters},
+ year = {2015}
+}
+
+
+@inproceedings{Wei:2015:MCC:2806777.2806778,
+ abstract = {At the core of Machine Learning (ML) analytics is often an expert-suggested model, whose parameters are refined by iteratively processing a training dataset until convergence. The completion time (i.e. convergence time) and quality of the learned model not only depends on the rate at which the refinements are generated but also the quality of each refinement. While data-parallel ML applications often employ a loose consistency model when updating shared model parameters to maximize parallelism, the accumulated error may seriously impact the quality of refinements and thus delay completion time, a problem that usually gets worse with scale. Although more immediate propagation of updates reduces the accumulated error, this strategy is limited by physical network bandwidth. Additionally, the performance of the widely used stochastic gradient descent (SGD) algorithm is sensitive to step size. Simply increasing communication often fails to bring improvement without tuning step size accordingly and tedious hand tuning is usually needed to achieve optimal performance. This paper presents Bösen, a system that maximizes the network communication efficiency under a given inter-machine network bandwidth budget to minimize parallel error, while ensuring theoretical convergence guarantees for large-scale data-parallel ML applications. Furthermore, Bösen prioritizes messages most significant to algorithm convergence, further enhancing algorithm convergence. Finally, Bösen is the first distributed implementation of the recently presented adaptive revision algorithm, which provides orders of magnitude improvement over a carefully tuned fixed schedule of step size refinements for some SGD algorithms. Experiments on two clusters with up to 1024 cores show that our mechanism significantly improves upon static communication schedules.},
+ acmid = {2806778},
+ address = {New York, NY, USA},
+ author = {Wei, Jinliang and Dai, Wei and Qiao, Aurick and Ho, Qirong and Cui, Henggang and Ganger, Gregory R. and Gibbons, Phillip B. and Gibson, Garth A. and Xing, Eric P.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806778},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806778},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {381--394},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Managed Communication and Consistency for Fast Data-parallel Iterative Analytics},
+ year = {2015}
+}
+
+
+@inproceedings{Abouzied:2015:HDL:2806777.2806936,
+ abstract = {Forgetting, losing, or corrupting data is almost universally considered harmful in computer science and blasphemous in database and file systems. Typically, loss of data is a consequence of unmanageable or unexpected lower layer deficiencies that the user process must be protected from through multiple layers of storage abstractions and redundancies. We argue that forgetfulness can be a resource for system design and that, like durability, security or integrity, can be used to achieve uncommon, but potentially important goals such as privacy, plausible deniability, and the right to be forgotten. We define the key properties of forgetfulness and draw inspiration from human memory. We develop a data structure, the forgit, that can be used to store images, audio files, videos or numerical data and eventually forget. Forgits are a natural data store for a multitude of today's cloud-based applications and we discuss their use, effectiveness, and limitations in this paper.},
+ acmid = {2806936},
+ address = {New York, NY, USA},
+ author = {Abouzied, Azza and Chen, Jay},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806936},
+ isbn = {978-1-4503-3651-2},
+ keyword = {ephemeral storage, forgetful data structures, memory loss},
+ link = {http://doi.acm.org/10.1145/2806777.2806936},
+ location = {Kohala Coast, Hawaii},
+ numpages = {6},
+ pages = {168--173},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Harnessing Data Loss with Forgetful Data Structures},
+ year = {2015}
+}
+
+
+@inproceedings{Borkar:2015:ADM:2806777.2806941,
+ abstract = {A number of high-level query languages, such as Hive, Pig, Flume, and Jaql, have been developed in recent years to increase analyst productivity when processing and analyzing very large datasets. The implementation of each of these languages includes a complete, data model-dependent query compiler, yet each involves a number of similar optimizations. In this work, we describe a new query compiler architecture that separates language-specific and data model-dependent aspects from a more general query compiler backend that can generate executable data-parallel programs for shared-nothing clusters and can be used to develop multiple languages with different data models. We have built such a data model-agnostic query compiler substrate, called Algebricks, and have used it to implement three different query languages --- HiveQL, AQL, and XQuery --- to validate the efficacy of this approach. Experiments show that all three query languages benefit from the parallelization and optimization that Algebricks provides and thus have good parallel speedup and scaleup characteristics for large datasets.},
+ acmid = {2806941},
+ address = {New York, NY, USA},
+ author = {Borkar, Vinayak and Bu, Yingyi and Carman,Jr., E. Preston and Onose, Nicola and Westmann, Till and Pirzadeh, Pouria and Carey, Michael J. and Tsotras, Vassilis J.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806941},
+ isbn = {978-1-4503-3651-2},
+ keyword = {big data query languages, parallel query processing},
+ link = {http://doi.acm.org/10.1145/2806777.2806941},
+ location = {Kohala Coast, Hawaii},
+ numpages = {12},
+ pages = {422--433},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Algebricks: A Data Model-agnostic Compiler Backend for Big Data Languages},
+ year = {2015}
+}
+
+
+@inproceedings{Zhang:2015:DWD:2806777.2806850,
+ abstract = {Putting computers into low power mode (e.g., suspend-to-RAM) could potentially save significant amount of power when the computers are not in use. Unfortunately, this is often infeasible in practice because data stored on the computers (i.e., directly attached disks, DAS) might need to be accessed by others. Separating storage from computation by attaching storage on the network (e.g., NAS and SAN) could potentially solve this problem, at the cost of lower performance, more network congestion, increased peak power consumption, and higher equipment cost. Though DAS does not suffer these problems, it is not flexible for power saving. In this paper, we present DSwitch, an architecture that, depending on the workload, allows a disk to be attached either directly or through network. We design flexible workload migration based on DSwitch, and show that a wide variety of applications in both data center and home/office settings can be well supported. The experiments demonstrate that our prototype DSwitch achieves a power savings of 91.9% to 97.5% when a disk is in low power network attached mode, while incurring no performance degradation and minimal power overhead when it is in high performance directly attached mode.},
+ acmid = {2806850},
+ address = {New York, NY, USA},
+ author = {Zhang, Quanlu and Dai, Yafei and Zhang, Lintao},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806850},
+ isbn = {978-1-4503-3651-2},
+ keyword = {ARM, NAS/SAN, energy, network, power proportional, service migration},
+ link = {http://doi.acm.org/10.1145/2806777.2806850},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {71--83},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {DSwitch: A Dual Mode Direct and Network Attached Disk},
+ year = {2015}
+}
+
+
+@inproceedings{Hung:2015:SJA:2806777.2806780,
+ abstract = {With growing data volumes generated and stored across geo-distributed datacenters, it is becoming increasingly inefficient to aggregate all data required for computation at a single datacenter. Instead, a recent trend is to distribute computation to take advantage of data locality, thus reducing the resource (e.g., bandwidth) costs while improving performance. In this trend, new challenges are emerging in job scheduling, which requires coordination among the datacenters as each job runs across geo-distributed sites. In this paper, we propose novel job scheduling algorithms that coordinate job scheduling across datacenters with low overhead, while achieving near-optimal performance. Our extensive simulation study with realistic job traces shows that the proposed scheduling algorithms result in up to 50% improvement in average job completion time over the Shortest Remaining Processing Time (SRPT) based approaches.},
+ acmid = {2806780},
+ address = {New York, NY, USA},
+ author = {Hung, Chien-Chun and Golubchik, Leana and Yu, Minlan},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806780},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806780},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {111--124},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Scheduling Jobs Across Geo-distributed Datacenters},
+ year = {2015}
+}
+
+
+@inproceedings{Stefanovici:2015:SCM:2806777.2806933,
+ abstract = {In data centers, caches work both to provide low IO latencies and to reduce the load on the back-end network and storage. But they are not designed for multi-tenancy; system-level caches today cannot be configured to match tenant or provider objectives. Exacerbating the problem is the increasing number of un-coordinated caches on the IO data plane. The lack of global visibility on the control plane to coordinate this distributed set of caches leads to inefficiencies, increasing cloud provider cost. We present Moirai, a tenant- and workload-aware system that allows data center providers to control their distributed caching infrastructure. Moirai can help ease the management of the cache infrastructure and achieve various objectives, such as improving overall resource utilization or providing tenant isolation and QoS guarantees, as we show through several use cases. A key benefit of Moirai is that it is transparent to applications or VMs deployed in data centers. Our prototype runs unmodified OSes and databases, providing immediate benefit to existing applications.},
+ acmid = {2806933},
+ address = {New York, NY, USA},
+ author = {Stefanovici, Ioan and Thereska, Eno and O'Shea, Greg and Schroeder, Bianca and Ballani, Hitesh and Karagiannis, Thomas and Rowstron, Antony and Talpey, Tom},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806933},
+ isbn = {978-1-4503-3651-2},
+ keyword = {QoS, SLA, caching, predictable performance, software-defined storage},
+ link = {http://doi.acm.org/10.1145/2806777.2806933},
+ location = {Kohala Coast, Hawaii},
+ numpages = {8},
+ pages = {174--181},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Software-defined Caching: Managing Caches in Multi-tenant Data Centers},
+ year = {2015}
+}
+
+
+@inproceedings{Grizan:2015:DEH:2806777.2806942,
+ abstract = {In cloud gaming, servers perform remote rendering on behalf of thin clients. Such a server must deliver sufficient frame rate (at least 30fps) to each of its clients. At the same time, each client desires an immersive experience, and therefore the server should also provide the best graphics quality possible to each client. Statically provisioning time slices of the server GPU for each client suffers from severe underutilization because clients can come and go, and scenes that the clients need rendered can vary greatly in terms of GPU resource usage over time. In this work, we present dJay, a utility-maximizing cloud gaming server that dynamically tunes client GPU rendering workloads in order to 1) ensure all clients get satisfactory frame rate, and 2) provide the best possible graphics quality across clients. To accomplish this, we develop three main components. First, we build an online profiler that collects key cost and benefit data, and distills the data into a reusable regression model. Second, we build an online utility optimizer that uses the regression model to tune GPU workloads for better graphics quality. The optimizer solves the Multiple Choice Knapsack problem. We demonstrate dJay on two high quality commercial games, Doom 3 and Fable 3. Our results show that when compared to a static configuration, we can respond much better to peaks and troughs, achieving up to four times the multi-tenant density on a single server while offering clients the best possible graphics quality.},
+ acmid = {2806942},
+ address = {New York, NY, USA},
+ author = {Grizan, Sergey and Chu, David and Wolman, Alec and Wattenhofer, Roger},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806942},
+ isbn = {978-1-4503-3651-2},
+ keyword = {GPU management, server load balancing},
+ link = {http://doi.acm.org/10.1145/2806777.2806942},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {58--70},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {dJay: Enabling High-density Multi-tenancy for Cloud Gaming Servers with Dynamic Cost-benefit GPU Load Balancing},
+ year = {2015}
+}
+
+
+@inproceedings{Ding:2015:CEH:2806777.2806837,
+ abstract = {We present Centiman, a system for high performance, elastic transaction processing in the cloud. Centiman provides serializability on top of a key-value store with a lightweight protocol based on optimistic concurrency control (OCC). Centiman is designed for the cloud setting, with an architecture that is loosely coupled and avoids synchronization wherever possible. Centiman supports sharded transaction validation; validators can be added or removed on-the-fly in an elastic manner. Processors and validators scale independently of each other and recover from failure transparently to each other. Centiman's loosely coupled design creates some challenges: it can cause spurious aborts and it makes it difficult to implement common performance optimizations for read-only transactions. To deal with these issues, Centiman uses a watermark abstraction to asynchronously propagate information about transaction commits through the system. In an extensive evaluation we show that Centiman provides fast elastic scaling, low-overhead serializability for read-heavy workloads, and scales to millions of operations per second.},
+ acmid = {2806837},
+ address = {New York, NY, USA},
+ author = {Ding, Bailu and Kot, Lucja and Demers, Alan and Gehrke, Johannes},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806837},
+ isbn = {978-1-4503-3651-2},
+ keyword = {elastic transaction, optimistic concurrency control, processing, sharded validation},
+ link = {http://doi.acm.org/10.1145/2806777.2806837},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {262--275},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Centiman: Elastic, High Performance Optimistic Concurrency Control by Watermarking},
+ year = {2015}
+}
+
+
+@proceedings{Lazowska:2014:2670979,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3252-1},
+ location = {Seattle, WA, USA},
+ publisher = {ACM},
+ title = {SOCC '14: Proceedings of the ACM Symposium on Cloud Computing},
+ year = {2014}
+}
+
+
+@inproceedings{Xu:2015:RRB:2806777.2806840,
+ abstract = {With the rise of large-scale, Web-based applications, users are increasingly adopting a new class of document-oriented database management systems (DBMSs) that allow for rapid prototyping while also achieving scalable performance. Like for other distributed storage systems, replication is important for document DBMSs in order to guarantee availability. The network bandwidth required to keep replicas synchronized is expensive and is often a performance bottleneck. As such, there is a strong need to reduce the replication bandwidth, especially for geo-replication scenarios where wide-area network (WAN) bandwidth is limited. This paper presents a deduplication system called sDedup that reduces the amount of data transferred over the network for replicated document DBMSs. sDedup uses similarity-based deduplication to remove redundancy in replication data by delta encoding against similar documents selected from the entire database. It exploits key characteristics of document-oriented workloads, including small item sizes, temporal locality, and the incremental nature of document edits. Our experimental evaluation of sDedup with three real-world datasets shows that it is able to achieve up to 38X reduction in data sent over the network, significantly outperforming traditional chunk-based deduplication techniques while incurring negligible performance overhead.},
+ acmid = {2806840},
+ address = {New York, NY, USA},
+ author = {Xu, Lianghong and Pavlo, Andrew and Sengupta, Sudipta and Li, Jin and Ganger, Gregory R.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806840},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806840},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {222--235},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Reducing Replication Bandwidth for Distributed Document Databases},
+ year = {2015}
+}
+
+
+@proceedings{Ghandeharizadeh:2015:2806777,
+ abstract = {The stated scope of SoCC is to be broad and encompass diverse data management and systems topics, and this year's 34 accepted papers are no exception. They touch on a wide range of data systems topics including new architectures, scheduling, performance modeling, high availability, replication, elasticity, migration, costs and performance trade-offs, complex analysis, and testing. The conference also includes 2 poster sessions (with 30 posters in addition to invited poster presentations for the accepted papers), keynotes by Eric Brewer of Google/UC Berkeley and Samuel Madden of MIT, and a social program that includes a banquet and a luncheon for students and senior systems and database researchers. The symposium is co-located with the 41st International Conference on Very Large Databases, VLDB 2015, highlighting the synergy between big data and the cloud.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3651-2},
+ location = {Kohala Coast, Hawaii},
+ publisher = {ACM},
+ title = {SoCC '15: Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ year = {2015}
+}
+
+
+@inproceedings{Prekas:2015:EPW:2806777.2806848,
+ abstract = {Energy proportionality and workload consolidation are important objectives towards increasing efficiency in large-scale datacenters. Our work focuses on achieving these goals in the presence of applications with μs-scale tail latency requirements. Such applications represent a growing subset of datacenter workloads and are typically deployed on dedicated servers, which is the simplest way to ensure low tail latency across all loads. Unfortunately, it also leads to low energy efficiency and low resource utilization during the frequent periods of medium or low load. We present the OS mechanisms and dynamic control needed to adjust core allocation and voltage/frequency settings based on the measured delays for latency-critical workloads. This allows for energy proportionality and frees the maximum amount of resources per server for other background applications, while respecting service-level objectives. Monitoring hardware queue depths allows us to detect increases in queuing latencies. Carefully coordinated adjustments to the NIC's packet redirection table enable us to reassign flow groups between the threads of a latency-critical application in milliseconds without dropping or reordering packets. We compare the efficiency of our solution to the Pareto-optimal frontier of 224 distinct static configurations. Dynamic resource control saves 44%--54% of processor energy, which corresponds to 85%--93% of the Pareto-optimal upper bound. Dynamic resource control also allows background jobs to run at 32%--46% of their standalone throughput, which corresponds to 82%--92% of the Pareto bound.},
+ acmid = {2806848},
+ address = {New York, NY, USA},
+ author = {Prekas, George and Primorac, Mia and Belay, Adam and Kozyrakis, Christos and Bugnion, Edouard},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806848},
+ isbn = {978-1-4503-3651-2},
+ keyword = {energy proportionality, latency-critical applications, microsecond-scale computing, workload consolidation},
+ link = {http://doi.acm.org/10.1145/2806777.2806848},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {342--355},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Energy Proportionality and Workload Consolidation for Latency-critical Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Brewer:2015:KPC:2806777.2809955,
+ abstract = {We are in the midst of an important shift to higher levels of abstraction than virtual machines. Kubernetes aims to simplify the deployment and management of services, including the construction of applications as sets of interacting but independent services. We explain some of the key concepts in Kubernetes and show how they work together to simplify evolution and scaling.},
+ acmid = {2809955},
+ address = {New York, NY, USA},
+ author = {Brewer, Eric A.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2809955},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2809955},
+ location = {Kohala Coast, Hawaii},
+ numpages = {1},
+ pages = {167--167},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Kubernetes and the Path to Cloud Native},
+ year = {2015}
+}
+
+
+@inproceedings{Lang:2015:MAS:2806777.2806845,
+ abstract = {Microsoft operates the Azure SQL Database (ASD) cloud service, one of the dominant relational cloud database services in the market today. To aid the academic community in their research on designing and efficiently operating cloud database services, Microsoft is introducing the release of production-level telemetry traces from the ASD service. This telemetry data set provides, over a wide set of important hardware resources and counters, the consumption level of each customer database replica. The first release will be a multi-month time-series data set that includes the full cluster traces from two different ASD global regions.},
+ acmid = {2806845},
+ address = {New York, NY, USA},
+ author = {Lang, Willis and Bertsch, Frank and DeWitt, David J. and Ellis, Nigel},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806845},
+ isbn = {978-1-4503-3651-2},
+ keyword = {cloud database, data set, resources, telemetry},
+ link = {http://doi.acm.org/10.1145/2806777.2806845},
+ location = {Kohala Coast, Hawaii},
+ numpages = {6},
+ pages = {189--194},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Microsoft Azure SQL Database Telemetry},
+ year = {2015}
+}
+
+
+@inproceedings{Huang:2015:UIC:2806777.2806937,
+ abstract = {Over the last decade, Hadoop has evolved into a widely used platform for Big Data applications. Acknowledging its wide-spread use, we present a comprehensive analysis of the solved issues with applied patches in the Hadoop ecosystem. The analysis is conducted with a focus on Hadoop's two essential components: HDFS (storage) and MapReduce (computation), it involves a total of 4218 solved issues over the last six years, covering 2180 issues from HDFS and 2038 issues from MapReduce. Insights derived from the study concern system design and development, particularly with respect to correlated issues and correlations between root causes of issues and characteristics of the Hadoop subsystems. These findings shed light on the future development of Big Data systems, on their testing, and on bug-finding tools.},
+ acmid = {2806937},
+ address = {New York, NY, USA},
+ author = {Huang, Jian and Zhang, Xuechen and Schwan, Karsten},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806937},
+ isbn = {978-1-4503-3651-2},
+ keyword = {Hadoop, big data, bug study, issue correlation},
+ link = {http://doi.acm.org/10.1145/2806777.2806937},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {2--15},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Understanding Issue Correlations: A Case Study of the Hadoop System},
+ year = {2015}
+}
+
+
+@proceedings{Aguilera:2016:2987550,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ editor = {Aguilera, Marcos K. and Cooper, Brian and Diao, Yanlei},
+ isbn = {978-1-4503-4525-5},
+ location = {Santa Clara, CA, USA},
+ publisher = {ACM},
+ title = {SoCC '16: Proceedings of the Seventh ACM Symposium on Cloud Computing},
+ year = {2016}
+}
+
+
+@inproceedings{Sparks:2015:AMS:2806777.2806945,
+ abstract = {The proliferation of massive datasets combined with the development of sophisticated analytical techniques has enabled a wide variety of novel applications such as improved product recommendations, automatic image tagging, and improved speech-driven interfaces. A major obstacle to supporting these predictive applications is the challenging and expensive process of identifying and training an appropriate predictive model. Recent efforts aiming to automate this process have focused on single node implementations and have assumed that model training itself is a black box, limiting their usefulness for applications driven by large-scale datasets. In this work, we build upon these recent efforts and propose an architecture for automatic machine learning at scale comprised of a cost-based cluster resource allocation estimator, advanced hyper-parameter tuning techniques, bandit resource allocation via runtime algorithm introspection, and physical optimization via batching and optimal resource allocation. The result is TuPAQ, a component of the MLbase system that automatically finds and trains models for a user's predictive application with comparable quality to those found using exhaustive strategies, but an order of magnitude more efficiently than the standard baseline approach. TuPAQ scales to models trained on Terabytes of data across hundreds of machines.},
+ acmid = {2806945},
+ address = {New York, NY, USA},
+ author = {Sparks, Evan R. and Talwalkar, Ameet and Haas, Daniel and Franklin, Michael J. and Jordan, Michael I. and Kraska, Tim},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806945},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806945},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {368--380},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Automating Model Search for Large Scale Machine Learning},
+ year = {2015}
+}
+
+
+@inproceedings{Conley:2015:ACD:2806777.2806781,
+ abstract = {Cloud computing providers have recently begun to offer high-performance virtualized flash storage and virtualized network I/O capabilities, which have the potential to increase application performance. Since users pay for only the resources they use, these new resources have the potential to lower overall cost. Yet achieving low cost requires choosing the right mixture of resources, which is only possible if their performance and scaling behavior is known. In this paper, we present a systematic measurement of recently introduced virtualized storage and network I/O within Amazon Web Services (AWS). Our experience shows that there are scaling limitations in clusters relying on these new features. As a result, provisioning for a large-scale cluster differs substantially from small-scale deployments. We describe the implications of this observation for achieving efficiency in large-scale cloud deployments. To confirm the value of our methodology, we deploy cost-efficient, high-performance sorting of 100 TB as a large-scale evaluation.},
+ acmid = {2806781},
+ address = {New York, NY, USA},
+ author = {Conley, Michael and Vahdat, Amin and Porter, George},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806781},
+ isbn = {978-1-4503-3651-2},
+ keyword = {I/O performance, cloud},
+ link = {http://doi.acm.org/10.1145/2806777.2806781},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {302--314},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Achieving Cost-efficient, Data-intensive Computing in the Cloud},
+ year = {2015}
+}
+
+
+@inproceedings{Kim:2015:DHA:2806777.2806841,
+ abstract = {Hot standby techniques are widely used to implement highly available database systems. These techniques make use of two separate copies of the database, an active copy and a backup that is managed by the standby. The two database copies are stored independently and synchronized by the database systems that manage them. However, database systems deployed in computing clouds often have access to reliable persistent storage that can be shared by multiple servers. In this paper we consider how hot standby techniques can be improved in such settings. We present SHADOW systems, a novel approach to hot standby high availability. Like other database systems that use shared storage, SHADOW systems push the task of managing database replication out of the database system and into the underlying storage service, simplifying the database system. Unlike other systems, SHADOW systems also provide write offloading, which frees the active database system from the need to update the persistent database. Instead, that responsibility is placed on the standby system. We present the results of a performance evaluation using a SHADOW prototype on Amazon's cloud, showing that write offloading enables SHADOW to outperform traditional hot standby replication and even a standalone DBMS that does not provide high availability.},
+ acmid = {2806841},
+ address = {New York, NY, USA},
+ author = {Kim, Jaemyung and Salem, Kenneth and Daudjee, Khuzaima and Aboulnaga, Ashraf and Pan, Xin},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806841},
+ isbn = {978-1-4503-3651-2},
+ keyword = {availability},
+ link = {http://doi.acm.org/10.1145/2806777.2806841},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {209--221},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Database High Availability Using SHADOW Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Madden:2015:IDA:2806777.2809956,
+ abstract = {Data analytics often involves data exploration, where a data set is repeatedly analyzed to understand root causes, find patterns, or extract insights. Such analysis is frequently bottlenecked by the underlying data processing system, as analysts wait for their queries to complete against a complex multilayered software stack. In this talk, I'll describe some exploratory analytics applications we've build in the MIT database group over the past few years, and will then describe some of the challenges and opportunities that arise when building more efficient data exploration systems that will allow these applications to become truly interactive, even when processing billions of data points.},
+ acmid = {2809956},
+ address = {New York, NY, USA},
+ author = {Madden, Samuel},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2809956},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2809956},
+ location = {Kohala Coast, Hawaii},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Interactive Data Analytics: The New Frontier},
+ year = {2015}
+}
+
+
+@inproceedings{Nathan:2015:TCP:2806777.2806838,
+ abstract = {Although many models exist to predict the time taken to migrate a virtual machine from one physical machine to another, our empirical validation of these models has shown the 90th percentile error to be 46% (43 secs) and 159% (112 secs) for KVM and Xen live migration, respectively. Our analysis reveals that these models are fundamentally flawed as they all fail to take into account the following three critical parameters: (i) the writable working set size, (ii) the number of pages eligible for the skip technique, (iii) the relation of the number of skipped pages with the page dirty rate and the page transfer rate, and incorrectly model the key parameter---the number of new pages dirtied per unit time. In this paper, we propose a novel model that takes all these parameters into account. We present a thorough validation with 53 workloads and show that the 90th percentile error in the estimated migration times is only 12% (8 secs) and 19% (14 secs) for KVM and Xen live migration, respectively.},
+ acmid = {2806838},
+ address = {New York, NY, USA},
+ author = {Nathan, Senthil and Bellur, Umesh and Kulkarni, Purushottam},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806838},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806838},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {288--301},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Towards a Comprehensive Performance Model of Virtual Machine Live Migration},
+ year = {2015}
+}
+
+
+@inproceedings{Jayathilaka:2015:RTS:2806777.2806842,
+ abstract = {Cloud computing is a successful model for hosting web-facing applications that are accessed by their users as services. While clouds currently offer Service Level Agreements (SLAs) containing guarantees of availability, they do not make performance guarantees for deployed applications. In this work we present Cerebro -- a system for establishing statistical guarantees of application response time in cloud settings. Cerebro combines off-line static analysis of application control structure with on-line cloud performance monitoring and statistical forecasting to predict bounds on the response time of web-facing application programming interfaces (APIs). Because Cerebro does not require application instrumentation or per-application cloud benchmarking, it does not impose any runtime overhead, and is suitable for use at cloud scales. Also, because the bounds are statistical, they are appropriate for use as the basis for SLAs between cloud-hosted applications and their users. We investigate the correctness of Cerebro predictions, the tightness of their bounds, and the duration over which the bounds persist in both Google App Engine and AppScale (public and private cloud platforms respectively). We also detail the effectiveness of our SLA prediction methodology compared to other performance bound estimation methods based on simple statistical analysis.},
+ acmid = {2806842},
+ address = {New York, NY, USA},
+ author = {Jayathilaka, Hiranya and Krintz, Chandra and Wolski, Rich},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806842},
+ isbn = {978-1-4503-3651-2},
+ keyword = {SLA, cloud computing, web APIs},
+ link = {http://doi.acm.org/10.1145/2806777.2806842},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {315--328},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Response Time Service Level Agreements for Cloud-hosted Web Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Manousakis:2015:CUD:2806777.2806938,
+ abstract = {Cloud providers have made significant strides in reducing the cooling capital and operational costs of their datacenters, for example, by leveraging outside air ("free") cooling where possible. Despite these advances, cooling costs still represent a significant expense mainly because cloud providers typically provision their cooling infrastructure for the worst-case scenario (i.e., very high load and outside temperature at the same time). Thus, in this paper, we propose to reduce cooling costs by underprovisioning the cooling infrastructure. When the cooling is underprovisioned, there might be (rare) periods when the cooling infrastructure cannot cool down the IT equipment enough. During these periods, we can either (1) reduce the processing capacity and potentially degrade the quality of service, or (2) let the IT equipment temperature increase in exchange for a controlled degradation in reliability. To determine the ideal amount of underprovisioning, we introduce CoolProvision, an optimization and simulation framework for selecting the cheapest provisioning within performance constraints defined by the provider. CoolProvision leverages an abstract trace of the expected workload, as well as cooling, performance, power, reliability, and cost models to explore the space of potential provisionings. Using data from a real small free-cooled datacenter, our results suggest that CoolProvision can reduce the cost of cooling by up to 55%. We extrapolate our experience and results to larger cloud datacenters as well.},
+ acmid = {2806938},
+ address = {New York, NY, USA},
+ author = {Manousakis, Ioannis and Goiri, \'{I}\~{n}igo and Sankar, Sriram and Nguyen, Thu D. and Bianchini, Ricardo},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806938},
+ isbn = {978-1-4503-3651-2},
+ keyword = {cooling, datacenters, provisioning},
+ link = {http://doi.acm.org/10.1145/2806777.2806938},
+ location = {Kohala Coast, Hawaii},
+ numpages = {12},
+ pages = {356--367},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {CoolProvision: Underprovisioning Datacenter Cooling},
+ year = {2015}
+}
+
+
+@inproceedings{Li:2015:DUW:2806777.2806940,
+ abstract = {In a modern web application, a single high-level action like a mouse click triggers a flurry of asynchronous events on the client browser and remote web servers. We introduce Domino, a new tool which automatically captures and analyzes end-to-end, asynchronous causal relationship of events that span clients and servers. Using Domino, we found uncharacteristically long event chains in Bing Maps, discovered data races in the WinJS implementation of promises, and developed a new server-side scheduling algorithm for reducing the tail latency of server responses.},
+ acmid = {2806940},
+ address = {New York, NY, USA},
+ author = {Li, Ding and Mickens, James and Nath, Suman and Ravindranath, Lenin},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806940},
+ isbn = {978-1-4503-3651-2},
+ keyword = {JavaScript, causality tracking, performance debugging, web application},
+ link = {http://doi.acm.org/10.1145/2806777.2806940},
+ location = {Kohala Coast, Hawaii},
+ numpages = {7},
+ pages = {182--188},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Domino: Understanding Wide-area, Asynchronous Event Causality in Web Applications},
+ year = {2015}
+}
+
+
+@inproceedings{Coppa:2015:DSS:2806777.2806843,
+ abstract = {We tackle the problem of predicting the performance of MapReduce applications designing accurate progress indicators, which keep programmers informed on the percentage of completed computation time during the execution of a job. This is especially important in pay-as-you-go cloud environments, where slow jobs can be aborted in order to avoid excessive costs. Performance predictions can also serve as a building block for several profile-guided optimizations. By assuming that the running time depends linearly on the input size, state-of-the-art techniques can be seriously harmed by data skewness, load unbalancing, and straggling tasks. We thus design a novel profile-guided progress indicator, called NearestFit, that operates without the linear hypothesis assumption in a fully online way (i.e., without resorting to profile data collected from previous executions). NearestFit exploits a careful combination of nearest neighbor regression and statistical curve fitting techniques. Fine-grained profiles required by our theoretical progress model are approximated through space- and time-efficient data streaming algorithms. We implemented NearestFit on top of Hadoop 2.6.0. An extensive empirical assessment over the Amazon EC2 platform on a variety of benchmarks shows that its accuracy is very good, even when competitors incur non-negligible errors and wide prediction fluctuations.},
+ acmid = {2806843},
+ address = {New York, NY, USA},
+ author = {Coppa, Emilio and Finocchi, Irene},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806843},
+ isbn = {978-1-4503-3651-2},
+ keyword = {MapReduce, data skewness, hadoop, performance prediction, performance profiling, progress indicators},
+ link = {http://doi.acm.org/10.1145/2806777.2806843},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {139--152},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {On Data Skewness, Stragglers, and MapReduce Progress Indicators},
+ year = {2015}
+}
+
+
+@inproceedings{Zats:2015:FMS:2806777.2806852,
+ abstract = {The drive towards richer and more interactive web content places increasingly stringent requirements on datacenter network performance. Applications running atop these networks typically partition an incoming query into multiple subqueries, and generate the final result by aggregating the responses for these subqueries. As a result, a large fraction --- as high as 80% --- of the network flows in such workloads are short and latency-sensitive. The speed with which existing networks respond to packet drops limits their ability to meet high-percentile flow completion time SLOs. Indirect notifications indicating packet drops (e.g., duplicates in an end-to-end acknowledgement sequence) are an important limitation to the agility of response to packet drops. This paper proposes FastLane, an in-network drop notification mechanism. FastLane enhances switches to send high-priority drop notifications to sources, thus informing sources as quickly as possible. Consequently, sources can retransmit packets sooner and throttle transmission rates earlier, thus reducing high-percentile flow completion times. We demonstrate, through simulation and implementation, that FastLane reduces 99.9th percentile completion times of short flows by up to 81%. These benefits come at minimal cost --- safeguards ensure that FastLane consume no more than 1% of bandwidth and 2.5% of buffers.},
+ acmid = {2806852},
+ address = {New York, NY, USA},
+ author = {Zats, David and Iyer, Anand Padmanabha and Ananthanarayanan, Ganesh and Agarwal, Rachit and Katz, Randy and Stoica, Ion and Vahdat, Amin},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806852},
+ isbn = {978-1-4503-3651-2},
+ keyword = {datacenter networks, transport protocols},
+ link = {http://doi.acm.org/10.1145/2806777.2806852},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {84--96},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {FastLane: Making Short Flows Shorter with Agile Drop Notification},
+ year = {2015}
+}
+
+
+@inproceedings{Xiao:2015:SVI:2806777.2806844,
+ abstract = {The rapid growth of cloud storage systems calls for fast and scalable namespace processing. While few commercial file systems offer anything better than federating individually non-scalable namespace servers, a recent academic file system, IndexFS, demonstrates scalable namespace processing based on client caching of directory entries and permissions (directory lookup state) with no per-client state in servers. In this paper we explore explicit replication of directory lookup state in all servers as an alternative to caching this information in all clients. Both eliminate most repeated RPCs to different servers in order to resolve hierarchical permission tests. Our realization for server replicated directory lookup state, ShardFS, employs a novel file system specific hybrid optimistic and pessimistic concurrency control favoring single object transactions over distributed transactions. Our experimentation suggests that if directory lookup state mutation is a fixed fraction of operations (strong scaling for metadata), server replication does not scale as well as client caching, but if directory lookup state mutation is proportional to the number of jobs, not the number of processes per job, (weak scaling for metadata), then server replication can scale more linearly than client caching and provide lower 70 percentile response times as well.},
+ acmid = {2806844},
+ address = {New York, NY, USA},
+ author = {Xiao, Lin and Ren, Kai and Zheng, Qing and Gibson, Garth A.},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806844},
+ isbn = {978-1-4503-3651-2},
+ keyword = {caching, metadata management, replication},
+ link = {http://doi.acm.org/10.1145/2806777.2806844},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {236--249},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {ShardFS vs. IndexFS: Replication vs. Caching Strategies for Distributed Metadata Management in Cloud Storage Systems},
+ year = {2015}
+}
+
+
+@inproceedings{Liu:2015:FCP:2806777.2806944,
+ abstract = {Database management systems (DBMSs) carefully optimize complex multi-join queries to avoid expensive disk I/O. As servers today feature tens or hundreds of gigabytes of RAM, a significant fraction of many analytic databases becomes memory-resident. Even after careful tuning for an in-memory environment, a linear disk I/O model such as the one implemented in PostgreSQL may make query response time predictions that are up to 2× slower than the optimal multi-join query plan over memory-resident data. This paper introduces a memory I/O cost model to identify good evaluation strategies for complex query plans with multiple hash-based equi-joins over memory-resident data. The proposed cost model is carefully validated for accuracy using three different systems, including an Amazon EC2 instance, to control for hardware-specific differences. Prior work in parallel query evaluation has advocated right-deep and bushy trees for multi-join queries due to their greater parallelization and pipelining potential. A surprising finding is that the conventional wisdom from shared-nothing disk-based systems does not directly apply to the modern shared-everything memory hierarchy. As corroborated by our model, the performance gap between the optimal left-deep and right-deep query plan can grow to about 10× as the number of joins in the query increases.},
+ acmid = {2806944},
+ address = {New York, NY, USA},
+ author = {Liu, Feilong and Blanas, Spyros},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806944},
+ isbn = {978-1-4503-3651-2},
+ link = {http://doi.acm.org/10.1145/2806777.2806944},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {153--166},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Forecasting the Cost of Processing Multi-join Queries via Hashing for Main-memory Databases},
+ year = {2015}
+}
+
+
+@inproceedings{Heinze:2015:OPO:2806777.2806847,
+ abstract = {Elastic scaling allows data stream processing systems to dynamically scale in and out to react to workload changes. As a consequence, unexpected load peaks can be handled and the extent of the overprovisioning can be reduced. However, the strategies used for elastic scaling of such systems need to be tuned manually by the user. This is an error prone and cumbersome task, because it requires a detailed knowledge of the underlying system and workload characteristics. In addition, the resulting quality of service for a specific scaling strategy is unknown a priori and can be measured only during runtime. In this paper we present an elastic scaling data stream processing prototype, which allows to trade off monetary cost against the offered quality of service. To that end, we use an online parameter optimization, which minimizes the monetary cost for the user. Using our prototype a user is able to specify the expected quality of service as an input to the optimization, which automatically detects significant changes of the workload pattern and adjusts the elastic scaling strategy based on the current workload characteristics. Our prototype is able to reduce the costs for three real-world use cases by 19% compared to a naive parameter setting and by 10% compared to a manually tuned system. In contrast to state of the art solutions, our system provides a stable and good trade-off between monetary cost and quality of service.},
+ acmid = {2806847},
+ address = {New York, NY, USA},
+ author = {Heinze, Thomas and Roediger, Lars and Meister, Andreas and Ji, Yuanzhen and Jerzak, Zbigniew and Fetzer, Christof},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806847},
+ isbn = {978-1-4503-3651-2},
+ keyword = {distributed data stream processing, elasticity, load balancing, parameter optimization},
+ link = {http://doi.acm.org/10.1145/2806777.2806847},
+ location = {Kohala Coast, Hawaii},
+ numpages = {12},
+ pages = {276--287},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Online Parameter Optimization for Elastic Data Stream Processing},
+ year = {2015}
+}
+
+
+@inproceedings{Lu:2015:VLF:2806777.2806943,
+ abstract = {In virtualized data centers, multiple VMs are consolidated to access a shared storage system. Effective storage resource management, however, turns out to be challenging, as VM workloads exhibit various IO patterns and diverse loads. To multiplex the underlying hardware resources among VMs, providing fairness and isolation while maintaining high resource utilization becomes imperative for effective storage resource management. Existing schedulers such as Linux CFQ or SFQ can provide some fairness, but it has been observed that synchronous IO tends to lose fair shares significantly when competing with aggressive VMs. In this paper, we introduce vFair, a novel scheduling framework that achieves IO resource sharing fairness among VMs, regardless of their IO patterns and workloads. The design of vFair takes per-IO cost into consideration and strikes a balance between fairness and storage resource utilization. We have developed a Xen-based prototype of vFair and evaluated it with a wide range of storage workloads. Our results from both micro-benchmarks and real-world applications demonstrate the effectiveness of vFair, with significantly improved fairness and high resource utilization.},
+ acmid = {2806943},
+ address = {New York, NY, USA},
+ author = {Lu, Hui and Saltaformaggio, Brendan and Kompella, Ramana and Xu, Dongyan},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806943},
+ isbn = {978-1-4503-3651-2},
+ keyword = {cloud computing, scheduling I/O, virtualization},
+ link = {http://doi.acm.org/10.1145/2806777.2806943},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {125--138},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {vFair: Latency-aware Fair Storage Scheduling via per-IO Cost-based Differentiation},
+ year = {2015}
+}
+
+
+@inproceedings{Subramanya:2015:SBC:2806777.2806851,
+ abstract = {Cloud spot markets enable users to bid for compute resources, such that the cloud platform may revoke them if the market price rises too high. Due to their increased risk, revocable resources in the spot market are often significantly cheaper (by as much as 10×) than the equivalent non-revocable on-demand resources. One way to mitigate spot market risk is to use various fault-tolerance mechanisms, such as checkpointing or replication, to limit the work lost on revocation. However, the additional performance overhead and cost for a particular fault-tolerance mechanism is a complex function of both an application's resource usage and the magnitude and volatility of spot market prices. We present the design of a batch computing service for the spot market, called SpotOn, that automatically selects a spot market and fault-tolerance mechanism to mitigate the impact of spot revocations without requiring application modification. SpotOn's goal is to execute jobs with the performance of on-demand resources, but at a cost near that of the spot market. We implement and evaluate SpotOn in simulation and using a prototype on Amazon's EC2 that packages jobs in Linux Containers. Our simulation results using a job trace from a Google cluster indicate that SpotOn lowers costs by 91.9% compared to using on-demand resources with little impact on performance.},
+ acmid = {2806851},
+ address = {New York, NY, USA},
+ author = {Subramanya, Supreeth and Guo, Tian and Sharma, Prateek and Irwin, David and Shenoy, Prashant},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806851},
+ isbn = {978-1-4503-3651-2},
+ keyword = {batch job, fault-tolerance, spot market},
+ link = {http://doi.acm.org/10.1145/2806777.2806851},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {329--341},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {SpotOn: A Batch Computing Service for the Spot Market},
+ year = {2015}
+}
+
+
+@inproceedings{Li:2015:POP:2806777.2806935,
+ abstract = {Penetration testing---the process of probing a deployed system for security vulnerabilities---involves a fundamental tension. If one tests a production system, there is a real danger of collateral damage; this is particularly true for systems hosted in the cloud due to the presence of other tenants. If one tests against a separate system brought up to model the live one, the dynamic state of the production system is not captured, and the value of the test is reduced. This paper presents Potassium, which provides penetration testing as a service (PTaaS) and resolves this tension for system owners, penetration testers, and cloud providers. Potassium uses techniques originally developed for live migration of virtual machines to clone them instead, capturing their full disk, memory, and network state. Potassium isolates the cloned system from the rest of the cloud, providing confidence that side effects of the penetration test will not harm other tenants. The penetration tester effectively owns the cloned system, allowing testing to be more thorough, efficient, and automatable. Experiments with our Potassium prototype show that PTaaS can detect real-world vulnerabilities while having minimal impact on cloud-based production systems.},
+ acmid = {2806935},
+ address = {New York, NY, USA},
+ author = {Li, Richard and Abendroth, Dallin and Lin, Xing and Guo, Yuankai and Baek, Hyun-Wook and Eide, Eric and Ricci, Robert and Van der Merwe, Jacobus},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806935},
+ isbn = {978-1-4503-3651-2},
+ keyword = {OpenStack, PTaaS, cloud computing, pentesting},
+ link = {http://doi.acm.org/10.1145/2806777.2806935},
+ location = {Kohala Coast, Hawaii},
+ numpages = {13},
+ pages = {30--42},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {Potassium: Penetration Testing As a Service},
+ year = {2015}
+}
+
+
+@inproceedings{Bogdanov:2015:NRF:2806777.2806939,
+ abstract = {Modern distributed systems are geo-distributed for reasons of increased performance, reliability, and survivability. At the heart of many such systems, e.g., the widely used Cassandra and MongoDB data stores, is an algorithm for choosing a closest set of replicas to service a client request. Suboptimal replica choices due to dynamically changing network conditions result in reduced performance as a result of increased response latency. We present GeoPerf, a tool that tries to automate the process of systematically testing the performance of replica selection algorithms for geo-distributed storage systems. Our key idea is to combine symbolic execution and lightweight modeling to generate a set of inputs that can expose weaknesses in replica selection. As part of our evaluation, we analyzed network round trip times between geographically distributed Amazon EC2 regions, and showed a significant number of daily changes in nearest-K replica orders. We tested Cassandra and MongoDB using our tool, and found bugs in each of these systems. Finally, we use our collected Amazon EC2 latency traces to quantify the time lost due to these bugs. For example due to the bug in Cassandra, the median wasted time for 10% of all requests is above 50 ms.},
+ acmid = {2806939},
+ address = {New York, NY, USA},
+ author = {Bogdanov, Kirill and Pe\'{o}n-Quir\'{o}s, Miguel and Maguire,Jr., Gerald Q. and Kosti\'{c}, Dejan},
+ booktitle = {Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ doi = {10.1145/2806777.2806939},
+ isbn = {978-1-4503-3651-2},
+ keyword = {geo-distributed systems, replica selection algorithms, symbolic execution},
+ link = {http://doi.acm.org/10.1145/2806777.2806939},
+ location = {Kohala Coast, Hawaii},
+ numpages = {14},
+ pages = {16--29},
+ publisher = {ACM},
+ series = {SoCC '15},
+ title = {The Nearest Replica Can Be Farther Than You Think},
+ year = {2015}
+}
+
+
