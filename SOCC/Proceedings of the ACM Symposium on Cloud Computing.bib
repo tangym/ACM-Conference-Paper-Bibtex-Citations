@@ -1,0 +1,635 @@
+@inproceedings{Li:2014:TRM:2670979.2670985,
+ abstract = {Tachyon is a distributed file system enabling reliable data sharing at memory speed across cluster computing frameworks. While caching today improves read workloads, writes are either network or disk bound, as replication is used for fault-tolerance. Tachyon eliminates this bottleneck by pushing lineage, a well-known technique, into the storage layer. The key challenge in making a long-running lineage-based storage system is timely data recovery in case of failures. Tachyon addresses this issue by introducing a checkpointing algorithm that guarantees bounded recovery cost and resource allocation strategies for recomputation under commonly used resource schedulers. Our evaluation shows that Tachyon outperforms in-memory HDFS by 110x for writes. It also improves the end-to-end latency of a realistic workflow by 4x. Tachyon is open source and is deployed at multiple companies.},
+ acmid = {2670985},
+ address = {New York, NY, USA},
+ articleno = {6},
+ author = {Li, Haoyuan and Ghodsi, Ali and Zaharia, Matei and Shenker, Scott and Stoica, Ion},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670985},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670985},
+ location = {Seattle, WA, USA},
+ numpages = {15},
+ pages = {6:1--6:15},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Tachyon: Reliable, Memory Speed Storage for Cluster Computing Frameworks},
+ year = {2014}
+}
+
+
+@inproceedings{Gunawi:2014:BLC:2670979.2670986,
+ abstract = {We conduct a comprehensive study of development and deployment issues of six popular and important cloud systems (Hadoop MapReduce, HDFS, HBase, Cassandra, ZooKeeper and Flume). From the bug repositories, we review in total 21,399 submitted issues within a three-year period (2011-2014). Among these issues, we perform a deep analysis of 3655 "vital" issues (i.e., real issues affecting deployments) with a set of detailed classifications. We name the product of our one-year study Cloud Bug Study database (CbsDB) [9], with which we derive numerous interesting insights unique to cloud systems. To the best of our knowledge, our work is the largest bug study for cloud systems to date.},
+ acmid = {2670986},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Gunawi, Haryadi S. and Hao, Mingzhe and Leesatapornwongsa, Tanakorn and Patana-anake, Tiratat and Do, Thanh and Adityatama, Jeffry and Eliazar, Kurnia J. and Laksono, Agung and Lukman, Jeffrey F. and Martin, Vincentius and Satria, Anang D.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670986},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670986},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {7:1--7:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {What Bugs Live in the Cloud? A Study of 3000+ Issues in Cloud Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Liu:2014:ADP:2670979.2670980,
+ abstract = {Partial aggregation is of great importance in many distributed data-parallel systems. Most notably, it is commonly applied by MapReduce programs to optimize I/O by successively aggregating partially reduced results into a final result, as opposed to aggregating all input records at once. In spite of its importance, programmers currently enable partial aggregation by tediously encoding their reduce functionality into separate reduce and combine functions. This is error prone and often leads to missed optimization opportunities. This paper proposes an algorithm that automatically verifies if the original monolithic reduce function of a MapReduce program is eligible for partial aggregation, and if so, synthesizes enabling partial aggregation code. The key insight behind this algorithm is a novel necessary and sufficient condition for when partial aggregation is applicable to a reduce function. This insight provides us with a formal foundation for an automaton, which derives a satisfiability problem that can be fed into a standard SMT solver. By doing so, we transform the problem of synthesis into a program inversion problem, which is however nondeterministic. Although such inversion is hard to solve in general, we observe that most reducers in practical distributed computing contexts can be classified into a few categories for which we can design efficient synthesis algorithms. Finally, we build and evaluate a prototype of our method to demonstrate its feasibility in the SCOPE distributed data-parallel system.},
+ acmid = {2670980},
+ address = {New York, NY, USA},
+ articleno = {1},
+ author = {Liu, Chang and Zhang, Jiaxing and Zhou, Hucheng and McDirmid, Sean and Guo, Zhenyu and Moscibroda, Thomas},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670980},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670980},
+ location = {Seattle, WA, USA},
+ numpages = {12},
+ pages = {1:1--1:12},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Automating Distributed Partial Aggregation},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:TTH:2670979.2670988,
+ abstract = {Interactive services often have large-scale parallel implementations. To deliver fast responses, the median and tail latencies of a service's components must be low. In this paper, we explore the hardware, OS, and application-level sources of poor tail latency in high throughput servers executing on multi-core machines. We model these network services as a queuing system in order to establish the best-achievable latency distribution. Using fine-grained measurements of three different servers (a null RPC service, Memcached, and Nginx) on Linux, we then explore why these servers exhibit significantly worse tail latencies than queuing models alone predict. The underlying causes include interference from background processes, request re-ordering caused by poor scheduling or constrained concurrency models, suboptimal interrupt routing, CPU power saving mechanisms, and NUMA effects. We systematically eliminate these factors and show that Memcached can achieve a median latency of 11 μs and a 99.9th percentile latency of 32 μs at 80% utilization on a four-core system. In comparison, a naïve deployment of Memcached at the same utilization on a single-core system has a median latency of 100 μs and a 99.9th percentile latency of 5 ms. Finally, we demonstrate that tradeoffs exist between throughput, energy, and tail latency.},
+ acmid = {2670988},
+ address = {New York, NY, USA},
+ articleno = {9},
+ author = {Li, Jialin and Sharma, Naveen Kr. and Ports, Dan R. K. and Gribble, Steven D.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670988},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Tail latency, predictable latency},
+ link = {http://doi.acm.org/10.1145/2670979.2670988},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {9:1--9:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency},
+ year = {2014}
+}
+
+
+@inproceedings{Butt:2014:CPS:2670979.2670989,
+ abstract = {Self-service Cloud Computing (SSC) [7] is a recently-proposed model to improve the security and privacy of client data on public cloud platforms. It prevents cloud operators from snooping on or modifying client VMs and provides clients the flexibility to deploy security services, such as VM introspection tools, on their own VMs. SSC achieves these goals by modifying the hypervisor privilege model. This paper focuses on the unique challenges involved in building a control plane for an SSC-based cloud platform. The control plane is the layer that facilitates interaction between hosts in the cloud infrastructure as well as between the client and the cloud. We describe a number of novel features in SSC's control plane, such as its ability to allow specification of VM dependencies, flexible deployment of network middleboxes, and new VM migration protocols. We report on our design and implementation of SSC's control plane, and present experimental evaluation of services implemented atop the control plane.},
+ acmid = {2670989},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Butt, Shakeel and Ganapathy, Vinod and Srivastava, Abhinav},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670989},
+ isbn = {978-1-4503-3252-1},
+ keyword = {cloud computing, privacy, security, trust},
+ link = {http://doi.acm.org/10.1145/2670979.2670989},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {10:1--10:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {On the Control Plane of a Self-service Cloud Platform},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:DCT:2670979.2670990,
+ abstract = {Lack of energy proportionality in server systems results in significant waste of energy when operating at low utilization, a common scenario in today's data centers. We propose DIMMer, an approach to eliminate the idle power consumption of unused system components, motivated by two key observations. First, even in their lowest-power states, the power consumption of server components remains significant. Second, unused components can be powered off entirely without sacrificing server availability. We demonstrate that unused memory capacity can be powered off, eliminating the energy waste of self-refresh for unallocated memory, while still allowing for all capacity to be available on a moment's notice. Similarly, only one CPU socket must remain powered on, allowing unused CPUs and attached memory to be powered off entirely. The DIMMer vision can improve energy proportionality and achieve energy savings. Using a Google cluster trace as well as in-house experiments, we estimate up to 50% savings on DRAM and 18.8% on CPU background energy. At $0.10/kWh, this corresponds to 0.6% of total data center cost.},
+ acmid = {2670990},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Zhang, Dongli and Ehsan, Moussa and Ferdman, Michael and Sion, Radu},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670990},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud Computing, DRAM, Energy},
+ link = {http://doi.acm.org/10.1145/2670979.2670990},
+ location = {Seattle, WA, USA},
+ numpages = {8},
+ pages = {11:1--11:8},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {DIMMer: A Case for Turning off DIMMs in Clouds},
+ year = {2014}
+}
+
+
+@inproceedings{Tembey:2014:MAP:2670979.2670993,
+ abstract = {Workload consolidation, whether via use of virtualization or with lightweight, container-based methods, is critically important for current and future datacenter and cloud computing systems. Yet such consolidation challenges the ability of current systems to meet application resource needs and isolate their resource shares, particularly for high core count or 'scaleup' servers. This paper presents the 'Merlin' approach to managing the resources of multicore platforms, which satisfies an application's resource requirements efficiently -- using low cost allocations -- and improves isolation -- measured as increased predictability of application execution. Merlin (i) creates a virtual platform (VP) as a system-level resource commitment to an application's resource shares, (ii) enforces its isolation, and (iii) operates with low runtime overhead. Further, Merlin's resource (re)-allocation and isolation methods operate by constructing online models that capture the resource 'sensitivities' of the currently running applications along all of their resource dimensions. Elevating isolation into a first-class management principle, these sensitivity- and cost-based allocation and sharing methods lead to efficient methods for shared resource use on scaleup server systems. Experimental evaluations on a large core-count machine demonstrate improved performance with reduced performance variation and increased system throughput and efficiency, for a wide range of popular datacenter workloads, compared with the methods used in prior work and with the state-of-art Xen hypervisor.},
+ acmid = {2670993},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Tembey, Priyanka and Gavrilovska, Ada and Schwan, Karsten},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670993},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Performance isolation, Virtualization},
+ link = {http://doi.acm.org/10.1145/2670979.2670993},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {14:1--14:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Merlin: Application- and Platform-aware Resource Allocation in Consolidated Server Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Sfakianakis:2014:VIS:2670979.2670998,
+ abstract = {Server consolidation via virtualization is an essential technique for improving infrastructure cost in modern datacenters. From the viewpoint of datacenter operators, consolidation offers compelling advantages by reducing the number of physical servers, and reducing operational costs such as energy consumption. However, performance interference between co-located workloads can be crippling. Conservatively, and at significant cost, datacenter operators are forced to keep physical servers at low utilization levels (typically below 20%), to minimize adverse performance interactions. In this paper, we focus on addressing the issue of performance interference on a virtualized server operating at high utilization levels. In our work, we find that eliminating interference in the I/O path is critical for achieving good performance on consolidated servers. We present Vanguard, a device driver stack that implements a full I/O path in the Linux kernel that provisions competing workloads with dedicated resources. We focus on two key resources: in-memory buffers for the filesystem, and space on SSD devices that serve as a transparent cache for block devices. Our approach effectively mitigates performance interference, for several mixes of transactional, streaming, and analytical processing workloads. We find that with our approach a server can run more workloads close to their nominal performance level as compared to the unmodified Linux I/O path, by careful allocation of I/O path resources to each workload. At excessive load levels, i.e. when the aggregate load exceeds the capabilities of the server, our approach can still provide isolated slices of the I/O path for a subset of the co-located workloads yielding at least 50% of their nominal performance. In addition, Vanguard is shown to be 2.5x more efficient in terms of service resource usage for a 4-workload mix, taking into account utilization and power consumption. With an I/O-heavy mix 6-workload mix, Vanguard is 8x more efficient than the unmodified baseline Linux system.},
+ acmid = {2670998},
+ address = {New York, NY, USA},
+ articleno = {19},
+ author = {Sfakianakis, Yannis and Mavridis, Stelios and Papagiannis, Anastasios and Papageorgiou, Spyridon and Fountoulakis, Markos and Marazakis, Manolis and Bilas, Angelos},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670998},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Input/output, Inteference, Performance, Virtual Machines},
+ link = {http://doi.acm.org/10.1145/2670979.2670998},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {19:1--19:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Vanguard: Increasing Server Efficiency via Workload Isolation in the Storage I/O Path},
+ year = {2014}
+}
+
+
+@inproceedings{Curino:2014:RSY:2670979.2670981,
+ abstract = {The continuous shift towards data-driven approaches to business, and a growing attention to improving return on investments (ROI) for cluster infrastructures is generating new challenges for big-data frameworks. Systems originally designed for big batch jobs now handle an increasingly complex mix of computations. Moreover, they are expected to guarantee stringent SLAs for production jobs and minimize latency for best-effort jobs. In this paper, we introduce reservation-based scheduling, a new approach to this problem. We develop our solution around four key contributions: 1) we propose a reservation definition language (RDL) that allows users to declaratively reserve access to cluster resources, 2) we formalize planning of current and future cluster resources as a Mixed-Integer Linear Programming (MILP) problem, and propose scalable heuristics, 3) we adaptively distribute resources between production jobs and best-effort jobs, and 4) we integrate all of this in a scalable system named Rayon, that builds upon Hadoop / YARN. We evaluate Rayon on a 256-node cluster against workloads derived from Microsoft, Yahoo!, Facebook, and Cloud-era's clusters. To enable practical use of Rayon, we open-sourced our implementation as part of Apache Hadoop 2.6.},
+ acmid = {2670981},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Curino, Carlo and Difallah, Djellel E. and Douglas, Chris and Krishnan, Subru and Ramakrishnan, Raghu and Rao, Sriram},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670981},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670981},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {2:1--2:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Reservation-based Scheduling: If You'Re Late Don'T Blame Us!},
+ year = {2014}
+}
+
+
+@proceedings{Lazowska:2014:2670979,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3252-1},
+ location = {Seattle, WA, USA},
+ publisher = {ACM},
+ title = {SOCC '14: Proceedings of the ACM Symposium on Cloud Computing},
+ year = {2014}
+}
+
+
+@inproceedings{Leesatapornwongsa:2014:CDC:2670979.2670992,
+ abstract = {As cloud computing has matured, more and more local applications are replaced by easy-to-use on-demand services accessible via computer networks (a.k.a. cloud services). Running behind these services are massive hardware infrastructures and complex management tasks (e.g., recovery, software upgrades) that if not tested thoroughly can exhibit failures that lead to major service disruptions. Some researchers estimate that 568 hours of downtime at 13 well-known cloud services since 2007 had an economic impact of more than $70 million [18]. Others predict worse: for every hour it is not up and running, a cloud service can take a hit between $1 to 5 million [32]. Moreover, an outage of a popular service can shutdown other dependent services [11, 37, 59], leading to many more frustrated and furious users.},
+ acmid = {2670992},
+ address = {New York, NY, USA},
+ articleno = {13},
+ author = {Leesatapornwongsa, Tanakorn and Gunawi, Haryadi S.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670992},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670992},
+ location = {Seattle, WA, USA},
+ numpages = {8},
+ pages = {13:1--13:8},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {The Case for Drill-Ready Cloud Computing},
+ year = {2014}
+}
+
+
+@proceedings{Lohman:2013:2523616,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2428-1},
+ location = {Santa Clara, California},
+ publisher = {ACM},
+ title = {SOCC '13: Proceedings of the 4th Annual Symposium on Cloud Computing},
+ year = {2013}
+}
+
+
+@inproceedings{Saemundsson:2014:DPP:2670979.2671007,
+ abstract = {Large-scale in-memory object caches such as memcached are widely used to accelerate popular web sites and to reduce burden on backend databases. Yet current cache systems give cache operators limited information on what resources are required to optimally accommodate the present workload. This paper focuses on a key question for cache operators: how much total memory should be allocated to the in-memory cache tier to achieve desired performance? We present our Mimir system: a lightweight online profiler that hooks into the replacement policy of each cache server and produces graphs of the overall cache hit rate as a function of memory size. The profiler enables cache operators to dynamically project the cost and performance impact from adding or removing memory resources within a distributed in-memory cache, allowing "what-if" questions about cache performance to be answered without laborious offline tuning. Internally, Mimir uses a novel lock-free algorithm and lookup filters for quickly and dynamically estimating hit rate of LRU caches. Running Mimir as a profiler requires minimal changes to the cache server, thanks to a lean API. Our experiments show that Mimir produces dynamic hit rate curves with over 98% accuracy and 2--5% overhead on request latency and throughput when Mimir is run in tandem with memcached, suggesting online cache profiling can be a practical tool for improving provisioning of large caches.},
+ acmid = {2671007},
+ address = {New York, NY, USA},
+ articleno = {28},
+ author = {Saemundsson, Trausti and Bjornsson, Hjortur and Chockler, Gregory and Vigfusson, Ymir},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671007},
+ isbn = {978-1-4503-3252-1},
+ keyword = {LRU, caching, hit-rate curves, memcached, miss-rate curves, profiling},
+ link = {http://doi.acm.org/10.1145/2670979.2671007},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {28:1--28:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Dynamic Performance Profiling of Cloud Caches},
+ year = {2014}
+}
+
+
+@inproceedings{Yadwadkar:2014:WPF:2670979.2671005,
+ abstract = {Straggler tasks continue to be a major hurdle in achieving faster completion of data intensive applications running on modern data-processing frameworks. Existing straggler mitigation techniques are inefficient due to their reactive and replicative nature -- they rely on a wait-speculate-re-execute mechanism, thus leading to delayed straggler detection and inefficient resource utilization. Existing proactive techniques also over-utilize resources due to replication. Existing modeling-based approaches are hard to rely on for production-level adoption due to modeling errors. We present Wrangler, a system that proactively avoids situations that cause stragglers. Wrangler automatically learns to predict such situations using a statistical learning technique based on cluster resource utilization counters. Furthermore, Wrangler introduces a notion of a confidence measure with these predictions to overcome the modeling error problems; this confidence measure is then exploited to achieve a reliable task scheduling. In particular, by using these predictions to balance delay in task scheduling against the potential for idling of resources, Wrangler achieves a speed up in the overall job completion time. For production-level workloads from Facebook and Cloudera's customers, Wrangler improves the 99th percentile job completion time by up to 61% as compared to speculative execution, a widely used straggler mitigation technique. Moreover, Wrangler achieves this speed-up while significantly improving the resource consumption (by up to 55%).},
+ acmid = {2671005},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Yadwadkar, Neeraja J. and Ananthanarayanan, Ganesh and Katz, Randy},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671005},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2671005},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {26:1--26:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Wrangler: Predictable and Faster Jobs Using Fewer Resources},
+ year = {2014}
+}
+
+
+@inproceedings{Chen:2014:DAV:2670979.2671003,
+ abstract = {To provide robust infrastructure as a service (IaaS), clouds currently perform load balancing by migrating virtual machines (VMs) from heavily loaded physical machines (PMs) to lightly loaded PMs. Previous reactive load balancing algorithms migrate VMs upon the occurrence of load imbalance, while previous proactive load balancing algorithms predict PM overload to conduct VM migration. However, both methods cannot maintain long-term load balance and produce high overhead and delay due to migration VM selection and destination PM selection. To overcome these problems, in this paper, we propose a proactive Markov Decision Process (MDP)-based load balancing algorithm. We handle the challenges of allying MDP in virtual resource management in cloud datacenters, which allows a PM to proactively find an optimal action to transit to a lightly loaded state that will maintain for a longer period of time. We also apply the MDP to determine destination PMs to achieve long-term PM load balance state. Our algorithm reduces the numbers of Service Level Agreement (SLA) violations by long-term load balance maintenance, and also reduces the load balancing overhead (e.g., CPU time, energy) and delay by quickly identifying VMs and destination PMs to migrate. Our trace-driven experiments show that our algorithm outperforms both previous reactive and proactive load balancing algorithms in terms of SLA violation, load balancing efficiency and long-term load balance maintenance.},
+ acmid = {2671003},
+ address = {New York, NY, USA},
+ articleno = {24},
+ author = {Chen, Liuhua and Shen, Haiying and Sapra, Karan},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671003},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud computing, MDP, Resource management},
+ link = {http://doi.acm.org/10.1145/2670979.2671003},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {24:1--24:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Distributed Autonomous Virtual Resource Management in Datacenters Using Finite-Markov Decision Process},
+ year = {2014}
+}
+
+
+@inproceedings{Stuedi:2014:DDC:2670979.2670994,
+ abstract = {Remote Procedure Call (RPC) has been the cornerstone of distributed systems since the early 80s. Recently, new classes of large-scale distributed systems running in data centers are posing extra challenges for RPC systems in terms of scaling and latency. We find that existing RPC systems make very poor usage of resources (CPU, memory, network) and are not ready to handle these upcoming workloads. In this paper we present DaRPC, an RPC framework which uses RDMA to implement a tight integration between RPC message processing and network processing in user space. DaRPC efficiently distributes computation, network resources and RPC resources across cores and memory to achieve a high aggregate throughput (2-3M ops/sec) at a very low per-request latency (10μs with iWARP). In the evaluation we show that DaRPC can boost the RPC performance of existing distributed systems in the cloud by more than an order of magnitude for both throughput and latency.},
+ acmid = {2670994},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {Stuedi, Patrick and Trivedi, Animesh and Metzler, Bernard and Pfefferle, Jonas},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670994},
+ isbn = {978-1-4503-3252-1},
+ keyword = {RDMA, Remote Procedure Call},
+ link = {http://doi.acm.org/10.1145/2670979.2670994},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {15:1--15:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {DaRPC: Data Center RPC},
+ year = {2014}
+}
+
+
+@proceedings{Ghandeharizadeh:2015:2806777,
+ abstract = {The stated scope of SoCC is to be broad and encompass diverse data management and systems topics, and this year's 34 accepted papers are no exception. They touch on a wide range of data systems topics including new architectures, scheduling, performance modeling, high availability, replication, elasticity, migration, costs and performance trade-offs, complex analysis, and testing. The conference also includes 2 poster sessions (with 30 posters in addition to invited poster presentations for the accepted papers), keynotes by Eric Brewer of Google/UC Berkeley and Samuel Madden of MIT, and a social program that includes a banquet and a luncheon for students and senior systems and database researchers. The symposium is co-located with the 41st International Conference on Very Large Databases, VLDB 2015, highlighting the synergy between big data and the cloud.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3651-2},
+ location = {Kohala Coast, Hawaii},
+ publisher = {ACM},
+ title = {SoCC '15: Proceedings of the Sixth ACM Symposium on Cloud Computing},
+ year = {2015}
+}
+
+
+@inproceedings{Li:2014:RLT:2670979.2671004,
+ abstract = {Cloud systems have become ubiquitous today -- they are used to store and process the tremendous amounts of data being generated by Internet users. These systems run on hundreds of commodity machines, and have a huge amount of non-determinism (thousands of threads and hundreds of processes) in their execution. Therefore, bugs that occur in cloud systems are hard to understand, reproduce, and fix. The state-of-the-art of debugging in the industry is to log messages during execution, and refer to those messages later in case of errors. In ReproLite, we augment the already widespread process of debugging using logs by enabling testers to quickly and easily specify the conjectures that they form regarding the cause of an error (or bug) from execution logs, and to also automatically validate those conjectures. ReproLite includes a Domain Specific Language (DSL) that allows testers to specify all aspects of a potential scenario (e.g., specific workloads, execution operations and their orders, environment non-determinism) that causes a given bug. Given such a scenario, ReproLite can enforce the conditions in the scenario during system execution. Potential buggy scenarios can also be automatically generated from a sequence of log messages that a tester believes indicates the cause of the bug. We have experimented ReproLite with 11 bugs from two popular cloud systems, Cassandra and HBase. We were able to reproduce all of the bugs using ReproLite. We report on our experience with using ReproLite on those bugs.},
+ acmid = {2671004},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {Li, Kaituo and Joshi, Pallavi and Gupta, Aarti and Ganai, Malay K.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671004},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud Computing, Debugging, Hard System Bug, Lightweight},
+ link = {http://doi.acm.org/10.1145/2670979.2671004},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {25:1--25:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {ReproLite: A Lightweight Tool to Quickly Reproduce Hard System Bugs},
+ year = {2014}
+}
+
+
+@inproceedings{Dean:2014:PPO:2670979.2670987,
+ abstract = {Performance bugs which manifest in a production cloud computing infrastructure are notoriously difficult to diagnose because of both the difficulty of reproducing those bugs and the lack of debugging information. In this paper, we present PerfScope, a practical online performance bug inference tool to help the developer understand how a performance bug happened during the production run. PerfScope achieves online bug inference to obviate the need for offline bug reproduction. PerfScope does not require application source code or any runtime instrumentation to the production system. PerfScope is application-agnostic, which can support both interpreted and compiled programs running inside a cloud infrastructure. We have implemented PerfScope and tested it using real performance bugs on seven popular open source server systems (Hadoop, HDFS, Cassandra, Tomcat, Apache, Lighttpd, MySQL). The results show that PerfScope can narrow down the search scope of the bug-related functions to a small percentage (0.03-2.3%) and rank the real bug-related functions within top five candidates in the majority of cases. PerfScope only imposes on average 1.8% runtime overhead to the tested server applications.},
+ acmid = {2670987},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Dean, Daniel J. and Nguyen, Hiep and Gu, Xiaohui and Zhang, Hui and Rhee, Junghwan and Arora, Nipun and Jiang, Geoff},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670987},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Performance, Reliability, Testing and Debugging},
+ link = {http://doi.acm.org/10.1145/2670979.2670987},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {8:1--8:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {PerfScope: Practical Online Server Performance Bug Inference in Production Cloud Computing Infrastructures},
+ year = {2014}
+}
+
+
+@inproceedings{Kiveris:2014:CCM:2670979.2670997,
+ abstract = {Computing connected components of a graph lies at the core of many data mining algorithms, and is a fundamental subroutine in graph clustering. This problem is well studied, yet many of the algorithms with good theoretical guarantees perform poorly in practice, especially when faced with graphs with hundreds of billions of edges. In this paper, we design improved algorithms based on traditional MapReduce architecture for large scale data analysis. We also explore the effect of augmenting MapReduce with a distributed hash table (DHT) service. We show that these algorithms have provable theoretical guarantees, and easily outperform previously studied algorithms, sometimes by more than an order of magnitude. In particular, our iterative MapReduce algorithms run 3 to 15 times faster than the best previously studied algorithms, and the MapReduce implementation using a DHT is 10 to 30 times faster than the best previously studied algorithms. These are the fastest algorithms that easily scale to graphs with hundreds of billions of edges.},
+ acmid = {2670997},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Kiveris, Raimondas and Lattanzi, Silvio and Mirrokni, Vahab and Rastogi, Vibhor and Vassilvitskii, Sergei},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670997},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Connected Components, MapReduce Algorithms},
+ link = {http://doi.acm.org/10.1145/2670979.2670997},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {18:1--18:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Connected Components in MapReduce and Beyond},
+ year = {2014}
+}
+
+
+@inproceedings{Dobre:2014:HRH:2670979.2670991,
+ abstract = {Besides well-known benefits, commodity cloud storage also raises concerns that include security, reliability, and consistency. We present Hybris key-value store, the first robust hybrid cloud storage system, aiming at addressing these concerns leveraging both private and public cloud resources. Hybris robustly replicates metadata on trusted private premises (private cloud), separately from data which is dispersed (using replication or erasure coding) across multiple untrusted public clouds. Hybris maintains metadata stored on private premises at the order of few dozens of bytes per key, avoiding the scalability bottleneck at the private cloud. In turn, the hybrid design allows Hybris to efficiently and robustly tolerate cloud outages, but also potential malice in clouds without overhead. Namely, to tolerate up to f malicious clouds, in the common case of the Hybris variant with data replication, writes replicate data across f + 1 clouds, whereas reads involve a single cloud. In the worst case, only up to f additional clouds are used. This is considerably better than earlier multi-cloud storage systems that required costly 3f + 1 clouds to mask f potentially malicious clouds. Finally, Hybris leverages strong metadata consistency to guarantee to Hybris applications strong data consistency without any modifications to the eventually consistent public clouds. We implemented Hybris in Java and evaluated it using a series of micro and macrobenchmarks. Our results show that Hybris significantly outperforms comparable multi-cloud storage systems and approaches the performance of bare-bone commodity public cloud storage.},
+ acmid = {2670991},
+ address = {New York, NY, USA},
+ articleno = {12},
+ author = {Dobre, Dan and Viotti, Paolo and Vukoli\'{c}, Marko},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670991},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud storage, Hybrid cloud, Reliability},
+ link = {http://doi.acm.org/10.1145/2670979.2670991},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {12:1--12:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Hybris: Robust Hybrid Cloud Storage},
+ year = {2014}
+}
+
+
+@inproceedings{Cui:2014:EIP:2670979.2670984,
+ abstract = {Many large-scale machine learning (ML) applications use iterative algorithms to converge on parameter values that make the chosen model fit the input data. Often, this approach results in the same sequence of accesses to parameters repeating each iteration. This paper shows that these repeating patterns can and should be exploited to improve the efficiency of the parallel and distributed ML applications that will be a mainstay in cloud computing environments. Focusing on the increasingly popular "parameter server" approach to sharing model parameters among worker threads, we describe and demonstrate how the repeating patterns can be exploited. Examples include replacing dynamic cache and server structures with static pre-serialized structures, informing prefetch and partitioning decisions, and determining which data should be cached at each thread to avoid both contention and slow accesses to memory banks attached to other sockets. Experiments show that such exploitation reduces per-iteration time by 33--98%, for three real ML workloads, and that these improvements are robust to variation in the patterns over time.},
+ acmid = {2670984},
+ address = {New York, NY, USA},
+ articleno = {5},
+ author = {Cui, Henggang and Tumanov, Alexey and Wei, Jinliang and Xu, Lianghong and Dai, Wei and Haber-Kucharsky, Jesse and Ho, Qirong and Ganger, Gregory R. and Gibbons, Phillip B. and Gibson, Garth A. and Xing, Eric P.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670984},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670984},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {5:1--5:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Exploiting Iterative-ness for Parallel ML Computations},
+ year = {2014}
+}
+
+
+@inproceedings{Carvalho:2014:LSR:2670979.2670999,
+ abstract = {The elasticity promised by cloud computing does not come for free. Providers need to reserve resources to allow users to scale on demand, and cope with workload variations, which results in low utilization. The current response to this low utilization is to re-sell unused resources with no Service Level Objectives (SLOs) for availability. In this paper, we show how to make some of these reclaimable resources more valuable by providing strong, long-term availability SLOs for them. These SLOs are based on forecasts of how many resources will remain unused during multi-month periods, so users can do capacity planning for their long-running services. By using confidence levels for the predictions, we give service providers control over the risk of violating the availability SLOs, and allow them trade increased risk for more resources to make available. We evaluated our approach using 45 months of workload data from 6 production clusters at Google, and show that 6--17% of the resources can be re-offered with a long-term availability of 98.9% or better. A conservative analysis shows that doing so may increase the profitability of selling reclaimed resources by 22--60%.},
+ acmid = {2670999},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Carvalho, Marcus and Cirne, Walfredo and Brasileiro, Francisco and Wilkes, John},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670999},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Capacity planning, Cloud computing, Quality of Service},
+ link = {http://doi.acm.org/10.1145/2670979.2670999},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {20:1--20:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Long-term SLOs for Reclaimed Cloud Computing Resources},
+ year = {2014}
+}
+
+
+@inproceedings{Das:2014:ASP:2670979.2670995,
+ abstract = {The need for real-time processing of "big data" has led to the development of frameworks for distributed stream processing in clusters. It is important for such frameworks to be robust against variable operating conditions such as server failures, changes in data ingestion rates, and workload characteristics. To provide fault tolerance and efficient stream processing at scale, recent stream processing frameworks have proposed to treat streaming workloads as a series of batch jobs on small batches of streaming data. However, the robustness of such frameworks against variable operating conditions has not been explored. In this paper, we explore the effects of the batch size on the performance of streaming workloads. The throughput and end-to-end latency of the system can have complicated relationships with batch sizes, data ingestion rates, variations in available resources, workload characteristics, etc. We propose a simple yet robust control algorithm that automatically adapts the batch size as the situation necessitates. We show through extensive experiments that it can ensure system stability and low latency for a wide range of workloads, despite large variations in data rates and operating conditions.},
+ acmid = {2670995},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Das, Tathagata and Zhong, Yuan and Stoica, Ion and Shenker, Scott},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670995},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2670995},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {16:1--16:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Adaptive Stream Processing Using Dynamic Batch Sizing},
+ year = {2014}
+}
+
+
+@inproceedings{Dey:2014:VDN:2670979.2671000,
+ abstract = {One of the biggest challenges of virtualization today is to efficiently share and manage network devices among different virtual machines (VMs). Software-based network virtualization solutions like device emulation and split driver device models have advantages of resource sharing and fine grained hypervisor resource control. However, software based approaches have performance and scalability impediments due to the software interventions for every I/O activity. Recent hardware advancements in network devices allow in-device partitioning and assignment of network functions to different guest operating systems. The nature of the assignment is static which gives rise to inflexibility in efficient network resource management. Additionally, fine grained hypervisor control on the network device is compromised because of the direct hardware assignment to the guest virtual machine. In this work, we propose Vagabond, an alternate network virtualization model that supports flexible and dynamic assignment of network resources to guest VMs. The most significant advantage of the proposed model is to facilitate a framework to manage network resources efficiently when the number of hardware in-device partitions are less than the number of VMs. Additionally the advantages of software based network virtualization are kept intact to overcome the difficulties posed due to direct hardware assignment to the guest. Our experimental evaluation shows that the CPU resource overhead with Vagabond is up to 2x lower than the software approach. Compared to the direct hardware assignment, Vagabond incurs an additional overhead of 17% in the best case. We demonstrate the applicability and usage of Vagabond with two use cases: live migration of VMs connected to hardware in-device partitions and a fair-share network resource allocation scheme.},
+ acmid = {2671000},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Dey, Kallol and Mishra, Debadatta and Kulkarni, Purushottam},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671000},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2671000},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {21:1--21:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Vagabond: Dynamic Network Endpoint Reconfiguration in Virtualized Environments},
+ year = {2014}
+}
+
+
+@inproceedings{Moraru:2014:PQL:2670979.2671001,
+ abstract = {This paper describes quorum leases, a new technique that allows Paxos-based systems to perform reads with high throughput and low latency. Quorum leases do not sacrifice consistency and have only a small impact on system availability and write latency. Quorum leases allow a majority of replicas to perform strongly consistent local reads, which substantially reduces read latency at those replicas (e.g., by two orders of magnitude in wide-area scenarios). Previous techniques for performing local reads in Paxos systems either (a) sacrifice consistency; (b) allow only one replica to read locally; or (c) decrease the availability of the system and increase the latency of all updates by requiring all replicas to be notified synchronously. We describe the design of quorum leases and evaluate their benefits compared to previous approaches through an implementation running in five geo-distributed Amazon EC2 datacenters.},
+ acmid = {2671001},
+ address = {New York, NY, USA},
+ articleno = {22},
+ author = {Moraru, Iulian and Andersen, David G. and Kaminsky, Michael},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671001},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2671001},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {22:1--22:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Paxos Quorum Leases: Fast Reads Without Sacrificing Writes},
+ year = {2014}
+}
+
+
+@inproceedings{Gamage:2014:VPI:2670979.2671006,
+ abstract = {Virtualization introduces a significant amount of overhead for I/O intensive applications running inside virtual machines (VMs). Such overhead is caused by two main sources: (1) device virtualization and (2) VM scheduling. Device virtualization causes significant CPU overhead as I/O data need to be moved across several protection boundaries. VM scheduling introduces delays to the overall I/O processing path due to the wait time of VMs' virtual CPUs in the run queue. We observe that such overhead particularly affects many applications involving piped I/O data movements, such as web servers, streaming servers, big data analytics, and storage, because the data has to be transferred first into the application from the source I/O device and then back to the sink I/O device, incurring the virtualization overhead twice. In this paper, we propose vPipe, a programmable framework to mitigate this problem for a wide range of applications running in virtualized clouds. vPipe enables direct "piping" of application I/O data from source to sink devices, either files or TCP sockets, at virtual machine monitor (VMM) level. By doing so, vPipe can avoid both device virtualization overhead and VM scheduling delays, resulting in improved I/O throughput and application performance as well as significant CPU savings.},
+ acmid = {2671006},
+ address = {New York, NY, USA},
+ articleno = {27},
+ author = {Gamage, Sahan and Xu, Cong and Kompella, Ramana Rao and Xu, Dongyan},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671006},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud Computing, I/O, Virtualization},
+ link = {http://doi.acm.org/10.1145/2670979.2671006},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {27:1--27:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {vPipe: Piped I/O Offloading for Efficient Data Movement in Virtualized Clouds},
+ year = {2014}
+}
+
+
+@inproceedings{Yeo:2014:AAT:2670979.2670996,
+ abstract = {The emergence of cloud computing has created a demand for more datacenters, which in turn, has led to the substantial consumption of electricity by computing systems and cooling units. Although recently built warehouse-scale datacenters can nearly completely eliminate cooling overhead, small to medium datacenters, which still spend nearly half of their power on cooling, still labor under heavy cooling overhead. Often overlooked by the cloud computing community, these types of datacenters are not in the minority: They are responsible for more than 70% of the entire electrical power used by datacenters. Thus, to tackle the cooling inefficiencies of these datacenters, we propose ambient temperature-aware capping (ATAC), which maximizes power efficiency while minimizing overheating. ATAC senses the ambient temperature of each server and triggers a new performance capping mechanism to achieve 38% savings in cooling power and 7% savings in total power with less than 1% degradation in performance.},
+ acmid = {2670996},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Yeo, Sungkap and Hossain, Mohammad M. and Huang, Jen-Cheng and Lee, Hsien-Hsin S.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670996},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cloud Computing, Cooling Power, Energy Efficient Data Center, Performance Capping},
+ link = {http://doi.acm.org/10.1145/2670979.2670996},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {17:1--17:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {ATAC: Ambient Temperature-Aware Capping for Power Efficient Datacenters},
+ year = {2014}
+}
+
+
+@inproceedings{Zhu:2014:PTL:2670979.2671008,
+ abstract = {Meeting service level objectives (SLOs) for tail latency is an important and challenging open problem in cloud computing infrastructures. The challenges are exacerbated by burstiness in the workloads. This paper describes PriorityMeister -- a system that employs a combination of per-workload priorities and rate limits to provide tail latency QoS for shared networked storage, even with bursty workloads. PriorityMeister automatically and proactively configures workload priorities and rate limits across multiple stages (e.g., a shared storage stage followed by a shared network stage) to meet end-to-end tail latency SLOs. In real system experiments and under production trace workloads, PriorityMeister outperforms most recent reactive request scheduling approaches, with more workloads satisfying latency SLOs at higher latency percentiles. PriorityMeister is also robust to mis-estimation of underlying storage device performance and contains the effect of misbehaving workloads.},
+ acmid = {2671008},
+ address = {New York, NY, USA},
+ articleno = {29},
+ author = {Zhu, Timothy and Tumanov, Alexey and Kozuch, Michael A. and Harchol-Balter, Mor and Ganger, Gregory R.},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671008},
+ isbn = {978-1-4503-3252-1},
+ link = {http://doi.acm.org/10.1145/2670979.2671008},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {29:1--29:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {PriorityMeister: Tail Latency QoS for Shared Networked Storage},
+ year = {2014}
+}
+
+
+@inproceedings{Ghorbani:2014:TLM:2670979.2670982,
+ abstract = {Increasingly, datacenters are virtualized and software-defined. Live virtual machine (VM) migration is becoming an indispensable management tool in such environments. However, VMs often have a tight coupling with the underlying network. Hence, cloud providers are beginning to offer tenants more control over their virtual networks. Seamless migration of all (or part) of a virtual network greatly simplifies management tasks like planned maintenance, optimizing resource usage, and cloud bursting. Our LIME architecture efficiently migrates an ensemble, a collection of virtual machines and virtual switches, for any arbitrary controller and end-host applications. To minimize performance disruptions, during the migration, LIME temporarily runs all or part of a virtual switch on multiple physical switches. Running a virtual switch on multiple physical switches must be done carefully to avoid compromising application correctness. To that end, LIME merges events, combines traffic statistics, and preserves consistency among multiple physical switches even across changes to the packet-handling rules. Using a formal model, we prove that migration under LIME is transparent to applications, i.e., any execution of the controller and end-host applications during migration is a completely valid execution that could have taken place in a migration-free setting. Experiments with our prototype, built on the Floodlight controller, show that ensemble migration can be an efficient tool for network management.},
+ acmid = {2670982},
+ address = {New York, NY, USA},
+ articleno = {3},
+ author = {Ghorbani, Soudeh and Schlesinger, Cole and Monaco, Matthew and Keller, Eric and Caesar, Matthew and Rexford, Jennifer and Walker, David},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670982},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Consistency, Correctness, Migration, Software-defined networks, Transparency, Virtualization},
+ link = {http://doi.acm.org/10.1145/2670979.2670982},
+ location = {Seattle, WA, USA},
+ numpages = {14},
+ pages = {3:1--3:14},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {Transparent, Live Migration of a Software-Defined Network},
+ year = {2014}
+}
+
+
+@inproceedings{Du:2014:GCS:2670979.2670983,
+ abstract = {GentleRain is a new causally consistent geo-replicated data store that provides throughput comparable to eventual consistency and superior to current implementations of causal consistency. GentleRain uses a periodic aggregation protocol to determine whether updates can be made visible in accordance with causal consistency. Unlike current implementations, it does not use explicit dependency check messages, resulting in a major throughput improvement at the expense of a modest increase in update visibility. Furthermore, GentleRain tracks causal consistency by attaching to updates scalar timestamps derived from loosely synchronized physical clocks. Clock skew does not cause violations of causal consistency, but may delay the visibility of updates. By encoding causality in a single scalar timestamp, GentleRain reduces storage and communication overhead for tracking causality. We evaluate GentleRain using Amazon EC2, and demonstrate that it achieves throughput equal to about 99% of eventual consistency, and 120% better than previous implementations of causal consistency.},
+ acmid = {2670983},
+ address = {New York, NY, USA},
+ articleno = {4},
+ author = {Du, Jiaqing and Iorgulescu, C\u{a}lin and Roy, Amitabha and Zwaenepoel, Willy},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2670983},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Causal Consistency, Distributed Consistency, Geo-replication, Key Value Stores},
+ link = {http://doi.acm.org/10.1145/2670979.2670983},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {4:1--4:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {GentleRain: Cheap and Scalable Causal Consistency with Physical Clocks},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:CER:2670979.2671002,
+ abstract = {Recently, many in-memory key-value stores have started using a High-Performance network protocol, Remote Direct Memory Access (RDMA), to provision ultra-low latency access services. Among various solutions, previous studies have recognized that leveraging RDMA Read to optimize GET operations and continuing using message passing for other requests can offer tremendous performance improvement while avoiding read-write races. However, although such a design can utilize the power of RDMA when there is sufficient memory space, it has also raised new challenges on the cache management that do not exist in traditional key-value stores. First, RDMA Read deprives servers of the awareness of the read operations. Therefore, how to track popular items and make replacement decisions at the server side becomes a critical issue. Second, without the access knowledge from the clients, new approaches are needed for servers to efficiently and reliably reclaim the resources. Lastly, the remote pointers hold by clients to conduct RDMA are highly susceptible to the evictions made by remote servers. Thus, any replacement algorithm that solely considers the server-side hit ratio is insufficient and can cause severe underutilization of RDMA. In this work, we present C-Hint, an efficient and reliable cache management system that is designed to address the above three challenges. Its basic mechanism relies on a holistic design of the servers and the clients to orchestrate the access history information. Specifically, it consists of several techniques, including lease-based key-value management, popularity differentiated lease assignment, as well as several optimizations to achieve efficient and reliable cache management. We have implemented and integrated C-Hint into an in-house memory-resident key-value store, named HydraDB, and systematically evaluated its performance on an InfiniBand cluster with different workloads. Our experiment results demonstrate that C-Hint can efficiently outperform several other alternate solutions and deliver both high hit rate and low latency performance.},
+ acmid = {2671002},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Wang, Yandong and Meng, Xiaoqiao and Zhang, Li and Tan, Jian},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+ doi = {10.1145/2670979.2671002},
+ isbn = {978-1-4503-3252-1},
+ keyword = {Cache Management, Key-Value Stores, RDMA},
+ link = {http://doi.acm.org/10.1145/2670979.2671002},
+ location = {Seattle, WA, USA},
+ numpages = {13},
+ pages = {23:1--23:13},
+ publisher = {ACM},
+ series = {SOCC '14},
+ title = {C-Hint: An Effective and Reliable Cache Management for RDMA-Accelerated Key-Value Stores},
+ year = {2014}
+}
+
+
