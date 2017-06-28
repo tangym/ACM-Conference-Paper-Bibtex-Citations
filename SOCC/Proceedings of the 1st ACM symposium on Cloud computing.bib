@@ -1,0 +1,592 @@
+@inproceedings{Karagiannis:2010:HCU:1807128.1807144,
+ abstract = {Hermes is an optimization engine for large-scale enterprise e-mail services. Such services could be hosted by a virtualized e-mail service provider, or by dedicated enterprise data centers. In both cases we observe that the pattern of e-mails between employees of an enterprise forms an implicit social graph. Hermes tracks this implicit social graph, periodically identifies clusters of strongly connected users within the graph, and co-locates such users on the same server. Co-locating the users reduces storage requirements: senders and recipients who reside on the same server can share a single copy of an e-mail. Co-location also reduces inter-server bandwidth usage. We evaluate Hermes using a trace of all e-mails within a major corporation over a five month period. The e-mail service supports over 120,000 users on 68 servers. Our evaluation shows that using Hermes results in storage savings of 37% and bandwidth savings of 50% compared to current approaches. The overheads are low: a single commodity server can run the optimization for the entire system.},
+ acmid = {1807144},
+ address = {New York, NY, USA},
+ author = {Karagiannis, Thomas and Gkantsidis, Christos and Narayanan, Dushyanth and Rowstron, Antony},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807144},
+ isbn = {978-1-4503-0036-0},
+ keyword = {clustering, data center, e-mail services, partitioning, social network},
+ link = {http://doi.acm.org/10.1145/1807128.1807144},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {89--100},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Hermes: Clustering Users in Large-scale e-Mail Services},
+ year = {2010}
+}
+
+
+@proceedings{Chase:2011:2038916,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0976-9},
+ location = {Cascais, Portugal},
+ publisher = {ACM},
+ title = {SOCC '11: Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Bodik:2010:CMG:1807128.1807166,
+ abstract = {Evaluating the resiliency of stateful Internet services to significant workload spikes and data hotspots requires realistic workload traces that are usually very difficult to obtain. A popular approach is to create a workload model and generate synthetic workload, however, there exists no characterization and model of stateful spikes. In this paper we analyze five workload and data spikes and find that they vary significantly in many important aspects such as steepness, magnitude, duration, and spatial locality. We propose and validate a model of stateful spikes that allows us to synthesize volume and data spikes and could thus be used by both cloud computing users and providers to stress-test their infrastructure.},
+ acmid = {1807166},
+ address = {New York, NY, USA},
+ author = {Bodik, Peter and Fox, Armando and Franklin, Michael J. and Jordan, Michael I. and Patterson, David A.},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807166},
+ isbn = {978-1-4503-0036-0},
+ keyword = {data hotspots, workload spikes, workload synthesis, workoad characterization},
+ link = {http://doi.acm.org/10.1145/1807128.1807166},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {241--252},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Characterizing, Modeling, and Generating Workload Spikes for Stateful Services},
+ year = {2010}
+}
+
+
+@inproceedings{Cooper:2010:BCS:1807128.1807152,
+ abstract = {While the use of MapReduce systems (such as Hadoop) for large scale data analysis has been widely recognized and studied, we have recently seen an explosion in the number of systems developed for cloud data serving. These newer systems address "cloud OLTP" applications, though they typically do not support ACID transactions. Examples of systems proposed for cloud serving use include BigTable, PNUTS, Cassandra, HBase, Azure, CouchDB, SimpleDB, Voldemort, and many others. Further, they are being applied to a diverse range of applications that differ considerably from traditional (e.g., TPC-C like) serving workloads. The number of emerging cloud serving systems and the wide range of proposed applications, coupled with a lack of apples-to-apples performance comparisons, makes it difficult to understand the tradeoffs between systems and the workloads for which they are suited. We present the "Yahoo! Cloud Serving Benchmark" (YCSB) framework, with the goal of facilitating performance comparisons of the new generation of cloud data serving systems. We define a core set of benchmarks and report results for four widely used systems: Cassandra, HBase, Yahoo!'s PNUTS, and a simple sharded MySQL implementation. We also hope to foster the development of additional cloud benchmark suites that represent other classes of applications by making our benchmark tool available via open source. In this regard, a key feature of the YCSB framework/tool is that it is extensible--it supports easy definition of new workloads, in addition to making it easy to benchmark new systems.},
+ acmid = {1807152},
+ address = {New York, NY, USA},
+ author = {Cooper, Brian F. and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807152},
+ isbn = {978-1-4503-0036-0},
+ keyword = {benchmarking, cloud serving database},
+ link = {http://doi.acm.org/10.1145/1807128.1807152},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {143--154},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Benchmarking Cloud Serving Systems with YCSB},
+ year = {2010}
+}
+
+
+@inproceedings{Vishwanath:2010:CCC:1807128.1807161,
+ abstract = {Modern day datacenters host hundreds of thousands of servers that coordinate tasks in order to deliver highly available cloud computing services. These servers consist of multiple hard disks, memory modules, network cards, processors etc., each of which while carefully engineered are capable of failing. While the probability of seeing any such failure in the lifetime (typically 3-5 years in industry) of a server can be somewhat small, these numbers get magnified across all devices hosted in a datacenter. At such a large scale, hardware component failure is the norm rather than an exception. Hardware failure can lead to a degradation in performance to end-users and can result in losses to the business. A sound understanding of the numbers as well as the causes behind these failures helps improve operational experience by not only allowing us to be better equipped to tolerate failures but also to bring down the hardware cost through engineering, directly leading to a saving for the company. To the best of our knowledge, this paper is the first attempt to study server failures and hardware repairs for large datacenters. We present a detailed analysis of failure characteristics as well as a preliminary analysis on failure predictors. We hope that the results presented in this paper will serve as motivation to foster further research in this area.},
+ acmid = {1807161},
+ address = {New York, NY, USA},
+ author = {Vishwanath, Kashi Venkatesh and Nagappan, Nachiappan},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807161},
+ isbn = {978-1-4503-0036-0},
+ keyword = {datacenters, failures},
+ link = {http://doi.acm.org/10.1145/1807128.1807161},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {193--204},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Characterizing Cloud Computing Hardware Reliability},
+ year = {2010}
+}
+
+
+@proceedings{Hellerstein:2010:1807128,
+ abstract = {Welcome to the inaugural ACM Symposium of Cloud Computing. This symposium is co-sponsored by the ACM Special Interest Group on Management of Data (SIGMOD) and the ACM Special Interest Group on Operating Systems (SIGOPS). Both these communities share a common interest in the rapidly developing field of Cloud Computing, i.e., large scale distributed systems that can manage massive volumes of data and yet deliver reliable and efficient service. Although traditionally these two communities have had close interactions on various topics, to the best of our knowledge this is the first time that they are co-sponsoring a symposium with active participation and shared responsibilities from both the communities. This year, SOCC is being held in conjunction with ACM SIGMOD, the flagship conference of the database community. Next year, SOCC will be held in conjunction with ACM SOSP, the premier conference for operating systems. The goal for such co-location is to facilitate more effective networking across the two communities. The conferences of both the systems and database communities have always encouraged participation of both academic researchers and industrial participants, and SOCC is no exception. In our Call for Papers, we sought not only full-length research papers, but also position papers and industrial papers. We had a strong response to our call and were pleasantly surprised to get 119 submissions. Each paper was reviewed by at least two members of the Program Committee. Given the limited duration of the symposium we were able to accept only 23 papers (18 research papers, 4 position papers, and 1 industrial paper) for presentation at this symposium. Thus, the acceptance ratio was slightly below 20%. Our technical program also consists of three distinguished speakers from the industry to provide us with insights from their experience in the field, to ground and inspire our thinking on future directions.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0036-0},
+ location = {Indianapolis, Indiana, USA},
+ note = {405102},
+ publisher = {ACM},
+ title = {SoCC '10: Proceedings of the 1st ACM Symposium on Cloud Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Babu:2010:TAO:1807128.1807150,
+ abstract = {Timely and cost-effective processing of large datasets has become a critical ingredient for the success of many academic, government, and industrial organizations. The combination of MapReduce frameworks and cloud computing is an attractive proposition for these organizations. However, even to run a single program in a MapReduce framework, a number of tuning parameters have to be set by users or system administrators. Users often run into performance problems because they don't know how to set these parameters, or because they don't even know that these parameters exist. With MapReduce being a relatively new technology, it is not easy to find qualified administrators. In this position paper, we make a case for techniques to automate the setting of tuning parameters for MapReduce programs. The objective is to provide good out-of-the-box performance for ad hoc MapReduce programs run on large datasets. This feature can go a long way towards improving the productivity of users who lack the skills to optimize programs themselves due to lack of familiarity with MapReduce or with the data being processed.},
+ acmid = {1807150},
+ address = {New York, NY, USA},
+ author = {Babu, Shivnath},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807150},
+ isbn = {978-1-4503-0036-0},
+ keyword = {Hadoop, MapReduce, cost-based optimization},
+ link = {http://doi.acm.org/10.1145/1807128.1807150},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {6},
+ pages = {137--142},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Towards Automatic Optimization of MapReduce Programs},
+ year = {2010}
+}
+
+
+@inproceedings{Kesavan:2010:DVT:1807128.1807135,
+ abstract = {This paper investigates what it entails to provide I/O service differentiation and performance isolation for virtual machines on individual multicore nodes in cloud platforms. Sharing I/O between VMs is fundamentally different from sharing I/O between processes because guest VM operating systems use adaptive resource management mechanisms like TCP congestion avoidance, disk I/O schedulers, etc. The problem is that these mechanisms are generally sensitive to the magnitude and rate of change of service latencies, where failing to address these latency concerns while designing a service differentiation framework for I/O results in undue performance degradation and hence, insufficient isolation between VMs. This problem is addressed by the notion of Differential Virtual Time (DVT), which can provide service differentiation with performance isolation for VM guest OS resource management mechanisms. DVT is realized within a proportional share I/O scheduling framework for the Xen hypervisor, and its use requires no changes to guest OSs. DVT is applied to message-based I/O, but is also applicable to subsystems like disk I/O. Experimental results with DVT-based I/O scheduling for representative applications demonstrate the utility and effectiveness of the approach.},
+ acmid = {1807135},
+ address = {New York, NY, USA},
+ author = {Kesavan, Mukil and Gavrilovska, Ada and Schwan, Karsten},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807135},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, service differentiation, virtualization},
+ link = {http://doi.acm.org/10.1145/1807128.1807135},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {27--38},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Differential Virtual Time (DVT): Rethinking I/O Service Differentiation for Virtual Machines},
+ year = {2010}
+}
+
+
+@inproceedings{Kansal:2010:VMP:1807128.1807136,
+ abstract = {Virtualization is often used in cloud computing platforms for its several advantages in efficiently managing resources. However, virtualization raises certain additional challenges, and one of them is lack of power metering for virtual machines (VMs). Power management requirements in modern data centers have led to most new servers providing power usage measurement in hardware and alternate solutions exist for older servers using circuit and outlet level measurements. However, VM power cannot be measured purely in hardware. We present a solution for VM power metering, named Joulemeter. We build power models to infer power consumption from resource usage at runtime and identify the challenges that arise when applying such models for VM power metering. We show how existing instrumentation in server hardware and hypervisors can be used to build the required power models on real platforms with low error. Our approach is designed to operate with extremely low runtime overhead while providing practically useful accuracy. We illustrate the use of the proposed metering capability for VM power capping, a technique to reduce power provisioning costs in data centers. Experiments are performed on server traces from several thousand production servers, hosting Microsoft's real-world applications such as Windows Live Messenger. The results show that not only does VM power metering allows virtualized data centers to achieve the same savings that non-virtualized data centers achieved through physical server power capping, but also that it enables further savings in provisioning costs with virtualization.},
+ acmid = {1807136},
+ address = {New York, NY, USA},
+ author = {Kansal, Aman and Zhao, Feng and Liu, Jie and Kothari, Nupur and Bhattacharya, Arka A.},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807136},
+ isbn = {978-1-4503-0036-0},
+ keyword = {datacenter power management, power capping, virtualization},
+ link = {http://doi.acm.org/10.1145/1807128.1807136},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {39--50},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Virtual Machine Power Metering and Provisioning},
+ year = {2010}
+}
+
+
+@inproceedings{Bonvin:2010:SFS:1807128.1807162,
+ abstract = {Failures of any type are common in current datacenters, partly due to the higher scales of the data stored. As data scales up, its availability becomes more complex, while different availability levels per application or per data item may be required. In this paper, we propose a self-managed key-value store that dynamically allocates the resources of a data cloud to several applications in a cost-efficient and fair way. Our approach offers and dynamically maintains multiple differentiated availability guarantees to each different application despite failures. We employ a virtual economy, where each data partition (i.e. a key range in a consistent-hashing space) acts as an individual optimizer and chooses whether to migrate, replicate or remove itself based on net benefit maximization regarding the utility offered by the partition and its storage and maintenance cost. As proved by a game-theoretical model, no migrations or replications occur in the system at equilibrium, which is soon reached when the query load and the used storage are stable. Moreover, by means of extensive simulation experiments, we have proved that our approach dynamically finds the optimal resource allocation that balances the query processing overhead and satisfies the availability objectives in a cost-efficient way for different query rates and storage requirements. Finally, we have implemented a fully working prototype of our approach that clearly demonstrates its applicability in real settings.},
+ acmid = {1807162},
+ address = {New York, NY, USA},
+ author = {Bonvin, Nicolas and Papaioannou, Thanasis G. and Aberer, Karl},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807162},
+ isbn = {978-1-4503-0036-0},
+ keyword = {decentralized optimization, equilibrium, net benefit maximization, rational strategies},
+ link = {http://doi.acm.org/10.1145/1807128.1807162},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {205--216},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {A Self-organized, Fault-tolerant and Scalable Replication Scheme for Cloud Storage},
+ year = {2010}
+}
+
+
+@inproceedings{Ramakrishnan:2010:DFP:1807128.1807145,
+ abstract = {Cloud computing has evolved in the commercial space to support highly asynchronous web 2.0 applications. Scientific computing has traditionally been supported by centralized federally funded supercomputing centers and grid resources with a focus on bulk-synchronous compute and data-intensive applications. The scientific computing community has shown increasing interest in exploring cloud computing to serve e-Science applications, with the idea of taking advantage of some of its features such as customizable environments and on-demand resources. Magellan, a recently funded cloud computing project is investigating how cloud computing can serve the needs of mid-range computing and future data-intensive scientific workloads. This paper summarizes the application requirements and business model needed to support the requirements of both existing and emerging science applications, as learned from the early experiences on Magellan and commercial cloud environments. We provide an overview of the capabilities of leading cloud offerings and identify the existent gaps and challenges. Finally, we discuss how the existing cloud software stack may be evolved to better meet e-Science needs, along with the implications for resource providers and middleware developers.},
+ acmid = {1807145},
+ address = {New York, NY, USA},
+ author = {Ramakrishnan, Lavanya and Jackson, Keith R. and Canon, Shane and Cholia, Shreyas and Shalf, John},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807145},
+ isbn = {978-1-4503-0036-0},
+ keyword = {MapReduce, cloud computing, data parallel computing, scientific computing},
+ link = {http://doi.acm.org/10.1145/1807128.1807145},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {6},
+ pages = {101--106},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Defining Future Platform Requirements for e-Science Clouds},
+ year = {2010}
+}
+
+
+@inproceedings{Abu-Libdeh:2010:RCC:1807128.1807165,
+ abstract = {The increasing popularity of cloud storage is leading organizations to consider moving data out of their own data centers and into the cloud. However, success for cloud storage providers can present a significant risk to customers; namely, it becomes very expensive to switch storage providers. In this paper, we make a case for applying RAID-like techniques used by disks and file systems, but at the cloud storage level. We argue that striping user data across multiple providers can allow customers to avoid vendor lock-in, reduce the cost of switching providers, and better tolerate provider outages or failures. We introduce RACS, a proxy that transparently spreads the storage load over many providers. We evaluate a prototype of our system and estimate the costs incurred and benefits reaped. Finally, we use trace-driven simulations to demonstrate how RACS can reduce the cost of switching storage vendors for a large organization such as the Internet Archive by seven-fold or more by varying erasure-coding parameters.},
+ acmid = {1807165},
+ address = {New York, NY, USA},
+ author = {Abu-Libdeh, Hussam and Princehouse, Lonnie and Weatherspoon, Hakim},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807165},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, cloud storage, distributed systems, erasure codes, fault tolerance, vendor lock-in},
+ link = {http://doi.acm.org/10.1145/1807128.1807165},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {229--240},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {RACS: A Case for Cloud Storage Diversity},
+ year = {2010}
+}
+
+
+@inproceedings{Logothetis:2010:SBP:1807128.1807138,
+ abstract = {This work addresses the need for stateful dataflow programs that can rapidly sift through huge, evolving data sets. These data-intensive applications perform complex multi-step computations over successive generations of data inflows, such as weekly web crawls, daily image/video uploads, log files, and growing social networks. While programmers may simply re-run the entire dataflow when new data arrives, this is grossly inefficient, increasing result latency and squandering hardware resources and energy. Alternatively, programmers may use prior results to incrementally incorporate the changes. However, current large-scale data processing tools, such as Map-Reduce or Dryad, limit how programmers incorporate and use state in data-parallel programs. Straightforward approaches to incorporating state can result in custom, fragile code and disappointing performance. This work presents a generalized architecture for continuous bulk processing (CBP) that raises the level of abstraction for building incremental applications. At its core is a flexible, groupwise processing operator that takes state as an explicit input. Unifying stateful programming with a data-parallel operator affords several fundamental opportunities for minimizing the movement of data in the underlying processing system. As case studies, we show how one can use a small set of flexible dataflow primitives to perform web analytics and mine large-scale, evolving graphs in an incremental fashion. Experiments with our prototype using real-world data indicate significant data movement and running time reductions relative to current practice. For example, incrementally computing PageRank using CBP can reduce data movement by 46% and cut running time in half.},
+ acmid = {1807138},
+ address = {New York, NY, USA},
+ author = {Logothetis, Dionysios and Olston, Christopher and Reed, Benjamin and Webb, Kevin C. and Yocum, Ken},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807138},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, incremental, mapreduce, parallel data processing},
+ link = {http://doi.acm.org/10.1145/1807128.1807138},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {51--62},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Stateful Bulk Processing for Incremental Analytics},
+ year = {2010}
+}
+
+
+@inproceedings{Armbrust:2010:CPP:1807128.1807149,
+ abstract = {Large-scale, user-facing applications are increasingly moving from relational databases to distributed key/value stores for high-request-rate, low-latency workloads. Often, this move is motivated not only by key/value stores' ability to scale simply by adding more hardware, but also by the easy to understand predictable performance they provide for all operations. For complex queries, this approach often requires onerous explicit index management and imperative data lookup by the developer. We propose PIQL, a Performance Insightful Query Language that allows developers to express many queries found on these websites while still providing strict bounds on the number of I/O operations that will be performed.},
+ acmid = {1807149},
+ address = {New York, NY, USA},
+ author = {Armbrust, Michael and Lanham, Nick and Tu, Stephen and Fox, Armando and Franklin, Michael J. and Patterson, David A.},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807149},
+ isbn = {978-1-4503-0036-0},
+ keyword = {databases, performance},
+ link = {http://doi.acm.org/10.1145/1807128.1807149},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {6},
+ pages = {131--136},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {The Case for PIQL: A Performance Insightful Query Language},
+ year = {2010}
+}
+
+
+@inproceedings{Sobel:2010:BFP:1807128.1807142,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1807142},
+ address = {New York, NY, USA},
+ author = {Sobel, Jason},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807142},
+ isbn = {978-1-4503-0036-0},
+ link = {http://doi.acm.org/10.1145/1807128.1807142},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {1},
+ pages = {87--87},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Building Facebook: Performance at Massive Scale},
+ year = {2010}
+}
+
+
+@article{Sakr:2011:DDR:2004413.2004468,
+ abstract = {The database management technology has played a vital role in the advancements of the information technology field. Database researchers are one of the key players and main sources to the growth of the database systems. They are playing a foundational role in creating the technological infrastructure from which database advancements evolve. We analyze the database research publications of nine top-tier and prestigious database research venues. In particular, we study the publications of four major core database technology conferences (SIGMOD, VLDB, ICDE, EDBT), two main theoretical database conferences (PODS, ICDT) and three database journals (TODS, VLDB Journal, TKDE) over a period of 10 years (2001---2010). Our analysis considers only regular papers as we do not include short papers, demo papers, posters, tutorials or panels into our statistics. In this study, we report the list of the authors with the highest number of publications for each conference/journal separately and in combined. We analyze the preference of the database research community towards publishing their work in prestigious conferences or major database journals. We report about the most successful co-authorship relationships in the database research community in the last decade. Finally, we analyze the growth in the number of research publications and the size of the research community in the last decade.},
+ acmid = {2004468},
+ address = {Secaucus, NJ, USA},
+ author = {Sakr, Sherif and Alomari, Mohammad},
+ doi = {10.1007/s11192-011-0385-y},
+ issn = {0138-9130},
+ issue_date = {August    2011},
+ journal = {Scientometrics},
+ keyword = {Database research venues, Top publishers},
+ link = {http://dx.doi.org/10.1007/s11192-011-0385-y},
+ month = {aug},
+ number = {2},
+ numpages = {13},
+ pages = {521--533},
+ publisher = {Springer-Verlag New York, Inc.},
+ title = {A Decade of Database Research Publications: A Look Inside},
+ volume = {88},
+ year = {2011}
+}
+
+
+@inproceedings{Hansen:2010:LVM:1807128.1807134,
+ abstract = {To address the limitations of centralized shared storage for cloud computing, we are building Lithium, a distributed storage system designed specifically for virtualization workloads running in large-scale data centers and clouds. Lithium aims to be scalable, highly available, and compatible with commodity hardware and existing application software. The design of Lithium borrows ideas and techniques originating from research into Byzantine Fault Tolerance systems and popularized by distributed version control software, and demonstrates their practical applicability to the performance-sensitive problem of VM hosting. To our initial surprise, we have found that seemingly expensive techniques such as versioned storage and incremental hashing can lead to a system that is not only more robust to data corruption and host failures, but also often faster than naïve approaches and, for a relatively small cluster of just eight hosts, performs well compared with an enterprise-class Fibre Channel disk array.},
+ acmid = {1807134},
+ address = {New York, NY, USA},
+ author = {Hansen, Jacob Gorm and Jul, Eric},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807134},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, file systems, replication, virtual machines},
+ link = {http://doi.acm.org/10.1145/1807128.1807134},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {15--26},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Lithium: Virtual Machine Storage for the Cloud},
+ year = {2010}
+}
+
+
+@inproceedings{Gonzalez:2010:GFT:1807128.1807158,
+ abstract = {Google Fusion Tables is a cloud-based service for data management and integration. Fusion Tables enables users to upload tabular data files (spreadsheets, CSV, KML), currently of up to 100MB. The system provides several ways of visualizing the data (e.g., charts, maps, and timelines) and the ability to filter and aggregate the data. It supports the integration of data from multiple sources by performing joins across tables that may belong to different users. Users can keep the data private, share it with a select set of collaborators, or make it public and thus crawlable by search engines. The discussion feature of Fusion Tables allows collaborators to conduct detailed discussions of the data at the level of tables and individual rows, columns, and cells. This paper describes the inner workings of Fusion Tables, including the storage of data in the system and the tight integration with the Google Maps infrastructure.},
+ acmid = {1807158},
+ address = {New York, NY, USA},
+ author = {Gonzalez, Hector and Halevy, Alon and Jensen, Christian S. and Langen, Anno and Madhavan, Jayant and Shapley, Rebecca and Shen, Warren},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807158},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud-services, geo-spatial data, visualization},
+ link = {http://doi.acm.org/10.1145/1807128.1807158},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {6},
+ pages = {175--180},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Google Fusion Tables: Data Management, Integration and Collaboration in the Cloud},
+ year = {2010}
+}
+
+
+@inproceedings{He:2010:CBS:1807128.1807139,
+ abstract = {Batched stream processing is a new distributed data processing paradigm that models recurring batch computations on incrementally bulk-appended data streams. The model is inspired by our empirical study on a trace from a large-scale production data-processing cluster; it allows a set of effective query optimizations that are not possible in a traditional batch processing model. We have developed a query processing system called Comet that embraces batched stream processing and integrates with DryadLINQ. We used two complementary methods to evaluate the effectiveness of optimizations that Comet enables. First, a prototype system deployed on a 40-node cluster shows an I/O reduction of over 40% using our benchmark. Second, when applied to a real production trace covering over 19 million machine-hours, our simulator shows an estimated I/O saving of over 50%.},
+ acmid = {1807139},
+ address = {New York, NY, USA},
+ author = {He, Bingsheng and Yang, Mao and Guo, Zhenyu and Chen, Rishan and Su, Bing and Lin, Wei and Zhou, Lidong},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807139},
+ isbn = {978-1-4503-0036-0},
+ keyword = {batched stream processing, data-intensive scalable computing, query series, resource management},
+ link = {http://doi.acm.org/10.1145/1807128.1807139},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {63--74},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Comet: Batched Stream Processing for Data Intensive Distributed Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Kiciman:2010:FSI:1807128.1807147,
+ abstract = {Over the last 10-15 years, our industry has developed and deployed many large-scale Internet services, from e-commerce to social networking sites, all facing common challenges in latency, reliability, and scalability. Over time, a relatively small number of architectural patterns have emerged to address these challenges, such as tiering, caching, partitioning, and pre- or post-processing compute intensive tasks. Unfortunately, following these patterns requires developers to have a deep understanding of the trade-offs involved in these patterns as well as an end-to-end understanding of their own system and its expected workloads. The result is that non-expert developers have a hard time applying these patterns in their code, leading to low-performing, highly suboptimal applications. In this paper, we propose FLUXO, a system that separates an Internet service's logical functionality from the architectural decisions made to support performance, scalability, and reliability. FLUXO achieves this separation through the use of a restricted programming language designed 1) to limit a developer's ability to write programs that are incompatible with widely used Internet service architectural patterns; and 2) to simplify the analysis needed to identify how architectural patterns should be applied to programs. Because architectural patterns are often highly dependent on application performance, workloads and data distributions, our platform captures such data as a runtime profile of the application and makes it available for use when determining how to apply architectural patterns. This separation makes service development accessible to non-experts by allowing them to focus on application features and leaving complicated architectural optimizations to experts writing application-agnostic, profile-guided optimization tools. To evaluate FLUXO, we show how a variety of architectural patterns can be expressed as transformations applied to FLUXO programs. Even simple heuristics for automatically applying these optimizations can show reductions in latency ranging from 20-90% without requiring special effort from the application developer. We also demonstrate how a simple shared-nothing tiering and replication pattern is able to scale our test suite, a web-based IM, email, and addressbook application.},
+ acmid = {1807147},
+ address = {New York, NY, USA},
+ author = {Kiciman, Emre and Livshits, Benjamin and Musuvathi, Madanlal and Webb, Kevin C.},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807147},
+ isbn = {978-1-4503-0036-0},
+ keyword = {compiler optimizations, languages for datacenter programming},
+ link = {http://doi.acm.org/10.1145/1807128.1807147},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {107--118},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Fluxo: A System for Internet Service Programming by Non-expert Developers},
+ year = {2010}
+}
+
+
+@inproceedings{Das:2010:GSD:1807128.1807157,
+ abstract = {Cloud computing has emerged as a preferred platform for deploying scalable web-applications. With the growing scale of these applications and the data associated with them, scalable data management systems form a crucial part of the cloud infrastructure. Key-Value stores -- such as Bigtable, PNUTS, Dynamo, and their open source analogues-- have been the preferred data stores for applications in the cloud. In these systems, data is represented as Key-Value pairs, and atomic access is provided only at the granularity of single keys. While these properties work well for current applications, they are insufficient for the next generation web applications -- such as online gaming, social networks, collaborative editing, and many more -- which emphasize collaboration. Since collaboration by definition requires consistent access to groups of keys, scalable and consistent multi key access is critical for such applications. We propose the Key Group abstraction that defines a relationship between a group of keys and is the granule for on-demand transactional access. This abstraction allows the Key Grouping protocol to collocate control for the keys in the group to allow efficient access to the group of keys. Using the Key Grouping protocol, we design and implement G-Store which uses a key-value store as an underlying substrate to provide efficient, scalable, and transactional multi key access. Our implementation using a standard key-value store and experiments using a cluster of commodity machines show that G-Store preserves the desired properties of key-value stores, while providing multi key access functionality at a very low overhead.},
+ acmid = {1807157},
+ address = {New York, NY, USA},
+ author = {Das, Sudipto and Agrawal, Divyakant and El Abbadi, Amr},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807157},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, consistency, key-value stores, multi key access},
+ link = {http://doi.acm.org/10.1145/1807128.1807157},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {163--174},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {G-Store: A Scalable Data Store for Transactional Multi Key Access in the Cloud},
+ year = {2010}
+}
+
+
+@inproceedings{Kwon:2010:SPP:1807128.1807140,
+ abstract = {Scientists today have the ability to generate data at an unprecedented scale and rate and, as a result, they must increasingly turn to parallel data processing engines to perform their analyses. However, the simple execution model of these engines can make it difficult to implement efficient algorithms for scientific analytics. In particular, many scientific analytics require the extraction of features from data represented as either a multidimensional array or points in a multidimensional space. These applications exhibit significant computational skew, where the runtime of different partitions depends on more than just input size and can therefore vary dramatically and unpredictably. In this paper, we present SkewReduce, a new system implemented on top of Hadoop that enables users to easily express feature extraction analyses and execute them efficiently. At the heart of the SkewReduce system is an optimizer, parameterized by user-defined cost functions, that determines how best to partition the input data to minimize computational skew. Experiments on real data from two different science domains demonstrate that our approach can improve execution times by a factor of up to 8 compared to a naive implementation.},
+ acmid = {1807140},
+ address = {New York, NY, USA},
+ author = {Kwon, YongChul and Balazinska, Magdalena and Howe, Bill and Rolia, Jerome},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807140},
+ isbn = {978-1-4503-0036-0},
+ keyword = {mapreduce, parallel processing, partition, scientific data management, skew},
+ link = {http://doi.acm.org/10.1145/1807128.1807140},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {75--86},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Skew-resistant Parallel Processing of Feature-extracting Scientific User-defined Functions},
+ year = {2010}
+}
+
+
+@inproceedings{Battre:2010:NPM:1807128.1807148,
+ abstract = {We present a parallel data processor centered around a programming model of so called Parallelization Contracts (PACTs) and the scalable parallel execution engine Nephele [18]. The PACT programming model is a generalization of the well-known map/reduce programming model, extending it with further second-order functions, as well as with Output Contracts that give guarantees about the behavior of a function. We describe methods to transform a PACT program into a data flow for Nephele, which executes its sequential building blocks in parallel and deals with communication, synchronization and fault tolerance. Our definition of PACTs allows to apply several types of optimizations on the data flow during the transformation. The system as a whole is designed to be as generic as (and compatible to) map/reduce systems, while overcoming several of their major weaknesses: 1) The functions map and reduce alone are not sufficient to express many data processing tasks both naturally and efficiently. 2) Map/reduce ties a program to a single fixed execution strategy, which is robust but highly suboptimal for many tasks. 3) Map/reduce makes no assumptions about the behavior of the functions. Hence, it offers only very limited optimization opportunities. With a set of examples and experiments, we illustrate how our system is able to naturally represent and efficiently execute several tasks that do not fit the map/reduce model well.},
+ acmid = {1807148},
+ address = {New York, NY, USA},
+ author = {Battr{\'e}, Dominic and Ewen, Stephan and Hueske, Fabian and Kao, Odej and Markl, Volker and Warneke, Daniel},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807148},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, map reduce, web-scale data},
+ link = {http://doi.acm.org/10.1145/1807128.1807148},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {119--130},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Nephele/PACTs: A Programming Model and Execution Framework for Web-scale Analytical Processing},
+ year = {2010}
+}
+
+
+@inproceedings{Candea:2010:AST:1807128.1807153,
+ abstract = {This paper makes the case for TaaS--automated software testing as a cloud-based service. We present three kinds of TaaS: a "programmer's sidekick" enabling developers to thoroughly and promptly test their code with minimal upfront resource investment; a "home edition" on-demand testing service for consumers to verify the software they are about to install on their PC or mobile device; and a public "certification service," akin to Underwriters Labs, that independently assesses the reliability, safety, and security of software. TaaS automatically tests software, without human involvement from the service user's or provider's side. This is unlike today's "testing as a service" businesses, which employ humans to write tests. Our goal is to take recently proposed techniques for automated testing--even if usable only on to y programs--and make them practical by modifying them to harness the resources of compute clouds. Preliminary work suggests it is technically feasible to do so, and we find that TaaS is also compelling from a social and business point of view.},
+ acmid = {1807153},
+ address = {New York, NY, USA},
+ author = {Candea, George and Bucur, Stefan and Zamfir, Cristian},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807153},
+ isbn = {978-1-4503-0036-0},
+ keyword = {automated testing, software reliability, symbolic execution, taas, testing-as-a-service},
+ link = {http://doi.acm.org/10.1145/1807128.1807153},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {6},
+ pages = {155--160},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Automated Software Testing As a Service},
+ year = {2010}
+}
+
+
+@inproceedings{Dean:2010:EFD:1807128.1807130,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1807130},
+ address = {New York, NY, USA},
+ author = {Dean, Jeffrey},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807130},
+ isbn = {978-1-4503-0036-0},
+ link = {http://doi.acm.org/10.1145/1807128.1807130},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Evolution and Future Directions of Large-scale Storage and Computation Systems at Google},
+ year = {2010}
+}
+
+
+@inproceedings{Wentzlaff:2010:OSM:1807128.1807132,
+ abstract = {Cloud computers and multicore processors are two emerging classes of computational hardware that have the potential to provide unprecedented compute capacity to the average user. In order for the user to effectively harness all of this computational power, operating systems (OSes) for these new hardware platforms are needed. Existing multicore operating systems do not scale to large numbers of cores, and do not support clouds. Consequently, current day cloud systems push much complexity onto the user, requiring the user to manage individual Virtual Machines (VMs) and deal with many system-level concerns. In this work we describe the mechanisms and implementation of a factored operating system named fos. fos is a single system image operating system across both multicore and Infrastructure as a Service (IaaS) cloud systems. fos tackles OS scalability challenges by factoring the OS into its component system services. Each system service is further factored into a collection of Internet-inspired servers which communicate via messaging. Although designed in a manner similar to distributed Internet services, OS services instead provide traditional kernel services such as file systems, scheduling, memory management, and access to hardware. fos also implements new classes of OS services like fault tolerance and demand elasticity. In this work, we describe our working fos implementation, and provide early performance measurements of fos for both intra-machine and inter-machine operations.},
+ acmid = {1807132},
+ address = {New York, NY, USA},
+ author = {Wentzlaff, David and Gruenwald,III, Charles and Beckmann, Nathan and Modzelewski, Kevin and Belay, Adam and Youseff, Lamia and Miller, Jason and Agarwal, Anant},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807132},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cloud computing, multicores, scalable operating systems, single system image},
+ link = {http://doi.acm.org/10.1145/1807128.1807132},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {3--14},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {An Operating System for Multicore and Clouds: Mechanisms and Implementation},
+ year = {2010}
+}
+
+
+@inproceedings{Amur:2010:RFP:1807128.1807164,
+ abstract = {Power-proportional cluster-based storage is an important component of an overall cloud computing infrastructure. With it, substantial subsets of nodes in the storage cluster can be turned off to save power during periods of low utilization. Rabbit is a distributed file system that arranges its data-layout to provide ideal power-proportionality down to very low minimum number of powered-up nodes (enough to store a primary replica of available datasets). Rabbit addresses the node failure rates of large-scale clusters with data layouts that minimize the number of nodes that must be powered-up if a primary fails. Rabbit also allows different datasets to use different subsets of nodes as a building block for interference avoidance when the infrastructure is shared by multiple tenants. Experiments with a Rabbit prototype demonstrate its power-proportionality, and simulation experiments demonstrate its properties at scale.},
+ acmid = {1807164},
+ address = {New York, NY, USA},
+ author = {Amur, Hrishikesh and Cipar, James and Gupta, Varun and Ganger, Gregory R. and Kozuch, Michael A. and Schwan, Karsten},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807164},
+ isbn = {978-1-4503-0036-0},
+ keyword = {cluster computing, data-layout, power-proportionality},
+ link = {http://doi.acm.org/10.1145/1807128.1807164},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {217--228},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Robust and Flexible Power-proportional Storage},
+ year = {2010}
+}
+
+
+@article{Sakr:2012:DDC:2197543.2197572,
+ abstract = {Database management technology has played a vital role in facilitating key advancements of the information technology field. Database researchers--and computer scientists in general--consider prestigious conferences as their favorite and effective tools for presenting their original research study and for getting good publicity. With the main aim of retaining the high quality and the prestige of these conference, program committee members plays the major role of evaluating the submitted articles and deciding which submissions are to be included in the conference programs. In this article, we study the program committees of four top-tier and prestigious database conferences (SIGMOD, VLDB, ICDE, EDBT) over a period of 10 years (2001---2010). We report about the growth in the number of program committee members in comparison to the size of the research community in the last decade. We also analyze the rate of change in the membership of the committees of the different editions of these conferences. Finally, we report about the major contributing scholars in the committees of these conferences as a mean of acknowledging their impact in the community.},
+ acmid = {2197572},
+ address = {Secaucus, NJ, USA},
+ author = {Sakr, Sherif and Alomari, Mohammad},
+ doi = {10.1007/s11192-011-0530-7},
+ issn = {0138-9130},
+ issue_date = {April     2012},
+ journal = {Scientometrics},
+ keyword = {Database technology, Program committees},
+ link = {http://dx.doi.org/10.1007/s11192-011-0530-7},
+ month = {apr},
+ number = {1},
+ numpages = {12},
+ pages = {173--184},
+ publisher = {Springer-Verlag New York, Inc.},
+ title = {A Decade of Database Conferences: A Look Inside the Program Committees},
+ volume = {91},
+ year = {2012}
+}
+
+
+@inproceedings{Ko:2010:MCI:1807128.1807160,
+ abstract = {Parallel dataflow programs generate enormous amounts of distributed data that are short-lived, yet are critical for completion of the job and for good run-time performance. We call this class of data as intermediate data. This paper is the first to address intermediate data as a first-class citizen, specifically targeting and minimizing the effect of run-time server failures on the availability of intermediate data, and thus on performance metrics such as job completion time. We propose new design techniques for a new storage system called ISS (Intermediate Storage System), implement these techniques within Hadoop, and experimentally evaluate the resulting system. Under no failure, the performance of Hadoop augmented with ISS (i.e., job completion time) turns out to be comparable to base Hadoop. Under a failure, Hadoop with ISS outperforms base Hadoop and incurs up to 18% overhead compared to base no-failure Hadoop, depending on the testbed setup.},
+ acmid = {1807160},
+ address = {New York, NY, USA},
+ author = {Ko, Steven Y. and Hoque, Imranul and Cho, Brian and Gupta, Indranil},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807160},
+ isbn = {978-1-4503-0036-0},
+ keyword = {interference minimization, intermediate data, mapreduce, replication},
+ link = {http://doi.acm.org/10.1145/1807128.1807160},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {12},
+ pages = {181--192},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {Making Cloud Intermediate Data Fault-tolerant},
+ year = {2010}
+}
+
+
+@inproceedings{Woollen:2010:IDS:1807128.1807155,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1807155},
+ address = {New York, NY, USA},
+ author = {Woollen, Rob},
+ booktitle = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+ doi = {10.1145/1807128.1807155},
+ isbn = {978-1-4503-0036-0},
+ link = {http://doi.acm.org/10.1145/1807128.1807155},
+ location = {Indianapolis, Indiana, USA},
+ numpages = {1},
+ pages = {161--161},
+ publisher = {ACM},
+ series = {SoCC '10},
+ title = {The Internal Design of Salesforce.Com's Multi-tenant Architecture},
+ year = {2010}
+}
+
+
