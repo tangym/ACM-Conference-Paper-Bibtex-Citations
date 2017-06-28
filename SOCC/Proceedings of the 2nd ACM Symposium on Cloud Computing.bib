@@ -1,0 +1,664 @@
+@inproceedings{Bhatotia:2011:IMI:2038916.2038923,
+ abstract = {Many online data sets evolve over time as new entries are slowly added and existing entries are deleted or modified. Taking advantage of this, systems for incremental bulk data processing, such as Google's Percolator, can achieve efficient updates. To achieve this efficiency, however, these systems lose compatibility with the simple programming models offered by non-incremental systems, e.g., MapReduce, and more importantly, requires the programmer to implement application-specific dynamic algorithms, ultimately increasing algorithm and code complexity. In this paper, we describe the architecture, implementation, and evaluation of Incoop, a generic MapReduce framework for incremental computations. Incoop detects changes to the input and automatically updates the output by employing an efficient, fine-grained result reuse mechanism. To achieve efficiency without sacrificing transparency, we adopt recent advances in the area of programming languages to identify the shortcomings of task-level memoization approaches, and to address these shortcomings by using several novel techniques: a storage system, a contraction phase for Reduce tasks, and an affinity-based scheduling algorithm. We have implemented Incoop by extending the Hadoop framework, and evaluated it by considering several applications and case studies. Our results show significant performance improvements without changing a single line of application code.},
+ acmid = {2038923},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Bhatotia, Pramod and Wieder, Alexander and Rodrigues, Rodrigo and Acar, Umut A. and Pasquin, Rafael},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038923},
+ isbn = {978-1-4503-0976-9},
+ keyword = {memoization, self-adjusting computation, stability},
+ link = {http://doi.acm.org/10.1145/2038916.2038923},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {7:1--7:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Incoop: MapReduce for Incremental Computations},
+ year = {2011}
+}
+
+
+@inproceedings{Hunter:2011:SMM:2038916.2038944,
+ abstract = {We report on our experience scaling up the Mobile Millennium traffic information system using cloud computing and the Spark cluster computing framework. Mobile Millennium uses machine learning to infer traffic conditions for large metropolitan areas from crowdsourced data, and Spark was specifically designed to support such applications. Many studies of cloud computing frameworks have demonstrated scalability and performance improvements for simple machine learning algorithms. Our experience implementing a real-world machine learning-based application corroborates such benefits, but we also encountered several challenges that have not been widely reported. These include: managing large parameter vectors, using memory efficiently, and integrating with the application's existing storage infrastructure. This paper describes these challenges and the changes they required in both the Spark framework and the Mobile Millennium software. While we focus on a system for traffic estimation, we believe that the lessons learned are applicable to other machine learning-based applications.},
+ acmid = {2038944},
+ address = {New York, NY, USA},
+ articleno = {28},
+ author = {Hunter, Timothy and Moldovan, Teodor and Zaharia, Matei and Merzgui, Samy and Ma, Justin and Franklin, Michael J. and Abbeel, Pieter and Bayen, Alexandre M.},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038944},
+ isbn = {978-1-4503-0976-9},
+ link = {http://doi.acm.org/10.1145/2038916.2038944},
+ location = {Cascais, Portugal},
+ numpages = {8},
+ pages = {28:1--28:8},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Scaling the Mobile Millennium System in the Cloud},
+ year = {2011}
+}
+
+
+@proceedings{Chase:2011:2038916,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0976-9},
+ location = {Cascais, Portugal},
+ publisher = {ACM},
+ title = {SOCC '11: Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Leibert:2011:AMP:2038916.2038943,
+ abstract = {Low-latency, high-throughput web services are typically achieved through partitioning, replication, and caching. Although these strategies and the general design of large-scale distributed search systems are well known, the academic literature provides surprisingly few details on deployment and operational considerations in production environments. In this paper, we address this gap by sharing the distributed search architecture that underlies Twitter user search, a service for discovering relevant accounts on the popular microblogging service. Our design makes use of the principle that eliminates the distinction between failure and other anticipated service disruptions: as a result, most operational scenarios share exactly the same code path. This simplicity leads to greater robustness and fault-tolerance. Another salient feature of our architecture is its exclusive reliance on open-source software components, which makes it easier for the community to learn from our experiences and replicate our findings.},
+ acmid = {2038943},
+ address = {New York, NY, USA},
+ articleno = {27},
+ author = {Leibert, Florian and Mannix, Jake and Lin, Jimmy and Hamadani, Babak},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038943},
+ isbn = {978-1-4503-0976-9},
+ keyword = {configuration management, distributed retrieval architectures, failover, information retrieval, robustness},
+ link = {http://doi.acm.org/10.1145/2038916.2038943},
+ location = {Cascais, Portugal},
+ numpages = {8},
+ pages = {27:1--27:8},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Automatic Management of Partitioned, Replicated Search Services},
+ year = {2011}
+}
+
+
+@inproceedings{Govindan:2011:CQE:2038916.2038938,
+ abstract = {Workload consolidation is very attractive for cloud platforms due to several reasons including reduced infrastructure costs, lower energy consumption, and ease of management. Advances in virtualization hardware and software continue to improve resource isolation among consolidated workloads but a particular form of resource interference is yet to see a commercially widely adopted solution - the interference due to shared processor caches. Existing solutions for handling cache interference require new hardware features, extensive software changes, or reduce the achieved overall throughput. A crucial requirement for effective consolidation is to be able to predict the impact of cache interference among consolidated workloads. In this paper, we present a practical technique for predicting performance interference due to shared processor cache which works on current processor architectures and requires minimal software changes. While performance degradation can be empirically measured for a given placement of consolidated workloads, the number of possible placements grows exponentially with the number of workloads and actual measurement of degradation is thus not practical for every possible placement. Our technique predicts the degradation for any possible placement using only a linear number of measurements, and can be used to select the most efficient consolidation pattern, for required performance and resource constraints. An average prediction error of less than 4% is achieved across a wide variety of benchmark workloads, using Xen VMM on Intel Core 2 Duo and Nehalem quad-core processor platforms. We also illustrate the usefulness of our prediction technique in realizing better workload placement decisions for given performance and resource cost objectives.},
+ acmid = {2038938},
+ address = {New York, NY, USA},
+ articleno = {22},
+ author = {Govindan, Sriram and Liu, Jie and Kansal, Aman and Sivasubramaniam, Anand},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038938},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cache pressure clone, last-level cache, memory subsystem interference, performance estimation, resource contention, workload consolidation},
+ link = {http://doi.acm.org/10.1145/2038916.2038938},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {22:1--22:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Cuanta: Quantifying Effects of Shared On-chip Resource Interference for Consolidated Virtual Machines},
+ year = {2011}
+}
+
+
+@proceedings{Hellerstein:2010:1807128,
+ abstract = {Welcome to the inaugural ACM Symposium of Cloud Computing. This symposium is co-sponsored by the ACM Special Interest Group on Management of Data (SIGMOD) and the ACM Special Interest Group on Operating Systems (SIGOPS). Both these communities share a common interest in the rapidly developing field of Cloud Computing, i.e., large scale distributed systems that can manage massive volumes of data and yet deliver reliable and efficient service. Although traditionally these two communities have had close interactions on various topics, to the best of our knowledge this is the first time that they are co-sponsoring a symposium with active participation and shared responsibilities from both the communities. This year, SOCC is being held in conjunction with ACM SIGMOD, the flagship conference of the database community. Next year, SOCC will be held in conjunction with ACM SOSP, the premier conference for operating systems. The goal for such co-location is to facilitate more effective networking across the two communities. The conferences of both the systems and database communities have always encouraged participation of both academic researchers and industrial participants, and SOCC is no exception. In our Call for Papers, we sought not only full-length research papers, but also position papers and industrial papers. We had a strong response to our call and were pleasantly surprised to get 119 submissions. Each paper was reviewed by at least two members of the Program Committee. Given the limited duration of the symposium we were able to accept only 23 papers (18 research papers, 4 position papers, and 1 industrial paper) for presentation at this symposium. Thus, the acceptance ratio was slightly below 20%. Our technical program also consists of three distinguished speakers from the industry to provide us with insights from their experience in the field, to ground and inspire our thinking on future directions.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0036-0},
+ location = {Indianapolis, Indiana, USA},
+ note = {405102},
+ publisher = {ACM},
+ title = {SoCC '10: Proceedings of the 1st ACM Symposium on Cloud Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Wood:2011:PUC:2038916.2038933,
+ abstract = {Disaster Recovery (DR) is a desirable feature for all enterprises, and a crucial one for many. However, adoption of DR remains limited due to the stark tradeoffs it imposes. To recover an application to the point of crash, one is limited by financial considerations, substantial application overhead, or minimal geographical separation between the primary and recovery sites. In this paper, we argue for cloud-based DR and pipelined synchronous replication as an antidote to these problems. Cloud hosting promises economies of scale and on-demand provisioning that are a perfect fit for the infrequent yet urgent needs of DR. Pipelined synchrony addresses the impact of WAN replication latency on performance, by efficiently overlapping replication with application processing for multi-tier servers. By tracking the consequences of the disk modifications that are persisted to a recovery site all the way to client-directed messages, applications realize forward progress while retaining full consistency guarantees for client-visible state in the event of a disaster. PipeCloud, our prototype, is able to sustain these guarantees for multi-node servers composed of black-box VMs, with no need of application modification, resulting in a perfect fit for the arbitrary nature of VM-based cloud hosting. We demonstrate disaster failover to the Amazon EC2 platform, and show that PipeCloud can increase throughput by an order of magnitude and reduce response times by more than half compared to synchronous replication, all while providing the same zero data loss consistency guarantees.},
+ acmid = {2038933},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Wood, Timothy and Lagar-Cavilla, H. Andr{\'e}s and Ramakrishnan, K. K. and Shenoy, Prashant and Van der Merwe, Jacobus},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038933},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, disaster recovery, virtualization},
+ link = {http://doi.acm.org/10.1145/2038916.2038933},
+ location = {Cascais, Portugal},
+ numpages = {13},
+ pages = {17:1--17:13},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {PipeCloud: Using Causality to Overcome Speed-of-light Delays in Cloud-based Disaster Recovery},
+ year = {2011}
+}
+
+
+@inproceedings{Puttaswamy:2011:STD:2038916.2038926,
+ abstract = {By offering high availability and elastic access to resources, third-party cloud infrastructures such as Amazon EC2 are revolutionizing the way today's businesses operate. Unfortunately, taking advantage of their benefits requires businesses to accept a number of serious risks to data security. Factors such as software bugs, operator errors and external attacks can all compromise the confidentiality of sensitive application data on external clouds, by making them vulnerable to unauthorized access by malicious parties. In this paper, we study and seek to improve the confidentiality of application data stored on third-party computing clouds. We propose to identify and encrypt all functionally encryptable data, sensitive data that can be encrypted without limiting the functionality of the application on the cloud. Such data would be stored on the cloud only in an encrypted form, accessible only to users with the correct keys, thus protecting its confidentiality against unintentional errors and attacks alike. We describe Silverline, a set of tools that automatically 1) identify all functionally encryptable data in a cloud application, 2) assign encryption keys to specific data subsets to minimize key management complexity while ensuring robustness to key compromise, and 3) provide transparent data access at the user device while preventing key compromise even from malicious clouds. Through experiments with real applications, we find that many web applications are dominated by storage and data sharing components that do not require interpreting raw data. Thus, Silverline can protect the vast majority of data on these applications, simplify key management, and protect against key compromise. Together, our techniques provide a substantial first step towards simplifying the complex process of incorporating data confidentiality into these storage-intensive cloud applications.},
+ acmid = {2038926},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Puttaswamy, Krishna P. N. and Kruegel, Christopher and Zhao, Ben Y.},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038926},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, data confidentiality, program analysis},
+ link = {http://doi.acm.org/10.1145/2038916.2038926},
+ location = {Cascais, Portugal},
+ numpages = {13},
+ pages = {10:1--10:13},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Silverline: Toward Data Confidentiality in Storage-intensive Cloud Applications},
+ year = {2011}
+}
+
+
+@inproceedings{Jindal:2011:TDL:2038916.2038937,
+ abstract = {MapReduce is becoming ubiquitous in large-scale data analysis. Several recent works have shown that the performance of Hadoop MapReduce could be improved, for instance, by creating indexes in a non-invasive manner. However, they ignore the impact of the data layout used inside data blocks of Hadoop Distributed File System (HDFS). In this paper, we analyze different data layouts in detail in the context of MapReduce and argue that Row, Column, and PAX layouts can lead to poor system performance. We propose a new data layout, coined Trojan Layout, that internally organizes data blocks into attribute groups according to the workload in order to improve data access times. A salient feature of Trojan Layout is that it fully preserves the fault-tolerance properties of MapReduce. We implement our Trojan Layout idea in HDFS 0.20.3 and call the resulting system Trojan HDFS. We exploit the fact that HDFS stores multiple replicas of each data block on different computing nodes. Trojan HDFS automatically creates a different Trojan Layout per replica to better fit the workload. As a result, we are able to schedule incoming MapReduce jobs to data block replicas with the most suitable Trojan Layout. We evaluate our approach using three real-world workloads. We compare Trojan Layouts against Hadoop using Row and PAX layouts. The results demonstrate that Trojan Layout allows MapReduce jobs to read their input data up to 4.8 times faster than Row layout and up to 3.5 times faster than PAX layout.},
+ acmid = {2038937},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Jindal, Alekh and Quian{\'e}-Ruiz, Jorge-Arnulfo and Dittrich, Jens},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038937},
+ isbn = {978-1-4503-0976-9},
+ keyword = {MapReduce, column grouping, per-replica data layout},
+ link = {http://doi.acm.org/10.1145/2038916.2038937},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {21:1--21:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Trojan Data Layouts: Right Shoes for a Running Elephant},
+ year = {2011}
+}
+
+
+@inproceedings{Bykov:2011:OCC:2038916.2038932,
+ abstract = {Cloud computing is a new computing paradigm, combining diverse client devices -- PCs, smartphones, sensors, single-function, and embedded -- with computation and data storage in the cloud. As with every advance in computing, programming is a fundamental challenge, as the cloud is a concurrent, distributed system running on unreliable hardware and networks. Orleans is a software framework for building reliable, scalable, and elastic cloud applications. Its programming model encourages the use of simple concurrency patterns that are easy to understand and employ correctly. It is based on distributed actor-like components called grains, which are isolated units of state and computation that communicate through asynchronous messages. Within a grain, promises are the mechanism for managing both asynchronous messages and local task-based concurrency. Isolated state and a constrained execution model allow Orleans to persist, migrate, replicate, and reconcile grain state. In addition, Orleans provides lightweight transactions that support a consistent view of state and provide a foundation for automatic error handling and failure recovery. We implemented several applications in Orleans, varying from a messaging-intensive social networking application to a data- and compute-intensive linear algebra computation. The programming model is a general one, as Orleans allows the communications to evolve dynamically at runtime. Orleans enables a developer to concentrate on application logic, while the Orleans runtime provides scalability, availability, and reliability.},
+ acmid = {2038932},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Bykov, Sergey and Geller, Alan and Kliot, Gabriel and Larus, James R. and Pandya, Ravi and Thelin, Jorgen},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038932},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, distributed actors, programming models},
+ link = {http://doi.acm.org/10.1145/2038916.2038932},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {16:1--16:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Orleans: Cloud Computing for Everyone},
+ year = {2011}
+}
+
+
+@inproceedings{Walraed-Sullivan:2011:ASD:2038916.2038922,
+ abstract = {Modern data centers can consist of hundreds of thousands of servers and millions of virtualized end hosts. Managing address assignment while simultaneously enabling scalable communication is a challenge in such an environment. We present ALIAS, an addressing and communication protocol that automates topology discovery and address assignment for the hierarchical topologies that underlie many data center network fabrics. Addresses assigned by ALIAS interoperate with a variety of scalable communication techniques. ALIAS is fully decentralized, scales to large network sizes, and dynamically recovers from arbitrary failures, without requiring modifications to hosts or to commodity switch hardware. We demonstrate through simulation that ALIAS quickly and correctly configures networks that support up to hundreds of thousands of hosts, even in the face of failures and erroneous cabling, and we show that ALIAS is a practical solution for auto-configuration with our NetFPGA testbed implementation.},
+ acmid = {2038922},
+ address = {New York, NY, USA},
+ articleno = {6},
+ author = {Walraed-Sullivan, Meg and Mysore, Radhika Niranjan and Tewari, Malveeka and Zhang, Ying and Marzullo, Keith and Vahdat, Amin},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038922},
+ isbn = {978-1-4503-0976-9},
+ keyword = {data center address assignment, data center management, hierarchical labeling},
+ link = {http://doi.acm.org/10.1145/2038916.2038922},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {6:1--6:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {ALIAS: Scalable, Decentralized Label Assignment for Data Centers},
+ year = {2011}
+}
+
+
+@inproceedings{Xiong:2011:APA:2038916.2038931,
+ abstract = {The system overload is a common problem in a Database-as-a-Serice (DaaS) environment because of unpredictable and bursty workloads from various clients. Due to the service delivery nature of DaaS, such system overload usually has direct economic impact on the service provider, who has to pay penalties if the system performance does not meet clients' service level agreements (SLAs). In this paper, we investigate techniques that prevent system overload by using admission control. We propose a profit-oriented admission control framework, called ActiveSLA, for DaaS providers. ActiveSLA is an end-to-end framework that consists of two components. First, a prediction module estimates the probability for a new query to finish the execution before its deadline. Second, based on the predicted probability, a decision module determines whether or not to admit the given query into the database system. The decision is made with the profit optimization objective, where the expected profit is derived from the service level agreements between a service provider and its clients. We present extensive real system experiments with standard database benchmarks, under different traffic patterns, DBMS settings, and SLAs. The results demonstrate that ActiveSLA is able to make admission control decisions that are both more accurate and more profit-effective than several state-of-the-art methods.},
+ acmid = {2038931},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {Xiong, Pengcheng and Chi, Yun and Zhu, Shenghuo and Tatemura, Junichi and Pu, Calton and Hacig\"{u}m\"{u}\c{S}, Hakan},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038931},
+ isbn = {978-1-4503-0976-9},
+ keyword = {admission control, cloud computing, database-as-a-service, machine learning},
+ link = {http://doi.acm.org/10.1145/2038916.2038931},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {15:1--15:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {ActiveSLA: A Profit-oriented Admission Control Framework for Database-as-a-service Providers},
+ year = {2011}
+}
+
+
+@inproceedings{Bazzaz:2011:SOD:2038916.2038946,
+ abstract = {Recent proposals to build hybrid electrical (packet-switched) and optical (circuit switched) data center interconnects promise to reduce the cost, complexity, and energy requirements of very large data center networks. Supporting realistic traffic patterns, however, exposes a number of unexpected and difficult challenges to actually deploying these systems "in the wild." In this paper, we explore several of these challenges, uncovered during a year of experience using hybrid interconnects. We discuss both the problems that must be addressed to make these interconnects truly useful, and the implications of these challenges on what solutions are likely to be ultimately feasible.},
+ acmid = {2038946},
+ address = {New York, NY, USA},
+ articleno = {30},
+ author = {Bazzaz, Hamid Hajabdolali and Tewari, Malveeka and Wang, Guohui and Porter, George and Ng, T. S. Eugene and Andersen, David G. and Kaminsky, Michael and Kozuch, Michael A. and Vahdat, Amin},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038946},
+ isbn = {978-1-4503-0976-9},
+ keyword = {data center networking, hybrid network, optical circuit switching},
+ link = {http://doi.acm.org/10.1145/2038916.2038946},
+ location = {Cascais, Portugal},
+ numpages = {8},
+ pages = {30:1--30:8},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Switching the Optical Divide: Fundamental Challenges for Hybrid Electrical/Optical Datacenter Networks},
+ year = {2011}
+}
+
+
+@proceedings{Carey:2012:2391229,
+ abstract = {Welcome to the Third ACM Symposium of Cloud Computing (SoCC'12). This annual symposium is co-sponsored by the ACM Special Interest Group on Management of Data (SIGMOD) and the ACM Special Interest Group on Operating Systems (SIGOPS). Both these communities share a common interest in the rapidly developing field of Cloud Computing, i.e., large scale distributed systems that can manage massive volumes of data and yet deliver reliable and efficient service. As a result, they co-sponsor this symposium with active participation and shared responsibilities from both the communities. In its first year, SoCC was held in conjunction with ACM SIGMOD, the flagship conference of the database community. In the second year, SoCC was held in conjunction with ACM SOSP, the premier conference for operating systems. The goal for co-location was to facilitate effective networking across the two communities, and the symposium was successfully born. This year's edition is being held, for the first time, as an independent event. This year SoCC is being hosted in San Jose, California, a.k.a. Silicon Valley, due to the high level of industrial activity there in the Cloud Computing arena.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1761-0},
+ location = {San Jose, California},
+ publisher = {ACM},
+ title = {SoCC '12: Proceedings of the Third ACM Symposium on Cloud Computing},
+ year = {2012}
+}
+
+
+@inproceedings{Sharma:2011:MST:2038916.2038919,
+ abstract = {Evaluating the performance of large compute clusters requires benchmarks with representative workloads. At Google, performance benchmarks are used to obtain performance metrics such as task scheduling delays and machine resource utilizations to assess changes in application codes, machine configurations, and scheduling algorithms. Existing approaches to workload characterization for high performance computing and grids focus on task resource requirements for CPU, memory, disk, I/O, network, etc. Such resource requirements address how much resource is consumed by a task. However, in addition to resource requirements, Google workloads commonly include task placement constraints that determine which machine resources are consumed by tasks. Task placement constraints arise because of task dependencies such as those related to hardware architecture and kernel version. This paper develops methodologies for incorporating task placement constraints and machine properties into performance benchmarks of large compute clusters. Our studies of Google compute clusters show that constraints increase average task scheduling delays by a factor of 2 to 6, which often results in tens of minutes of additional task wait time. To understand why, we extend the concept of resource utilization to include constraints by introducing a new metric, the Utilization Multiplier (UM). UM is the ratio of the resource utilization seen by tasks with a constraint to the average utilization of the resource. UM provides a simple model of the performance impact of constraints in that task scheduling delays increase with UM. Last, we describe how to synthesize representative task constraints and machine properties, and how to incorporate this synthesis into existing performance benchmarks. Using synthetic task constraints and machine properties generated by our methodology, we accurately reproduce performance metrics for benchmarks of Google compute clusters with a discrepancy of only 13% in task scheduling delay and 5% in resource utilization.},
+ acmid = {2038919},
+ address = {New York, NY, USA},
+ articleno = {3},
+ author = {Sharma, Bikash and Chudnovsky, Victor and Hellerstein, Joseph L. and Rifaat, Rasekh and Das, Chita R.},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038919},
+ isbn = {978-1-4503-0976-9},
+ keyword = {benchmarking, benchmarks, metrics, modeling, performance evaluation, workload characterization},
+ link = {http://doi.acm.org/10.1145/2038916.2038919},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {3:1--3:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Modeling and Synthesizing Task Placement Constraints in Google Compute Clusters},
+ year = {2011}
+}
+
+
+@inproceedings{Zhang:2011:PDF:2038916.2038929,
+ abstract = {Iterative computations are pervasive among data analysis applications in the cloud, including Web search, online social network analysis, recommendation systems, and so on. These cloud applications typically involve data sets of massive scale. Fast convergence of the iterative computation on the massive data set is essential for these applications. In this paper, we explore the opportunity for accelerating iterative computations and propose a distributed computing framework, PrIter, which enables fast iterative computation by providing the support of prioritized iteration. Instead of performing computations on all data records without discrimination, PrIter prioritizes the computations that help convergence the most, so that the convergence speed of iterative process is significantly improved. We evaluate PrIter on a local cluster of machines as well as on Amazon EC2 Cloud. The results show that PrIter achieves up to 50x speedup over Hadoop for a series of iterative algorithms.},
+ acmid = {2038929},
+ address = {New York, NY, USA},
+ articleno = {13},
+ author = {Zhang, Yanfeng and Gao, Qixin and Gao, Lixin and Wang, Cuirong},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038929},
+ isbn = {978-1-4503-0976-9},
+ keyword = {MapReduce, PrIter, distributed framework, iterative algorithms, prioritized iteration},
+ link = {http://doi.acm.org/10.1145/2038916.2038929},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {13:1--13:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {PrIter: A Distributed Framework for Prioritized Iterative Computations},
+ year = {2011}
+}
+
+
+@inproceedings{Shen:2011:CER:2038916.2038921,
+ abstract = {Elastic resource scaling lets cloud systems meet application service level objectives (SLOs) with minimum resource provisioning costs. In this paper, we present CloudScale, a system that automates fine-grained elastic resource scaling for multi-tenant cloud computing infrastructures. CloudScale employs online resource demand prediction and prediction error handling to achieve adaptive resource allocation without assuming any prior knowledge about the applications running inside the cloud. CloudScale can resolve scaling conflicts between applications using migration, and integrates dynamic CPU voltage/frequency scaling to achieve energy savings with minimal effect on application SLOs. We have implemented CloudScale on top of Xen and conducted extensive experiments using a set of CPU and memory intensive applications (RUBiS, Hadoop, IBM System S). The results show that CloudScale can achieve significantly higher SLO conformance than other alternatives with low resource and energy cost. CloudScale is non-intrusive and light-weight, and imposes negligible overhead (< 2% CPU in Domain 0) to the virtualized computing cluster.},
+ acmid = {2038921},
+ address = {New York, NY, USA},
+ articleno = {5},
+ author = {Shen, Zhiming and Subbiah, Sethuraman and Gu, Xiaohui and Wilkes, John},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038921},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, energy-efficient computing, resource scaling},
+ link = {http://doi.acm.org/10.1145/2038916.2038921},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {5:1--5:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {CloudScale: Elastic Resource Scaling for Multi-tenant Cloud Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Riva:2011:PEA:2038916.2038930,
+ abstract = {We present a technique for partially replicating data items at scale according to expressive policy specifications. Recent projects have addressed the challenge of policy-based replication of personal data (photos, music, etc.) within a network of devices, as an alternative to centralized online services. To date, the policies supported by such systems have been relatively simple, in order to facilitate scaling the policy calculation to large numbers of items. In this paper, we show how such replication systems can scale while supporting much more expressive policies than previous schemes: item replication expressed as constraints, devices referred to by predicates rather than explicitly named, and replication to storage nodes acquired on-demand from the cloud. These extensions introduce considerable complexity in policy evaluation, but we show a system can scale well by using equivalence classes to reduce the problem space. We validate our approach via deployment on an ensemble of devices (phones, PCs, cloud virtual machines, etc.), and show that it supports rich policies and high data volumes using simulations and real data based on personal usage in our group.},
+ acmid = {2038930},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Riva, Oriana and Yin, Qin and Juric, Dejan and Ucan, Ercan and Roscoe, Timothy},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038930},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, mobile phones, overlay networks, replication systems},
+ link = {http://doi.acm.org/10.1145/2038916.2038930},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {14:1--14:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Policy Expressivity in the Anzere Personal Cloud},
+ year = {2011}
+}
+
+
+@inproceedings{Huai:2011:DMM:2038916.2038920,
+ abstract = {Traditional parallel processing models, such as BSP, are "scale up" based, aiming to achieve high performance by increasing computing power, interconnection network bandwidth, and memory/storage capacity within dedicated systems, while big data analytics tasks aiming for high throughput demand that large distributed systems "scale out" by continuously adding computing and storage resources through networks. Each one of the "scale up" model and "scale out" model has a different set of performance requirements and system bottlenecks. In this paper, we develop a general model that abstracts critical computation and communication behavior and computation-communication interactions for big data analytics in a scalable and fault-tolerant manner. Our model is called DOT, represented by three matrices for data sets (D), concurrent data processing operations (O), and data transformations (T), respectively. With the DOT model, any big data analytics job execution in various software frameworks can be represented by a specific or non-specific number of elementary/composite DOT blocks, each of which performs operations on the data sets, stores intermediate results, makes necessary data transfers, and performs data transformations in the end. The DOT model achieves the goals of scalability and fault-tolerance by enforcing a data-dependency-free relationship among concurrent tasks. Under the DOT model, we provide a set of optimization guidelines, which are framework and implementation independent, and applicable to a wide variety of big data analytics jobs. Finally, we demonstrate the effectiveness of the DOT model through several case studies.},
+ acmid = {2038920},
+ address = {New York, NY, USA},
+ articleno = {4},
+ author = {Huai, Yin and Lee, Rubao and Zhang, Simon and Xia, Cathy H. and Zhang, Xiaodong},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038920},
+ isbn = {978-1-4503-0976-9},
+ keyword = {big data analytics, distributed systems, system modeling, system scalability},
+ link = {http://doi.acm.org/10.1145/2038916.2038920},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {4:1--4:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {DOT: A Matrix Model for Analyzing, Optimizing and Deploying Software for Big Data Analytics in Distributed Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Patil:2011:YBP:2038916.2038925,
+ abstract = {Inspired by Google's BigTable, a variety of scalable, semi-structured, weak-semantic table stores have been developed and optimized for different priorities such as query speed, ingest speed, availability, and interactivity. As these systems mature, performance benchmarking will advance from measuring the rate of simple workloads to understanding and debugging the performance of advanced features such as ingest speed-up techniques and function shipping filters from client to servers. This paper describes YCSB++, a set of extensions to the Yahoo! Cloud Serving Benchmark (YCSB) to improve performance understanding and debugging of these advanced features. YCSB++ includes multi-tester coordination for increased load and eventual consistency measurement, multi-phase workloads to quantify the consequences of work deferment and the benefits of anticipatory configuration optimization such as B-tree pre-splitting or bulk loading, and abstract APIs for explicit incorporation of advanced features in benchmark tests. To enhance performance debugging, we customized an existing cluster monitoring tool to gather the internal statistics of YCSB++, table stores, system services like HDFS, and operating systems, and to offer easy post-test correlation and reporting of performance behaviors. YCSB++ features are illustrated in case studies of two BigTable-like table stores, Apache HBase and Accumulo, developed to emphasize high ingest rates and finegrained security.},
+ acmid = {2038925},
+ address = {New York, NY, USA},
+ articleno = {9},
+ author = {Patil, Swapnil and Polte, Milo and Ren, Kai and Tantisiriroj, Wittawat and Xiao, Lin and L\'{o}pez, Julio and Gibson, Garth and Fuchs, Adam and Rinaldi, Billie},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038925},
+ isbn = {978-1-4503-0976-9},
+ keyword = {NoSQL, YCSB, benchmarking, scalable table stores},
+ link = {http://doi.acm.org/10.1145/2038916.2038925},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {9:1--9:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {YCSB++: Benchmarking and Performance Debugging Advanced Features in Scalable Table Stores},
+ year = {2011}
+}
+
+
+@inproceedings{Liu:2011:DAC:2038916.2038942,
+ abstract = {As cloud computing becomes widely deployed, one of the challenges faced involves the ability to orchestrate a highly complex set of subsystems (compute, storage, network resources) that span large geographic areas serving diverse clients. To ease this process, we present COPE (Cloud Orchestration Policy Engine), a distributed platform that allows cloud providers to perform declarative automated cloud resource orchestration. In COPE, cloud providers specify system-wide constraints and goals using COPElog, a declarative policy language geared towards specifying distributed constraint optimizations. COPE takes policy specifications and cloud system states as input and then optimizes compute, storage and network resource allocations within the cloud such that provider operational objectives and customer SLAs can be better met. We describe our proposed integration with a cloud orchestration platform, and present initial evaluation results that demonstrate the viability of COPE using production traces from a large hosting company in the US. We further discuss an orchestration scenario that involves geographically distributed data centers, and conclude with an ongoing status of our work.},
+ acmid = {2038942},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Liu, Changbin and Loo, Boon Thau and Mao, Yun},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038942},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, declarative queries, distributed optimizations, resource orchestration},
+ link = {http://doi.acm.org/10.1145/2038916.2038942},
+ location = {Cascais, Portugal},
+ numpages = {8},
+ pages = {26:1--26:8},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Declarative Automated Cloud Resource Orchestration},
+ year = {2011}
+}
+
+
+@inproceedings{Wu:2011:QOM:2038916.2038928,
+ abstract = {MapReduce has been widely recognized as an efficient tool for large-scale data analysis. It achieves high performance by exploiting parallelism among processing nodes while providing a simple interface for upper-layer applications. Some vendors have enhanced their data warehouse systems by integrating MapReduce into the systems. However, existing MapReduce-based query processing systems, such as Hive, fall short of the query optimization and competency of conventional database systems. Given an SQL query, Hive translates the query into a set of MapReduce jobs sentence by sentence. This design assumes that the user can optimize his query before submitting it to the system. Unfortunately, manual query optimization is time consuming and difficult, even to an experienced database user or administrator. In this paper, we propose a query optimization scheme for MapReduce-based processing systems. Specifically, we embed into Hive a query optimizer which is designed to generate an efficient query plan based on our proposed cost model. Experiments carried out on our in-house cluster confirm the effectiveness of our query optimizer.},
+ acmid = {2038928},
+ address = {New York, NY, USA},
+ articleno = {12},
+ author = {Wu, Sai and Li, Feng and Mehrotra, Sharad and Ooi, Beng Chin},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038928},
+ isbn = {978-1-4503-0976-9},
+ keyword = {Hive, MapReduce, multi-way join, query optimization},
+ link = {http://doi.acm.org/10.1145/2038916.2038928},
+ location = {Cascais, Portugal},
+ numpages = {13},
+ pages = {12:1--12:13},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Query Optimization for Massively Parallel Data Processing},
+ year = {2011}
+}
+
+
+@inproceedings{Spillane:2011:EMT:2038916.2038917,
+ abstract = {Distributed, structured data stores such as Big Table, HBase, and Cassandra use a cluster of machines, each running a database-like software system called the Tablet Server Storage Layer or TSSL. A TSSL's performance on each node directly impacts the performance of the entire cluster. In this paper we introduce an efficient, scalable, multi-tier storage architecture for tablet servers. Our system can use any layered mix of storage devices such as Flash SSDs and magnetic disks. Our experiments show that by using a mix of technologies, performance for certain workloads can be improved beyond configurations using strictly two-tier approaches with one type of storage technology. We utilized, adapted, and integrated cache-oblivious algorithms and data structures, as well as Bloom filters, to improve scalability significantly. We also support versatile, efficient transactional semantics. We analyzed and evaluated our system against the storage layers of Cassandra and Hadoop HBase. We used wide range of workloads and configurations from read- to write-optimized, as well as different input sizes. We found that our system is 3--10× faster than existing systems; that using proper data structures, algorithms, and techniques is critical for scalability, especially on modern Flash SSDs; and that one can fully support versatile transactions without sacrificing performance.},
+ acmid = {2038917},
+ address = {New York, NY, USA},
+ articleno = {1},
+ author = {Spillane, Richard P. and Shetty, Pradeep J. and Zadok, Erez and Dixit, Sagar and Archak, Shrikar},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038917},
+ isbn = {978-1-4503-0976-9},
+ keyword = {ACM proceedings, log-structured merge trees, multitier storage, tablet server},
+ link = {http://doi.acm.org/10.1145/2038916.2038917},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {1:1--1:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {An Efficient Multi-tier Tablet Server Storage Architecture},
+ year = {2011}
+}
+
+
+@inproceedings{Rhoden:2011:IPE:2038916.2038941,
+ abstract = {We believe datacenters can benefit from more focus on per-node efficiency, performance, and predictability, versus the more common focus so far on scalability to a large number of nodes. Improving per-node efficiency decreases costs and fault recovery because fewer nodes are required for the same amount of work. We believe that the use of complex, general-purpose operating systems is a key contributing factor to these inefficiencies. Traditional operating system abstractions are ill-suited for high performance and parallel applications, especially on large-scale SMP and many-core architectures. We propose four key ideas that help to overcome these limitations. These ideas are built on a philosophy of exposing as much information to applications as possible and giving them the tools necessary to take advantage of that information to run more efficiently. In short, high-performance applications need to be able to peer through layers of virtualization in the software stack to optimize their behavior. We explore abstractions based on these ideas and discuss how we build them in the context of a new operating system called Akaros.},
+ acmid = {2038941},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {Rhoden, Barret and Klues, Kevin and Zhu, David and Brewer, Eric},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038941},
+ isbn = {978-1-4503-0976-9},
+ keyword = {Akaros, custom OS, datacenter},
+ link = {http://doi.acm.org/10.1145/2038916.2038941},
+ location = {Cascais, Portugal},
+ numpages = {8},
+ pages = {25:1--25:8},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Improving Per-node Efficiency in the Datacenter with New OS Abstractions},
+ year = {2011}
+}
+
+
+@inproceedings{Zou:2011:MTA:2038916.2038936,
+ abstract = {Scientists are currently evaluating the cloud as a new platform. Many important scientific applications, however, perform poorly in the cloud. These applications proceed in highly parallel discrete time-steps or "ticks," using logical synchronization barriers at tick boundaries. We observe that network jitter in the cloud can severely increase the time required for communication in these applications, significantly increasing overall running time. In this paper, we propose a general parallel framework to process time-stepped applications in the cloud. Our framework exposes a high-level, data-centric programming model which represents application state as tables and dependencies between states as queries over these tables. We design a jitter-tolerant runtime that uses these data dependencies to absorb latency spikes by (1) carefully scheduling computation and (2) replicating data and computation. Our data-driven approach is transparent to the scientist and requires little additional code. Our experiments show that our methods improve performance up to a factor of three for several typical time-stepped applications.},
+ acmid = {2038936},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Zou, Tao and Wang, Guozhang and Salles, Marcos Vaz and Bindel, David and Demers, Alan and Gehrke, Johannes and White, Walker},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038936},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, database optimizations, parallel frameworks},
+ link = {http://doi.acm.org/10.1145/2038916.2038936},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {20:1--20:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Making Time-stepped Applications Tick in the Cloud},
+ year = {2011}
+}
+
+
+@inproceedings{Benson:2011:CCN:2038916.2038924,
+ abstract = {Enterprises today face several challenges when hosting line-of-business applications in the cloud. Central to many of these challenges is the limited support for control over cloud network functions, such as, the ability to ensure security, performance guarantees or isolation, and to flexibly interpose middleboxes in application deployments. In this paper, we present the design and implementation of a novel cloud networking system called CloudNaaS. Customers can leverage CloudNaaS to deploy applications augmented with a rich and extensible set of network functions such as virtual network isolation, custom addressing, service differentiation, and flexible interposition of various middleboxes. CloudNaaS primitives are directly implemented within the cloud infrastructure itself using high-speed programmable network elements, making CloudNaaS highly efficient. We evaluate an OpenFlow-based prototype of CloudNaaS and find that it can be used to instantiate a variety of network functions in the cloud, and that its performance is robust even in the face of large numbers of provisioned services and link/device failures.},
+ acmid = {2038924},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Benson, Theophilus and Akella, Aditya and Shaikh, Anees and Sahu, Sambit},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038924},
+ isbn = {978-1-4503-0976-9},
+ keyword = {datacenter, virtual network},
+ link = {http://doi.acm.org/10.1145/2038916.2038924},
+ location = {Cascais, Portugal},
+ numpages = {13},
+ pages = {8:1--8:13},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {CloudNaaS: A Cloud Networking Platform for Enterprise Applications},
+ year = {2011}
+}
+
+
+@inproceedings{Herodotou:2011:NOS:2038916.2038934,
+ abstract = {Infrastructure-as-a-Service (IaaS) cloud platforms have brought two unprecedented changes to cluster provisioning practices. First, any (nonexpert) user can provision a cluster of any size on the cloud within minutes to run her data-processing jobs. The user can terminate the cluster once her jobs complete, and she needs to pay only for the resources used and duration of use. Second, cloud platforms enable users to bypass the traditional middleman---the system administrator---in the cluster-provisioning process. These changes give tremendous power to the user, but place a major burden on her shoulders. The user is now faced regularly with complex cluster sizing problems that involve finding the cluster size, the type of resources to use in the cluster from the large number of choices offered by current IaaS cloud platforms, and the job configurations that best meet the performance needs of her workload. In this paper, we introduce the Elastisizer, a system to which users can express cluster sizing problems as queries in a declarative fashion. The Elastisizer provides reliable answers to these queries using an automated technique that uses a mix of job profiling, estimation using black-box and white-box models, and simulation. We have prototyped the Elastisizer for the Hadoop MapReduce framework, and present a comprehensive evaluation that shows the benefits of the Elastisizer in common scenarios where cluster sizing problems arise.},
+ acmid = {2038934},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Herodotou, Herodotos and Dong, Fei and Babu, Shivnath},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038934},
+ isbn = {978-1-4503-0976-9},
+ keyword = {MapReduce, cloud computing, cluster provisioning},
+ link = {http://doi.acm.org/10.1145/2038916.2038934},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {18:1--18:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {No One (Cluster) Size Fits All: Automatic Cluster Sizing for Data-intensive Analytics},
+ year = {2011}
+}
+
+
+@inproceedings{Fan:2011:SCB:2038916.2038939,
+ abstract = {Load balancing requests across a cluster of back-end servers is critical for avoiding performance bottlenecks and meeting service-level objectives (SLOs) in large-scale cloud computing services. This paper shows how a small, fast popularity-based front-end cache can ensure load balancing for an important class of such services; furthermore, we prove an O(n log n) lower-bound on the necessary cache size and show that this size depends only on the total number of back-end nodes n, not the number of items stored in the system. We validate our analysis through simulation and empirical results running a key-value storage system on an 85-node cluster.},
+ acmid = {2038939},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Fan, Bin and Lim, Hyeontaek and Andersen, David G. and Kaminsky, Michael},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038939},
+ isbn = {978-1-4503-0976-9},
+ keyword = {caching, clusters, load balancing, performance},
+ link = {http://doi.acm.org/10.1145/2038916.2038939},
+ location = {Cascais, Portugal},
+ numpages = {12},
+ pages = {23:1--23:12},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Small Cache, Big Effect: Provable Load Balancing for Randomly Partitioned Cluster Services},
+ year = {2011}
+}
+
+
+@inproceedings{Gamage:2011:OFI:2038916.2038940,
+ abstract = {Virtualization is a key technology that powers cloud computing platforms such as Amazon EC2. Virtual machine (VM) consolidation, where multiple VMs share a physical host, has seen rapid adoption in practice with increasingly large number of VMs per machine and per CPU core. Our investigations, however, suggest that the increasing degree of VM consolidation has serious negative effects on the VMs' TCP transport performance. As multiple VMs share a given CPU, the scheduling latencies, which can be in the order of tens of milliseconds, substantially increase the typically sub-millisecond round-trip times (RTTs) for TCP connections in a datacenter, causing significant degradation in throughput. In this paper, we propose a light-weight solution called vFlood that (a) allows a TCP sender VM to opportunistically flood the driver domain in the same host, and (b) offloads the VM's TCP congestion control function to the driver domain in order to mask the effects of VM consolidation. Our evaluation of a vFlood prototype on Xen suggests that vFlood substantially improves TCP transmit throughput with minimal per-packet CPU overhead. Further, our application-level evaluation using Apache Olio, a web 2.0 cloud application, indicates a 33% improvement in the number of operations per second.},
+ acmid = {2038940},
+ address = {New York, NY, USA},
+ articleno = {24},
+ author = {Gamage, Sahan and Kangarlou, Ardalan and Kompella, Ramana Rao and Xu, Dongyan},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038940},
+ isbn = {978-1-4503-0976-9},
+ keyword = {TCP, cloud computing, datacenters, virtualization},
+ link = {http://doi.acm.org/10.1145/2038916.2038940},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {24:1--24:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Opportunistic Flooding to Improve TCP Transmit Performance in Virtualized Clouds},
+ year = {2011}
+}
+
+
+@inproceedings{Gulati:2011:POS:2038916.2038935,
+ abstract = {Virtualized datacenters strive to reduce costs through workload consolidation. Workloads exhibit a diverse set of IO behaviors and varying IO load that makes it difficult to estimate the IO performance on shared storage. As a result, system administrators often resort to gross overprovisioning or static partitioning of storage to meet application demands. In this paper, we introduce Pesto, a unified storage performance management system for heterogeneous virtualized datacenters. Pesto is the first system that completely automates storage performance management for virtualized datacenters, providing IO load balancing with cost-benefit analysis, per-device congestion management, and initial placement of new workloads. At its core, Pesto constructs and adapts approximate black-box performance models of storage devices automatically, leveraging our analysis linking device throughput and latency to outstanding IOs.Experimental results for a wide range of devices and configurations validate the accuracy of these models. We implemented Pesto in a commercial product and tested its performance on tens of devices, running hundreds of test cases over the past year. End-to-end experiments demonstrate that Pesto is efficient, adapts to changes quickly and can improve workload performance by up to 19%, achieving our objective of lowering storage management costs through automation.},
+ acmid = {2038935},
+ address = {New York, NY, USA},
+ articleno = {19},
+ author = {Gulati, Ajay and Shanmuganathan, Ganesha and Ahmad, Irfan and Waldspurger, Carl and Uysal, Mustafa},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038935},
+ isbn = {978-1-4503-0976-9},
+ keyword = {QoS, VM, device, modeling, storage, virtualization},
+ link = {http://doi.acm.org/10.1145/2038916.2038935},
+ location = {Cascais, Portugal},
+ numpages = {14},
+ pages = {19:1--19:14},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Pesto: Online Storage Performance Management in Virtualized Datacenters},
+ year = {2011}
+}
+
+
+@inproceedings{Shin:2011:SD:2038916.2038918,
+ abstract = {In this paper, we propose an unorthodox topology for datacenters that eliminates all hierarchical switches in favor of connecting nodes at random according to a small-world-inspired distribution. Specifically, we examine topologies where the underlying nodes are connected at the small scale in a regular pattern, such as a ring, torus or cube, such that every node can route efficiently to nodes in its immediate vicinity, and amended by the addition of random links to nodes throughout the datacenter, such that a greedy algorithm can route packets to far away locations efficiently. Coupled with geographical address assignment, the resulting network can provide content routing in addition to traditional routing, and thus efficiently implement key-value stores. The irregular but self-similar nature of the network facilitates constructing large networks easily using prewired, commodity racks. We show that Small-World Datacenters can achieve higher bandwidth and fault tolerance compared to both conventional hierarchical datacenters as well as the recently proposed CamCube topology. Coupled with hardware acceleration for packet switching, small-world datacenters can achieve an order of magnitude higher bandwidth than a conventional datacenter, depending on the network traffic.},
+ acmid = {2038918},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Shin, Ji-Yong and Wong, Bernard and Sirer, Emin G\"{u}n},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038918},
+ isbn = {978-1-4503-0976-9},
+ keyword = {datacenter network, network topology, small-world network},
+ link = {http://doi.acm.org/10.1145/2038916.2038918},
+ location = {Cascais, Portugal},
+ numpages = {13},
+ pages = {2:1--2:13},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {Small-world Datacenters},
+ year = {2011}
+}
+
+
+@inproceedings{Chen:2011:CCM:2038916.2038945,
+ abstract = {In this paper we aim to understand the types of applications for which cloud computing is economically tenable, i.e., for which the cost savings associated with cloud placement outweigh any associated deployment costs. We discover two scenarios. (i) In an "unified client" scenario, where the cloud-hosted applications are only accessed by a single cloud customer (or small set of associates), it is important to ensure that the cost savings (mainly computation-related) can offset the often significant client-cloud distance (network costs etc). Today, from a technological, cost-centric point of view, this includes only compute-intensive applications with at least 1000 CPU cycles per each 32 bits of client-cloud transferred data. Naturally a number of other considerations may make clouds attractive even for less compute intensive tasks (services, security, pay-as-you-go nature etc). (ii) In a "multi-client" setting on the other hand, when outsourced applications serve numerous different third parties, we show that clouds begin to act similarly in nature to content-distribution networks - their better network integration is simply too good to pass on, when compared to locally hosting the applications (and incurring associated network costs). Thus, in multi-client scenarios, today's compute, energy and general technology costs suggest that outsourcing to clouds is profitable for almost any application. Ultimately, we hope this work will constitute a first step in an objective evaluation of the technological side of costs of outsourcing and computing in general.},
+ acmid = {2038945},
+ address = {New York, NY, USA},
+ articleno = {29},
+ author = {Chen, Yao and Sion, Radu},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038945},
+ isbn = {978-1-4503-0976-9},
+ keyword = {cloud computing, economics},
+ link = {http://doi.acm.org/10.1145/2038916.2038945},
+ location = {Cascais, Portugal},
+ numpages = {7},
+ pages = {29:1--29:7},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {To Cloud or Not to Cloud?: Musings on Costs and Viability},
+ year = {2011}
+}
+
+
+@inproceedings{Wang:2011:CCS:2038916.2038927,
+ abstract = {We present CoScan, a scheduling framework that eliminates redundant processing in workflows that scan large batches of data in a map-reduce computing environment. CoScan merges Pig programs from multiple users at runtime to reduce I/O contention while adhering to soft deadline requirements in scheduling. This includes support for join workflows that operate on multiple data sources. Our solution maps well to workflows at many Internet companies which reuse data from a common set of inputs. Experiments on the PigMix data analytics benchmark exhibit orders of magnitude reduction in resource contention with minimal impact on latency.},
+ acmid = {2038927},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Wang, Xiaodan and Olston, Christopher and Sarma, Anish Das and Burns, Randal},
+ booktitle = {Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ doi = {10.1145/2038916.2038927},
+ isbn = {978-1-4503-0976-9},
+ link = {http://doi.acm.org/10.1145/2038916.2038927},
+ location = {Cascais, Portugal},
+ numpages = {12},
+ pages = {11:1--11:12},
+ publisher = {ACM},
+ series = {SOCC '11},
+ title = {CoScan: Cooperative Scan Sharing in the Cloud},
+ year = {2011}
+}
+
+
