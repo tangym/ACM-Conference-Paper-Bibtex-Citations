@@ -1,0 +1,619 @@
+@inproceedings{Rao:2012:SFL:2391229.2391233,
+ abstract = {In this paper, we present Sailfish, a new Map-Reduce framework for large scale data processing. The Sailfish design is centered around aggregating intermediate data, specifically data produced by map tasks and consumed later by reduce tasks, to improve performance by batching disk I/O. We introduce an abstraction called I-files for supporting data aggregation, and describe how we implemented it as an extension of the distributed filesystem, to efficiently batch data written by multiple writers and read by multiple readers. Sailfish adapts the Map-Reduce layer in Hadoop to use I-files for transporting data from map tasks to reduce tasks. We present experimental results demonstrating that Sailfish improves performance of standard Hadoop; in particular, we show 20% to 5 times faster performance on a representative mix of real jobs and datasets at Yahoo!. We also demonstrate that the Sailfish design enables auto-tuning functionality that handles changes in data volume and skewed distributions effectively, thereby addressing an important practical drawback of Hadoop, which in contrast relies on programmers to configure system parameters appropriately for each job, for each input dataset. Our Sailfish implementation and the other software components developed as part of this paper has been released as open source.},
+ acmid = {2391233},
+ address = {New York, NY, USA},
+ articleno = {4},
+ author = {Rao, Sriram and Ramakrishnan, Raghu and Silberstein, Adam and Ovsiannikov, Mike and Reeves, Damian},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391233},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391233},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {4:1--4:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Sailfish: A Framework for Large Scale Data Processing},
+ year = {2012}
+}
+
+
+@inproceedings{Palasamudram:2012:UBR:2391229.2391240,
+ abstract = {Modern Internet-scale distributed networks have hundreds of thousands of servers deployed in hundreds of locations and networks around the world. Canonical examples of such networks are content delivery networks (called CDNs) that we study in this paper. The operating expenses of large distributed networks are increasingly driven by the cost of supplying power to their servers. Typically, CDNs procure power through long-term contracts from co-location providers and pay on the basis of the power (KWs) provisioned for them, rather than on the basis of the energy (KWHs) actually consumed. We propose the use of batteries to reduce both the required power supply and the incurred power cost of a CDN. We provide a theoretical model and an algorithmic framework for provisioning batteries to minimize the total power supply and the total power costs of a CDN. We evaluate our battery provisioning algorithms using extensive load traces derived from Akamai's CDN to empirically study the achievable benefits. We show that batteries can provide up to 14% power savings, that would increase to 22% for more power-proportional next-generation servers, and would increase even more to 35.3% for perfectly power-proportional servers. Likewise, the cost savings, inclusive of the additional battery costs, range from 13.26% to 33.8% as servers become more power-proportional. Further, much of these savings can be achieved with a small cycle rate of one full discharge/charge cycle every three days that is conducive to satisfactory battery lifetimes. In summary, we show that a CDN can utilize batteries to significantly reduce both the total supplied power and the total power costs, thereby establishing batteries as a key element in future distributed network architecture. While we use the canonical example of a CDN, our results also apply to other similar Internet-scale distributed networks.},
+ acmid = {2391240},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Palasamudram, Darshan S. and Sitaraman, Ramesh K. and Urgaonkar, Bhuvan and Urgaonkar, Rahul},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391240},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, energy efficiency, energy storage, internet content delivery, network architecture},
+ link = {http://doi.acm.org/10.1145/2391229.2391240},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {11:1--11:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Using Batteries to Reduce the Power Costs of Internet-scale Distributed Networks},
+ year = {2012}
+}
+
+
+@proceedings{Chase:2011:2038916,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0976-9},
+ location = {Cascais, Portugal},
+ publisher = {ACM},
+ title = {SOCC '11: Proceedings of the 2Nd ACM Symposium on Cloud Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Vasudevan:2012:UVI:2391229.2391237,
+ abstract = {The performance of non-volatile memories (NVM) has grown by a factor of 100 during the last several years: Flash devices today are capable of over 1 million I/Os per second. Unfortunately, this incredible growth has put strain on software storage systems looking to extract their full potential. To address this increasing software-I/O gap, we propose using vector interfaces in high-performance networked systems. Vector interfaces organize requests and computation in a distributed system into collections of similar but independent units of work, thereby providing opportunities to amortize and eliminate the redundant work common in many high-performance systems. By integrating vector interfaces into storage and RPC components, we demonstrate that a single key-value storage server can provide 1.6 million requests per second with a median latency below one millisecond, over fourteen times greater than the same software absent the use of vector interfaces. We show that pervasively applying vector interfaces is necessary to achieve this potential and describe how to compose these interfaces together to ensure that vectors of work are propagated throughout a distributed system.},
+ acmid = {2391237},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Vasudevan, Vijay and Kaminsky, Michael and Andersen, David G.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391237},
+ isbn = {978-1-4503-1761-0},
+ keyword = {key-value storage, measurement, non-volatile memory, performance},
+ link = {http://doi.acm.org/10.1145/2391229.2391237},
+ location = {San Jose, California},
+ numpages = {13},
+ pages = {8:1--8:13},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Using Vector Interfaces to Deliver Millions of IOPS from a Networked Key-value Storage Server},
+ year = {2012}
+}
+
+
+@inproceedings{Frey:2012:PDC:2391229.2391246,
+ abstract = {The need to backup huge quantities of data has led to the development of a number of distributed deduplication techniques that aim to reproduce the operation of centralized, single-node backup systems in a cluster-based environment. At one extreme, stateful solutions rely on indexing mechanisms to maximize deduplication. However the cost of these strategies in terms of computation and memory resources makes them unsuitable for large-scale storage systems. At the other extreme, stateless strategies store data blocks based only on their content, without taking into account previous placement decisions, thus reducing the cost but also the effectiveness of deduplication. In this work, we propose, Produck, a stateful, yet light-weight cluster-based backup system that provides deduplication rates close to those of a single-node system at a very low computational cost and with minimal memory overhead. In doing so, we provide two main contributions: a lightweight probabilistic node-assignment mechanism and a new bucket-based load-balancing strategy. The former allows Produck to quickly identify the servers that can provide the highest deduplication rates for a given data block. The latter efficiently spreads the load equally among the nodes. Our experiments compare Produck against state-of-the-art alternatives over a publicly available dataset consisting of 16 full Wikipedia backups, as well as over a private one consisting of images of the environments available for deployment on the Grid5000 experimental platform. Our results show that, on average, Produck provides (i) up to 18% better deduplication compared to a stateless minhash-based technique, and (ii) an 18-fold reduction in computational cost with respect to a stateful Bloom-filter-based solution.},
+ acmid = {2391246},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Frey, Davide and Kermarrec, Anne-Marie and Kloudas, Konstantinos},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391246},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, deduplication, distributed storage systems, set intersection},
+ link = {http://doi.acm.org/10.1145/2391229.2391246},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {17:1--17:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Probabilistic Deduplication for Cluster-based Storage Systems},
+ year = {2012}
+}
+
+
+@inproceedings{Gopalakrishna:2012:UCM:2391229.2391248,
+ abstract = {Distributed data systems systems are used in a variety of settings like online serving, offline analytics, data transport, and search, among other use cases. They let organizations scale out their workloads using cost-effective commodity hardware, while retaining key properties like fault tolerance and scalability. At LinkedIn we have built a number of such systems. A key pattern we observe is that even though they may serve different purposes, they tend to have a lot of common functionality, and tend to use common building blocks in their architectures. One such building block that is just beginning to receive attention is cluster management, which addresses the complexity of handling a dynamic, large-scale system with many servers. Such systems must handle software and hardware failures, setup tasks such as bootstrapping data, and operational issues such as data placement, load balancing, planned upgrades, and cluster expansion. All of this shared complexity, which we see in all of our systems, motivates us to build a cluster management framework, Helix, to solve these problems once in a general way. Helix provides an abstraction for a system developer to separate coordination and management tasks from component functional tasks of a distributed system. The developer defines the system behavior via a state model that enumerates the possible states of each component, the transitions between those states, and constraints that govern the system's valid settings. Helix does the heavy lifting of ensuring the system satisfies that state model in the distributed setting, while also meeting the system's goals on load balancing and throttling state changes. We detail several Helix-managed production distributed systems at LinkedIn and how Helix has helped them avoid building custom management components. We describe the Helix design and implementation and present an experimental study that demonstrates its performance and functionality.},
+ acmid = {2391248},
+ address = {New York, NY, USA},
+ articleno = {19},
+ author = {Gopalakrishna, Kishore and Lu, Shi and Zhang, Zhen and Silberstein, Adam and Surlaker, Kapil and Subramonian, Ramesh and Schulman, Bob},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391248},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391248},
+ location = {San Jose, California},
+ numpages = {13},
+ pages = {19:1--19:13},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Untangling Cluster Management with Helix},
+ year = {2012}
+}
+
+
+@inproceedings{Baset:2012:OSC:2391229.2391257,
+ abstract = {Open source cloud technologies such as OpenStack, CloudStack, OpenNebula, Eucalyptus, OpenShift, and Cloud Foundry have gained significant momentum in the last few years. For a researcher and practitioner, they present a unique opportunity to analyze, contribute, and innovate new services using these technologies. The first part of the tutorial will provide an overview of OpenStack and CloudStack, two open source infrastructure as a service (IaaS) cloud platforms. The second part of the tutorial will present a detailed analysis of different OpenStack components, namely, glance (image service), nova (compute service), keystone (security service), quantum (network service), and swift (object storage service). In particular, the tutorial will describe the scheduling and provisioning process in OpenStack, and how different configuration options lead to myriad provisioning performance. Further, the tutorial will describe how OpenStack has evolved over releases. Finally, the tutorial will describe weaknesses of OpenStack and highlight important areas where researchers can contribute.},
+ acmid = {2391257},
+ address = {New York, NY, USA},
+ articleno = {28},
+ author = {Baset, Salman A.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391257},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391257},
+ location = {San Jose, California},
+ numpages = {2},
+ pages = {28:1--28:2},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Open Source Cloud Technologies},
+ year = {2012}
+}
+
+
+@inproceedings{Jalaparti:2012:BTG:2391229.2391239,
+ abstract = {The disconnect between the resource-centric interface exposed by today's cloud providers and tenant goals hurts both entities. Tenants are encumbered by having to translate their performance and cost goals into the corresponding resource requirements, while providers suffer revenue loss due to un-informed resource selection by tenants. Instead, we argue for a "job-centric" cloud whereby tenants only specify high-level goals regarding their jobs and applications. To illustrate our ideas, we present Bazaar, a cloud framework offering a job-centric interface for data analytics applications. Bazaar allows tenants to express high-level goals and predicts the resources needed to achieve them. Since multiple resource combinations may achieve the same goal, Bazaar chooses the combination most suitable for the provider. Using large-scale simulations and deployment on a Hadoop cluster, we demonstrate that Bazaar enables a symbiotic tenant-provider relationship. Tenants achieve their performance goals. At the same time, holistic resource selection benefits providers in the form of increased goodput.},
+ acmid = {2391239},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Jalaparti, Virajith and Ballani, Hitesh and Costa, Paolo and Karagiannis, Thomas and Rowstron, Ant},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391239},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud, cloud pricing, job-centric, provider interface, resource malleability, resource selection},
+ link = {http://doi.acm.org/10.1145/2391229.2391239},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {10:1--10:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Bridging the Tenant-provider Gap in Cloud Services},
+ year = {2012}
+}
+
+
+@inproceedings{Reiss:2012:HDC:2391229.2391236,
+ abstract = {To better understand the challenges in developing effective cloud-based resource schedulers, we analyze the first publicly available trace data from a sizable multi-purpose cluster. The most notable workload characteristic is heterogeneity: in resource types (e.g., cores:RAM per machine) and their usage (e.g., duration and resources needed). Such heterogeneity reduces the effectiveness of traditional slot- and core-based scheduling. Furthermore, some tasks are constrained as to the kind of machine types they can use, increasing the complexity of resource assignment and complicating task migration. The workload is also highly dynamic, varying over time and most workload features, and is driven by many short jobs that demand quick scheduling decisions. While few simplifying assumptions apply, we find that many longer-running jobs have relatively stable resource utilizations, which can help adaptive resource schedulers.},
+ acmid = {2391236},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Reiss, Charles and Tumanov, Alexey and Ganger, Gregory R. and Katz, Randy H. and Kozuch, Michael A.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391236},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391236},
+ location = {San Jose, California},
+ numpages = {13},
+ pages = {7:1--7:13},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Heterogeneity and Dynamicity of Clouds at Scale: Google Trace Analysis},
+ year = {2012}
+}
+
+
+@inproceedings{Bailis:2012:PDC:2391229.2391251,
+ abstract = {Causal consistency is the strongest consistency model that is available in the presence of partitions and provides useful semantics for human-facing distributed services. Here, we expose its serious and inherent scalability limitations due to write propagation requirements and traditional dependency tracking mechanisms. As an alternative to classic potential causality, we advocate the use of explicit causality, or application-defined happens-before relations. Explicit causality, a subset of potential causality, tracks only relevant dependencies and reduces several of the potential dangers of causal consistency.},
+ acmid = {2391251},
+ address = {New York, NY, USA},
+ articleno = {22},
+ author = {Bailis, Peter and Fekete, Alan and Ghodsi, Ali and Hellerstein, Joseph M. and Stoica, Ion},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391251},
+ isbn = {978-1-4503-1761-0},
+ keyword = {causality, convergence, data dependencies, explicit causality, scalability, semantic knowledge, weak consistency},
+ link = {http://doi.acm.org/10.1145/2391229.2391251},
+ location = {San Jose, California},
+ numpages = {7},
+ pages = {22:1--22:7},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {The Potential Dangers of Causal Consistency and an Explicit Solution},
+ year = {2012}
+}
+
+
+@inproceedings{Conway:2012:LLD:2391229.2391230,
+ abstract = {In recent years there has been interest in achieving application-level consistency criteria without the latency and availability costs of strongly consistent storage infrastructure. A standard technique is to adopt a vocabulary of commutative operations; this avoids the risk of inconsistency due to message reordering. Another approach was recently captured by the CALM theorem, which proves that logically monotonic programs are guaranteed to be eventually consistent. In logic languages such as Bloom, CALM analysis can automatically verify that programs achieve consistency without coordination. In this paper we present BloomL, an extension to Bloom that takes inspiration from both of these traditions. BloomL generalizes Bloom to support lattices and extends the power of CALM analysis to whole programs containing arbitrary lattices. We show how the Bloom interpreter can be generalized to support efficient evaluation of lattice-based code using well-known strategies from logic programming. Finally, we use BloomL to develop several practical distributed programs, including a key-value store similar to Amazon Dynamo, and show how BloomL encourages the safe composition of small, easy-to-analyze lattices into larger programs.},
+ acmid = {2391230},
+ address = {New York, NY, USA},
+ articleno = {1},
+ author = {Conway, Neil and Marczak, William R. and Alvaro, Peter and Hellerstein, Joseph M. and Maier, David},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391230},
+ isbn = {978-1-4503-1761-0},
+ keyword = {Bloom, distributed programming, eventual consistency, lattice},
+ link = {http://doi.acm.org/10.1145/2391229.2391230},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {1:1--1:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Logic and Lattices for Distributed Programming},
+ year = {2012}
+}
+
+
+@inproceedings{Gu:2012:OMO:2391229.2391234,
+ abstract = {Precise fingerprinting of an operating system (OS) is critical to many security and virtual machine (VM) management applications in the cloud, such as VM introspection, penetration testing, guest OS administration (e.g., kernel update), kernel dump analysis, and memory forensics. The existing OS fingerprinting techniques primarily inspect network packets or CPU states, and they all fall short in precision and usability. As the physical memory of a VM is always present in all these applications, in this paper, we present OS-Sommelier, a memory-only approach for precise and efficient cloud guest OS fingerprinting. Given a physical memory dump of a guest OS, the key idea of OS-Sommelier is to compute the kernel code hash for the precise fingerprinting. To achieve this goal, we face two major challenges: (1) how to differentiate the main kernel code from the rest of code and data in the physical memory, and (2) how to normalize the kernel code to deal with practical issues such as address space layout randomization. We have designed and implemented a prototype system to address these challenges. Our experimental results with over 45 OS kernels, including Linux, Windows, FreeBSD, OpenBSD and NetBSD, show that our OS-Sommelier can precisely fingerprint all the tested OSes without any false positives or false negatives, and do so within only 2 seconds on average.},
+ acmid = {2391234},
+ address = {New York, NY, USA},
+ articleno = {5},
+ author = {Gu, Yufei and Fu, Yangchun and Prakash, Aravind and Lin, Zhiqiang and Yin, Heng},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391234},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, memory forensics, operating system fingerprinting, virtual machine introspection},
+ link = {http://doi.acm.org/10.1145/2391229.2391234},
+ location = {San Jose, California},
+ numpages = {13},
+ pages = {5:1--5:13},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {OS-Sommelier: Memory-only Operating System Fingerprinting in the Cloud},
+ year = {2012}
+}
+
+
+@inproceedings{He:2012:ZSI:2391229.2391241,
+ abstract = {This paper presents a scheduling model for a class of interactive services in which requests are time bounded and lower result quality can be traded for shorter execution time. These applications include web search engines, finance servers, and other interactive, on-line services. We develop an efficient scheduling algorithm, Zeta, that allocates processor time among service requests to maximize the quality and minimize the variance of the response. Zeta exploits the concavity of the request quality profile to distribute processing time among outstanding requests. By executing some requests partially (and obtaining much or most benefit of a full execution), Zeta frees resources for other requests, which might have timed out and produced no results. Compared to scheduling algorithms that consider only deadline or quality profile information, Zeta improves overall response quality and reduces response quality variance, yielding significant improvement in the high-percentile response quality. We implemented and deployed Zeta in the Microsoft Bing web search engine and evaluated its performance in a production environment with realistic workloads. Measurements show that at the same response quality and latency as the production system, Zeta increases system capacity by 29% by improving both average and high percentile response quality. We also implemented Zeta in a finance server that computes option prices. In this application, Zeta improves average response quality by 28% and the 99-percentile quality by 80%. Using a simulation, we also compared Zeta to the offline optimal schedule and other scheduling algorithms. Although Zeta is only close to optimal, it provides better performance than prior algorithms under a wide variety of operating conditions.},
+ acmid = {2391241},
+ address = {New York, NY, USA},
+ articleno = {12},
+ author = {He, Yuxiong and Elnikety, Sameh and Larus, James and Yan, Chenyu},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391241},
+ isbn = {978-1-4503-1761-0},
+ keyword = {deadline, interactive service, partial execution, quality, quality profile, response time, scheduling, web search},
+ link = {http://doi.acm.org/10.1145/2391229.2391241},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {12:1--12:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Zeta: Scheduling Interactive Services with Partial Execution},
+ year = {2012}
+}
+
+
+@proceedings{Carey:2012:2391229,
+ abstract = {Welcome to the Third ACM Symposium of Cloud Computing (SoCC'12). This annual symposium is co-sponsored by the ACM Special Interest Group on Management of Data (SIGMOD) and the ACM Special Interest Group on Operating Systems (SIGOPS). Both these communities share a common interest in the rapidly developing field of Cloud Computing, i.e., large scale distributed systems that can manage massive volumes of data and yet deliver reliable and efficient service. As a result, they co-sponsor this symposium with active participation and shared responsibilities from both the communities. In its first year, SoCC was held in conjunction with ACM SIGMOD, the flagship conference of the database community. In the second year, SoCC was held in conjunction with ACM SOSP, the premier conference for operating systems. The goal for co-location was to facilitate effective networking across the two communities, and the symposium was successfully born. This year's edition is being held, for the first time, as an independent event. This year SoCC is being hosted in San Jose, California, a.k.a. Silicon Valley, due to the high level of industrial activity there in the Cloud Computing arena.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1761-0},
+ location = {San Jose, California},
+ publisher = {ACM},
+ title = {SoCC '12: Proceedings of the Third ACM Symposium on Cloud Computing},
+ year = {2012}
+}
+
+
+@inproceedings{Farley:2012:MYM:2391229.2391249,
+ abstract = {Infrastructure-as-a-system compute clouds such as Amazon's EC2 allow users to pay a flat hourly rate to run their virtual machine (VM) on a server providing some combination of CPU access, storage, and network. But not all VM instances are created equal: distinct underlying hardware differences, contention, and other phenomena can result in vastly differing performance across supposedly equivalent instances. The result is striking variability in the resources received for the same price. We initiate the study of customer-controlled placement gaming: strategies by which customers exploit performance heterogeneity to lower their costs. We start with a measurement study of Amazon EC2. It confirms the (oft-reported) performance differences between supposedly identical instances, and leads us to identify fruitful targets for placement gaming, such as CPU, network, and storage performance. We then explore simple heterogeneity-aware placement strategies that seek out better-performing instances. Our strategies require no assistance from the cloud provider and are therefore immediately deployable. We develop a formal model for placement strategies and evaluate potential strategies via simulation. Finally, we verify the efficacy of our strategies by implementing them on EC2; our experiments show performance improvements of 5% for a real-world CPU-bound job and 34% for a bandwidth-intensive job.},
+ acmid = {2391249},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Farley, Benjamin and Juels, Ari and Varadarajan, Venkatanathan and Ristenpart, Thomas and Bowers, Kevin D. and Swift, Michael M.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391249},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, heterogeneity, virtual machine migration},
+ link = {http://doi.acm.org/10.1145/2391229.2391249},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {20:1--20:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {More for Your Money: Exploiting Performance Heterogeneity in Public Clouds},
+ year = {2012}
+}
+
+
+@proceedings{Lohman:2013:2523616,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2428-1},
+ location = {Santa Clara, California},
+ publisher = {ACM},
+ title = {SOCC '13: Proceedings of the 4th Annual Symposium on Cloud Computing},
+ year = {2013}
+}
+
+
+@inproceedings{Zellag:2012:CYC:2391229.2391235,
+ abstract = {Current cloud datastores usually trade consistency for performance and availability. However, it is often not clear how an application is affected when it runs under a low level of consistency. In fact, current application designers have basically no tools that would help them to get a feeling of which and how many inconsistencies actually occur for their particular application. In this paper, we propose a generalized approach for detecting consistency anomalies for arbitrary cloud applications accessing various types of cloud datastores in transactional or non-transactional contexts. We do not require any knowledge on the business logic of the studied application nor on its selected consistency guarantees. We experimentally verify the effectiveness of our approach by using the Google App Engine and Cassandra datastores.},
+ acmid = {2391235},
+ address = {New York, NY, USA},
+ articleno = {6},
+ author = {Zellag, Kamal and Kemme, Bettina},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391235},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud datastores, consistency, serializability},
+ link = {http://doi.acm.org/10.1145/2391229.2391235},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {6:1--6:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {How Consistent is Your Cloud Application?},
+ year = {2012}
+}
+
+
+@inproceedings{Ramakrishnan:2012:BRS:2391229.2391245,
+ abstract = {The elapsed time of a parallel job depends on the completion time of its longest running constituent. We present a static load balancing algorithm that distributes work evenly across the reducers in a MapReduce job resulting in significant elapsed time reductions. Taking a user-specified model of reducer performance, our load balancer uses a progressive objective-based cluster sampler to estimate the load associated with each reduce-key. It balances the workload using Key Chopping, to split keys with large loads into sub-keys that can be assigned to different distributive reducers, and Key Packing, to assign keys with medium loads to reducers to minimize the maximum reducer load. Keys with small loads are hashed as they have little effect on the balance. This repeats until the user specified balancing objective and confidence level are achieved. The sampler and load balancer have been implemented in the Oracle Loader for Hadoop (OLH), a commercial MapReduce application that employs Apache Hadoop to perform parallel data formatting and data movement into partitioned relational tables. We present the performance improvements we achieve in both OLH and in a MapReduce program for inverted index creation. The balancer works for arbitrary IID key distributions, the time used for sampling is small and our solution is very effective at reducing the elapsed time for the MapReduce jobs we explored.},
+ acmid = {2391245},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Ramakrishnan, Smriti R. and Swart, Garret and Urmanov, Aleksey},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391245},
+ isbn = {978-1-4503-1761-0},
+ keyword = {Hadoop, MapReduce, Oracle loader for Hadoop, load balancing, load model, progressive sampling, skew},
+ link = {http://doi.acm.org/10.1145/2391229.2391245},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {16:1--16:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Balancing Reducer Skew in MapReduce Workloads Using Progressive Sampling},
+ year = {2012}
+}
+
+
+@inproceedings{Ananthanarayanan:2012:TEM:2391229.2391253,
+ abstract = {Data-intensive computing (DISC) frameworks scale by partitioning a job across a set of fault-tolerant tasks, then diffusing those tasks across large clusters. Multi-tenanted clusters must accommodate service-level objectives (SLO) in their resource model, often expressed as a maximum latency for allocating the desired set of resources to every job. When jobs are partitioned into tasks statically, a cluster cannot meet its SLOs while maintaining both high utilization and efficiency. Ideally, we want to give resources to jobs when they are free but would expect to reclaim them instantaneously when new jobs arrive, without losing work. DISC frameworks do not support such elasticity because interrupting running tasks incurs high overheads. Amoeba enables lightweight elasticity in DISC frameworks by identifying points at which running tasks of over-provisioned jobs can be safely exited, committing their outputs, and spawning new tasks for the remaining work. Effectively, tasks of DISC jobs are now sized dynamically in response to global resource scarcity or abundance. Simulation and deployment of our prototype shows that Amoeba speeds up jobs by 32% without compromising utilization or efficiency.},
+ acmid = {2391253},
+ address = {New York, NY, USA},
+ articleno = {24},
+ author = {Ananthanarayanan, Ganesh and Douglas, Christopher and Ramakrishnan, Raghu and Rao, Sriram and Stoica, Ion},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391253},
+ isbn = {978-1-4503-1761-0},
+ keyword = {checkpoint/restart, data-intensive computing, elasticity, multi-tenancy},
+ link = {http://doi.acm.org/10.1145/2391229.2391253},
+ location = {San Jose, California},
+ numpages = {7},
+ pages = {24:1--24:7},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {True Elasticity in Multi-tenant Data-intensive Compute Clusters},
+ year = {2012}
+}
+
+
+@inproceedings{Das:2012:ADL:2391229.2391247,
+ abstract = {In Internet architectures, data systems are typically categorized into source-of-truth systems that serve as primary stores for the user-generated writes, and derived data stores or indexes which serve reads and other complex queries. The data in these secondary stores is often derived from the primary data through custom transformations, sometimes involving complex processing driven by business logic. Similarly data in caching tiers is derived from reads against the primary data store, but needs to get invalidated or refreshed when the primary data gets mutated. A fundamental requirement emerging from these kinds of data architectures is the need to reliably capture, flow and process primary data changes. We have built Databus, a source-agnostic distributed change data capture system, which is an integral part of LinkedIn's data processing pipeline. The Databus transport layer provides latencies in the low milliseconds and handles throughput of thousands of events per second per server while supporting infinite look back capabilities and rich subscription functionality. This paper covers the design, implementation and trade-offs underpinning the latest generation of Databus technology. We also present experimental results from stress-testing the system and describe our experience supporting a wide range of LinkedIn production applications built on top of Databus.},
+ acmid = {2391247},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Das, Shirshanka and Botev, Chavdar and Surlaker, Kapil and Ghosh, Bhaskar and Varadarajan, Balaji and Nagaraj, Sunil and Zhang, David and Gao, Lei and Westerman, Jemiah and Ganti, Phanindra and Shkolnik, Boris and Topiwala, Sajid and Pachev, Alexander and Somasundaram, Naveen and Subramaniam, Subbu},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391247},
+ isbn = {978-1-4503-1761-0},
+ keyword = {CDC, change data capture, replication, stream processing},
+ link = {http://doi.acm.org/10.1145/2391229.2391247},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {18:1--18:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {All Aboard the Databus!: Linkedin's Scalable Consistent Change Data Capture Platform},
+ year = {2012}
+}
+
+
+@inproceedings{Kocoloski:2012:CDS:2391229.2391252,
+ abstract = {With the growth of Infrastructure as a Service (IaaS) cloud providers, many have begun to seriously consider cloud services as a substrate for HPC applications. While the cloud promises many benefits for the HPC community, it currently does not come without drawbacks for application performance. These performance issues are generally the result of resource contention as multiple VMs compete for the same hardware. This contention culminates in cross VM interference whereby one VM is able to impact the performance of another. For HPC applications this interference can have a dramatic impact on scalability and performance. In order to fully support HPC applications in the cloud, services need to be available that prevent cross VM interference and isolate HPC workloads from other users. As a means to achieve this goal, we propose a dual stack approach to IaaS cloud services that utilizes multiple concurrent VMMs on each node capable of partitioning local resources in order to provide performance isolation. Each partition can then be managed by a specialized VMM that is designed specifically for either an HPC or commodity environment. In this paper we demonstrate the use of the Palacios VMM, a virtual machine monitor specifically designed for HPC, in concert with KVM to provide a partitioned cloud platform that is capable of hosting both commodity and HPC applications on a single node without interference. Furthermore, our results demonstrate that running KVM and Palacios in parallel allows an HPC application to achieve isolated and scalable performance while sharing hardware resources with commodity VMs.},
+ acmid = {2391252},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Kocoloski, Brian and Ouyang, Jiannan and Lange, John},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391252},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, high performance computing, virtual machine monitors},
+ link = {http://doi.acm.org/10.1145/2391229.2391252},
+ location = {San Jose, California},
+ numpages = {7},
+ pages = {23:1--23:7},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {A Case for Dual Stack Virtualization: Consolidating HPC and Commodity Applications in the Cloud},
+ year = {2012}
+}
+
+
+@inproceedings{Afrati:2012:DGA:2391229.2391255,
+ abstract = {As MapReduce/Hadoop grows in importance, we find more exotic applications being written this way. Not every program written for this platform performs as well as we might wish. There are several reasons why a MapReduce program can underperform expectations. One is the need to balance the communication cost of transporting data from the mappers to the reducers against the computation done at the mappers and reducers themselves. A second important issue is selecting the number of rounds of MapReduce. A third issue is that of skew. If wall-clock time is important, then using many different reduce-keys and many compute nodes may minimize the time to finish the job. Yet if the data is uncooperative, and no provision is made to distribute the data evenly, much of the work is done by a single node.},
+ acmid = {2391255},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Afrati, Foto N. and Balazinska, Magdalena and Sarma, Anish Das and Howe, Bill and Salihoglu, Semih and Ullman, Jeffrey D.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391255},
+ isbn = {978-1-4503-1761-0},
+ keyword = {communication parallelism tradeoff, distributed computing, map-reduce algorithms},
+ link = {http://doi.acm.org/10.1145/2391229.2391255},
+ location = {San Jose, California},
+ numpages = {2},
+ pages = {26:1--26:2},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Designing Good Algorithms for MapReduce and Beyond},
+ year = {2012}
+}
+
+
+@inproceedings{Park:2012:RAS:2391229.2391250,
+ abstract = {Workload consolidation is a key technique in reducing costs in virtualized datacenters. When considering storage consolidation, a key problem is the unpredictable performance behavior of consolidated workloads on a given storage system. In practice, this often forces system administrators to grossly overprovision storage to meet application demands. In this paper, we show that existing modeling techniques are inaccurate and ineffective in the face of heterogenous devices. We introduce Romano, a storage performance management system designed to optimize truly heterogeneous virtualized datacenters. At its core, Romano constructs and adapts approximate workload-specific performance models of storage devices automatically, along with prediction intervals. It then applies these models to allow highly efficient IO load balancing. End-to-end experiments demonstrate that Romano reduces prediction error by 80% on average compared with existing techniques. The result is improved load balancing with lowered variance by 82% and reduced average and maximum latency observed across the storage systems by 52% and 78%, respectively.},
+ acmid = {2391250},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Park, Nohhyun and Ahmad, Irfan and Lilja, David J.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391250},
+ isbn = {978-1-4503-1761-0},
+ keyword = {QoS, VM, device, modeling, storage, virtualization},
+ link = {http://doi.acm.org/10.1145/2391229.2391250},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {21:1--21:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Romano: Autonomous Storage Management Using Performance Prediction in Multi-tenant Datacenters},
+ year = {2012}
+}
+
+
+@inproceedings{Rai:2012:GRA:2391229.2391244,
+ abstract = {Resource allocation is an integral, evolving part of many data center management problems such as virtual machine placement in data centers, network virtualization, and multi-path network routing. Since the problems are inherently NP-Hard, most existing systems use custom-designed heuristics to find a suitable solution. However, such heuristics are often rigid, making it difficult to extend them as requirements change. In this paper, we present a novel approach to resource allocation that permits the problem specification to evolve with ease. We have built Wrasse, a generic and extensible tool that cloud environments can use to solve their specific allocation problem. Wrasse provides a simple yet expressive specification language that captures a wide range of resource allocation problems. At the back-end, it leverages the power of GPUs to provide solutions to the allocation problems in a fast and timely manner. We show the extensibility of Wrasse by expressing several allocation problems in its specification language. Our experiments show that Wrasse's solution quality is as good as with heuristics, and sometimes even better, while maintaining good performance. In one case, Wrasse packed 71% more instances than a custom heuristic.},
+ acmid = {2391244},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {Rai, Anshul and Bhagwan, Ranjita and Guha, Saikat},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391244},
+ isbn = {978-1-4503-1761-0},
+ keyword = {GPU, constraint satisfaction, resource allocation},
+ link = {http://doi.acm.org/10.1145/2391229.2391244},
+ location = {San Jose, California},
+ numpages = {12},
+ pages = {15:1--15:12},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Generalized Resource Allocation for the Cloud},
+ year = {2012}
+}
+
+
+@inproceedings{Alvaro:2012:DPC:2391229.2391256,
+ abstract = {In recent years, distributed programming has become a topic of widespread interest among developers. However, writing reliable distributed programs remains stubbornly difficult. In addition to the inherent challenges of distribution---asynchrony, concurrency, and partial failure---many modern distributed systems operate at massive scale. Scalability concerns have in turn encouraged many developers to eschew strongly consistent distributed storage in favor of application-level consistency criteria [5, 10, 18], which has raised the degree of difficulty still further.},
+ acmid = {2391256},
+ address = {New York, NY, USA},
+ articleno = {27},
+ author = {Alvaro, Peter and Conway, Neil and Hellerstein, Joseph M.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391256},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391256},
+ location = {San Jose, California},
+ numpages = {2},
+ pages = {27:1--27:2},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Distributed Programming and Consistency: Principles and Practice},
+ year = {2012}
+}
+
+
+@inproceedings{Kapoor:2012:CPL:2391229.2391238,
+ abstract = {In data center applications, predictability in service time and controlled latency, especially tail latency, are essential for building performant applications. This is especially true for applications or services built by accessing data across thousands of servers to generate a user response. Current practice has been to run such services at low utilization to rein in latency outliers, which decreases efficiency and limits the number of service invocations developers can issue while still meeting tight latency budgets. In this paper, we analyze three data center applications, Memcached, OpenFlow, and Web search, to measure the effect of 1) kernel socket handling, NIC interaction, and the network stack, 2) application locks contested in the kernel, and 3) application-layer queueing due to requests being stalled behind straggler threads on tail latency. We propose Chronos, a framework to deliver predictable, low latency in data center applications. Chronos uses a combination of existing and new techniques to achieve this end, for example by supporting Memcached at 200,000 requests per second per server at mean latency of 10 μs with a 99th percentile latency of only 30 μs, a factor of 20 lower than baseline Memcached.},
+ acmid = {2391238},
+ address = {New York, NY, USA},
+ articleno = {9},
+ author = {Kapoor, Rishi and Porter, George and Tewari, Malveeka and Voelker, Geoffrey M. and Vahdat, Amin},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391238},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, load balancing, predictable latency, user-level networking},
+ link = {http://doi.acm.org/10.1145/2391229.2391238},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {9:1--9:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Chronos: Predictable Low Latency for Data Center Applications},
+ year = {2012}
+}
+
+
+@inproceedings{Chen:2012:ILG:2391229.2391232,
+ abstract = {As the study of large graphs over hundreds of gigabytes becomes increasingly popular for various data-intensive applications in cloud computing, developing large graph processing systems has become a hot and fruitful research area. Many of those existing systems support a vertex-oriented execution model and allow users to develop custom logics on vertices. However, the inherently random access pattern on the vertex-oriented computation generates a significant amount of network traffic. While graph partitioning is known to be effective to reduce network traffic in graph processing, there is little attention given to how graph partitioning can be effectively integrated into large graph processing in the cloud environment. In this paper, we develop a novel graph partitioning framework to improve the network performance of graph partitioning itself, partitioned graph storage and vertex-oriented graph processing. All optimizations are specifically designed for the cloud network environment. In experiments, we develop a system prototype following Pregel (the latest vertex-oriented graph engine by Google), and extend it with our graph partitioning framework. We conduct the experiments with a real-world social network and synthetic graphs over 100GB each in a local cluster and on Amazon EC2. Our experimental results demonstrate the efficiency of our graph partitioning framework, and the effectiveness of network performance aware optimizations on the large graph processing engine.},
+ acmid = {2391232},
+ address = {New York, NY, USA},
+ articleno = {3},
+ author = {Chen, Rishan and Yang, Mao and Weng, Xuetian and Choi, Byron and He, Bingsheng and Li, Xiaoming},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391232},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, data center network, graph partitioning, large graph processing},
+ link = {http://doi.acm.org/10.1145/2391229.2391232},
+ location = {San Jose, California},
+ numpages = {13},
+ pages = {3:1--3:13},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Improving Large Graph Processing on Partitioned Graphs in the Cloud},
+ year = {2012}
+}
+
+
+@inproceedings{Cheng:2012:VUI:2391229.2391231,
+ abstract = {A Symmetric MultiProcessing (SMP) virtual machine (VM) enables users to take advantage of a multiprocessor infrastructure in supporting scalable job throughput and request responsiveness. It is known that hypervisor scheduling activities can heavily degrade a VM's I/O performance, as the scheduling latencies of the virtual CPU (vCPU) eventually translates into the processing delays of the VM's I/O events. As for a UniProcessor (UP) VM, since all its interrupts are bound to the only vCPU, it completely relies on the hypervisor's help to shorten I/O processing delays, making the hypervisor increasingly complicated. Regarding SMP-VMs, most researches ignore the fact that the problem can be greatly mitigated at the level of guest OS, instead of imposing all scheduling pressure on the hypervisor. In this paper, we present vBalance, a cross-layer software solution to substantially improve the I/O performance for SMP-VMs. Under the principle of keeping hypervisor scheduler's simplicity and efficiency, vBalance only requires very limited help in the hypervisor layer. In the guest OS, vBalance can dynamically and adaptively migrate the interrupts from a preempted vCPU to a running one, and hence avoids interrupt processing delays. The prototype of vBalance is implemented in Xen 4.1.2 hypervisor, with Linux 3.2.2 as the guest. The evaluation results of both micro-level and application-level benchmarks prove the effectiveness and lightweightness of our solution.},
+ acmid = {2391231},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Cheng, Luwei and Wang, Cho-Li},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391231},
+ isbn = {978-1-4503-1761-0},
+ keyword = {SMP, Xen, cloud computing, virtualization},
+ link = {http://doi.acm.org/10.1145/2391229.2391231},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {2:1--2:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {vBalance: Using Interrupt Load Balance to Improve I/O Performance for SMP Virtual Machines},
+ year = {2012}
+}
+
+
+@inproceedings{Tumanov:2012:AAS:2391229.2391254,
+ abstract = {As cloud resources and applications grow more heterogeneous, allocating the right resources to different tenants' activities increasingly depends upon understanding tradeoffs regarding their individual behaviors. One may require a specific amount of RAM, another may benefit from a GPU, and a third may benefit from executing on the same rack as a fourth. This paper promotes the need for and an approach for accommodating diverse tenant needs, based on having resource requests indicate any soft (i.e., when certain resource types would be better, but are not mandatory) and hard constraints in the form of composable utility functions. A scheduler that accepts such requests can then maximize overall utility, perhaps weighted by priorities, taking into account application specifics. Experiments with a prototype scheduler, called alsched, demonstrate that support for soft constraints is important for efficiency in multi-purpose clouds and that composable utility functions can provide it.},
+ acmid = {2391254},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {Tumanov, Alexey and Cipar, James and Ganger, Gregory R. and Kozuch, Michael A.},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391254},
+ isbn = {978-1-4503-1761-0},
+ keyword = {cloud computing, cluster scheduling},
+ link = {http://doi.acm.org/10.1145/2391229.2391254},
+ location = {San Jose, California},
+ numpages = {7},
+ pages = {25:1--25:7},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Alsched: Algebraic Scheduling of Mixed Workloads in Heterogeneous Clouds},
+ year = {2012}
+}
+
+
+@inproceedings{Rasmussen:2012:TIM:2391229.2391242,
+ abstract = {"Big Data" computing increasingly utilizes the MapReduce programming model for scalable processing of large data collections. Many MapReduce jobs are I/O-bound, and so minimizing the number of I/O operations is critical to improving their performance. In this work, we present Themis, a MapReduce implementation that reads and writes data records to disk exactly twice, which is the minimum amount possible for data sets that cannot fit in memory. In order to minimize I/O, Themis makes fundamentally different design decisions from previous MapReduce implementations. Themis performs a wide variety of MapReduce jobs -- including click log analysis, DNA read sequence alignment, and PageRank -- at nearly the speed of TritonSort's record-setting sort performance [29].},
+ acmid = {2391242},
+ address = {New York, NY, USA},
+ articleno = {13},
+ author = {Rasmussen, Alexander and Lam, Vinh The and Conley, Michael and Porter, George and Kapoor, Rishi and Vahdat, Amin},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391242},
+ isbn = {978-1-4503-1761-0},
+ link = {http://doi.acm.org/10.1145/2391229.2391242},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {13:1--13:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Themis: An I/O-efficient MapReduce},
+ year = {2012}
+}
+
+
+@inproceedings{Wang:2012:CEH:2391229.2391243,
+ abstract = {Cake is a coordinated, multi-resource scheduler for shared distributed storage environments with the goal of achieving both high throughput and bounded latency. Cake uses a two-level scheduling scheme to enforce high-level service-level objectives (SLOs). First-level schedulers control consumption of resources such as disk and CPU. These schedulers (1) provide mechanisms for differentiated scheduling, (2) split large requests into smaller chunks, and (3) limit the number of outstanding device requests, which together allow for effective control over multi-resource consumption within the storage system. Cake's second-level scheduler coordinates the first-level schedulers to map high-level SLO requirements into actual scheduling parameters. These parameters are dynamically adjusted over time to enforce high-level performance specifications for changing workloads. We evaluate Cake using multiple workloads derived from real-world traces. Our results show that Cake allows application programmers to explore the latency vs. throughput trade-off by setting different high-level performance requirements on their workloads. Furthermore, we show that using Cake has concrete economic and business advantages, reducing provisioning costs by up to 50% for a consolidated workload and reducing the completion time of an analytics cycle by up to 40%.},
+ acmid = {2391243},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Wang, Andrew and Venkataraman, Shivaram and Alspaugh, Sara and Katz, Randy and Stoica, Ion},
+ booktitle = {Proceedings of the Third ACM Symposium on Cloud Computing},
+ doi = {10.1145/2391229.2391243},
+ isbn = {978-1-4503-1761-0},
+ keyword = {consolidation, service-level objectives, storage systems, two-level scheduling},
+ link = {http://doi.acm.org/10.1145/2391229.2391243},
+ location = {San Jose, California},
+ numpages = {14},
+ pages = {14:1--14:14},
+ publisher = {ACM},
+ series = {SoCC '12},
+ title = {Cake: Enabling High-level SLOs on Shared Storage Systems},
+ year = {2012}
+}
+
+
