@@ -1,0 +1,1414 @@
+@inproceedings{Smaragdos:2014:FBM:2554688.2554790,
+ abstract = {The Inferior-Olivary nucleus (ION) is a well-charted region of the brain, heavily associated with sensorimotor control of the body. It comprises ION cells with unique properties which facilitate sensory processing and motor-learning skills. Various simulation models of ION-cell networks have been written in an attempt to unravel their mysteries. However, simulations become rapidly intractable when biophysically plausible models and meaningful network sizes (>=100 cells) are modeled. To overcome this problem, in this work we port a highly detailed ION cell network model, originally coded in Matlab, onto an FPGA chip. It was first converted to ANSI C code and extensively profiled. It was, then, translated to HLS C code for the Xilinx Vivado toolflow and various algorithmic and arithmetic optimizations were applied. The design was implemented in a Virtex 7 (XC7VX485T) device and can simulate a 96-cell network at real-time speed, yielding a speedup of x700 compared to the original Matlab code and x12.5 compared to the reference C implementation running on a Intel Xeon 2.66GHz machine with 20GB RAM. For a 1,056-cell network (non-real-time), an FPGA speedup of x45 against the C code can be achieved, demonstrating the design's usefulness in accelerating neuroscience research. Limited by the available on-chip memory, the FPGA can maximally support a 14,400-cell network (non-real-time) with online parameter configurability for cell state and network size. The maximum throughput of the FPGA ION-network accelerator can reach 2.13 GFLOPS.},
+ acmid = {2554790},
+ address = {New York, NY, USA},
+ author = {Smaragdos, Georgios and Isaza, Sebastian and van Eijk, Martijn F. and Sourdis, Ioannis and Strydis, Christos},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554790},
+ isbn = {978-1-4503-2671-1},
+ keyword = {cerebellum, computational neuroscience, hodgkin huxley, inferior olive, spiking neural networks},
+ link = {http://doi.acm.org/10.1145/2554688.2554790},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {89--98},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {FPGA-based Biophysically-meaningful Modeling of Olivocerebellar Neurons},
+ year = {2014}
+}
+
+
+@inproceedings{Feng:2014:RRB:2554688.2554763,
+ abstract = {Packing is a critical step in the CAD flow for cluster-based FPGA architectures, and has a significant impact on the quality of the final placement and routing results. One basic quality metric is routability. Traditionally, minimizing cut (the number of external signals) has been used as the main criterion in packing for routability optimization. This paper shows that minimizing cut is a sub-optimal criterion, and argues to use the Rent characteristic as the new criterion for FPGA packing. We further propose using a recursive bipartitioning-based k-way partitioner to optimize the Rent characteristic during packing. We developed a new packer, PPack2, based on this approach. Compared to T-VPack, PPack2 achieves 35.4%, 35.6%, and 11.2% reduction in wire length, minimal channel width, and critical path delay, respectively. These improvements show that PPack2 outperforms all previous leading packing tools (including iRAC, HDPack, and the original PPack) by a wide margin.},
+ acmid = {2554763},
+ address = {New York, NY, USA},
+ author = {Feng, Wenyi and Greene, Jonathan and Vorwerk, Kristofer and Pevzner, Val and Kundu, Arun},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554763},
+ isbn = {978-1-4503-2671-1},
+ keyword = {clustering, fpga packing, k-way partitioning, recursive bipartitioning, rent's rule, routability optimization},
+ link = {http://doi.acm.org/10.1145/2554688.2554763},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {31--34},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Rent's Rule Based FPGA Packing for Routability Optimization},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:TTO:2554688.2554772,
+ abstract = {Programming productivity of FPGA devices remains a significant challenge, despite the emergence of robust high level synthesis tools to automatically transform codes written in high-level languages into RTL implementations. Focusing on a class of programs with regular loop bounds and array accesses (so-called affine programs), the polyhedral compilation framework provides a convenient environment to automate many of the manual program transformation tasks that are still needed to improve the QoR of the HLS tool. In this work, we demonstrate that tiling-driven affine loop transformations, while mandatory to ensure good data reuse and reduce off-chip communication volumes, are not always enough to achieve the best throughput, determined by the Initiation Interval (II) for loop pipelining. We develop additional techniques to optimize the computation part to be executed on the FPGA, using Index-Set Splitting (ISS) to split loops into sub-loops with different properties (sequential/parallel, different memory port conflicts features). This is motivated by the presence of non-uniform data dependences in some affine benchmarks, which are not effectively handled by the affine transformation system for tiling implemented in the PolyOpt/HLS software. We develop a customized affine+ISS optimization algorithm that aims at reducing the II of pipelined inner loops to reduce the program latency. We report experimental results on numerous affine computations.},
+ acmid = {2554772},
+ address = {New York, NY, USA},
+ author = {Li, Peng and Pouchet, Louis-Noel and Chen, Deming and Cong, Jason},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554772},
+ isbn = {978-1-4503-2671-1},
+ keyword = {high-level synthesis, pipelining, program optimization},
+ link = {http://doi.acm.org/10.1145/2554688.2554772},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {245--245},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Transformations for Throughput Optimization in High-level Synthesis (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Gaillardon:2014:NBL:2554688.2554701,
+ abstract = {Nowadays, Field Programmable Gate Arrays (FPGA) implement arithmetic functions using specific circuits at the logic block level, such as the carry paths, or at the structure level adopting Digital Signal Processing (DSP) blocks. Nevertheless, all these approaches, introduced to ease the realization of specific functions, are lacking of generality. In this paper, we introduce a new logic block that natively realizes arithmetic functions while preserving the versatility to implement general logic functions. It consists of a partially interconnected matrix of signal routers driven by comparators. We demonstrate that this structure can realize (i) any 2-output 2-input logic function or (ii) any single-output 3-input logic function or (iii) specific logic, such as arithmetic functions, with up to 4-output and 8-inputs. As compared to a standard 6-input Look Up Table (LUT), the proposed block requires roughly the same area but is 35.3% faster. Even though the proposed block has not the same exhaustive configurability of a 6-input LUT, there are arithmetic functions realizable in a single block that do not fit in one, or even more, 6-input LUT. For example, a single block inherently implements an entire 3-bit adder that requires 3× more resources with LUTs plus also custom circuitry. From a system level perspective, we show that a 256-bit adder is implemented with a gain on area×delay product of 31% as compared to its traditional LUT-based counterpart.},
+ acmid = {2554701},
+ address = {New York, NY, USA},
+ author = {Gaillardon, Pierre-Emmanuel and Amar\`{u}, Luca and De Micheli, Giovanni},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554701},
+ isbn = {978-1-4503-2671-1},
+ keyword = {arithmetic functions, bbdd, fpga, logic element},
+ link = {http://doi.acm.org/10.1145/2554688.2554701},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {241--241},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A New Basic Logic Structure for Data-path Computation (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Zheng:2014:FEP:2554688.2554775,
+ abstract = {Achievable frequency (fmax) is a widely used input constraint for designs targeting Field-Programmable Gate Arrays (FPGA), because of its impact on design latency and throughput. Fmax is limited by critical path delay, which is highly influenced by lower-level details of the circuit implementation such as technology mapping, placement and routing. However, for high-level synthesis~(HLS) design flows, it is challenging to evaluate the real critical delay at the behavioral level. Current HLS flows typically use module pre-characterization for delay estimates. However, we will demonstrate that such delay estimates are not sufficient to obtain high fmax and also minimize total execution latency. In this paper, we introduce a new HLS flow that integrates with Altera's Quartus synthesis and fast placement and routing (PAR) tool to obtain realistic post-PAR delay estimates. This integration enables an iterative flow that improves the performance of the design with both behavioral-level and circuit-level optimizations using realistic delay information. We demonstrate our HLS flow produces up to 24% (on average 20%) improvement in fmax and upto 22% (on average 20%) improvement in execution latency. Furthermore, results demonstrate that our flow is able to achieve from 65% to 91% of the theoretical fmax on Stratix IV devices (550MHz).},
+ acmid = {2554775},
+ address = {New York, NY, USA},
+ author = {Zheng, Hongbin and Gurumani, Swathi T. and Rupnow, Kyle and Chen, Deming},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554775},
+ isbn = {978-1-4503-2671-1},
+ keyword = {high-level synthesis, layout driven, scheduling},
+ link = {http://doi.acm.org/10.1145/2554688.2554775},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {1--10},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Fast and Effective Placement and Routing Directed High-level Synthesis for FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Huda:2014:OEI:2554688.2554788,
+ abstract = {We propose a technique to reduce the effective parasitic capacitance of interconnect routing conductors in a bid to simultaneously reduce power consumption and improve delay. The parasitic capacitance reduction is achieved by ensuring routing conductors adjacent to those used by timing critical or high activity nets are left floating - disconnected from either VDD or GND. In doing so, the effective coupling capacitance between the conductors is reduced, because the original coupling capacitance between the conductors is placed in series with other capacitances in the circuit (series combinations of capacitors correspond to lower effective capacitance). To ensure unused conductors can be allowed to float requires the use of tri-state routing buffers, and to that end, we also propose low-cost tri-state buffer circuitry. We also introduce CAD techniques to maximize the likelihood that unused routing conductors are made to be adjacent to those used by nets with high activity or low slack, improving both power and speed. Results show that interconnect dynamic power reductions of up to ~15.5% are expected to be achieved with a critical path degradation of ~1%, and a total area overhead of ~2.1%.},
+ acmid = {2554788},
+ address = {New York, NY, USA},
+ author = {Huda, Safeen and Anderson, Jason and Tamura, Hirotaka},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554788},
+ isbn = {978-1-4503-2671-1},
+ keyword = {architecture, coupling capacitance, digital electronics, interconnect, leakage, low power, parasitic capacitance, tristate buffer},
+ link = {http://doi.acm.org/10.1145/2554688.2554788},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {11--20},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Optimizing Effective Interconnect Capacitance for FPGA Power Reduction},
+ year = {2014}
+}
+
+
+@inproceedings{Luu:2014:TIP:2554688.2554783,
+ abstract = {In order to investigate new FPGA logic blocks, FPGA architects have traditionally needed to customize CAD tools to make use of the new features and characteristics of those blocks. The software development effort necessary to create such CAD tools can be a time-consuming process that can significantly limit the number and variety of architectures explored. Thus, architects want flexible CAD tools that can, with few or no software modifications, explore a diverse space. Existing flexible CAD tools suffer from impractically long runtimes and/or fail to efficiently make use of the important new features of the logic blocks being investigated. This work is a step towards addressing these concerns by enhancing the packing stage of the open-source VTR CAD flow [17] to efficiently deal with common interconnect structures that are used to create many kinds of useful novel blocks. These structures include crossbars, carry chains, dedicated signals, and others. To accomplish this, we employ three techniques in this work: speculative packing, pre-packing, and interconnect-aware pin counting. We show that these techniques, along with three minor modifications, result in improvements to runtime and quality of results across a spectrum of architectures, while simultaneously expanding the scope of architectures that can be explored. Compared with VTR 1.0 [17], we show an average 12-fold speedup in packing for fracturable LUT architectures with 20% lower minimum channel width and 6% lower critical path delay. We obtain a 6 to 7-fold speedup for architectures with non-fracturable LUTs and architectures with depopulated crossbars. In addition, we demonstrate packing support for logic blocks with carry chains.},
+ acmid = {2554783},
+ address = {New York, NY, USA},
+ author = {Luu, Jason and Rose, Jonathan and Anderson, Jason},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554783},
+ isbn = {978-1-4503-2671-1},
+ keyword = {algorithms, architecture, clustering, fpga, packing},
+ link = {http://doi.acm.org/10.1145/2554688.2554783},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {21--30},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Towards Interconnect-adaptive Packing for FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Xu:2014:SFP:2554688.2554779,
+ abstract = {Polynomial evaluation is important across a wide range of application domains, so significant work has been done on accelerating its computation. The conventional algorithm, referred to as Horner's rule, involves the least number of steps but can lead to increased latency due to serial computation. Parallel evaluation algorithms such as Estrin's method have shorter latency than Horner's rule, but achieve this at the expense of large hardware overhead. This paper presents an efficient polynomial evaluation algorithm, which reforms the evaluation process to include an increased number of squaring steps. By using a squarer design that is more efficient than general multiplication, this can result in polynomial evaluation with a 57.9% latency reduction over Horner's rule and 14.6% over Estrin's method, while consuming less area than Horner's rule, when implemented on a Xilinx Virtex 6 FPGA. When applied in fixed point function evaluation, where precision requirements limit the rounding of operands, it still achieves a 52.4% performance gain compared to Horner's rule with only a 4% area overhead in evaluating 5th degree polynomials.},
+ acmid = {2554779},
+ address = {New York, NY, USA},
+ author = {Xu, Simin and Fahmy, Suhaib A. and McLoughlin, Ian V.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554779},
+ isbn = {978-1-4503-2671-1},
+ keyword = {field programmable gate arrays, fixed point, polynomial evaluation},
+ link = {http://doi.acm.org/10.1145/2554688.2554779},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {99--108},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Square-rich Fixed Point Polynomial Evaluation on FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Severance:2014:SVP:2554688.2554774,
+ abstract = {Soft vector processors (SVPs) achieve significant performance gains through the use of parallel ALUs. However, since ALUs are used in a time-multiplexed fashion, this does not exploit a key strength of FPGA performance: pipeline parallelism. This paper shows how streaming pipelines can be integrated into the datapath of a SVP to achieve dramatic speedups. The SVP plays an important role in supplying the pipeline with high-bandwidth input data and storing its results using on-chip memory. However, the SVP must also perform the housekeeping tasks necessary to keep the pipeline busy. In particular, it orchestrates data movement between on-chip memory and external DRAM, it pre- or post-processes the data using its own ALUs, and it controls the overall sequence of execution. Since the SVP is programmed in C, these tasks are easier to develop and debug than using a traditional HDL approach. Using the N-body problem as a case study, this paper illustrates how custom streaming pipelines are integrated into the SVP datapath and multiple techniques for generating them. Using a custom pipeline, we demonstrate speedups over 7,000 times and performance-per-ALM over 100 times better than Nios II/f. The custom pipeline is also 50 times faster than a naive Intel Core i7 processor implementation.},
+ acmid = {2554774},
+ address = {New York, NY, USA},
+ author = {Severance, Aaron and Edwards, Joe and Omidian, Hossein and Lemieux, Guy},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554774},
+ isbn = {978-1-4503-2671-1},
+ keyword = {vector processor},
+ link = {http://doi.acm.org/10.1145/2554688.2554774},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {117--126},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Soft Vector Processors with Streaming Pipelines},
+ year = {2014}
+}
+
+
+@inproceedings{Vasiljevic:2014:MGM:2554688.2554761,
+ abstract = {One of the challenges in designing high-performance FPGA applications is fine-tuning the use of limited on-chip memory storage among many buffers in an application. To achieve desired performance the designer faces the burden of packaging such buffers into on-chip memories and manually optimizing the utilization of each memory and the throughput of each buffer. In addition, the application memories may not match the word width or depth of the physical on-chip memories available on the FPGA. This process is time consuming and non-trivial, particularly with a large number of buffers of various depths and bit widths. We propose a tool, MPack, which globally optimizes on-chip memory use across all buffers for stream applications. The goal is to speed up development time by providing rapid design space exploration and relieving the designer of lengthy low-level iterations. We introduce new high-level pragmas allowing the user to specify global memory requirements, such as an application's on-chip memory budget and data throughput. We allow the user to quickly generate a large number of memory solutions and explore the trade-off between memory usage and achievable throughput. To demonstrate the effectiveness of our tool, we apply the new high-level pragmas to an image processing benchmark. MPack effectively explores the design space and is able to produce a large number of memory solutions ranging from 10 to 100% in throughput, and from 12 to 100% in on-chip memory usage.},
+ acmid = {2554761},
+ address = {New York, NY, USA},
+ author = {Vasiljevic, Jasmina and Chow, Paul},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554761},
+ isbn = {978-1-4503-2671-1},
+ keyword = {buffer packing, fpga, on-chip memory, stream computing},
+ link = {http://doi.acm.org/10.1145/2554688.2554761},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {233--236},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {MPack: Global Memory Optimization for Stream Applications in High-level Synthesis},
+ year = {2014}
+}
+
+
+@inproceedings{Bai:2014:PAH:2554688.2554746,
+ abstract = {This paper presents an adaptive heap sort architecture for an image coding implementation on FPGA, which specifically addresses the issue of sorting different amount of data located in each subband during the coding. The proposed sorting architecture is easily scalable. Performance of the sorter only depends on the amount of data sorted. The efficient usage of dual port memories yields high throughput up to 50 Msamples/s and their adaptive trigger/shutdown provide the average dynamic power reduction up to 20.9%. We designed this architecture and incorporated it in our Adaptive Scanning of Wavelet Data (ASWD) module which reorganizes the wavelet coefficients into locally stationary sequences for a wavelet-based image encoder. We validated the hardware on an Altera's Stratix IV FPGA as an IP accelerator in a Nios II processor based System on Chip. The architectural innovations can also be exploited in other applications that require high throughput and scalable sorting. Our experiments show that compared to an embedded ARM CortexA9 processor running at 666 MHz, our architecture at 100 MHz can provide around 13X speedup while consuming 242 mW average core dynamic power.},
+ acmid = {2554746},
+ address = {New York, NY, USA},
+ author = {Bai, Yuhui and Ahmed, Syed Zahid and Granado, Bertrand},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554746},
+ isbn = {978-1-4503-2671-1},
+ keyword = {embedded system, fpga, heap sort, image compression, power efficiency},
+ link = {http://doi.acm.org/10.1145/2554688.2554746},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {247--247},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Power-efficient Adaptive Heapsort for Fpga-based Image Coding Application (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Zhu:2014:BSI:2554688.2554778,
+ abstract = {Stochastic computing refers to a mode of computation in which numbers are treated as probabilities implemented as 0/1 bit streams, which essentially is a unary encoding scheme. Previous work has shown significant reduction in area and increase in fault tolerance for low to medium resolution values (6-10 bits). However, this comes at very high latency cost. We propose a novel hybrid approach combining traditional binary with unary stochastic encoding, called binary stochastic. Similar to the binary representation, it is a positional number system, but instead of only 0/1 digits, the digits would be fractions. We show how simple logic such as adders and multipliers can be implemented, and then show more complex function implementations such as the gamma correction function and functions such as tanh, absolute and exponentiation using both combinational and sequential binary stochastic logic. Our experiments show significant reduction in latency compared to unary stochastic, while using significantly smaller area compared to binary implementations on FPGAs.},
+ acmid = {2554778},
+ address = {New York, NY, USA},
+ author = {Zhu, Yanzi and Suo, Peiran and Bazargan, Kia},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554778},
+ isbn = {978-1-4503-2671-1},
+ keyword = {bernstein coefficients, binary stochastic, stochastic computing},
+ link = {http://doi.acm.org/10.1145/2554688.2554778},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {171--180},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Binary Stochastic Implementation of Digital Logic},
+ year = {2014}
+}
+
+
+@inproceedings{Alawad:2014:EMD:2554688.2554769,
+ abstract = {Energy efficiency and algorithmic robustness typically are conflicting circuit characteristics, yet with CMOS technology scaling towards 10-nm feature size, both become critical design metrics simultaneously for modern logic circuits. This paper propose a novel computing scheme hinged on probabilistic domain transformation aiming for both low power operation and fault resilience. In such a computing paradigm, algorithm inputs are first encoded through probabilistic means, which translates the input values into a number of random samples. Subsequently, light-weight operations, such as sim- ple additions will be performed onto these random samples in order to generate new random variables. Finally, the resulting random samples will be decoded probabilistically to give the final results.},
+ acmid = {2554769},
+ address = {New York, NY, USA},
+ author = {Alawad, Mohammed and Bai, Yu and DeMara, Ronald and Lin, Mingjie},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554769},
+ isbn = {978-1-4503-2671-1},
+ keyword = {probabilistic},
+ link = {http://doi.acm.org/10.1145/2554688.2554769},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {185--188},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Energy-efficient Multiplier-less Discrete Convolver Through Probabilistic Domain Transformation},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:CDR:2554688.2554695,
+ abstract = {Reconfiguration technique has been considered as one of the most promising electronic design automation (EDA) technologies in MPSoC design paradigms. However, due to the unavoidable latency in the reconfiguration procedure, it still poses a significant challenge to efficiently analyze the trade-offs for the software/hardware execution, static reconfiguration and dynamic reconfiguration. In this paper we first present a heterogeneous MPSoC middleware to support state-of-the-art dynamic partial reconfigurable technologies. Furthermore, we evaluate the reconfiguration latency and analyze the trade-off for the dynamic partial reconfiguration technologies. As a practical study, a heterogeneous MPSoC prototype with JPEG application has been developed on Xilinx Zynq FPGA with state-of-the-art static/dynamic partial reconfigurable technologies. Experimental results on the JPEG case studies demonstrated the leverage among the software execution, hardware execution, and static/dynamic reconfiguration. For the quantitative approach, we have demonstrated the execution time for the different configuration of the hardware steps in JPEG, and the quantitative impact of the dynamic reconfiguration execution. The dynamic reconfiguration could gain the performance benefits for large scale (larger than a certain threshold) computational tasks. Furthermore, overheads and HWICAP hardware utilization have been measured discussed. This work was supported by the NSFC grants No. 61379040, No. 61272131 and No. 61202053.},
+ acmid = {2554695},
+ address = {New York, NY, USA},
+ author = {Wang, Chao and Li, Xi and Zhou, Xuehai and Chen, Yunji and Bertels, Koen},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554695},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dynamic partial reconfiguration, eda, fpga, heterogeneous mpsoc, trade-offs},
+ link = {http://doi.acm.org/10.1145/2554688.2554695},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {248--248},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Co-processing with Dynamic Reconfiguration on Heterogeneous MPSoC: Practices and Design Tradeoffs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Bai:2014:OMB:2554688.2554752,
+ abstract = {With the CMOS technology aggressively scaling towards the 22nm node, modern FPGA devices face tremendous aging- induced reliability challenges due to Bias Temperature In- stability (BTI) and Hot Carrier Injection (HCI). This paper presents a novel antiaging technique at logic level that is both scalable and applicable for VLSI digital circuits implemented with FPGA devices. The key idea is to prolong the lifetime of FPGA-mapped designs by strategically elevating the VDD values of some LUTs based on their modular criticality values. Although the idea of scaling VDD in order to improve either energy efficiency or circuit reliability has been explored extensively, our study distinguishes itself by approaching this challenge through analytical procedure, therefore able to maximize the overall reliability of target FPGA design by rigorously modelling the BTI-induce de- vice reliability and optimally solving the VDD assignment problem.},
+ acmid = {2554752},
+ address = {New York, NY, USA},
+ author = {Bai, Yu and Alawad, Mohammed and Lin, Mingjie},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554752},
+ isbn = {978-1-4503-2671-1},
+ keyword = {bpti},
+ link = {http://doi.acm.org/10.1145/2554688.2554752},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {246--246},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Optimally Mitigating BTI-induced FPGA Device Aging with Discriminative Voltage Scaling (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Gong:2014:EEP:2554688.2554723,
+ abstract = {The rapid growth in the resources and processing power of FPGA has made it more and more attractive as accelerator platforms. Due to its high performance, the PCIe bus is the preferred interconnection between the host computer and loosely-coupled FPGA accelerators. To fully utilize the high performance of PCIe, developers have to write significant amount of PCIe related code. In this paper, we present the design of EPEE, an efficient PCIe communication library that can integrate with hosts easily to alleviate developers from such burden. It is not trivial to make a PCIe communication library highly efficient and easy-host-integration simultaneously. We have identified several challenges in the work: 1) the conflict between efficiency and functionality; 2) the support for multi-clock domain interface; 3) the solution to DMA data out-of-order transfer; 4) the portability. Few existing systems have addressed all the challenges. EEPE has a highly efficient core library that is extensible. We provide a set of APIs abstracted at high levels to ease the learning curve of developers, and divide the hardware library into device dependent and independent layers for portability. We have implemented EEPE in various generations of Xilinx FPGAs with up to 12.7 Gbps half-duplex and 20.8 Gbps full-duplex data rates in PCIe Gen2X4 mode (79.4% and 64.0% of the theoretical maximum data rates respectively). EEPE has already been used in four different FPGA applications, and it can be integrated with high-level synthesis tools, in particular Vivado-HLS.},
+ acmid = {2554723},
+ address = {New York, NY, USA},
+ author = {Gong, Jian and Chen, Jiahua and Wu, Haoyang and Ye, Fan and Lu, Songwu and Cong, Jason and Wang, Tao},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554723},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dma, easy-host-integration, efficient, extensible, fpga, pcie},
+ link = {http://doi.acm.org/10.1145/2554688.2554723},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {255--255},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {EPEE: An Efficient PCIe Communication Library with Easy-host-integration Property for FPGA Accelerators (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Jun:2014:SMF:2554688.2554789,
+ abstract = {For many "Big Data" applications, the limiting factor in performance is often the transportation of large amount of data from hard disks to where it can be processed, i.e. DRAM. In this paper we examine an architecture for a scalable distributed flash store which aims to overcome this limitation in two ways. First, the architecture provides a high-performance, high-capacity, scalable random-access storage. It achieves high-throughput by sharing large numbers of flash chips across a low-latency, chip-to-chip backplane network managed by the flash controllers. The additional latency for remote data access via this network is negligible as compared to flash access time. Second, it permits some computation near the data via a FPGA-based programmable flash controller. The controller is located in the datapath between the storage and the host, and provides hardware acceleration for applications without any additional latency. We have constructed a small-scale prototype whose network bandwidth scales directly with the number of nodes, and where average latency for user software to access flash store is less than 70mus, including 3.5mus of network overhead.},
+ acmid = {2554789},
+ address = {New York, NY, USA},
+ author = {Jun, Sang-Woo and Liu, Ming and Fleming, Kermin Elliott and Arvind},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554789},
+ isbn = {978-1-4503-2671-1},
+ keyword = {big data, flash, fpga networks, ssd, storage system},
+ link = {http://doi.acm.org/10.1145/2554688.2554789},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {55--64},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Scalable Multi-access Flash Store for Big Data Analytics},
+ year = {2014}
+}
+
+
+@inproceedings{Murray:2014:QCB:2554688.2554786,
+ abstract = {Latency insensitive communication offers many potential benefits for FPGA designs, including easier timing closure by enabling automatic pipelining, and easier interfacing with embedded NoCs. However, it is important to understand the costs and trade-offs associated with any new design style. This paper presents optimized implementations of latency insensitive communication building blocks, quantifies their overheads in terms of area and frequency, and provides guidance to designers on how to generate high-speed and area-efficient latency insensitive systems.},
+ acmid = {2554786},
+ address = {New York, NY, USA},
+ author = {Murray, Kevin E. and Betz, Vaughn},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554786},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpga, latency insensitive, pipelining},
+ link = {http://doi.acm.org/10.1145/2554688.2554786},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {223--232},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Quantifying the Cost and Benefit of Latency Insensitive Communication on FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:HMA:2554688.2554697,
+ abstract = {FPGA behavioral synthesis has gained significant momentum recently with the growing interests in accelerating high-performance computing applications. While the latest generation of high-level synthesis (HLS) tools has made significant progress, they still lack the support for certain high-level language features such as dynamic memory allocation, despite the fact that efficiently utilization of the on-chip memory resources in FPGAs is critical to achieve the performance and power consumption target for many designs. To tackle the above problem, in this paper, we propose a novel hybrid memory allocation scheme to map malloc/free in C programing language onto FPGA platforms. By estimating the memory usage and available FPGA memory resources, the scheme judiciously allocates static memory blocks and/or instantiate hardware allocators for memory requests. And the partition between these two parts is based on estimated access counts and solving an ILP to minimize overhead from dynamic memory allocation. Experimental results on benchmark circuits demonstrate the efficacy of the proposed technique.},
+ acmid = {2554697},
+ address = {New York, NY, USA},
+ author = {Zhang, Qian and Ma, Chenfei and Xu, Qiang},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554697},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dynamic memory allocation, fpga, high-level synthesis},
+ link = {http://doi.acm.org/10.1145/2554688.2554697},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {245--245},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {On Hybrid Memory Allocation for FPGA Behavioral Synthesis (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Tang:2014:FIC:2554688.2554747,
+ abstract = {Multi-FPGA boards are widely used for rapid system prototyping. Even though the prototyping is trying to reach the maximum performance, the performance is limited by the inter-FPGA communication. As the capacity per I/O for each FPGA generation is increasing, FPGA I/Os are becoming a scarce resource. The design is divided into several parts, each part's capacity fits in a single FPGA. Signals crossing design's parts located in different FPGAs are called cut nets. In order to resolve pin limitation problem, cut nets are sent between FPGAs in pipelined way using the Time-Division-Multiplexing technique. The maximum number of cut nets passing through one FPGA I/O is called the TDM ratio. There are two multiplexing architectures used for multi-FPGA based prototyping: Logic Multiplexing and ISERDES/OSERDES. In this paper, a new multiplexing architecture Multi-Gigabit Transceiver (MGT) is proposed. Experiments are done in a multi-FPGA board with the testbench LFSR to validate the achieved performance. Assume that all the FPGA I/Os used for inter-FPGA communication are MGT capable in the future. Analyses show that the proposed multiplexing architecture can achieve higher performance when the TDM ratio exceeds 67. The gain in performance of the proposed architecture over the existing architecture augments as the TDM ratio increases.},
+ acmid = {2554747},
+ address = {New York, NY, USA},
+ author = {Tang, Qingshan and Tuna, Matthieu and Mehrez, Habib},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554747},
+ isbn = {978-1-4503-2671-1},
+ keyword = {inter-fpga communication, iserdes/oserdes, logic multiplexing, multi-fpga based prototyping, multi-gigabit transceiver},
+ link = {http://doi.acm.org/10.1145/2554688.2554747},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {251--251},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Future inter-FPGA Communication Architecture for multi-FPGA Based Prototyping (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Ma:2014:EEA:2554688.2554719,
+ abstract = {This poster presents our preliminary findings on the relationship between speedup and energy efficiency on FPGA based Chip Heterogeneous Multiprocessor Systems (CHMPs). While researchers have investigated how to tailor combinations of heterogeneous compute engines within a CHMP system to best meet the performance needs of specific applications, exploring how these optimized architectures also effect energy efficiency is not as well studied. We show that a simple relationship exists between the speedup these systems gain and their associated energy efficiency. We show that the simple relationship between Amdahl's law and energy efficiency. All the experiments result achieved through actual run time measurements on homogeneous and heterogeneous multiprocessor systems implemented within a Xilinx Virtex6 FPGA. We further show how a systems with 6 MicroBlaze soft processors' dynamic power and hence the overall energy efficiency of the system can be effected through transparent operating system control of the compute resources. We also present how to use clock gating to control the dynamic power consumption for each processor and with this careful power-aware management unit, the system's dynamic power consumption can follow the requirements of each application.},
+ acmid = {2554719},
+ address = {New York, NY, USA},
+ author = {Ma, Sen and Andrews, David},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554719},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dynamic power, power-optimization algorithm, reconfigurable computing},
+ link = {http://doi.acm.org/10.1145/2554688.2554719},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {253--253},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {On Energy Efficiency and Amdahl's Law in FPGA Based Chip Heterogeneous Multiprocessor Systems (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:TAG:2554688.2554780,
+ abstract = {The significant development of high-level synthesis tools has greatly facilitated FPGAs as general computing platforms. During the parallelism optimization for the data path, memory becomes a crucial bottleneck that impedes performance enhancement. Simultaneous data access is highly restricted by the data mapping strategy and memory port constraint. Memory partitioning can efficiently map data elements in the same logical array onto multiple physical banks so that the accesses to the array are parallelized. Previous methods for memory partitioning mainly focused on cyclic partitioning for single-port memory. In this work we propose a generalized memory-partitioning framework to provide high data throughput of on-chip memories. We generalize cyclic partitioning into block-cyclic partitioning for a larger design space exploration. We build the conflict detection algorithm on polytope emptiness testing, and use integer points counting in polytopes for intra-bank offset generation. Memory partitioning for multi-port memory is supported in this framework. Experimental results demonstrate that compared to the state-of-art partitioning algorithm, our proposed algorithm can reduce the number of block RAM by 19.58%, slice by 20.26% and DSP by 50%.},
+ acmid = {2554780},
+ address = {New York, NY, USA},
+ author = {Wang, Yuxin and Li, Peng and Cong, Jason},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554780},
+ isbn = {978-1-4503-2671-1},
+ keyword = {high-level synthesis, memory partitioning, polyhedral model},
+ link = {http://doi.acm.org/10.1145/2554688.2554780},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {199--208},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Theory and Algorithm for Generalized Memory Partitioning in High-level Synthesis},
+ year = {2014}
+}
+
+
+@inproceedings{Abdellatif:2014:THP:2554688.2554709,
+ abstract = {AES-GCM has been utilized in various security applications. It consists of two components: an Advanced Encryption Standard (AES) engine and a Galois Hash (GHASH) core. The performance of the system is determined by the GHASH architecture because of the inherent computation feedback. This paper introduces a modification for the pipelined Karatsuba Ofman Algorithm (KOA)-based GHASH. In particular, the computation feedback is removed by analyzing the complexity of the computation process. The proposed GHASH core is evaluated with three different implementations of AES ( BRAMs-based SubBytes, composite field-based SubBytes, and LUT-based SubBytes). The presented AES-GCM architectures are implemented using Xilinx Virtex5 FPGAs. Our comparison to previous work reveals that our architectures are more performance-efficient (Thr. /Slices).},
+ acmid = {2554709},
+ address = {New York, NY, USA},
+ author = {Abdellatif, Karim and Chotin-Avot, Roselyne and Marrakchi, Zied and Mehrez, Habib and Tang, Qingshan},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554709},
+ isbn = {978-1-4503-2671-1},
+ keyword = {aes-gcm, fpgas, ghash, karatsuba ofman algorithm (koa)},
+ link = {http://doi.acm.org/10.1145/2554688.2554709},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {242--242},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Towards High Performance GHASH for Pipelined AES-GCM Using FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Schmidt:2014:ANF:2554688.2554730,
+ abstract = {We introduce a new SEU mitigation approach which minimizes the scrubbing effort by a) using an automatic classification of the criticality of netlist instances and their resulting configuration bits, and by b) minimizing the number of frames which must be scrubbed by using intelligent floorplanning. The criticality of configuration bits is defined by the actions needed to correct a radiation-induced SEU at this bit. Indeed, circuits that involve feedback loops might still and infinitely cause a malfunction even if scrubbing is applied to involved configuration frames. Here, only supplementary state-restoring might be a viable solution. By analyzing an FPGA design already at the logic level and partition configuration bits of the resulting FPGA mapping into so-called essential bits and critical bits, we are able to significantly reduce the number of time consuming state-restoring actions. Moreover, by using placement and routing constraints, it is shown how to minimize the number of frames which have to be reconfigured or checked when using scrubbing. By applying both methods, we will show a reduction of the Mean-Time-To-Repair (MTTR) for sequential benchmark circuits by up to 48.5% compared to a state-of-the-art approach.},
+ acmid = {2554730},
+ address = {New York, NY, USA},
+ author = {Schmidt, Bernhard and Ziener, Daniel and Teich, J\"{u}rgen},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554730},
+ isbn = {978-1-4503-2671-1},
+ keyword = {checkpointing, floorplanning, mttr, netlist analysis, scrubbing, seu mitigation},
+ link = {http://doi.acm.org/10.1145/2554688.2554730},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {257--257},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {An Automatic Netlist and Floorplanning Approach to Improve the MTTR of Scrubbing Techniques (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{ManikantanShila:2014:DIS:2554688.2554713,
+ abstract = {Hardware Trojan Threats (HTTs) are stealthy components embedded inside integrated circuits (ICs) with an intention to attack and cripple the IC similar to viruses infecting the human body. HTTs are easily introduced into the IC using untrusted tools and unauthenticated intellectual property (IP). Previous efforts have focused essentially on systems being compromised using HTTs and the effectiveness of physical parameters including power consumption, timing variation and utilization for detecting HTTs. Less attention has been devoted to the monitoring of the system to analyze the HTT infection using a combination of affected physical parameters. We propose a novel metric for hardware Trojan detection, termed as HTT detectability metric (HDM) that leverages a weighted combination of normalized physical parameters. As opposed to existing studies, this work investigates a system model from a designer perspective in increasing the security of the device and an adversary model from an attacker perspective exposing and exploiting the vulnerabilities in the device. Based on the models, seven malicious HTTs were designed and implemented on a FPGA testbed to perform a variety of threats ranging from sensitive information leak, denial of service to beat the Root of Trust (RoT). Security analysis on the implemented Trojans clearly showed that existing detection techniques based on physical characteristics such as power consumption, timing variation or utilization does not necessarily capture the existence of HTTs as HTTs can be optimally designed and placed into the hardware that masks within these parameters. Our results showed that using HDM, 86% of the implemented Trojans were detected as opposed to using power, timing and utilization alone.},
+ acmid = {2554713},
+ address = {New York, NY, USA},
+ author = {Manikantan Shila, Devu and Venugopal, Vivek},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554713},
+ isbn = {978-1-4503-2671-1},
+ keyword = {design, hardware trojan threats, resiliency, root of trust, security, trojan detection},
+ link = {http://doi.acm.org/10.1145/2554688.2554713},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {247--247},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Design, Implementation and Security Analysis of Hardware Trojan Threats in FPGA (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Dorrance:2014:SSM:2554688.2554785,
+ abstract = {Sparse Matrix-Vector Multiplication (SpMxV) is a widely used mathematical operation in many high-performance scientific and engineering applications. In recent years, tuned software libraries for multi-core microprocessors (CPUs) and graphics processing units (GPUs) have become the status quo for computing SpMxV. However, the computational throughput of these libraries for sparse matrices tends to be significantly lower than that of dense matrices, mostly due to the fact that the compression formats required to efficiently store sparse matrices mismatches traditional computing architectures. This paper describes an FPGA-based SpMxV kernel that is scalable to efficiently utilize the available memory bandwidth and computing resources. Benchmarking on a Virtex-5 SX95T FPGA demonstrates an average computational efficiency of 91.85%. The kernel achieves a peak computational efficiency of 99.8%, a >50x improvement over two Intel Core i7 processors (i7-2600 and i7-4770) and showing a >300x improvement over two NVIDA GPUs (GTX 660 and GTX Titan), when running the MKL and cuSPARSE sparse-BLAS libraries, respectively. In addition, the SpMxV FPGA kernel is able to achieve higher performance than its CPU and GPU counterparts, while using only 64 single-precision processing elements, with an overall 38-50x improvement in energy efficiency.},
+ acmid = {2554785},
+ address = {New York, NY, USA},
+ author = {Dorrance, Richard and Ren, Fengbo and Markovi\'{c}, Dejan},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554785},
+ isbn = {978-1-4503-2671-1},
+ keyword = {benchmarking, computational efficiency, cpu, energy-efficiency, fpga, gpu, sparse-blas, spmxv},
+ link = {http://doi.acm.org/10.1145/2554688.2554785},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {161--170},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Scalable Sparse Matrix-vector Multiplication Kernel for Energy-efficient Sparse-blas on FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Abdelhadi:2014:MMS:2554688.2554773,
+ abstract = {Multi-ported RAMs are essential for high-performance parallel computation systems. VLIW and vector processors, CGRAs, DSPs, CMPs and other processing systems often rely upon multi-ported memories for parallel access, hence higher performance. Although memories with a large number of read and write ports are important, their high implementation cost means they are used sparingly in designs. As a result, FPGA vendors only provide dual-ported block RAMs to handle the majority of usage patterns. In this paper, a novel and modular approach is proposed to construct multi-ported memories out of basic dual-ported RAM blocks. Like other multi-ported RAM designs, each write port uses a different RAM bank and each read port uses bank replication. The main contribution of this work is an optimization that merges the previous live-value-table (LVT) and XOR approaches into a common design that uses a generalized, simpler structure we call an invalidation-based live-value-table (I-LVT). Like a regular LVT, the I-LVT determines the correct bank to read from, but it differs in how updates to the table are made; the LVT approach requires multiple write ports, often leading to an area-intensive register-based implementation, while the XOR approach uses wider memories to accommodate the XOR-ed data and suffers from lower clock speeds. Two specific I-LVT implementations are proposed and evaluated, binary and one-hot coding. The I-LVT approach is especially suitable for larger multi-ported RAMs because the table is implemented only in SRAM cells. The I-LVT method gives higher performance while occupying less block RAMs than earlier approaches: for several configurations, the suggested method reduces the block RAM usage by over 44% and improves clock speed by over 76%. To assist others, we are releasing our fully parameterized Verilog implementation as an open source hardware library. The library has been extensively tested using ModelSim and Altera's Quartus tools.},
+ acmid = {2554773},
+ address = {New York, NY, USA},
+ author = {Abdelhadi, Ameer M.S. and Lemieux, Guy G.F.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554773},
+ isbn = {978-1-4503-2671-1},
+ keyword = {block ram, multi-ported memory, cache memory, embedded memory, parallel memory access, programmable memory, register-file, shared memory},
+ link = {http://doi.acm.org/10.1145/2554688.2554773},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {35--44},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Modular Multi-ported SRAM-based Memories},
+ year = {2014}
+}
+
+
+@inproceedings{Lerner:2014:UHS:2554688.2554759,
+ abstract = {Industrial control systems (ICSes) have the conflicting requirements of security and network access. In the event of large-scale hostilities, factories and infrastructure would more likely be targeted by computer viruses than the bomber squadrons used in WWII. ICS zero-day exploits are now a commodity sold on brokerages to interested parties including nations. We mitigate these threats not by bolstering perimeter security, but rather by assuming that potentially all layers of ICS software have already been compromised and are capable of launching a latent attack while reporting normal system status to human operators. In our approach, application-specific configurable hardware is the final authority for scrutinizing controller commands and process sensors, and can monitor and override operations at the lowest (I/O pin) level of a configurable system-on-chip platform. The process specifications, stability-preserving backup controller, and switchover logic are specified and formally verified as C code, and synthesized into hardware to resist software reconfiguration attacks. To provide greater assurance that the backup controller can be invoked before the physical process becomes unstable, copies of the production controller task and plant model are accelerated to preview the controller's behavior in the near future.},
+ acmid = {2554759},
+ address = {New York, NY, USA},
+ author = {Lerner, Lee W. and Franklin, Zane R. and Baumann, William T. and Patterson, Cameron D.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554759},
+ isbn = {978-1-4503-2671-1},
+ keyword = {formal analysis, high-level synthesis, industrial control systems, reconfigurable platform, security},
+ link = {http://doi.acm.org/10.1145/2554688.2554759},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {209--212},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Using High-level Synthesis and Formal Analysis to Predict and Preempt Attacks on Industrial Control Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Ito:2014:MBB:2554688.2554764,
+ abstract = {This paper presents a scan-based BIST architecture for FPGAs used as application-specific embedded devices for low-volume products. The proposed architecture efficiently utilizes memory blocks, instead of logic elements, to build up BIST components such as LFSR, MISR and scan chains for test points. It also provides enhanced scan functionality for test points and performs a hybrid test application of LOC and enhanced scan to improve delay test quality. Experimental results show that the proposed BIST architecture achieves high delay test quality with efficient resource utilization.},
+ acmid = {2554764},
+ address = {New York, NY, USA},
+ author = {Ito, Keita and Yoneda, Tomokazu and Yamato, Yuta and Hatayama, Kazumi and Inoue, Michiko},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554764},
+ isbn = {978-1-4503-2671-1},
+ keyword = {built-in self-test, delay test, test point},
+ link = {http://doi.acm.org/10.1145/2554688.2554764},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {85--88},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Memory Block Based scan-BIST Architecture for Application-dependent FPGA Testing},
+ year = {2014}
+}
+
+
+@inproceedings{Zgheib:2014:RAC:2554688.2554791,
+ abstract = {And-Invert Cones (AICs) have been suggested as an alternative to the ubiquitous Look-Up Tables (LUTs) used in commercial FPGAs. The original article suggesting the new architecture made some untested assumptions on the circuitry needed to implement AIC architectures and did not develop completely the toolset necessary to assess comprehensively the idea. In this paper, we pick up the architecture that some of us proposed in the original AIC paper and try to implement it as thoroughly as we can afford. We build all components for the logic cluster at transistor level in a 40~nm technology as well as a LUT-based architecture inspired by Altera's Stratix~IV. We first determine that the characteristics of our LUT-based architecture are reasonably similar to those of the commercial counterpart. Then, we compare the AIC architecture to the baseline on a number of benchmarks, and we find a few difficulties that had been overlooked before. We thus explore other design possibilities around the original design point and show their detailed impact. Finally, we discuss how the very structure of current logic clusters seems not perfectly appropriate for getting the best out of AICs and conclude that, even though they are not confirmed as an immediate blessing today, AICs still offer rich research opportunities.},
+ acmid = {2554791},
+ address = {New York, NY, USA},
+ author = {Zgheib, Grace and Yang, Liqun and Huang, Zhihong and Novo, David and Parandeh-Afshar, Hadi and Yang, Haigang and Ienne, Paolo},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554791},
+ isbn = {978-1-4503-2671-1},
+ keyword = {and-inverter cones, fpga architecture, fpga logic block, transistor design},
+ link = {http://doi.acm.org/10.1145/2554688.2554791},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {45--54},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Revisiting And-inverter Cones},
+ year = {2014}
+}
+
+
+@inproceedings{Mao:2014:BFB:2554688.2554755,
+ abstract = {With the wide application of FPGAs in adaptive computing systems, there is an increasing need to support design automation for PR FPGAs. However, there is a missing link between CAD tools for PR FPGA and existing widely used CAD tools, such as VPR. Hence, in this work we propose a modular placer for FPGAs because each PR region needs to be identified during partial reconfiguration and treated as an entity during placement and routing, which is not well supported by the current CAD tools. Our proposed tool is built on top of VPR. It takes the pre-synthesized module information from library, such as area, delay, etc, and performs modular placement to minimize total area and delay of the application. Modular information is represented in B*-Tree structure to allow fast placement. We amend the operations of B*-Tree to fit hardware characteristic of FPGAs. Different width-height ratios of the modules are exploited to achieve area-delay product optimization. Experimental results show comparisons of area, delay and execution time with original VPR. Though it may have disadvantage in area because of blank area among modules, it improves the delay of most of benchmarks comparing to results from VPR. At the end, we show PR-aware routing based on the modular placement.},
+ acmid = {2554755},
+ address = {New York, NY, USA},
+ author = {Mao, Fubing and Chen, Yi-Chung and Zhang, Wei and Li, Hai},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554755},
+ isbn = {978-1-4503-2671-1},
+ keyword = {b*-tree, cad, fpga, partial reconfiguration},
+ link = {http://doi.acm.org/10.1145/2554688.2554755},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {248--248},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {BMP: A Fast B*-tree Based Modular Placer for FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Lam:2014:SRA:2554688.2554711,
+ abstract = {As the sizes of modern circuits become bigger and bigger, implementing those large circuits into FPGA becomes arduous. The state-of-the-art academic FPGA place-and-route tool, VPR, has good quality but needs around a whole day to complete a placement when the input circuit contains millions of lookup tables, excluding the runtime for routing. To expedite the placement process, we propose a routability-driven placement algorithm for FPGA that adopts techniques used in ASIC global placer. Our placer follows the lower-bound-and-upper-bound iterative optimization process in ASIC placers like Ripple. In the lower-bound computation, the total HPWL, modeled using the Bound2Bound net model, is minimized using the conjugate gradient method. In the upper-bound computation, an almost-legalized result is produced by spreading cells linearly in the placement area. Those positions are then served as fixed-point anchors and fed into the next lower-bound computation. Furthermore, global routing will be performed in the upper-bound computation to estimate the routing segment usage, as a mean to consider congestion in placement. We tested our approach using 20 MCNC benchmarks and 4 large benchmarks for performance and scalability. Experimental results show that based on the island-style architecture which VPR is most optimized for, our approach can obtain a placement result 8x faster than VPR with 2% more in channel width, or 3x faster with 1% more in channel width when congestion is being considered. Our approach is even 14x faster than VPR in placing large benchmarks with over 10,000 lookup tables, with only 7% more in channel width.},
+ acmid = {2554711},
+ address = {New York, NY, USA},
+ author = {Lam, Ka Chun and Tang, Wai-Chung and Young, Evangeline F.Y.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554711},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpga, placement, routability-driven},
+ link = {http://doi.acm.org/10.1145/2554688.2554711},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {242--242},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Scalable Routability-driven Analytical Placer with Global Router Integration for FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Hinkfoth:2014:EDC:2554688.2554737,
+ abstract = {Non-trivial hardware architectures consist of a significant number of fine-grained modules that communication with each other via dedicated signal lines. In field-programmable gate arrays (FPGAs), these communication lines are provided in forms of global vertical and horizontal routing channels, and are subject to the routing process. Since the effects of physical properties on the signal skew along these lines is well understood, this paper investigates the observable effects on a signal's duty cycle. Practical experiments show that the distortion on the duty cycle progressively increases along such wires (connections) and that in the extreme case, a signal may entirely vanish.},
+ acmid = {2554737},
+ address = {New York, NY, USA},
+ author = {Hinkfoth, Matthias and Joost, Ralf and Salomon, Ralf},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554737},
+ isbn = {978-1-4503-2671-1},
+ keyword = {duty cycle, fpga, routing, signal path},
+ link = {http://doi.acm.org/10.1145/2554688.2554737},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {257--257},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Exploring Duty Cycle Distortions Along Signal Paths in FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Alzahrani:2014:NSR:2554688.2554758,
+ abstract = {A run-time fault diagnosis and evasion scheme for reconfigurable devices is developed based on an explicit Non-adaptive Group Testing (NGT). NGT involves grouping disjunct subsets of reconfigurable resources into test pools, or samples. Each test pool realizes a Diagnostic Configuration (DC) performing functional testing during diagnosis procedure. The collective test outcomes after testing each diagnostic pool can be efficiently decoded to identify up to d defective logic resources. An algorithm for constructing NGT sampling procedure and resource placement during design time with optimal minimal number of test groups is derived through the well-known in statistical literature d-disjunctness property. The combinatorial properties of resultant DCs also guarantee that any possible set of defective resources less than or equal to d are not utilized by at least one DC, allowing a low-overhead fault resolution. It also provides the ability to assess the resources state of failure. The proposed testing scheme thus avoids time-intensive run-time diagnosis imposed by previously proposed adaptive group testing for reconfigurable hardware without compromising diagnostic coverage. In addition, proposed NGT scheme can be combined with other fault tolerance approaches to ameliorate their fault recovery strategies. Experimental results for a set of MCNC benchmarks using Xilinx ISE Design Suite on a Virtex-5 FPGA have demonstrated d-diagnosability at slice level with average accuracy of 99.15% and 97.76% for d=1 and d=2, respectively.},
+ acmid = {2554758},
+ address = {New York, NY, USA},
+ author = {Alzahrani, Ahmad and DeMara, Ronald F.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554758},
+ isbn = {978-1-4503-2671-1},
+ keyword = {d-disjunct matrix, fault diagnosis, fault evasion, fault tolerance, non-adaptive group testing, reconfigurable hardware, reliability, sparse recovery},
+ link = {http://doi.acm.org/10.1145/2554688.2554758},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {251--251},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Non-adaptive Sparse Recovery and Fault Evasion Using Disjunct Design Configurations (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Grudnitsky:2014:MMO:2554688.2554782,
+ abstract = {Processors with an embedded runtime reconfigurable fabric have been explored in academia and industry started production of commercial platforms (e.g. Xilinx Zynq-7000). While providing significant performance and efficiency, the comparatively long reconfiguration time limits these advantages when applications request reconfigurations frequently. In multi-tasking systems frequent task switches lead to frequent reconfigurations and thus are a major hurdle for further performance increases. Sophisticated task scheduling is a very effective means to reduce the negative impact of these reconfiguration requests. In this paper, we propose an online approach for combined task scheduling and re-distribution of reconfigurable fabric between tasks in order to reduce the makespan, i.e. the completion time of a taskset that executes on a runtime reconfigurable processor. Evaluating multiple tasksets comprised of multimedia applications, our proposed approach achieves makespans that are on average only 2.8% worse than those achieved by a theoretical optimal scheduling that assumes zero-overhead reconfiguration time. In comparison, scheduling approaches deployed in state-of-the-art reconfigurable processors achieve makespans 14%-20% worse than optimal. As our approach is a purely software-side mechanism, a multitude of reconfigurable platforms aimed at multi-tasking can benefit from it.},
+ acmid = {2554782},
+ address = {New York, NY, USA},
+ author = {Grudnitsky, Artjom and Bauer, Lars and Henkel, J\"{o}rg},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554782},
+ isbn = {978-1-4503-2671-1},
+ keyword = {area allocation, reconfigurable processor, task scheduling},
+ link = {http://doi.acm.org/10.1145/2554688.2554782},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {127--136},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {MORP: Makespan Optimization for Processors with an Embedded Reconfigurable Fabric},
+ year = {2014}
+}
+
+
+@inproceedings{Rethinagiri:2014:PET:2554688.2554718,
+ abstract = {The ever increasing complexity of the applications result in the development of power hungry processors. There is a scarcity of standalone tools that have a good trade off between estimation speed and accuracy to estimate power/energy at an earlier phase of design flow. There are very few tools that addresses the design space exploration issue based on power and energy. In this paper, we propose a virtual platform based standalone power and energy estimation tool for System-on-Programmable Chip (SoPC) embedded platforms, which is independent of in-house tools. There are two steps involved in this tool development. The first step is power model generation. For the power model development, we used functional parameters to set up generic power models for the different parts of the system. This is a onetime activity. In the second step, a simulation based virtual platform framework is developed to evaluate accurately the activities used in the related power models developed in the first step. The combination of the two steps lead to a hybrid power estimation, which gives a better trade-off between accuracy and speed. The proposed tool has several benefits: it considers the power consumption of the embedded system in its entirety and leads to accurate estimates without a costly and complex material. The proposed tool is also scalable for exploring complex embedded multi-core architectures. The effectiveness of our proposed tool is validated through dualcore RISC processor designed around the FPGA board and extended to accommodate futuristic multi-core processors for a reliable energy based design space exploration. The accuracy of our proposed tool is evaluated by using a variety of industrial benchmarks such as Multimedia, EEMBC and SPEC2006. Estimated power values are compared to real board measurements and also to McPAT. Our obtained power/energy estimation results provide less than 9% of error for heterogeneous MPSoC based system and are 200% faster compared to other state-of-the-art power estimation tools.},
+ acmid = {2554718},
+ address = {New York, NY, USA},
+ author = {Rethinagiri, Santhosh Kumar and Palomar, Oscar and Cristal, Adrian and Unsal, Osman},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554718},
+ isbn = {978-1-4503-2671-1},
+ keyword = {accuracy, asic, design space exploration, fpga, functional power models, heterogeneous architecture, multicore, power/energy estimation, speedup, systemc, tlm, virtual platform},
+ link = {http://doi.acm.org/10.1145/2554688.2554718},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {256--256},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Power Estimation Tool for System on Programmable Chip Based Platforms (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Pus:2014:UDB:2554688.2554689,
+ abstract = {Hash table and its variations are common ways to implement lookup operations in FPGA. The process of adding to, deleting from, and searching in the hash table uses one or more hash functions to compute the address to the table. A suitable hash function must meet statistical properties such as uniform distribution, use of all input bits, large change of output based on small change of input. Other desirable parameters are high throughput and low FPGA resources usage. We propose a novel approach to the CRC hash computation in FPGA. The method is suitable for applications such as hash tables, which use parallel inputs of fixed size and require high throughput. We employ DSP blocks present in modern FPGAs to perform all the necessary XOR operations, therefore our solution does not use any LUTs. We propose a Monte Carlo based heuristic to reduce the number of DSP blocks required. Our experimental results show that one DSP block capable of 48 XOR operations can replace around eleven 6-input LUTs. Our results further show that our solution performs less XOR operations than the solution with LUTs optimized by the synthesizer.},
+ acmid = {2554689},
+ address = {New York, NY, USA},
+ author = {Pu\v{s}, Viktor and Kekely, Luk\'{a}\v{s} and Z\'{a}vodn\'{\i}k, Tom\'{a}\v{s}},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554689},
+ isbn = {978-1-4503-2671-1},
+ keyword = {crc, dsp, fpga, hash},
+ link = {http://doi.acm.org/10.1145/2554688.2554689},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {256--256},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Using DSP Blocks to Compute CRC Hash in FPGA (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Hanyang:2014:FPD:2554688.2554762,
+ abstract = {In this paper, we propose a fully-functional Nanometer FPGA prototype chip. Compared to traditional single supply voltage, single threshold voltage design, we explore low power nanometer FPGA design challenges with Multi-Vt, Static Voltage Scaling and sleep mode technique. Compared to Dynamic Voltage Scaling (DVS), we make a table of Voltage-Delay parameter pairs under different voltage conditions so that timing information can be calculated by a Static Timing Analysis (STA) tool. Thus a lowest supply power is chosen among all results which meet the timing requirements. This approach would simplify the hardware design since we don't need a complex workload detection circuit compared to DVS system. By separating supply voltages, we can directly shutdown power supply of the unused circuits. Compared to inserting sleep transistor in pull-up or pull-down networks, we can eliminate the speed penalty cased by the additional sleep transistor. We implement a tile-based heterogeneous architecture with island style routing and embedded specific blocks such as DSP and memory. The array size is 64×31 (Row×Col) including 64×24 CLBs. The final design is fabricated using a 1P10M 65-nm bulk CMOS process. Test results show a 53% reduction in static power compared to a commercial FPGA device which is also fabricated in 65nm process and has a similar array size.},
+ acmid = {2554762},
+ address = {New York, NY, USA},
+ author = {Hanyang, Xu and Jian, Wang and Meilai, Jin},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554762},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dynamic, fpga, leakage, lut, multi-vt, multiple supply voltage, sleep mode, voltage scaling},
+ link = {http://doi.acm.org/10.1145/2554688.2554762},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {147--150},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A FPGA Prototype Design Emphasis on Low Power Technique},
+ year = {2014}
+}
+
+
+@inproceedings{Viswanathan:2014:RRF:2554688.2554744,
+ abstract = {Embedded reconfigurable computing is becoming a new paradigm for system designers in avionic applications. In fact, FPGAs can be used for more than just computational purpose in order to improve the system performance. The introduction of FPGA Mezzanine Card (FMC) I/O standard has given a new purpose for FPGAs to be used as a communication platform. Taking into account the features offered by FPGAs and FMCs, such as runtime reconfiguration and modularity, we have redefined the role of these devices to be used as a generic communication and computation-centric platform. A new modular, runtime reconfigurable, Intellectual Property (IP)-based communication-centric platform for avionic applications has been designed. This means that, when the communication requirement of an avionic system changes, the necessary communication protocol is installed and executed on demand, without disturbing the normal operation of a time-critical avionic system. The efficiency and the performances of our platform are illustrated through a real industrial use-case designed using a computationally intensive application and several avionic I/O bus standards. The reconfiguration latency can be hidden totally in many cases. While in certain others, the overhead of reconfiguration can be justified by the reduction in the resource utilization.},
+ acmid = {2554744},
+ address = {New York, NY, USA},
+ author = {Viswanathan, Venkatasubramanian and Ben Atitallah, Rabie and Dekeyser, Jean-Luc and Nakache, Benjamin and Nakache, Maurice},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554744},
+ isbn = {978-1-4503-2671-1},
+ keyword = {avionic ip cores, dynamic partial reconfiguration, fpga mezzanine module, intensive signal processing applications, modular and reconfigurable i/os},
+ link = {http://doi.acm.org/10.1145/2554688.2554744},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {248--248},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Redefining the Role of FPGAs in the Next Generation Avionic Systems (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Li:2014:NFC:2554688.2554722,
+ abstract = {Clock network is a dedicated network for distributing multiple clock signals to every logic modules in a system. Be significantly different from ASIC where the clock tree is custom built by users, clock network in FPGA is usually fixed after chip fabrication and cannot be changed for different user circuits. This paper is committed to design and implement FPGA clock network with low latency and skew. We first propose a novel clock network for FPG, which is a backbone-branches topology and can be easily integrated to the tiled FPGA with reasonable area. There are one clock backbone and several primary clock branches in the network. When the chip scales up, this clock network can be extended easily. Afterwards, series of strategies such as hybrid multiplexer, bypassing, looping back and Programmable Delay Adjustment Unit (DAU) are employed to optimize latency and skew. Moreover, the prominent couple capacitance and crosstalk effect of clock routing in nanometer are also given consideration in physical implementation. This clock network is applied to own-designed FPGA with 65nm technology. Post-layout simulation results indicate that our clock network with normal loads can uphold 600MHz clock with the maximum clock latency and skew being typically 2.22ns and 40ps respectively, 1.79ns and 39ps in the fast case, achieving up to 78.2% improvement for skew as well as 47.5% for latency, compared to a commercial 65nm FPGA device.},
+ acmid = {2554722},
+ address = {New York, NY, USA},
+ author = {Li, Lei and Wang, Jian and Lai, Jinmei},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554722},
+ isbn = {978-1-4503-2671-1},
+ keyword = {clock network, dau, fpga, latency, skew},
+ link = {http://doi.acm.org/10.1145/2554688.2554722},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {252--252},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Novel FPGA Clock Network with Low Latency and Skew (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:CSA:2554688.2554727,
+ abstract = {The control signal sharing while packing flip-flops and other instances in slices is a necessary constraint in the placement of instances in FPGAs. Global placement usually does not consider signal sharing. In this paper, we propose a control signal aware slice-level packing algorithm within the framework of window based legalization method to obtain an optimized legal layout, satisfying all constraints, after global placement. We select a target window with the highest number of overlaps. Then, we check the capacity of the target window and adjust its size to secure enough space required for legalization. Lastly, window based legalization takes three constraints into account: 1) Control Signal Sharing: Two Flip-Flops in a slice must share a single control signal in FPGA architecture. 2) CLB Architecture Matching: Instances should be placed within a half slice to minimize the routing requirement. 3) Slice Level Packing: Instances are packed into slices for effective utilization of available empty space within a window. The experimental results show that our algorithm performs better with 45% less block displacement and 10% less runtime with the same wirelength when compared to a previous well-known mixed size block greedy legalization method [1].},
+ acmid = {2554727},
+ address = {New York, NY, USA},
+ author = {Wang, Yu and Yeo, Donghoon and Muhammad, Sohail and Shin, Hyunchul},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554727},
+ isbn = {978-1-4503-2671-1},
+ keyword = {analytical placement, clb, fpga, legalization, signal sharing},
+ link = {http://doi.acm.org/10.1145/2554688.2554727},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {249--249},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Control Signal Aware Slice-level Window Based Legalization Method for FPGA Placement (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Sari:2014:SEV:2554688.2554767,
+ abstract = {Today's SRAM-based FPGAs provide a reach set of computing resources which makes them attractive in demanding and critical application domains, such as avionics and space. Unfortunately, their high reliance on SRAM configuration memory arise reliability issues due to the single-event upsets (SEUs). Considering the criticality of these applications, the vulnerability analysis of FPGA designs to SEUs becomes essential part of the design flow. In this context, we present an open-source framework for the soft error vulnerability analysis of Xilinx FPGA devices. The proposed framework will allow researchers to evaluate their reliability-aware CAD algorithms and estimate the soft error susceptibility of the designs at early stages of the implementation flow for the latest Xilinx architectures.},
+ acmid = {2554767},
+ address = {New York, NY, USA},
+ author = {Sari, Aitzan and Agiakatsikas, Dimitris and Psarakis, Mihalis},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554767},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpgas, placement algorithms, sensitive configuration bits, seu mitigation, single-events upsets (seus), soft errors},
+ link = {http://doi.acm.org/10.1145/2554688.2554767},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {237--240},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Soft Error Vulnerability Analysis Framework for Xilinx FPGAs},
+ year = {2014}
+}
+
+
+@proceedings{Constantinides:2015:2684746,
+ abstract = {It is our great pleasure to welcome you to the 2015 ACM International Symposium on FPGAs (FPGA 2015). This year's symposium continues the tradition of being a premier forum for the presentation of FPGA-related research across a wide variety of topics: new FPGA architectures and circuit designs, Computer-Aided Design (CAD) and high level synthesis algorithms and flows, applications well-suited to FPGAs, and design studies. In addition to facilitating the sharing of research results through the paper and poster presentations, FPGA provides an excellent opportunity for researchers from around the world to mingle and discuss research results and ideas. This year we received 102 submissions from 22 different countries. The program committee accepted 20 full (ten pages) and 7 short (four pages) research papers as well as 8 design/tutorial papers (four pages), each of which is published in the proceedings. The acceptance rate for research papers is 26%. Full papers each have a 25-minute oral presentation, while short papers will have a 5-minute oral presentation, followed by a poster presentation at which attendees can further discuss the work with the authors. In addition, we will have four poster sessions in which a total of 46 additional research projects will be displayed on posters, and at which you may ask detailed questions of the authors. This year, the program begins with a new full-day event called Designer's Day, which will provide tutorials and design experiences on known-interesting topics for FPGA describing effective design techniques, design flows, methods, and new tool features. It features 8 oral presentations on various FPGA design/tutorial topics and a Keynote Speech to be given by the BEEcube CEO Chen Cheng. The symposium also includes an evening panel on the topic of Building a Healthy FPGA Ecosystem -- bring your questions for our panel of experts, and enjoy a lively discussion on how developers and vendors can bring killer applications, tools, and programmable logic devices to the market to accelerate datacenters for cloud computing. We hope that you will find this program interesting and thought-provoking and that the symposium will provide you with a valuable opportunity to share ideas with other researchers and practitioners from institutions around the world.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-3315-3},
+ location = {Monterey, California, USA},
+ note = {480150},
+ publisher = {ACM},
+ title = {FPGA '15: Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+ year = {2015}
+}
+
+
+@inproceedings{HahnPereira:2014:CRA:2554688.2554776,
+ abstract = {Interposer-based multi-FPGA systems are composed of multiple FPGA dice connected through a silicon interposer. Such devices allow larger FPGA systems to be built than one monolithic die can accomodate and are now commercially available. An open question, however, is how efficient such systems are compared to a monolithic FPGA, as the number of signals passing between dice is reduced and the signal delay between dice is increased in an interposer system vs. a monolithic FPGA. We create a new version of VPR to investigate the architecture of such systems, and show that by modifying the placement cost function to minimize the number of signals that must cross between dice we can reduce routing demand by 18% and delay by 2%. We also show that the signal count between dice and the signal delay between dice are key architecture parameters for interposer-based FPGA systems. We find that if an interposer supplies (between dice) 60% of the routing capacity that the normal (within-die) FPGA routing channels supply, there is little impact on the routability of circuits. Smaller routing capacities in the interposer do impact routability however: minimum channel width increases by 20% and 50% when an interposer supplies only 40% and 30% of the within-die routing, respectively. The interposer also impacts delay, increasing circuit delay by 34% on average for a 1 ns interposer signal delay and a four-die system. Reducing the interposer delay has a greater benefit in improving circuit speed than does reducing the number of dice in the system.},
+ acmid = {2554776},
+ address = {New York, NY, USA},
+ author = {Hahn Pereira, Andre and Betz, Vaughn},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554776},
+ isbn = {978-1-4503-2671-1},
+ keyword = {2.5d ics, fpga, silicon interposer},
+ link = {http://doi.acm.org/10.1145/2554688.2554776},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {75--84},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Cad and Routing Architecture for Interposer-based multi-FPGA Systems},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:IFE:2554688.2554733,
+ abstract = {Optical flow computation is widely used in many video/image based applications such as motion detection, video compression etc. Dense optical flow field that provides more details of information is more useful in lots of applications. However, high-quality algorithms for dense optical flow computation are computationally expensive. For instance, on the ARM Cortex-A9 processor within ZYNQ, the popular linear variational method Combine-Brightness-Gradient (CBG), spends $26.68s per frame to compute optical flow when the image size is 640 x 480. It is difficult to be sped up especially when embedded systems with power constraints are considered. Poor portability is another factor to limit current implementations of optical flow computation to be used in more applications. In this paper, a high-performance, low-power FPGA-accelerated implementation of dense optical flow computation is presented. One high-quality dense optical flow method, the Combine-Brightness-Gradient model, is implemented. C code instead of VHDL/Verilog HDL is used to improve the productivity. Portability of the system is designed carefully for deploying it on different platforms conveniently. Experimental results show 12 fps and 0.38J per frame are achieved by this optical flow computing system when 640 x 480 image is used and optical flow for all pixels are computed. Furthermore, portability is demonstrated by implementing the optical flow algorithm on different heterogeneous platforms such as the ZYNQ-7000 SoC and the PC-FPGA platform with a Kintex-7 FPGA respectively.},
+ acmid = {2554733},
+ address = {New York, NY, USA},
+ author = {Wang, Zhibin and Yang, Wenmin and Yu, Jin and Chai, Zhilei},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554733},
+ isbn = {978-1-4503-2671-1},
+ keyword = {energy efficient, fpgas, high-level-synthesis, optical flow computation, portability},
+ link = {http://doi.acm.org/10.1145/2554688.2554733},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {255--255},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Implementing FPGA-based Energy-efficient Dense Optical Flow Computation with High Portability in C (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Guo:2014:APE:2554688.2554765,
+ abstract = {Self-exciting point processes are stochastic processes capturing occurrence patterns of random events. They offer powerful tools to describe and predict temporal distributions of random events like stock trading and neurone spiking. A critical calculation in self-exciting point process models is parameter estimation, which fits a model to a data set. This calculation is computationally demanding when the number of data points is large and when the data dimension is high. This paper proposes the first reconfigurable computing solution to accelerate this calculation. We derive an acceleration strategy in a mathematical specification by eliminating complex data dependency, by cutting hardware resource requirement, and by parallelising arithmetic operations. In our experimental evaluation, an FPGA-based implementation of the proposed solution is up to 79 times faster than one CPU core, and 13 times faster than the same CPU with eight cores.},
+ acmid = {2554765},
+ address = {New York, NY, USA},
+ author = {Guo, Ce and Luk, Wayne},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554765},
+ isbn = {978-1-4503-2671-1},
+ keyword = {acceleratior, fpga, point process, predictive model},
+ link = {http://doi.acm.org/10.1145/2554688.2554765},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {181--184},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Accelerating Parameter Estimation for Multivariate Self-exciting Point Processes},
+ year = {2014}
+}
+
+
+@inproceedings{Hutchings:2014:PSD:2554688.2554770,
+ abstract = {A novel Digital to Analog Converter (DAC) modulates the overall power consumption of an FPGA by disabling/enabling short circuits programmed into the interconnect. The power pin of the FPGA serves as the output of the DAC. The DAC achieves high linearity and can be used to implement applications in communications, security, etc. The shortcircuit-based DAC consumes 1/3 the area of an alternative shift-register-based DAC that is presented for the sake of comparison.},
+ acmid = {2554770},
+ address = {New York, NY, USA},
+ author = {Hutchings, Brad L. and Monson, Joshua and Savory, Danny and Keeley, Jared},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554770},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dac, fpga, power, side channel},
+ link = {http://doi.acm.org/10.1145/2554688.2554770},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {113--116},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Power Side-channel-based Digital to Analog Converterfor Xilinx FPGAs},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:AMS:2554688.2554707,
+ abstract = {Due to the explosion of gene sequencing data with over one billion reads per run, the data-intensive computations of Next Generation Sequencing (NGS) applications pose great challenges to current computing capability. In this paper we investigate both algorithmic and architectural accelerating strategies to a typical NGS analysis algorithm -- short reads mapping -- on a commodity multicore and customizable FPGA coprocessor architecture, respectively. First, we propose a hash buckets reorder algorithm that increases shared cache parallelism during the course of searching hash index. The algorithmic strategy achieves 122Gbp/day throughput by exploiting shared-cache parallelism, that leads to performance improvement of 2 times on an 8-core Intel Xeon processor. Second, we develop a FPGA coprocessor that leverages both bit-level and word-level parallelism with scatter-gather memory mechanism to speedup inherent irregular memory access operations by increasing effective memory bandwidth. Our customized FPGA coprocessor achieves 947Gbp per day throughput, that is 189 times higher than current mapping tools on single CPU core, and above 2 times higher than a 64-core multi-processor system. The coprocessor's power efficiency is 29 times higher than a conventional 64-core multi-processor. The results indicate that the customized FPGA coprocessor architecture, that is configured with scatter-gather memory's word-level access, appeals to data intensive applications.},
+ acmid = {2554707},
+ address = {New York, NY, USA},
+ author = {Zhang, Chunming and Tang, Wen and Guangming, Tan},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554707},
+ isbn = {978-1-4503-2671-1},
+ keyword = {bit-level parallelism, data intensive, hash, next generation sequencing, shared cache parallelism, word-level parallelism},
+ link = {http://doi.acm.org/10.1145/2554688.2554707},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {246--246},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Accelerating Massive Short Reads Mapping for Next Generation Sequencing (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Silwal:2014:APU:2554688.2554745,
+ abstract = {Recently, electronic industries have been facing an increased amount of hardware counterfeits. These counterfeit components, when assembled into a product or a system, can not only jeopardize performance and reliability but also create safety issues. Physical Unclonable Function (PUF) provides means to enhance physical security of Integrated Circuits (IC) against piracy and unauthorized access. The proposed design illustrates the feasibility of using self-timed ring oscillators as a novel approach towards PUF implementation for FPGA authentication. The proposed Self-Timed Ring Oscillator PUF (STRO-PUF) consists of two groups of identically laid-out self-timed ring oscillators. Inputs to the PUF are given through a challenge generator, which selects two self-timed ring oscillators from each group. Outputs of oscillators are fed to multiplexers of corresponding groups. Self-timed ring oscillators exploit the inherent features of random process variations by producing varying frequencies. These unpredictable variations in frequencies are captured using frequency comparator, which generates a output bit. A unique set of output bits , or response is generated for each set of input bits, or challenge. This unique Challenge Response Pair (CRP) is used in identifying a particular device. Frequencies generated from these oscillators are read through a logic analyzer. The varying frequencies observed from all the oscillators mapped across different regions of FPGAs range from 16.234 MHz to 125 MHz with the average frequency of 101.446 MHz. Experimental result shows the uniqueness for the PUF response is 49.92% which is very close to the desired 50% factor.},
+ acmid = {2554745},
+ address = {New York, NY, USA},
+ author = {Silwal, Roshan and Niamat, Mohammed},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554745},
+ isbn = {978-1-4503-2671-1},
+ keyword = {asynchronous design, fpga authentication, physical unclonable function (puf), self-timed ring oscillator, stro-puf},
+ link = {http://doi.acm.org/10.1145/2554688.2554745},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {252--252},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Asynchronous Physical Unclonable Function Using FPGA-based Self-timed Ring Oscillator (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Ai:2014:PHR:2554688.2554738,
+ abstract = {Video cameras can only take photographs with limited dynamic range. One method to overcome this is to combine differently exposed images of the same subject matter (i.e. a Wyckoff Set), producing a High Dynamic Range (HDR) result. HDR digital photography started almost 20 years ago. Now, it is possible to produce HDR video in real-time, on both high-power CPU/GPU systems, as well as low-power FPGA boards. However, other FPGA implementations have relied upon methods that are less accurate than current CPU and GPU-based methods. Namely, the earlier FPGA approaches used weighted sum for image compositing. In this paper we provide a novel method for real-time HDR com-positing. As an essential part of an upgraded HDR video production system, the resulting system combines differently exposed video stream (of the same subject matter) in Full HD (1080p at 60fps) on a Kintex-7 FPGA. The proposed work flow, implemented with software written in C, estimates the camera response function according to its quadtree representation and generates the compositing circuit in Verilog HDL from a Wyckoff Set. This circuit consists of parts that perform addressing using multiplexer networks and estimation with bilinear interpolation. It is parameterizable by user-specified error constraints, allowing us to explore the trade-offs in resource usage and precision of the implementation. Here is an MD5 hash function sum generated for the rest of the paper: 07897e61027d15dc3600fadbccfbd67d, citation date: December 18, 2013.},
+ acmid = {2554738},
+ address = {New York, NY, USA},
+ author = {Ai, Tao and Ali, Mir Adnan and Steffan, Gregory and Ovtcharov, Kalin and Zulfiqar, Sarmad and Mann, Steve},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554738},
+ isbn = {978-1-4503-2671-1},
+ keyword = {ccrf compression, comparametric camera response function, fpgas, high dynamic range video, quadtree, real- time hdr},
+ link = {http://doi.acm.org/10.1145/2554688.2554738},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {253--253},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Producing High-quality Real-time HDR Video System with FPGA (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{BenAsher:2014:MFS:2554688.2554699,
+ abstract = {Manycore shared memory architectures hold a significant premise to speed up and simplify SOCs. Using many homogeneous small-cores will allow replacing the hardware accelerators of SOCs by parallel algorithms communicating through shared memory. Currently shared memory is realized by maintaining cache-consistency across the cores, caching all the connected cores to one main memory module. This approach, though used today, is not likely to be scalable enough to support the high number of cores needed for highly parallel SOCs. Therefore we consider a theoretical scheme for shared memory wherein: the shared address space is divided between a set of memory modules; and a communication network allows each core to access every such module in parallel. Load-balancing between the memory modules is obtained by rehashing the memory address-space. We have designed a simple generic shared memory architecture, synthesized it to 2,4,8,,..1024-cores for FPGA virtex-7 and evaluated it on several parallel programs. The synthesis results and the execution measurements show that, for the FPGA, all problematic aspects of this construction can be resolved. For example, unlike ASICs, the growing complexity of the communication network is absorbed by the FPGA's routing grid and by its routing mechanism. This makes this type of architectures particularly suitable for FPGAs. We used 32-bits modified PACOBLAZE cores and tested different parameters of this architecture verifying its ability to achieve high speedups. The results suggest that re-hashing is not essential and one hash-function suffice (compared to the family of universal hash functions that is needed by the theoretical construction).},
+ acmid = {2554699},
+ address = {New York, NY, USA},
+ author = {Ben Asher, Yosi and Gendel, Jacob and Haber, Gadi and Segal, Oren and Shajrawi, Yousef},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554699},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dmm, fpga, manycore, shared-memory, soc},
+ link = {http://doi.acm.org/10.1145/2554688.2554699},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {251--251},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {1K Manycore FPGA Shared Memory Architecture for SOC (Abstract Only)},
+ year = {2014}
+}
+
+
+@proceedings{Betz:2014:2554688,
+ abstract = {It is our great pleasure to welcome you to the 2014 ACM International Symposium on FPGAs (FPGA 2014). This year's symposium continues the tradition of being a premier forum for the presentation of FPGA-related research across a wide variety of topics: new FPGA architectures and circuit designs, Computer-Aided Design (CAD) and high level synthesis algorithms and flows, applications well-suited to FPGAs, and design studies. In addition to facilitating the sharing of research results through the paper and poster presentations, FPGA provides an excellent opportunity for researchers from around the world to mingle and discuss research results and ideas. This year we received 114 submissions from 19 different countries. The program committee accepted 21 full (ten page) and 10 short (four page) papers, each of which are published in the proceedings, for an acceptance rate of 27%. Full papers each have a twenty minute oral presentation, while short papers will have a five minute oral presentation, followed by a poster presentation at which attendees can further discuss the work with the authors. Finally we will have four poster sessions in which a total of 45 additional research projects will be displayed on posters, and at which you may ask detailed questions of the authors. This year the symposium begins with a workshop related to the emerging role of FPGAs in the datacenter. The symposium also includes an evening panel on the topic of low power FPGAs -- bring your questions for our panel of experts, and enjoy a lively discussion on whether FPGAs will make inroads into markets dominated by power, form factor and cost constraints.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2671-1},
+ location = {Monterey, California, USA},
+ publisher = {ACM},
+ title = {FPGA '14: Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ year = {2014}
+}
+
+
+@inproceedings{Wang:2014:BDG:2554688.2554694,
+ abstract = {Next-generation sequencing (NGS) problems have attracted many attentions of researchers in biological and medical computing domains. The current state-of-the-art NGS computing machines are dramatically lowering the cost and increasing the throughput of DNA sequencing. In this paper, we propose a practical study that uses Xilinx Zynq board to summarize acceleration engines using FPGA accelerators and ARM processors for the state-of-the-art short read mapping approaches. The heterogeneous processors and accelerators are coupled with each other using a general Hadoop distributed processing framework. First the reads are collected by the central server, and then distributed to multiple accelerators on the Zynq for hardware acceleration. Therefore, the combination of hardware acceleration and Map-Reduce execution flow could greatly accelerate the task of aligning short length reads to a known reference genome. Our approach is based on preprocessing the reference genomes and iterative jobs for aligning the continuous incoming reads. The hardware acceleration is based on the creditable read-mapping algorithm RMAP software approach. Furthermore, the speedup analysis on a Hadoop cluster, which concludes 8 development boards, is evaluated. Experimental results demonstrate that our proposed architecture and methods has the speedup of more than 112X, and is scalable with the number of accelerators. Finally, the Zynq based cluster has efficient potential to accelerate even general large scale big data applications. This work was supported by the NSFC grants No. 61379040, No. 61272131 and No. 61202053.},
+ acmid = {2554694},
+ address = {New York, NY, USA},
+ author = {Wang, Chao and Li, Xi and Zhou, Xuehai and Chen, Yunji and Cheung, Ray C.C.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554694},
+ isbn = {978-1-4503-2671-1},
+ keyword = {bioinformatics, fpga, genome sequencing, hardware acceleration., rmap},
+ link = {http://doi.acm.org/10.1145/2554688.2554694},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {247--247},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Big Data Genome Sequencing on Zynq Based Clusters (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Sun:2014:AFI:2554688.2554766,
+ abstract = {Frequent item counting is one of the most important operations in time series data mining algorithms, and the space saving algorithm is a widely used approach to solving this problem. With the rapid rising of data input speeds, the most challenging problem in frequent item counting is to meet the requirement of wire-speed processing. In this paper, we propose a streaming oriented PE-ring framework on FPGA for counting frequent items. Compared with the best existing FPGA implementation, our basic PE-ring framework saves 50% lookup table resources cost and achieves the same throughput in a more scalable way. Furthermore, we adopt SIMD-like cascaded filter for further performance improvements, which outperforms the previous work by up to 3.24 times in some data distributions.},
+ acmid = {2554766},
+ address = {New York, NY, USA},
+ author = {Sun, Yuliang and Wang, Zilong and Huang, Sitao and Wang, Lanjun and Wang, Yu and Luo, Rong and Yang, Huazhong},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554766},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpga, frequent item counting, time series},
+ link = {http://doi.acm.org/10.1145/2554688.2554766},
+ location = {Monterey, California, USA},
+ numpages = {4},
+ pages = {109--112},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Accelerating Frequent Item Counting with FPGA},
+ year = {2014}
+}
+
+
+@inproceedings{Casper:2014:HAD:2554688.2554787,
+ abstract = {As the amount of memory in database systems grows, entire database tables, or even databases, are able to fit in the system's memory, making in-memory database operations more prevalent. This shift from disk-based to in-memory database systems has contributed to a move from row-wise to columnar data storage. Furthermore, common database workloads have grown beyond online transaction processing (OLTP) to include online analytical processing and data mining. These workloads analyze huge datasets that are often irregular and not indexed, making traditional database operations like joins much more expensive. In this paper we explore using dedicated hardware to accelerate in-memory database operations. We present hardware to accelerate the selection process of compacting a single column into a linear column of selected data, joining two sorted columns via merging, and sorting a column. Finally, we put these primitives together to accelerate an entire join operation. We implement a prototype of this system using FPGAs and show substantial improvements in both absolute throughput and utilization of memory bandwidth. Using the prototype as a guide, we explore how the hardware resources required by our design change with the desired throughput.},
+ acmid = {2554787},
+ address = {New York, NY, USA},
+ author = {Casper, Jared and Olukotun, Kunle},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554787},
+ isbn = {978-1-4503-2671-1},
+ keyword = {database, fpga, hardware acceleration, join, sort},
+ link = {http://doi.acm.org/10.1145/2554688.2554787},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {151--160},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Hardware Acceleration of Database Operations},
+ year = {2014}
+}
+
+
+@inproceedings{Hussain:2014:AAP:2554688.2554732,
+ abstract = {In this paper, we present APMC, the Advanced Pattern based Memory Controller, that uses descriptors to support both regular and irregular memory access patterns without using a master core. It keeps pattern descriptors in memory and prefetches the complex 1D/2D/3D data structure into its special scratchpad memory. Support for irregular Memory accesses are arranged in the pattern descriptors at program-time and APMC manages multiple patterns at run-time to reduce access latency. The proposed APMC system reduces the limitations faced by processors/accelerators due to irregular memory access patterns and low memory bandwidth. It gathers multiple memory read/write requests and maximizes the reuse of opened SDRAM banks to decrease the overhead of opening and closing rows. APMC manages data movement between main memory and the specialized scratchpad memory; data present in the specialized scratchpad is reused and/or updated when accessed by several patterns. The system is implemented and tested on a Xilinx ML505 FPGA board. The performance of the system is compared with a processor with a high performance memory controller. The results show that the APMC system transfers regular and irregular datasets up to 20.4x and 3.4x faster respectively than the baseline system. When compared to the baseline system, APMC consumes 17% less hardware resources, 32% less on-chip power and achieves between 3.5x to 52x and 1.4x to 2.9x of speedup for regular and irregular applications respectively. The APMC core consumes 50% less hardware resources than the baseline system's memory controller. In this paper, we present APMC, the Advanced Pattern based Memory Controller, an intelligent memory controller that uses descriptors to supports both regular and irregular memory access patterns. support of the master core. It keeps pattern descriptors in memory and prefetches the complex data structure into its special scratchpad memory. Memory accesses are arranged in the pattern descriptors at program-time and APMC manages multiple patterns at run-time to reduce access latency. The proposed APMC system reduces the limitations faced by processors/accelerators due to irregular memory access patterns and low memory bandwidth. The system is implemented and tested on a Xilinx ML505 FPGA board. The performance of the system is compared with a processor with a high performance memory controller. The results show that the APMC system transfers regular and irregular datasets up to 20.4x and 3.4x faster respectively than the baseline system. When compared to the baseline system, APMC consumes 17% less hardware resources, 32% less on-chip power and achieves between 3.5x to 52x and 1.4x to 2.9x of speedup for regular and irregular applications respectively. The APMC core consumes 50% less hardware resources than the baseline system's memory controller.memory accesses. In this paper, we present APMC, the Advanced Pattern based Memory Controller, an intelligent memory controller that supports both regular and irregular memory access patterns. The proposed APMC system reduces the limitations faced by processors/accelerators due to irregular memory access patterns and low memory bandwidth. The system is implemented and tested on a Xilinx ML505 FPGA board. The performance of the system is compared with a processor with a high performance memory controller. The results show that the APMC system transfers regular and irregular datasets up to 20.4x and 3.4x faster respectively than the baseline system. When compared to the baseline system, APMC consumes 17% less hardware resources, 32% less on-chip power and achieves between 3.5x to 52x and 1.4x to 2.9x of speedup for regular and irregular applications respectively.},
+ acmid = {2554732},
+ address = {New York, NY, USA},
+ author = {Hussain, Tassadaq and Palomar, Oscar and Unsal, Osman S. and Cristal, Adri\'{a}n and Ayguad{\'e}, Eduard and Valero, Mateo and Rethinagiri, Santhosh Kumar},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554732},
+ isbn = {978-1-4503-2671-1},
+ keyword = {apmc, pmc, ppmc},
+ link = {http://doi.acm.org/10.1145/2554688.2554732},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {252--252},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {APMC: Advanced Pattern Based Memory Controller (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Nacci:2014:ISS:2554688.2554735,
+ abstract = {Although the reliability and robustness of the AES protocol have been deeply proved through the years, recent research results and technology advancements are rising serious concerns about its solidity in the (quite near) future. In fact, smarter brute force attacks and new computing systems are expected to drastically decrease the security of the AES protocol in the coming years (e.g., quantum computing will enable the development of search algorithms able to perform a brute force attack of a 2n-bit key in the same time required by a conventional algorithm for a n-bit key). In this context, we are proposing an extension of the AES algorithm in order to support longer encryption keys (thus increasing the security of the algorithm itself). In addition to this, we are proposing a set of parametric implementations of this novel extended protocols. These architectures can be optimized either to minimize the area usage or to maximize their performance. Experimental results show that, while the proposed implementations achieve a throughput higher than most of the state-of-the-art approaches and the highest value of the Performance/Area metric when working with 128-bit encryption keys, they can achieve a 84× throughput speedup when compared to the approaches that can be found in literature working with 512-bit encryption keys.},
+ acmid = {2554735},
+ address = {New York, NY, USA},
+ author = {Nacci, Alessandro A. and Rana, Vincenzo and Santambrogio, Marco D. and Sciuto, Donatella},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554735},
+ isbn = {978-1-4503-2671-1},
+ keyword = {advanced ecryption standard, aes, cryptography, fpga, security},
+ link = {http://doi.acm.org/10.1145/2554688.2554735},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {256--256},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Improving the Security and the Scalability of the AES Algorithm (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Filgueras:2014:OAS:2554688.2554777,
+ abstract = {OmpSs is an OpenMP-like directive-based programming model that includes heterogeneous execution (MIC, GPU, SMP, etc.) and runtime task dependencies management. Indeed, OmpSs has largely influenced the recently appeared OpenMP 4.0 specification. Zynq All-Programmable SoC combines the features of a SMP and a FPGA and benefits DLP, ILP and TLP parallelisms in order to efficiently exploit the new technology improvements and chip resource capacities. In this paper, we focus on programmability and heterogeneous execution support, presenting a successful combination of the OmpSs programming model and the Zynq All-Programmable SoC platforms.},
+ acmid = {2554777},
+ address = {New York, NY, USA},
+ author = {Filgueras, Antonio and Gil, Eduard and Jimenez-Gonzalez, Daniel and Alvarez, Carlos and Martorell, Xavier and Langer, Jan and Noguera, Juanjo and Vissers, Kees},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554777},
+ isbn = {978-1-4503-2671-1},
+ keyword = {automatic hardware generation framework, heterogenous parallel programming model, task dataflow models},
+ link = {http://doi.acm.org/10.1145/2554688.2554777},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {137--146},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {OmpSs@Zynq All-programmable SoC Ecosystem},
+ year = {2014}
+}
+
+
+@inproceedings{DeHon:2014:WIL:2554688.2554781,
+ abstract = {When are FPGAs more energy efficient than processors? This question is complicated by technology factors and the wide range of application characteristics that can be exploited to minimize energy. Using a wire-dominated energy model to estimate the absolute energy required for programmable computations, we determine when spatially organized programmable computations (FPGAs) require less energy than temporally organized programmable computations (processors). The point of crossover will depend on the metal layers available, the locality, the SIMD wordwidth regularity, and the compactness of the instructions. When the Rent Exponent, p, is less than 0.7, the spatial design is always more energy efficient. When p=0.8, the technology offers 8-metal layers for routing, and data can be organized into 16b words and processed in tight loops of no more than 128 instructions, the temporal design uses less energy when the number of LUTs is greater than 64K. We further show that heterogeneous multicontext architectures can use even less energy than the p=0.8, 16b word temporal case.},
+ acmid = {2554781},
+ address = {New York, NY, USA},
+ author = {DeHon, Andr{\'e}},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554781},
+ isbn = {978-1-4503-2671-1},
+ keyword = {energy, energy modeling, fpga, instructions, locality, low power, multicontext, rent's rule, simd},
+ link = {http://doi.acm.org/10.1145/2554688.2554781},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {189--198},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Wordwidth, Instructions, Looping, and Virtualization: The Role of Sharing in Absolute Energy Minimization},
+ year = {2014}
+}
+
+
+@inproceedings{Liang:2014:HLP:2554688.2554693,
+ abstract = {FPGAs are becoming promising hardware accelerators for high performance computing systems, such as cloud computing, big-data processing, etc., where power is a key factor due to thermal and energy saving considerations. Current CAD tools for FPGA power estimation either support specific hardware provided by vendors or contain power models for mainly conventional FPGA architectures. However, with technology advancement, versatile novel FPGA architectures are being proposed to further augment current FPGA architecture at various aspects, such as emerging FPGA based on non-volatile memory, improved logic and DSP design, etc. In order to evaluate the power consumption of versatile FPGA designs, the power estimator has to be made more flexible and extendable to support new devices and architectures. In this work, we proposed such a tool that the power estimation can be performed based on a hierarchical library which contains power models at different levels, such as circuit components or devices. The tool can collect resource utilization of FPGA for the implemented circuit, and then perform power estimation at coarse-grain or fine-grain levels based on the hierarchical library to achieve the desired complexity-accuracy trade-off. The flexibility is provided that users can customize the hierarchical library for new circuit components or devices with power number of their own study. In this work, benchmarks evaluation results are verified against commercial power estimation tool to show the accuracy of the proposed tool. Case study on RRAM FPGA is also presented to demonstrate the tool's flexibility to support emerging technology and novel design.},
+ acmid = {2554693},
+ address = {New York, NY, USA},
+ author = {Liang, Hao and Chen, Yi-Chung and Zhang, Wei and Li, Hai},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554693},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpga, library-based power model, power estimation tool},
+ link = {http://doi.acm.org/10.1145/2554688.2554693},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {243--243},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Hierarchical Library-based Power Estimator for Versatile FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Kachris:2014:CMA:2554688.2554700,
+ abstract = {MapReduce is a widely used programming framework for the implementation of cloud computing application in data centers. This work presents a novel configurable hardware accelerator that is used to speed up the processing of multi-core and cloud computing applications based on the MapReduce programming framework. The proposed MapReduce configurable accelerator is augmented to multi-core processors and it performs a fast indexing and accumulation of the key/value pairs based on an efficient memory architecture using Cuckoo hashing. The MapReduce accelerator consists of the memory buffers that store the key/value pairs, and the processing units that are used to accumulate the key's value sent from the processors. In essence, this accelerator is used to alleviate the processors from executing the Reduce tasks, and thus executing only the Map tasks and emitting the intermediate key/value pairs to the hardware acceleration unit that performs the Reduce operation. The number and the size of the keys that can be stored on the accelerator are configurable and can be configured based on the application requirements. The MapReduce accelerator has been implemented and mapped to a multi-core FPGA with embedded ARM processors (Xilinx Zynq FPGA) and has been integrated with the MapReduce programming framework under Linux. The performance evaluation shows that the proposed accelerator can achieve up to 1.8x system speedup of the MapReduce applications and hence reduce significantly the execution time of multi-core and cloud computing applications. (Action: "Supporting Postdoctoral Researchers", "Education and Lifelong Learning" Program (GSRT) and co-financed by the ESF and the Greek State.)},
+ acmid = {2554700},
+ address = {New York, NY, USA},
+ author = {Kachris, Christoforos and Sirakoulis, Georgios Ch. and Soudris, Dimitrios},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554700},
+ isbn = {978-1-4503-2671-1},
+ keyword = {cloud computing, fpga, hardware accelerator, mapreduce, multi-core programming, reconfigurable computing},
+ link = {http://doi.acm.org/10.1145/2554688.2554700},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {241--241},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Configurable Mapreduce Accelerator for Multi-core FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Pus:2014:ASP:2554688.2554754,
+ abstract = {The paper deals with the design of application-specific processor which uses high level synthesized instruction engines. This approach is demonstrated on the instance of high speed network flow measurement processor for FPGA. Our newly proposed concept called Software Defined Monitoring (SDM) relies on advanced monitoring tasks implemented in the software supported by a configurable hardware accelerator. The monitoring tasks reside in the software and can easily control the level of detail retained by the hardware for each flow. This way, the measurement of bulk/uninteresting traffic is offloaded to the hardware, while the interesting traffic is processed in the software. SDM enables creation of flexible monitoring systems capable of deep packet inspection at high throughput. We introduce the processor architecture and a workflow that allows to create hardware accelerated measurement modules (instructions) from the description in C/C++ language. The processor offloads various aggregations and statistics from the main system CPU. The basic type of offload is the NetFlow statistics aggregation. We create and evaluate three more aggregation instructions to demonstrate the flexibility of our system. Compared to the hand-written instructions, the high level synthesized instructions are slightly worse in terms of both FPGA resources consumption and frequency. However, the time needed for development is approximately half.},
+ acmid = {2554754},
+ address = {New York, NY, USA},
+ author = {Pu\v{s}, Viktor and Ben\'{a}\v{c}ek, Pavel},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554754},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpga, high-level synthesis, network measurement, processor},
+ link = {http://doi.acm.org/10.1145/2554688.2554754},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {246--246},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Application Specific Processor with High Level Synthesized Instructions (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Lamberti:2014:XED:2554688.2554714,
+ abstract = {In this work, we propose a modified DEFENSE architecture termed as xDEFENSE that can detect and react to hardware attacks in real-time. In the past, several Root of Trust architectures such as DEFENSE and RETC have been proposed to foil attempts by hardware Trojans to leak sensitive information. In a typical Root of Trust architecture scenario, hardware is allowed to access the memory only by responding properly to a challenge requested by the memory guard. However in a recent effort, we observed that these architectures can in fact be susceptible to a variety of threats ranging from denial of service attacks, privilege escalation to information leakage, by injecting a Trojan into the Root of Trust modules such as memory guards and authorized hardware. In our work, we propose a security monitor that monitors all transactions between the authorized hardware, memory guard and memory. It also authenticates these components through the use of Hashed Message Authentication Codes (HMAC) to detect any invalid memory access or denial of service attack by disrupting the challenge-response pairs. The proposed xDEFENSE architecture was implemented on a Xilinx SPARTAN 3 FPGA evaluation board and our results indicate that xDEFENSE requires 143 additional slices as compared to DEFENSE and incurs a monitoring latency of 22ns.},
+ acmid = {2554714},
+ address = {New York, NY, USA},
+ author = {Lamberti, James and Manikantan Shila, Devu and Venugopal, Vivek},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554714},
+ isbn = {978-1-4503-2671-1},
+ keyword = {architecture, denial of service attacks, hardware trojan threats, information leakage, root of trust, security monitor, trojan detection},
+ link = {http://doi.acm.org/10.1145/2554688.2554714},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {253--253},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {xDEFENSE: An Extended DEFENSE for Mitigating Next Generation Intrusions (Abstract Only)},
+ year = {2014}
+}
+
+
+@proceedings{Hutchings:2013:2435264,
+ abstract = {It is our great pleasure to welcome you to the 2013 ACM International Symposium on FPGAs (FPGA 2013). This year's symposium continues its tradition of being a premier forum for the presentation of FPGA-related research across a wide variety of topics: new FPGA architectures and circuit designs, enhancements to Computer-Aided Design (CAD) algorithms and flows, applications well-suited to FPGAs, and design studies. In addition to facilitating the sharing of research results through the paper and poster presentations, FPGA provides an excellent opportunity for researchers from around the world to mingle and discuss research results and ideas. This year we received 106 submissions from twenty-one countries. The program committee accepted 24 full (ten page) and 4 short (four page) papers, each of which are published in the proceedings, for an acceptance rate of 26%. Full papers will each also have a twenty-minute oral presentation, while short papers will have a five-minute oral presentation, followed by a poster presentation at which attendees can further discuss the work with the authors. Finally we will have four poster sessions in which a total of 37 additional research projects will be displayed on posters, and at which you may ask detailed questions of the authors. This year the symposium begins with a day of tutorials related to high-level synthesis and design flows for FPGAs. A total of four tutorials will be presented in two parallel tracks, and the threehour length of each tutorial allows an in-depth presentation on each of the four design flows and tools. The symposium also includes an evening panel moderated by Jason Cong of UCLA on the question of "Are FPGAs Suffering from the Innovator's Dilemna?" Bring your questions for our panel of industry experts, and enjoy a lively discussion on whether the barriers to entry to the FPGA industry are helping or harming innovation.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1887-7},
+ location = {Monterey, California, USA},
+ publisher = {ACM},
+ title = {FPGA '13: Proceedings of the ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+ year = {2013}
+}
+
+
+@inproceedings{Ni:2014:MGM:2554688.2554750,
+ abstract = {Systolic arrays (SA) in a FPGA provide a significant speed up on many scientific calculations through massive parallelism exploitation. The low-level hardware design of such complex SA is becoming more time-consuming and non-scalable with more transistors being available on a single chip. In this paper we present a novel methodology to generate multi-dimensional SA for FPGAs using a well-accepted high-level language, OpenCL. Kernels written in OpenCL can then be compiled directly into hardware using an OpenCL high-level synthesis tool. A complex case study using our methodology is presented. We were able to design, generate, verify and optimize the entire FPGA based hardware accelerator using the Smith-Waterman, in only three man weeks. The accelerator's top performance was 32.6 GCUPS (Giga-Cell-Updates-Per-Second) on a DNA similarity search with 1.3 GCUPS/watt efficiency. The result is superior to most state-of-the-art CPU/GPU implementations and competitive against a hand-crafted hardware design which took many months to develop.},
+ acmid = {2554750},
+ address = {New York, NY, USA},
+ author = {Ni, Nick},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554750},
+ isbn = {978-1-4503-2671-1},
+ keyword = {algorithm, bioinformatics, fpga, generation, high-level synthesis, opencl, productivity, smith-waterman, systolic arrays},
+ link = {http://doi.acm.org/10.1145/2554688.2554750},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {255--255},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Methodology to Generate Multi-dimensional Systolic Arrays for FPGAs Using openCL (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Duarte:2014:PPB:2554688.2554717,
+ abstract = {The continuous scaling of the fabrication process combined with the ever increasing need of high performance designs, means that the era of treating all devices the same is about to come to an end. The presented work considers device oriented optimisations in order to further boost the performance of a Linear Projection design by focusing on the over-clocking of arithmetic operators. A methodology is proposed for the acceleration of Linear Projection designs on an FPGA, that introduces information about the performance of the hardware under over-clocking conditions to the application level. The novelty of this method is a pre-characterisation of the most prone to error arithmetic operators and the utilisation of this information in the high-level optimization process of the design. This results in a set of circuit designs that achieve higher throughput with minimum error. FPGA devices are suitable for such optimisations due to their reconfigurability feature that allows performance characterisation of the underlying fabric prior to the design of the final system. The reported results show that significant gains in the performance of the system can be achieved, i.e. up to 1.85 times speed up in the throughput compared to existing methodologies, when such device specific optimisation is considered.},
+ acmid = {2554717},
+ address = {New York, NY, USA},
+ author = {Duarte, Rui Policarpo and Bouganis, Christos-Savvas},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554717},
+ isbn = {978-1-4503-2671-1},
+ keyword = {device characterisation, fpga, linear projection, over-clocking},
+ link = {http://doi.acm.org/10.1145/2554688.2554717},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {245--245},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Pushing the Performance Boundary of Linear Projection Designs Through Device Specific Optimisations (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Cong:2014:CCC:2554688.2554771,
+ abstract = {Data streaming is a widely-used technique to exploit task-level parallelism in many application domains such as video processing, signal processing and wireless communication. In this paper we propose an efficient system-level synthesis flow to map streaming applications onto FPGAs with consideration of simultaneous computation and communication optimizations. The throughput of a streaming system is significantly impacted by not only the performance and number of replicas of the computation kernels, but also the buffer size allocated for the communications between kernels. In general, module selection/replication and buffer size optimization were addressed separately in previous work. Our approach combines these optimizations together in system scheduling which minimizes the area cost for both logic and memory under the required throughput constraint. We first propose an integer linear program (ILP) based solution to the combined problem which has the optimal quality of results. Then we propose an iterative algorithm which can achieve the near-optimal quality of results but has a significant improvement on the algorithm scalability for large and complex designs. The key contribution is that we have a polynomial-time algorithm for an exact schedulability checking problem and a polynomial-time algorithm to improve the system performance with better module implementation and buffer size optimization. Experimental results show that compared to the separate scheme of module select/replication and buffer size optimization, the combined optimization scheme can gain 62% area saving on average under the same performance requirements. Moreover, our heuristic can achieve 2 to 3 orders of magnitude of speed-up in runtime, with less than 10% area overhead compared to the optimal solution by ILP.},
+ acmid = {2554771},
+ address = {New York, NY, USA},
+ author = {Cong, Jason and Huang, Muhuan and Zhang, Peng},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554771},
+ isbn = {978-1-4503-2671-1},
+ keyword = {buffer size optimization, fpga, module duplication, module selection, streaming applications, system-level synthesis},
+ link = {http://doi.acm.org/10.1145/2554688.2554771},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {213--222},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Combining Computation and Communication Optimizations in System Synthesis for Streaming Applications},
+ year = {2014}
+}
+
+
+@inproceedings{Gharibian:2014:MIP:2554688.2554726,
+ abstract = {Due to the rapid growth in the size of designs and Field Programmable Gate Arrays (FPGAs), CAD run-time has increased dramatically. Reducing FPGA design compilation times without degrading circuit performance is crucial. In this work, we describe a novel approach for incremental design flows that both identifies tightly grouped FPGA logic blocks and then uses this information during circuit placement. Our approach reduces placement run-time on average by more than 17% while typically maintaining the design's critical path delay and marginally increasing its minimum channel width and wire length on average. Instead of following the traditional approach of evaluating a circuit's pre-placement netlist, this new algorithm analyzes designs post-placement to detect proximity data. It uses this information to non-aggressively extract heterogeneous cluster groupings from the design, which we call "gems," that consist of two to seventeen clusters. We modified VPR's simulated annealing placement algorithm to use our Singularity Placer, which first crushes each cluster grouping into a "singularity," to be treated as a single cluster. We then run the annealer over this condensed circuit, followed by an expansion of the singularities, and a second annealing phase for the entire expanded circuit.},
+ acmid = {2554726},
+ address = {New York, NY, USA},
+ author = {Gharibian, Farnaz and Shannon, Lesley and Jamieson, Peter},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554726},
+ isbn = {978-1-4503-2671-1},
+ keyword = {cad, clustering, fpga, placement},
+ link = {http://doi.acm.org/10.1145/2554688.2554726},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {242--242},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {A Methodology for Identifying and Placing Heterogeneous Cluster Groups Based on Placement Proximity Data (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Meng:2014:PFD:2554688.2554729,
+ abstract = {The real-time detection of defects in Flat-Panel Displays (FPDs) is very important during the production stages. This paper describes the manner in which defects induced by bubbles are detected as fast as possible by using 4-stage image processing pipelines with 3-line buffers on a Field-Programmable Gate Array (FPGA). The image processing consists of reading a Time Delay Integration (TDI) image, Laplacian filtering, binarization, and labeling. TDI is applied to the initial image of the FPD to reduce noises induced when taking the FPD images. Laplacian filtering and binarization are used to detect the edges in the image, and labeling is used to number the objects in the image for defect detection. In the 4-stage pipelining, the first stage reads the TDI image from the Block Random Access Memory (BRAM), the second stage implements Laplacian filtering and binarization, the third stage implements labeling, and the final stage revises the labels and writes them into the BRAM. The target pixel and its eight surrounding neighbors are required during Laplacian filtering, and four neighbors are necessary during labeling. Thus, three line registers (3-line buffer) are used as a general pipeline register between two neighboring stages in our system. The pipelining system accesses these 3-line buffers and runs four image processing steps in parallel. Therefore, the system uses four different addresses to access the BRAM and the 3-line buffers. Further, to facilitate performance comparison, we implemented sequential image processing systems with 3-line buffers on FPGA and CPU software. The experiments reveal that Laplacian filtering, binarization, and labeling for FPD defect detection can be executed in less than 1 ms by using four-stage pipelining on an FPGA, which is 3.62 times faster than the sequential system and 158.7 times faster than the CPU software. The pipelining system is 28% larger as compared to the sequential system in terms of the size of the LUTs.},
+ acmid = {2554729},
+ address = {New York, NY, USA},
+ author = {Meng, Lin and Matsuyama, Keisuke and Nojiri, Naoto and Izumi, Tomonori and Yamazaki, Katsuhiro},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554729},
+ isbn = {978-1-4503-2671-1},
+ keyword = {fpd defect detection, fpga, line buffer, pipelining},
+ link = {http://doi.acm.org/10.1145/2554688.2554729},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {254--254},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Pipelining FPPGA-based Defect Detction in FPDs (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Levine:2014:DVF:2554688.2554784,
+ abstract = {Timing margins in FPGAs are already significant and as process scaling continues they will have to grow to guarantee operation under increased variation. Margins enforce worst-case operation even in typical conditions and result in devices operating more slowly and consuming more energy than necessary. This paper presents a method of dynamic voltage and frequency scaling that uses online slack measurement to determine timing headroom in a circuit while it is operating and scale the voltage and/or frequency in response. Doing so can significantly reduce power consumption or increase throughput with a minimal overhead. The method is demonstrated on a number of benchmark circuits under a range of operating conditions, constraints and optimisation targets.},
+ acmid = {2554784},
+ address = {New York, NY, USA},
+ author = {Levine, Joshua M. and Stott, Edward and Cheung, Peter Y.K.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554784},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dynamic voltage and frequency scaling, fpga, self-test, timing measurement},
+ link = {http://doi.acm.org/10.1145/2554688.2554784},
+ location = {Monterey, California, USA},
+ numpages = {10},
+ pages = {65--74},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Dynamic Voltage \&\#38; Frequency Scaling with Online Slack Measurement},
+ year = {2014}
+}
+
+
+@inproceedings{Abusultan:2014:FLD:2554688.2554708,
+ abstract = {Field programmable gate arrays (FPGAs) are the implementation platform of choice when it comes to design flexibility. However, the high power consumption of FPGAs (which arises due to their flexible structure), make them less appealing for extreme low power applications. In this paper, we present a design of an FPGA look-up table (LUT), with the goal of seamless operation over a wide band of supply voltages. The same LUT design has the ability to operate at sub-threshold voltage when low power is required, and at higher voltages whenever faster performance is required. The results show that operating the LUT in sub-threshold mode yields a (~80x) lower power and (~4x) lower energy than full supply voltage operation, for a 6-input LUT implemented in a 22nm predictive technology. The key drawback of sub-threshold operation is its susceptibility to process, temperature, and supply voltage (PVT) variations. This paper also presents the design and experimental results for a closed-loop adaptive body biasing mechanism to dynamically cancel these PVT variations. For the same 22nm technology, we demonstrate that the closed-loop adaptive body biasing circuits can allow the FPGA to operate over an operating frequency range that spans an order of magnitude (40 MHz to 1300 MHz). We also show that the closed-loop adaptive body biasing circuits can cancel delay variations due to supply voltage changes, and reduce the effect of process variations on setup and hold times by 1.8x and 2.9x respectively.},
+ acmid = {2554708},
+ address = {New York, NY, USA},
+ author = {Abusultan, Monther and Khatri, Sunil P.},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554708},
+ isbn = {978-1-4503-2671-1},
+ keyword = {dvfs, dynamic body bias, fpga, low power, lut, pvt variation cancellation, subthreshold},
+ link = {http://doi.acm.org/10.1145/2554688.2554708},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {241--241},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {FPGA LUT Design for Wide-band Dynamic Voltage and Frequency Scaled Operation (Abstract Only)},
+ year = {2014}
+}
+
+
+@inproceedings{Zhang:2014:CRR:2554688.2554740,
+ abstract = {The significance of FPGA test and the challenge of its increasing cost can never be ignored. In island-style FPGA architectures, hex lines are the principal interconnect resources. Testing hex lines and hex Programmable Interconnect Points (PIPs) have remained as the major technical difficulty in FPGAs test due to complex interconnect rules. Particularly, test in oblique direction of hex PIPs has rarely been addressed in previous studies. Towards this challenge, this paper for the first time proposes a coordinate system and formulates the interconnect rules of hex lines as mathematical equations. For hex PIPs in horizontal and vertical direction, an efficient circle test structure is formed by coordinate equations. For hex PIPs in oblique direction, the coordinate method is used to generate the partial-cascade pattern. The corresponding test vector is also generated, which ensures the ergodicity of hex PIPs in oblique direction. In addition to hex PIPs, hex lines are also covered without extra effort. Compared to previous researches, the configuration number for hex lines is decreased significantly. We evaluate this method on Xilinx XC2V1000, and experimental results show that our proposed method achieves 100% fault coverage for hex PIPs and can be generally applied to all mainstream island-style FPGAs with a similar interconnect structure currently.},
+ acmid = {2554740},
+ address = {New York, NY, USA},
+ author = {Zhang, Fan and Chen, Lei and Xu, Wenyao and Zhao, Yuanfu and Wen, Zhiping},
+ booktitle = {Proceedings of the 2014 ACM/SIGDA International Symposium on Field-programmable Gate Arrays},
+ doi = {10.1145/2554688.2554740},
+ isbn = {978-1-4503-2671-1},
+ keyword = {coordinate, hex pips, horizontal and vertical direction, mathematical equations, oblique direction, partial-cascade},
+ link = {http://doi.acm.org/10.1145/2554688.2554740},
+ location = {Monterey, California, USA},
+ numpages = {1},
+ pages = {254--254},
+ publisher = {ACM},
+ series = {FPGA '14},
+ title = {Coordinating Routing Resources for Hex Pips Test in Island-style FPGAs (Abstract Only)},
+ year = {2014}
+}
+
+
