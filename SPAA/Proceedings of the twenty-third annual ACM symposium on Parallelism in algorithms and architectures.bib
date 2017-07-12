@@ -1,0 +1,1038 @@
+@inproceedings{Riegel:2011:OHT:1989493.1989501,
+ abstract = {Transactional memory (TM) is a speculative shared-memory synchronization mechanism used to speed up concurrent programs. Most current TM implementations are software-based (STM) and incur noticeable overheads for each transactional memory access. Hardware TM proposals (HTM) address this issue but typically suffer from other restrictions such as limits on the number of data locations that can be accessed in a transaction. In this paper, we present several new hybrid TM algorithms that can execute HTM and STM transactions concurrently and can thus provide good performance over a large spectrum of workloads. The algorithms exploit the ability of some HTMs to have both speculative and nonspeculative (nontransactional) memory accesses within a transaction to decrease the transactions' runtime overhead, abort rates, and hardware capacity requirements. We evaluate implementations of these algorithms based on AMD's Advanced Synchronization Facility, an x86 instruction set extension proposal that has been shown to provide a sound basis for HTM.},
+ acmid = {1989501},
+ address = {New York, NY, USA},
+ author = {Riegel, Torvald and Marlier, Patrick and Nowack, Martin and Felber, Pascal and Fetzer, Christof},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989501},
+ isbn = {978-1-4503-0743-7},
+ keyword = {transactional memory},
+ link = {http://doi.acm.org/10.1145/1989493.1989501},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {53--64},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Optimizing Hybrid Transactional Memory: The Importance of Nonspeculative Operations},
+ year = {2011}
+}
+
+
+@inproceedings{Even:2011:OPG:1989493.1989525,
+ abstract = {We present the first online algorithm with a polylogarithmic competitive ratio for the problem of online routing of packets in unidirectional grids. The goal is to maximize the throughput, i.e., the number of delivered packets. Our online algorithm is deterministic, centralized, handles packets with deadlines, allows bounded buffers, uses adaptive routing, and may drop packets before they reach their destination. All previous online algorithms for packet routing on a unidirectional line with polylogarithmic competitive ratios are randomized [AZ05, AKK09, EM10]. Our algorithm is the first deterministic online algorithm with a polylogarithmic competitive ratio.},
+ acmid = {1989525},
+ address = {New York, NY, USA},
+ author = {Even, Guy and Medina, Moti},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989525},
+ isbn = {978-1-4503-0743-7},
+ keyword = {admission control, bounded buffers, online algorithms, packet routing},
+ link = {http://doi.acm.org/10.1145/1989493.1989525},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {215--224},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Online Packet-routing in Grids with Bounded Buffers},
+ year = {2011}
+}
+
+
+@inproceedings{Tang:2011:PSC:1989493.1989508,
+ abstract = {A stencil computation repeatedly updates each point of a d-dimensional grid as a function of itself and its near neighbors. Parallel cache-efficient stencil algorithms based on "trapezoidal decompositions" are known, but most programmers find them difficult to write. The Pochoir stencil compiler allows a programmer to write a simple specification of a stencil in a domain-specific stencil language embedded in C++ which the Pochoir compiler then translates into high-performing Cilk code that employs an efficient parallel cache-oblivious algorithm. Pochoir supports general d-dimensional stencils and handles both periodic and aperiodic boundary conditions in one unified algorithm. The Pochoir system provides a C++ template library that allows the user's stencil specification to be executed directly in C++ without the Pochoir compiler (albeit more slowly), which simplifies user debugging and greatly simplified the implementation of the Pochoir compiler itself. A host of stencil benchmarks run on a modern multicore machine demonstrates that Pochoir outperforms standard parallelloop implementations, typically running 2-10 times faster. The algorithm behind Pochoir improves on prior cache-efficient algorithms on multidimensional grids by making "hyperspace" cuts, which yield asymptotically more parallelism for the same cache efficiency.},
+ acmid = {1989508},
+ address = {New York, NY, USA},
+ author = {Tang, Yuan and Chowdhury, Rezaul Alam and Kuszmaul, Bradley C. and Luk, Chi-Keung and Leiserson, Charles E.},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989508},
+ isbn = {978-1-4503-0743-7},
+ keyword = {C++, cache-oblivious algorithm, cilk, compiler, embedded domain-specific language, multicore, parallel computation, stencil computation, trapezoidal decomposition},
+ link = {http://doi.acm.org/10.1145/1989493.1989508},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {117--128},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {The Pochoir Stencil Compiler},
+ year = {2011}
+}
+
+
+@inproceedings{Acar:2011:PDW:1989493.1989498,
+ abstract = {Parallel algorithms and dynamic algorithms possess an interesting duality property: compared to sequential algorithms, parallel algorithms improve run-time while preserving work, while dynamic algorithms improve work but typically offer no parallelism. Although they are often considered separately, parallel and dynamic algorithms employ similar design techniques. They both identify parts of the computation that are independent of each other. This suggests that dynamic algorithms could be parallelized to improve work efficiency while preserving fast parallel run-time. In this paper, we parallelize a dynamic algorithm for well-spaced point sets, an important problem related to mesh refinement in computational geometry. Our parallel dynamic algorithm computes a well-spaced superset of a dynamically changing set of points, allowing arbitrary dynamic modifications to the input set. On an EREW PRAM, our algorithm processes batches of k modifications such as insertions and deletions in O(k log Δ) total work and in O(log Δ) parallel time using k processors, where Δ is the geometric spread of the data, while ensuring that the output is always within a constant factor of the optimal size. EREW PRAM model is quite different from actual hardware such as modern multiprocessors. We therefore describe techniques for implementing our algorithm on modern multi-core computers and provide a prototype implementation. Our empirical evaluation shows that our algorithm can be practical, yielding a large degree of parallelism and good speedups.},
+ acmid = {1989498},
+ address = {New York, NY, USA},
+ author = {Acar, Umut A. and Cotter, Andrew and Hudson, Benoit and T\"{u}rkoglu, Duru},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989498},
+ isbn = {978-1-4503-0743-7},
+ keyword = {mesh refinement, multithreading, parallel batch dynamic updates, self-adjusting computation, voronoi diagrams, well-spaced point sets},
+ link = {http://doi.acm.org/10.1145/1989493.1989498},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {33--42},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Parallelism in Dynamic Well-spaced Point Sets},
+ year = {2011}
+}
+
+
+@inproceedings{Locher:2011:FHD:1989493.1989541,
+ abstract = {A simple indicator for an anomaly in a network is a rapid increase in the total number of distinct network connections. While it is fairly easy to maintain an accurate estimate of the current total number of distinct connections using streaming algorithms that exhibit both a low space and computational complexity, identifying the network entities that are involved in the largest number of distinct connections efficiently is considerably harder. In this paper, we study the problem of finding all entities whose number of distinct (outgoing or incoming) network connections is at least a specific fraction of the total number of distinct connections. These entities are referred to as heavy distinct hitters. Since this problem is hard in general, we focus on randomized approximation techniques and propose a sampling-based and a sketch-based streaming algorithm. Both algorithms output a list of the potential heavy distinct hitters including the estimated counts of the corresponding number of distinct connections. We prove that, depending on the required level of accuracy of the output list, the space complexities of the presented algorithms are asymptotically optimal up to small logarithmic factors. Additionally, the algorithms are evaluated and compared using real network data in order to determine their usefulness in practice.},
+ acmid = {1989541},
+ address = {New York, NY, USA},
+ author = {Locher, Thomas},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989541},
+ isbn = {978-1-4503-0743-7},
+ keyword = {anomaly detection, heavy distinct hitter, network monitoring, space complexity, streaming algorithms},
+ link = {http://doi.acm.org/10.1145/1989493.1989541},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {299--308},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Finding Heavy Distinct Hitters in Data Streams},
+ year = {2011}
+}
+
+
+@inproceedings{Blelloch:2011:LGP:1989493.1989497,
+ abstract = {We present parallel greedy approximation algorithms for set cover and related problems. These algorithms build on an algorithm for solving a graph problem we formulate and study called Maximal Nearly Independent Set (MaNIS)---a graph abstraction of a key component in existing work on parallel set cover. We derive a randomized algorithm for MaNIS that has O(m) work and O(log2 m) depth on input with m edges. Using MaNIS, we obtain RNC algorithms that yield a (1+ε)Hn-approximation for set cover, a (1 - 1/e -ε)-approximation for max cover and a (4 + ε)-approximation for min-sum set cover all in linear work; and an O(log* n)-approximation for asymmetric k-center for k ≤ logO(1) n and a (1.861+ε)-approximation for metric facility location both in essentially the same work bounds as their sequential counterparts.},
+ acmid = {1989497},
+ address = {New York, NY, USA},
+ author = {Blelloch, Guy E. and Peng, Richard and Tangwongsan, Kanat},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989497},
+ isbn = {978-1-4503-0743-7},
+ keyword = {approximation algorithms, facility location, max cover, parallel algorithms, set cover},
+ link = {http://doi.acm.org/10.1145/1989493.1989497},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {23--32},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Linear-work Greedy Parallel Approximate Set Cover and Variants},
+ year = {2011}
+}
+
+
+@inproceedings{Sundell:2011:LAC:1989493.1989550,
+ abstract = {A lock-free bag data structure supporting unordered buffering is presented in this paper. The algorithm supports multiple producers and multiple consumers, as well as dynamic collection sizes. To handle concurrency efficiently, the algorithm was designed to thrive for disjoint-access-parallelism for the supported semantics. Therefore, the algorithm exploits a distributed design combined with novel techniques for handling concurrent modifications of linked lists using double marks, detection of total emptiness, and efficient memory management with hazard pointer handover. Experiments on a 24-way multi-core platform show significantly better performance for the new algorithm compared to previous algorithms of relevance.},
+ acmid = {1989550},
+ address = {New York, NY, USA},
+ author = {Sundell, H{\aa}kan and Gidenstam, Anders and Papatriantafilou, Marina and Tsigas, Philippas},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989550},
+ isbn = {978-1-4503-0743-7},
+ keyword = {concurrent, data structure, non-blocking, shared memory},
+ link = {http://doi.acm.org/10.1145/1989493.1989550},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {335--344},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {A Lock-free Algorithm for Concurrent Bags},
+ year = {2011}
+}
+
+
+@inproceedings{Blelloch:2011:SIP:1989493.1989553,
+ abstract = {For nested-parallel computations with low depth (span, critical path length) analyzing the work, depth, and sequential cache complexity suffices to attain reasonably strong bounds on the  parallel runtime and cache complexity on machine models with either shared or private caches. These bounds, however, do not extend to general hierarchical caches, due to limitations in (i) the cache-oblivious (CO) model used to analyze cache complexity and (ii) the schedulers used to map computation tasks to processors. This paper presents the parallel cache-oblivious (PCO) model, a relatively simple modification to the CO model that can be used to account for costs on a broad range of cache hierarchies. The first change is to avoid capturing artificial data sharing among parallel threads, and the second is to account for parallelism-memory imbalances within tasks. Despite the more restrictive nature of PCO compared to CO, many algorithms have the same asymptotic cache complexity bounds. The paper then describes a new scheduler for hierarchical caches, which extends recent work on "space-bounded schedulers" to allow for computations with arbitrary work imbalance among parallel subtasks. This scheduler attains provably good cache performance and runtime on parallel machine models with hierarchical caches, for nested-parallel computations analyzed using the PCO model. We show that under reasonable assumptions our scheduler is "work efficient" in the sense that the cost of the cache misses are evenly balanced across the processors---i.e., the runtime can be determined within a constant factor by taking the total cost of the cache misses analyzed for a computation and dividing it by the number of processors. In contrast, to further support our model, we show that no scheduler can achieve such bounds (optimizing for both cache misses and runtime) if work, depth, and sequential cache complexity are the only parameters used to analyze a computation.},
+ acmid = {1989553},
+ address = {New York, NY, USA},
+ author = {Blelloch, Guy E. and Fineman, Jeremy T. and Gibbons, Phillip B. and Simhadri, Harsha Vardhan},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989553},
+ isbn = {978-1-4503-0743-7},
+ keyword = {analysis of parallel algorithms, cache complexity, cost models, parallel hierarchical memory, schedulers},
+ link = {http://doi.acm.org/10.1145/1989493.1989553},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {355--366},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Scheduling Irregular Parallel Computations on Hierarchical Caches},
+ year = {2011}
+}
+
+
+@inproceedings{Aupy:2011:BAR:1989493.1989512,
+ abstract = {We consider a task graph to be executed on a set of processors. We assume that the mapping is given, say by an ordered list of tasks to execute on each processor, and we aim at optimizing the energy consumption while enforcing a prescribed bound on the execution time. While it is not possible to change the allocation of a task, it is possible to change its speed. We study the complexity of the problem for different models: continuous speeds, discrete modes, distributed either arbitrarily or regularly, and VDD-hopping.},
+ acmid = {1989512},
+ address = {New York, NY, USA},
+ author = {Aupy, Guilaume and Benoit, Anne and Dufoss{\'e}, Fanny and Robert, Yves},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989512},
+ isbn = {978-1-4503-0743-7},
+ keyword = {algorithms, bi-criteria optimization, complexity, energy models, scheduling.},
+ link = {http://doi.acm.org/10.1145/1989493.1989512},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {135--136},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Reclaiming the Energy of a Schedule, Models and Algorithms},
+ year = {2011}
+}
+
+
+@proceedings{aufderHeide:2010:1810479,
+ abstract = {This volume consists the 35 regular papers and 10 brief announcements selected for presentation at the 22nd ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'10),, held June 13-15, 2010, in Santorini, Greece. It contains abstracts of the two keynote talks given by Anastasia ("Natassa") Ailamaki and Geoffery Fox. At the end, there is a corrigendum by Srikanth Sastry, Scott Pike, and Jennifer Welch for their paper "Weakest Failure Detector for Wait-Free Dining under Eventual Weak Exclusion," which appeared last year in SPAA'09. The program committee selected the 35 regular and 10 brief presentations after an initial electronic discussion, a nearly all-day telephone conference on March 11, 2010, and a final round of electronic discussion on March 11 and 12, 2010. There were 110 submissions, of which 108 survived the first day after the submission deadline. Of these, 104 were long submissions and 4 were short submissions. The paper "Basic Network Creation Games" by Noga Alon, Erik Demaine, MohammadTaghi Hajiaghayi, and Tom Leighton was selected the best paper. The mix of selected papers reflects SPAA's intention to bring together the theory and practice of parallel computing. Thus this year's paper include strong theory papers, as well as papers containing strong experimental analysis. SPAA defines parallelism broadly to encompass any computational device or scheme that can perform multiple operations or tasks simultaneously or concurrently. Thus papers in this volume consider multithreading, multicore platforms, streaming, network algorithms, energy-aware computing, software tools, and more. The technical papers in this volume are to be considered preliminary versions, and authors are generally expected to publish polished and complete versions in archival scientific journals. The committee selected the 10 brief announcements based on perceived interest to the SPAA attendees and their potential to seed new research in parallel algorithms and architectures. Extended versions of the SPAA brief announcements may be published later in other conferences or journals.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0079-7},
+ location = {Thira, Santorini, Greece},
+ note = {417100},
+ publisher = {ACM},
+ title = {SPAA '10: Proceedings of the Twenty-second Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ year = {2010}
+}
+
+
+@inproceedings{Ehsani:2011:BBN:1989493.1989523,
+ abstract = {We consider a network creation game in which, each player (vertex) has a limited budget to establish links to other players. In our model, each link has a unit cost and each agent tries to minimize its cost which is its local diameter or its total distance to other players in the (undirected) underlying graph of the created network. Two variants of the game are studied: in the MAX version, the cost incurred to a vertex is the maximum distance between that vertex and other vertices, and in the SUM version, the cost incurred to a vertex is the sum of distances between that vertex and other vertices. We prove that in both versions pure Nash equilibria exist, but the problem of finding the best response of a vertex is NP-hard. Next, we study the maximum possible diameter of an equilibrium graph with n vertices in various cases. For infinite numbers of n, we construct an equilibrium tree with diameter Θ(n) in the MAX version. Also, we prove that the diameter of any equilibrium tree is O(log n) in the SUM version and this bound is tight. When all vertices have unit budgets (i.e.~can establish link to just one vertex), the diameter in both versions is O(1). We give an example of equilibrium graph in MAX version, such that all vertices have positive budgets and yet the diameter is as large as Ω(√log n). This interesting result shows that the diameter does not decrease necessarily and may increase as the budgets are increased. For the SUM version, we prove that every equilibrium graph has diameter 2O(√log n) when all vertices have positive budgets. Moreover, if the budget of every players is at least k, then every equilibrium graph with diameter more than 3 is k-connected.},
+ acmid = {1989523},
+ address = {New York, NY, USA},
+ author = {Ehsani, Shayan and Fazli, MohammadAmin and Mehrabian, Abbas and Sadeghian Sadeghabad, Sina and Safari, MohammadAli and Saghafian, Morteza and ShokatFadaee, Saber},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989523},
+ isbn = {978-1-4503-0743-7},
+ keyword = {game theory, nash equilibrium, network design},
+ link = {http://doi.acm.org/10.1145/1989493.1989523},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {207--214},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {On a Bounded Budget Network Creation Game},
+ year = {2011}
+}
+
+
+@inproceedings{Aspnes:2011:TBA:1989493.1989548,
+ abstract = {We give matching upper and lower bounds of Θ(min(log m/log log m, n)) for the space and individual step complexity of a wait-free m-valued adopt-commit object implemented using multi-writer registers for n anonymous processes. While the upper bound is deterministic, the lower bound holds for randomized adopt-commit objects as well. Our results are based on showing that adopt-commit objects are equivalent up to small additive constants, to a simpler class of objects that we call weak conflict detectors. It follows that the same lower bound holds on the individual step complexity of m-valued wait-free anonymous consensus, for randomized algorithms with global coins against an oblivious adversary. The upper bound can also be used to slightly improve the cost of randomized consensus in the probabilistic-write model.},
+ acmid = {1989548},
+ address = {New York, NY, USA},
+ author = {Aspnes, James and Ellen, Faith},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989548},
+ isbn = {978-1-4503-0743-7},
+ keyword = {adopt-commit objects, anonymity, conflict detectors, consensus, distributed computing, shared memory},
+ link = {http://doi.acm.org/10.1145/1989493.1989548},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {317--324},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Tight Bounds for Anonymous Adopt-commit Objects},
+ year = {2011}
+}
+
+
+@inproceedings{Ladan-Mozes:2011:LMF:1989493.1989503,
+ abstract = {Traditional memory fences are program-counter (PC) based. That is, a memory fence enforces a serialization point in the program instruction stream --- it ensures that all memory references before the fence in the program order have taken effect before the execution continues onto instructions after the fence. Such PC-based memory fences always cause the processor to stall, even when the synchronization is unnecessary during a particular execution. We propose the concept of location-based memory fences, which aim to reduce the cost of synchronization due to the latency of memory fence execution in parallel algorithms. Unlike a PC-based memory fence, a location-based memory fence serializes the instruction stream of the executing thread T1 only when a different thread T2 attempts to read the memory location which is guarded by the location-based memory fence. In this work, we describe a hardware mechanism for location-based memory fences, prove its correctness, and evaluate its potential performance benefit. Our experimental results are based on a software simulation of the proposed location-based memory fence, and thus expected to incur higher overhead than the proposed hardware mechanism would. Nevertheless, our software experiments show that applications can benefit from using location-based memory fences, but they do not scale as well in some cases, due to the software overhead. These results suggest that a hardware support for location-based memory fences is worth considering.},
+ acmid = {1989503},
+ address = {New York, NY, USA},
+ author = {Ladan-Mozes, Edya and Lee, I-Ting Angelina and Vyukov, Dmitry},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989503},
+ isbn = {978-1-4503-0743-7},
+ keyword = {asymmetric synchronization, biased locks, location-based memory fences, memory fences, the dekker duality, the dekker protocol},
+ link = {http://doi.acm.org/10.1145/1989493.1989503},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {75--84},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Location-based Memory Fences},
+ year = {2011}
+}
+
+
+@inproceedings{Crain:2011:BAR:1989493.1989546,
+ abstract = {This brief announcement studies the relation between two STM properties (read invisibility and permissiveness) and two consistency conditions for STM systems, namely, opacity and virtual world consistency. A read operation issued by a transaction is invisible if it does not entail shared memory modifications. An STM system is permissive with respect to a consistency condition if it accepts every history that satisfies the condition. The brief announcement first shows that read invisibility, permissiveness and opacity are incompatible. It then shows that invisibility, permissiveness and virtual world consistency are compatible.},
+ acmid = {1989546},
+ address = {New York, NY, USA},
+ author = {Crain, Tyler and Imbs, Damien and Raynal, Michel},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989546},
+ isbn = {978-1-4503-0743-7},
+ keyword = {asynchronous shared memory system, commit/abort, concurrent object, consistency condition, opacity, permissiveness, software transactional memory, transaction, virtual world consistency},
+ link = {http://doi.acm.org/10.1145/1989493.1989546},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {315--316},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Read Invisibility, Virtual World Consistency and Permissiveness Are Compatible},
+ year = {2011}
+}
+
+
+@inproceedings{Kniesburges:2011:RSC:1989493.1989527,
+ abstract = {The Chord peer-to-peer system is considered, together with CAN, Tapestry and Pastry, as one of the pioneering works on peer-to-peer distributed hash tables (DHT) that inspired a large volume of papers and projects on DHTs as well as peer-to-peer systems in general. Chord, in particular, has been studied thoroughly, and many variants of Chord have been presented that optimize various criteria. Also, several implementations of Chord are available on various platforms. Though Chord is known to be very efficient and scalable and it can handle churn quite well, no protocol is known yet that guarantees that Chord is self-stabilizing, i.e., the Chord network can be recovered from any initial state in which the network is still weakly connected. This is not too surprising since it is known that in the Chord network it is not locally checkable whether its current topology matches the correct topology. We present a slight extension of the Chord network, called Re-Chord (reactive Chord), that turns out to be locally checkable, and we present a self-stabilizing distributed protocol for it that can recover the Re-Chord network from any initial state, in which the n peers are weakly connected, in O(n log n) communication rounds. We also show that our protocol allows a new peer to join or an old peer to leave an already stable Re-Chord network so that within O((log n)2) communication rounds the Re-Chord network is stable again.},
+ acmid = {1989527},
+ address = {New York, NY, USA},
+ author = {Kniesburges, Sebastian and Koutsopoulos, Andreas and Scheideler, Christian},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989527},
+ isbn = {978-1-4503-0743-7},
+ keyword = {chord, peer-to-peer networks, self-stabilizing protocols},
+ link = {http://doi.acm.org/10.1145/1989493.1989527},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {235--244},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Re-Chord: A Self-stabilizing Chord Overlay Network},
+ year = {2011}
+}
+
+
+@inproceedings{Caragea:2011:BAB:1989493.1989511,
+ abstract = {We present a parallel solution to the Maximum-Flow (Max-Flow) problem, suitable for a modern many-core architecture. We show that by starting from a PRAM algorithm, following an established "programmer's workflow" and targeting XMT, a PRAM-inspired many-core architecture, we achieve significantly higher speed-ups than previous approaches. Comparison with the fastest known serial max-flow implementation on a modern CPU demonstrates for the first time potential for orders-of-magnitude performance improvement for Max-Flow. Using XMT, the PRAM Max-Flow algorithm is also much easier to program than for other parallel platforms, contributing a powerful example toward dual validation of both PRAM algorithmics and XMT.},
+ acmid = {1989511},
+ address = {New York, NY, USA},
+ author = {Caragea, George Constantin and Vishkin, Uzi},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989511},
+ isbn = {978-1-4503-0743-7},
+ keyword = {many-core processors, max-flow, parallel algorithms, pram},
+ link = {http://doi.acm.org/10.1145/1989493.1989511},
+ location = {San Jose, California, USA},
+ numpages = {4},
+ pages = {131--134},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Better Speedups for Parallel Max-flow},
+ year = {2011}
+}
+
+
+@inproceedings{Albers:2011:MSS:1989493.1989539,
+ abstract = {We investigate a very basic problem in dynamic speed scaling where a sequence of jobs, each specified by an arrival time, a deadline and a processing volume, has to be processed so as to minimize energy consumption. Previous work has focused mostly on the setting where a single variable-speed processor is available. In this paper we study multi-processor environments with m parallel variable-speed processors assuming that job migration is allowed, i.e. whenever a job is preempted it may be moved to a different processor. We first study the offline problem and show that optimal schedules can be computed efficiently in polynomial time. In contrast to a previously known strategy, our algorithm does not resort to linear programming. We develop a fully combinatorial algorithm that relies on repeated maximum flow computations. The approach might be useful to solve other problems in dynamic speed scaling. For the online problem, we extend two algorithms Optimal Available and Average Rate proposed by Yao et al. [16] for the single processor setting. We prove that Optimal Available is αα-competitive, as in the single processor case. Here α>1 is the exponent of the power consumption function. While it is straightforward to extend Optimal Available to parallel processing environments, the competitive analysis becomes considerably more involved. For Average Rate we show a competitiveness of (3\α)α/2 + 2α.},
+ acmid = {1989539},
+ address = {New York, NY, USA},
+ author = {Albers, Susanne and Antoniadis, Antonios and Greiner, Gero},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989539},
+ isbn = {978-1-4503-0743-7},
+ keyword = {competitive analysis, energy efficiency, flow computation, offline algorithm, online algorithm},
+ link = {http://doi.acm.org/10.1145/1989493.1989539},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {279--288},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {On Multi-processor Speed Scaling with Migration: Extended Abstract},
+ year = {2011}
+}
+
+
+@proceedings{MeyeraufderHeide:2011:1989493,
+ abstract = {This volume consists of papers that were presented at the 23rd ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'11), held on June 4-6, 2011, in San Jose, USA. It was sponsored by the ACM Special Interest Groups on Algorithms and Computation Theory (SIGACT) and Computer Architecture (SIGARCH) and organized in cooperation with the European Association for Theoretical Computer Science (EATCS). SPAA'11 is part of the Federated Computing Research Conference (FCRC'11). Financial support was provided by Akamai and IBM Research. The program committee selected the 35 SPAA'11 regular presentations following electronic discussions and a day-long phone conference on March 4, 2011 that was graciously arranged by IBM Research. Of these papers, the paper "Graph Expansion and Communication Costs of Fast Matrix Multiplication" by Grey Ballard, James Demmel, Olga Holtz and Oded Schwartz was selected to receive the best paper award. The regular presentations were selected out of 116 submitted abstracts. The mix of selected papers reflects the unique nature of SPAA in bringing together the theory and practice of parallel computing. SPAA defines parallelism very broadly to encompass any computational device or scheme that can perform multiple operations or tasks simultaneously or concurrently. The technical papers in this volume are to be considered preliminary versions, and authors are generally expected to publish polished and complete versions in archival scientific journals. In addition to the regular presentations, this volume includes 15 brief announcements. The committee's decisions in accepting brief announcements were based on the perceived interest of these contributions, with the goal that they serve as bases for further significant advances in parallelism in computing. Extended versions of the SPAA brief announcements and posters may be published later in other conferences or journals. Finally, this year's program also included a panel discussion on teaching parallelism, featuring panelists Guy Blelloch, Charles Leiserson, Paul Petersen, Nir Shavit, and Uzi Vishkin, with Christian Scheideler as moderator.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0743-7},
+ location = {San Jose, California, USA},
+ note = {417110},
+ publisher = {ACM},
+ title = {SPAA '11: Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ year = {2011}
+}
+
+
+@inproceedings{Kling:2011:CLC:1989493.1989517,
+ abstract = {Consider two far apart base stations connected by an arbitrarily winding chain of n relay robots to transfer messages between them. Each relay acts autonomously, has a limited communication range, and knows only a small, local part of its environment. We seek a strategy for the relays to minimize the chain's length. We describe a large strategy class in form of linear transformations of the spatial vectors connecting neighboring robots. This yields surprising correlations between several strategy properties and characteristics of these transformations (e.g., "reasonable" strategies correspond to transformations given by doubly stochastic matrices). Based on these results, we give almost tight bounds on the strategies' convergence speed by applying and extending results about the mixing time of Markov chains. Eventually, our framework enables us to define strategies where each relay bases its decision where to move only on the positions of its k next left and right neighbors, and to prove a convergence speed of Θ(n2/k2 log n) for these strategies. This not only closes a gap between upper and lower runtime bounds of a known strategy (Go-To-The-Middle), but also allows for a trade-off between convergence properties and locality.},
+ acmid = {1989517},
+ address = {New York, NY, USA},
+ author = {Kling, Peter and Meyer auf der Heide, Friedhelm},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989517},
+ isbn = {978-1-4503-0743-7},
+ keyword = {distributed algorithms, gathering, local algorithms, markov chains, mixing time, swarm robotics},
+ link = {http://doi.acm.org/10.1145/1989493.1989517},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {159--166},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Convergence of Local Communication Chain Strategies via Linear Transformations: Or How to Trade Locality for Speed},
+ year = {2011}
+}
+
+
+@inproceedings{Dice:2011:BAM:1989493.1989545,
+ abstract = {We introduce an extremely simple transformation that allows composition of a more scalable concurrent blocking multiset, or bag, from multiple "lanes" of a potentially less scalable underlying multiset. Our design disperses accesses over the various lanes, reducing contention and memory coherence hot spots. Implemented in Java, for instance, we construct a multiset from multiple lanes of java.util.concurrent.SynchronousQueue that yields more than 8 times the aggregate throughput of a single instance of SynchronousQueue when run on a 64-way Sun Niagara-2 system with 16 producer threads and 16 consumer threads. We experimented with various queues from java.util.conconcurrent and found that in general a MultiLane form will outperform its underlying counterpart.},
+ acmid = {1989545},
+ address = {New York, NY, USA},
+ author = {Dice, David and Otenko, Oleksandr},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989545},
+ isbn = {978-1-4503-0743-7},
+ keyword = {bags, concurrency, concurrent multisets, message passing, producer-consumer, queues, resource pools},
+ link = {http://doi.acm.org/10.1145/1989493.1989545},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {313--314},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Multilane - a Concurrent Blocking Multiset},
+ year = {2011}
+}
+
+
+@inproceedings{Hajiaghayi:2011:LPC:1989493.1989538,
+ abstract = {We study a very natural local protocol for a file transfer problem. Consider a scenario where several files, which may have varied sizes and get created over a period of time, are to be transferred between pairs of hosts in a distributed environment. Our protocol assumes that while executing the file transfers, an individual host does not use any global knowledge; and simply subdivides its I/O resources equally among all the active file transfers at that host at any point in time. This protocol is motivated by its simplicity of use and its applications to scheduling map-reduce workloads. Here we study the problem of deciding the start times of individual file transfers to optimize QoS metrics like average completion time or MakeSpan. To begin with, we show that these problems are NP-hard. We next argue that the ability of scheduling multiple concurrent file transfers at a host makes our protocol stronger than previously studied protocols that schedule a sequence of matchings, in which no two active file transfers share a host at any time. We then generalize the approach of Queyranne and Sviridenko (J. Scheduling, 2002) and Gandhi et al. (ACM T. Algorithms, 2008) that relates the MakeSpan and completion time objectives and present constant factor approximation algorithms.},
+ acmid = {1989538},
+ address = {New York, NY, USA},
+ author = {Hajiaghayi, MohammadTaghi and Khandekar, Rohit and Kortsarz, Guy and Liaghat, Vahid},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989538},
+ isbn = {978-1-4503-0743-7},
+ keyword = {average completion time, file transfer, local protocol, makespan, scheduling},
+ link = {http://doi.acm.org/10.1145/1989493.1989538},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {269--278},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {On a Local Protocol for Concurrent File Transfers},
+ year = {2011}
+}
+
+
+@inproceedings{Hoefer:2011:AAS:1989493.1989520,
+ abstract = {We study combinatorial auctions for the secondary spectrum market. In this market, short-term licenses shall be given to wireless nodes for communication in their local neighborhood. In contrast to the primary market, channels can be assigned to multiple bidders, provided that the corresponding devices are well separated such that the interference is sufficiently low. Interference conflicts are described in terms of a conflict graph in which the nodes represent the bidders and the edges represent conflicts such that the feasible allocations for a channel correspond to the independent sets in the conflict graph. In this paper, we suggest a novel LP formulation for combinatorial auctions with conflict graph using a non-standard graph parameter, the so-called inductive independence number. Taking into account this parameter enables us to bypass the well-known lower bound of Ω(n1-ε) on the approximability of independent set in general graphs with n nodes (bidders). We achieve significantly better approximation results by showing that interference constraints for wireless networks yield conflict graphs with bounded inductive independence number. Our framework covers various established models of wireless communication, e.g., the protocol or the physical model. For the protocol model, we achieve an O(√k)-approximation, where k is the number of available channels. For the more realistic physical model, we achieve an O(√k log2 n) approximation based on edge-weighted conflict graphs. Combining our approach with the LP-based framework of Lavi and Swamy, we obtain incentive compatible mechanisms for general bidders with arbitrary valuations on bundles of channels specified in terms of demand oracles.},
+ acmid = {1989520},
+ address = {New York, NY, USA},
+ author = {Hoefer, Martin and Kesselheim, Thomas and V\"{o}cking, Berthold},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989520},
+ isbn = {978-1-4503-0743-7},
+ keyword = {SINR, combinatorial auctions, independent set problem, inductive independence number, physical interference model},
+ link = {http://doi.acm.org/10.1145/1989493.1989520},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {177--186},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Approximation Algorithms for Secondary Spectrum Auctions},
+ year = {2011}
+}
+
+
+@inproceedings{Pankratius:2011:STM:1989493.1989500,
+ abstract = {Transactional Memory (TM) promises to simplify parallel programming by replacing locks with atomic transactions. Despite much recent progress in TM research, there is very little experience using TM to develop realistic parallel programs from scratch. In this paper, we present the results of a detailed case study comparing teams of programmers developing a parallel program from scratch using transactional memory and locks. We analyze and quantify in a realistic environment the development time, programming progress, code metrics, programming patterns, and ease of code understanding for six teams who each wrote a parallel desktop search engine over a fifteen week period. Three randomly chosen teams used Intel's Software Transactional Memory compiler and Pthreads, while the other teams used just Pthreads. Our analysis is exploratory: Given the same requirements, how far did each team get? The TM teams were among the first to have a prototype parallel search engine. Compared to the locks teams, the TM teams spent less than half the time debugging segmentation faults, but had more problems tuning performance and implementing queries. Code inspections with industry experts revealed that TM code was easier to understand than locks code, because the locks teams used many locks (up to thousands) to improve performance. Learning from each team's individual success and failure story, this paper provides valuable lessons for improving TM.},
+ acmid = {1989500},
+ address = {New York, NY, USA},
+ author = {Pankratius, Victor and Adl-Tabatabai, Ali-Reza},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989500},
+ isbn = {978-1-4503-0743-7},
+ keyword = {transactional memory},
+ link = {http://doi.acm.org/10.1145/1989493.1989500},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {43--52},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {A Study of Transactional Memory vs. Locks in Practice},
+ year = {2011}
+}
+
+
+@inproceedings{Ballard:2011:BAC:1989493.1989531,
+ abstract = {As the gap between the cost of communication (i.e., data movement) and computation continues to grow, the importance of pursuing algorithms which minimize communication also increases. Toward this end, we seek asymptotic communication lower bounds for general memory models and classes of algorithms. Recent work has established lower bounds for a wide set of linear algebra algorithms on a sequential machine and on a parallel machine with identical processors. This work extends these previous bounds to a heterogeneous model in which processors access data and perform floating point operations at differing speeds. We also present an algorithm for dense matrix multiplication which attains the lower bound.},
+ acmid = {1989531},
+ address = {New York, NY, USA},
+ author = {Ballard, Grey and Demmel, James and Gearhart, Andrew},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989531},
+ isbn = {978-1-4503-0743-7},
+ keyword = {communication-avoiding, heterogeneity},
+ link = {http://doi.acm.org/10.1145/1989493.1989531},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {257--258},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Communication Bounds for Heterogeneous Architectures},
+ year = {2011}
+}
+
+
+@inproceedings{Lopez-Ortiz:2011:BAP:1989493.1989513,
+ abstract = {Paging for multicore processors extends the classical paging problem to a setting in which several processes simultaneously share the cache. Recently, Hassidim [6] studied cache eviction policies for multicores under the traditional competitive analysis metric, showing that LRU is not competitive against an offline policy that has the power of arbitrarily delaying request sequences to its advantage. In this paper we study caching under the more conservative model in which requests must be served as they arrive. We derive bounds on the competitive ratios of natural strategies to manage the cache, and we show that the offline problem is NP-complete, but that it admits an algorithm that runs in polynomial time in the length of the request sequences.},
+ acmid = {1989513},
+ address = {New York, NY, USA},
+ author = {L\'{o}pez-Ortiz, Alejandro and Salinger, Alejandro},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989513},
+ isbn = {978-1-4503-0743-7},
+ keyword = {cache, chip multiprocessor, multicore, online algorithms, paging},
+ link = {http://doi.acm.org/10.1145/1989493.1989513},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {137--138},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Paging for Multicore Processors},
+ year = {2011}
+}
+
+
+@inproceedings{Briest:2011:CSP:1989493.1989518,
+ abstract = {We consider a novel type of metric task system, termed the car sharing problem, in which the operator of a car sharing program aims to serve the requests of customers occurring at different locations. Requests are modeled as a stochastic process with known parameters and a request is served if a car is located at the position of its occurrence at this time. Customers pay the service provider according to the distance they travel and similarly the service provider incurs cost proportional to the distance traveled when relocating a car from one position to another between requests. We derive an efficient algorithm to compute a redistribution policy that yields average long-term revenue within a factor of 2 of optimal and provide a complementing proof of APX-hardness. Considering a variation of the problem in which requests occur simultaneously in all locations, we arrive at an interesting repeated balls-into-bins process, for which we prove bounds on the average number of occupied bins.},
+ acmid = {1989518},
+ address = {New York, NY, USA},
+ author = {Briest, Patrick and Raupach, Christoph},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989518},
+ isbn = {978-1-4503-0743-7},
+ keyword = {approximation algorithms, metric task systems, queuing networks},
+ link = {http://doi.acm.org/10.1145/1989493.1989518},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {167--176},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {The Car Sharing Problem},
+ year = {2011}
+}
+
+
+@inproceedings{Charron-Bost:2011:BAF:1989493.1989510,
+ abstract = {Although substantial analysis has been done on the Full Reversal (FR) routing algorithm since its introduction by Gafni and Bertsekas in 1981, a complete understanding of its functioning---especially its time complexity---has been missing until now. In this paper, we derive the first exact formula for the time complexity of FR: given any (acyclic) graph the formula provides the exact time complexity of any node in terms of some simple properties of the graph. Our major technical insight is to describe executions of FR as a dynamical system, and to observe that this system is linear in the min-plus algebra. As a consequence of the insight provided by the new formula, we are able to prove that FR is time-efficient when executed on tree networks. This result exposes an unstable aspect of the time complexity of FR that has not previously been reported. Finally, our results for FR are instrumental in providing an exact formula for the time complexity of a generalization of FR, as we show in a companion paper that the generalization can be reduced to FR.},
+ acmid = {1989510},
+ address = {New York, NY, USA},
+ author = {Charron-Bost, Bernadette and Fuegger, Matthias and Welch, Jennifer L. and Widder, Josef},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989510},
+ isbn = {978-1-4503-0743-7},
+ keyword = {linear dynamical systems, link reversal, min-plus algebra, routing, time complexity},
+ link = {http://doi.acm.org/10.1145/1989493.1989510},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {129--130},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Full Reversal Routing As a Linear Dynamical System},
+ year = {2011}
+}
+
+
+@inproceedings{Goodrich:2011:BAL:1989493.1989532,
+ abstract = {Many data structures support dictionaries, also known as maps or associative arrays, which store and manage a set of key-value pairs. A multimap is generalization that allows multiple values to be associated with the same key. We study how multimaps can be implemented efficiently online in external memory frameworks, with constant expected I/O. The key technique used to achieve our results is a combination of cuckoo hashing using buckets that hold multiple items with a multiqueue implementation to cope with varying numbers of values per key.},
+ acmid = {1989532},
+ address = {New York, NY, USA},
+ author = {Goodrich, Michael T. and Mitzenmacher, Michael},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989532},
+ isbn = {978-1-4503-0743-7},
+ keyword = {cuckoo hashing, inverted index, multimap, multiqueue},
+ link = {http://doi.acm.org/10.1145/1989493.1989532},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {259--260},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Large-scale Multimaps},
+ year = {2011}
+}
+
+
+@proceedings{Blelloch:2012:2312005,
+ abstract = {This volume consists of papers that were presented at the 24th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA 2012), held on 25-27 June 2012, in Pittsburgh, Pennsylvania, USA. It was sponsored by the ACM Special Interest Groups on Algorithms and Computation Theory (SIGACT) and Computer Architecture (SIGARCH) and organized in cooperation with the European Association for Theoretical Computer Science (EATCS). Financial support was provided by Akamai, IBM Research, and ACM SIGARCH. The program committee selected the 31 SPAA 2012 regular presentations following electronic discussions. Of these papers, the paper Memory-Mapping Support for Reducer Hyperobjects by ITing Lee, Aamir Shafi, and Charles Leiserson was selected to receive the best paper award. The regular presentations were selected out of 120 submitted abstracts. The mix of selected papers reflects the unique nature of SPAA in bringing together the theory and practice of parallel computing. SPAA defines parallelism very broadly to encompass any computational device or scheme that can perform multiple operations or tasks simultaneously or concurrently. The technical papers in this volume are to be considered preliminary versions, and authors are generally expected to publish polished and complete versions in archival scientific journals. In addition to the regular presentations, this volume includes 8 brief announcements. The committee's decisions in accepting brief announcements were based on the perceived interest of these contributions, with the goal that they serve as bases for further significant advances in parallelism in computing. Extended versions of the SPAA brief announcements and posters may be published later in other conferences or journals. Finally, this year's program also included keynote addresses by Ravi Rajwar of Intel Corporation, and Doug Lea of the State University of New York at Oswego.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1213-4},
+ location = {Pittsburgh, Pennsylvania, USA},
+ note = {417120},
+ publisher = {ACM},
+ title = {SPAA '12: Proceedings of the Twenty-fourth Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ year = {2012}
+}
+
+
+@inproceedings{Acharya:2011:BAR:1989493.1989536,
+ abstract = {Policies defined by a sequence of predicate-decision rules, with first-match semantics, are widely used; a notable example is their use in firewalls, where the rules are used to decide whether to accept or discard each packet. Owing to the critical importance of correctness of such policies, as well as the need for high performance, they have been the subject of considerable analysis. In earlier work, we have demonstrated that the problem of removing redundant rules from firewalls is theoretically equivalent to verifying that a firewall satisfies a property, and proposed that this theorem be used to build a high performance redundancy remover. In this paper, we realize this promise, and build a fast linear-space redundancy remover, one to three orders of magnitude faster than current approaches. Further, we show that our algorithm is easy to parallelize- there exists a natural way to partition a large instance of the problem into independent small ones.},
+ acmid = {1989536},
+ address = {New York, NY, USA},
+ author = {Acharya, Hrishikesh and Gouda, Mohamed},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989536},
+ isbn = {978-1-4503-0743-7},
+ keyword = {firewall optimization, redundancy},
+ link = {http://doi.acm.org/10.1145/1989493.1989536},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {267--268},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: RedRem: A Parallel Redundancy Remover},
+ year = {2011}
+}
+
+
+@inproceedings{Gramoli:2011:BAT:1989493.1989544,
+ abstract = {In this work, we present transaction polymorphism, a synchronization technique that consists of providing more control to the programmer than traditional (i.e., monomorphic) transactions to achieve comparable performance to generic lock-based and lock-free solutions. We prove the following results: (i) Lock-based synchronization enables strictly higher concurrency than monormophic transactions. (ii) Polymorphic transactions enable strictly higher concurrency than monomorphic transactions. The former result indicates that there exist some transactional programs that will never perform as well as their lock-based counterparts, whatever improvement could be made at the hardware level to diminish the overhead associated with transactional accesses. The latter result shows, however, that transaction polymorphism is a promising solution to cope with this issue.},
+ acmid = {1989544},
+ address = {New York, NY, USA},
+ author = {Gramoli, Vincent and Guerraoui, Rachid},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989544},
+ isbn = {978-1-4503-0743-7},
+ keyword = {concurrency, library},
+ link = {http://doi.acm.org/10.1145/1989493.1989544},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {311--312},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Transaction Polymorphism},
+ year = {2011}
+}
+
+
+@inproceedings{Gavoille:2011:SSV:1989493.1989526,
+ abstract = {Routing with multiplicative stretch 3 (which means that the path used by the routing scheme can be up to three times longer than a shortest path) can be done with routing tables of Θ(√n) bits per node. The space lower bound is due to the existence of dense graphs with large girth. Dense graphs can be sparsified to subgraphs, called spanners, with various stretch guarantees. There are spanners with additive stretch guarantees (some even have constant additive stretch) but only very few additive routing schemes are known. In this paper, we give reasons why routing in unweighted graphs with additive stretch is difficult in the form of space lower bounds for general graphs and for planar graphs. We prove that any routing scheme using routing tables of size μ bits per node and addresses of poly-logarithmic length has additive stretch Ω(√n/μ) for general graphs, and Ω(√n/μ) for planar graphs. Routing with tables of size O(n1/3) thus requires a polynomial additive stretch Ω(n1/3), whereas spanners with average degree O(n1/3) and constant additive stretch exist for all graphs. Spanners, however sparse they are, do not tell us how to route. These bounds provide the first separation of sparse spanner problems and compact routing problems. On the positive side, we give an almost tight upper bound: we present the first non-trivial compact routing scheme with o(log2n)-bit addresses, additive stretch O(n1/3), and table size O(n1/3) bits for all graphs with linear local tree-width such as planar, bounded-genus, and apex-minor-free graphs. Note: Asymptotic notation in this abstract suppresses factors logarithmic in n.},
+ acmid = {1989526},
+ address = {New York, NY, USA},
+ author = {Gavoille, Cyril and Sommer, Christian},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989526},
+ isbn = {978-1-4503-0743-7},
+ keyword = {compact routing, shortest paths},
+ link = {http://doi.acm.org/10.1145/1989493.1989526},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {225--234},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Sparse Spanners vs. Compact Routing},
+ year = {2011}
+}
+
+
+@inproceedings{Sindelar:2011:SAV:1989493.1989554,
+ abstract = {Virtualization technology enables multiple virtual machines (VMs) to run on a single physical server. VMs that run on the same physical server can share memory pages that have identical content, thereby reducing the overall memory requirements on the server. We develop sharing-aware algorithms that can colocate VMs with similar page content on the same physical server to optimize the benefits of inter-VM sharing. We show that inter-VM sharing occurs in a largely hierarchical fashion, where the sharing can be attributed to VM's running the same OS platform, OS version, software libraries, or applications. We propose two hierarchical sharing models: a tree model and a more general cluster-tree model. Using a set of VM traces, we show that up to 67% percent of the inter-VM sharing is captured by the tree model and up to 82% is captured by the cluster-tree model. Next, we study two problem variants of critical interest to a virtualization service provider: the VM Maximization problem that determines the most profitable subset of the VMs that can be packed into the given set of servers, and the VM packing problem that determines the smallest set of servers that can accommodate a set of VMs. While both variants are NP-hard, we show that both admit provably good approximation schemes in the hierarchical sharing models. We show that VM maximization for the tree and cluster-tree models can be approximated in polytime to within a (1 - 1/e) factor of optimal. Further, we show that VM packing can be approximated in polytime to within a factor of O(log n) of optimal for cluster-trees and to within a factor of 3 of optimal for trees, where n is the number of VMs. Finally, we evaluate our VM packing algorithm for the tree sharing model on real-world VM traces and show that our algorithm can exploit most of the available inter-VM sharing to achieve a 32% to 50% reduction in servers and a 25% to 57% reduction in memory footprint compared to sharing-oblivious algorithms.},
+ acmid = {1989554},
+ address = {New York, NY, USA},
+ author = {Sindelar, Michael and Sitaraman, Ramesh K. and Shenoy, Prashant},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989554},
+ isbn = {978-1-4503-0743-7},
+ keyword = {bin packing, optimization, page sharing, virtualization},
+ link = {http://doi.acm.org/10.1145/1989493.1989554},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {367--378},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Sharing-aware Algorithms for Virtual Machine Colocation},
+ year = {2011}
+}
+
+
+@inproceedings{Erlebach:2011:MLF:1989493.1989521,
+ abstract = {We study the problem of maximising the lifetime of a sensor network for fault-tolerant target coverage in a setting with composite events. Here, a composite event is the simultaneous occurrence of a combination of atomic events, such as the detection of smoke and high temperature. We are given sensor nodes that have an initial battery level and can monitor certain event types, and a set of points at which composite events need to be detected. The points and sensor nodes are located in the Euclidean plane, and all nodes have the same sensing radius. The goal is to compute a longest activity schedule with the property that at any point in time, each event point is monitored by at least two active sensor nodes. We present a (6+ε)-approximation algorithm for this problem by devising an approximation algorithm with the same ratio for the dual problem of minimising the weight of a fault-tolerant sensor cover and applying the Garg-Könemann algorithm. Our algorithm for the minimum-weight fault-tolerant sensor cover problem generalises previous approximation algorithms for geometric set cover with weighted unit disks and is obtained by enumerating properties of the optimal solution that guide a dynamic programming approach.},
+ acmid = {1989521},
+ address = {New York, NY, USA},
+ author = {Erlebach, Thomas and Grant, Tom and Kammer, Frank},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989521},
+ isbn = {978-1-4503-0743-7},
+ keyword = {approximation algorithm, dynamic programming, set multi-cover, unit disk graph},
+ link = {http://doi.acm.org/10.1145/1989493.1989521},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {187--196},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Maximising Lifetime for Fault-tolerant Target Coverage in Sensor Networks},
+ year = {2011}
+}
+
+
+@inproceedings{Jeffrey:2011:UBF:1989493.1989551,
+ abstract = {A Bloom filter is a probabilistic bit-array-based set representation that has recently been applied to address-set disambiguation in systems that ease the burden of parallel programming. However, many of these systems intersect the Bloom filter bit-arrays to approximate address-set intersection and decide set disjointness. This is in contrast with the conventional and well-studied approach of making individual membership queries into the Bloom filter. In this paper we present much-needed probabilistic models for the unconventional application of testing set disjointness using Bloom filters. Consequently, we demonstrate that intersecting Bloom filters requires substantially larger bit-arrays to provide the same probability of false set-overlap as querying into the bit-array. For when intersection is unavoidable, we prove that partitioned Bloom filters require less space than unpartitioned. Finally, we show that for Bloom filters with a single hash function, surprisingly, intersection and querying share the same probability of false set-overlap.},
+ acmid = {1989551},
+ address = {New York, NY, USA},
+ author = {Jeffrey, Mark C. and Steffan, J. Gregory},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989551},
+ isbn = {978-1-4503-0743-7},
+ keyword = {address-set disambiguation, bloom filters, parallelism, set intersection, signatures, thread-level speculation, transactional memory},
+ link = {http://doi.acm.org/10.1145/1989493.1989551},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {345--354},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Understanding Bloom Filter Intersection for Lazy Address-set Disambiguation},
+ year = {2011}
+}
+
+
+@inproceedings{Wimmer:2011:WMP:1989493.1989507,
+ abstract = {We show how to extend classical work-stealing to deal with tightly coupled data parallel tasks that can require any number of threads r ≥ 1 for their execution, and term this extension work-stealing with deterministic team-building. As threads become idle they attempt to join a team of threads designated for a task requiring r > 1 threads for its execution, alternatively to steal a task, requiring no central coordination. Team building and stealing are done according to a deterministic hierarchy and involve at most a logarithmic number of possibly randomized steal attempts. Threads attempting to join the team for a task requiring a large number of threads may help smaller teams while waiting for the large team to form. Once a team has been formed the threads can in close coordination execute the data parallel task. Implementation can be done with standard lock-free data structures, and takes only a single extra compare-and-swap (CAS) operation per thread to build a team. In the degenerate case where all tasks require only a single thread, the implementation coincides with a locality aware work-stealing implementation. Using a prototype C++ implementation of our extended work-stealing algorithm, a mixed-mode parallel Quicksort algorithm with a data parallel partitioning step has been implemented. We compare our (improved) implementation of this algorithm on top of our extended work-stealing scheduler to a standard task-parallel implementation with this scheduler, and with Intel Cilk Plus and Threading Building Blocks. In addition, we also compare to the optimized parallel MCSTL Quicksort. Results are shown for a 32-core Intel Nehalem EX system and a 16-core Sun T2+ system supporting up to 128 hardware threads. The mixed-mode parallel algorithm performs consistently better than the fork-join implementation, often significantly.},
+ acmid = {1989507},
+ address = {New York, NY, USA},
+ author = {Wimmer, Martin and Tr\"{a}ff, Jesper Larsson},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989507},
+ isbn = {978-1-4503-0743-7},
+ keyword = {deterministic team-building, mixed-mode parallelism, quicksort, work-stealing},
+ link = {http://doi.acm.org/10.1145/1989493.1989507},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {105--116},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Work-stealing for Mixed-mode Parallelism by Deterministic Team-building},
+ year = {2011}
+}
+
+
+@inproceedings{Lis:2011:BAD:1989493.1989530,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {1989530},
+ address = {New York, NY, USA},
+ author = {Lis, Mieszko and Shim, Keun Sup and Cho, Myong Hyon and Fletcher, Christopher W. and Kinsy, Michel and Lebedev, Ilia and Khan, Omer and Devadas, Srinivas},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989530},
+ isbn = {978-1-4503-0743-7},
+ keyword = {memory architecture, memory coherence, multicore},
+ link = {http://doi.acm.org/10.1145/1989493.1989530},
+ location = {San Jose, California, USA},
+ numpages = {4},
+ pages = {253--256},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Distributed Shared Memory Based on Computation Migration},
+ year = {2011}
+}
+
+
+@inproceedings{Li:2011:BAP:1989493.1989535,
+ abstract = {Verifying memory consistency, which is to verify the executions of parallel test programs on a multiprocessor system against the given memory consistency model, is NP-hard. To accelerate verifying memory consistency in practice, we devise a technique called "program regularization". The key intuition behind program regularization is that a parallel program with some specific patterns can enable efficient verification. More specifically, for any original program, program regularization introduces some auxiliary memory locations, and periodically inserts store/load operations accessing these locations to the original program. With the regularized program, verifying memory consistency only requires a linear time complexity (with respect to the number of memory operations).},
+ acmid = {1989535},
+ address = {New York, NY, USA},
+ author = {Li, Lei and Chen, Tianshi and Chen, Yunji and Li, Ling and Qian, Cheng and Hu, Weiwu},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989535},
+ isbn = {978-1-4503-0743-7},
+ keyword = {frontier graph, verifying memory consistency},
+ link = {http://doi.acm.org/10.1145/1989493.1989535},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {265--266},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Program Regularization in Verifying Memory Consistency},
+ year = {2011}
+}
+
+
+@inproceedings{CaparrosCabezas:2011:PDM:1989493.1989506,
+ abstract = {This paper presents a framework for characterizing the distribution of fine-grained parallelism, data movement, and communication-minimizing code partitions. Understanding the spectrum of parallelism available in applications, and how much data movement might result if such parallelism is exploited, is essential in the hardware design process because these properties will be the limiters to performance scaling of future computing systems. The framework is applied to characterizing 26 applications and kernels, classified according to their dominant components in the Berkeley dwarf/ computational motif classification. The distributions of ILP and TLP over execution time are studied, and it is shown that, though mean ILP is high, available ILP is significantly smaller for most of the execution. The results from this framework are complemented by hardware performance counter data on two RISC platforms (IBM Power7 and Freescale P2020) and one CISC platform (IntelAtom D510), spanning a broad range of real machine characteristics. Employing a combination of these new techniques, and building upon previous proposals, it is demonstrated that the similarity in available ideal-case parallelism and data movement within and across the dwarf classes, is limited.},
+ acmid = {1989506},
+ address = {New York, NY, USA},
+ author = {Caparr\'{o}s Cabezas, Victoria and Stanley-Marbell, Phillip},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989506},
+ isbn = {978-1-4503-0743-7},
+ keyword = {basic-block-level parallelism, berkeley computational motifs, data movement, instruction-level parallelism},
+ link = {http://doi.acm.org/10.1145/1989493.1989506},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {95--104},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Parallelism and Data Movement Characterization of Contemporary Application Classes},
+ year = {2011}
+}
+
+
+@inproceedings{Fatourou:2011:HWU:1989493.1989549,
+ abstract = {We present a new simple wait-free universal construction, called Sim, that uses just a Fetch&Add and an LL/SC object and performs a constant number of shared memory accesses. We have implemented SIM in a real shared-memory machine. In theory terms, our practical version of SIM, called P-SIM, has worse complexity than its theoretical analog; in practice though, we experimentally show that P-SIM outperforms several state-of-the-art lock-based and lock-free techniques, and this given that it is wait-free, i.e., that it satisfies a stronger progress condition than all the algorithms it outperforms. We have used P-SIM to get highly-efficient wait-free implementations of stacks and queues. Our experiments show that our implementations outperform the currently state-of-the-art shared stack and queue implementations which ensure only weaker progress properties than wait-freedom.},
+ acmid = {1989549},
+ address = {New York, NY, USA},
+ author = {Fatourou, Panagiota and Kallimanis, Nikolaos D.},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989549},
+ isbn = {978-1-4503-0743-7},
+ keyword = {concurrent data structures, queues, stacks, universal constructions, wait free},
+ link = {http://doi.acm.org/10.1145/1989493.1989549},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {325--334},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {A Highly-efficient Wait-free Universal Construction},
+ year = {2011}
+}
+
+
+@inproceedings{Lattanzi:2011:FMS:1989493.1989505,
+ abstract = {The MapReduce framework is currently the de facto standard used throughout both industry and academia for petabyte scale data analysis. As the input to a typical MapReduce computation is large, one of the key requirements of the framework is that the input cannot be stored on a single machine and must be processed in parallel. In this paper we describe a general algorithmic design technique in the MapReduce framework called filtering. The main idea behind filtering is to reduce the size of the input in a distributed fashion so that the resulting, much smaller, problem instance can be solved on a single machine. Using this approach we give new algorithms in the MapReduce framework for a variety of fundamental graph problems for sufficiently dense graphs. Specifically, we present algorithms for minimum spanning trees, maximal matchings, approximate weighted matchings, approximate vertex and edge covers and minimum cuts. In all of these cases, we parameterize our algorithms by the amount of memory available on the machines allowing us to show tradeoffs between the memory available and the number of MapReduce rounds. For each setting we will show that even if the machines are only given substantially sublinear memory, our algorithms run in a constant number of MapReduce rounds. To demonstrate the practical viability of our algorithms we implement the maximal matching algorithm that lies at the core of our analysis and show that it achieves a significant speedup over the sequential version.},
+ acmid = {1989505},
+ address = {New York, NY, USA},
+ author = {Lattanzi, Silvio and Moseley, Benjamin and Suri, Siddharth and Vassilvitskii, Sergei},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989505},
+ isbn = {978-1-4503-0743-7},
+ keyword = {MapReduce, graph algorithms, matchings},
+ link = {http://doi.acm.org/10.1145/1989493.1989505},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {85--94},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Filtering: A Method for Solving Graph Problems in MapReduce},
+ year = {2011}
+}
+
+
+@inproceedings{Azar:2011:RSN:1989493.1989528,
+ abstract = {We consider the interactive model of recommender systems, in which users are asked about just a few of their preferences, and in return the system outputs an approximation of all their preferences. The measure of performance is the probe complexity of the algorithm, defined to be the maximal number of answers any user should provide (probe complexity typically depends inversely on the number of users with similar preferences and on the quality of the desired approximation). Previous interactive recommendation algorithms assume that user preferences are binary, meaning that each object is either "liked" or "disliked" by each user. In this paper we consider the general case in which users may have a more refined scale of preference, namely more than two possible grades. We show how to reduce the non-binary case to the binary one, proving the following results. For discrete grades with s possible values, we give a simple deterministic reduction that preserves the approximation properties of the binary algorithm at the cost of increasing probe complexity by factor s. Our main result is for the general case, where we assume that user grades are arbitrary real numbers. For this case we present an algorithm that preserves the approximation properties of the binary algorithm while incurring only polylogarithmic overhead.},
+ acmid = {1989528},
+ address = {New York, NY, USA},
+ author = {Azar, Yossi and Nisgav, Aviv and Patt-Shamir, Boaz},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989528},
+ isbn = {978-1-4503-0743-7},
+ keyword = {collaborative filtering, recommendation systemes},
+ link = {http://doi.acm.org/10.1145/1989493.1989528},
+ location = {San Jose, California, USA},
+ numpages = {8},
+ pages = {245--252},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Recommender Systems with Non-binary Grades},
+ year = {2011}
+}
+
+
+@inproceedings{Versaci:2011:BAP:1989493.1989533,
+ abstract = {Optimistic parallelization is a promising approach for the parallelization of irregular algorithms: potentially interfering tasks are launched dynamically, and the runtime system detects conflicts between concurrent activities, aborting and rolling back conflicting tasks. However, parallelism in irregular algorithms can be a function of input parameters, and the amount of parallelism can vary dramatically during the execution. Therefore, determine how many processors should be allocated to execute (the processor allocation problem) for irregular algorithms is very difficult. In this work, we outline the first systematic strategy for addressing this problem.},
+ acmid = {1989533},
+ address = {New York, NY, USA},
+ author = {Versaci, Francesco and Pingali, Keshav},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989533},
+ isbn = {978-1-4503-0743-7},
+ keyword = {amorphous data-parallelism, irregular algorithms, optimistic parallelization, processor allocation, tur?n's theorem.},
+ link = {http://doi.acm.org/10.1145/1989493.1989533},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {261--262},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Processor Allocation for Optimistic Parallelization of Irregular Programs},
+ year = {2011}
+}
+
+
+@inproceedings{Goodrich:2011:DEA:1989493.1989555,
+ abstract = {We present data-oblivious algorithms in the external-memory model for compaction, selection, and sorting. Motivation for such problems comes from clients who use outsourced data storage services and wish to mask their data access patterns. We show that compaction and selection can be done data-obliviously using O(N/B) I/Os, and sorting can be done, with a high probability of success, using O(N/B) logM/B(N/B)) I/Os.},
+ acmid = {1989555},
+ address = {New York, NY, USA},
+ author = {Goodrich, Michael T.},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989555},
+ isbn = {978-1-4503-0743-7},
+ keyword = {data-oblivious algorithms, external memory, sorting},
+ link = {http://doi.acm.org/10.1145/1989493.1989555},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {379--388},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Data-oblivious External-memory Algorithms for the Compaction, Selection, and Sorting of Outsourced Data},
+ year = {2011}
+}
+
+
+@inproceedings{Blelloch:2011:NLP:1989493.1989496,
+ abstract = {This paper presents the design and analysis of a near linear-work parallel algorithm for solving symmetric diagonally dominant (SDD) linear systems. On input an SDD n-by-n matrix A with m non-zero entries and a vector b, our algorithm computes a vector x such that Ax - A+b ≤ ε • A+b in O(m logO(1) n log 1/ε) work and O(m1/3+θ log 1/ε) depth for any fixed θ > 0. The algorithm relies on a parallel algorithm for generating low-stretch spanning trees or spanning subgraphs. To this end, we first develop a parallel decomposition algorithm that in polylogarithmic depth and O(|E|) work, partitions a graph into components with polylogarithmic diameter such that only a small fraction of the original edges are between the components. This can be used to generate low-stretch spanning trees with average stretch O(nα) in O(n1+α) work and O(nα) depth. Alternatively, it can be used to generate spanning subgraphs with polylogarithmic average stretch in O(|E|) work and polylogarithmic depth. We apply this subgraph construction to derive our solver. By using the linear system solver in known applications, our results imply improved parallel randomized algorithms for several problems, including single-source shortest paths, maximum flow, min-cost flow, and approximate max-flow.},
+ acmid = {1989496},
+ address = {New York, NY, USA},
+ author = {Blelloch, Guy E. and Gupta, Anupam and Koutis, Ioannis and Miller, Gary L. and Peng, Richard and Tangwongsan, Kanat},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989496},
+ isbn = {978-1-4503-0743-7},
+ keyword = {linear systems, low-diameter decomposition, low-stretch spanning trees, low-stretch subgraphs, parallel algorithms},
+ link = {http://doi.acm.org/10.1145/1989493.1989496},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {13--22},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Near Linear-work Parallel SDD Solvers, Low-diameter Decomposition, and Low-stretch Subgraphs},
+ year = {2011}
+}
+
+
+@inproceedings{Moseley:2011:SMF:1989493.1989540,
+ abstract = {The map-reduce paradigm is now standard in industry and academia for processing large-scale data. In this work, we formalize job scheduling in map-reduce as a novel generalization of the two-stage classical flexible flow shop (FFS) problem: instead of a single task at each stage, a job now consists of a set of tasks per stage. For this generalization, we consider the problem of minimizing the total flowtime and give an efficient 12-approximation in the offline setting and an online (1+µ)-speed O(1/µ2)-competitive algorithm. Motivated by map-reduce, we revisit the two-stage flow shop problem, where we give a dynamic program for minimizing the total flowtime when all jobs arrive at the same time. If there are fixed number of job-types the dynamic program yields a PTAS; it is also a QPTAS when the processing times of jobs are polynomially bounded. This gives the first improvement in approximation of flowtime for the two-stage flow shop problem since the trivial 2-approximation algorithm of Gonzalez and Sahni [29] in 1978, and the first known approximation for the FFS problem. We then consider the generalization of the two-stage FFS problem to the unrelated machines case, where we give an offline 6-approximation and an online (1+µ)-speed O(1/µ4)-competitive algorithm.},
+ acmid = {1989540},
+ address = {New York, NY, USA},
+ author = {Moseley, Benjamin and Dasgupta, Anirban and Kumar, Ravi and Sarl\'{o}s, Tam\'{a}s},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989540},
+ isbn = {978-1-4503-0743-7},
+ keyword = {algorithm analysis, approximation algorithms, flow-shops, map-reduce, on-line problems, scheduling and resource allocation},
+ link = {http://doi.acm.org/10.1145/1989493.1989540},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {289--298},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {On Scheduling in Map-reduce and Flow-shops},
+ year = {2011}
+}
+
+
+@inproceedings{Degener:2011:TRB:1989493.1989515,
+ abstract = {The problem of gathering n autonomous robots in the Euclidean plane at one (not predefined) point is well-studied under various restrictions on the capabilities of the robots and in several time models. However, only very few runtime bounds are known. We consider the scenario of local algorithms in which the robots can only observe their environment within a fixed viewing range and have to base their decision where to move in the next step solely on the relative positions of the robots within their viewing range. Such local algorithms have to guarantee that the (initially connected) unit disk graph defined by the viewing range of the robots stays connected at all times. In this paper, we focus on the synchronous setting in which all robots are activated concurrently. Ando et al. [2] presented an algorithm where a robot essentially moves to the center of the smallest enclosing circle of the robots in its viewing range and showed that this strategy performs gathering of the robots in finite time. However, no bounds on the number of rounds needed by the algorithm are known. We present a lower bound of ©(n2) for the number of rounds as well as a matching upper bound of O(n2) and thereby obtain a tight runtime analysis of the algorithm of Θ(n).},
+ acmid = {1989515},
+ address = {New York, NY, USA},
+ author = {Degener, Bastian and Kempkes, Barbara and Langner, Tobias and Meyer auf der Heide, Friedhelm and Pietrzyk, Peter and Wattenhofer, Roger},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989515},
+ isbn = {978-1-4503-0743-7},
+ keyword = {distributed algorithms, local algorithms, mobile robots, multiagent systems, robot gathering},
+ link = {http://doi.acm.org/10.1145/1989493.1989515},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {139--148},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {A Tight Runtime Bound for Synchronous Gathering of Autonomous Robots with Limited Visibility},
+ year = {2011}
+}
+
+
+@inproceedings{Dice:2011:BAP:1989493.1989543,
+ abstract = {We introduce the partitioned ticket lock, a first-in-first-enabled FIFO lock with semi-local spinning. Our lock has fixed memory over-head, is extremely simple, and exhibits performance competitive with other local spinning locks.},
+ acmid = {1989543},
+ address = {New York, NY, USA},
+ author = {Dice, David},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989543},
+ isbn = {978-1-4503-0743-7},
+ keyword = {concurrency, locks, mutual exclusion, threads, ticket locks},
+ link = {http://doi.acm.org/10.1145/1989493.1989543},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {309--310},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: A Partitioned Ticket Lock},
+ year = {2011}
+}
+
+
+@inproceedings{Auletta:2011:CEL:1989493.1989522,
+ abstract = {We present the first general bounds on the mixing time of logit dynamics for wide classes of strategic games. The logit dynamics describes the behaviour of a complex system whose individual components act "selfishly" and keep responding according to some partial ("noisy") knowledge of the system. In particular, we prove nearly tight bounds for potential games and games with dominant strategies. Our results show that, for potential games, the mixing time is upper and lower bounded by an "exponential" in the inverse of the noise and in the maximum potential difference. Instead, for games with dominant strategies, the mixing time cannot grow arbitrarily with the inverse of the noise. Finally, we refine our analysis for a subclass of potential games called "graphical" coordination games and we give evidence that the mixing time strongly depends on the structure of the underlying graph. Games in this class have been previously studied in Physics and, more recently, in Computer Science in the context of diffusion of new technologies.},
+ acmid = {1989522},
+ address = {New York, NY, USA},
+ author = {Auletta, Vincenzo and Ferraioli, Diodato and Pasquale, Francesco and Penna, Paolo and Persiano, Giuseppe},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989522},
+ isbn = {978-1-4503-0743-7},
+ keyword = {Markov chains, game theory, mixing time},
+ link = {http://doi.acm.org/10.1145/1989493.1989522},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {197--206},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Convergence to Equilibrium of Logit Dynamics for Strategic Games},
+ year = {2011}
+}
+
+
+@inproceedings{Doerr:2011:SCP:1989493.1989516,
+ abstract = {In the standard consensus problem there are n processes with possibly different input values and the goal is to eventually reach a point at which all processes commit to exactly one of these values. We are studying a slight variant of the consensus problem called the stabilizing consensus problem [2]. In this problem, we do not require that each process commits to a final value at some point, but that eventually they arrive at a common, stable value without necessarily being aware of that. This should work irrespective of the states in which the processes are starting. Our main result is a simple randomized algorithm called median rule that, with high probability, just needs O(log m log log n + log n) time and work per process to arrive at an almost stable consensus for any set of m legal values as long as an adversary can corrupt the states of at most √n processes at any time. Without adversarial involvement, just O(log n) time and work is needed for a stable consensus, with high probability. As a by-product, we obtain a simple distributed algorithm for approximating the median of n numbers in time O(log m log log n + log n) under adversarial presence.},
+ acmid = {1989516},
+ address = {New York, NY, USA},
+ author = {Doerr, Benjamin and Goldberg, Leslie Ann and Minder, Lorenz and Sauerwald, Thomas and Scheideler, Christian},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989516},
+ isbn = {978-1-4503-0743-7},
+ keyword = {distributed consensus, randomized algorithms, self-stabilization},
+ link = {http://doi.acm.org/10.1145/1989493.1989516},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {149--158},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Stabilizing Consensus with the Power of Two Choices},
+ year = {2011}
+}
+
+
+@inproceedings{Dice:2011:FNL:1989493.1989502,
+ abstract = {Multicore machines are growing in size, and accordingly shifting from simple bus-based designs to NUMA and CCNUMA architectures. With this shift, the need for scalable hierarchical locking algorithms is becoming crucial to performance. This paper presents a novel scalable hierarchical queue-lock algorithm based on the flat combining synchronization paradigm. At the core of the new algorithm is a scheme for building local queues of waiting threads in a highly efficient manner, and then merging them globally, all with little interconnect traffic and virtually no costly synchronization operations in the common case. In empirical testing on an Oracle SPARC Enterprise T5440 Server, a 256-way CC-NUMA machine, our new flat-combining hierarchical lock significantly outperforms all classic locking algorithms, and at high concurrency levels, provides up to a factor of two improvement over HCLH, the most efficient known hierarchical locking algorithm.},
+ acmid = {1989502},
+ address = {New York, NY, USA},
+ author = {Dice, Dave and Marathe, Virendra J. and Shavit, Nir},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989502},
+ isbn = {978-1-4503-0743-7},
+ keyword = {flat combining, hierarchical locks, queue locks},
+ link = {http://doi.acm.org/10.1145/1989493.1989502},
+ location = {San Jose, California, USA},
+ numpages = {10},
+ pages = {65--74},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Flat-combining NUMA Locks},
+ year = {2011}
+}
+
+
+@inproceedings{Jo:2011:BAL:1989493.1989534,
+ abstract = {In this paper, we discuss transformations that can be applied to irregular programs that perform tree traversals, which can be seen as analogs of the popular regular transformations of loop tiling. We demonstrate the utility of these transformations on two tree traversal algorithms, the Barnes-Hut algorithm and raytracing, achieving speedups of up to 237% over the baseline implementation.},
+ acmid = {1989534},
+ address = {New York, NY, USA},
+ author = {Jo, Youngjoon and Kulkarni, Milind},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989534},
+ isbn = {978-1-4503-0743-7},
+ keyword = {irregular programs, locality transformations, n-body codes},
+ link = {http://doi.acm.org/10.1145/1989493.1989534},
+ location = {San Jose, California, USA},
+ numpages = {2},
+ pages = {263--264},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Brief Announcement: Locality-enhancing Loop Transformations for Tree Traversal Algorithms},
+ year = {2011}
+}
+
+
+@inproceedings{Ballard:2011:GEC:1989493.1989495,
+ abstract = {The communication cost of algorithms (also known as I/O-complexity) is shown to be closely related to the expansion properties of the corresponding computation graphs. We demonstrate this on Strassen's and other fast matrix multiplication algorithms, and obtain the first lower bounds on their communication costs. For sequential algorithms these bounds are attainable and so optimal.},
+ acmid = {1989495},
+ address = {New York, NY, USA},
+ author = {Ballard, Grey and Demmel, James and Holtz, Olga and Schwartz, Oded},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ doi = {10.1145/1989493.1989495},
+ isbn = {978-1-4503-0743-7},
+ keyword = {communication avoiding algorithms, fast matrix multiplication, i/o-complexity},
+ link = {http://doi.acm.org/10.1145/1989493.1989495},
+ location = {San Jose, California, USA},
+ numpages = {12},
+ pages = {1--12},
+ publisher = {ACM},
+ series = {SPAA '11},
+ title = {Graph Expansion and Communication Costs of Fast Matrix Multiplication: Regular Submission},
+ year = {2011}
+}
+
+
