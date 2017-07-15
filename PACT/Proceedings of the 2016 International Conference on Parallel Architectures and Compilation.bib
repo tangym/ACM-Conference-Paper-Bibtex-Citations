@@ -1,0 +1,1124 @@
+@inproceedings{Wang:2016:CCC:2967938.2967954,
+ abstract = {As the number of cores in a multicore system increases, core-to-core (C2C) communication is increasingly limiting the performance scaling of workloads that share data frequently. The traditional way cores communicate is by using shared memory space between them. However, shared memory communication fundamentally involves coherence invalidations and cache misses, which cause large performance overheads and incur a high amount of network traffic. Many important workloads incur significant C2C communication and are affected significantly by the costs, including pipelined packet processing which is widely used in software-based networking solutions. In these workloads, threads run on different cores and pass packets from one core to another for different stages of processing using software queues. In this paper, we analyze the behavior and overheads of software queue management. Based on this analysis, we propose a novel C2C Communication Acceleration Framework (CAF) to optimize C2C communication. CAF offloads substantial communication burdens from cores and memory to a designated, efficient hardware device we refer to as Queue Management Device (QMD) attached to the Network on Chip. CAF combines hardware and software optimizations to effectively reduce the queue-induced communication overheads and improve the overall system performance by up to 2-12x over traditional software queue implementations.},
+ acmid = {2967954},
+ address = {New York, NY, USA},
+ author = {Wang, Yipeng and Wang, Ren and Herdrich, Andrew and Tsai, James and Solihin, Yan},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967954},
+ isbn = {978-1-4503-4121-9},
+ keyword = {hardware accelerator, hardware queue, multicore communication},
+ link = {http://doi.acm.org/10.1145/2967938.2967954},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {351--362},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {CAF: Core to Core Communication Acceleration Framework},
+ year = {2016}
+}
+
+
+@inproceedings{Chronaki:2016:PEA:2967938.2976038,
+ abstract = {Energy efficiency has become the main challenge for high performance computing (HPC). The use of mobile asymmetric multi-core architectures to build future multi-core systems is an approach towards energy savings while keeping high performance. However, it is not known yet whether such systems are ready to handle parallel applications. This paper fills this gap by evaluating emerging parallel applications on an asymmetric multi-core. We make use of the PARSEC benchmark suite and a processor that implements the ARM big.LITTLE architecture. We conclude that these applications are not mature enough to run on such systems, as they suffer from load imbalance. Furthermore, we explore the behaviour of dynamic scheduling solutions on either the Operating System (OS) or the runtime level. Comparing these approaches shows us that the most efficient scheduling takes place in the runtime level, influencing the future research towards such solutions.},
+ acmid = {2976038},
+ address = {New York, NY, USA},
+ author = {Chronaki, Kallia and Moret\'{o}, Miquel and Casas, Marc and Rico, Alejandro and Badia, Rosa M. and Ayguad{\'e}, Eduard and Labarta, Jesus and Valero, Mateo},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2976038},
+ isbn = {978-1-4503-4121-9},
+ keyword = {cache coherence, memory consistency},
+ link = {http://doi.acm.org/10.1145/2967938.2976038},
+ location = {Haifa, Israel},
+ numpages = {3},
+ pages = {415--417},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Exploiting Asymmetric Multi-Core Processors with Flexible System Sofware},
+ year = {2016}
+}
+
+
+@inproceedings{Arvind:2016:BDA:2967938.2970374,
+ abstract = {Complex analytics of the vast amount of data collected via social media, cell phones, ubiquitous smart sensors, and satellites is likely to be the biggest economic driver for the IT industry over the next decade. For many "Big Data" applications, the limiting factor in performance is often the transportation of large amount of data from hard disks to where it can be processed, i.e. DRAM. We will present BlueDBM, an architecture for a scalable distributed flash store which overcomes this limitation by providing a high-performance, high-capacity, scalable random-access flash storage, and by allowing computation near the data via a FPGA-based programmable flash controller. We will present the preliminary results for two applications, (1) key-value store (KVS) and (2) sparse-matrix accelerator for graph processing, on BlueDBM consisting of 20 nodes and 20TB of flash.},
+ acmid = {2970374},
+ address = {New York, NY, USA},
+ author = {Arvind, Arvind},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2970374},
+ isbn = {978-1-4503-4121-9},
+ keyword = {big data analytics, hardware accelerators, in-storage computing, nand flash storage},
+ link = {http://doi.acm.org/10.1145/2967938.2970374},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Big Data Analytics on Flash Storage with Accelerators},
+ year = {2016}
+}
+
+
+@inproceedings{Caheny:2016:RCC:2967938.2967962,
+ abstract = {Cache Coherent NUMA (ccNUMA) architectures are a widespread paradigm due to the benefits they provide for scaling core count and memory capacity. Also, the flat memory address space they offer considerably improves programmability. However, ccNUMA architectures require sophisticated and expensive cache coherence protocols to enforce correctness during parallel executions, which trigger a significant amount of on- and off-chip traffic in the system. This paper analyses how coherence traffic may be best constrained in a large, real ccNUMA platform through the use of a joint hardware/software approach. For several benchmarks, we study coherence traffic in detail under the influence of an added hierarchical cache layer in the directory protocol combined with runtime managed NUMA-aware scheduling and data allocation techniques to make most efficient use of the added hardware. The effectiveness of this joint approach is demonstrated by speedups of 1.23x to 2.54x and coherence traffic reductions between 44% and 77% in comparison to NUMA-oblivious scheduling and data allocation. Furthermore, we show that the NUMA-aware techniques we employ at the runtime level are crucial to ensure the added hierarchical layer in the directory coherence protocol does not introduce significant coherence traffic to the system.},
+ acmid = {2967962},
+ address = {New York, NY, USA},
+ author = {Caheny, Paul and Casas, Marc and Moret\'{o}, Miquel and Gloaguen, Herv{\'e} and Saintes, Maxime and Ayguad{\'e}, Eduard and Labarta, Jes\'{u}s and Valero, Mateo},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967962},
+ isbn = {978-1-4503-4121-9},
+ keyword = {cache coherence, numa, task-based programming models},
+ link = {http://doi.acm.org/10.1145/2967938.2967962},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {275--286},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Reducing Cache Coherence Traffic with Hierarchical Directory Cache and NUMA-Aware Runtime Scheduling},
+ year = {2016}
+}
+
+
+@inproceedings{Shen:2016:POD:2967938.2974054,
+ abstract = {Dataflow computing is proved to be promising in high-performance computing. However, traditional dataflow architectures are general-purpose and not efficient enough when dealing with typical scientific applications due to low utilization of function units. In this paper, we propose an optimization of dataflow architectures for scientific applications. The optimization introduces a request for operands mechanism and a topology-based instruction mapping algorithm to improve the efficiency of dataflow architectures. Experimental results show that the request for operands optimization achieves a 4.6% average performance improvement over the traditional dataflow architectures and the TBIM algorithm achieves a 2.28x and a 1.98x average performance improvement over SPDI and SPS algorithm respectively.},
+ acmid = {2974054},
+ address = {New York, NY, USA},
+ author = {Shen, Xiaowei and Ye, Xiaochun and Tan, Xu and Wang, Da and Zhang, Zhimin and Fan, Dongrui and Tang, Zhimin},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974054},
+ isbn = {978-1-4503-4121-9},
+ keyword = {dataflow computing, high-performance computing, request for operands, topology-based instruction mapping},
+ link = {http://doi.acm.org/10.1145/2967938.2974054},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {441--442},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: An Optimization of Dataflow Architectures for Scientific Applications},
+ year = {2016}
+}
+
+
+@inproceedings{Cho:2016:OSC:2967938.2967960,
+ abstract = {We present an accurate online scalability prediction model for data-parallel programs on NUMA many-core systems. Memory contention is considered to be the major limiting factor of program scalability as data parallelism limits the amount of synchronization or data dependencies between parallel work units. Reflecting the architecture of NUMA systems, contention is modeled at the last-level caches of the compute nodes and the memory nodes using a two-level queuing model to estimate the mean service time of the individual memory nodes. Scalability predictions for individual or co-located parallel applications are based solely on data obtained during a short sampling period at runtime; this allows the presented model to be employed in a variety of scenarios. The proposed model has been implemented into an open-source OpenCL and the GNU OpenMP runtime and evaluated on a 64-core AMD system. For a wide variety of parallel workloads and configurations, the evaluations show that the model is able to predict the scalability of data-parallel kernels with high accuracy.},
+ acmid = {2967960},
+ address = {New York, NY, USA},
+ author = {Cho, Younghyun and Oh, Surim and Egger, Bernhard},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967960},
+ isbn = {978-1-4503-4121-9},
+ keyword = {data-parallelism, last-level caches, many-core resource management, memory architectures, memory contention, multi-socket multi-core architectures, numa architectures, opencl, openmp, parallel programming models, performance modeling, performance prediction, performance scalability, queuing models, space-shared scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2967960},
+ location = {Haifa, Israel},
+ numpages = {15},
+ pages = {191--205},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Online Scalability Characterization of Data-Parallel Programs on Many Cores},
+ year = {2016}
+}
+
+
+@inproceedings{Anderson:2016:VMF:2967938.2967966,
+ abstract = {We propose a scheme for reduced-precision representation of floating point data on a continuum between IEEE-754 floating point types. Our scheme enables the use of lower precision formats for a reduction in storage space requirements and data transfer volume. We describe how our scheme can accelerated using existing hardware vector units on a general-purpose processor (GPP). Exploiting native vector hardware allows us to support reduced precision floating point with low overhead. We demonstrate that supporting reduced precision in the compiler as opposed to using a library approach can yield a low overhead solution for GPPs.},
+ acmid = {2967966},
+ address = {New York, NY, USA},
+ author = {Anderson, Andrew and Gregg, David},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967966},
+ isbn = {978-1-4503-4121-9},
+ keyword = {approximate computing, floating point, multiple precision, simd, vector architecture},
+ link = {http://doi.acm.org/10.1145/2967938.2967966},
+ location = {Haifa, Israel},
+ numpages = {10},
+ pages = {363--372},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Vectorization of Multibyte Floating Point Data Formats},
+ year = {2016}
+}
+
+
+@inproceedings{Gope:2016:HMI:2967938.2967949,
+ abstract = {Scripting languages like Javascript and PHP are widely used to implement application logic for dynamically-generated web pages. Their popularity is due in large part to their flexible syntax and dynamic type system, which enable rapid turnaround time for prototyping, releasing, and updating web site features and capabilities. The most common complex data structure in these languages is the hash map, which is used to store key-value pairs. In many cases, hash maps with a fixed set of keys are used in lieu of explicitly defined classes or structures, as would be common in compiled languages like Java or C++. Unfortunately, the runtime overhead of key lookup and value retrieval is quite high, especially relative to the direct offsets that compiled languages can use to access class members. Furthermore, key lookup and value retrieval incur high microarchitectural costs as well, since the paths they execute contain unpredictable branches and many cache accesses, leading to substantially higher numbers of branch mispredicts and cache misses per access to the hashmap. This paper quantifies these overheads, describes a compiler algorithm that discovers common use cases for hash maps and inlines them so that keys are accessed with direct offsets, and reports measured performance benefits on real hardware. A prototype implementation in the HipHop VM infrastructure shows promising performance benefits for a broad array of hash map-intensive server-side PHP applications, up to 37.6% and averaging 18.81%, improves SPECWeb throughput by 7.71% (banking) and 11.71% (e-commerce).},
+ acmid = {2967949},
+ address = {New York, NY, USA},
+ author = {Gope, Dibakar and Lipasti, Mikko H.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967949},
+ isbn = {978-1-4503-4121-9},
+ keyword = {dynamic languages, inline caching, jit compiler, php},
+ link = {http://doi.acm.org/10.1145/2967938.2967949},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {235--246},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Hash Map Inlining},
+ year = {2016}
+}
+
+
+@inproceedings{Haas:2016:PFE:2967938.2974051,
+ abstract = {Software-based fault-tolerance mechanisms can increase the reliability of multi-core CPUs while being cheaper and more flexible than hardware solutions like lockstep architectures. However, checkpoint creation, error detection and correction entail high performance overhead if implemented in software. We propose a software/hardware hybrid approach, which leverages Intel's hardware transactional memory (TSX) to support implicit checkpoint creation and fast rollback. Hardware enhancements are proposed and evaluated, leading to a resulting performance overhead of 19% on average.},
+ acmid = {2974051},
+ address = {New York, NY, USA},
+ author = {Haas, Florian and Weis, Sebastian and Ungerer, Theo and Pokam, Gilles and Wu, Youfeng},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974051},
+ isbn = {978-1-4503-4121-9},
+ keyword = {fault-tolerance, hardware transactional memory, intel tsx, multi-core, redundancy, transactional memory},
+ link = {http://doi.acm.org/10.1145/2967938.2974051},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {421--422},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Fault-tolerant Execution on COTS Multi-core Processors with Hardware Transactional Memory Support},
+ year = {2016}
+}
+
+
+@inproceedings{Chugh:2016:DCA:2967938.2967969,
+ abstract = {This paper describes an automatic approach to accelerate image processing pipelines using FPGAs. An image processing pipeline can be viewed as a graph of interconnected stages that processes images successively. Each stage typically performs a point-wise, stencil, or other more complex operations on image pixels. Recent efforts have led to the development of domain-specific languages (DSL) and optimization frameworks for image processing pipelines. In this paper, we develop an approach to map image processing pipelines expressed in the PolyMage DSL to efficient parallel FPGA designs. Our approach exploits reuse and available memory bandwidth (or chip resources) maximally. When compared to Darkroom, a state-of-the-art approach to compile high-level DSL to FPGAs, our approach (a) leads to designs that deliver significantly higher throughput, and (b) supports a greater variety of filters. Furthermore, the designs we generate obtain an improvement even over pre-optimized FPGA implementations provided by vendor libraries for some of the benchmarks.},
+ acmid = {2967969},
+ address = {New York, NY, USA},
+ author = {Chugh, Nitin and Vasista, Vinay and Purini, Suresh and Bondhugula, Uday},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967969},
+ isbn = {978-1-4503-4121-9},
+ keyword = {domain-specific language, dsl, fpgas, hls, image processing, parallelism, reuse},
+ link = {http://doi.acm.org/10.1145/2967938.2967969},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {327--338},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {A DSL Compiler for Accelerating Image Processing Pipelines on FPGAs},
+ year = {2016}
+}
+
+
+@inproceedings{Hong:2016:ALT:2967938.2967958,
+ abstract = {Recent technology advances in memory system design, along with 3D stacking, have made near-data processing (NDP) more feasible to accelerate different workloads. In this work, we explore the near-data processing opportunity of a fundamental operation - linked-list traversal (LLT). We propose a new NDP architecture which does not change the existing sequential programming model and does not require any modification to the core microarchitecture. Instead, we exploit the packetized interface between the core and the memory modules to off-load LLT for NDP. We assume a system with multiple memory modules (e.g., hybrid memory cube (HMC) modules) interconnected with a memory network and our initial evaluation shows that simply off-loading LLT computation to near-memory can actually reduce performance because of the additional off-chip memory network channel traversal. Thus, we first propose NDP-aware data localization to exploit packaging locality - including locality within a single memory module and memory vault - to minimize latency and improve energy efficiency. In order to improve overall throughput and maximize parallelism, we propose batching multiple LLT operations together to amortize the cost of NDP by utilizing the highly parallel execution of NDP processing units and the high bandwidth of 3D stacked DRAM. Our evaluation shows that the combination of NDP-aware data localization and batching can provide significant improvement in performance and energy efficiency.},
+ acmid = {2967958},
+ address = {New York, NY, USA},
+ author = {Hong, Byungchul and Kim, Gwangsun and Ahn, Jung Ho and Kwon, Yongkee and Kim, Hongsik and Kim, John},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967958},
+ isbn = {978-1-4503-4121-9},
+ keyword = {big-memory workload, linked-list traversal, near-data processing, processing-in-memory},
+ link = {http://doi.acm.org/10.1145/2967938.2967958},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {113--124},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Accelerating Linked-list Traversal Through Near-Data Processing},
+ year = {2016}
+}
+
+
+@inproceedings{Sun:2016:SRP:2967938.2971465,
+ abstract = {Graph analytics is an important and computationally demanding class of data analytics. It is essential to balance scalability, ease-of-use and high performance in large scale graph analytics. As such, it is necessary to hide the complexity of parallelism, data distribution and memory locality behind an abstract interface. The aim of this work is to build a scalable graph analytics framework that does not demand significant parallel programming experience based on NUMA-awareness. The realization of such a system faces two key problems: (i)~how to develop a scale-free parallel programming framework that scales efficiently across NUMA domains; (ii)~how to efficiently apply graph partitioning in order to create separate vand largely independent work items that can be distributed among threads.},
+ acmid = {2971465},
+ address = {New York, NY, USA},
+ author = {Sun, Jiawen},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971465},
+ isbn = {978-1-4503-4121-9},
+ keyword = {general purpose, graph analytics, parallel programming model},
+ link = {http://doi.acm.org/10.1145/2967938.2971465},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {456--456},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: A Scalable General Purpose System for Large-Scale Graph Processing},
+ year = {2016}
+}
+
+
+@inproceedings{Qiu:2016:MSF:2967938.2967965,
+ abstract = {Finite state machines (FSMs) are basic computation models that play essential roles in many applications. Enabling efficient parallel FSM execution is critical to the performance of these applications. However, they are very challenging to parallelize due to their inherent data dependencies that occur at each step of computations. Existing efforts on FSM parallelization either explore coarse-grained speculative parallelism or leverage parallel prefix- sum. The former ignores prevalent fine-grained hardware parallelism on modern processors (such as ILP or SIMD parallelism) while the latter limits the benefits of fine-grained parallelism mainly to state enumeration. This work presents MicroSpec, a set of parallelization techniques that, for the first time, expose fine-grained speculative parallelism to FSM computations. Based on a rigorous analysis of three types of parallelism at fine-grained level, MicroSpec consists of a list of four fine-grained speculative parallelization approaches along with a speculation-oriented data transformation. Experiments on a large set of real- world FSM benchmarks show that MicroSpec achieves substantial performance improvement over the state-of-the-art.},
+ acmid = {2967965},
+ address = {New York, NY, USA},
+ author = {Qiu, Junqiao and Zhao, Zhijia and Ren, Bin},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967965},
+ isbn = {978-1-4503-4121-9},
+ keyword = {finite state machine, fsm, program parallelization, simd, speculative parallelization, vectorization},
+ link = {http://doi.acm.org/10.1145/2967938.2967965},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {221--233},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {MicroSpec: Speculation-Centric Fine-Grained Parallelization for FSM Computations},
+ year = {2016}
+}
+
+
+@inproceedings{Kiriansky:2016:OIM:2967938.2967948,
+ abstract = {Modern applications such as graph and data analytics, when operating on real world data, have working sets much larger than cache capacity and are bottlenecked by DRAM. To make matters worse, DRAM bandwidth is increasing much slower than per CPU core count, while DRAM latency has been virtually stagnant. Parallel applications that are bound by memory bandwidth fail to scale, while applications bound by memory latency draw a small fraction of much-needed bandwidth. While expert programmers may be able to tune important applications by hand through heroic effort, traditional compiler cache optimizations have not been sufficiently aggressive to overcome the growing DRAM gap. In this paper, we introduce milk - a C/C++ language extension that allows programmers to annotate memory-bound loops concisely. Using optimized intermediate data structures, random indirect memory references are transformed into batches of efficient sequential DRAM accesses. A simple semantic model enhances programmer productivity for efficient parallelization with OpenMP. We evaluate the MILK compiler on parallel implementations of traditional graph applications, demonstrating performance gains of up to 3x.},
+ acmid = {2967948},
+ address = {New York, NY, USA},
+ author = {Kiriansky, Vladimir and Zhang, Yunming and Amarasinghe, Saman},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967948},
+ isbn = {978-1-4503-4121-9},
+ keyword = {bsp, graph algorithms, indirect memory reference, irregular memory access, milk, openmp, parallel algorithms},
+ link = {http://doi.acm.org/10.1145/2967938.2967948},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {299--312},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Optimizing Indirect Memory References with Milk},
+ year = {2016}
+}
+
+
+@inproceedings{Pericas:2016:P9C:2967938.2974052,
+ abstract = {Computational task DAGs are executed on parallel computers by a task scheduling algorithm. Intelligent scheduling is critical for achieving high parallelism, low overheads and reduced communication. A key technique for load balancing task DAGs is work stealing (WS), which Blumofe et al. popularized for fork-join computations [2]. In scenarios of high parallel slackness, WS's distributed nature allows it to scale to a large number of cores with low overhead [4]. However, the space of a WS computation grows proportionally to the number of cores. Targeting a lower bound, Blelloch et al. proposed the parallel-depth-first (PDF) scheduler [1]. PDF schedules tasks by following the depth-first (serial) order of computation and has space requirements closer to the serial execution. PDF has been shown to provide constructive cache sharing in modern multicore architectures [3]. However, implementing PDF requires a centralized scheduler which limits scalability. Targeting NUMA architectures, Olivier et al. proposed to load balance multiple PDF schedulers via WS [8]. While enabling scalability to larger systems, such approach still suffers from centralized scheduling of fine-grained parallelism [9]. Furthermore, for applications in which the amount of parallelism varies greatly, a fixed hierarchy of PDF queues is not enough.},
+ acmid = {2974052},
+ address = {New York, NY, USA},
+ author = {Peric\`{a}s, Miquel},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974052},
+ isbn = {978-1-4503-4121-9},
+ keyword = {constructive cache sharing, multicores, resource management, task scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2974052},
+ location = {Haifa, Israel},
+ numpages = {3},
+ pages = {429--431},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: \&\#958;-TAO: A Cache-centric Execution Model and Runtime for Deep Parallel Multicore Topologies},
+ year = {2016}
+}
+
+
+@inproceedings{Tan:2016:CRC:2967938.2967951,
+ abstract = {Supply voltage reduction is an effective approach to significantly reduce GPU energy consumption. As the largest on-chip storage structure, the GPU register file becomes the reliability hotspot that prevents further supply voltage reduction below the safe limit ($V_{min}$) due to process variation effects. This work addresses the reliability challenge of the GPU register file at low supply voltages, which is an essential first step for aggressive supply voltage reduction of the entire GPU chip. To better understand the reliability issues posed by undervolting and its energy-saving potential, we first rigorously model and analyze the process variation impact on the GPU register file at different voltages. By further analyzing the GPU architecture, we make a key observation that the time GPU registers contain useless data (i.e., dead time) is long, providing a unique opportunity to enhance register reliability. We then propose GR-Guard, an architectural solution that leverages long register dead time to enable reliable operations from unreliable register file at low voltages. GR-Guard is both effective and low-cost, and does not affect normal (i.e., non-faulty) register accesses. Experimental results show that for a 28nm baseline GPU under aggressive voltage reduction, GR-Guard can maintain the register file reliability with less than 2\% overall performance degradation, while achieving an average of 31% energy reduction across various applications.},
+ acmid = {2967951},
+ address = {New York, NY, USA},
+ author = {Tan, Jingweijia and Song, Shuaiwen Leon and Yan, Kaige and Fu, Xin and Marquez, Andres and Kerbyson, Darren},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967951},
+ isbn = {978-1-4503-4121-9},
+ keyword = {energy efficiency, fault patching, gpu register file, low-voltage design, process variation},
+ link = {http://doi.acm.org/10.1145/2967938.2967951},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {3--15},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Combating the Reliability Challenge of GPU Register File at Low Supply Voltage},
+ year = {2016}
+}
+
+
+@inproceedings{Yu:2016:TOT:2967938.2967942,
+ abstract = {Cache coherence scalability is a big challenge in shared memory systems. Traditional protocols do not scale due to the storage and traffic overhead of cache invalidation. Tardis, a recently proposed coherence protocol, removes cache invalidation using logical timestamps and achieves excellent scalability. The original Tardis protocol, however, only supports the Sequential Consistency (SC) memory model, limiting its applicability. Tardis also incurs extra network traffic on some benchmarks due to renew messages, and has suboptimal performance when the program uses spinning to communicate between threads. In this paper, we address these downsides of Tardis protocol and make it significantly more practical. Specifically, we discuss the architectural, memory system and protocol changes required in order to implement the TSO consistency model on Tardis, and prove that the modified protocol satisfies TSO. We also describe modifications for Partial Store Order (PSO) and Release Consistency (RC). Finally, we propose optimizations for better leasing policies and to handle program spinning. On a set of benchmarks, optimized Tardis improves on a full-map directory protocol in the metrics of performance, storage and network traffic, while being simpler to implement.},
+ acmid = {2967942},
+ address = {New York, NY, USA},
+ author = {Yu, Xiangyao and Liu, Hongzhe and Zou, Ethan and Devadas, Srinivas},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967942},
+ isbn = {978-1-4503-4121-9},
+ keyword = {cache coherence, memory consistency, multi-core, tso},
+ link = {http://doi.acm.org/10.1145/2967938.2967942},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {261--274},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Tardis 2.0: Optimized Time Traveling Coherence for Relaxed Consistency Models},
+ year = {2016}
+}
+
+
+@inproceedings{Ghanim:2016:PEP:2967938.2974053,
+ abstract = {Large performance growth for processors requires exploitation of hardware parallelism, which, itself, requires parallelism in software. In spite of massive efforts, automatic parallelization of serial programs has had limited success mostly for regular programs with affine accesses, but not for many applications including irregular ones. It appears that the bare minimum that the programmer needs to spell out is which operations can be executed in parallel. However, parallel programming today requires so much more. The programmer is expected to partition a task into subtasks (often threads) so as to meet multiple constraints and objectives, involving data and computation partitioning, locality, synchronization, race conditions, limiting and hiding communication latencies. It is no wonder that this makes parallel programming hard, drastically reducing programmer's productivity and performance gains hence reducing adoption by programmers and their employers. Suppose, however, that the effort of the programmer is reduced to merely stating operations that can be executed in parallel, the 'work-depth' bare minimum abstraction developed for PRAM(the lead theory of parallel algorithms). What performance penalty should this incur? Perhaps surprisingly, the upshot of our work is that this can be done with no performance penalty relative to hand-optimized multi-threaded code.},
+ acmid = {2974053},
+ address = {New York, NY, USA},
+ author = {Ghanim, Fady and Barua, Rajeev and Vishkin, Uzi},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974053},
+ isbn = {978-1-4503-4121-9},
+ keyword = {ease of programming, ice, parallel algorithms, parallel programming languages, pram},
+ link = {http://doi.acm.org/10.1145/2967938.2974053},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {419--420},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Easy PRAM-based High-Performance Parallel Programming with ICE},
+ year = {2016}
+}
+
+
+@inproceedings{Dublish:2016:SRP:2967938.2971470,
+ abstract = {Due to lack of sufficient compute threads in memory-intensive applications, GPUs often exhaust all the active warps and therefore, the memory latencies get exposed and appear in the critical path. In such a scenario, the shared on-chip and off-chip memory bandwidth appear more performance critical to cores with few or no active warps, in contrast to cores with sufficient active warps. In this work, we use the slack of memory responses as a metric to identify the criticality of shared bandwidth to different cores. Consequently, we propose a slack-aware DRAM scheduling policy to prioritize requests from cores with negative slack, ahead of row-buffer hits. We also propose a request throttling mechanism to reduce the shared bandwidth demand of cores that have enough active warps to sustain execution. The above techniques help in reducing the memory latencies that appear in the critical path by increasing the memory latencies that can be hidden by multithreading.},
+ acmid = {2971470},
+ address = {New York, NY, USA},
+ author = {Dublish, Saumay},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971470},
+ isbn = {978-1-4503-4121-9},
+ keyword = {bandwidth bottleneck, gpu, memory management},
+ link = {http://doi.acm.org/10.1145/2967938.2971470},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {451--452},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: Slack-Aware Shared Bandwidth Management in GPUs},
+ year = {2016}
+}
+
+
+@inproceedings{Huang:2016:SEC:2967938.2967959,
+ abstract = {Automatic parallelization has shown promise in producing scalable multi-threaded programs for multi-core architectures. Most existing automatic techniques parallelize independent loops and insert global synchronization between loop invocations. For programs with many loop invocations, frequent synchronization often becomes the performance bottleneck. Some techniques exploit cross-invocation parallelism to overcome this problem. Using static analysis, they partition iterations among threads to avoid cross-thread dependences. However, this approach may fail if dependence pattern information is not available at compile time. To address this limitation, this work proposes SpecCross--the first automatic parallelization technique to exploit cross-invocation parallelism using speculation. With speculation, iterations from different loop invocations can execute concurrently, and the program synchronizes only on misspeculation. This allows SpecCross to adapt to dependence patterns that only manifest on particular inputs at runtime. Evaluation on eight programs shows that SpecCross achieves a geomean speedup of 3.43x over parallel execution without cross-invocation parallelization.},
+ acmid = {2967959},
+ address = {New York, NY, USA},
+ author = {Huang, Jialu and Prabhu, Prakash and Jablin, Thomas B. and Ghosh, Soumyadeep and Apostolakis, Sotiris and Lee, Jae W. and August, David I.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967959},
+ isbn = {978-1-4503-4121-9},
+ keyword = {automatic parallelization, barrier speculation, code generation},
+ link = {http://doi.acm.org/10.1145/2967938.2967959},
+ location = {Haifa, Israel},
+ numpages = {15},
+ pages = {207--221},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Speculatively Exploiting Cross-Invocation Parallelism},
+ year = {2016}
+}
+
+
+@inproceedings{Olukotun:2016:SDA:2967938.2970375,
+ abstract = {Analyzing the volume, variety and velocity of big data requires the use of modern heterogeneous computing platforms composed of multicores with SIMD execution units, GPUs, clusters, FPGAs and in the future new reconfigurable architectures. However, programming in this environment is extremely challenging due to the need to use multiple low-level programming models and then combine them together in ad-hoc ways. Furthermore, many data analytics algorithms do not take full advantage of modern hardware capabilities. To optimize big data applications both for modern hardware and for modern programmers needs algorithms specialized for modern hardware and a high-level programming model that executes efficiently on heterogeneous parallel hardware. In this talk, I will describe the Delite DSL framework, which uses nested parallel patterns encapsulated in domain specific languages (DSLs). I will describe how a nested parallel pattern based programming model can be used to develop new data analytics algorithms that are optimized for architectures as diverse as multicore/NUMA, clusters, GPUs, FPGAs and a new reconfigurable architecture called Plasticine.},
+ acmid = {2970375},
+ address = {New York, NY, USA},
+ author = {Olukotun, Kunle},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2970375},
+ isbn = {978-1-4503-4121-9},
+ link = {http://doi.acm.org/10.1145/2967938.2970375},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {313--313},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Scaling Data Analytics with Moore's Law},
+ year = {2016}
+}
+
+
+@inproceedings{Wang:2016:OMO:2967938.2967947,
+ abstract = {We have closely examined GPU resource utilization when executing memory-intensive benchmarks. Our detailed analysis of GPU global memory accesses reveals that divergent loads can lead to the occlusion of Load-Store units, resulting in quick consumption of MSHR entries. Such memory occlusion prevents other ready memory instructions from accessing L1 data cache, eventually stalling warp schedulers and degrading the overall performance. We have designed memory Occlusion Aware Warp Scheduling (OAWS) that can dynamically predict the demand of MSHR entries of divergent memory instructions, and maximize the number of concurrent warps such that their aggregate MSHR consumptions are within the MSHR capacity. Our dynamic OAWS policy can prevent memory occlusions and effectively leverage more MSHR entries for better IPC performance for GPU. Experimental results show that the static and dynamic versions of OAWS achieve 36.7% and 73.1% performance improvement, compared to the baseline GTO scheduling. Particularly, dynamic OAWS outperforms MASCAR, CCWS, and SWL-Best by 70.1%, 57.8%, and 11.4%, respectively.},
+ acmid = {2967947},
+ address = {New York, NY, USA},
+ author = {Wang, Bin and Zhu, Yue and Yu, Weikuan},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967947},
+ isbn = {978-1-4503-4121-9},
+ keyword = {gpgpus, memory occlusion, mshr, scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2967947},
+ location = {Haifa, Israel},
+ numpages = {11},
+ pages = {45--55},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {OAWS: Memory Occlusion Aware Warp Scheduling},
+ year = {2016}
+}
+
+
+@inproceedings{Ros:2016:PES:2967938.2974050,
+ abstract = {Cache coherence protocols based on self-invalidation allow simpler hardware implementation compared to traditional write-invalidation protocols, by relying on data-race-free semantics and applying self-invalidation and self-downgrade on synchronization points. This work examines how self-invalidation and self-downgrade are performed in relation to atomicity and ordering and shows that they do not need to be applied conservatively, as so far implemented. Our key observation is that, often, critical sections which are not ordered in time, are intended to provide only atomicity but not thread synchronization.},
+ acmid = {2974050},
+ address = {New York, NY, USA},
+ author = {Ros, Alberto and Leonardsson, Carl and Sakalis, Christos and Kaxiras, Stefanos},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974050},
+ isbn = {978-1-4503-4121-9},
+ keyword = {atomicity, cache coherence, critical sections, memory consistency, self-invalidation},
+ link = {http://doi.acm.org/10.1145/2967938.2974050},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {433--434},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Efficient Self-Invalidation/Self-Downgrade for Critical Sections with Relaxed Semantics},
+ year = {2016}
+}
+
+
+@inproceedings{Stanic:2016:PIV:2967938.2974057,
+ abstract = {In the low-end mobile processor market, power, energy and area budgets are significantly lower than in other markets (e.g. servers or high-end mobile markets). It has been shown that vector processors are a highly energy-efficient way to increase performance; however adding support for them incurs area and power overheads that would not be acceptable for low-end mobile processors. In this work, we propose an integrated vector-scalar design for the ARM architecture that mostly reuses scalar hardware to support the execution of vector instructions. The key element of the design is our proposed block-based model of execution that groups vector computational instructions together to execute them in a coordinated manner.},
+ acmid = {2974057},
+ address = {New York, NY, USA},
+ author = {Stanic, Milan and Palomar, Oscar and Hayes, Timothy and Ratkovic, Ivan and Unsal, Osman and Cristal, Arian and Valero, Mateo},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974057},
+ isbn = {978-1-4503-4121-9},
+ keyword = {energy efficiency, low-power, mobile, vector processors},
+ link = {http://doi.acm.org/10.1145/2967938.2974057},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {447--448},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: An Integrated Vector-Scalar Design on an In-order ARM Core},
+ year = {2016}
+}
+
+
+@inproceedings{Litz:2016:EEV:2967938.2967955,
+ abstract = {Multi-core programming remains a major software development and maintenance challenge because of data races, deadlock, non-deterministic failures and complex performance issues. In this paper, we describe EXCITE-VM, a system that provides snapshot isolation transactions on shared memory to facilitate programming and to improve the performance of parallel applications. With snapshots, an application thread is not exposed to the committed changes of other threads until it receives the updates by explicitly creating a new snapshot. Snapshot isolation enables low overhead lockless read operations and improves fault tolerance by isolating each thread from the transient, uncommitted writes of other threads. This paper describes how EXCITE-VM implements snapshot isolation transactions efficiently by manipulating virtual memory mappings and using a novel copy-on-read mechanism with a customized page cache. Compared to conventional software transactional memory systems, EXCITE-VM provides up to 2.2x performance improvement for the STAMP benchmark suite and up to 1000x speedup for a modified benchmark having long running read-only transactions. Furthermore, EXCITE-VM achieves a 2x performance improvement on a Memcached benchmark and the Yahoo Cloud Server Benchmarks. Finally, EXCITE-VM improves fault tolerance and offers features such as low-overhead concurrent audit and analysis.},
+ acmid = {2967955},
+ address = {New York, NY, USA},
+ author = {Litz, Heiner and Braun, Benjamin and Cheriton, David},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967955},
+ isbn = {978-1-4503-4121-9},
+ keyword = {snapshot isolation, transactional memory, virtual memory},
+ link = {http://doi.acm.org/10.1145/2967938.2967955},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {401--412},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {EXCITE-VM: Extending the Virtual Memory System to Support Snapshot Isolation Transactions},
+ year = {2016}
+}
+
+
+@inproceedings{Yeh:2016:PPR:2967938.2974055,
+ abstract = {Massively multithreaded GPUs achieve high throughput by running thousands of threads in parallel. To fully utilize the hardware, contemporary workloads spawn work to the GPU in bulk by launching large tasks, where each task is a kernel that contains thousands of threads that occupy the entire GPU. GPUs face severe underutilization and their performance benefits vanish if the tasks are narrow, i.e., they contain less than 512 threads. Latency-sensitive applications in network, signal, and image processing that generate a large number of tasks with relatively small inputs are examples of such limited parallelism. Recognizing the issue, CUDA now allows 32 simultaneous tasks on GPUs; however, that still leaves significant room for underutilization. This paper presents Pagoda, a runtime system that virtualizes GPU resources, using an OS-like daemon kernel called MasterKernel. Tasks are spawned from the CPU onto Pagoda as they become available, and are scheduled by the MasterKernel at the warp granularity. This level of control enables the GPU to keep scheduling and executing tasks as long as free warps are found, dramatically reducing underutilization. Experimental results on real hardware demonstrate that Pagoda achieves a geometric mean speedup of 2.44x over PThreads running on a 20-core CPU, 1.43x over CUDA-HyperQ, and 1.33x over GeMTC, the state-of-the-art runtime GPU task scheduling system.},
+ acmid = {2974055},
+ address = {New York, NY, USA},
+ author = {Yeh, Tsung Tai and Sabne, Amit and Sakdhnagool, Putt and Eigenmann, Rudolf and Rogers, Timothy G.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974055},
+ isbn = {978-1-4503-4121-9},
+ keyword = {gpu scheduling, many task computing},
+ link = {http://doi.acm.org/10.1145/2967938.2974055},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {449--450},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Pagoda: A Runtime System to Maximize GPU Utilization in Data Parallel Tasks with Limited Parallelism},
+ year = {2016}
+}
+
+
+@inproceedings{Tran:2016:SRP:2967938.2971466,
+ abstract = {Processor cores are divided into two categories: fast and power-hungry out-of-order processors, and efficient, but slower in-order processors. To achieve high performance with low-energy budgets, this proposal aims to deliver out-of-order processing by software (SWOOP) on in-order architectures. Problem: A primary cause for slowdown in in-order processors is last-level cache misses (caused by difficult to predict data-dependent loads), resulting in cores stalling. Solution: As loads are non-blocking operations, independent instructions are scheduled to run before the loads return. We execute critical load instructions earlier in the program for a three-fold benefit: increasing memory and instruction level parallelism, and hiding memory latency. Related work: Some instruction scheduling policies attempt to hide memory latency, but scheduling is confined by basic block limits and register pressure. Software pipelining is restricted by dependencies between instructions and decoupled access-execute (DAE) suffers from address re-computation. Unlike EPIC (evolved from VLIW), SWOOP does not require hardware support for predicated execution, speculative loads and their verification, delayed exception handling, memory disambiguation etc.},
+ acmid = {2971466},
+ address = {New York, NY, USA},
+ author = {Tran, Kim-Anh},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971466},
+ isbn = {978-1-4503-4121-9},
+ keyword = {compiler, energy, software out-of-order execution},
+ link = {http://doi.acm.org/10.1145/2967938.2971466},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {458--458},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: Software Out-of-Order Execution for In-Order Architectures},
+ year = {2016}
+}
+
+
+@inproceedings{Drebes:2016:STP:2967938.2967946,
+ abstract = {Dynamic task-parallel programming models are popular on shared-memory systems, promising enhanced scalability, load balancing and locality. Yet these promises are undermined by non-uniform memory access (NUMA). We show that using NUMA-aware task and data placement, it is possible to preserve the uniform abstraction of both computing and memory resources for task-parallel programming models while achieving high data locality. Our data placement scheme guarantees that all accesses to task output data target the local memory of the accessing core. The complementary task placement heuristic improves the locality of task input data on a best effort basis. Our algorithms take advantage of data-flow style task parallelism, where the privatization of task data enhances scalability by eliminating false dependences and enabling fine-grained dynamic control over data placement. The algorithms are fully automatic, application-independent, performance-portable across NUMA machines, and adapt to dynamic changes. Placement decisions use information about inter-task data dependences readily available in the run-time system and placement information from the operating system. We achieve 94% of local memory accesses on a 192-core system with 24 NUMA nodes, up to 5x higher performance than NUMA-aware hierarchical work-stealing, and even 5.6x compared to static interleaved allocation. Finally, we show that state-of-the-art dynamic page migration by the operating system cannot catch up with frequent affinity changes between cores and data and thus fails to accelerate task-parallel applications.},
+ acmid = {2967946},
+ address = {New York, NY, USA},
+ author = {Drebes, Andi and Pop, Antoniu and Heydemann, Karine and Cohen, Albert and Drach, Nathalie},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967946},
+ isbn = {978-1-4503-4121-9},
+ keyword = {data-flow programming, memory allocation, numa, scheduling, task-parallel programming},
+ link = {http://doi.acm.org/10.1145/2967938.2967946},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {125--137},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Scalable Task Parallelism for NUMA: A Uniform Abstraction for Coordinated Scheduling and Memory Management},
+ year = {2016}
+}
+
+
+@proceedings{Amaral:2014:2628071,
+ abstract = {It is an honor to introduce the technical program for the 23rd International Conference on Parallel Architectures and Compilation Techniques (PACT 2014). This symposium is one of the leading venues for new ideas and results in the area of parallel computing. This year's program includes 37 papers, 17 posters, keynotes from Klara Nahrstedt (University of Illinois) and Bob Blainey (IBM), a day of workshops and tutorials, and the ACM Student Research Competition. PACT 2014 received 144 paper submissions. I assigned each paper to at least 4 Program Committee (PC) members and 1 External Program Committee (EPC) member to review. To ensure the highest reviewing standards, the PC and EPC members were selected among the most recognized researchers in our field. Given that I had 51 PC members, each PC member had to review 11-12 papers personally. Overall, I believe that all of the PC and EPC members showed a very high degree of professionalism and fairness in their reviews. After all the reviews were collected, a Rebuttal Period allowed the authors to respond to the reviews. Then, PC and EPC members read the 5 reviews and the authors' response for the papers they had read, and engaged in a week-long discussion with other reviewers of the same paper(s) via email. At the end of this process, each PC and EPC member had to explicitly assign a grade to each of the papers she/he had reviewed. The papers' average grade was used to order the discussion of papers at the PC meeting. The whole review process was double blind. The PC meeting was held on May 10th, 2014, at the Chicago O'Hare Hilton. 46 PC members attended physically, while most of the others participated over the phone. The meeting started at 8am and lasted until 7:30pm. Before a paper was discussed, all conflicted PC members left the room and the authors' names were revealed. Then, the four PC members who had read the paper tried to reach a unanimous decision on the paper's outcome. If they could not, the whole PC voted. PC papers were discussed together with the other papers. The outcome of papers was not revealed to conflicted PC members until after the meeting. Over the course of the day, we discussed over 75 papers. We accepted 37 papers (25.7% acceptance rate) and 17 posters. To improve the quality of the program, several of the accepted papers were shepherded.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2809-8},
+ location = {Edmonton, AB, Canada},
+ publisher = {ACM},
+ title = {PACT '14: Proceedings of the 23rd International Conference on Parallel Architectures and Compilation},
+ year = {2014}
+}
+
+
+@inproceedings{Mehta:2016:WCW:2967938.2967956,
+ abstract = {Lately, the industry has recognized immense potential in wearables (particularly, smartwatches) being an attractive alternative/supplement to the smartphone. To this end, there has been recent activity in making the smartwatch `self-sufficient' i.e. using it to make/receive calls, etc. independently of the phone. This marked shift in the way wearables will be used in future calls for changes in the core micro-architecture of smartwatch processors. In this work, we first identify ten key target applications for the smartwatch users that the processor must be able to quickly and efficiently execute. We show that seven of these workloads are inherently parallel, and are compute- and data-intensive. We therefore propose to use a multi-core processor with simple out-of-order cores (for compute performance) and augment them with a light-weight software-assisted hardware prefetcher (for memory performance). This simple core with the light-weight prefetcher, called WearCore, is 2.9x more energy-efficient and 2.8x more area-efficient over an in-order core. The improvements are similar with respect to an out-of-order core.},
+ acmid = {2967956},
+ address = {New York, NY, USA},
+ author = {Mehta, Sanyam and Torrellas, Josep},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967956},
+ isbn = {978-1-4503-4121-9},
+ keyword = {digital assistant, dnn, image recognition, speech recognition, wearables, wearbench, wearcore},
+ link = {http://doi.acm.org/10.1145/2967938.2967956},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {153--164},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {WearCore: A Core for Wearable Workloads},
+ year = {2016}
+}
+
+
+@inproceedings{Rawat:2016:RCR:2967938.2967967,
+ abstract = {Computations involving successive application of 3D stencil operators are widely used in many application domains, such as image processing, computational electromagnetics, seismic processing, and climate modeling. Enhancement of temporal and spatial locality via tiling is generally required in order to overcome performance bottlenecks due to limited bandwidth to global memory on GPUs. However, the low shared memory capacity on current GPU architectures makes effective tiling for 3D stencils very challenging -- several previous domain-specific compilers for stencils have demonstrated very high performance for 2D stencils, but much lower performance on 3D stencils. In this paper, we develop an effective resource-constraint-driven approach for automated GPU code generation for stencils. We present a fusion technique that judiciously fuses stencil computations to minimize data movement, while controlling computational redundancy and maximizing resource usage. The fusion model subsumes time tiling of iterated stencils, and can be easily adapted to different GPU architectures. We integrate the fusion model into a code generator that makes effective use of scarce shared memory and registers to achieve high performance. The effectiveness of the automated model-driven code generator is demonstrated through experimental results on a number of benchmarks, comparing against various previously developed GPU code generators.},
+ acmid = {2967967},
+ address = {New York, NY, USA},
+ author = {Rawat, Prashant Singh and Hong, Changwan and Ravishankar, Mahesh and Grover, Vinod and Pouchet, Louis-Noel and Rountev, Atanas and Sadayappan, P.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967967},
+ isbn = {978-1-4503-4121-9},
+ keyword = {code generation, fusion, gpu, stencil computations},
+ link = {http://doi.acm.org/10.1145/2967938.2967967},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {99--111},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Resource Conscious Reuse-Driven Tiling for GPUs},
+ year = {2016}
+}
+
+
+@proceedings{Zaks:2016:2967938,
+ abstract = {The International Conference on Parallel Architectures and Compilation Techniques (PACT) started as a Data Flow Workshop in conjunction with the ISCA 1989 in Israel but has quickly evolved into a unique venue at the intersection of parallel architecture and compilers. This year we celebrate PACT's 25th anniversary as a mature multi-disciplinary conference that brings together researchers from modern hardware and software areas to present original research related to the parallel computing systems and their applications. PACT covers topics ranging from instruction-level and thread-level parallelism to low power wearable multicore systems and heterogeneous CPU-GPU computing systems. This September, PACT returns to Israel, which represents a timely recognition of the contributions to the field made by researchers from this country. Haifa, our conference venue on the shores of the Mediterranean Sea, is home to a large and diverse set of high-tech companies and top universities. PACT 2016 received 180 initial paper abstracts that materialized in 119 actual submissions from countries all over the world. The submitted papers have undergone a rigorous two phase review process. To maintain fairness and uniform standards, we have used a double blind review process throughout. Each of the 119 submissions has been reviewed in the first phase by at least three members of the Program Committee (PC) and External Review Committee (ERC). After the first rebuttal phase and one week of online discussions, reviewers reached a consensus to relegate about half of the submissions. Their authors were subsequently notified. In the second phase the remaining papers have received at least two additional reviews representing. After a second rebuttal period PC and ERC members continued their online discussions to either reach an early consensus or establish the need for further discussion at the PC meeting. Finally the PC members met on June 27 on the campus of the University of Chicago and accepted 31 of the 58 papers that advanced to the second stage. To improve the quality of the program almost half the papers were shepherded by a PC member. Because there were many quality papers which could not be accommodated as regular contributions, the PC decided to invite several papers which had been reviewed during the second phase to be presented as posters at the conference. As a result 14 papers are be published as 2 page abstracts. The posters were presented during a special two hour late afternoon session. We found that the two phase review and two rebuttal periods resulted in a manageable average load of 9 papers for each PC member and offered authors timely opportunities to respond to all reviews. This year we also had an Artifact Evaluation Committee which evaluated five submitted papers and gave all of them the AE stamp of approval. Many thanks go to Zheng Wang, Hugh Leather and their team for their hard work.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4121-9},
+ location = {Haifa, Israel},
+ publisher = {ACM},
+ title = {PACT '16: Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ year = {2016}
+}
+
+
+@inproceedings{Zhao:2016:COP:2967938.2967939,
+ abstract = {As virtualization becomes ubiquitous in datacenters, there is a growing interest in characterizing application performance in multi-tenant environments to improve datacenter resource management. The performance of parallel programs is notoriously difficult to reason about in virtualized environments. Although performance degradations caused by virtualization and interferences have been extensively studied, there still lacks a comprehensive understanding why parallel programs have unpredictable slowdowns when co-located with different types of workloads. This paper presents a systematic and quantitative study of multithreaded performance under interference. We design synthetic workloads to emulate different types of interference and study the behavior of parallel programs under such interferences. We find that unpredictable performance is the result of complex interplays between the design of the program, the memory hierarchy of the host system, and the CPU scheduling at the hypervisor. To understand the intricate relationships between multiple factors, we decompose parallel runtime into compute, synchronization and steal time, and use the runtime breakdown to measure program progress and identify execution inefficiency under interference. Based on these findings, we develop an online approach to predicting performance slowdown without requiring parallel programs to be completed, and devise two scheduling optimizations at the hypervisor to reduce slowdowns. Experimental results with Xen and representative parallel workloads show that the online performance prediction achieves on average less than 4.5% error and the optimizations reduce runtime slowdown by as much as 38% compared to stock Xen.},
+ acmid = {2967939},
+ address = {New York, NY, USA},
+ author = {Zhao, Yong and Rao, Jia and Yi, Qing},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967939},
+ isbn = {978-1-4503-4121-9},
+ keyword = {multicore systems, parallel performance modeling and optimization, virtual machine scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2967939},
+ location = {Haifa, Israel},
+ numpages = {11},
+ pages = {287--297},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Characterizing and Optimizing the Performance of Multithreaded Programs Under Interference},
+ year = {2016}
+}
+
+
+@inproceedings{Panneerselvam:2016:RER:2967938.2967964,
+ abstract = {Current processors provide a variety of different processing units to improve performance and power efficiency. For example, ARM's big.LITTLE, AMD's APUs, and Oracle's M7 provide heterogeneous processors, on-die GPUs, and on-die accelerators. However, the performance experienced by programs using these processing units can vary widely due to contention from multiprogramming, thermal constraints and other issues. In these systems, the decision of where to execute a task must consider not only execution time of the task, but also current system conditions. We built RInnegan, a Linux kernel extension and runtime library, to perform scheduling and handle task placement in heterogeneous systems. The Rinnegan kernel extension monitors and reports the utilization of all processing units to applications, which then makes placement decisions at user level. The Rinnegan runtime provides a performance model to predict the speedup and overhead of offloading a task. With this model and the current utilization of processing units, the runtime can select the task placement that best achieves an application's performance goals, such as low latency, high throughput, or real-time deadlines.When integrated with StarPU, a runtime system for heterogeneous architectures, Rinnegan improves StarPU by performing 1.5-2x better than its native scheduling policies in a shared heterogeneous environment.},
+ acmid = {2967964},
+ address = {New York, NY, USA},
+ author = {Panneerselvam, Sankaralingam and Swift, Michael},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967964},
+ isbn = {978-1-4503-4121-9},
+ keyword = {accelerators, application adaptation, heterogeneous architectures, multi-programming, operating systems, resource management, task scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2967964},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {373--386},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Rinnegan: Efficient Resource Use in Heterogeneous Architectures},
+ year = {2016}
+}
+
+
+@inproceedings{Kannan:2016:EAP:2967938.2967953,
+ abstract = {Next generation byte addressable nonvolatile memories (NVMs) such as PCM, Memristor, and 3D X-Point are attractive solutions for mobile and other end-user devices, as they offer memory scalability as well as fast persistent storage. However, NVM's limitations of slow writes and high write energy are magnified for applications that require atomic, consistent, isolated and durable (ACID) persistence. For maintaining ACID persistence guarantees, applications not only need to do extra writes to NVM but also need to execute a significant number of additional CPU instructions for performing NVM writes in a transactional manner. Our analysis shows that maintaining persistence with ACID guarantees increases CPU energy up to 7.3x and NVM energy up to 5.1x compared to a baseline with no ACID guarantees. For computing platforms such as mobile devices, where energy consumption is a critical factor, it is important that the energy cost of persistence is reduced. To address the energy overheads of persistence with ACID guarantees, we develop novel energy-aware persistence (EAP) principles that identify data durability (logging) as the dominant factor in energy increase. Next, for low energy states, we formulate energy efficient durability techniques that include a mechanism to switch between performance and energy efficient logging modes, support for NVM group commit, and a memory management method that reduces energy by trading capacity via less frequent garbage collection. For critical energy states, we propose a relaxed durability mechanism -- ACI-RD -- that relaxes data logging without affecting the correctness of an application. Finally, we evaluate EAP's principles with real applications and benchmarks. Our experimental results demonstrate up to 2x reduction in CPU and 2.4x reduction in NVM energy usage compared to the traditional ACID persistence.},
+ acmid = {2967953},
+ address = {New York, NY, USA},
+ author = {Kannan, Sudarsun and Qureshi, Moinuddin and Gavrilovska, Ada and Schwan, Karsten},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967953},
+ isbn = {978-1-4503-4121-9},
+ keyword = {acid, end-user device, energy overheads, heap-based persistence, logging, memory-persistence, nvm, storage},
+ link = {http://doi.acm.org/10.1145/2967938.2967953},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {165--177},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Energy Aware Persistence: Reducing Energy Overheads of Memory-based Persistence in NVMs},
+ year = {2016}
+}
+
+
+@inproceedings{Rong:2016:SCO:2967938.2967943,
+ abstract = {The sparse matrix is a key data structure in various domains such as high-performance computing, machine learning, and graph analytics. To maximize performance of sparse matrix operations, it is especially important to optimize across the operations and not just within individual operations. While a straightforward per-operation mapping to library routines misses optimization opportunities, manually optimizing across the boundary of library routines is time-consuming and error-prone, sacrificing productivity. This paper introduces Sparso, a framework that automates such optimizations, enabling both high performance and high productivity. In Sparso, a compiler and sparse linear algebra libraries collaboratively discover and exploit context, which we define as the invariant properties of matrices and relationships between them in a program. We present compiler analyses, namely collective reordering analysis and matrix property discovery, to discover the context. The context discovered from these analyses drives key optimizations across library routines and matrices. We have implemented Sparso with the Julia language, Intel MKL and SpMP libraries. We evaluate our context-driven optimizations in 6 representative sparse linear algebra algorithms. Compared with a baseline that invokes high-performance libraries without context optimizations, Sparso results in 1.2~17x (average 5.7x) speedups. Our approach of compiler-library collaboration and context-driven optimizations should be also applicable to other productivity languages such as Matlab, Python, and R.},
+ acmid = {2967943},
+ address = {New York, NY, USA},
+ author = {Rong, Hongbo and Park, Jongsoo and Xiang, Lingxiang and Anderson, Todd A. and Smelyanskiy, Mikhail},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967943},
+ isbn = {978-1-4503-4121-9},
+ keyword = {compiler, data-flow analysis, high-performance computing, inspector-executor, reordering, sparse linear algebra},
+ link = {http://doi.acm.org/10.1145/2967938.2967943},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {247--259},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Sparso: Context-driven Optimizations of Sparse Linear Algebra},
+ year = {2016}
+}
+
+
+@inproceedings{Ozen:2016:PCD:2967938.2974056,
+ abstract = {Early programs for GPU (Graphics Processing Units) acceleration were based on a flat, bulk parallel programming model, in which programs had to perform a sequence of kernel launches from the host CPU. In the latest releases of these devices, dynamic (or nested) parallelism is supported, making possible to launch kernels from threads running on the device, without host intervention. Unfortunately, the overhead of launching kernels from the device is higher compared to launching from the host CPU, making the exploitation of dynamic parallelism unprofitable. This paper proposes and evaluates the basic idea behind a user-directed code transformation technique, named collective dynamic parallelism, that targets the effective exploitation of nested parallelism in modern GPUs. The technique dynamically packs dynamic parallelism kernel invocations and postpones their execution until a bunch of them are available. We show that for sparse matrix vector multiplication, CollectiveDP outperforms well optimized libraries, making GPU useful when matrices are highly irregular.},
+ acmid = {2974056},
+ address = {New York, NY, USA},
+ author = {Ozen, Guray and Ayguade, Eduard and Labarta, Jesus},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974056},
+ isbn = {978-1-4503-4121-9},
+ keyword = {compilers, cuda, dynamic parallelism, nested parallelism, openacc, openmp},
+ link = {http://doi.acm.org/10.1145/2967938.2974056},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {423--424},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Collective Dynamic Parallelism for Directive Based GPU Programming Languages and Compilers},
+ year = {2016}
+}
+
+
+@inproceedings{Gholkar:2016:PTH:2967938.2967961,
+ abstract = {As we approach the exascale era, power has become a primary bottleneck. The US Department of Energy has set a power constraint of 20MW on each exascale machine. To be able achieve one exaflop under this constraint, it is necessary that we use power intelligently to maximize performance under a power constraint. Most production-level parallel applications that run on a supercomputer are tightly-coupled parallel applications. A naíve approach of enforcing a power constraint for a parallel job would be to divide the job's power budget uniformly across all the processors. However, previous work has shown that a power capped job suffers from performance variation of otherwise identical processors leading to overall sub-optimal performance. We propose a 2-level hierarchical variation-aware approach of managing power at machine- level. At the macro level, PPartition partitions a machine's power budget across jobs to assign a power budget to each job running on the system such that the machine never exceeds its power budget. At the micro level, PTune makes job-centric decisions by taking the performance variation into account. For every moldable job, PTune determines the optimal number of processors, the selection of processors and the distribution of the job's power budget across them, with the goal of maximizing the job's performance under its power budget. Experiments show that, at the micro level, PTune achieves a performance improvement of up to 29% compared to a naíve approach. PTune does not lead to any performance degradation, yet frees up almost 40% of the processors for the same performance as that of the naíve approach under a hard power bound. At the macro level, PPartition is able to achieve a throughput improvement of 5-35% compared to uniform power distribution.},
+ acmid = {2967961},
+ address = {New York, NY, USA},
+ author = {Gholkar, Neha and Mueller, Frank and Rountree, Barry},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967961},
+ isbn = {978-1-4503-4121-9},
+ keyword = {performance variation, power-constrained computing},
+ link = {http://doi.acm.org/10.1145/2967938.2967961},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {179--191},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Power Tuning HPC Jobs on Power-Constrained Systems},
+ year = {2016}
+}
+
+
+@inproceedings{Panneerselvam:2016:PFO:2967938.2975607,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2975607},
+ address = {New York, NY, USA},
+ author = {Panneerselvam, Sankaralingam and Swift, Michael},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2975607},
+ isbn = {978-1-4503-4121-9},
+ keyword = {isolation, operating systems, performance guarantees, power and thermal management, power constrained architectures},
+ link = {http://doi.acm.org/10.1145/2967938.2975607},
+ location = {Haifa, Israel},
+ numpages = {3},
+ pages = {425--427},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Firestorm: Operating Systems for Power-Constrained Architectures},
+ year = {2016}
+}
+
+
+@inproceedings{Bodin:2016:IAP:2967938.2967963,
+ abstract = {System designers typically use well-studied benchmarks to evaluate and improve new architectures and compilers. We design tomorrow's systems based on yesterday's applications. In this paper we investigate an emerging application, 3D scene understanding, likely to be significant in the mobile space in the near future. Until now, this application could only run in real-time on desktop GPUs. In this work, we examine how it can be mapped to power constrained embedded systems. Key to our approach is the idea of incremental co-design exploration, where optimization choices that concern the domain layer are incrementally explored together with low-level compiler and architecture choices. The goal of this exploration is to reduce execution time while minimizing power and meeting our quality of result objective. As the design space is too large to exhaustively evaluate, we use active learning based on a random forest predictor to find good designs. We show that our approach can, for the first time, achieve dense 3D mapping and tracking in the real-time range within a 1W power budget on a popular embedded device. This is a 4.8x execution time improvement and a 2.8x power reduction compared to the state-of-the-art.},
+ acmid = {2967963},
+ address = {New York, NY, USA},
+ author = {Bodin, Bruno and Nardi, Luigi and Zia, M. Zeeshan and Wagstaff, Harry and Sreekar Shenoy, Govind and Emani, Murali and Mawer, John and Kotselidis, Christos and Nisbet, Andy and Lujan, Mikel and Franke, Bj\"{o}rn and Kelly, Paul H.J. and O'Boyle, Michael},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967963},
+ isbn = {978-1-4503-4121-9},
+ keyword = {computer vision, design space exploration, dse, embedded systems, slam},
+ link = {http://doi.acm.org/10.1145/2967938.2967963},
+ location = {Haifa, Israel},
+ numpages = {13},
+ pages = {57--69},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Integrating Algorithmic Parameters into Benchmarking and Design Space Exploration in 3D Scene Understanding},
+ year = {2016}
+}
+
+
+@inproceedings{Song:2016:BSG:2967938.2967944,
+ abstract = {Convolutional Neural Networks (CNNs) have substantially advanced the state-of-the-art accuracies of object recognition, which is the core function of a myriad of modern multimedia processing techniques such as image/video processing, speech recognition, and natural language processing. GPU-based accelerators gained increasing attention because a large amount of highly parallel neurons in CNN naturally matches the GPU computation pattern. In this work, we perform comprehensive experiments to investigate the performance bottlenecks and overheads of current GPU acceleration platform for scale-out CNN-based big data processing. In our characterization, we observe two significant semantic gaps: framework gap that lies between CNN-based data processing workflow and data processing manner in distributed framework; and the standalone gap that lies between the uneven computation loads at different CNN layers and fixed computing capacity provisioning of current GPU acceleration library. To bridge these gaps, we propose D3NN, a Distributed, Decoupled, and Dynamically tuned GPU acceleration framework for modern CNN architectures. In particular, D3NN features a novel analytical model that enables accurate time estimation of GPU accelerated CNN processing with only 5-10% error. Our evaluation results show the throughput of standalone processing node using D3NN gains up to 3.7X performance improvement over current standalone GPU acceleration platform. Our CNN-oriented GPU acceleration library with built-in dynamic batching scheme achieves up to 1.5X performance improvement over the non-batching scheme and outperforms the state-of-the-art deep learning library by up to 28% (performance mode) ~ 67% (memory-efficient mode).},
+ acmid = {2967944},
+ address = {New York, NY, USA},
+ author = {Song, Mingcong and Hu, Yang and Xu, Yunlong and Li, Chao and Chen, Huixiang and Yuan, Jingling and Li, Tao},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967944},
+ isbn = {978-1-4503-4121-9},
+ keyword = {big data, deep learning, distributed system, gpu},
+ link = {http://doi.acm.org/10.1145/2967938.2967944},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {315--326},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Bridging the Semantic Gaps of GPU Acceleration for Scale-out CNN-based Big Data Processing: Think Big, See Small},
+ year = {2016}
+}
+
+
+@inproceedings{Patt:2016:GPB:2967938.2970376,
+ abstract = {We have been riding a strong wave of greater and greater performance for decades, to some extent due to the combination of Moore's Law and Dennard scaling. But we are told all this is coming to an end, in part because we can not continue to double the transistor count on the chip and we can not run these things at higher and higher frequencies. Much of the silliness promised by multicore is just that, and not the answer. So, what are we to do? It turns out predication gave us the answer more than 30 years ago. Most of us were not paying attention. Today we have no choice. Predication happened because the compiler, the ISA, and the microarchitecture all cooperated so it could happen. That meant breaking the artificial walls in the transformation hierarchy. If we accept this as something we have to do, there are plenty of opportunities (a) for increased performance (attacking latency instead of just multicore bandwidth) and (b) for better energy efficiency. In this talk I hope to point out some of them, and then ask the obvious question: What do we need to do to make this happen?},
+ acmid = {2970376},
+ address = {New York, NY, USA},
+ author = {Patt, Yale},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2970376},
+ isbn = {978-1-4503-4121-9},
+ keyword = {computer education., higher performance computation, latency, moore's law, transformation hierarchy},
+ link = {http://doi.acm.org/10.1145/2967938.2970376},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {151--151},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Greater Performance and Better Efficiency: Predicated Execution Has Shown Us the Way},
+ year = {2016}
+}
+
+
+@inproceedings{Iwasaki:2016:SCT:2967938.2967968,
+ abstract = {Task parallel models supporting dynamic and hierarchical parallelism are believed to offer a promising direction to achieving higher performance and programmability. Divide-and-conquer is the most frequently used idiom in task parallel models, which decomposes the problem instance into smaller ones until they become "trivial" to solve. However, it incurs a high tasking overhead if a task is created for each subproblem. In order to reduce this overhead, a "cut-off" is commonly used, which eliminates task creations where they are unlikely to be beneficial. The manual cut-off typically enlarges leaf tasks by stopping task creations when a subproblem becomes smaller than a threshold, and possibly transforms the enlarged leaf tasks into specialized versions for solving small instances (e.g., use loops instead of recursive calls); it duplicates the coding work and hinders productivity. In this paper, we describe a compiler performing an effective cut-off method, called a static cut-off. Roughly speaking, it achieves the effect of manual cut-off, but automatically. The compiler tries to identify a condition in which the recursion stops within a constant number of steps and, when it is the case, eliminates task creations at compile time, which allows further compiler optimizations. Based on the termination condition analysis, two more optimization methods are developed to optimize the resulting leaf tasks in addition to replacing them with function calls; the first is to eliminate those function calls without exponential code growth; the second transforms the resulting leaf task into a loop, which further reduces the overhead and even promotes vectorization. The evaluation shows that our proposed cut-off optimization obtained significant speedups of a geometric mean of 8.0x compared to the original ones.},
+ acmid = {2967968},
+ address = {New York, NY, USA},
+ author = {Iwasaki, Shintaro and Taura, Kenjiro},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967968},
+ isbn = {978-1-4503-4121-9},
+ keyword = {compilers, cut-off, performance optimization, task parallelism},
+ link = {http://doi.acm.org/10.1145/2967938.2967968},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {139--150},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {A Static Cut-off for Task Parallel Programs},
+ year = {2016}
+}
+
+
+@inproceedings{Jia:2016:ASB:2967938.2967957,
+ abstract = {Much research work devotes to tuning big data analytics in modern data centers, since %the truth that even a small percentage of performance improvement immediately translates to huge cost savings because of the large scale. Simultaneous multithreading (SMT) receives great interest from data center communities, as it has the potential to boost performance of big data analytics by increasing the processor resources utilization. For example, the emerging processor architectures like POWER8 support up to 8-way multithreading. However, as different big data workloads have disparate architectural characteristics, how to identify the most efficient SMT configuration to achieve the best performance is challenging in terms of both complex application behaviors and processor architectures. In this paper, we specifically focus on auto-tuning SMT configuration for Spark-based big data workloads on POWE-R8. However, our methodology could be generalized and extended to other programming software stacks and other architectures. We propose a prediction-based dynamic SMT threading (PBDST) framework to adjust the thread count in SMT cores on POWER8 processors by using versatile machine learning algorithms.Its innovation lies in adopting online SMT configuration predictions derived from micro-architecture level profiling, to regulate the thread counts that could achieve nearly optimal performance. Moreover it is implemented at Spark software stack layer and transparent to user applications. After evaluating a large set of machine learning algorithms, we choose the most efficient ones to perform online predictions. The experimental results demonstrate that our approach can achieve up to 56.3% performance improvement and an average performance gain of 16.2% in comparison with the default configuration---the maximum SMT configuration---SMT8 on our system.},
+ acmid = {2967957},
+ address = {New York, NY, USA},
+ author = {Jia, Zhen and Xue, Chao and Chen, Guancheng and Zhan, Jianfeng and Zhang, Lixin and Lin, Yonghua and Hofstee, Peter},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967957},
+ isbn = {978-1-4503-4121-9},
+ keyword = {dynamic smt tuning, power8, spark big data},
+ link = {http://doi.acm.org/10.1145/2967938.2967957},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {387--400},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Auto-tuning Spark Big Data Workloads on POWER8: Prediction-Based Dynamic SMT Threading},
+ year = {2016}
+}
+
+
+@inproceedings{Kayiran:2016:9FG:2967938.2967941,
+ abstract = {To improve the performance of Graphics Processing Units (GPUs) beyond simply increasing core count, architects are recently adopting a scale-up approach: the peak throughput and individual capabilities of the GPU cores are increasing rapidly. This big-core trend in GPUs leads to various challenges, including higher static power consumption and lower and imbalanced utilization of the datapath components of a big core. As we show in this paper, two key problems ensue: (1) the lower and imbalanced datapath utilization can waste power as an application does not always utilize all portions of the big core datapath, and (2) the use of big cores can lead to application performance degradation in some cases due to the higher memory system contention caused by the more memory requests generated by each big core. This paper introduces a new analysis of datapath component utilization in big-core GPUs based on queuing theory principles. Building on this analysis, we introduce a fine-grained dynamic power- and clock-gating mechanism for the entire datapath, called μC-States, which aims to minimize power consumption by turning off or tuning-down datapath components that are not bottlenecks for the performance of the running application. Our experimental evaluation demonstrates that μC-States significantly reduces both static and dynamic power consumption in a big-core GPU, while also significantly improving the performance of applications affected by high memory system contention. We also show that our analysis of datapath component utilization can guide scheduling and design decisions in a GPU architecture that contains heterogeneous cores.},
+ acmid = {2967941},
+ address = {New York, NY, USA},
+ author = {Kayiran, Onur and Jog, Adwait and Pattnaik, Ashutosh and Ausavarungnirun, Rachata and Tang, Xulong and Kandemir, Mahmut T. and Loh, Gabriel H. and Mutlu, Onur and Das, Chita R.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967941},
+ isbn = {978-1-4503-4121-9},
+ link = {http://doi.acm.org/10.1145/2967938.2967941},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {17--30},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {{\$\mu\$}C-States: Fine-grained GPU Datapath Power Management},
+ year = {2016}
+}
+
+
+@inproceedings{Selfa:2016:SRP:2967938.2971464,
+ abstract = {Shared caches have become, de facto, the common design choice in current multi-cores, ranging from embedded devices to high-performance processors. In these systems, requests from multiple applications compete for the cache resources, degrading to different extents their progress, quantified as the performance of individual applications compared to isolated execution. The difference between the progresses of the running applications yields the system to unpredictable behavior and causes a fairness problem. This problem can be addressed by carefully partitioning cache resources among the contending applications, but to be effective, a partitioning approach needs to estimate per-application progress. This work proposes Fair-Progress Cache Partitioning (FPCP), a low-overhead cache partitioning approach which addresses fairness by distributing cache resources among applications depending on their progress. To estimate progress, we have implemented two state-of-the-art performance models, ASM and PTCA, which estimate, at runtime, the performance a given application would have if executed in isolation.},
+ acmid = {2971464},
+ address = {New York, NY, USA},
+ author = {Selfa, Vicent and Sahuquillo, Julio and Petit, Salvador and G\'{o}mez, Mar\'{\i}a Engracia},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971464},
+ isbn = {978-1-4503-4121-9},
+ keyword = {cache partitioning, multi-cores, progress, slowdown, unfairness},
+ link = {http://doi.acm.org/10.1145/2967938.2971464},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {455--455},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: A Low Complexity Cache Sharing Mechanism to Address System Fairness},
+ year = {2016}
+}
+
+
+@inproceedings{Kaplan:2016:SRP:2967938.2971463,
+ abstract = {In Most contemporary high performance computers are based on von Neumann architecture. It is widely recognized that such architecture suffers from CPU-memory bottleneck. The problem affects both performance and power efficiency of multicore and manycore architectures. With continuation of CPU scaling (driven by Moore's law and parallelization), the von Neumann bottleneck problem will become even more acute. Another major factor affecting today's high performance computing is the slowdown in scaling of traditional charge-based memories such as DRAM and NAND Flash. In response, many novel nano-devices and materials are under investigation to create an alternative to charge-based memory, namely resistive memory. Such alternatives include memristors, RRAM, PCM, 3D Xpoint, STT-MRAM and others. These technologies have a wide range of potential applications beyond memory, including solid state disks, digital computing, neuromorphic computing, etc. New approaches for processing-in-memory (PiM) have been suggested. One promising technology is 3D stacking, which integrates separate logic and DRAM layers with high-bandwidth, low-energy through-silicon vias. Leveraging 3D stacking technology, researchers have proposed near-DRAM acceleration architectures that integrate accelerator logic and custom 3D DRAM devices. They focus on either accelerator architecture, where the memory system is separate from the host processor's main memory system or the integration of accelerators and DRAM},
+ acmid = {2971463},
+ address = {New York, NY, USA},
+ author = {Kaplan, Roman},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971463},
+ isbn = {978-1-4503-4121-9},
+ keyword = {content addressable memory, in memory processing, in storage processing},
+ link = {http://doi.acm.org/10.1145/2967938.2971463},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {453--453},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: From Processing-in-Memory to Processing-in-Storage},
+ year = {2016}
+}
+
+
+@inproceedings{Tartakovsky:2016:SRP:2967938.2971468,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2971468},
+ address = {New York, NY, USA},
+ author = {Tartakovsky, Vladislav},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971468},
+ isbn = {978-1-4503-4121-9},
+ keyword = {optical computation, reconfigurable},
+ link = {http://doi.acm.org/10.1145/2967938.2971468},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {457--457},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: Compiling Boolean Circuits to Non-deterministic Branching Programs to Be Implemented by Light Switching Circuits.},
+ year = {2016}
+}
+
+
+@inproceedings{Kristensen:2016:FPA:2967938.2967945,
+ abstract = {We address the problem of fusing array operations based on criteria such as shape compatibility, data reuse, and minimizing for data reuse, the fusion problem has been formulated as a static weighted graph partitioning problem (known as the Weighted Loop Fusion problem). We show that this scheme cannot accurately track data reuse between multiple independent loops, since it overestimates total data reuse of certain cases. Our formulation in terms of partitions allows use of realistic cost functions that can track resource usage accurately. We give correctness proofs, and prove that WSP can maximize data reuse in programs exactly, in contrast to prior work. For the exact optimal solution, which is NP-hard to find, we present a branch-and-bound algorithm together with a polynomial-time preconditioner that reduces the problem size significantly in practice. We further present a polynomial-time greedy approximation that is fast enough to use for JIT-compilation and gives near-optimal results in practice. All algorithms have been implemented in the automatic parallelization platform Bohrium, run on a set of benchmarks, and compared to existing methods from the literature.},
+ acmid = {2967945},
+ address = {New York, NY, USA},
+ author = {Kristensen, Mads R.B. and Lund, Simon A.F. and Blum, Troels and Avery, James},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967945},
+ isbn = {978-1-4503-4121-9},
+ keyword = {bohrium, high-productivity, hpc, numpy, python},
+ link = {http://doi.acm.org/10.1145/2967938.2967945},
+ location = {Haifa, Israel},
+ numpages = {15},
+ pages = {71--85},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Fusion of Parallel Array Operations},
+ year = {2016}
+}
+
+
+@inproceedings{Srivastava:2016:PHP:2967938.2976039,
+ abstract = {Programming heterogeneous parallel systems can be extremely complex because a single system may include multiple different parallelism models, instruction sets, and memory hierarchies, and different systems use different combinations of these features. We propose a carefully designed parallel abstraction of heterogeneous hardware -- a hierarchical dataflow graph with shared memory and vector instructions -- that is able to capture the parallelism in a wide range of popular parallel hardware. We use this abstraction, which we call hVISC , to define a Virtual Instruction Set Architecture (ISA) that aims to address both functional portability and performance portability across heterogeneous systems. hVISC is more general than existing virtual instruction sets such as PTX, HSAIL and SPIR, e.g., it can capture both streaming parallelism and general dataflow parallelism.},
+ acmid = {2976039},
+ address = {New York, NY, USA},
+ author = {Srivastava, Prakalp and Kotsifakou, Maria and Sinclair, Matthew D. and Komuravelli, Rakesh and Adve, Vikram and Adve, Sarita},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2976039},
+ isbn = {978-1-4503-4121-9},
+ keyword = {cuda, gpu, heterogeneous systems, multicore, opencl, parallel compiler ir, ptx, virtual instruction set},
+ link = {http://doi.acm.org/10.1145/2967938.2976039},
+ location = {Haifa, Israel},
+ numpages = {3},
+ pages = {443--445},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: HVISC: A Portable Abstraction for Heterogeneous Parallel Systems},
+ year = {2016}
+}
+
+
+@inproceedings{Reddy:2016:RDL:2967938.2967950,
+ abstract = {Reductions are common in scientific and data-crunching codes, and a typical source of bottlenecks on massively parallel architectures such as GPUs. Reductions are memory-bound, and achieving peak performance involves sophisticated optimizations. There exist libraries such as CUB and Thrust providing highly tuned implementations of reductions on GPUs. However, library APIs are not flexible enough to express user-defined reductions on arbitrary data types and array indexing schemes. Languages such as OpenACC provide declarative syntax to express reductions. Such approaches support a limited range of reduction operators and do not facilitate the application of complex program transformations in presence of reductions. We present language constructs that let a programmer express arbitrary reductions on user-defined data types matching the performance of tuned library implementations. We also extend a polyhedral compilation flow to process these user-defined reductions, enabling optimizations such as the fusion of multiple reductions, combining reductions with other loop transformations, and optimizing data transfers and storage in the presence of reductions. We implemented these language constructs and compilation methods in the PPCG framework and conducted experiments on multiple GPU targets. For single reductions the generated code performs on par with highly tuned libraries, and for multiple reductions it significantly outperforms both libraries and OpenACC on all platforms.},
+ acmid = {2967950},
+ address = {New York, NY, USA},
+ author = {Reddy, Chandan and Kruse, Michael and Cohen, Albert},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967950},
+ isbn = {978-1-4503-4121-9},
+ keyword = {automatic parallelization, compiler transformations, gpu optimizations, polyhedral compilation},
+ link = {http://doi.acm.org/10.1145/2967938.2967950},
+ location = {Haifa, Israel},
+ numpages = {11},
+ pages = {87--97},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Reduction Drawing: Language Constructs and Polyhedral Compilation for Reductions on GPU},
+ year = {2016}
+}
+
+
+@inproceedings{Pattnaik:2016:STG:2967938.2967940,
+ abstract = {Processing data in or near memory (PIM), as opposed to in conventional computational units in a processor, can greatly alleviate the performance and energy penalties of data transfers from/to main memory. Graphics Processing Unit (GPU) architectures and applications, where main memory bandwidth is a critical bottleneck, can benefit from the use of PIM. To this end, an application should be properly partitioned and scheduled to execute on either the main, powerful GPU cores that are far away from memory or the auxiliary, simple GPU cores that are close to memory (e.g., in the logic layer of 3D-stacked DRAM). This paper investigates two key code scheduling issues in such a GPU architecture that has PIM capabilities, to maximize performance and energy-efficiency: (1) how to automatically identify the code segments, or kernels, to be offloaded to the cores in memory, and (2) how to concurrently schedule multiple kernels on the main GPU cores and the auxiliary GPU cores in memory. We develop two new runtime techniques: (1) a regression-based affinity prediction model and mechanism that accurately identifies which kernels would benefit from PIM and offloads them to GPU cores in memory, and (2) a concurrent kernel management mechanism that uses the affinity prediction model, a new kernel execution time prediction model, and kernel dependency information to decide which kernels to schedule concurrently on main GPU cores and the GPU cores in memory. Our experimental evaluations across 25 GPU applications demonstrate that these two techniques can significantly improve both application performance (by 25% and 42%, respectively, on average) and energy efficiency (by 28% and 27%).},
+ acmid = {2967940},
+ address = {New York, NY, USA},
+ author = {Pattnaik, Ashutosh and Tang, Xulong and Jog, Adwait and Kayiran, Onur and Mishra, Asit K. and Kandemir, Mahmut T. and Mutlu, Onur and Das, Chita R.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967940},
+ isbn = {978-1-4503-4121-9},
+ keyword = {gpu, kernel scheduling, near data computing, processing-in-memory},
+ link = {http://doi.acm.org/10.1145/2967938.2967940},
+ location = {Haifa, Israel},
+ numpages = {14},
+ pages = {31--44},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Scheduling Techniques for GPU Architectures with Processing-In-Memory Capabilities},
+ year = {2016}
+}
+
+
+@inproceedings{Kiyanovski:2016:SRP:2967938.2971469,
+ abstract = {Paravirtual I/O devices are known to outperform emulated I/O devices but this performance improvement comes with two major drawbacks: Guest machine owners must install hypervisor-specific device drivers every time they switch hypervisors, and these device drivers must be implemented by the hypervisor providers for all major operating systems. Emulated devices do not suffer from these drawbacks because their drivers are implemented by the manufacturers of the bare-metal devices, and come preinstalled. We used optimizations from the virtio-net paravirtual network device combined with a sidecore to improve emulation of the E1000 network device in the QEMU hypervisor. Initial results show that the performance gap between emulated and paravirtual I/O devices is smaller than was previously thought. The small performance difference between paravirtual and emulated devices, along with the aforementioned advantages of the latter, makes emulation a natural choice when flexibility takes precedence over performance.},
+ acmid = {2971469},
+ address = {New York, NY, USA},
+ author = {Kiyanovski, Arthur},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2971469},
+ isbn = {978-1-4503-4121-9},
+ keyword = {io virtualization, networking, virtio},
+ link = {http://doi.acm.org/10.1145/2967938.2971469},
+ location = {Haifa, Israel},
+ numpages = {1},
+ pages = {454--454},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Student Research Poster: Network Controller Emulation on a Sidecore for Unmodified Virtual Machines},
+ year = {2016}
+}
+
+
+@inproceedings{Sampaio:2016:PHD:2967938.2974059,
+ abstract = {Loop optimizations span from vectorization, scalar promotion, loop invariant code motion, software pipelining to loop fusion, skewing, tiling and loop parallelization. These transformations are essential in the quest for automated high-performance code generation. Determining the validity of loop transformations at compile time requires analyzing all possible data dependences that may exist at run-time, i.e., all may-dependences. One fundamental issue faced by loop optimizers relates to the precision of alias and dependence information. Static alias and dependence analysis has been extensively studied, but many factors make the problem extremely tough. We provide theoretical and practical foundations to safely apply aggressive loop transformations on programs with polynomial data access relations. We do so by inverting how the may-dependence problem is attacked. Instead of providing alias information to the optimizer such that it can filter invalid transformations, we request that it performs a transformation that we believe will reduce the execution time and we generate a fast and precise test to validate, at run-time, if the optimization can be taken.},
+ acmid = {2974059},
+ address = {New York, NY, USA},
+ author = {Sampaio, Diogo Nunes and Ketterlin, Alain and Pouchet, Louis-Noel and Rastello, Fabrice},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974059},
+ isbn = {978-1-4503-4121-9},
+ keyword = {code versioning, compilers, polyhedral transformation},
+ link = {http://doi.acm.org/10.1145/2967938.2974059},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {439--440},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Hybrid Data Dependence Analysis for Loop Transformations},
+ year = {2016}
+}
+
+
+@inproceedings{Kim:2016:AEI:2967938.2967952,
+ abstract = {Execution of GPGPU workloads consists of different stages including data I/O on the CPU, memory copy between the CPU and GPU, and kernel execution. While GPU can remain idle during I/O and memory copy, prior work has shown that overlapping data movement (I/O and memory copies) with kernel execution can improve performance. However, when there are multiple dependent kernels, the execution of the kernels is serialized and the benefit of overlapping data movement can be limited. In order to improve the performance of workloads that have multiple dependent kernels, we propose to automatically overlap the execution of kernels by exploiting implicit pipeline parallelism. We first propose Coarse-grained Reference Counting-based Scoreboarding (CRCS) to guarantee correctness during overlapped execution of multiple kernels. However, CRCS alone does not necessarily improve overall performance if the thread blocks (or CTAs) are scheduled sequentially. Thus, we propose an alternative CTA scheduler -- Pipeline Parallelism-aware CTA Scheduler (PPCS) that takes available pipeline parallelism into account in CTA scheduling to maximize pipeline parallelism and improve overall performance. Our evaluation results show that the proposed mechanisms can improve performance by up to 67% (33% on average). To the best of our knowledge, this is one of the first work that enables overlapped execution of multiple dependent kernels without any kernel modification or explicitly expressing dependency by the programmer.},
+ acmid = {2967952},
+ address = {New York, NY, USA},
+ author = {Kim, Gwangsun and Jeong, Jiyun and Kim, John and Stephenson, Mark},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2967952},
+ isbn = {978-1-4503-4121-9},
+ keyword = {gpgpu, overlapping kernels, pipeline parallelism, thread block scheduling},
+ link = {http://doi.acm.org/10.1145/2967938.2967952},
+ location = {Haifa, Israel},
+ numpages = {12},
+ pages = {341--352},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {Automatically Exploiting Implicit Pipeline Parallelism from Multiple Dependent Kernels for GPUs},
+ year = {2016}
+}
+
+
+@inproceedings{Ryoo:2016:PSS:2967938.2974060,
+ abstract = {In this paper, we present a flat address space organization called SILC-FM that allows subblocks from two pages to co-exist in an interleaved fashion in die-stacked DRAM. Data movement at subblocked granularity consumes less bandwidth compared to migrating the entire large block and prevents fetching useless subblocks that may never get accessed. SILC-FM can get more spatial locality hits than CAMEO and PoM due to page-level operation and interleaving blocks respectively. The interleaved subblock placement improves performance by 55% on average over a static placement scheme without data migration. We also selectively lock hot blocks to prevent them from being involved in the hardware swapping operations. Additional features such as locking, associativity and bandwidth balancing improve performance by 11%, 8%, and 8% respectively, resulting in a total of 82% performance improvement over no migration static placement scheme. Compared to the best state-of-the-art scheme, SILC-FM gets performance improvement of 36%.},
+ acmid = {2974060},
+ address = {New York, NY, USA},
+ author = {Ryoo, Jee Ho and Meswani, Mitesh R. and Panda, Reena and John, Lizy K.},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974060},
+ isbn = {978-1-4503-4121-9},
+ keyword = {die-stacked dram, heterogeneous architecture, heterogeneous memory},
+ link = {http://doi.acm.org/10.1145/2967938.2974060},
+ location = {Haifa, Israel},
+ numpages = {3},
+ pages = {435--437},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: SILC-FM: Subblocked InterLeaved Cache-Like Flat Memory Organization},
+ year = {2016}
+}
+
+
+@inproceedings{Boyapati:2016:PFL:2967938.2974058,
+ abstract = {Reducing static NoC power consumption is becoming critical for energy-efficient computing as technology scales down since NoCs are devouring a large fraction of the on-chip power budget. We propose Fly-Over (FLOV), a light-weight distributed mechanism for power-gating routers. With simple modifications to the baseline router architecture, FLOV links are facilitated over power-gated routers. A Handshake protocol that allows seamless router power-gating in addition to a dynamic routing algorithm, that provides best-effort minimal path without the necessity for global network information, maintain normal NoC functionality. We evaluate our schemes using synthetic workloads as well as real workloads from PARSEC 2.1 benchmark suite. The results show that FLOV can achieve on average 19.2% latency reduction and 15.9% total energy savings.},
+ acmid = {2974058},
+ address = {New York, NY, USA},
+ author = {Boyapati, Rahul and Huang, Jiayi and Wang, Ningyuan and Kim, Kyung Hoon and Yum, Ki Hwan and Kim, Eun Jung},
+ booktitle = {Proceedings of the 2016 International Conference on Parallel Architectures and Compilation},
+ doi = {10.1145/2967938.2974058},
+ isbn = {978-1-4503-4121-9},
+ keyword = {networks-on-chip, power-gating},
+ link = {http://doi.acm.org/10.1145/2967938.2974058},
+ location = {Haifa, Israel},
+ numpages = {2},
+ pages = {413--414},
+ publisher = {ACM},
+ series = {PACT '16},
+ title = {POSTER: Fly-Over: A Light-Weight Distributed Power-Gating Mechanism For Energy-Efficient Networks-on-Chip},
+ year = {2016}
+}
+
+
