@@ -1,0 +1,607 @@
+@inproceedings{Galvez:2017:ATM:3079079.3079104,
+ abstract = {Topology-aware mapping aims at assigning tasks to processors in a way that minimizes network load, thus reducing the time spent waiting for communication to complete. Many mapping schemes and algorithms have been proposed. Some are application or domain specific, and others require significant effort by developers or users to successfully apply them. Moreover, a task mapping algorithm by itself is not enough to map the diverse set of applications that exist. Applications can have distinct communication patterns, from point-to-point communication with neighbors in a virtual process grid, to irregular point-to-point communication, to different types of collectives with differing group sizes, and any combination of the above. These patterns should be analyzed, and critical patterns extracted and automatically provided to the mapping algorithm, all without specialized user input. To our knowledge, this problem has not been addressed before for the general case. In this paper, we propose a complete and automatic mapping system that does not require special user involvement, works with any application, and whose mapping performs better than existing schemes, for a wide range of communication patterns and machine topologies. This makes it suitable for online mapping of HPC applications in many different scenarios. We evaluate our scheme with several applications exhibiting different communication patterns (including collectives) on machines with 3D torus, 5D torus and fat-tree network topologies, and show up to 2.2x performance improvements.},
+ acmid = {3079104},
+ address = {New York, NY, USA},
+ articleno = {17},
+ author = {Galvez, Juan J. and Jain, Nikhil and Kale, Laxmikant V.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079104},
+ isbn = {978-1-4503-5020-4},
+ keyword = {automated mapping, network topology, profiling, topology aware mapping},
+ link = {http://doi.acm.org/10.1145/3079079.3079104},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {17:1--17:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Automatic Topology Mapping of Diverse Large-scale Parallel Applications},
+ year = {2017}
+}
+
+
+@inproceedings{Shi:2017:STS:3079079.3079087,
+ abstract = {Many high performance computing (HPC) applications are highly data intensive. Current HPC storage systems still use hard disk drives (HDDs) as their dominant storage devices, which suffer from disk head thrashing when accessing random data. New storage devices such as solid state drives (SSDs), which can handle random data access much more efficiently, have been widely deployed as the buffer to HDDs in many production HPC systems. Burst buffer has also been proposed to manage the SSD buffering of bursty write requests. Although burst buffer can improve I/O performance in many cases, we find that it has some limitations such as requiring large SSD capacity and harmonious overlapping between computation phase and data flushing stage. In this paper, we propose a scheme, called SSDUP (a traffic-aware SSD burst buffer), to improve the burst buffer by addressing the above limitations. In order to reduce the SSD capacity demand, we develop a novel traffic-detection method to detect the randomness in the write traffic. Based on this method, only the random writes are buffered to SSD and other writes are deemed sequential and propagated to HDDs directly. In order to overcome the difficulty of perfectly overlapping the computation phase and the flushing stage, we propose a pipeline mechanism for the SSD buffer, in which the data buffering and data flushing are performed in pipeline. Finally, in order to further improve the performance of buffering random writes in SSD, we covert the random writes to sequential writes in SSD by storing the data with a log structure. Further, we propose to use the AVL tree structure to store the sequence information of the data. We have implemented a prototype of SSDUP based on the OrangeFS and performed extensive experimental evaluation. The experimental results show that the proposed SSDUP scheme can improve the write performance by more than 50% on average.},
+ acmid = {3079087},
+ address = {New York, NY, USA},
+ articleno = {27},
+ author = {Shi, Xuanhua and Li, Ming and Liu, Wei and Jin, Hai and Yu, Chen and Chen, Yong},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079087},
+ isbn = {978-1-4503-5020-4},
+ keyword = {burst buffer, high performance computing, hybrid storage system, solid state drive},
+ link = {http://doi.acm.org/10.1145/3079079.3079087},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {27:1--27:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {SSDUP: A Traffic-aware Ssd Burst Buffer for HPC Systems},
+ year = {2017}
+}
+
+
+@inproceedings{Totoni:2017:HHP:3079079.3079099,
+ abstract = {Big data analytics requires high programmer productivity and high performance simultaneously on large-scale clusters. However, current big data analytics frameworks (e.g. Apache Spark) have prohibitive runtime overheads since they are library-based. We introduce a novel auto-parallelizing compiler approach that exploits the characteristics of the data analytics domain such as the map/reduce parallel pattern and is robust, unlike previous auto-parallelization methods. Using this approach, we build High Performance Analytics Toolkit (HPAT), which parallelizes high-level scripting (Julia) programs automatically, generates efficient MPI/C++ code, and provides resiliency. Furthermore, it provides automatic optimizations for scripting programs, such as fusion of array operations. Thus, HPAT is 369X to 2033X faster than Spark on the Cori supercomputer and 20X to 256X times on Amazon AWS.},
+ acmid = {3079099},
+ address = {New York, NY, USA},
+ articleno = {9},
+ author = {Totoni, Ehsan and Anderson, Todd A. and Shpeisman, Tatiana},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079099},
+ isbn = {978-1-4503-5020-4},
+ keyword = {automatic parallelization, big data analytics, high performance computing},
+ link = {http://doi.acm.org/10.1145/3079079.3079099},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {9:1--9:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {HPAT: High Performance Analytics with Scripting Ease-of-use},
+ year = {2017}
+}
+
+
+@inproceedings{Liu:2017:HCC:3079079.3079089,
+ abstract = {Non-Volatile Memory (NVM) has recently emerged for its nonvolatility, high density and energy efficiency. Hybrid memory systems composed of DRAM and NVM have the best of both worlds, because NVM can offer larger capacity and have near-zero standby power consumption while DRAM provides higher performance. Many studies have advocated to use DRAM as a cache to NVM. However, it is still an open problem on how to manage the DRAM cache effectively and efficiently. In this paper, we propose a novel Hardware/Software Cooperative Caching (HSCC) mechanism that organizes NVM and DRAM in a flat address space while logically supporting a cache/memory hierarchy. HSCC maintains the NVM- to-DRAM address mapping and tracks the access counts of NVM pages through a moderate extension to page tables and TLBs. It significantly simplifies the hardware design and offers several optimization opportunities for cache management in software layers. We thus propose utility-based cache filtering policies to improve the efficiency of DRAM cache. Experimental results show that HSCC improves system performance by up to 9.6X (77.2% on average) and reduces energy consumption by 34.3% on average, compared to a hardware-assisted DRAM/NVM memory system. HSCC also presents 15.4% and 14.5% performance improvement against a flat- addressable memory architecture and a Row Buffer Locality Aware (RBLA) caching policy for hybrid memories, respectively.},
+ acmid = {3079089},
+ address = {New York, NY, USA},
+ articleno = {26},
+ author = {Liu, Haikun and Chen, Yujie and Liao, Xiaofei and Jin, Hai and He, Bingsheng and Zheng, Long and Guo, Rentong},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079089},
+ isbn = {978-1-4503-5020-4},
+ keyword = {caching, hybird memory, non-volatile memory (NVM)},
+ link = {http://doi.acm.org/10.1145/3079079.3079089},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {26:1--26:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Hardware/Software Cooperative Caching for Hybrid DRAM/NVM Memory Architectures},
+ year = {2017}
+}
+
+
+@inproceedings{Kunchum:2017:IPS:3079079.3079106,
+ abstract = {Sparse matrix-matrix multiplication (SpGEMM) is an important primitive for many data analytics algorithms, such as Markov clustering. Unlike the dense case, where performance of matrix-matrix multiplication is considerably higher than matrix-vector multiplication, the opposite is true for the sparse case on GPUs. A significant challenge is that the sparsity structure of the output sparse matrix is not known a priori, and many additive contributions must be combined to generate its non-zero elements. We use synthetic matrices to characterize the effectiveness of alternate approaches and devise a hybrid approach that is demonstrated to be consistently superior to other available GPU SpGEMM implementations.},
+ acmid = {3079106},
+ address = {New York, NY, USA},
+ articleno = {14},
+ author = {Kunchum, Rakshith and Chaudhry, Ankur and Sukumaran-Rajam, Aravind and Niu, Qingpeng and Nisa, Israt and Sadayappan, P.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079106},
+ isbn = {978-1-4503-5020-4},
+ keyword = {SpGEMM, load balancing, sparse matrix},
+ link = {http://doi.acm.org/10.1145/3079079.3079106},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {14:1--14:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {On Improving Performance of Sparse Matrix-matrix Multiplication on GPUs},
+ year = {2017}
+}
+
+
+@inproceedings{Zlateski:2017:COS:3079079.3079081,
+ abstract = {Convolutional networks (ConvNets), largely running on GPUs, have become the most popular approach to computer vision. Now that CPUs are closing the FLOPS gap with GPUs, efficient CPU algorithms are becoming more important. We propose a novel parallel and vectorized algorithm for N-D convolutional layers. Our goal is to achieve high utilization of available FLOPS, independent of ConvNet architecture and CPU properties (e.g. vector units, number of cores, cache sizes). Our approach is to rely on the compiler to optimize code, thereby removing the need for hand-tuning. We assume that the network architecture is known at compile-time. Our serial algorithm divides the computation into small sub-tasks designed to be easily optimized by the compiler for a specific CPU. Sub-tasks are executed in an order that maximizes cache reuse. We parallelize the algorithm by statically scheduling tasks to be executed by each core. Our novel compile-time recursive scheduling algorithm is capable of dividing the computation evenly between an arbitrary number of cores, regardless of ConvNet architecture. It introduces zero runtime overhead and minimal synchronization overhead. We demonstrate that our serial primitives efficiently utilize available FLOPS (75--95%), while our parallel algorithm attains 50--90% utilization on 64+ core machines. Our algorithm is competitive with the fastest CPU implementation to date (MKL2017) for 2D object recognition, and performs much better for image segmentation. For 3D ConvNets we demonstrate comparable performance to the latest GPU hardware and software even though the CPU is only capable of half the FLOPS of the GPU.},
+ acmid = {3079081},
+ address = {New York, NY, USA},
+ articleno = {8},
+ author = {Zlateski, Aleksandar and Seung, H Sebastian},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079081},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079081},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {8:1--8:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Compile-time Optimized and Statically Scheduled N-D Convnet Primitives for Multi-core and Many-core (Xeon Phi) CPUs},
+ year = {2017}
+}
+
+
+@inproceedings{deCarvalho:2017:RPT:3079079.3079094,
+ abstract = {In recent years, Hybrid TM (HyTM) has been proposed as a transactional memory approach that leverages on the advantages of both hardware (HTM) and software (STM) execution modes. HyTM assumes that concurrent transactions can have very different phases and thus should run under different execution modes. Although HyTM has shown to improve performance, the overall solution can be complicated to manage, both in terms of correctness and performance. On the other hand, Phased Transactional Memory (PhTM) considers that concurrent transactions have similar phases, and thus all transactions could run under the same mode. As a result, PhTM does not require coordination between transactions on distinct modes making its implementation simpler and more flexible. In this paper we claim that PhTM is a competitive alternative to HyTM and propose PhTM*, the first implementation of PhTM on modern HTM-ready processors. PhTM* novelty relies in avoiding unnecessary transitions to software mode by: (i) taking into account the categories of hardware aborts; (ii) adding a new serialization mode. Experimental results with Haswell's TSX reveal that, for the STAMP benchmark suite, PhTM* performs on average 11% better than PhTM, a previous phase-based TM, and 15% better than HyTM-NOrec, a state-of-the-art HyTM. In addition, PhTM* showed to be even more effective running on a Power8 machine by performing over 25% and 36% better than PhTM and HyTM-NOrec, respectively.},
+ acmid = {3079094},
+ address = {New York, NY, USA},
+ articleno = {25},
+ author = {de Carvalho, Jo\~{a}o P. L. and Araujo, Guido and Baldassin, Alexandro},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079094},
+ isbn = {978-1-4503-5020-4},
+ keyword = {performance evaluation, phase-based execution, transactional memory},
+ link = {http://doi.acm.org/10.1145/3079079.3079094},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {25:1--25:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Revisiting Phased Transactional Memory},
+ year = {2017}
+}
+
+
+@inproceedings{Titos-Gil:2017:WDA:3079079.3079096,
+ abstract = {Today, general-purpose commercial multicores approaching one hundred cores are already a reality and even thousand core chips are being prototyped. Maintaining coherence across such a high number of cores in these manycore architectures requires careful design of the coherence directory used to keep track of current locations of the memory blocks at the private cache level. In this work we propose a novel organization for the coherence directory that builds on the brand-new concept of way combining. Particularly, our proposal employs just one pointer per entry, which is optimal for the common case of having just one sharer. For those addresses that require more than one pointer, we have observed that in the majority of cases extra pointers could be taken from other empty ways in the same set. Thus, our proposal minimizes the storage overheads without losing the flexibility to adapt to several sharing degrees and without the complexities of other previously proposed techniques. Through detailed simulations of a 128-core architecture, we show that the way-combining directory closely approaches the performance of a non-scalable bit-vector sparse directory, and beats other scalable state-of-the-art proposals.},
+ acmid = {3079096},
+ address = {New York, NY, USA},
+ articleno = {20},
+ author = {Titos-Gil, Rub{\'e}n and Flores, Antonio and Fern\'{a}ndez-Pascual, Ricardo and Ros, Alberto and Acacio, Manuel E.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079096},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079096},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {20:1--20:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Way-combining Directory: An Adaptive and Scalable Low-cost Coherence Directory},
+ year = {2017}
+}
+
+
+@inproceedings{Yu:2017:DIB:3079079.3079092,
+ abstract = {Heterogeneous memory systems that comprise memory nodes based on widely-different device technologies (e.g., DRAM and nonvolatile memory (NVM)) are emerging in various computing domains ranging from high-performance to embedded computing. Despite the extensive prior work on architectural and system software support for heterogeneous memory systems, relatively little work has been done to investigate the OS-level memory placement and migration policies that consider the bandwidth differences of heterogeneous memory nodes. To bridge this gap, this work investigates the design and implementation of memory placement and migration policies for bandwidth-intensive applications on heterogeneous memory systems. Specifically, we propose three bandwidth-aware memory placement policies (i.e., bandwidth-aware interleave, random, and local policies) and a bandwidth-aware memory migration policy and implement the proposed policies in the Linux kernel. Through our quantitative evaluation based on real system software and hardware stacks, we demonstrate that the bandwidth-aware memory placement and migration policies achieve significantly higher performance than the conventional bandwidth-oblivious policies across a wide range of the DRAM-to-NVM bandwidth ratios when executing bandwidth-intensive workloads.},
+ acmid = {3079092},
+ address = {New York, NY, USA},
+ articleno = {18},
+ author = {Yu, Seongdae and Park, Seongbeom and Baek, Woongki},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079092},
+ isbn = {978-1-4503-5020-4},
+ keyword = {bandwidth-aware memory placement and migration policies, heterogeneous memory systems},
+ link = {http://doi.acm.org/10.1145/3079079.3079092},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {18:1--18:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Design and Implementation of Bandwidth-aware Memory Placement and Migration Policies for Heterogeneous Memory Systems},
+ year = {2017}
+}
+
+
+@inproceedings{Derler:2017:DSE:3079079.3079085,
+ abstract = {We introduce a hierarchical sparse matrix representation (HiSparse) tailored for the graphics processing unit (GPU). The representation adapts to the local nonzero pattern at all levels of the hierarchy and uses reduced bit length for addressing the entries. This allows a smaller memory footprint than standard formats. Executing algorithms on a hierarchical structure on the GPU usually entails significant synchronization and management overhead or slowdowns due to diverging execution paths and memory access patterns. We address these issues by means of a dynamic scheduling strategy specifically designed for executing algorithms on top of a hierarchical matrix on the GPU. The evaluation of our implementation of basic linear algebra routines, suggests that our hierarchical format is competitive to highly optimized standard libraries and significantly outperforms them in the case of transpose matrix operations. The results point towards the viability of hierarchical matrix formats on massively parallel devices such as the GPU.},
+ acmid = {3079085},
+ address = {New York, NY, USA},
+ articleno = {7},
+ author = {Derler, Andreas and Zayer, Rhaleb and Seidel, Hans-Peter and Steinberger, Markus},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079085},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPU, hierarchical, linear algebra, sparse matrix},
+ link = {http://doi.acm.org/10.1145/3079079.3079085},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {7:1--7:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Dynamic Scheduling for Efficient Hierarchical Sparse Matrix Operations on the GPU},
+ year = {2017}
+}
+
+
+@inproceedings{Hegde:2017:SFC:3079079.3079095,
+ abstract = {An important set of applications, from diverse domains such as cosmological simulations, data mining, and computer graphics, involve repeated, depth-first traversal of trees. As these applications operate over massive data sets, it is often necessary to distribute the trees to process all of the data. In this paper, we introduce SPIRIT, a framework to ease the writing of distributed tree applications. SPIRIT automates the challenging tasks of tree distribution, optimizing communication and parallelizing independent computations. The common algorithmic pattern in tree traversals is exploited to effectively schedule parallel computations and improve locality. As a result, we identify systematic ways of exploiting pipeline parallelism in these applications and show how this parallelism can be complemented by selective application of data parallelism to provide greater speed-ups without requiring excessive data replication. SPIRIT is packaged into a set of application programming interfaces (APIs) that developers can use to create scalable applications. Evaluation of SPIRIT on various tree traversal algorithms shows a scalable system. We also find that SPIRIT implementations perform substantially less communication and achieve significant performance improvements over implementations in other distributed graph systems, and are competitive against state-of-the-art, hand-tuned, application-specific implementations.},
+ acmid = {3079095},
+ address = {New York, NY, USA},
+ articleno = {3},
+ author = {Hegde, Nikhil and Liu, Jianqiao and Kulkarni, Milind},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079095},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079095},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {3:1--3:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {SPIRIT: A Framework for Creating Distributed Recursive Tree Applications},
+ year = {2017}
+}
+
+
+@inproceedings{Sampaio:2017:SRR:3079079.3079098,
+ abstract = {Loop transformations such as tiling, parallelization or vectorization are essential tools in the quest for high-performance program execution. Precise data dependence analysis is required to determine whether the compiler can apply a transformation or not. In particular, current static analyses typically fail to provide precise enough dependence information when the code contains indirect memory accesses or polynomial subscript functions to index arrays. This leads to considering superfluous may-dependences between instructions that prevent many loop transformations to be applied. In this work we present a new hybrid (static/dynamic) framework that allows to overcome several limitations of purely static dependence analyses: For a given loop transformation, we statically generate a test to be evaluated at runtime. This test allows to determine whether the transformation is valid, and if so triggers the execution of the transformed code, falling back to the original code otherwise. Such test, originally constructed as a loop-based code with O(n2) iterations (n being the number of iterations of the original loop-nest), are reduced to a loop-free test of O(1) complexity thanks to a new quantifier elimination scheme that we introduce in this paper. The precision and low overhead of our method is demonstrated over 25 kernels.},
+ acmid = {3079098},
+ address = {New York, NY, USA},
+ articleno = {10},
+ author = {Sampaio, Diogo N. and Pouchet, Louis-No\"{e}l and Rastello, Fabrice},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079098},
+ isbn = {978-1-4503-5020-4},
+ keyword = {hybrid dependence analysis, loop optimization, may-alias, polyhedral transformation, polynomials, quantifier elimination},
+ link = {http://doi.acm.org/10.1145/3079079.3079098},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {10:1--10:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Simplification and Runtime Resolution of Data Dependence Constraints for Loop Transformations},
+ year = {2017}
+}
+
+
+@inproceedings{Steinberger:2017:GHL:3079079.3079086,
+ abstract = {The rising popularity of the graphics processing unit (GPU) across various numerical computing applications triggered a breakneck race to optimize key numerical kernels and in particular, the sparse matrix-vector product (SpMV). Despite great strides, most existing GPU-SpMV approaches trade off one aspect of performance against another. They either require preprocessing, exhibit inconsistent behavior, lead to execution divergence, suffer load imbalance or induce detrimental memory access patterns. In this paper, we present an uncompromising approach for SpMV on the GPU. Our approach requires no separate preprocessing or knowledge of the matrix structure and works directly on the standard compressed sparse rows (CSR) data format. From a global perspective, it exhibits a homogeneous behavior reflected in efficient memory access patterns and steady per-thread workload. From a local perspective, it avoids heterogeneous execution paths by adapting its behavior to the work load at hand, it uses an efficient encoding to keep temporary data requirements for on-chip memory low, and leads to divergence-free execution. We evaluate our approach on more than 2500 matrices comparing to vendor provided, and state-of-the-art SpMV implementations. Our approach not only significantly outperforms approaches directly operating on the CSR format ( 20% average performance increase), but also outperforms approaches that preprocess the matrix even when preprocessing time is discarded. Additionally, the same strategies lead to significant performance increase when adapted for transpose SpMV.},
+ acmid = {3079086},
+ address = {New York, NY, USA},
+ articleno = {13},
+ author = {Steinberger, Markus and Zayer, Rhaleb and Seidel, Hans-Peter},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079086},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPU, SpMV, linear algebra, sparse matrix},
+ link = {http://doi.acm.org/10.1145/3079079.3079086},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {13:1--13:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Globally Homogeneous, Locally Adaptive Sparse Matrix-vector Multiplication on the GPU},
+ year = {2017}
+}
+
+
+@inproceedings{Nourian:2017:DAP:3079079.3079100,
+ abstract = {Many established and emerging applications perform at their core some form of pattern matching, a computation that maps naturally onto finite automata abstractions. As a consequence, in recent years there has been a substantial amount of work on high-speed automata processing, which has led to a number of implementations targeting a variety of parallel platforms: CPUs, GPUs, FPGAs, ASICs, and Network Processors. More recently, Micron has announced its Automata Processor (AP), a DRAM-based accelerator of non-deterministic finite automata (NFA). Despite the abundance of work in this domain, the advantages and disadvantages of different automata processing accelerators and the innovation space in this area are still unclear. In this work we target this problem and propose a toolchain to allow an apples-to-apples comparison of NFA acceleration engines on three platforms: GPUs, FPGAs and Micron's AP. We discuss the automata optimizations that are applicable to these three platforms. We perform an evaluation on large-scale datasets: to this end, we propose an NFA partitioning algorithm that minimizes the number of state replications required to maintain functional equivalence with an unpartitioned NFA, and we evaluate the scalability of each implementation to both large NFAs and large numbers of input streams. Our experimental evaluation covers resource utilization, traversal throughput, and preprocessing overhead and shows that the FPGA provides the best traversal throughputs (on the order of Gbps) at the cost of significant preprocessing times (on the order of hours); GPUs deliver modest traversal throughputs (on the order of Mbps), but offer low preprocessing times (on the order of seconds or minutes) and good pattern densities (they can accommodate large datasets on a single device); Micron's AP delivers throughputs, pattern densities, and preprocessing times that are intermediate between those of FPGAs and GPUs, and it is most suited for applications that use datasets consisting of many small NFAs with a topology that is fixed and known a priori.},
+ acmid = {3079100},
+ address = {New York, NY, USA},
+ articleno = {1},
+ author = {Nourian, Marziyeh and Wang, Xiang and Yu, Xiaodong and Feng, Wu-chun and Becchi, Michela},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079100},
+ isbn = {978-1-4503-5020-4},
+ keyword = {FPGA, GPU, Micron's AP, automata processing, pattern matching, reconfigurable computing},
+ link = {http://doi.acm.org/10.1145/3079079.3079100},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {1:1--1:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Demystifying Automata Processing: GPUs, FPGAs or Micron's AP?},
+ year = {2017}
+}
+
+
+@inproceedings{Abdelfattah:2017:NHT:3079079.3079103,
+ abstract = {This paper presents a software framework for solving large numbers of relatively small matrix problems using GPUs. Our approach combines novel and existing HPC techniques to methodically apply performance analysis, kernel design, low-level optimizations, and autotuning to exceed in performance proprietary vendor libraries. As a case study, we discuss the fundamental matrix operations defined by the Basic Linear Algebra Subprograms (BLAS) standard. This case study is significantly important for wide range of applications, including astrophysics, tensor contractions, sparse direct solvers, and others. We provide a generic design that is capable of dealing with problems of different sizes, and handling the irregularity arising from size variations. The developed solution adopts a batched computation scheme, where the same operation is concurrently applied to all matrices within a single computational kernel. The paper discusses the data layout, kernel design, and optimization techniques. We also propose a design scheme that is centralized around matrix-matrix multiplication (GEMM) kernel, so that any improvement on this particular kernel propagates automatically to other routines. Our performance results show significant speedups using a Pascal generation GPU (Tesla P100) against state-of-the-art solutions using cuBLAS, as well as against two 10-core Haswell CPUs running the MKL library. This work is part of the MAGMA library.},
+ acmid = {3079103},
+ address = {New York, NY, USA},
+ articleno = {5},
+ author = {Abdelfattah, Ahmad and Haidar, Azzam and Tomov, Stanimire and Dongarra, Jack},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079103},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPU computing, basic linear algebra sub-programs, batched computation},
+ link = {http://doi.acm.org/10.1145/3079079.3079103},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {5:1--5:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Novel HPC Techniques to Batch Execution of Many Variable Size BLAS Computations on GPUs},
+ year = {2017}
+}
+
+
+@inproceedings{Gupta:2017:ORT:3079079.3079102,
+ abstract = {We present a new optimization DECAF that optimizes recursive task parallel (RTP) programs by reducing the task creation and termination overheads. DECAF reduces the task termination (join) operations by aggressively increasing the scope of join operations (in a semantics preserving way), and eliminating the redundant join operations discovered on the way. Further, DECAF extends the traditional loop chunking technique to perform load-balanced chunking, at runtime, based on the number of available worker threads. This helps reduce the redundant parallel tasks at different levels of recursion. We also discuss the impact of exceptions on our techniques and extend them to handle RTP programs that may throw exceptions. We implemented DECAF in the X10v2.3 compiler and tested it over a set of benchmark kernels on two different hardwares (a 16-core Intel system and a 64-core AMD system). With respect to the base X10 compiler extended with loop-chunking of Nandivada et al. [26] (LC), DECAF achieved a geometric mean speed up of 2.14× and 2.53× on the Intel and AMD system, respectively. We also present an evaluation with respect to the energy consumption on the Intel system and show that on average, compared to the LC versions, the DECAF versions consume 71.2% less energy.},
+ acmid = {3079102},
+ address = {New York, NY, USA},
+ articleno = {11},
+ author = {Gupta, Suyash and Shrivastava, Rahul and Nandivada, V Krishna},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079102},
+ isbn = {978-1-4503-5020-4},
+ keyword = {data parallel, recursive task parallel, useful parallelism},
+ link = {http://doi.acm.org/10.1145/3079079.3079102},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {11:1--11:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Optimizing Recursive Task Parallel Programs},
+ year = {2017}
+}
+
+
+@proceedings{Gropp:2017:3079079,
+ abstract = {ICS is well known as the premier technical forum for researchers to present their latest results and to discuss the state of the art in high-performance computing (HPC). ICS 2017 continues the strong tradition of featuring keynote presentations emphasizing new directions and results in HPC; strong, peer-reviewed technical presentations; and a carefully selected tutorial and workshop covering special topics of interest in HPC.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-5020-4},
+ location = {Chicago, Illinois},
+ publisher = {ACM},
+ title = {ICS '17: Proceedings of the International Conference on Supercomputing},
+ year = {2017}
+}
+
+
+@inproceedings{Pena:2017:SAR:3079079.3079093,
+ abstract = {In this paper we describe the design of fault tolerance capabilities for general-purpose offload semantics, based on the OmpSs programming model. Using ParaStation MPI, a production MPI-3.1 implementation, we explore the features that, being standard compliant, an MPI stack must support to provide the necessary fault tolerance guarantees, based on MPI's dynamic process management. Our results, including synthetic benchmarks and applications, reveal low runtime overhead and efficient recovery, demonstrating that the existing MPI standard provided us with sufficient mechanisms to implement an effective and efficient fault-tolerant solution.},
+ acmid = {3079093},
+ address = {New York, NY, USA},
+ articleno = {22},
+ author = {Pe\~{n}a, Antonio J. and Beltran, Vicen\c{c} and Clauss, Carsten and Moschny, Thomas},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079093},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079093},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {22:1--22:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Supporting Automatic Recovery in Offloaded Distributed Programming Models Through MPI-3 Techniques},
+ year = {2017}
+}
+
+
+@inproceedings{Xiang:2017:CBO:3079079.3079090,
+ abstract = {Modern chip multiprocessors (CMPs) employ on-chip networks to enable communication between the individual cores. Operations such as coherence and synchronization generate a significant amount of the on-chip network traffic, and often create network requests that have one-to-many (i.e., a core multicasting a message to several cores) or many-to-one (i.e., several cores sending the same message to a common hotspot destination core) flows. As the number of cores in a CMP increases, one-to-many and many-to-one flows result in greater congestion on the network. To alleviate this congestion, prior work provides hardware support for efficient one-to-many and many-to-one flows in buffered on-chip networks. Unfortunately, this hardware support cannot be used in bufferless on-chip networks, which are shown to have lower hardware complexity and higher energy efficiency than buffered networks, and thus are likely a good fit for large-scale CMPs. We propose Carpool, the first bufferless on-chip network optimized for one-to-many (i.e., multicast) and many-to-one (i.e., hotspot) traffic. Carpool is based on three key ideas: it (1) adaptively forks multicast flit replicas; (2) merges hotspot flits; and (3) employs a novel parallel port allocation mechanism within its routers, which reduces the router critical path latency by 5.7% over a bufferless network router without multicast support. We evaluate Carpool using synthetic traffic workloads that emulate the range of rates at which multithreaded applications inject multicast and hotspot requests due to coherence and synchronization. Our evaluation shows that for an 8×8 mesh network, Carpool reduces the average packet latency by 43.1% and power consumption by 8.3% over a bufferless network without multicast or hotspot support. We also find that Carpool reduces the average packet latency by 26.4% and power consumption by 50.5% over a buffered network with multicast support, while consuming 63.5% less area for each router.},
+ acmid = {3079090},
+ address = {New York, NY, USA},
+ articleno = {19},
+ author = {Xiang, Xiyue and Shi, Wentao and Ghose, Saugata and Peng, Lu and Mutlu, Onur and Tzeng, Nian-Feng},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079090},
+ isbn = {978-1-4503-5020-4},
+ keyword = {bufferless networks, coherence, deflection routing, hotspot traffic, multicast, on-chip networks, router design, synchronization},
+ link = {http://doi.acm.org/10.1145/3079079.3079090},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {19:1--19:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Carpool: A Bufferless On-chip Network Supporting Adaptive Multicast and Hotspot Alleviation},
+ year = {2017}
+}
+
+
+@inproceedings{Sadredini:2017:FSM:3079079.3079084,
+ abstract = {Frequency counting of complex patterns such as subtrees is more challenging than for simple itemsets and sequences, as the number of possible candidate patterns in a tree is much higher than one-dimensional data structures, with dramatically higher processing times. In this paper, we propose a new and scalable solution for frequent subtree mining (FTM) on the Automata Processor (AP), a new and highly parallel accelerator architecture. We present a multi-stage pruning framework on the AP, called AP-FTM, to reduce the search space of FTM candidates. This achieves up to 353X speedup at the cost of a small reduction in accuracy, on four real-world and synthetic datasets, when compared with PatternMatcher, a practical and exact CPU solution. To provide a fully accurate and still scalable solution, we propose a hybrid method to combine AP-FTM with a CPU exact-matching approach, and achieve up to 262X speedup over PatternMatcher on a challenging database. We also develop a GPU algorithm for FTM, but show that the AP also outperforms this. The results on a synthetic database show the AP advantage grows further with larger datasets.},
+ acmid = {3079084},
+ address = {New York, NY, USA},
+ articleno = {4},
+ author = {Sadredini, Elaheh and Rahimi, Reza and Wang, Ke and Skadron, Kevin},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079084},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPU, finite automata, frequent subtree mining, heterogeneous architecture, the automata processor},
+ link = {http://doi.acm.org/10.1145/3079079.3079084},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {4:1--4:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Frequent Subtree Mining on the Automata Processor: Challenges and Opportunities},
+ year = {2017}
+}
+
+
+@inproceedings{Zhou:2017:PAF:3079079.3079083,
+ abstract = {GPUs are widely used in accelerating deep neural networks (DNNs) for their high bandwidth and parallelism. But tuning the performance of DNN computations is challenging, as it requires a thorough understanding of both underlying architectures and algorithm implementations. Traditional research, which focused on analyzing performance by CUDA C language or PTX instructions, has not combined hardware features tightly with source code. In this paper, we present a performance analysis framework at the assembly level. First, an instruction parser takes assembly source code, benchmark results, and hardware features as input to identify each instruction's efficiency and latency. Then, a DAG constructor builds a DAG that models instruction executions. Finally, a performance advisor incorporates block partitions, occupancy, and the generated DAG to predict running cycles of the source code and presents its potential bottlenecks. We demonstrate the effectiveness of our framework by optimizing DNNs' performance-critical kernels-GEMM and convolution. After taking steps to reduce bottlenecks, the experimental results show that our GEMM is 20% faster than cuBLAS, and our convolution outperforms cuDNN by 40%--60%. Because of the usage of assembly instructions, we can predict performance with an error as low as 2% in average.},
+ acmid = {3079083},
+ address = {New York, NY, USA},
+ articleno = {15},
+ author = {Zhou, Keren and Tan, Guangming and Zhang, Xiuxia and Wang, Chaowei and Sun, Ninghui},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079083},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GEMM, GPUs, convolution, performance model},
+ link = {http://doi.acm.org/10.1145/3079079.3079083},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {15:1--15:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {A Performance Analysis Framework for Exploiting GPU Microarchitectural Capability},
+ year = {2017}
+}
+
+
+@inproceedings{Jiang:2017:ESM:3079079.3079080,
+ abstract = {As the rate of data generation is growing exponentially each year, data aggregation has become one of the most common and expensive operations for data analysis. Previous efforts to accelerate data aggregation have been mainly focused on multi-core CPUs, improving single-core cache performance and/or reducing multi-core data synchronization overheads. In this paper, we aim at utilizing both SIMD and MIMD of a modern processor with a more recent (and wide lane) SIMD instruction set. We find that a straightforward method for vectorization of hash table often cannot deliver good performance, because wider SIMD vector increases data conflicts among the lanes (especially with skewed data). To address this problem, we design a variant of basic bucket hashing and a bucketized aggregation procedure that can utilize both SIMD and MIMD parallelism efficiently. Our approach first adds distinct offsets to input rows on different SIMD lanes, which reduces the possibility of different lanes accessing identical slot in the hash table. An efficient bucketized aggregation procedure is invoked to save space when the hash table is saturated, or to calculate the final results after all input rows have been inserted into the hash table. For parallelization across cores, we adopt separate hash tables and optimize with parallel reduction and a hybrid approach. We evaluate our methods with input datasets of different distributions. On a single core of Intel Xeon Phi, we obtain 1.6x to 2.9x speedup (over serial code) using our SIMD approach, and outperform a straightforward SIMD implementation by up to 7x. Over multiple cores, our approach has a near-linear scalability.},
+ acmid = {3079080},
+ address = {New York, NY, USA},
+ articleno = {24},
+ author = {Jiang, Peng and Agrawal, Gagan},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079080},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079080},
+ location = {Chicago, Illinois},
+ numpages = {11},
+ pages = {24:1--24:11},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Efficient SIMD and MIMD Parallelization of Hash-based Aggregation by Conflict Mitigation},
+ year = {2017}
+}
+
+
+@inproceedings{Ortega:2017:LIA:3079079.3079101,
+ abstract = {Current microprocessors include several knobs to modify the hardware behavior in order to improve performance under different workload demands. An impractical and time consuming offline profiling is needed to evaluate the design space to find the optimal knob configuration. Different knobs are typically configured in a decoupled manner to avoid the time-consuming offline profiling process. This can often lead to underperforming configurations and sometimes to conflicting decisions that jeopardize system power- performance efficiency. Thus, a dynamic management of the different hardware knobs is necessary to find the knob configuration that maximizes system power-performance efficiency without the burden of offline profiling. In this paper, we propose libPRISM, an infrastructure that enables the transparent management of multiple hardware knobs in order to adapt the system to the evolving demands of hardware resources in different workloads. We use libPRISM to implement a policy that maximizes system performance without degrading energy efficiency by dynamically managing the SMT level and prefetcher hardware knobs of an IBM POWER8 system. We evaluate our solution using 24 applications from 3 different parallel benchmarks suites without the need of offline profiling or workload modification. Overall, the solution increases performance up to 220% (15.4% on average) and reduces dynamic power consumption up to 13% (2.0% on average) when compared to the static default knob configuration.},
+ acmid = {3079101},
+ address = {New York, NY, USA},
+ articleno = {28},
+ author = {Ortega, Cristobal and Moreto, Miquel and Casas, Marc and Bertran, Ramon and Buyuktosunoglu, Alper and Eichenberger, Alexandre E. and Bose, Pradip},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079101},
+ isbn = {978-1-4503-5020-4},
+ link = {http://doi.acm.org/10.1145/3079079.3079101},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {28:1--28:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {libPRISM: An Intelligent Adaptation of Prefetch and SMT Levels},
+ year = {2017}
+}
+
+
+@inproceedings{Hou:2017:FSS:3079079.3079105,
+ abstract = {Segmented sort, as a generalization of classical sort, orders a batch of independent segments in a whole array. Along with the wider adoption of manycore processors for HPC and big data applications, segmented sort plays an increasingly important role than sort. In this paper, we present an adaptive segmented sort mechanism on GPUs. Our mechanisms include two core techniques: (1) a differentiated method for different segment lengths to eliminate the irregularity caused by various workloads and thread divergence; and (2) a register-based sort method to support N-to-M data-thread binding and in-register data communication. We also implement a shared memory-based merge method to support non-uniform length chunk merge via multiple warps. Our segmented sort mechanism shows great improvements over the methods from CUB, CUSP and ModernGPU on NVIDIA K80-Kepler and TitanX-Pascal GPUs. Furthermore, we apply our mechanism on two applications, i.e., suffix array construction and sparse matrix-matrix multiplication, and obtain obvious gains over state-of-the-art implementations.},
+ acmid = {3079105},
+ address = {New York, NY, USA},
+ articleno = {12},
+ author = {Hou, Kaixi and Liu, Weifeng and Wang, Hao and Feng, Wu-chun},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079105},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPU, NVIDIA, SIMD, pascal, registers, segmented sort, shuffle, skewed data, vector},
+ link = {http://doi.acm.org/10.1145/3079079.3079105},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {12:1--12:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Fast Segmented Sort on GPUs},
+ year = {2017}
+}
+
+
+@inproceedings{Sun:2017:GAL:3079079.3079097,
+ abstract = {We investigate how graph partitioning adversely affects the performance of graph analytics. We demonstrate that graph partitioning induces extra work during graph traversal and that graph partitions have markedly different connectivity than the original graph. By consequence, increasing the number of partitions reaches a tipping point after which overheads quickly dominate performance gains. Moreover, we show that the heuristic to balance CPU load between graph partitions by balancing the number of edges is inappropriate for a range of graph analyses. However, even when it is appropriate, it is sub-optimal due to the skewed degree distribution of social networks. Based on these observations, we propose GraphGrind, a new graph analytics system that addresses the limitations incurred by graph partitioning. We moreover propose a NUMA-aware extension to the Cilk programming language and obtain a scale-free yet NUMA-aware parallel programming environment which underpins NUMA-aware scheduling in GraphGrind. We demonstrate that Graph-Grind outperforms state-of-the-art graph analytics systems for shared memory including Ligra, Polymer and Galois.},
+ acmid = {3079097},
+ address = {New York, NY, USA},
+ articleno = {16},
+ author = {Sun, Jiawen and Vandierendonck, Hans and Nikolopoulos, Dimitrios S.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079097},
+ isbn = {978-1-4503-5020-4},
+ keyword = {graph analytics, graph partitioning, non-uniform memory access (NUMA)},
+ link = {http://doi.acm.org/10.1145/3079079.3079097},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {16:1--16:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {GraphGrind: Addressing Load Imbalance of Graph Partitioning},
+ year = {2017}
+}
+
+
+@inproceedings{Qiu:2017:ESS:3079079.3079082,
+ abstract = {Finite state machines (FSMs) are the backbone of many applications, but are difficult to parallelize due to their inherent dependencies. Speculative FSM parallelization has shown promise on multicore machines with up to eight cores. However, as hardware parallelism grows (e.g., Xeon Phi has up to 288 logical cores), a fundamental question raises: How does the speculative FSM parallelization scale as the number of cores increases? Without answering this question, existing methods for speculative FSM parallelization simply choose to use all available cores, which might not only waste computing resources, but also result in suboptimal performance. In this work, we conduct a systematic scalability analysis for speculative FSM parallelization. Unlike many other parallelizations which can be modeled by the classic Amdahl's law or its simple extensions, speculative FSM parallelization scales unconventionally due to the non-deterministic nature of speculation and the cost variations of misspeculation. To address these challenges, this work introduces a spectrum of scalability models that are customized to the properties of specific FSMs and the underlying architecture. The models, for the first time, precisely capture the scalability of speculative parallelization for different FSM computations, and clearly show the existence of a "sweet spot" in terms of the number of cores employed by the speculative FSM parallelization to achieve the optimal performance. To make the scalability models practical, we develop S3, a <u>s</u>calability-<u>s</u>ensitive <u>s</u>peculation framework for FSM parallelization. For any given FSM, S3 can automatically characterize its properties and analyze its scalability, hence guide speculative parallelization towards the optimal performance and more efficient use of computing resources. Evaluations on different FSMs and architectures confirm the accuracy of the proposed models and show that S3 achieves significant speedup (up to 5X) and energy savings (up to 77%).},
+ acmid = {3079082},
+ address = {New York, NY, USA},
+ articleno = {2},
+ author = {Qiu, Junqiao and Zhao, Zhijia and Wu, Bo and Vishnu, Abhinav and Song, Shuaiwen Leon},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079082},
+ isbn = {978-1-4503-5020-4},
+ keyword = {FSM, finite state machine, parallelization, scalability, speculation},
+ link = {http://doi.acm.org/10.1145/3079079.3079082},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {2:1--2:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Enabling Scalability-sensitive Speculative Parallelization for FSM Computations},
+ year = {2017}
+}
+
+
+@inproceedings{Kim:2017:PCE:3079079.3079088,
+ abstract = {General Purpose Graphics Processing Units (GPGPUs) are becoming a cost-effective hardware approach for parallel computing. Many executions on the GPGPUs place heavy stress on the memory system, creating network bottlenecks near memory controllers. We observe that data redundancy in communication traffic is common-place across a wide range of GPGPU applications. To exploit the data redundancy, we propose a packet coalescing mechanism to alleviate the network bottlenecks by directly reducing the traffic volume. The key idea is to coalesce multiple packets into one without increasing the packet size when they carry redundant cache blocks. To ensure that the coalesced packets are delivered to their respective destinations, we adopt multicast routing for the interconnection network of GPGPUs. Our coalescing approach yields 15% IPC improvement (up to 112%) in a large-scale GPGPU with 2D mesh across various GPGPU applications, by reducing average memory access time (AMAT) by 15.5% (up to 65.2%) and obtaining network bandwidth savings by 13% (up to 37%). Also, our coalescing approach achieves 7% IPC improvement in the NVIDIA Fermi architecture with the crossbar.},
+ acmid = {3079088},
+ address = {New York, NY, USA},
+ articleno = {6},
+ author = {Kim, Kyung Hoon and Boyapati, Rahul and Huang, Jiayi and Jin, Yuho and Yum, Ki Hwan and Kim, Eun Jung},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079088},
+ isbn = {978-1-4503-5020-4},
+ keyword = {GPGPU, inter-core locality, multicast, packet coalescing},
+ link = {http://doi.acm.org/10.1145/3079079.3079088},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {6:1--6:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Packet Coalescing Exploiting Data Redundancy in GPGPU Architectures},
+ year = {2017}
+}
+
+
+@inproceedings{Zhuang:2017:ICG:3079079.3079091,
+ abstract = {This paper presents the Iteration-Fusing Conjugate Gradient (IFCG) approach which is an evolution of the Conjugate Gradient method that consists in i) letting computations from different iterations to overlap between them and ii) splitting linear algebra kernels into subkernels to increase concurrency and relax data-dependencies. The paper presents two ways of applying the IFCG approach: The IFCG1 algorithm, which aims at hiding the cost of parallel reductions, and the IFCG2 algorithm, which aims at reducing idle time by starting computations as soon as possible. Both IFCG1 and IFCG2 algorithms are two complementary approaches aiming at increasing parallel performance. Extensive numerical experiments are conducted to compare the IFCG1 and IFCG2 numerical stability and performance against four state-of-the-art techniques. By considering a set of representative input matrices, the paper demonstrates that IFCG1 and IFCG2 provide parallel performance improvements up to 42.9% and 41.5% respectively and average improvements of 11.8% and 7.1% with respect to the best state-of-the-art techniques while keeping similar numerical stability properties. Also, this paper provides an evaluation of the IFCG algorithms' sensitivity to system noise and it demonstrates that they run 18.0% faster on average than the best state-of-the-art technique under realistic degrees of system noise.},
+ acmid = {3079091},
+ address = {New York, NY, USA},
+ articleno = {21},
+ author = {Zhuang, Sicong and Casas, Marc},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079091},
+ isbn = {978-1-4503-5020-4},
+ keyword = {mitigation of synchronization costs, overlap between iterations, sparse linear algebra, task parallelism},
+ link = {http://doi.acm.org/10.1145/3079079.3079091},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {21:1--21:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {Iteration-fusing Conjugate Gradient},
+ year = {2017}
+}
+
+
+@proceedings{2016:2925426,
+ abstract = {
+                  An abstract is not available.
+              },
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-4361-9},
+ key = {$\!\!$},
+ location = {Istanbul, Turkey},
+ publisher = {ACM},
+ title = {ICS '16: Proceedings of the 2016 International Conference on Supercomputing},
+ year = {2016}
+}
+
+
+@inproceedings{Aurangzeb:2017:HHP:3079079.3079107,
+ abstract = {Applications that can tolerate a certain degree of inaccuracy offer opportunities for performance improvement and/or power reduction through techniques that produce approximate results. Such techniques have been proposed at many levels of the system stack. Performing approximation at the level of functions promises significant performance improvement. Limitations of existing techniques are that they involve hardware, require substantial programmer involvement, or do not employ efficient approximation strategies. In this paper, we introduce a function approximation scheme that aims to overcome these limitations. Comparing our scheme with existing techniques, we show that it can efficiently approximate functions in software. The evaluation of our scheme on 90 mathematical and scientific functions from the GNU Scientific Library (GSL) shows that the speed of 90% of these functions can be improved. For 80% of the functions, the normalized RMS error in the approximated result is very small (0.04 on average) with 7.5x average speedup. Whereas for another 10% of the functions, the error is 0.4 with an average speedup of 5x. We also demonstrate the feasibility, practicality, and effectiveness of the approach by presenting results on five real applications. The average speedup for these applications is 2.9x with 0.25% error.},
+ acmid = {3079107},
+ address = {New York, NY, USA},
+ articleno = {23},
+ author = {Aurangzeb and Eigenmann, Rudolf},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/3079079.3079107},
+ isbn = {978-1-4503-5020-4},
+ keyword = {approximate computing, function approximation},
+ link = {http://doi.acm.org/10.1145/3079079.3079107},
+ location = {Chicago, Illinois},
+ numpages = {10},
+ pages = {23:1--23:10},
+ publisher = {ACM},
+ series = {ICS '17},
+ title = {HiPA: History-based Piecewise Approximation for Functions},
+ year = {2017}
+}
+
+
