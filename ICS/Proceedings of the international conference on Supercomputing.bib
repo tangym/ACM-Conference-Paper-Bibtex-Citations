@@ -1,0 +1,1075 @@
+@inproceedings{Chen:2011:CPM:1995896.1995917,
+ abstract = {With the number of high-density servers in data centers rapidly increasing, power control with performance optimization has become a key challenge to gain a high return on investment, by safely accommodating the maximized number of servers allowed by the limited power supply and cooling facilities in a data center. Various power control solutions have been recently proposed for high-density servers and different components in a server to avoid system failures due to power overload or overheating. Existing solutions, unfortunately, either rely only on the processor for server power control, with the assumption that it is the only major power consumer, or limit power only for a single component, such as main memory. As a result, the synergy between the processor and main memory is impaired by uncoordinated power adaptations, resulting in degraded overall system performance. In this paper, we propose a novel power control solution that can precisely limit the peak power consumption of a server below a desired budget. Our solution adapts the power states of both the processor and memory in a coordinated manner, based on their power demands, to achieve optimized system performance. Our solution also features a control algorithm that is designed rigorously based on advanced feedback control theory for guaranteed control accuracy and system stability. Compared with two state-of-the-art server power control solutions, experimental results show that our solution, on average, achieves up to 23% better performance than one baseline for CPU-intensive benchmarks and doubles the performance of the other baseline when the power budget is tight.},
+ acmid = {1995917},
+ address = {New York, NY, USA},
+ author = {Chen, Ming and Wang, Xiaorui and Li, Xue},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995917},
+ isbn = {978-1-4503-0102-2},
+ keyword = {data center, memory, power capping, power control, server},
+ link = {http://doi.acm.org/10.1145/1995896.1995917},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {130--140},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Coordinating Processor and Main Memory for Efficientserver Power Control},
+ year = {2011}
+}
+
+
+@inproceedings{McFarlin:2011:ASV:1995896.1995938,
+ abstract = {The well-known shift to parallelism in CPUs is often associated with multicores. However another trend is equally salient: the increasing parallelism in per-core single-instruction multiple-date (SIMD) vector units. Intel's SSE and IBM's VMX (compatible to AltiVec) both offer 4-way (single precision) floating point, but the recent Intel instruction sets AVX and Larrabee (LRB) offer 8-way and 16-way, respectively. Compilation and optimization for vector extensions is hard, and often the achievable speed-up by using vectorizing compilers is small compared to hand-optimization using intrinsic function interfaces. Unfortunately, the complexity of these intrinsics interfaces increases considerably with the vector length, making hand-optimization a nightmare. In this paper, we present a peephole-based vectorization system that takes as input the vector instruction semantics and outputs a library of basic data reorganization blocks such as small transpositions and perfect shuffles that are needed in a variety of high performance computing applications. We evaluate the system by generating the blocks needed by the program generator Spiral for vectorized fast Fourier transforms (FFTs). With the generated FFTs we achieve a vectorization speed-up of 5.5--6.5 for 8-way AVX and 10--12.5 for 16-way LRB. For the latter instruction counts are used since no timing information is available. The combination of the proposed system and Spiral thus automates the production of high performance FFTs for current and future vector architectures.},
+ acmid = {1995938},
+ address = {New York, NY, USA},
+ author = {McFarlin, Daniel S. and Arbatov, Volodymyr and Franchetti, Franz and P\"{u}schel, Markus},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995938},
+ isbn = {978-1-4503-0102-2},
+ keyword = {autovectorization, fourier transform, program generation, simd, super-optimization},
+ link = {http://doi.acm.org/10.1145/1995896.1995938},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {265--274},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Automatic SIMD Vectorization of Fast Fourier Transforms for the Larrabee and AVX Instruction Sets},
+ year = {2011}
+}
+
+
+@inproceedings{RudraiahDakshinamurthy:2011:SAE:1995896.1995965,
+ abstract = {The utilization of large scale parallel event simulators such as SST/macro requires that skeleton models of underlying software systems and architectures be created. Implementing such models by abstracting the designs of large scale parallel applications requires a substantial manual effort and introduces the hazards of human errors. We outline an approach for the automatic extraction of SST/macro skeleton models from large scale parallel applications. Our methodology for deriving SST/macro skeleton models is based on the use of extensible and open-source ROSE compiler infrastructure. The SST/macro skeleton models are then combined with appropriate models of the network and hardware configurations.},
+ acmid = {1995965},
+ address = {New York, NY, USA},
+ author = {Rudraiah Dakshinamurthy, Amruth},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995965},
+ isbn = {978-1-4503-0102-2},
+ keyword = {computer architecture simulation, high performance computing, performance evaluation, skeleton model development tool, source-to-source translator},
+ link = {http://doi.acm.org/10.1145/1995896.1995965},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {382--382},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Automatic Extraction of SST/Macro Skeleton Models},
+ year = {2011}
+}
+
+
+@inproceedings{Jang:2011:SAC:1995896.1995960,
+ abstract = {In this paper, we propose an efficient code overlay technique that automatically generates an overlay structure for a given memory size for multicores with explicitly-managed memory hierarchies. We observe that finding an efficient overlay structure with minimum memory copying overhead is similar to the problem that finds a code placement with minimum conflict misses in the instruction cache. Our algorithm exploits the temporal-ordering information between functions during program execution. Experimental results on the Cell BE processor indicate that our approach is effective and promising.},
+ acmid = {1995960},
+ address = {New York, NY, USA},
+ author = {Jang, Choonki},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995960},
+ isbn = {978-1-4503-0102-2},
+ keyword = {code overlays, temporal ordering},
+ link = {http://doi.acm.org/10.1145/1995896.1995960},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {377--377},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: An Automatic Code Overlaying Technique for Multicores with Explicitly-managed Memory Hierarchies},
+ year = {2011}
+}
+
+
+@inproceedings{Shei:2011:AGC:1995896.1995936,
+ abstract = {MATLAB is a popular software platform for scientific and engineering software writers. It offers a high level of abstraction for fundamental mathematical operations and extensive highly optimized domain-specific libraries for several scientific and engineering disciplines. With the recent availability of GPU libraries for MATLAB, it has become possible to easily exploit GPGPUs as coprocessors. However, this requires changing the code by carefully declaring variables that would live on the GPU, breaking the simplicity of the MATLAB programming model. We present a fully automatic source-level compilation technique to exploit a given GPU library for MATLAB, enabling coarse-grained heterogeneous parallelism across CPU and GPU. Our approach is based on empirically characterizing the library's functions, in order to build a comparative model of their performance on the CPU and GPU, which is then used along with a data communication cost model to maximize parallelism by selectively offloading some computation on the GPU. We achieve this by phrasing the problem as a binary integer linear programming problem aimed at minimizing CPU-GPU data movement, and using a hierarchical approach to keep the computational complexity in check. We have implemented our approach in a source-level MATLAB compiler, and present experimental results on a set of MATLAB kernels and applications using the GPUmat library. We show speedups of up to 7 times when the GPU is harnessed, compared to a standalone 8-core CPU.},
+ acmid = {1995936},
+ address = {New York, NY, USA},
+ author = {Shei, Chun-Yu and Ratnalikar, Pushkar and Chauhan, Arun},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995936},
+ isbn = {978-1-4503-0102-2},
+ keyword = {gpgpu, hererogeneous parallelism, matlab, source-level},
+ link = {http://doi.acm.org/10.1145/1995896.1995936},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {245--254},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Automating GPU Computing in MATLAB},
+ year = {2011}
+}
+
+
+@inproceedings{Tallent:2011:SFC:1995896.1995908,
+ abstract = {Applications must scale well to make efficient use of even medium-scale parallel systems. Because scaling problems are often difficult to diagnose, there is a critical need for scalable tools that guide scientists to the root causes of performance bottlenecks. Although tracing is a powerful performance-analysis technique, tools that employ it can quickly become bottlenecks themselves. Moreover, to obtain actionable performance feedback for modular parallel software systems, it is often necessary to collect and present fine-grained context-sensitive data --- the very thing scalable tools avoid. While existing tracing tools can collect calling contexts, they do so only in a coarse-grained fashion; and no prior tool scalably presents both context- and time-sensitive data. This paper describes how to collect, analyze and present fine-grained call path traces for parallel programs. To scale our measurements, we use asynchronous sampling, whose granularity is controlled by a sampling frequency, and a compact representation. To present traces at multiple levels of abstraction and at arbitrary resolutions, we use sampling to render complementary slices of calling-context-sensitive trace data. Because our techniques are general, they can be used on applications that use different parallel programming models (MPI, OpenMP, PGAS). This work is implemented in HPCToolkit.},
+ acmid = {1995908},
+ address = {New York, NY, USA},
+ author = {Tallent, Nathan R. and Mellor-Crummey, John and Franco, Michael and Landrum, Reed and Adhianto, Laksono},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995908},
+ isbn = {978-1-4503-0102-2},
+ keyword = {calling context, hpctoolkit, performance tools, statistical sampling, tracing},
+ link = {http://doi.acm.org/10.1145/1995896.1995908},
+ location = {Tucson, Arizona, USA},
+ numpages = {12},
+ pages = {63--74},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Scalable Fine-grained Call Path Tracing},
+ year = {2011}
+}
+
+
+@inproceedings{Titos-Gil:2011:ZDH:1995896.1995906,
+ abstract = {Hardware Transactional Memory (HTM) systems, in prior research, have either fixed policies of conflict resolution and data versioning for the entire system or allowed a degree of flexibility at the level of transactions. Unfortunately, this results in susceptibility to pathologies, lower average performance over diverse workload characteristics or high design complexity. In this work we explore a new dimension along which flexibility in policy can be introduced. Recognizing the fact that contention is more a property of data rather than that of an atomic code block, we develop an HTM system that allows selection of versioning and conflict resolution policies at the granularity of cache lines. We discover that this neat match in granularity with that of the cache coherence protocol results in a design that is very simple and yet able to track closely or exceed the performance of the best performing policy for a given workload. It also brings together the benefits of parallel commits (inherent in traditional eager HTMs) and good optimistic concurrency without deadlock avoidance mechanisms (inherent in lazy HTMs), with little increase in complexity.},
+ acmid = {1995906},
+ address = {New York, NY, USA},
+ author = {Titos-Gil, Rub{\'e}n and Negi, Anurag and Acacio, Manuel E. and Garc\'{\i}a, Jos{\'e} M. and Stenstrom, Per},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995906},
+ isbn = {978-1-4503-0102-2},
+ keyword = {contention management, hardware transactional memory},
+ link = {http://doi.acm.org/10.1145/1995896.1995906},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {53--62},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {ZEBRA: A Data-centric, Hybrid-policy Hardware Transactional Memory Design},
+ year = {2011}
+}
+
+
+@inproceedings{Gropp:2011:PMK:1995896.1995930,
+ abstract = {Parallel computing is primarily about achieving greater performance than is possible without using parallelism. Especially for the high-end, where systems cost tens to hundreds of millions of dollars, making the best use of these valuable and scarce systems is important. Yet few applications really understand how well they are performing with respect to the achievable performance on the system. The Blue Waters system, currently being installed at the University of Illinois, will offer sustained performance in excess of 1 PetaFLOPS for many applications. However, achieving this level of performance requires careful attention to many details, as this system has many features that must be used to get the best performance. To address this problem, the Blue Waters project is exploring the use of performance models that provide enough information to guide the development and tuning of applications, ranging from improving the performance of small loops to identifying the need for new algorithms. Using Blue Waters as an example of an extreme scale system, this talk will describe some of the challenges faced by applications at this scale, the role that performance modeling can play in preparing applications for extreme scale, and some ways in which performance modeling has guided performance enhancements for those applications.},
+ acmid = {1995930},
+ address = {New York, NY, USA},
+ author = {Gropp, William D.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995930},
+ isbn = {978-1-4503-0102-2},
+ keyword = {extreme scale computing, performance modeling},
+ link = {http://doi.acm.org/10.1145/1995896.1995930},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {213--213},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Performance Modeling As the Key to Extreme Scale Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Hammond:2011:COR:1995896.1995920,
+ abstract = {The National Renewable Energy Laboratory (NREL) in Golden, Colorado is the nation's premier laboratory for renewable energy and energy efficiency research. In this talk we will give a brief overview of NREL and then focus on some of the challenges and opportunities in meeting future global energy challenges. Computational modeling, high performance computing, data management and visual informatics is playing a key role in advancing our fundamental understanding of processes and systems at temporal and spatial scales that evade direct observation and helping meet U.S. goals for energy efficiency and clean energy production. This discussion will include details of new, highly energy efficient buildings and social behaviors impacting energy use, fundamental understanding of plants and proteins leading to lower cost renewable fuels, novel computational chemistry approaches for low cost photovoltaic materials, and computational fluid dynamics challenges in simulating complex behaviors within and between large-scale deployment of wind farms and understanding their potential impacts to local and regional climate.},
+ acmid = {1995920},
+ address = {New York, NY, USA},
+ author = {Hammond, Steven},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995920},
+ isbn = {978-1-4503-0102-2},
+ keyword = {climate, efficiency, energy, renewable},
+ link = {http://doi.acm.org/10.1145/1995896.1995920},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {151--151},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Challenges and Opportunities in Renewable Energy and Energy Efficiency},
+ year = {2011}
+}
+
+
+@inproceedings{Manivannan:2011:PIM:1995896.1995963,
+ abstract = {Amdahl's Law estimates parallel applications with negligible serial sections to potentially scale to many cores. However, due to merging phases in data mining applications, the serial sections do not remain constant. We extend Amdahl's model to accommodate this and establish that Amdahl's Law can overestimate the scalability offered by symmetric and asymmetric architectures for such applications. Implications: 1) A better use of the chip area is for fewer and hence more capable cores rather than simply increasing the number of cores for symmetric and asymmetric architectures and 2) The performance potential of asymmetric over symmetric multi-core architectures is limited for such applications.},
+ acmid = {1995963},
+ address = {New York, NY, USA},
+ author = {Manivannan, Madhavan and Juurlink, Ben and Stenstrom, Per},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995963},
+ isbn = {978-1-4503-0102-2},
+ keyword = {amdahl's law, multi-core architecture, reduction operations},
+ link = {http://doi.acm.org/10.1145/1995896.1995963},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {380--380},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Poster: Implications of Merging Phases on Scalability of Multi-core Architectures},
+ year = {2011}
+}
+
+
+@proceedings{Boku:2010:1810085,
+ abstract = {It is my great pleasure to welcome all of you to the 24th ACM International Conference on Supercomputing (ICS'10) at Tsukuba International Congress Center, Tsukuba City, Japan. Through its long history over 20 years, ICS has been a symbolic conference of ACM for research on supercomputing from the architecture to the application fields as well as various related issues. The last ICS in Japan was held in 1993 in Tokyo, and it has come back after 17 years to Tsukuba City. Tsukuba City is well known as a symbolic city for various aspects of scientific research, referred as "Tsukuba Science City", which includes more than 30 of widely spread fields of national research institutes from the agriculture to the aerospace. The high-end computing researches both on systems and applications are also very active here, and the entire region provides an ideal environment for all kinds of collaborative research among different fields. Tsukuba City also can be easily accessed from Narita Airport, Japan's gateway, as an ideal place for international collaboration and meeting. We are truly pleased to welcome you in this wonderful city. The conference starts with one tutorial/workshop day on Tuesday with two attractive workshops HEART and IRMM and four tutorials on the state-of-the-art supercomputing technology, followed by three-day main conference program on Wednesday through Friday. In this year, we selected 32 papers through the excellent work by international technical program committee. Each morning will start with the wonderful keynote speech by Mr. Stephen Pawlowski from Intel, Prof. William Dally from Stanford University and NVIDIA, and Prof. Kimihiko Hirao from Riken. The first two keynotes may describe the current trend and future vision of supercomputing processors and systems as well as Japan's next generation supercomputer system with over 10 PFLOPS of performance and its research organization by the third keynote. In the intervals of technical sessions, please enjoy the poster session and vendor exhibition with coffee and snacks located to the next room of technical sessions. The nightly social events of reception and banquet may also provide a good opportunity for information exchange among all of attendees.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0018-6},
+ location = {Tsukuba, Ibaraki, Japan},
+ publisher = {ACM},
+ title = {ICS '10: Proceedings of the 24th ACM International Conference on Supercomputing},
+ year = {2010}
+}
+
+
+@inproceedings{Unat:2011:MRC:1995896.1995932,
+ abstract = {We present Mint, a programming model that enables the non-expert to enjoy the performance benefits of hand coded CUDA without becoming entangled in the details. Mint targets stencil methods, which are an important class of scientific applications. We have implemented the Mint programming model with a source-to-source translator that generates optimized CUDA C from traditional C source. The translator relies on annotations to guide translation at a high level. The set of pragmas is small, and the model is compact and simple. Yet, Mint is able to deliver performance competitive with painstakingly hand-optimized CUDA. We show that, for a set of widely used stencil kernels, Mint realized 80% of the performance obtained from aggressively optimized CUDA on the 200 series NVIDIA GPUs. Our optimizations target three dimensional kernels, which present a daunting array of optimizations.},
+ acmid = {1995932},
+ address = {New York, NY, USA},
+ author = {Unat, Didem and Cai, Xing and Baden, Scott B.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995932},
+ isbn = {978-1-4503-0102-2},
+ keyword = {automatic translation and optimization, cuda, parallel programming model, stencil computation},
+ link = {http://doi.acm.org/10.1145/1995896.1995932},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {214--224},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Mint: Realizing CUDA Performance in 3D Stencil Methods with Annotated C},
+ year = {2011}
+}
+
+
+@inproceedings{Wu:2011:AGE:1995896.1995901,
+ abstract = {Portable parallel benchmarks are widely used and highly effective for (a) the evaluation, analysis and procurement of high-performance computing (HPC) systems and (b) quantifying the potential benefits of porting applications for new hardware platforms. Yet, past techniques to synthetically parametrized hand-coded HPC benchmarks prove insufficient for today's rapidly-evolving scientific codes particularly when subject to multi-scale science modeling or when utilizing domain-specific libraries. To address these problems, this work contributes novel methods to automatically generate highly portable and customizable communication benchmarks from HPC applications. We utilize ScalaTrace, a lossless, yet scalable, parallel application tracing framework to collect selected aspects of the run-time behavior of HPC applications, including communication operations and execution time, while abstracting away the details of the computation proper. We subsequently generate benchmarks with identical run-time behavior from the collected traces. A unique feature of our approach is that we generate benchmarks in CONCEPTUAL, a domain-specific language that enables the expression of sophisticated communication patterns using a rich and easily understandable grammar yet compiles to ordinary C+MPI. Experimental results demonstrate that the generated benchmarks are able to preserve the run-time behavior--including both the communication pattern and the execution time---of the original applications. Such automated benchmark generation is particularly valuable for proprietary, export-controlled, or classified application codes: when supplied to a third party, our auto-generated benchmarks ensure performance fidelity but without the risks associated with releasing the original code. This ability to automatically generate performance-accurate benchmarks from parallel applications is novel and without any precedence, to our knowledge.},
+ acmid = {1995901},
+ address = {New York, NY, USA},
+ author = {Wu, Xing and Mueller, Frank and Pakin, Scott},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995901},
+ isbn = {978-1-4503-0102-2},
+ keyword = {application-specific benchmark generation, communication, conceptual, domain-specific languages, performance, scalatrace, trace compression},
+ link = {http://doi.acm.org/10.1145/1995896.1995901},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {12--21},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Automatic Generation of Executable Communication Specifications from Parallel Applications},
+ year = {2011}
+}
+
+
+@inproceedings{Shantharam:2011:CIS:1995896.1995922,
+ abstract = {The increase in on-chip transistor count facilitates achieving higher performance, but at the expense of higher susceptibility to soft errors. In this paper, we characterize the challenges posed by soft errors for large-scale applications representative of workloads on supercomputing systems. Such applications are typically based on the computational solution of partial differential equation models using either explicit or implicit methods. In both cases, the execution time of such applications is typically dominated by the time spent in their underlying sparse matrix vector multiplication kernel (SpMV, t ← A • y). We provide a theoretical analysis of the impact of a single soft error through its propagation by a sequence of sparse matrix vector multiplication operations. Our analysis indicates that a single soft error in some ith component of the vector y can corrupt the entire resultant vector in a relatively short sequence of SpMV operations. Additionally, the propagation pattern corresponds to the sparsity structure of the coefficient matrix A and the magnitude of the error grows non-linearly as(||Ai||2∗)k, after k SpMV operations, where, ||Ai∗||2 is the 2-norm of the ith row of A. We corroborate this analysis with empirical observations on a model heat equation using explicit method and well known sparse matrix systems (matrices from a test suite) for the implicit method using iterative solvers such as CG, PCG and SOR. Our results indicate that explicit schemes will suffer from soft error induced numerical instabilities, thus exacerbating intrinsic stability issues for such methods, that impose constraints on relative time and space step sizes. For implicit schemes, linear solver performance through widely used CG and PCG schemes, degrades by a factor as high as 200x, whereas, a stationary scheme such as SOR is inherently soft error resilient. Our results thus indicate the need for new approaches to achieve soft error resiliency in such methods and a critical evaluation of the tradeoffs among multiple metrics, including, performance, reliability and energy.},
+ acmid = {1995922},
+ address = {New York, NY, USA},
+ author = {Shantharam, Manu and Srinivasmurthy, Sowmyalatha and Raghavan, Padma},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995922},
+ isbn = {978-1-4503-0102-2},
+ keyword = {efficiency, iterative methods, scientific computing, soft errors},
+ link = {http://doi.acm.org/10.1145/1995896.1995922},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {152--161},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Characterizing the Impact of Soft Errors on Iterative Methods in Scientific Computing},
+ year = {2011}
+}
+
+
+@inproceedings{Xu:2011:CSC:1995896.1995941,
+ abstract = {The number of on-chip cores of modern chip multiprocessors (CMPs) is growing fast with technology scaling. However, it remains a big challenge to efficiently support cache coherence for large scale CMPs. The conventional snoopy and directory coherence protocols cannot be smoothly scaled to many-core or thousand-core processors. Snoopy protocols introduce large power overhead due to enormous amount of cache tag probing triggered by broadcast. Directory protocols introduce performance penalty due to indirection, and large storage overhead due to storing directories. This paper addresses the efficiency problem when supporting cache coherency for large-scale CMPs. By leveraging emerging optical on-chip interconnect (OP-I) technology to provide high bandwidth density, low propagation delay and natural support for multicast/broadcast in a hierarchical network organization, we propose a composite cache coherence (C3) protocol that benefits from direct cache-to-cache accesses as in snoopy protocol and small amount of cache probing as in directory protocol. Targeting at quickly completing coherence transactions, C3 organizes accesses in a three-tier hierarchy by combining a mix of designs including local broadcast prediction, filtering, and a coarse-grained directory. Compared to directory-based protocol[18], our evaluations on a thousand-core CMP show that C3 improves performance by 21%, reduces network latency of coherence messages by 41% and saves network energy consumption by 5.5% on average for PARSEC applications.},
+ acmid = {1995941},
+ address = {New York, NY, USA},
+ author = {Xu, Yi and Du, Yu and Zhang, Youtao and Yang, Jun},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995941},
+ isbn = {978-1-4503-0102-2},
+ keyword = {cache coherence protocol, cmp, nanophotonics, optical network, thousand-core},
+ link = {http://doi.acm.org/10.1145/1995896.1995941},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {285--294},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {A Composite and Scalable Cache Coherence Protocol for Large Scale CMPs},
+ year = {2011}
+}
+
+
+@proceedings{Banerjee:2012:2304576,
+ abstract = {On behalf of the Program Committee, we are pleased to introduce the technical program of the 2012 ACM International Conference on Supercomputing (ICS), the 26th in the series. The conference is by now a well established forum to present and discuss explorations that aim at pushing the limits of performance and capacity in large-scale computing systems, while preserving power efficiency, reliability, and programmability. In this context, papers have been solicited and submitted on parallel applications, architecture, hardware, accelerators, systems software, large scale installations, data center, grid and cloud computing, reliability, power efficiency, models of computation and of programming, and theoretical foundations of performance, for terascale to exascale systems. This year's program includes 36 technical papers selected out of 161 submissions (a 22.3% acceptance rate). There were more submissions of high quality and relevance than could be accommodated in a three-day technical program. Under these constraints, a Program Committee of 70 world experts on the variety of topics of interest to the conference has worked very hard to select a high quality program, assisted by 134 external reviewers and by the Submission Chairs, Francesco Silvestri and Francesco Versaci. The task was carried over a period of two months, with two rounds of reviews--the second deepening the results of the first one-and one week of email discussion among PC members to further refine the evaluation and prepare a preliminary synthesison each submission. A total of 641 reviews were provided in the process, with each paper receiving at least 3 reviews, and half the papers receiving 5 reviews. Final deliberations were made during the Program Committee meeting, held at the University of Padova, Italy, on March 9, 2012. The meeting was attended by nearly two-thirds of the PC members; most of the other members participated via conference call. The technical program is further enriched by the two keynote addresses. Yale Patt will reflect on avenues to improve the performance of the individual core that will benefit even exascale class systems. Michael Gschwind will present the Blue Gene/Q supercomputer design, and how it addresses the memory, power, scalability, communication, and reliability "walls". The Best Paper Award will be given according to the selection made by the audience among all papers. Thus, we invite you to carefully attend all talks, and to vote according to each paper's content, relevance, and presentation quality.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1316-2},
+ location = {San Servolo Island, Venice, Italy},
+ note = {415121},
+ publisher = {ACM},
+ title = {ICS '12: Proceedings of the 26th ACM International Conference on Supercomputing},
+ year = {2012}
+}
+
+
+@inproceedings{Polfliet:2011:ODD:1995896.1995926,
+ abstract = {The amount of data produced on the internet is growing rapidly. Along with data explosion comes the trend towards more and more diverse data, including rich media such as audio and video. Data explosion and diversity leads to the emergence of data-centric workloads to manipulate, manage and analyze the vast amounts of data. These data-centric workloads are likely to run in the background and include application domains such as data mining, indexing, compression, encryption, audio/video manipulation, data warehousing, etc. Given that datacenters are very much cost sensitive, reducing the cost of a single component by a small fraction immediately translates into huge cost savings because of the large scale. Hence, when designing a datacenter, it is important to understand data-centric workloads and optimize the ensemble for these workloads so that the best possible performance per dollar is achieved. This paper studies how the emerging class of data-centric workloads affects design decisions in the datacenter. Through the architectural simulation of minutes of run time on a validated full-system x86 simulator, we derive the insight that for some data-centric workloads, a high-end server optimizes performance per total cost of ownership (TCO), whereas for other workloads, a low-end server is the winner. This observation suggests heterogeneity in the datacenter, in which a job is run on the most cost-efficient server. Our experimental results report that a heterogeneous datacenter achieves an up to 88%, 24% and 17% improvement in cost-efficiency over a homogeneous high-end, commodity and low-end server datacenter, respectively.},
+ acmid = {1995926},
+ address = {New York, NY, USA},
+ author = {Polfliet, Stijn and Ryckbosch, Frederick and Eeckhout, Lieven},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995926},
+ isbn = {978-1-4503-0102-2},
+ keyword = {data-centric workloads, datacenter, heterogeneity, workload characterization},
+ link = {http://doi.acm.org/10.1145/1995896.1995926},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {182--191},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Optimizing the Datacenter for Data-centric Workloads},
+ year = {2011}
+}
+
+
+@inproceedings{Adve:2011:RSL:1995896.1995898,
+ abstract = {The era of parallel computing for the masses is here, but writing correct parallel programs remains difficult. For many domains, shared-memory remains an attractive programming model. The memory model, which specifies the meaning of shared variables, is at the heart of this programming model. Unfortunately, it has involved a tradeoff between programmability and performance, and has arguably been one of the most challenging and contentious areas in both hardware architecture and programming language specification. Recent broad community-scale efforts have finally led to a convergence in this debate, with popular languages such as Java and C++ and most hardware vendors publishing compatible memory model specifications. Although this convergence is a dramatic improvement, it has exposed fundamental shortcomings in current popular languages and systems that thwart safe and efficient parallel computing. I will discuss the path to the above convergence, the hard lessons learned, and their implications. A cornerstone of this convergence has been the view that the memory model should be a contract between the programmer and the system - if the programmer writes disciplined (data-race-free) programs, the system will provide high programmability (sequential consistency) and performance. I will discuss why this view is the best we can do with current popular languages, and why it is inadequate moving forward, requiring rethinking popular parallel languages and hardware. In particular, I will argue that (1) parallel languages should not only promote high-level disciplined models, but they should also enforce the discipline, and (2) for scalable and efficient performance, hardware should be co-designed to take advantage of and support such disciplined models. I will describe the Deterministic Parallel Java (DPJ) language and DeNovo hardware projects at Illinois as examples of such an approach. This talk draws on collaborations with many colleagues over the last two decades on memory models (in particular, a CACM'10 paper with Hans-J. Boehm) and with faculty, researchers, and students from the DPJ and DeNovo projects.},
+ acmid = {1995898},
+ address = {New York, NY, USA},
+ author = {Adve, Sarita V.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995898},
+ isbn = {978-1-4503-0102-2},
+ keyword = {cache coherence, determinism, memory consistency, memory models},
+ link = {http://doi.acm.org/10.1145/1995896.1995898},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Rethinking Shared-memory Languages and Hardware},
+ year = {2011}
+}
+
+
+@inproceedings{Tian:2011:SEP:1995896.1995958,
+ abstract = {This work proposes a novel data reorganization strategy to enable petascale data analysis for large-scale scientific applications running on high-end leadership computers. This strategy achieves optimal data layout for scientific applications by: 1) using a Space Filling Curve to reorganize the data chunks of multidimensional datasets on large storage systems, thus achieving a consistent and balanced read performance for any access pattern; 2) harmonizing the optimal chunk size with underlying file system for more efficient data access. Experimental results demonstrate a maximum of 37 times speedup for S3D simulation on the Jaguar supercomputer.},
+ acmid = {1995958},
+ address = {New York, NY, USA},
+ author = {Tian, Yuan},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995958},
+ isbn = {978-1-4503-0102-2},
+ keyword = {data layout, i/o, space filling curve},
+ link = {http://doi.acm.org/10.1145/1995896.1995958},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {375--375},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Enabling Petascale Data Analysis for Scientific Applications Through Data Reorganization},
+ year = {2011}
+}
+
+
+@inproceedings{Frasca:2011:SVI:1995896.1995959,
+ abstract = {A leading cause of unpredictable application performance in distributed systems is contention at the storage layer, where resources are multiplexed among concurrent data intensive workloads. We target the shared storage cache, used to alleviate disk I/O bottlenecks, and propose a new caching paradigm to improve performance. We present the virtual I/O cache, a dynamic scheme that manages a limited storage cache resource. Application behavior and the performance of a chosen replacement policy are observed at run time, and a mechanism is designed to avoid suboptimal caching.},
+ acmid = {1995959},
+ address = {New York, NY, USA},
+ author = {Frasca, Michael R. and Prabhakar, Ramya},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995959},
+ isbn = {978-1-4503-0102-2},
+ keyword = {i/o performance, storage cache},
+ link = {http://doi.acm.org/10.1145/1995896.1995959},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {376--376},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Virtual I/O Caching: Dynamic Storage Cache Management for Concurrent Workloads},
+ year = {2011}
+}
+
+
+@inproceedings{Quislant:2011:MST:1995896.1995905,
+ abstract = {Transactional Memory (TM) systems must record the memory locations read and written (read and write sets) by concurrent transactions in order to detect conflicts. Some TM implementations use signatures for this purpose, which summarize read and write sets in bounded hardware at the cost of false positives (detection of non-existing conflicts). Read/write signatures are usually implemented as two separate Bloom filters with the same size. In contrast, transactions usually exhibit read/write sets of uneven cardinality, where read sets use to be larger than write sets. Thus, the read filter populates earlier than the write one and, consequently the read signature false positive rate may be high while the write filter has still a low occupation. In this paper, a multiset signature design is proposed which records both the read and write sets in the same Bloom filter without adding significant hardware complexity. Several designs of multiset signatures are analyzed and evaluated. New problems arise related to hardware complexity and the existence of cross false positives, i.e. new false positives coming from the fact that both sets share the same filter. Additionally, multiset signatures are enhanced using locality-sensitive hashing, proposed by the authors in a previous work. Experimental results show that the multiset approach is able to reduce the false positive rate and improve the execution performance in most of the tested codes, without increasing the required hardware area in a noticeable amount.},
+ acmid = {1995905},
+ address = {New York, NY, USA},
+ author = {Quislant, Ricardo and Gutierrez, Eladio and Plata, Oscar and Zapata, Emilio L.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995905},
+ isbn = {978-1-4503-0102-2},
+ keyword = {bloom filters, h3 hashing, hardware transactional memory, locality of reference, signatures},
+ link = {http://doi.acm.org/10.1145/1995896.1995905},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {43--52},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Multiset Signatures for Transactional Memory},
+ year = {2011}
+}
+
+
+@inproceedings{Tabba:2011:TCD:1995896.1995904,
+ abstract = {This paper explores data speculation for improving the performance of Hardware Transactional Memory (HTM). We attempt to reduce transactional conflicts by decoupling them from cache coherence conflicts; many HTMs do not distinguish between transactional conflicts and coherence conflicts, leading to false transactional conflicts. We also attempt to mitigate the effects of coherence conflicts by using value prediction in transactions. We show that coherence decoupling and value prediction in transactions complement each other, because they both speculate on data in ways that are infeasible in the absence of HTM support. As a demonstration of how data speculation can improve performance, we introduce DPTM, a best-effort HTM that mitigates the effects of false sharing at the cache line level. DPTM does not alter the underlying cache coherence protocol, and requires only minor, processor-local, modifications. We evaluate DPTM against a baseline best-effort HTM, and compare it with data restructuring by padding, the most commonly used method to avoid false sharing. Our experiments show that DPTM can dramatically improve performance in the presence of false sharing without degrading performance in its absence, and consistently performs better than restructuring by padding.},
+ acmid = {1995904},
+ address = {New York, NY, USA},
+ author = {Tabba, Fuad and Hay, Andrew W. and Goodman, James R.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995904},
+ isbn = {978-1-4503-0102-2},
+ keyword = {transactional memory, value prediction},
+ link = {http://doi.acm.org/10.1145/1995896.1995904},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {33--42},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Transactional Conflict Decoupling and Value Prediction},
+ year = {2011}
+}
+
+
+@proceedings{Lowenthal:2011:1995896,
+ abstract = {It is my pleasure to welcome you to the 25th ACM International Conference on Supercomputing (ICS 2011) in Tucson, Arizona. ICS brings together researchers from several areas to present ground-breaking research related to supercomputing. In addition to the technical program of papers, workshops, tutorials, posters, and an ACM Student Research Competition, we are pleased to bring you three illustrious keynote speakers addressing important topics in contemporary parallel computing. Sarita Adve of the University of Illinois will talk about which models parallel programming languages should expose and how hardware should support those models. Steve Hammond of the National Renewable Energy Laboratory will talk about renewable energy and energy efficiency. Finally, Bill Gropp of the University of Illinois will talk about developing applications for extreme scale through the use of performance modeling.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0102-2},
+ location = {Tucson, Arizona, USA},
+ note = {415101},
+ publisher = {ACM},
+ title = {ICS '11: Proceedings of the International Conference on Supercomputing},
+ year = {2011}
+}
+
+
+@inproceedings{Dorier:2011:SDU:1995896.1995953,
+ abstract = {As we enter the post-petascale era, scientific applications running on large-scale platforms generate increasingly larger amounts of data for checkpointing or offline visualization, which puts current storage systems under heavy pressure. Unfortunately, I/O scalability rapidly fades behind the increasing computation power available, and thereby reduced the overall application performance scalability. We consider the common case of large-scale simulations who alternate between computation phases and I/O phases. Two main approaches have been used to handle these I/O phases: 1) each process writes an individual file, leading to a very large number of files from which it is hard to retrieve scientific insights; 2) processes synchronize and use collective I/O to write to the same shared file. In both cases, because of mandatory communications betweens processes during the computation phase, all processes enter the I/O phase at the same time, which leads to huge access contention and extreme performance variability. Previous research efforts have focused on improving each layer of the I/O stack separately: at the highest level scientific data formats like HDF5 allow to keep a high degree of semantics within files, while leveraging MPI-IO optimizations. Parallel file systems like GPFS or PVFS are also subject to optimization efforts, as they usually represent the main bottleneck of this I/O stack. As a step forward, we introduce Damaris (Dedicated Adaptable Middleware for Application Resources Inline Steering), an approach targeting large-scale multicore SMP supercomputers. The main idea is to dedicate one or a few cores on each node to I/O and data processing to provide an efficient, scalable-by-design, in-compute-node data processing service. Damaris takes into account user-provided information related to the application, the file system and the intended use of the datasets to better schedule data transfers and processing. It may also respond to visualization tools to allow in-situ visualization without impacting the simulation. We tested our implementation of Damaris as an I/O backend for the CM1 atmospheric model, one of the application intended to run on next generation supercomputer BlueWaters at NCSA. CM1 is a typical MPI application, originally writing one file per process at each checkpoint using HDF5. Deployed on 1024 cores on BluePrint, the BlueWater's interim system at NCSA with GPFS as underlying filesystem, this approach induces up to 10 seconds overhead in checkpointing phases every 2 minutes, with a high variability in the time spent by each process to write its data (from 1 to 10 seconds). Using one dedicated I/O core in each 16-cores SMP node, we completely remove this overhead. Moreover, the time spared by the I/O core enables a better compression level, thus reducing both the number of files produced (by a factor of 16) and the total data size. Experiments conducted on the French Grid5000 testbed with PVFS as underlying filesystem and a 24 cores/node cluster emphasized the benefit of our approach, which allows communication and computation to overlap, in a context involving high network contention at multiple levels.},
+ acmid = {1995953},
+ address = {New York, NY, USA},
+ author = {Dorier, Matthieu},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995953},
+ isbn = {978-1-4503-0102-2},
+ keyword = {dedicated cores, exascale computing, i/o, multicore architectures},
+ link = {http://doi.acm.org/10.1145/1995896.1995953},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {370--370},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Damaris - Using Dedicated I/O Cores for Scalable Post-petascale HPC Simulations},
+ year = {2011}
+}
+
+
+@inproceedings{Hughes:2011:OTT:1995896.1995918,
+ abstract = {Power has emerged as a first-order design constraint in modern processors and has energized microarchitecture researchers to produce a growing number of power optimization proposals. Almost in tandem with the move toward more energy-efficient designs, architects have been increasing the number of processing elements (PEs) on a single chip and promoting the concept of running multithreaded workloads. Nevertheless, software is still lagging behind and is often unable to exploit these additional resources -- giving rise to transactional memory. Transactional memory is a promising programming abstraction that makes it easier for programmers to exploit the resources available in many- core processor systems by removing some of the complexity associated with traditional lock-based programming. This paper proposes new techniques to merge the power and transactional memory domains. An analysis of the per-core and chip-wide power consumption of hardware transactional memory systems (HTMs) pinpoints two areas ripe for power management policies: transactional stalls and aborts. The first proposed policy uses dynamic voltage and frequency scaling (DVFS) during transactional stall periods. By frequency scaling PEs based on their transactional state, DVFS can increase the throughput and energy efficiency of HTMs. The second method uses a transaction's conflict probability to reschedule transactions and clock gate aborted PEs to reduce overall contention and power consumption within the system. The proposed techniques are evaluated using three HTM configurations and are shown to reduce the energy delay squared product (ED2P) of the STAMP and SPLASH-2 benchmarks by an average of 18% when combined. Synthetic workloads are used to explore a wider range of program behaviors and the optimizations are shown to reduce the ED2P by an average of 29%. For a comparison, this work is shown reduce the ED2P by up to 30% relative to previous proposals for energy reduction in HTMs (e.g. transaction serialization).},
+ acmid = {1995918},
+ address = {New York, NY, USA},
+ author = {Hughes, Clay and Li, Tao},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995918},
+ isbn = {978-1-4503-0102-2},
+ keyword = {power, transactional memory},
+ link = {http://doi.acm.org/10.1145/1995896.1995918},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {141--150},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Optimizing Throughput/Power Trade-offs in Hardware Transactional Memory Using DVFS and Intelligent Scheduling},
+ year = {2011}
+}
+
+
+@inproceedings{Ouyang:2011:FBO:1995896.1995949,
+ abstract = {The increasing number of cores in contemporary and future many-core processors will continue to demand high through-put, scalable, and energy efficient on-chip interconnection networks. To overcome the intrinsic inefficiency of electrical interconnects, researchers have leveraged recent developments in chip photonics to design novel optical network-on-chip (NoC). However, existing optical NoCs are mostly based on passively switched, channel-guided optical interconnect in which large amount of power is wasted in heating the micro-rings and maintaining the optical signal integrity. In this paper we present an optical NoC based on free-space optical interconnect in which optical signals emitted from the transmitter is propagated in the free space in the package. With lower attenuation and no coupling effects, free-space optical interconnects have less overheads to maintain the signal integrity, and no energy waste for heating micro-rings. In addition, we propose a novel cost-effective wavelength-switching method where a refractive grating layer directs optical signals in different wavelengths to different photodetectors without collision. Based on the above interconnect and switching technologies, we propose free flattened butterfly (F2BFLY) NoC which features both high-radix network and dense free-space optical interconnects to improve the performance while reducing the power. Our experiment results, comparing F2BFLY with state-of-the-art electrical and optical on-chip networks, show that it is a highly competitive interconnect substrate for many-core architectures.},
+ acmid = {1995949},
+ address = {New York, NY, USA},
+ author = {Ouyang, Jin and Yang, Chuan and Niu, Dimin and Xie, Yuan and Liu, Zhiwen},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995949},
+ isbn = {978-1-4503-0102-2},
+ keyword = {free-space optical interconnects, network-on-chip},
+ link = {http://doi.acm.org/10.1145/1995896.1995949},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {348--358},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {F2BFLY: An On-chip Free-space Optical Network with Wavelength-switching},
+ year = {2011}
+}
+
+
+@inproceedings{Pienaar:2011:MPM:1995896.1995933,
+ abstract = {We present a runtime framework for the execution of work-loads represented as parallel-operator directed acyclic graphs (PO-DAGs) on heterogeneous multi-core platforms. PO-DAGs combine coarse-grained parallelism at the graph level with fine-grained parallelism within each node, lending naturally to exploiting the intra --- and inter-processing element parallelism present in heterogeneous platforms. We identify four important criteria - Suitability, Locality, Availability and Criticality (SLAC) --- and show that all these criteria must be considered by a heterogeneous runtime framework in order to achieve good performance under varying application and platform characteristics. The proposed model driven runtime (MDR) considers all the aforementioned factors, and tradeoffs among them, by utilizing performance models. These performance models are used to drive key run-time decisions such as mapping of tasks to PEs, scheduling of tasks on each PE, and copying data between memory spaces. We discuss the software architecture and implementation of MDR, and evaluate it using several benchmark programs on three different heterogeneous platforms that contain multi-core CPUs and GPUs. The hardware platforms represent server, laptop, and netbook class systems. MDR achieves up to 4.2X speedup (1.5X on average) over the best of CPU-only, GPU-only, round-robin, GPU-first, and utilization-driven schedulers. We also perform a sensitivity analysis that establishes the importance of considering all four SLAC criteria in order to achieve high performance execution in a heterogeneous runtime framework.},
+ acmid = {1995933},
+ address = {New York, NY, USA},
+ author = {Pienaar, Jacques A. and Raghunathan, Anand and Chakradhar, Srimat},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995933},
+ isbn = {978-1-4503-0102-2},
+ keyword = {gpus, heterogeneous platforms, many-core, multi-core, parallel computing, performance model, runtime system},
+ link = {http://doi.acm.org/10.1145/1995896.1995933},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {225--234},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {MDR: Performance Model Driven Runtime for Heterogeneous Parallel Platforms},
+ year = {2011}
+}
+
+
+@inproceedings{Passas:2011:SFR:1995896.1995954,
+ abstract = {Computer systems keep increasing in size. Systems scale in the number of processing units, memories and peripheral devices. This creates many and diverse architectural trade-offs that the existing operating systems are not able to address. We are designing and implementing, FenixOS, a new operating system that aims to improve the state of the art in scalability and reliability. We achieve scalability through limiting data sharing when possible, and through extensive use of lock-free data structures. Reliability is addressed with a careful re-design of the programming interface and structure of the operating system.},
+ acmid = {1995954},
+ address = {New York, NY, USA},
+ author = {Passas, Stavros and Karlsson, Sven},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995954},
+ isbn = {978-1-4503-0102-2},
+ keyword = {operating systems, performance, reliability},
+ link = {http://doi.acm.org/10.1145/1995896.1995954},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {371--371},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: FenixOS - a Research Operating System Focused on High Scalability and Reliability},
+ year = {2011}
+}
+
+
+@inproceedings{Gahvari:2011:MPA:1995896.1995924,
+ abstract = {Now that the performance of individual cores has plateaued, future supercomputers will depend upon increasing parallelism for performance. Processor counts are now in the hundreds of thousands for the largest machines and will soon be in the millions. There is an urgent need to model application performance at these scales and to understand what changes need to be made to ensure continued scalability. This paper considers algebraic multigrid (AMG), a popular and highly efficient iterative solver for large sparse linear systems that is used in many applications. We discuss the challenges for AMG on current parallel computers and future exascale architectures, and we present a performance model for an AMG solve cycle as well as performance measurements on several massively-parallel platforms.},
+ acmid = {1995924},
+ address = {New York, NY, USA},
+ author = {Gahvari, Hormozd and Baker, Allison H. and Schulz, Martin and Yang, Ulrike Meier and Jordan, Kirk E. and Gropp, William},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995924},
+ isbn = {978-1-4503-0102-2},
+ keyword = {algebraic multigrid, massively parallel architectures, performance modeling, scaling},
+ link = {http://doi.acm.org/10.1145/1995896.1995924},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {172--181},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Modeling the Performance of an Algebraic Multigrid Cycle on HPC Platforms},
+ year = {2011}
+}
+
+
+@inproceedings{Perarnau:2011:CCU:1995896.1995942,
+ abstract = {This paper discusses the use of software cache partitioning techniques to study and improve cache behavior of HPC applications. Most existing studies use this partitioning to solve quality of service issues, like fair distribution of a shared cache among running processes. We believe that, in the HPC context of a single application being studied/optimized on the system, with a single thread per core, cache partitioning can be used in new and interesting ways. First, we propose an implementation of software cache partitioning using the well known page coloring technique. This implementation differs from existing ones by giving control of the partitioning to the application programmer. Developed on the most popular OS in HPC (Linux), this cache control scheme has low overhead both in memory and CPU while being simple to use. Second, we illustrate how this user-controlled cache partitioning can lead to efficient measurements of cache behavior of a parallel scientific visualization application. While current tools require expensive binary instrumentation of an application to obtain its working sets, our method only needs a few unmodified runs on the target platform. Finally, we discuss the use of our scheme to optimize memory intensive applications by isolating each of their critical data structures into dedicated cache partitions. This isolation allows the analysis of each structure cache requirements and leads to new and significant optimization strategies. To the best of our knowledge, no other existing tool enables such tuning of HPC applications.},
+ acmid = {1995942},
+ address = {New York, NY, USA},
+ author = {Perarnau, Swann and Tchiboukdjian, Marc and Huard, Guillaume},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995942},
+ isbn = {978-1-4503-0102-2},
+ keyword = {cache partitionning, page coloring, working set},
+ link = {http://doi.acm.org/10.1145/1995896.1995942},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {295--304},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Controlling Cache Utilization of HPC Applications},
+ year = {2011}
+}
+
+
+@inproceedings{Davies:2011:HPL:1995896.1995923,
+ abstract = {The probability that a failure will occur before the end of the computation increases as the number of processors used in a high performance computing application increases. For long running applications using a large number of processors, it is essential that fault tolerance be used to prevent a total loss of all finished computations after a failure. While checkpointing has been very useful to tolerate failures for a long time, it often introduces a considerable overhead especially when applications modify a large amount of memory between checkpoints and the number of processors is large. In this paper, we propose an algorithm-based recovery scheme for the High Performance Linpack benchmark (which modifies a large amount of memory in each iteration) to tolerate fail-stop failures without checkpointing. It was proved by Huang and Abraham that a checksum added to a matrix will be maintained after the matrix is factored. We demonstrate that, for the right-looking LU factorization algorithm, the checksum is maintained at each step of the computation. Based on this checksum relationship maintained at each step in the middle of the computation, we demonstrate that fail-stop process failures in High Performance Linpack can be tolerated without checkpointing. Because no periodical checkpoint is necessary during computation and no roll-back is necessary during recovery, the proposed recovery scheme is highly scalable and has a good potential to scale to extreme scale computing and beyond. Experimental results on the supercomputer Jaguar demonstrate that the fault tolerance overhead introduced by the proposed recovery scheme is negligible.},
+ acmid = {1995923},
+ address = {New York, NY, USA},
+ author = {Davies, Teresa and Karlsson, Christer and Liu, Hui and Ding, Chong and Chen, Zizhong},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995923},
+ isbn = {978-1-4503-0102-2},
+ keyword = {algorithm-based recovery, fault tolerance, high performance linpack benchmark, lu factorization},
+ link = {http://doi.acm.org/10.1145/1995896.1995923},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {162--171},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {High Performance Linpack Benchmark: A Fault Tolerant Implementation Without Checkpointing},
+ year = {2011}
+}
+
+
+@inproceedings{Chen:2011:PCM:1995896.1995927,
+ abstract = {Efficient on-chip resource management is crucial for Chip Multiprocessors (CMP) to achieve high resource utilization and enforce system-level performance objectives. Existing multiple resource management schemes either focus on intra-core resources or inter-core resources, missing the opportunity for exploiting the interaction between these two level resources. Moreover, these resource management schemes either rely on trial runs or complex on-line machine learning model to search for the appropriate resource allocation, which makes resource management inefficient and expensive. To address these limitations, this paper presents a predictive yet cost effective mechanism for multiple resource management in CMP. It uses a set of hardware-efficient online profilers and an analytical performance model to predict the application's performance with different intra-core and/or inter-core resource allocations. Based on the predicted performance, the resource allocator identifies and enforces near optimum resource partitions for each epoch without any trial runs. The experimental results show that the proposed predictive resource management framework could improve the weighted speedup of the CMP system by an average of 11.6% compared with the equal partition scheme, and 9.3% compared with existing reactive resource management scheme.},
+ acmid = {1995927},
+ address = {New York, NY, USA},
+ author = {Chen, Jian and John, Lizy Kurian},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995927},
+ isbn = {978-1-4503-0102-2},
+ keyword = {microprocessor, performance modeling, program characteristics, resource management},
+ link = {http://doi.acm.org/10.1145/1995896.1995927},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {192--201},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Predictive Coordination of Multiple On-chip Resources for Chip Multiprocessors},
+ year = {2011}
+}
+
+
+@inproceedings{Willcock:2011:APP:1995896.1995934,
+ abstract = {The scope of scientific computing continues to grow and now includes diverse application areas such as network analysis, combinatorialcomputing, and knowledge discovery, to name just a few. Large problems in these application areas require HPC resources, but they exhibit computation and communication patterns that are irregular, fine-grained, and non-local, making it difficult to apply traditional HPC approaches to achieve scalable solutions. In this paper we present Active Pebbles, a programming and execution model developed explicitly to enable the development of scalable software for these emerging application areas. Our approach relies on five main techniques--scalable addressing, active routing, message coalescing, message reduction, and termination detection--to separate algorithm expression from communication optimization. Using this approach, algorithms can be expressed in their natural forms, with their natural levels of granularity, while optimizations necessary for scalability can be applied automatically to match the characteristics of particular machines. We implement several example kernels using both Active Pebbles and existing programming models, evaluating both programmability and performance. Our experimental results demonstrate that the Active Pebbles model can succinctly and directly express irregular application kernels, while still achieving performance comparable to MPI-based implementations that are significantly more complex.},
+ acmid = {1995934},
+ address = {New York, NY, USA},
+ author = {Willcock, Jeremiah James and Hoefler, Torsten and Edmonds, Nicholas Gerard and Lumsdaine, Andrew},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995934},
+ isbn = {978-1-4503-0102-2},
+ keyword = {active messages, irregular applications, programming models},
+ link = {http://doi.acm.org/10.1145/1995896.1995934},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {235--244},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Active Pebbles: Parallel Programming for Data-driven Applications},
+ year = {2011}
+}
+
+
+@inproceedings{Pophale:2011:SOL:1995896.1995957,
+ abstract = {OpenSHMEM is a PGAS programming library implementing an RMA-based point-to-point and collective communication paradigm which decouples data motion from synchronization. This results in a more scalable programming model than more common two-sided paradigms such as MPI. The OpenSHMEM project arose in an effort to standardize among several implementations of the decade-old SHMEM API, which exhibited subtle differences in the API and underlying semantics, inhibiting portability between implementations. In collaboration with Oak Ridge National Laboratory, the University of Houston is preparing an API specification and a portable, scalable, observable OpenSHMEM reference implementation.},
+ acmid = {1995957},
+ address = {New York, NY, USA},
+ author = {Pophale, Swaroop Suhas},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995957},
+ isbn = {978-1-4503-0102-2},
+ keyword = {ics poster, openshmem, pgas, shmem},
+ link = {http://doi.acm.org/10.1145/1995896.1995957},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {374--374},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: OpenSHMEM Library Development},
+ year = {2011}
+}
+
+
+@inproceedings{Chhabra:2011:SHA:1995896.1995914,
+ abstract = {With computing increasingly becoming more dispersed, relying on mobile devices, distributed computing, cloud computing, etc. there is an increasing threat from adversaries obtaining physical access to some of the computer systems through theft or security breaches. With such an untrusted computing node, a key challenge is how to provide secure computing environment where we provide privacy and integrity for data and code of the application. We propose SecureME, a hardware-software mechanism that provides such a secure computing environment. SecureME protects an application from hardware attacks by using a secure processor substrate, and also from the Operating System (OS) through memory cloaking, permission paging, and system call protection. Memory cloaking hides data from the OS but allows the OS to perform regular virtual memory management functions, such as page initialization, copying, and swapping. Permission paging extends the OS paging mechanism to provide a secure way for two applications to establish shared pages for inter-process communication. Finally, system call protection applies spatio-temporal protection for arguments that are passed between the application and the OS. Based on our performance evaluation using microbenchmarks, single-program workloads, and multiprogrammed workloads, we found that SecureME only adds a small execution time overhead compared to a fully unprotected system. Roughly half of the overheads are contributed by the secure processor substrate. SecureME also incurs a negligible additional storage overhead over the secure processor substrate.},
+ acmid = {1995914},
+ address = {New York, NY, USA},
+ author = {Chhabra, Siddhartha and Rogers, Brian and Solihin, Yan and Prvulovic, Milos},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995914},
+ isbn = {978-1-4503-0102-2},
+ keyword = {cloaking, hardware attacks, operating systems, security},
+ link = {http://doi.acm.org/10.1145/1995896.1995914},
+ location = {Tucson, Arizona, USA},
+ numpages = {12},
+ pages = {108--119},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SecureME: A Hardware-software Approach to Full System Security},
+ year = {2011}
+}
+
+
+@inproceedings{Basu:2011:KSD:1995896.1995950,
+ abstract = {Recent research in deterministic record-replay seeks to ease debugging, security, and fault tolerance on otherwise nondeterministic multicore systems. The important challenge of handling shared memory races (that can occur on any memory reference) can be made more efficient with hardware support. Recent proposals record how long threads run in isolation on top of snooping coherence (IMRR), implicit transactions (DeLorean), or directory coherence (Rerun). As core counts scale, Rerun's directory-based parallel record gets more attractive, but its nearly sequential replay becomes unacceptably slow.  This paper proposes Karma for both scalable recording and replay. Karma builds an episodic memory race recorder using a conventional directory cache coherence protocol and records the order of the episodes as a directed acyclic graph. Karma also enables extension of episodes even after some conflicts. During replay, Karma uses wakeup messages to trigger a partially ordered parallel episode replay. Results with several commercial workloads on a 16-core system show that Karma can achieve replay speed (a) within 19%-28% of native execution speed without record-replay and (b) four times faster than even an idealized Rerun replay. Additional results explore tradeoffs between log size and replay speed.},
+ acmid = {1995950},
+ address = {New York, NY, USA},
+ author = {Basu, Arkaprava and Bobba, Jayaram and Hill, Mark D.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995950},
+ isbn = {978-1-4503-0102-2},
+ keyword = {deterministic record-replay, multi-core processors},
+ link = {http://doi.acm.org/10.1145/1995896.1995950},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {359--368},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Karma: Scalable Deterministic Record-replay},
+ year = {2011}
+}
+
+
+@inproceedings{Davies:2011:SSE:1995896.1995955,
+ abstract = {In high-performance systems, the probability of failure is higher for larger systems. Errors in calculations may occur that cannot be detected by any other means. To address this problem, we create a checksum-based approach that detects and recovers from calculation errors. We apply this approach to the LU factorization algorithm used by High Performance Linpack. Our approach has low overhead. In contrast to existing approaches that require repeated calculation, it repeats only a fraction of the calculation during recovery. The frequency of checking can be adjusted for the error rate, resulting in a flexible method of fault tolerance.},
+ acmid = {1995955},
+ address = {New York, NY, USA},
+ author = {Davies, Teresa and Chen, Zizhong},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995955},
+ isbn = {978-1-4503-0102-2},
+ keyword = {algorithm-based recovery, fault tolerance, high performance linpack benchmark, lu factorization},
+ link = {http://doi.acm.org/10.1145/1995896.1995955},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {372--372},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Soft Error Detection and Recovery for High Performance Linpack},
+ year = {2011}
+}
+
+
+@inproceedings{Verner:2011:PDS:1995896.1995915,
+ abstract = {Data stream processing applications such as stock exchange data analysis, VoIP streaming, and sensor data processing pose two conflicting challenges: short per-stream latency -- to satisfy the milliseconds-long, hard real-time constraints of each stream, and high throughput -- to enable efficient processing of as many streams as possible. High-throughput programmable accelerators such as modern GPUs hold high potential to speed up the computations. However, their use for hard real-time stream processing is complicated by slow communications with CPUs, variable throughput changing non-linearly with the input size, and weak consistency of their local memory with respect to CPU accesses. Furthermore, their coarse grain hardware scheduler renders them unsuitable for unbalanced multi-stream workloads. We present a general, efficient and practical algorithm for hard real-time stream scheduling in heterogeneous systems. The algorithm assigns incoming streams of different rates and deadlines to CPUs and accelerators. By employing novel stream schedulability criteria for accelerators, the algorithm finds the assignment which simultaneously satisfies the aggregate throughput requirements of all the streams and the deadline constraint of each stream alone. Using the AES-CBC encryption kernel, we experimented extensively on thousands of streams with realistic rate and deadline distributions. Our framework outperformed the alternative methods by allowing 50% more streams to be processed with provably deadline-compliant execution even for deadlines as short as tens milliseconds. Overall, the combined GPU-CPU execution allows for up to 4-fold throughput increase over highly-optimized multi-threaded CPU-only implementations.},
+ acmid = {1995915},
+ address = {New York, NY, USA},
+ author = {Verner, Uri and Schuster, Assaf and Silberstein, Mark},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995915},
+ isbn = {978-1-4503-0102-2},
+ keyword = {accelerator, batch processing, data streams, gpu, hard real-time, scheduling},
+ link = {http://doi.acm.org/10.1145/1995896.1995915},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {120--129},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Processing Data Streams with Hard Real-time Constraints on Heterogeneous Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Carrington:2011:ITI:1995896.1995928,
+ abstract = {Suppose one is considering purchase of a computer equipped with accelerators. Or suppose one has access to such a computer and is considering porting code to take advantage of the accelerators. Is there a reason to suppose the purchase cost or programmer effort will be worth it? It would be nice to able to estimate the expected improvements in advance of paying money or time. We exhibit an analytical framework and tool-set for providing such estimates: the tools first look for user-defined idioms that are patterns of computation and data access identified in advance as possibly being able to benefit from accelerator hardware. A performance model is then applied to estimate how much faster these idioms would be if they were ported and run on the accelerators, and a recommendation is made as to whether or not each idiom is worth the porting effort to put them on the accelerator and an estimate is provided of what the overall application speedup would be if this were done. As a proof-of-concept we focus our investigations on Gather/Scatter (G/S) operations and means to accelerate these available on the Convey HC-1 which has a special-purpose "personality" for accelerating G/S. We test the methodology on two large-scale HPC applications. The idiom recognizer tool saves weeks of programmer effort compared to having the programmer examine the code visually looking for idioms; performance models save yet more time by rank-ordering the best candidates for porting; and the performance models are accurate, predicting G/S runtime speedup resulting from porting to within 10% of speedup actually achieved. The G/S hardware on the Convey sped up these operations 20x, and the overall impact on total application runtime was to improve it by as much as 21%.},
+ acmid = {1995928},
+ address = {New York, NY, USA},
+ author = {Carrington, Laura and Tikir, Mustafa M. and Olschanowsky, Catherine and Laurenzano, Michael and Peraza, Joshua and Snavely, Allan and Poole, Stephen},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995928},
+ isbn = {978-1-4503-0102-2},
+ keyword = {accelerators, benchmarking, fpgas, hpc, performance modeling, performance prediction},
+ link = {http://doi.acm.org/10.1145/1995896.1995928},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {202--212},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {An Idiom-finding Tool for Increasing Productivity of Accelerators},
+ year = {2011}
+}
+
+
+@inproceedings{Schoenrock:2011:MMP:1995896.1995946,
+ abstract = {Interactions among proteins are essential to many biological functions in living cells but experimentally detected interactions represent only a small fraction of the real interaction network. Computational protein interaction prediction methods have become important to augment the experimental methods; in particular sequence based prediction methods that do not require additional data such as homologous sequences or 3D structure information which are often not available. Our Protein Interaction Prediction Engine (PIPE) method falls into this category. Park has recently compared PIPE with the other competing methods and concluded that our method "significantly outperforms the others in terms of recall-precision across both the yeast and human data". Here, we present MP-PIPE, a new massively parallel PIPE implementation for large scale, high throughput protein interaction prediction. MP-PIPE enabled us to perform the first ever complete scan of the entire human protein interaction network; a massively parallel computational experiment which took three months of full time 24/7 computation on a dedicated SUN UltraSparc T2+ based cluster with 50 nodes, 800 processor cores and 6,400 hardware supported threads. The implications for the understanding of human cell function will be significant as biologists are starting to analyze the 130,470 new protein interactions and possible new pathways in Human cells predicted by MP-PIPE.},
+ acmid = {1995946},
+ address = {New York, NY, USA},
+ author = {Schoenrock, Andrew and Dehne, Frank and Green, James R. and Golshani, Ashkan and Pitre, Sylvain},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995946},
+ isbn = {978-1-4503-0102-2},
+ keyword = {computational biology, high throughput, massively parallel application, protein interaction prediction},
+ link = {http://doi.acm.org/10.1145/1995896.1995946},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {327--337},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {MP-PIPE: A Massively Parallel Protein-protein Interaction Prediction Engine},
+ year = {2011}
+}
+
+
+@inproceedings{Chi:2011:QPH:1995896.1995945,
+ abstract = {Video coding follows the trend of demanding higher performance every new generation, and therefore could utilize many-cores. A complete parallelization of H.264, which is the most advanced video coding standard, was found to be difficult due to the complexity of the standard. In this paper a parallel implementation of a complete H.264 decoder is presented. Our parallelization strategy exploits function-level as well as data-level parallelism. Function-level parallelism is used to pipeline the H.264 decoding stages. Data-level parallelism is exploited within the two most time consuming stages, the entropy decoding stage and the macroblock decoding stage. The parallelization strategy has been implemented and optimized on three platforms with very different memory architectures, namely an 8-core SMP, a 64-core cc-NUMA, and an 18-core Cell platform. Evaluations have been performed using 4kx2k QHD sequences. On the SMP platform a maximum speedup of 4.5x is achieved. The SMP-implementation is reasonably performance portable as it achieves a speedup of 26.6x on the cc-NUMA system. However, to obtain the highest performance (speedup of 33.4x and throughput of 200 QHD frames per second), several cc-NUMA specific optimizations are necessary such as optimizing the page placement and statically assigning threads to cores. Finally, on the Cell platform a near ideal speedup of 16.5x is achieved by completely hiding the communication latency.},
+ acmid = {1995945},
+ address = {New York, NY, USA},
+ author = {Chi, Chi Ching and Juurlink, Ben},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995945},
+ isbn = {978-1-4503-0102-2},
+ keyword = {4k x 2k, cell, decoding, h.264, numa, parallel, smp},
+ link = {http://doi.acm.org/10.1145/1995896.1995945},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {317--326},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {A QHD-capable Parallel H.264 Decoder},
+ year = {2011}
+}
+
+
+@inproceedings{Ramos:2011:PPH:1995896.1995911,
+ abstract = {Phase-Change Memory (PCM) technology has received substantial attention recently. Because PCM is byte-addressable and exhibits access times in the nanosecond range, it can be used in main memory designs. In fact, PCM has higher density and lower idle power consumption than DRAM. Unfortunately, PCM is also slower than DRAM and has limited endurance. For these reasons, researchers have proposed memory systems that combine a small amount of DRAM and a large amount of PCM. In this paper, we propose a new hybrid design that features a hardware-driven page placement policy. The policy relies on the memory controller (MC) to monitor access patterns, migrate pages between DRAM and PCM, and translate the memory addresses coming from the cores. Periodically, the operating system updates its page mappings based on the translation information used by the MC. Detailed simulations of 27 workloads show that our system is more robust and exhibits lower energy-delay2 than state-of-the-art hybrid systems.},
+ acmid = {1995911},
+ address = {New York, NY, USA},
+ author = {Ramos, Luiz E. and Gorbatov, Eugene and Bianchini, Ricardo},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995911},
+ isbn = {978-1-4503-0102-2},
+ keyword = {hybrid memory, memory controller, phase-change memory},
+ link = {http://doi.acm.org/10.1145/1995896.1995911},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {85--95},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Page Placement in Hybrid Memory Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Ributzka:2011:EMR:1995896.1995948,
+ abstract = {The Cray XMT architecture has incited curiosity among computer architect and system software designers for its architecture support of fine-grain in-memory synchronization. Although such discussion go back thirty years, there is a lack of practical experimental platforms that can evaluate major technological trends, such as fine-grain in-memory synchronization. The need for these platforms becomes apparent when dealing with new massive many-core designs and applications. This paper studies the feasibility, usefulness and trade-offs of fine-grain in-memory synchronization support in a real-world large-scale many-core chip (IBM Cyclops-64). We extended the original Cyclops-64 architecture design at gate level to support the fine-grain in-memory synchronization feature. We performed an in-depth study of a well-known kernel code: the wavefront computation. Several versions of the kernel were used to test the effects of different synchronization constructs using our chip emulation framework. Furthermore, we tested selected OpenMP kernel loops against existing software-based synchronization approaches. In our wavefront benchmark study, the combination of fine-grain dataflow-like in-memory synchronization with non-strict scheduling methods yields a thirty percent improvement over the best optimized traditional synchronization method provided by the original Cyclops-64 design. For the OpenMP kernel loops, we achieved speeds of three to fourteen times the speed of software-based synchronization methods.},
+ acmid = {1995948},
+ address = {New York, NY, USA},
+ author = {Ributzka, Juergen and Hayashi, Yuhei and Manzano, Joseph B. and Gao, Guang R.},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995948},
+ isbn = {978-1-4503-0102-2},
+ keyword = {emulation, fine-grain synchronization, many-core architectures},
+ link = {http://doi.acm.org/10.1145/1995896.1995948},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {338--347},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {The Elephant and the Mice: The Role of Non-strict Fine-grain Synchronization for Modern Many-core Architectures},
+ year = {2011}
+}
+
+
+@inproceedings{Huo:2011:ESO:1995896.1995900,
+ abstract = {GPUs have rapidly emerged as a very significant player in high performance computing. However, despite the popularity of CUDA, there are significant challenges in porting different classes of HPC applications on modern GPUs. This paper focuses on the challenges of implementing irregular applications arising from unstructured grids on modern NVIDIA GPUs. Considering the importance of irregular reductions in scientific and engineering codes, substantial effort was made in developing compiler and runtime support for parallelization or optimization of these codes in the previous two decades, with different efforts targeting distributed memory machines, distributed shared memory machines, shared memory machines, or cache performance improvement on uniprocessor machines. However, there have not been any systematic studies on parallelizing these applications on modern GPUs.  There are at least two significant challenges associated with porting this class of applications on modern GPUs. The first is related to correct and efficient parallelization while using a large number of threads. The second challenge is effective use of shared memory. Since data accesses cannot be determined statically, runtime partitioning methods are needed for effectively using the shared memory. This paper describes an execution methodology that can address the above two challenges. We have also developed optimized runtime modules to support our execution methodology. Our approach and runtime methods have been extensively evaluated using two indirection array based applications.},
+ acmid = {1995900},
+ address = {New York, NY, USA},
+ author = {Huo, Xin and Ravi, Vignesh and Ma, Wenjing and Agrawal, Gagan},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995900},
+ isbn = {978-1-4503-0102-2},
+ keyword = {cuda, gpu, irregular reduction, partitioning},
+ link = {http://doi.acm.org/10.1145/1995896.1995900},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {2--11},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {An Execution Strategy and Optimized Runtime Support for Parallelizing Irregular Reductions on Modern GPUs},
+ year = {2011}
+}
+
+
+@inproceedings{Hu:2011:PII:1995896.1995912,
+ abstract = {With the development of the NAND-Flash technology, NAND-Flash based Solid-State Disk (SSD) has been attracting a great deal of attention from both industry and academia. While a range of SSD research topics, from interface techniques to buffer management and Flash Translation Layer (FTL), from performance to endurance and energy efficiency, have been extensively studied in the literature, the SSD being studied was by and large treated as a grey or black box in that many of the internal features such as advanced commands, physical-page allocation schemes and data granularity are hidden or assumed away. We argue that, based on our experimental study, it is these internal features and their interplay that will help provide the missing but significant insights to designing high-performance and high-endurance SSDs. In this paper, we use our highly accurate and multi-tiered SSD simulator, called SSDsim, to analyze several key internal SSD factors to characterize their performance impacts, interplay and parallelisms for the purpose of performance and endurance en-hancement of SSDs. From the results of our experiments, we found that: (1) larger pages tend to have significantly negative impact on SSD performance under many workloads; (2) different physical-page allocation schemes have different deployment en-vironments, where an optimal allocation scheme can be found for each workload; (3) although advanced commands provided by flash manufacturers can improve performance in some cases, they may jeopardize the SSD performance and endurance when used inappropriately; (4) since the parallelisms of SSD can be classified into four levels, namely, channel-level, chip-level, die-level and plane-level, the priority order of SSD parallelism, resulting from the strong interplay among physical-page allocation schemes and advanced commands, can have a very significant impact on SSD performance and endurance.},
+ acmid = {1995912},
+ address = {New York, NY, USA},
+ author = {Hu, Yang and Jiang, Hong and Feng, Dan and Tian, Lei and Luo, Hao and Zhang, Shuping},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995912},
+ isbn = {978-1-4503-0102-2},
+ keyword = {advanced commands, nand-flash, parallelism, simulator, ssd},
+ link = {http://doi.acm.org/10.1145/1995896.1995912},
+ location = {Tucson, Arizona, USA},
+ numpages = {12},
+ pages = {96--107},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Performance Impact and Interplay of SSD Parallelism Through Advanced Commands, Allocation Strategy and Data Granularity},
+ year = {2011}
+}
+
+
+@inproceedings{Berka:2011:SIR:1995896.1995952,
+ abstract = {We seek to create a parallel search engine which outperforms conventional, loosely coupled distributed systems. We have (1) parallelized the vector space model with 120%-180% parallel efficiency, (2) introduced a highly parallel algorithm for text dimensionality reduction increasing the search accuracy measured with the mean average precision by 4.8 percentage points on the Reuters corpus and (3) developed a middleware for concurrent programming in parallel applications for index maintenance and multi-user operation. Using these building blocks, we present an overall system architecture that addresses the requirements of information retrieval as a persistently deployed parallel service.},
+ acmid = {1995952},
+ address = {New York, NY, USA},
+ author = {Berka, Tobias and Vajtersic, Marian},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995952},
+ isbn = {978-1-4503-0102-2},
+ keyword = {dense vector computations, symmetric multiprocessing, vector space model},
+ link = {http://doi.acm.org/10.1145/1995896.1995952},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {369--369},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Information Retrieval As a Persistent Parallel Service on Supercomputer Infrastructure},
+ year = {2011}
+}
+
+
+@inproceedings{Sudarsan:2011:CMB:1995896.1995944,
+ abstract = {The analysis of Cosmic Microwave Background (CMB) observations is a long-standing computational challenge, driven by the exponential growth in the size of the data sets being gathered. Since this growth is projected to continue for at least the next decade, it will be critical to extend the analysis algorithms and their implementations to peta-scale high performance computing (HPC) systems and beyond. The most computationally intensive part of the analysis is generating and reducing Monte Carlo realizations of an experiment's data. In this work we take the current state-of-the-art simulation and mapping software and investigate its performance when pushed to tens of thousands of cores on a range of leading HPC systems, in particular focusing on the communication bottleneck that emerges at high concurrencies. We present a new communication strategy that removes this bottleneck, allowing for CMB analyses of unprecedented scale and hence fidelity. Experimental results show a communication speedup of up to 116x using our alternative strategy.},
+ acmid = {1995944},
+ address = {New York, NY, USA},
+ author = {Sudarsan, Rajesh and Borrill, Julian and Cantalupo, Christopher and Kisner, Theodore and Madduri, Kamesh and Oliker, Leonid and Zheng, Yili and Simon, Horst},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995944},
+ isbn = {978-1-4503-0102-2},
+ keyword = {hybrid programming, petascale computing, sparse allreduce},
+ link = {http://doi.acm.org/10.1145/1995896.1995944},
+ location = {Tucson, Arizona, USA},
+ numpages = {12},
+ pages = {305--316},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Cosmic Microwave Background Map-making at the Petascale and Beyond},
+ year = {2011}
+}
+
+
+@inproceedings{Feldman:2011:SFE:1995896.1995964,
+ abstract = {The purpose of this work is to develop a lock-free hash table that allows a large number of threads to concurrently insert, modify, or retrieve information. Lock-free or non-blocking designs alleviate the problems traditionally associated with lock-based designs, such as bottlenecks and thread safety. Using standard atomic operations provided by the hardware, the design is portable and therefore, applicable to embedded systems and supercomputers such as the Cray XMT. Real-world applications range from search-indexing to computer vision. Having written and tested the core functionality of the hash table, we plan to perform a formal validation using model checkers.},
+ acmid = {1995964},
+ address = {New York, NY, USA},
+ author = {Feldman, Steven},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995964},
+ isbn = {978-1-4503-0102-2},
+ keyword = {concurrent, data structure, hash table, large data sets, lock-free, parallel, perfect hash},
+ link = {http://doi.acm.org/10.1145/1995896.1995964},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {381--381},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {SRC: Facilitating Efficient Parallelization of Information Storage and Retrieval on Large Data Sets},
+ year = {2011}
+}
+
+
+@inproceedings{Chen:2011:HMB:1995896.1995902,
+ abstract = {With the fast technical improvement, flash memory based Solid State Drives (SSDs) are becoming an important part of the computer storage hierarchy to significantly improve performance and energy efficiency. However, due to its relatively high price and low capacity, a major system research issue to address is on how to make SSDs play their most effective roles in a high-performance storage system in cost- and performance-effective ways. In this paper, we will answer several related questions with insights based on the design and implementation of a high performance hybrid storage system, called Hystor. We make the best use of SSDs in storage systems by achieving a set of optimization objectives from both system deployment and algorithm design perspectives. Hystor manages both SSDs and hard disk drives (HDDs) as one single block device with minimal changes to existing OS kernels. By monitoring I/O access patterns at runtime, Hystor can effectively identify blocks that (1) can result in long latencies or (2) are semantically critical (e.g. file system metadata), and stores them in SSDs for future accesses to achieve a significant performance improvement. In order to further leverage the exceptionally high performance of writes in the state-of-the-art SSDs, Hystor also serves as a write-back buffer to speed up write requests. Our measurements on Hystor implemented in the Linux kernel 2.6.25.8 show that it can take advantage of the performance merits of SSDs with only a few lines of changes to the stock Linux kernel. Our system study shows that in a highly effective hybrid storage system, SSDs should play a major role as an independent storage where the best suitable data are adaptively and timely migrated in and retained, and it can also be effective to serve as a write-back buffer.},
+ acmid = {1995902},
+ address = {New York, NY, USA},
+ author = {Chen, Feng and Koufaty, David A. and Zhang, Xiaodong},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995902},
+ isbn = {978-1-4503-0102-2},
+ keyword = {hard disk drive, hybrid storage system, solid state drive},
+ link = {http://doi.acm.org/10.1145/1995896.1995902},
+ location = {Tucson, Arizona, USA},
+ numpages = {11},
+ pages = {22--32},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Hystor: Making the Best Use of Solid State Drives in High Performance Storage Systems},
+ year = {2011}
+}
+
+
+@inproceedings{Fang:2011:COP:1995896.1995940,
+ abstract = {High performance SoCs and CMPs integrate multiple cores and hardware accelerators such as network interface devices and speech recognition engines. Cores make use of SRAM organized as a cache. Accelerators make use of SRAM as special-purpose storage such as FIFOs, scratchpad memory, or other forms of private buffers. Dedicated private buffers provide benefits such as deterministic access, but are highly area inefficient due to the lower average utilization of the total available storage. We propose Buffer-integrated-Caching (BiC), which integrates private buffers and traditional caches into a single shared SRAM block. Much like shared caches improve SRAM utilization on CMPs, the BiC architecture generalizes this advantage for a heterogeneous mix of cores and accelerators in future SoCs and CMPs. We demonstrate cost-effectiveness of the BiC using SoC-based low-power servers and CMP-based servers with on-chip NIC. We show that with a small extra area added to the baseline cache, BiC removes the need for large, dedicated SRAMs, with minimal performance impact.},
+ acmid = {1995940},
+ address = {New York, NY, USA},
+ author = {Fang, Zhen and Zhao, Li and Iyer, Ravishankar R. and Fajardo, Carlos Flores and Garcia, German Fabila and Lee, Seung Eun and Li, Bin and King, Steve R. and Jiang, Xiaowei and Makineni, Srihari},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995940},
+ isbn = {978-1-4503-0102-2},
+ keyword = {accelerators, cache, sram},
+ link = {http://doi.acm.org/10.1145/1995896.1995940},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {275--284},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Cost-effectively Offering Private Buffers in SoCs and CMPs},
+ year = {2011}
+}
+
+
+@inproceedings{Hoefler:2011:GTM:1995896.1995909,
+ abstract = {The steadily increasing number of nodes in high-performance computing systems and the technology and power constraints lead to sparse network topologies. Efficient mapping of application communication patterns to the network topology gains importance as systems grow to petascale and beyond. Such mapping is supported in parallel programming frameworks such as MPI, but is often not well implemented. We show that the topology mapping problem is NP-complete and analyze and compare different practical topology mapping heuristics. We demonstrate an efficient and fast new heuristic which is based on graph similarity and show its utility with application communication patterns on real topologies. Our mapping strategies support heterogeneous networks and show significant reduction of congestion on torus, fat-tree, and the PERCS network topologies, for irregular communication patterns. We also demonstrate that the benefit of topology mapping grows with the network size and show how our algorithms can be used in a practical setting to optimize communication performance. Our efficient topology mapping strategies are shown to reduce network congestion by up to 80%, reduce average dilation by up to 50%, and improve benchmarked communication performance by 18%.},
+ acmid = {1995909},
+ address = {New York, NY, USA},
+ author = {Hoefler, Torsten and Snir, Marc},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995909},
+ isbn = {978-1-4503-0102-2},
+ keyword = {mpi graph topologies, topology mapping},
+ link = {http://doi.acm.org/10.1145/1995896.1995909},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {75--84},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Generic Topology Mapping Strategies for Large-scale Parallel Architectures},
+ year = {2011}
+}
+
+
+@inproceedings{Spiliopoulos:2011:PDM:1995896.1995956,
+ abstract = {We describe a framework for run-time adaptive dynamic voltage-frequency scaling in Linux systems. Our underlying methodology is based on a simple first-order processor performance model in which frequency scaling is expressed as a change (in cycles) of the main memory latency. Utilizing available performance monitoring hardware, we show that our model is powerful enough to i) predict with reasonable accuracy the effect of frequency scaling, and ii) predict the energy consumed by the core under different V/f combinations. To validate our approach we perform highly accurate, fine grained power measurements directly on the processor off-chip voltage regulator.},
+ acmid = {1995956},
+ address = {New York, NY, USA},
+ author = {Spiliopoulos, Vasileios and Keramidas, Georgios and Kaxiras, Stefanos and Efstathiou, Konstantinos},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995956},
+ isbn = {978-1-4503-0102-2},
+ keyword = {dynamic voltage and frequency scaling, intel and amd processors, performance and power modeling, performance monitoring hardware},
+ link = {http://doi.acm.org/10.1145/1995896.1995956},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {373--373},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Poster: DVFS Management in Real-processors},
+ year = {2011}
+}
+
+
+@inproceedings{Bueno:2011:PPC:1995896.1995961,
+ abstract = {OmpSs is a programming model that provides an environment to develop parallel applications for cluster environments with heterogeneous architectures. Based on OpenMP and StarSs, it offers a set of compiler directives that can be used to annotate a sequential code. Additional features have been added to support the use of accelerators like GPUs. This schema offers a high productivity environment due to its simplicity compared to other models like MPI. Our current implementation has shown a good performance when running different benchmarks.},
+ acmid = {1995961},
+ address = {New York, NY, USA},
+ author = {Bueno, Javier and Duran, Alejandro and Martorell, Xavier and Ayguad{\'e}, Eduard and Badia, Rosa M. and Labarta, Jes\'{u}s},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995961},
+ isbn = {978-1-4503-0102-2},
+ keyword = {heterogeneous architectures},
+ link = {http://doi.acm.org/10.1145/1995896.1995961},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {378--378},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Poster: Programming Clusters of GPUs with OMPSs},
+ year = {2011}
+}
+
+
+@inproceedings{Gu:2011:UGC:1995896.1995937,
+ abstract = {The optimization of Fast Fourier Transfer (FFT) problems that can fit into GPU memory has been studied extensively. Such on-card FFT libraries like CUFFT can generally achieve much better performance than their counterparts on a CPU, as the data transfer between CPU and GPU is usually not counted in their performance. This high performance, however, is limited by the GPU memory size. When the FFT problem size increases, the data transfer between system and GPU memory can comprise a substantial part of the overall execution time. Therefore, optimizations for FFT problems that outgrow the GPU memory can not bypass the tuning of data transfer between CPU and GPU. However, no prior study has attacked this problem. This paper is the first effort of using GPUs to efficiently compute large FFTs in the CPU memory of a single compute node. In this paper, the performance of the PCI bus during the transfer of a batch of FFT subarrays is studied and a blocked buffer algorithm is proposed to improve the effective bandwidth. More importantly, several FFT decomposition algorithms are proposed so as to increase the data locality, further improve the PCI bus efficiency and balance computation between kernels. By integrating the above two methods, we demonstrate an out-of-card FFT optimization strategy and develop an FFT library that efficiently computes large 1D, 2D and 3D FFTs that can not fit into the GPU's memory. On three of the latest GPUs, our large FFT library achieves much better double precision performance than two of the most efficient CPU based libraries, FFTW and Intel MKL. On average, our large FFTs on a single GeForce GTX480 are 46% faster than FFTW and 57% faster than MKL with multiple threads running on a four-core Intel i7 CPU. The speedup on a Tesla C2070 is 1.93x and 2.11x over FFTW and MKL. A peak performance of 21GFLOPS is achieved for a 2D FFT of size 2048x65536 on C2070 with double precision.},
+ acmid = {1995937},
+ address = {New York, NY, USA},
+ author = {Gu, Liang and Siegel, Jakob and Li, Xiaoming},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995937},
+ isbn = {978-1-4503-0102-2},
+ keyword = {fft dft library gpu cuda},
+ link = {http://doi.acm.org/10.1145/1995896.1995937},
+ location = {Tucson, Arizona, USA},
+ numpages = {10},
+ pages = {255--264},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Using GPUs to Compute Large Out-of-card FFTs},
+ year = {2011}
+}
+
+
+@inproceedings{Chen:2011:PRV:1995896.1995962,
+ abstract = {In modern multi-core chip architecture, the DRAM system is shared by more and more cores and high bandwidth I/O devices. This trend would make the problem of request contention and un-fairness more serious. Previous research focused on memory sche-duling mechanisms to efficiently and fairly serve memory requests generated by multiple cores. However, the performance is mod-erately improved due to the limited bank-level parallelism in preva-lent DRAM chips. Based on the observation that virtual channel memory (VCM) provides more opportunities for exploiting MLP because it has more channel buffers than banks in conventional DRAM chip, we evaluate VCM technology as an alternative to DRAM for addressing the issues of contention, unfairness and MLP. In this work we implement VCM and leverage the state of art scheduling mechanism on a multi-core architecture. The experi-mental results show that (i) VCM with 32 channels improves ho-mogeneous workloads' IPC by 2.08X on a 16-core system compared to the system with conventional DRAM chips, causing extra area cost by 0.5%, and dynamic and background power pe-nalties by only 5.8% and 0.03% respectively. (ii) For heterogene-ous workloads, VCM significantly reduces unfairness by 82.0% as well as improves the workloads' performance by 1.86X in term of system throughput.},
+ acmid = {1995962},
+ address = {New York, NY, USA},
+ author = {Chen, Licheng and Huang, Yongbing and Bao, Yungang and Mutlu, Onur and Tan, Guangming and Chen, Mingyu},
+ booktitle = {Proceedings of the International Conference on Supercomputing},
+ doi = {10.1145/1995896.1995962},
+ isbn = {978-1-4503-0102-2},
+ keyword = {mlp, multi-core architecture, qos, shared dram system, unfairness, virtual channel memory},
+ link = {http://doi.acm.org/10.1145/1995896.1995962},
+ location = {Tucson, Arizona, USA},
+ numpages = {1},
+ pages = {379--379},
+ publisher = {ACM},
+ series = {ICS '11},
+ title = {Poster: Revisiting Virtual Channel Memory for Performance and Fairness on Multi-core Architecture},
+ year = {2011}
+}
+
+
