@@ -1,0 +1,731 @@
+@inproceedings{Chi:2010:EPH:1810085.1810102,
+ abstract = {How to develop efficient and scalable parallel applications is the key challenge for emerging many-core architectures. We investigate this question by implementing and comparing two parallel H.264 decoders on the Cell architecture. It is expected that future many-cores will use a Cell-like local store memory hierarchy, rather than a non-scalable shared memory. The two implemented parallel algorithms, the Task Pool (TP) and the novel Ring-Line (RL) approach, both exploit macroblock-level parallelism. The TP implementation follows the master-slave paradigm and is very dynamic so that in theory perfect load balancing can be achieved. The RL approach is distributed and more predictable in the sense that the mapping of macroblocks to processing elements is fixed. This allows to better exploit data locality, to overlap communication with computation, and to reduce communication and synchronization overhead. While TP is more scalable in theory, the actual scalability favors RL. Using 16 SPEs, RL obtains a scalability of 12x, while TP achieves only 10.3x. More importantly, the absolute performance of RL is much higher. Using 16 SPEs, RL achieves a throughput of 139.6 frames per second (fps) while TP achieves only 76.6 fps. A large part of the additional performance advantage is due to hiding the memory latency. From the results we conclude that in order to fully leverage the performance of future many-cores, a centralized master should be avoided and the mapping of tasks to cores should be predictable in order to be able to hide the memory latency.},
+ acmid = {1810102},
+ address = {New York, NY, USA},
+ author = {Chi, Chi Ching and Juurlink, Ben and Meenderinck, Cor},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810102},
+ isbn = {978-1-4503-0018-6},
+ keyword = {H.264, cell, decoding, parallel, programming, video},
+ link = {http://doi.acm.org/10.1145/1810085.1810102},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {105--114},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Evaluation of Parallel H.264 Decoding Strategies for the Cell Broadband Engine},
+ year = {2010}
+}
+
+
+@inproceedings{BaniAsadi:2010:PMP:1810085.1810100,
+ abstract = {ParaLearn is a scalable, parallel FPGA-based system for learning interaction networks using Bayesian statistics. ParaLearn includes problem specific parallel/scalable algorithms, system software and hardware architecture to address this complex problem. Learning interaction networks from data uncovers causal relationships and allows scientists to predict and explain a system's behavior. Interaction networks have applications in many fields, though we will discuss them particularly in the field of personalized medicine where state of the art high-throughput experiments generate extensive data on gene expression, DNA sequencing and protein abundance. In this paper we demonstrate how ParaLearn models Signaling Networks in human T-Cells. We show greater than 2000 fold speedup on a Field Programmable Gate Array when compared to a baseline conventional implementation on a General Purpose Processor (GPP), a 2.38 fold speedup compared to a heavily optimized parallel GPP implementation, and between 2.74 and 6.15 fold power savings over the optimized GPP. Through using current generation FPGA technology and caching optimizations, we further project speedups of up to 8.15 fold, relative to the optimized GPP. Compared to software approaches, ParaLearn is faster, more power efficient, and can support novel learning algorithms that substantially improve the precision and robustness of the results.},
+ acmid = {1810100},
+ address = {New York, NY, USA},
+ author = {Bani Asadi, Narges and Fletcher, Christopher W. and Gibeling, Greg and Glass, Eric N. and Sachs, Karen and Burke, Daniel and Zhou, Zoey and Wawrzynek, John and Wong, Wing H. and Nolan, Garry P.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810100},
+ isbn = {978-1-4503-0018-6},
+ keyword = {Bayesian networks, FPGA, Markov chain Monte Carlo, reconfigurable computing, signal transduction networks},
+ link = {http://doi.acm.org/10.1145/1810085.1810100},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {83--94},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {ParaLearn: A Massively Parallel, Scalable System for Learning Interaction Networks on FPGAs},
+ year = {2010}
+}
+
+
+@proceedings{Gschwind:2009:1542275,
+ abstract = {It is our pleasure to welcome you to the 23rd ACM International Conference on Supercomputing (ICS'09). Since it was held for the first time in Athens, Greece in the summer of 1987, ICS has been instrumental in bringing together the people who design and build supercomputers and develop the software, algorithms and applications that make use of them. This year we continue that tradition as we host ICS at the IBM Thomas J. Watson Research Center in Yorktown Heights, New York. The Watson Research Center is famous worldwide for its contributions to science and technology. Located just one hour away from midtown Manhattan and 5 miles east of the beautiful Hudson River, the facility is within easy access to a variety of cultural, historical, dining, entertainment and sport activities. We have assembled a strong technical program, with three invited keynote speakers, 47 contributed papers, and a diverse poster section. The contributed papers were selected from a set of 191 submissions, through a rigorous review process conducted by our Program Committee and assisted by more than 250 external reviewers. Together, the PC members and external reviewers provided 814 reviews, or an average of significantly more than 4 reviews per paper. In spite of the large number of high quality submissions, only 47 papers were accepted for publication this year, a 24% acceptance rate. We want to express our appreciation to the large number of authors who submitted their work to 23 rd ACM International Conference on Supercomputing. Their contributions are the primary factor at making this conference a success. True to the goals of ICS, the papers include contributions in the areas of architecture, system software and applications for supercomputing. Our keynote speakers, Mateo Valero, Don Grice and Ian Foster, provide a perspective on important recent developments affecting the supercomputing community. Finally, the technical program is complemented by two days of workshops and tutorials for further interaction and dissemination of relevant information which we added to enrich your experience at the 23 rd ACM International Conference on Supercomputing.},
+ address = {New York, NY, USA},
+ isbn = {978-1-60558-498-0},
+ location = {Yorktown Heights, NY, USA},
+ note = {415091},
+ publisher = {ACM},
+ title = {ICS '09: Proceedings of the 23rd International Conference on Supercomputing},
+ year = {2009}
+}
+
+
+@inproceedings{Oliner:2010:QLU:1810085.1810114,
+ abstract = {When something unexpected happens in a large production system, administrators must first perform a search to isolate which components and component interactions are likely to be involved. The system may consist of thousands of interacting subsystems, the logging instrumentation may be noisy or incomplete, and the problem description may be vague, so this search is often the most difficult part of understanding the system's behavior. To facilitate the search process, we present a query language and a method for computing these queries that makes minimal assumptions about the available data. We evaluate our method on nearly 1.22 billion lines of system logs from four supercomputers, two autonomous vehicles, and a server cluster.},
+ acmid = {1810114},
+ address = {New York, NY, USA},
+ author = {Oliner, Adam J. and Aiken, Alex},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810114},
+ isbn = {978-1-4503-0018-6},
+ keyword = {correlation, influence, logs, production systems, query language},
+ link = {http://doi.acm.org/10.1145/1810085.1810114},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {201--210},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {A Query Language for Understanding Component Interactions in Production Systems},
+ year = {2010}
+}
+
+
+@inproceedings{Mahram:2010:FAN:1810085.1810099,
+ abstract = {NCBI BLAST has become the de facto standard in bioinformatic approximate string matching and so its acceleration is of fundamental importance. The problem is that it uses complex heuristics which make it difficult to simultaneously achieve both substantial speed-up and exact agreement with the original output. We have previously described how a novel FPGA-based prefilter that performs exhaustive ungapped alignment (EUA) could be used to reduce the computation by over 99.9% without loss of sensitivity. The primary contribution here is to show how the EUA filter can be combined with another filter, this one based on standard 2-hit seeding. The result is a doubling of performance over the previous best implementation, which itself is an order of magnitude faster than the unaccelerated original. Other contributions include new algorithms for both the original EUA and the 2-hit filters and experimental results demonstrating their utility. This new multiphase FPGA-accelerated NCBI BLASTP scales easily and is appropriate for use in large FPGA-based servers such as the Novo-G.},
+ acmid = {1810099},
+ address = {New York, NY, USA},
+ author = {Mahram, Atabak and Herbordt, Martin C.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810099},
+ isbn = {978-1-4503-0018-6},
+ keyword = {FPGA-based coprocessors, bioinformatics, biological sequence alignment, high performance reconfigurable computing},
+ link = {http://doi.acm.org/10.1145/1810085.1810099},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {73--82},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Fast and Accurate NCBI BLASTP: Acceleration with Multiphase FPGA-based Prefiltering},
+ year = {2010}
+}
+
+
+@inproceedings{Zhang:2010:SGA:1810085.1810104,
+ abstract = {Because of their tremendous computing power and remarkable cost efficiency, GPUs (graphic processing unit) have quickly emerged as a kind of influential platform for high performance computing. However, as GPUs are designed for massive data-parallel computing, their performance is subject to the presence of condition statements in a GPU application. On a conditional branch where threads diverge in which path to take, the threads taking different paths have to run serially. Such divergences often cause serious performance degradations, impairing the adoption of GPU for many applications that contain non-trivial branches or certain types of loops. This paper presents a systematic investigation in the employment of runtime thread-data remapping for solving that problem. It introduces an abstract form of GPU applications, based on which, it describes the use of reference redirection and data layout transformation for remapping data and threads to minimize thread divergences. It discusses the major challenges for practical deployment of the remapping techniques, most notably, the conflict between the large remapping overhead and the need for the remapping to happen on the fly because of the dependence of thread divergences on runtime values. It offers a solution to the challenge by proposing a CPU-GPU pipelining scheme and a label-assign-move (LAM) algorithm to virtually hide all the remapping overhead. At the end, it reports significant performance improvement produced by the remapping for a set of GPU applications, demonstrating the potential of the techniques for streamlining GPU applications on the fly.},
+ acmid = {1810104},
+ address = {New York, NY, USA},
+ author = {Zhang, Eddy Z. and Jiang, Yunlian and Guo, Ziyu and Shen, Xipeng},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810104},
+ isbn = {978-1-4503-0018-6},
+ keyword = {CPU-GPU pipelining, GPGPU, data transformation, thread divergence, thread-data remapping},
+ link = {http://doi.acm.org/10.1145/1810085.1810104},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {115--126},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Streamlining GPU Applications on the Fly: Thread Divergence Elimination Through Runtime Thread-data Remapping},
+ year = {2010}
+}
+
+
+@inproceedings{Linderman:2010:HBN:1810085.1810101,
+ abstract = {Aberrant intracellular signaling plays an important role in many diseases. The causal structure of signal transduction networks can be modeled as Bayesian Networks (BNs), and computationally learned from experimental data. However, learning the structure of Bayesian Networks (BNs) is an NP-hard problem that, even with fast heuristics, is too time consuming for large, clinically important networks (20--50 nodes). In this paper, we present a novel graphics processing unit (GPU)-accelerated implementation of a Monte Carlo Markov Chain-based algorithm for learning BNs that is up to 7.5-fold faster than current general-purpose processor (GPP)-based implementations. The GPU-based implementation is just one of several implementations within the larger application, each optimized for a different input or machine configuration. We describe the methodology we use to build an extensible application, assembled from these variants, that can target a broad range of heterogeneous systems, e.g., GPUs, multicore GPPs. Specifically we show how we use the Merge programming model to efficiently integrate, test and intelligently select among the different potential implementations.},
+ acmid = {1810101},
+ address = {New York, NY, USA},
+ author = {Linderman, Michael D. and Bruggner, Robert and Athalye, Vivek and Meng, Teresa H. and Bani Asadi, Narges and Nolan, Garry P.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810101},
+ isbn = {978-1-4503-0018-6},
+ keyword = {Bayesian networks, GPU, MCMC},
+ link = {http://doi.acm.org/10.1145/1810085.1810101},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {95--104},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {High-throughput Bayesian Network Learning Using Heterogeneous Multicore Computers},
+ year = {2010}
+}
+
+
+@inproceedings{Zhang:2010:EAO:1810085.1810109,
+ abstract = {Most modern microprocessors provide hardware support for rapidly translating a program logical address to a system physical address (PA). Translation typically sits on the critical path of every memory access, since an access cannot usually be performed until after it has been translated. Enigma is a novel approach to address translation that defers the bulk of the work associated with address translation until data must be retrieved from physical memory. Enigma replaces the address translation unit that exists in each conventional core with a simpler unit to translate from the logical address space to a new intermediate address (IA) space. Intermediate addresses are unique across the entire system except where sharing is required or desired, and their use sidesteps the "synonym" problem present in logically tagged caches. All cache addressing, as well as I/O and coherence traffic, is carried out using IA. Enigma translates an IA to a PA only when no cache in the entire CMP can satisfy the request and memory or I/O must be accessed. A central translation unit attached to the system bus performs translations on IA that must be resolved to a PA. Deferring the bulk of address translation work and removing it from each individual processor core in this manner affords many benefits.},
+ acmid = {1810109},
+ address = {New York, NY, USA},
+ author = {Zhang, Lixin and Speight, Evan and Rajamony, Ram and Lin, Jiang},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810109},
+ isbn = {978-1-4503-0018-6},
+ link = {http://doi.acm.org/10.1145/1810085.1810109},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {159--168},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Enigma: Architectural and Operating System Support for Reducing the Impact of Address Translation},
+ year = {2010}
+}
+
+
+@inproceedings{Malony:2010:EAP:1810085.1810105,
+ abstract = {Heterogeneous parallel systems using GPU devices for application acceleration have garnered significant attention in the supercomputing community. However, to realize the full potential of GPU computing, application developers will require tools to measure and analyze accelerator performance with respect to the parallel execution as a whole. A performance measurement technology for the NVIDIA CUDA platform has been developed and integrated with the TAU parallel performance system. The design of the TAUcuda package is based on an experimental NVIDIA CUDA driver and associated runtime and device libraries. In any environment where the CUDA experimental driver is installed, TAUcuda can provide detailed performance information regarding the execution of GPU kernels and the interactions with the parallel program without any modification to the program source or executable code. The paper describes the TAUcuda technology and how it is integrated with the TAU measurement framework to provide integrated performance views. Various examples of TAUcuda use are presented, including CUDA SDK examples, a GPU version of the Linpack benchmark, and a scalable molecular dynamics application, NAMD.},
+ acmid = {1810105},
+ address = {New York, NY, USA},
+ author = {Malony, Allen D. and Biersdorff, Scott and Spear, Wyatt and Mayanglambam, Shangkar},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810105},
+ isbn = {978-1-4503-0018-6},
+ keyword = {GPGPU, performance tools, profiling, tracing},
+ link = {http://doi.acm.org/10.1145/1810085.1810105},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {127--136},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {An Experimental Approach to Performance Measurement of Heterogeneous Parallel Applications Using CUDA},
+ year = {2010}
+}
+
+
+@inproceedings{Baek:2010:MNP:1810085.1810097,
+ abstract = {Transactional Memory (TM) simplifies parallel programming by supporting parallel tasks that execute in an atomic and isolated way. To achieve the best possible performance, TM must support the nested parallelism available in real-world applications and supported by popular programming models. A few recent papers have proposed support for nested parallelism in software TM (STM) and hardware TM (HTM). However, the proposed designs are still impractical, as they either introduce excessive runtime overheads or require complex hardware structures. This paper presents filter-accelerated, nested TM (FaNTM). We extend a hybrid TM based on hardware signatures to provide practical support for nested parallel transactions. In the FaNTM design, hardware filters provide continuous and nesting-aware conflict detection, which effectively eliminates the excessive overheads of software nested transactions. In contrast to a full HTM approach, FaNTM simplifies hardware by decoupling nested parallel transactions from caches using hardware filters. We also describe subtle correctness and liveness issues that do not exist in the non-nested baseline TM. We quantify the performance of FaNTM using STAMP applications and microbenchmarks that use concurrent data structures. First, we demonstrate that the runtime overhead of FaNTM is small (2.3% on average) when applications use only single-level parallelism. Second, we show that the incremental performance overhead of FaNTM is reasonable when the available parallelism is used in deeper nesting levels. We also demonstrate that nested parallel transactions on FaNTM run significantly faster (e.g., 12.4x) than those on a nested STM. Finally, we show how nested parallelism is used to improve the overall performance of a transactional microbenchmark.},
+ acmid = {1810097},
+ address = {New York, NY, USA},
+ author = {Baek, Woongki and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810097},
+ isbn = {978-1-4503-0018-6},
+ keyword = {nested parallelism, parallel programming, transactional memory},
+ link = {http://doi.acm.org/10.1145/1810085.1810097},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {11},
+ pages = {61--71},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Making Nested Parallel Transactions Practical Using Lightweight Hardware Support},
+ year = {2010}
+}
+
+
+@proceedings{Boku:2010:1810085,
+ abstract = {It is my great pleasure to welcome all of you to the 24th ACM International Conference on Supercomputing (ICS'10) at Tsukuba International Congress Center, Tsukuba City, Japan. Through its long history over 20 years, ICS has been a symbolic conference of ACM for research on supercomputing from the architecture to the application fields as well as various related issues. The last ICS in Japan was held in 1993 in Tokyo, and it has come back after 17 years to Tsukuba City. Tsukuba City is well known as a symbolic city for various aspects of scientific research, referred as "Tsukuba Science City", which includes more than 30 of widely spread fields of national research institutes from the agriculture to the aerospace. The high-end computing researches both on systems and applications are also very active here, and the entire region provides an ideal environment for all kinds of collaborative research among different fields. Tsukuba City also can be easily accessed from Narita Airport, Japan's gateway, as an ideal place for international collaboration and meeting. We are truly pleased to welcome you in this wonderful city. The conference starts with one tutorial/workshop day on Tuesday with two attractive workshops HEART and IRMM and four tutorials on the state-of-the-art supercomputing technology, followed by three-day main conference program on Wednesday through Friday. In this year, we selected 32 papers through the excellent work by international technical program committee. Each morning will start with the wonderful keynote speech by Mr. Stephen Pawlowski from Intel, Prof. William Dally from Stanford University and NVIDIA, and Prof. Kimihiko Hirao from Riken. The first two keynotes may describe the current trend and future vision of supercomputing processors and systems as well as Japan's next generation supercomputer system with over 10 PFLOPS of performance and its research organization by the third keynote. In the intervals of technical sessions, please enjoy the poster session and vendor exhibition with coffee and snacks located to the next room of technical sessions. The nightly social events of reception and banquet may also provide a good opportunity for information exchange among all of attendees.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0018-6},
+ location = {Tsukuba, Ibaraki, Japan},
+ publisher = {ACM},
+ title = {ICS '10: Proceedings of the 24th ACM International Conference on Supercomputing},
+ year = {2010}
+}
+
+
+@inproceedings{Gou:2010:SMM:1810085.1810111,
+ abstract = {We propose to bridge the discrepancy between data representations in memory and those favored by the SIMD processor by customizing the low-level address mapping. To achieve this, we employ the extended Single-Affiliation Multiple-Stride (SAMS) parallel memory scheme at an appropriate level in the memory hierarchy. This level of memory provides both Array of Structures (AoS) and Structure of Arrays (SoA) views for the structured data to the processor, appearing to have maintained multiple layouts for the same data. With such multi-layout memory, optimal SIMDization can be achieved. Our synthesis results using TSMC 90nm CMOS technology indicate that the SAMS Multi-Layout Memory system has efficient hardware implementation, with a critical path delay of less than 1ns and moderate hardware overhead. Experimental evaluation based on a modified IBM Cell processor model suggests that our approach is able to decrease the dynamic instruction count by up to 49% for a selection of real applications and kernels. Under the same conditions, the total execution time can be reduced by up to 37%.},
+ acmid = {1810111},
+ address = {New York, NY, USA},
+ author = {Gou, Chunyang and Kuzmanov, Georgi and Gaydadjiev, Georgi N.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810111},
+ isbn = {978-1-4503-0018-6},
+ link = {http://doi.acm.org/10.1145/1810085.1810111},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {179--188},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {SAMS Multi-layout Memory: Providing Multiple Views of Data to Boost SIMD Performance},
+ year = {2010}
+}
+
+
+@inproceedings{Hirao:2010:NSP:1810085.1810089,
+ abstract = {Computer simulation has become the critical third pillar for scientific discovery along with experiment and theory. We are running the next-generation supercomputer project to design, build and set up the supercomputer, the world's most advanced computer with a speed of LINPACK target of 10 peta flops. The next-generation supercomputer will be available in three years (by 2012). With the emergence of petascale computing platforms we are entering a new era of modeling. Establishment of the COE in the field of supercomputing is also being planned. We would like to create a new, independent, international COE of computer science and computational science in 2010, open to individuals from all over the world from different backgrounds. Petascale computing will enable us to simulate physical processes on a scale never seen before, and approach convergence for dynamical processes never thought possible. Petascale computing will open up a new frontiers. Its success will have lasting impact on science and technology and people all around the world and for generations into the future. An overview of the project and the most recent progress will be discussed.},
+ acmid = {1810089},
+ address = {New York, NY, USA},
+ author = {Hirao, Kimihiko},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810089},
+ isbn = {978-1-4503-0018-6},
+ keyword = {computational science, computer simulation, next-generation supercomputer, petascale computing},
+ link = {http://doi.acm.org/10.1145/1810085.1810089},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {1},
+ pages = {3--3},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {The Next-generation Supercomputer Project and a Plan for the Advanced Institute for Computational Science},
+ year = {2010}
+}
+
+
+@inproceedings{Zhu:2010:TLS:1810085.1810110,
+ abstract = {Data prefetching technique is widely used to bridge the growing performance gap between processor and memory. Numerous prefetching techniques have been proposed to exploit data patterns and correlations in the miss address stream. In general, the miss addresses are grouped by some common characteristics, such as program counter or memory region they belong to, into localized streams to improve prefetch accuracy and coverage. However, the existing stream localization technique lacks the timing information of misses. This drawback can lead to a large fraction of untimely prefetches, which in turn limits the effectiveness of prefetching, wastes precious bandwidth and leads to high cache pollution potentially. This paper proposes a novel mechanism named stream timing technique that can largely reduce untimely prefetches and in turn increase the overall performance. Based on the proposed stream timing technique, we extend the conventional stride prefetcher and propose a new stride prefetcher called Time-Aware Stride (TAS) prefetcher. We have carried out extensive simulation experiments to verify the design of the stream timing technique and the TAS prefetcher. The simulation results show that the proposed stream timing technique is promising in reducing untimely prefetches and the IPC improvement of TAS prefetcher outperforms the existing stride prefetcher by 11%.},
+ acmid = {1810110},
+ address = {New York, NY, USA},
+ author = {Zhu, Huaiyu and Chen, Yong and Sun, Xian-He},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810110},
+ isbn = {978-1-4503-0018-6},
+ keyword = {cache memory, data prefetching, prefetching performance, prefetching simulation},
+ link = {http://doi.acm.org/10.1145/1810085.1810110},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {169--178},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Timing Local Streams: Improving Timeliness in Data Prefetching},
+ year = {2010}
+}
+
+
+@inproceedings{Prabhakar:2010:AMC:1810085.1810115,
+ abstract = {Increasing complexity of large-scale applications and continuous increases in data set sizes of such applications combined with slow improvements in disk access latencies has resulted in I/O becoming a performance bottleneck. While there are several ways of improving I/O access latencies of dataintensive applications, one of the promising approaches has been using different layers of the I/O subsystem to cache recently and/or frequently used data so that the number of I/O requests accessing the disk is reduced. These different layers of caches across the storage hierarchy introduce the need for efficient cache management schemes to derive maximum performance benefits. Several state-of-the-art multi-level storage cache management schemes focus on optimizing aggregate hit rate or overall I/O latency, while being agnostic to Service Level Objectives (SLOs). Also, most of the existing works focus on different cache replacement algorithms for managing storage caches and discuss different exclusive caching techniques in the context of multilevel cache hierarchy. However, the orthogonal problem of storage cache space allocation to multiple, simultaneously-running applications in a multi-level hierarchy of storage caches with multiple storage servers has remained an open research problem. In this work, using a combination of per-application latency model and a linear programming model, we proportion storage caches dynamically among multiple concurrently-executing applications across the different levels of the storage hierarchy and across multiple servers to provide isolation to applications while satisfying the application level SLOs. Further, our algorithm improves the overall system performance significantly.},
+ acmid = {1810115},
+ address = {New York, NY, USA},
+ author = {Prabhakar, Ramya and Srikantaiah, Shekhar and Kandemir, Mahmut and Patrick, Christina},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810115},
+ isbn = {978-1-4503-0018-6},
+ keyword = {I/O, SLO, multi-level, multi-server, storage cache},
+ link = {http://doi.acm.org/10.1145/1810085.1810115},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {11},
+ pages = {211--221},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Adaptive Multi-level Cache Allocation in Distributed Storage Architectures},
+ year = {2010}
+}
+
+
+@inproceedings{Jain:2010:OBA:1810085.1810093,
+ abstract = {Collectives are an important and frequently used component of MPI. Bucket algorithms, also known as "large vector" algorithms, were introduced in the early 90's and have since evolved as a well known paradigm for large MPI collectives. Many modern day supercomputers such as the IBM Blue Gene and Cray XT are based on torus interconnects that offer a highly scalable interconnection architecture for distributed memory systems. While near optimal algorithms have been developed for torus interconnects in other paradigms, such as spanning trees, bucket algorithms have not been optimally extended to these networks. In this paper, we study the basic "divide, distribute and gather" MPI collectives for bucket algorithms -- Allgather, Reduce-scatter and Allreduce -- for large messages on torus interconnects. We present bucket-based algorithms for these collectives on bidirectional links. We show that these algorithms are optimal in terms of bandwidth and computation for symmetric torus networks (i.e. when all the dimensions are equal), matching the theoretical lower bounds For an asymmetric torus, our algorithms are asymptotically optimal and converge to the lower bound for large dimension sizes. We also argue that our bucket algorithms are more scalable on multi-cores in comparison to spanning tree algorithms. Previous studies of bucket algorithms on torus interconnects have focused on unidirectional links and have been unable to obtain tight lower bounds and optimal algorithms. We close this gap by providing stronger lower bounds and showing that our bidirectional algorithms can easily be adapted to the unidirectional case, matching our lower bounds in terms of bandwidth and computational complexity. We implement our algorithms on the IBM Blue Gene/P Supercomputer, which has quad-core nodes connected in a 3-dimensional torus, using the low level communication interface. We demonstrate that our algorithms perform within 7--30% of the lower bounds for different MPI collectives. We demonstrate good scaling using multicores. We also demonstrate a factor of 3 to 17 speedup for various collectives in comparison to the latest optimized MPI implementation.},
+ acmid = {1810093},
+ address = {New York, NY, USA},
+ author = {Jain, Nikhil and Sabharwal, Yogish},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810093},
+ isbn = {978-1-4503-0018-6},
+ keyword = {MPI, collective, communication, torus network},
+ link = {http://doi.acm.org/10.1145/1810085.1810093},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {27--36},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Optimal Bucket Algorithms for Large MPI Collectives on Torus Interconnects},
+ year = {2010}
+}
+
+
+@inproceedings{Naghmouchi:2010:SRE:1810085.1810130,
+ abstract = {We explore the intersection between an emerging class of architectures and a prominent workload: GPGPUs (General-Purpose Graphics Processing Units) and regular expression matching, respectively. It is a challenging task because this workload -- with its irregular, non-coalesceable memory access patterns -- is very different from the regular, numerical workloads that run efficiently on GPGPUs. Small-ruleset expression matching is a fundamental building block for search engines, business analytics, natural language processing, XML processing, compiler front-ends and network security. Despite the abundant power that GPGPUs promise, little work has investigated their potential and limitations with this workload, and how to best utilize the memory classes that GPGPUs offer. We describe an optimization path of the kernel of flex (the popular, open-source regular expression scanner generator) to four nVidia GPGPU models, with decisions based on quantitative micro-benchmarking, performance counters and simulator runs. Our solution achieves a tokenization throughput that exceeds the results obtained by the GPGPU-based string matching solutions presented so far, and compares well with solutions obtained on any architecture.},
+ acmid = {1810130},
+ address = {New York, NY, USA},
+ author = {Naghmouchi, Jamin and Scarpazza, Daniele Paolo and Berekovic, Mladen},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810130},
+ isbn = {978-1-4503-0018-6},
+ link = {http://doi.acm.org/10.1145/1810085.1810130},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {337--348},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Small-ruleset Regular Expression Matching on GPGPUs: Quantitative Performance Analysis and Optimization},
+ year = {2010}
+}
+
+
+@inproceedings{Ravi:2010:CRS:1810085.1810106,
+ abstract = {A trend that has materialized, and has given rise to much attention, is of the increasingly heterogeneous computing platforms. Presently, it has become very common for a desktop or a notebook computer to come equipped with both a multi-core CPU and a GPU. Capitalizing on the maximum computational power of such architectures (i.e., by simultaneously exploiting both the multi-core CPU and the GPU) starting from a high-level API is a critical challenge. We believe that it would be highly desirable to support a simple way for programmers to realize the full potential of today's heterogeneous machines. This paper describes a compiler and runtime framework that can map a class of applications, namely those characterized by generalized reductions, to a system with a multi-core CPU and GPU. Starting with simple C functions with added annotations, we automatically generate the middleware API code for the multi-core, as well as CUDA code to exploit the GPU simultaneously. The runtime system provides efficient schemes for dynamically partitioning the work between CPU cores and the GPU. Our experimental results from two applications, e.g., k-means clustering and Principal Component Analysis (PCA), show that, through effectively harnessing the heterogeneous architecture, we can achieve significantly higher performance compared to using only the GPU or the multi-core CPU. In k-means, the heterogeneous version with 8 CPU cores and a GPU achieved a speedup of about 32.09x relative to 1-thread CPU. When compared to the faster of CPU-only and GPU-only executions, we were able to achieve a performance gain of about 60%. In PCA, the heterogeneous version attained a speedup of 10.4x relative to the 1-thread CPU version. When compared to the faster of CPU-only and GPU-only versions, we achieved a performance gain of about 63.8%.},
+ acmid = {1810106},
+ address = {New York, NY, USA},
+ author = {Ravi, Vignesh T. and Ma, Wenjing and Chiu, David and Agrawal, Gagan},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810106},
+ isbn = {978-1-4503-0018-6},
+ keyword = {GPGPU, dynamic work distribution, generalized reductions, heterogeneous systems, multi-cores},
+ link = {http://doi.acm.org/10.1145/1810085.1810106},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {137--146},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Compiler and Runtime Support for Enabling Generalized Reduction Computations on Heterogeneous Parallel Configurations},
+ year = {2010}
+}
+
+
+@inproceedings{Zhang:2010:IRI:1810085.1810116,
+ abstract = {As the number of I/O-intensive MPI programs becomes increasingly large, many efforts have been made to improve I/O performance, on both software and architecture sides. On the software side, researchers can optimize processes' access patterns, either individually (e.g., by using large and sequential requests in each process), or collectively (e.g., by using collective I/O). On the architecture side, files are striped over multiple I/O nodes for a high aggregate I/O throughput. However, a key weakness, the access interference on each I/O node, remains unaddressed in these efforts. When requests from multiple processes are served simultaneously by multiple I/O nodes, one I/O node has to concurrently serve requests from different processes. Usually the I/O node stores its data on the hard disks, and different process accesses different regions of a data set. When there are a burst of requests from multiple processes, requests from different processes to a disk compete with each other for its single disk head to access data. The disk efficiency can be significantly reduced due to frequent disk head seeks. In this paper, we propose a scheme, InterferenceRemoval, to eliminate I/O interference by taking advantage of optimized access patterns and potentially high throughput provided by multiple I/O nodes. It identifies segments of files that could be involved in the interfering accesses and replicates them to their respectively designated I/O nodes. When the interference is detected at an I/O node, some I/O requests can be re-directed to the replicas on other I/O nodes, so that each I/O node only serves requests from one or a limited number of processes. InterferenceRemoval has been implemented in the MPI library for high portability on top of the Lustre parallel file system. Our experiments with representative benchmarks, such as NPB BTIO and mpi-tile-io, show that it can significantly improve I/O performance of MPI programs. For example, the I/O throughput of mpi-tile-io can be increased by 105% as compared to that without using collective I/O, and by 23% as compared to that using collective I/O.},
+ acmid = {1810116},
+ address = {New York, NY, USA},
+ author = {Zhang, Xuechen and Jiang, Song},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810116},
+ isbn = {978-1-4503-0018-6},
+ keyword = {I/O interference, MPI program, MPI-IO},
+ link = {http://doi.acm.org/10.1145/1810085.1810116},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {223--232},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {InterferenceRemoval: Removing Interference of Disk Access for MPI Programs Through Data Replication},
+ year = {2010}
+}
+
+
+@inproceedings{Marjanovic:2010:OCC:1810085.1810091,
+ abstract = {Communication overhead is one of the dominant factors affecting performance in high-end computing systems. To reduce the negative impact of communication, programmers overlap communication and computation by using asynchronous communication primitives. This increases code complexity, requiring more development effort and making less readable programs. This paper presents the hybrid use of MPI and SMPSs (SMP superscalar, a task-based shared-memory programming model), allowing the programmer to easily introduce the asynchrony necessary to overlap communication and computation. We also describe implementation issues in the SMPSs run time that support its efficient interoperation with MPI. We demonstrate the hybrid use of MPI/SMPSs with four application kernels (matrix multiply, Jacobi, conjugate gradient and NAS BT) and with the high-performance LINPACK benchmark. For the application kernels, the hybrid MPI/SMPSs versions significantly improve the performance of the pure MPI counterparts. For LINPACK we get close to the asymptotic performance at relatively small problem sizes and still get significant benefits at large problem sizes. In addition, the hybrid MPI/SMPSs approach substantially reduces code complexity and is less sensitive to network bandwidth and operating system noise than the pure MPI versions.},
+ acmid = {1810091},
+ address = {New York, NY, USA},
+ author = {Marjanovi\'{c}, Vladimir and Labarta, Jes\'{u}s and Ayguad{\'e}, Eduard and Valero, Mateo},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810091},
+ isbn = {978-1-4503-0018-6},
+ keyword = {LINPACK, MPI, hybrid MPI/SMPSs, parallel programming model},
+ link = {http://doi.acm.org/10.1145/1810085.1810091},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {5--16},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Overlapping Communication and Computation by Using a Hybrid MPI/SMPSs Approach},
+ year = {2010}
+}
+
+
+@inproceedings{Dou:2010:FAD:1810085.1810129,
+ abstract = {In this paper we explore the capability and flexibility of FPGA solutions in a sense to accelerate scientific computing applications which require very high precision arithmetic, based on 128-bit or even 256-bit floating-point number representation. This paper addresses the accuracy when performing LU decomposition on large-scale matrices. In future ExaScale computing environments, accuracy errors are expected to increase up to a level which leaves only 11 significant bits in the mantissa. This is caused by the required large amount of accumulation operations which are in the order of O(n3). Using exact long fixed-point numbers instead of usual floatingpoint numbers in the accumulation process, leads to exact accumulation results with only one bit error, originated by the rounding in the last normalization step. We have developed two types of High Precision Multiplication and Accumulation (HP-MAC), for Double-Double (128 bits) and Quad-Double (256 bits) floating-point, respectively, and implemented them into FPGA devices. We propose a two-level RAM banks scheme to store and add long fixed-point numbers with minimized crucial data paths lengths. We also introduce a scheme of partial summation to enhance the pipeline throughput of MAC operations, by dividing the summation function into 4 partial operations, processed in 4 banks. To prove the concept, we prototyped six 128-bit HP-MAC units into a Xilinx Virtex-5 XC5VLX330 FPGA chip and performed LU decomposition. The experimental results show accuracy improvement of 10 to 24 bits, compared to a software approach with similar precision arithmetic. Moreover, our LU decomposition implementation, based on FPGA running at 133MHz, achieves 29X--56X better performance and much lower power consumption compared to the use of a software-based library running on an Intel Core2 Quad Q8200 CPU at 2.33GHz.},
+ acmid = {1810129},
+ address = {New York, NY, USA},
+ author = {Dou, Yong and Lei, Yuanwu and Wu, Guiming and Guo, Song and Zhou, Jie and Shen, Li},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810129},
+ isbn = {978-1-4503-0018-6},
+ keyword = {FPGA, double-double precision, high precision floating-point multiplication and accumulation (HP-MAC), quad-double precision},
+ link = {http://doi.acm.org/10.1145/1810085.1810129},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {325--336},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {FPGA Accelerating Double/Quad-double High Precision Floating-point Applications for ExaScale Computing},
+ year = {2010}
+}
+
+
+@proceedings{Lowenthal:2011:1995896,
+ abstract = {It is my pleasure to welcome you to the 25th ACM International Conference on Supercomputing (ICS 2011) in Tucson, Arizona. ICS brings together researchers from several areas to present ground-breaking research related to supercomputing. In addition to the technical program of papers, workshops, tutorials, posters, and an ACM Student Research Competition, we are pleased to bring you three illustrious keynote speakers addressing important topics in contemporary parallel computing. Sarita Adve of the University of Illinois will talk about which models parallel programming languages should expose and how hardware should support those models. Steve Hammond of the National Renewable Energy Laboratory will talk about renewable energy and energy efficiency. Finally, Bill Gropp of the University of Illinois will talk about developing applications for extreme scale through the use of performance modeling.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-0102-2},
+ location = {Tucson, Arizona, USA},
+ note = {415101},
+ publisher = {ACM},
+ title = {ICS '11: Proceedings of the International Conference on Supercomputing},
+ year = {2011}
+}
+
+
+@inproceedings{vanderSpek:2010:UAO:1810085.1810123,
+ abstract = {Loop optimization and parallelization have been most successful on code using arrays exclusively. Preferably, such code does not contain indirect access and has only simple, counted loops. The use of recursive data structures makes matters even worse, and optimization of such code has been less successful. Traversal of such data structures is often done using loops with data-dependent loop conditions. In this paper, we present a compiler transformation chain that transforms pointer traversal loops into counted loops operating on arrays that are indirectly accessed. We also show that this indirect access can in some cases be eliminated if the traversed data structure is reordered in memory. This results in a representation on which many existing techniques can be applied. Our system requires monitoring of actual arguments and heap data on which loop conditions depend so that preconditions for the optimized functions can be checked. Our experiments show that this overhead is small, considering the optimization opportunities the representation of the transformed code provides, and well worth the price.},
+ acmid = {1810123},
+ address = {New York, NY, USA},
+ author = {van der Spek, Harmen L. A. and Holm, C. W. Mattias and Wijshoff, Harry A. G.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810123},
+ isbn = {978-1-4503-0018-6},
+ keyword = {control flow optimization, pointer optimization, recursive data structures, restructuring compilers},
+ link = {http://doi.acm.org/10.1145/1810085.1810123},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {275--284},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {How to Unleash Array Optimizations on Code Using Recursive Data Structures},
+ year = {2010}
+}
+
+
+@inproceedings{Bertran:2010:DRP:1810085.1810108,
+ abstract = {Power modeling based on performance monitoring counters (PMCs) attracted the interest of researchers since it became a quick approach to understand and analyse power behavior on real systems. As a result, several power-aware policies use power models to guide their decisions and to trigger low-level mechanisms such as voltage and frequency scaling. Hence, the presence of power models that are informative, accurate and capable of detecting power phases is critical to increase the power-aware research chances and to improve the success of power-saving techniques based on them. In addition, the design of current processors has varied considerably with the inclusion of multiple cores with some resources shared on a single die. As a result, PMC-based power models warrant further investigation on current energy-efficient multi-core processors. In this paper, we present a methodology to produce decomposable PMC-based power models on current multicore architectures. Apart from being able to estimate the power consumption accurately, the models provide per component power consumption, supplying extra insights about power behavior. Moreover, we validate their responsiveness -the capacity to detect power phases-. Specifically, we produce a set of power models for an Intel® Core™ 2 Duo. We model one and two cores for a wide set of DVFS configurations. The models are empirically validated by using the SPEC-cpu2006 benchmark suite and we compare them to other models built using existing approaches. Overall, we demonstrate that the proposed methodology produces more accurate and responsive power models. Concretely, our models show a [1.89--6]% error range and almost 100% accuracy in detecting phase variations above 0.5 watts.},
+ acmid = {1810108},
+ address = {New York, NY, USA},
+ author = {Bertran, Ramon and Gonzalez, Marc and Martorell, Xavier and Navarro, Nacho and Ayguade, Eduard},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810108},
+ isbn = {978-1-4503-0018-6},
+ keyword = {performance counters, power estimation},
+ link = {http://doi.acm.org/10.1145/1810085.1810108},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {147--158},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Decomposable and Responsive Power Models for Multicore Processors Using Performance Counters},
+ year = {2010}
+}
+
+
+@inproceedings{Shin:2010:SUN:1810085.1810120,
+ abstract = {Autotuning technology has emerged recently as a systematic process for evaluating alternative implementations of a computation, in order to select the best-performing solution for a particular architecture. Specialization optimizes code customized to a particular class of input data set. In this paper, we demonstrate how compiler-based autotuning that incorporates specialization for expected data set sizes of key computations can be used to speed up Nek5000, a spectral-element code. Nek5000 makes heavy use of what are effectively Basic Linear Algebra Subroutine (BLAS) calls, but for very small matrices. Through autotuning and specialization, we can achieve significant performance gains over hand-tuned libraries (e.g., Goto, ATLAS, and ACML BLAS). Additional performance gains are obtained from using higher-level compiler optimizations that aggregate multiple BLAS calls. We demonstrate more than 2.2X performance gains on an Opteron over the original manually tuned implementation, and speedups of up to 1.26X on the entire application running on 256 nodes of the Cray XT5 Jaguar system at Oak Ridge.},
+ acmid = {1810120},
+ address = {New York, NY, USA},
+ author = {Shin, Jaewook and Hall, Mary W. and Chame, Jacqueline and Chen, Chun and Fischer, Paul F. and Hovland, Paul D.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810120},
+ isbn = {978-1-4503-0018-6},
+ keyword = {autotuning, empirical performance tuning, specialization},
+ link = {http://doi.acm.org/10.1145/1810085.1810120},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {253--262},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Speeding Up Nek5000 with Autotuning and Specialization},
+ year = {2010}
+}
+
+
+@inproceedings{Chen:2010:LFG:1810085.1810128,
+ abstract = {A GPU cluster is a cluster equipped with GPU devices. Excellent acceleration is achievable for computation-intensive tasks (e. g. matrix multiplication and LINPACK) and bandwidth-intensive tasks with data locality (e. g. finite-difference simulation). Bandwidth-intensive tasks such as large-scale FFTs without data locality are harder to accelerate, as the bottleneck often lies with the PCI between main memory and GPU device memory or the communication network between workstation nodes. That means optimizing the performance of FFT for a single GPU device will not improve the overall performance. This paper uses large-scale FFT as an example to show how to achieve substantial speedups for these more challenging tasks on a GPU cluster. Three GPU-related factors lead to better performance: firstly the use of GPU devices improves the sustained memory bandwidth for processing large-size data; secondly GPU device memory allows larger subtasks to be processed in whole and hence reduces repeated data transfers between memory and processors; and finally some costly main-memory operations such as matrix transposition can be significantly sped up by GPUs if necessary data adjustment is performed during data transfers. This technique of manipulating array dimensions during data transfer is the main technical contribution of this paper. These factors (as well as the improved communication library in our implementation) attribute to 24.3x speedup with respect to FFTW and 7x speedup with respect to Intel MKL for 4096 3D single-precision FFT on a 16-node cluster with 32 GPUs. Around 5x speedup with respect to both standard libraries are achieved for double precision.},
+ acmid = {1810128},
+ address = {New York, NY, USA},
+ author = {Chen, Yifeng and Cui, Xiang and Mei, Hong},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810128},
+ isbn = {978-1-4503-0018-6},
+ keyword = {FFT, GPU clusters, array dimensions},
+ link = {http://doi.acm.org/10.1145/1810085.1810128},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {315--324},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Large-scale FFT on GPU Clusters},
+ year = {2010}
+}
+
+
+@inproceedings{Perez:2010:HTD:1810085.1810122,
+ abstract = {The emergence of multicore processors has increased the need for simple parallel programming models usable by nonexperts. The ability to specify subparts of a bigger data structure is an important trait of High Productivity Programming Languages. Such a concept can also be applied to dependency-aware task-parallel programming models. In those paradigms, tasks may have data dependencies, and those are used for scheduling them in parallel. However, calculating dependencies between subparts of bigger data structures is challenging. Accessed data may be strided, and can fully or partially overlap the accesses of other tasks. Techniques that are too approximate may produce too many extra dependencies and limit parallelism. Techniques that are too precise may be impractical in terms of time and space. We present the abstractions, data structures and algorithms to calculate dependencies between tasks with strided and possibly different memory access patterns. Our technique is performed at run time from a description of the inputs and outputs of each task and is not affected by pointer arithmetic nor reshaping. We demonstrate how it can be applied to increase programming productivity. We also demonstrate that scalability is comparable to other solutions and in some cases higher due to better parallelism extraction.},
+ acmid = {1810122},
+ address = {New York, NY, USA},
+ author = {Perez, Josep M. and Badia, Rosa M. and Labarta, Jesus},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810122},
+ isbn = {978-1-4503-0018-6},
+ keyword = {dependencies, discontiguous data, domains, parallelism, region tree, regions, tasks},
+ link = {http://doi.acm.org/10.1145/1810085.1810122},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {12},
+ pages = {263--274},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Handling Task Dependencies Under Strided and Aliased References},
+ year = {2010}
+}
+
+
+@inproceedings{Strzodka:2010:COP:1810085.1810096,
+ abstract = {We present a new cache oblivious scheme for iterative stencil computations that performs beyond system bandwidth limitations as though gigabytes of data could reside in an enormous on-chip cache. We compare execution times for 2D and 3D spatial domains with up to 128 million double precision elements for constant and variable stencils against hand-optimized naive code and the automatic polyhedral parallelizer and locality optimizer PluTo and demonstrate the clear superiority of our results. The performance benefits stem from a tiling structure that caters for data locality, parallelism and vectorization simultaneously. Rather than tiling the iteration space from inside, we take an exterior approach with a predefined hierarchy, simple regular parallelogram tiles and a locality preserving parallelization. These advantages come at the cost of an irregular work-load distribution but a tightly integrated load-balancer ensures a high utilization of all resources.},
+ acmid = {1810096},
+ address = {New York, NY, USA},
+ author = {Strzodka, Robert and Shaheen, Mohammed and Pajak, Dawid and Seidel, Hans-Peter},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810096},
+ isbn = {978-1-4503-0018-6},
+ keyword = {cache oblivious, memory bound, memory wall, parallelism and locality, stencil, temporal blocking, time skewing},
+ link = {http://doi.acm.org/10.1145/1810085.1810096},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {11},
+ pages = {49--59},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Cache Oblivious Parallelograms in Iterative Stencil Computations},
+ year = {2010}
+}
+
+
+@inproceedings{Potluri:2010:QPB:1810085.1810092,
+ abstract = {AWM-Olsen is a widely used ground motion simulation code based on a parallel finite difference solution of the 3-D velocity-stress wave equation. This application runs on tens of thousands of cores and consumes several million CPU hours on the TeraGrid Clusters every year. A significant portion of its run-time (37% in a 4,096 process run), is spent in MPI communication routines. Hence, it demands an optimized communication design coupled with a low-latency, high-bandwidth network and an efficient communication subsystem for good performance. In this paper, we analyze the performance bottlenecks of the application with regard to the time spent in MPI communication calls. We find that much of this time can be overlapped with computation using MPI non-blocking calls. We use both two-sided and MPI-2 one-sided communication semantics to re-design the communication in AWM-Olsen. We find that with our new design, using MPI-2 one-sided communication semantics, the entire application can be sped up by 12% at 4K processes and by 10% at 8K processes on a state-of-the-art InfiniBand cluster, Ranger at the Texas Advanced Computing Center (TACC).},
+ acmid = {1810092},
+ address = {New York, NY, USA},
+ author = {Potluri, Sreeram and Lai, Ping and Tomko, Karen and Sur, Sayantan and Cui, Yifeng and Tatineni, Mahidhar and Schulz, Karl W. and Barth, William L. and Majumdar, Amitava and Panda, Dhabhaleswar K.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810092},
+ isbn = {978-1-4503-0018-6},
+ keyword = {MPI-2, RDMA, latency hiding, one-sided},
+ link = {http://doi.acm.org/10.1145/1810085.1810092},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {9},
+ pages = {17--25},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Quantifying Performance Benefits of Overlap Using MPI-2 in a Seismic Modeling Application},
+ year = {2010}
+}
+
+
+@inproceedings{Pawlowski:2010:ESN:1810085.1810087,
+ abstract = {Scientific computation has come into its own as a mature technology in all fields of science and engineering. Never before have we been able to accurately anticipate, analyze, and plan for complex events in the future --- from the analysis of a human cell to the climate change well into the future. In combination with theory and experiment, scientific computation provides a valuable tool for understanding causes as well as identifying solutions as we look at complex systems containing billions of elements. However, we still cannot do it all and there is a need for more computation capacity especially in areas such as the study of biology and medicine, materials science, climate, and national security. The petascale systems (capable of 1015 floating point operations per second) of today have accelerated studies that were not possible 3 years ago --- and address some of the challenges in the areas mentioned. However, indications from researchers are that they would need far more powerful computing tools to meet the ever increasing challenges of an increasingly complex world. Exascale systems (capable of 1018 floating point operations per second), with a processing capability close to that of the human brain, will enable the unraveling of longstanding scientific mysteries and present new opportunities. The question now is --- What does it take to build an exascale system? The path from Teraflops to Petaflops was driven by the growth of multi-core processors. While it is likely that an exascale system will be comprised of millions of cores, just riding the multi-core trend may not allow us to develop a sustainable exascale system. A number of challenges surface as we start increasing the number of cores in a CPU (Central Processing Unit). The first and most pressing issue is power consumption. Assuming today's technology to build an exascale system, it would consume over a Gigawatt of power. Other issues such as software scalability, memory, IO, and storage bandwidth, and system resiliency stem from the fact that processing power is outpacing the capabilities of all the surrounding technologies. But the sky isn't really falling. While it appears like there are no ideal solutions today, new approaches will emerge that will provide fundamental breakthroughs in hardware technology, parallel programming, and resiliency. In this talk, the speaker addresses the challenges that we face as we take on the task of developing an exascale system along with the technical shifts needed to mitigate some of these challenges.},
+ acmid = {1810087},
+ address = {New York, NY, USA},
+ author = {Pawlowski, Stephen S.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810087},
+ isbn = {978-1-4503-0018-6},
+ keyword = {exascale systems, memory and storage bandwidth, millions of cores, power consumption, software scalability, system resiliency},
+ link = {http://doi.acm.org/10.1145/1810085.1810087},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {1},
+ pages = {1--1},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Exascale Science: The Next Frontier in High Performance Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Dally:2010:TC:1810085.1810088,
+ abstract = {A qualitative change in the scaling of semiconductor technology has ended the performance scaling of the single-thread processors that have been used as the building blocks for high-performance computers for the last decade and has made computers of all scales power limited. In today's power-limited regime, efficient high-performance computers must be built from throughput processors, processors, like GPUs, that are optimized for sustained performance per unit power --- rather than for single-thread performance. This talk will discuss some of the challenges and opportunities in the architecture and programming of future throughput processors. In these processors, performance derives from parallelism and efficiency derives from locality. Parallelism can take advantage of the plentiful and inexpensive arithmetic units in a throughput processor. Without locality, however, bandwidth quickly becomes a bottleneck. Communication bandwidth, not arithmetic is the critical resource in a modern computing system that dominates cost, performance, and power. This talk will discuss exploitation of parallelism and locality with examples drawn from the Imagine and Merrimac projects, from NVIDIA GPUs, and from three generations of stream programming systems.},
+ acmid = {1810088},
+ address = {New York, NY, USA},
+ author = {Dally, William},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810088},
+ isbn = {978-1-4503-0018-6},
+ keyword = {GPU, parallelism and locality, power efficiency, throughput processors},
+ link = {http://doi.acm.org/10.1145/1810085.1810088},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {1},
+ pages = {2--2},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Throughput Computing},
+ year = {2010}
+}
+
+
+@inproceedings{Liu:2010:CAC:1810085.1810124,
+ abstract = {This paper proposes a compiler-automated array compression scheme to reduce the memory bandwidth consumption of programs and thereby to improve their execution speed. Three encoding methods are developed for such compression. Formulas are derived to analyze the cost and benefit of such methods. To ease the programmer's effort for writing and maintaining complex source code that utilizes compression, we implement our technique in a compiler which automatically transforms the program into different versions corresponding to different encoding methods. The compiler also inserts operations to adaptively invoke the preferred version at run time, including the original version which performs no compression. Results show that our compiler-automated adaptive scheme improves the execution speed over the original version by an average of 9% for a set of benchmark programs which perform memory-intensive sparse matrix-vector multiplications (SpMV). These results take into account of overhead to make the adaptive decision. When tested separately, the individual encoding methods speed up program execution by as high as 41%, which compares favorably against previous compression methods manually applied to SpMV.},
+ acmid = {1810124},
+ address = {New York, NY, USA},
+ author = {Liu, Lixia and Li, Zhiyuan},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810124},
+ isbn = {978-1-4503-0018-6},
+ keyword = {adaptive code selection, bandwidth consumption reduction, compiler implementation, compression, memory intensive programs},
+ link = {http://doi.acm.org/10.1145/1810085.1810124},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {285--294},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {A Compiler-automated Array Compression Scheme for Optimizing Memory Intensive Programs},
+ year = {2010}
+}
+
+
+@inproceedings{Bisset:2010:IID:1810085.1810118,
+ abstract = {To respond to the serious threat of pandemics (e.g. 2009 H1N1 influenza) to human society, we developed Indemics (<u>In</u>teractive Epi<u>demic</u> <u>S</u>imulation), an interactive, data intensive, high performance modeling environment for realtime pandemic planning, situation assessment, and course of action analysis. Indemics was built upon a model of interactive data intensive scientific computation, supporting online interactions between users and simulations and enabling epidemic simulations over detailed social contact networks and realistic representations of complex public policies and intervention strategies. Instead of simply making a highly optimized parallel application run even faster, Indemics introduced several innovative ideas such as online interactive computation and HPC-DBMS integration that significantly improved the functionality, flexibility, modularity, and usability of HPC software. Our performance evaluation suggests that additional computational overhead incurred by Indemics compared to non-interactive simulations is easily offset by its new capabilities. Preliminary results show that Indemics significantly broadens the range of course of action scenarios that can be simulated and enables domain experts to analyze problems that were previously not possible to study.},
+ acmid = {1810118},
+ address = {New York, NY, USA},
+ author = {Bisset, Keith R. and Chen, Jiangzhuo and Feng, Xizhou and Ma, Yifei and Marathe, Madhav V.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810118},
+ isbn = {978-1-4503-0018-6},
+ keyword = {infectious disease, interactive computation, modeling and simulation, network dynamics, parallel computation},
+ link = {http://doi.acm.org/10.1145/1810085.1810118},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {233--242},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Indemics: An Interactive Data Intensive Framework for High Performance Epidemic Simulation},
+ year = {2010}
+}
+
+
+@inproceedings{Lira:2010:AOB:1810085.1810095,
+ abstract = {The growing influence of wire delay in cache design has meant that access latencies to last-level cache banks are no longer constant. Non-Uniform Cache Architectures (NU-CAs) have been proposed to address this problem. Furthermore, an efficient last-level cache is crucial in chip multiprocessors (CMP) architectures to reduce requests to the off-chip memory, because of the significant speed gap between processor and memory and the limited memory bandwidth. Therefore, a bank replacement policy that efficiently manages the NUCA cache is desirable. However, the decentralized nature of NUCA has prevented previously proposed replacement policies from being effective in this kind of caches. As banks operate independently of each other, their replacement decisions are restricted to a single NUCA bank. We propose a novel mechanism based on the bank replacement policy for NUCA caches on CMP, called The Auction. This mechanism enables the replacement decisions taken in a single bank to be spread to the whole NUCA cache. Thus, global replacement policies that rely on the current state of the NUCA cache, such as evicting the least frequently accessed data in the whole NUCA cache, are now feasible. Moreover, The Auction adapts to current program behaviour in order to relocate a line that is being evicted from a bank in the NUCA cache to the most suitable position in the whole cache. We propose, implement and evaluate three approaches of The Auction mechanism. We also show that The Auction manages the cache efficiently and significantly reduces the requests to the off-chip memory by increasing the hit ratio in the NUCA cache. This translates into an average IPC improvement of 8%, and reduces energy consumed by the memory system by 4%.},
+ acmid = {1810095},
+ address = {New York, NY, USA},
+ author = {Lira, Javier and Molina, Carlos and Gonz\'{a}lez, Antonio},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810095},
+ isbn = {978-1-4503-0018-6},
+ keyword = {bank replacement policy, chip multiprocessors (CMP), non-uniform cache architecture (NUCA)},
+ link = {http://doi.acm.org/10.1145/1810085.1810095},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {11},
+ pages = {37--47},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {The Auction: Optimizing Banks Usage in Non-Uniform Cache Architectures},
+ year = {2010}
+}
+
+
+@inproceedings{Bhadauria:2010:ARC:1810085.1810113,
+ abstract = {We develop real-time scheduling techniques for improving performance and energy for multiprogrammed workloads that scale non-uniformly with increasing thread counts. Multithreaded programs generally deliver higher throughput than single-threaded programs on chip multiprocessors, but performance gains from increasing threads decrease when there is contention for shared resources. We use analytic metrics to derive local search heuristics for creating efficient multiprogrammed, multithreaded workload schedules. Programs are allocated fewer cores than requested, and scheduled to space-share the CMP to improve global throughput. Our holistic approach attempts to co-schedule programs that complement each other with respect to shared resource consumption. We find application co-scheduling for performance and energy in a resource-aware manner achieves better results than solely targeting total throughput or concurrently co-scheduling all programs. Our schedulers improve overall energy delay (E*D) by a factor of 1.5 over time-multiplexed gang scheduling.},
+ acmid = {1810113},
+ address = {New York, NY, USA},
+ author = {Bhadauria, Major and McKee, Sally A.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810113},
+ isbn = {978-1-4503-0018-6},
+ keyword = {CMP, energy efficiency, performance, scheduling},
+ link = {http://doi.acm.org/10.1145/1810085.1810113},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {11},
+ pages = {189--199},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {An Approach to Resource-aware Co-scheduling for CMPs},
+ year = {2010}
+}
+
+
+@inproceedings{Chauhan:2010:SRD:1810085.1810125,
+ abstract = {The problem of modeling memory locality of applications to guide compiler optimizations in a systematic manner is an important unsolved problem, made even more significant with the advent of multi-core and many-core architectures. We describe an approach based on a novel source-level metric, called static reuse distance, to model the memory behavior of applications written in matlab. We use matlab as a representative language that lets end-users express their algorithms precisely, but at a relatively high level. Matlab's "high-level" characteristics allow the static analysis to focus on large objects, such as arrays, without losing accuracy due to processor-specific layout of scalar values in memory. We present an efficient algorithm to compute static reuse distances using an extended version of dependence graphs. Our approach differs from earlier similar attempts in three important aspects: it targets high-level programming systems characterized by heavy use of libraries; it works on full programs, instead of being confined to loops; and it integrates practical mechanisms to handle separately compiled procedures as well as pre-compiled library procedures that are only available in binary form. We study matlab code, taken from real programs, to demonstrate the effectiveness of our model. Finally, we present some applications of our approach to program transformations that are known to be important in matlab, but are expected to be relevant to other similar high level languages as well.},
+ acmid = {1810125},
+ address = {New York, NY, USA},
+ author = {Chauhan, Arun and Shei, Chun-Yu},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810125},
+ isbn = {978-1-4503-0018-6},
+ keyword = {MATLAB, compilers, locality, memory hierarchy},
+ link = {http://doi.acm.org/10.1145/1810085.1810125},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {295--304},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Static Reuse Distances for Locality-based Optimizations in MATLAB},
+ year = {2010}
+}
+
+
+@inproceedings{Gamblin:2010:CPD:1810085.1810119,
+ abstract = {Existing supercomputers have hundreds of thousands of processor cores, and future systems may have hundreds of millions. Developers need detailed performance measurements to tune their applications and to exploit these systems fully. However, extreme scales pose unique challenges for performance-tuning tools, which can generate significant volumes of I/O. Compute-to-I/O ratios have increased drastically as systems have grown, and the I/O systems of large machines can handle the peak load from only a small fraction of cores. Tool developers need efficient techniques to analyze and to reduce performance data from large numbers of cores. We introduce CAPEK, a novel parallel clustering algorithm that enables in-situ analysis of performance data at run time. Our algorithm scales sub-linearly to 131,072 processes, running in less than one second even at that scale, which is fast enough for on-line use in production runs. The CAPEK implementation is fully generic and can be used for many types of analysis. We demonstrate its application to statistical trace sampling. Specifically, we use our algorithm to compute efficiently stratified sampling strategies for traces at run time. We show that such stratification can result in data-volume reduction of up to four orders of magnitude on current large-scale systems, with potential for greater reductions for future extreme-scale systems.},
+ acmid = {1810119},
+ address = {New York, NY, USA},
+ author = {Gamblin, Todd and de Supinski, Bronis R. and Schulz, Martin and Fowler, Rob and Reed, Daniel A.},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810119},
+ isbn = {978-1-4503-0018-6},
+ link = {http://doi.acm.org/10.1145/1810085.1810119},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {243--252},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {Clustering Performance Data Efficiently at Massive Scales},
+ year = {2010}
+}
+
+
+@inproceedings{Gu:2010:ETF:1810085.1810127,
+ abstract = {In this paper, a Cooley-Tukey algorithm based multidimensional FFT computation framework on GPU is proposed. This framework generalizes the decomposition of multi-dimensional FFT on GPUs using an I/O tensor representation, and therefore provides a systematic description of possible FFT implementations on GPUs. The framework is geared to the efficiency of multi-dimensional FFT on GPU architectures. In particular, no global transposition among dimensions is performed and some previously unnoticed grouping and commutability of multiple dimensions are highlighted in order to reduce the number of computational kernels and minimize the number of global memory accesses. Important architectural factors and constraints of CUDA, such as coalesced access, bank conflicts and register pressure are also considered in this framework. Moreover, we adapt codelets, a straight-line style FFT implementation originally developed in FFTW, into our framework and prove that they are highly efficient on GPUs. A 2D and 3D FFT library, currently supporting power-of-two sizes, is implemented on this framework and empirically-tuned results are compared with CUFFT and other recent publications on three NVIDIA GPUs. On a high-end NVIDIA GPU, GeForce GTX280, our 2D implementation is 2.8x faster than CUFFT and 1.6x faster than the best previously published results on average. Our 3D FFT implementation achieves 22.7x speed up over CUFFT on average. Furthermore both implementations show better precision than CUFFT. This library and its framework are potentially extensible to more general FFT problem sizes and other parallel architectures as well.},
+ acmid = {1810127},
+ address = {New York, NY, USA},
+ author = {Gu, Liang and Li, Xiaoming and Siegel, Jakob},
+ booktitle = {Proceedings of the 24th ACM International Conference on Supercomputing},
+ doi = {10.1145/1810085.1810127},
+ isbn = {978-1-4503-0018-6},
+ keyword = {2D FFT, 3D FFT, CUDA, GPU, empirical tuning, library generation},
+ link = {http://doi.acm.org/10.1145/1810085.1810127},
+ location = {Tsukuba, Ibaraki, Japan},
+ numpages = {10},
+ pages = {305--314},
+ publisher = {ACM},
+ series = {ICS '10},
+ title = {An Empirically Tuned 2D and 3D FFT Library on CUDA GPU},
+ year = {2010}
+}
+
+
