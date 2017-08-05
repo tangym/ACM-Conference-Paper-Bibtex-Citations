@@ -1,0 +1,1357 @@
+@inproceedings{Papaefstathiou:2013:PCM:2464996.2465443,
+ abstract = {Task-based dataflow programming models and runtimes emerge as promising candidates for programming multicore and manycore architectures. These programming models analyze dynamically task dependencies at runtime and schedule independent tasks concurrently to the processing elements. In such models, cache locality, which is critical for performance, becomes more challenging in the presence of fine-grain tasks, and in architectures with many simple cores. This paper presents a combined hardware-software approach to improve cache locality and offer better performance is terms of execution time and energy in the memory system. We propose the explicit bulk prefetcher (EBP) and epoch-based cache management (ECM) to help runtimes prefetch task data and guide the replacement decisions in caches. The runtimem software can use this hardware support to expose its internal knowledge about the tasks to the architecture and achieve more efficient task-based execution. Our combined scheme outperforms HW-only prefetchers and state-of-the-art replacement policies, improves performance by an average of 17%, generates on average 26% fewer L2 misses, and consumes on average 28% less energy in the components of the memory system.},
+ acmid = {2465443},
+ address = {New York, NY, USA},
+ author = {Papaefstathiou, Vassilis and Katevenis, Manolis G.H. and Nikolopoulos, Dimitrios S. and Pnevmatikatos, Dionisios},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465443},
+ isbn = {978-1-4503-2130-3},
+ keyword = {cache management, prefetching, task-based programming},
+ link = {http://doi.acm.org/10.1145/2464996.2465443},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {325--334},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Prefetching and Cache Management Using Task Lifetimes},
+ year = {2013}
+}
+
+
+@inproceedings{Cho:2013:ADM:2464996.2465003,
+ abstract = {Intelligent solid-state drives (iSSDs) allow execution of limited application functions (e.g., data filtering or aggregation)on their internal hardware resources, exploiting SSD characteristics and trends to provide large and growing performance and energy efficiency benefits. Most notably, internal flash media bandwidth can be significantly (2-4x or more) higher than the external bandwidth with which the SSD is connected to a host system, and the higher internal bandwidth can be exploited within an iSSD. Also, SSD bandwidth is projected to increase rapidly over time, creating a substantial energy cost for streaming of data to an external CPU for processing, which can be avoided via iSSD processing. This paper makes a case for iSSDs by detailing these trends, quantifying the potential benefifits across a range of application activities, describing how SSD architectures could be extended cost-effectively, and demonstrating the concept with measurements of a prototype iSSD running simple data scan functions. Our analyses indicate that, with less than a 2% increase in hardware cost over a traditional SSD, an iSSD can provide 2-4x performance increases and 5-27x energy efficiency gains for a range of data-intensive computations.},
+ acmid = {2465003},
+ address = {New York, NY, USA},
+ author = {Cho, Sangyeun and Park, Chanik and Oh, Hyunok and Kim, Sungchan and Yi, Youngmin and Ganger, Gregory R.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465003},
+ isbn = {978-1-4503-2130-3},
+ keyword = {data-intensive computing, energy-efficient computing, storage systems},
+ link = {http://doi.acm.org/10.1145/2464996.2465003},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {91--102},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Active Disk Meets Flash: A Case for Intelligent SSDs},
+ year = {2013}
+}
+
+
+@inproceedings{Arnau:2013:TTE:2464996.2464999,
+ abstract = {In this paper we present TEAPOT, a full system GPU simulator, whose goal is to allow the evaluation of the GPUs that reside in mobile phones and tablets. To this extent, it has a cycle accurate GPU model for evaluating performance, power models for the GPU, the memory subsystem and for OLED screens, and image quality metrics. Unlike prior GPU simulators, TEAPOT supports the OpenGL ES 1.1/2.0 API, so that it can simulate all commercial graphical applications available for Android systems. To illustrate potential uses of this simulating infrastructure, we perform two case studies. We first turn our attention to evaluating the impact of the OS when simulating graphical applications. We show that the overall GPU power/performance is greatly affected by common OS tasks, such as image composition, and argue that application level simulation is not sufficient to understand the overall GPU behavior. We then utilize the capabilities of TEAPOT to perform studies that trade image quality for energy. We demonstrate that by allowing for small distortions in the overall image quality, a significant amount of energy can be saved.},
+ acmid = {2464999},
+ address = {New York, NY, USA},
+ author = {Arnau, Jose-Maria and Parcerisa, Joan-Manuel and Xekalakis, Polychronis},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2464999},
+ isbn = {978-1-4503-2130-3},
+ keyword = {low-power graphics, mobile gpu, simulation infrastructure},
+ link = {http://doi.acm.org/10.1145/2464996.2464999},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {37--46},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {TEAPOT: A Toolset for Evaluating Performance, Power and Image Quality on Mobile Graphics Systems},
+ year = {2013}
+}
+
+
+@inproceedings{Jothi:2013:TCF:2464996.2465011,
+ abstract = {Continual Flow Pipelines (CFP) allows a processor core to process instruction windows of hundreds of instructions without increasing cycle-critical pipeline resources. When a load misses the data cache, CFP checkpoints the processor register state and then moves all miss dependent instructions into a low complexity non-critical waiting buffer to unblock the pipeline. Meanwhile, miss independent instructions execute normally and update the processor state. When the miss data returns, CFP replays the miss dependent instructions from the waiting buffer and then merges the miss dependent and the miss independent execution results. CFP was initially proposed for cache misses to DRAM. Later work focused on reducing the execution overhead of CFP by avoiding flushing the pipeline before replaying miss dependent instructions, and on allowing these instructions to execute concurrently with miss independent instructions. The goal of these improvements was to gain performance by applying CFP to L1 data cache misses that hit the last level on chip cache. However, many applications or execution phases of applications incur excessive amount of replay and/or rollbacks to the checkpoint. This frequently cancels any benefits from CFP or even causes performance degradation. In this paper, we improve the CFP architecture by using a novel virtual register renaming substrate, and by tuning the replay policies to mitigate excessive replays and rollbacks to the checkpoint. We describe these new design optimizations and show, using Spec 2006 benchmarks and microarchitecture performance and power models of our design, that our Tuned CFP architecture improves performance and power consumption over previous CFP architectures by ~15% and 9%, respectively.},
+ acmid = {2465011},
+ address = {New York, NY, USA},
+ author = {Jothi, Komal and Akkary, Haitham},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465011},
+ isbn = {978-1-4503-2130-3},
+ keyword = {continual flow pipelines, instruction level parallelism, latency tolerant processors, superscalar processors, virtual register renaming},
+ link = {http://doi.acm.org/10.1145/2464996.2465011},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {243--252},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Tuning the Continual Flow Pipeline Architecture},
+ year = {2013}
+}
+
+
+@inproceedings{Hamidouche:2013:MEE:2464996.2465445,
+ abstract = {Xeon Phi, the latestMany Integrated Core (MIC) co-processor from Intel, packs up to 1 TFLOP of double precision performance in a single chip while providing x86 compatibility and supporting popular programming models like MPI and OpenMP. One of the easiest way to take advantage of the MIC is to use compiler directives to offoad appropriate compute tasks of an application. However, with the Xeon Phi being an expensive resource, it is believed that production systems will be designed in a heterogeneous manner with only a subset of compute nodes comprising the MIC co-processor. Moreover, not all applications will be able to take advantage of the complete compute power offered by a Xeon Phi. In such scenarios, the existing state-of-the-art frameworks which require applications to be scheduled on compute nodes that have the MIC co- processor, lead to inefficient utilization of the computing power offered by the MIC. In order to address this limitation, it is critical to design an efficient framework to facilitate applications to offload compute tasks on remote MICs. In this paper, we take on this challenge and design MIC-RO - a novel framework to enable efficient remote offload on heterogeneous MIC clusters. To the best of our knowledge, this is the first design that enables application scientists to offload computation to remote MICs. Our experimental results show that, using MIC-RO, applications are able to offload computation to remote MICs with no overhead compared to offloading on local MICs. Moreover, MIC-RO outperforms the default Intel compiler based offload techniques by up to a factor of two for multiple benchmarks and application kernels.},
+ acmid = {2465445},
+ address = {New York, NY, USA},
+ author = {Hamidouche, Khaled and Potluri, Sreeram and Subramoni, Hari and Kandalla, Krishna and Panda, Dhabaleswar K.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465445},
+ isbn = {978-1-4503-2130-3},
+ keyword = {InfiniBand, MIC, heterogeneous clusters, remote offload},
+ link = {http://doi.acm.org/10.1145/2464996.2465445},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {399--408},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {MIC-RO: Enabling Efficient Remote Offload on Heterogeneous Many Integrated Core (MIC) Clusters with InfiniBand},
+ year = {2013}
+}
+
+
+@inproceedings{Lam:2013:AAP:2464996.2465018,
+ abstract = {As scientific computation continues to scale, efficient use of floating-point arithmetic processors is critical. Lower precision allows streaming architectures to perform more operations per second and can reduce memory bandwidth pressure on all architectures. However, using a precision that is too low for a given algorithm and data set leads to inaccurate results. In this paper, we present a framework that uses binary instrumentation and modification to build mixed-precision configurations of existing binaries that were originally developed to use only double-precision. This framework allows developers to explore mixed-precision configurations without modifying their source code, and it permits autotuning of floating-point precision. We include a simple search algorithm to automate identification of code regions that can use lower precision. Our results for several benchmarks show that our framework is effective and incurs low overhead (less than 10X in most cases). In addition, we demonstrate that our tool can replicate manual conversions and suggest further optimization; in one case, we achieve a speedup of 2X.},
+ acmid = {2465018},
+ address = {New York, NY, USA},
+ author = {Lam, Michael O. and Hollingsworth, Jeffrey K. and de Supinski, Bronis R. and Legendre, Matthew P.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465018},
+ isbn = {978-1-4503-2130-3},
+ keyword = {binary instrumentation, floating-point, mixed precision},
+ link = {http://doi.acm.org/10.1145/2464996.2465018},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {369--378},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Automatically Adapting Programs for Mixed-precision Floating-point Computation},
+ year = {2013}
+}
+
+
+@inproceedings{Jung:2013:DLS:2464996.2465004,
+ abstract = {Resistive Random Access Memory (RRAM) is a promising next generation non-volatile memory (NVM) technology, thanks to its performance potential, endurance and ease-of-integration with standard silicon CMOS processes. While prior work has evaluated RRAM as a replacement for DRAM or even cache memory, to our knowledge there is no prior study that has investigated whether RRAM could be a viable NAND flash replacement in building large-scale storage-class memory systems. Motivated by this observation, our paper first discusses and quantifies the main problems associated with RRAM that prevent it from replacing NAND flash. The main solution we propose, "slab-based memory access with local/global bitlines," enables dense RRAM islands but can also cause performance related problems. To compensate for the latter, we also propose exploiting internal resource parallelism in RRAM and employing optimized data movement interfaces. Our extensive experimental evaluation using a cycle-level NVM simulator and real workloads under diverse computing domains indicate that the proposed architecture can provide 2.95 ~ 8.28 times better bandwidth and 66% ~ 88% shorter latency as compared to the conventional NAND flash, and improve the system-level performance of our workloads by 5x, with a storage capacity similar to that of the state-of-the-art NAND flash.},
+ acmid = {2465004},
+ address = {New York, NY, USA},
+ author = {Jung, Myoungsoo and Shalf, John and Kandemir, Mahmut},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465004},
+ isbn = {978-1-4503-2130-3},
+ keyword = {crossbar array, macro-architecture, micro-architecture, non-volatile memory, resistive random access memory},
+ link = {http://doi.acm.org/10.1145/2464996.2465004},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {103--114},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Design of a Large-scale Storage-class RRAM System},
+ year = {2013}
+}
+
+
+@inproceedings{Edmonds:2013:EGA:2464996.2465441,
+ abstract = {Recently, graph computation has emerged as an important class of high-performance computing application whose characteristics differ markedly from those of traditional, compute-bound kernels. Libraries such as BLAS, LAPACK, and others have been successful in codifying best practices in numerical computing. The data-driven nature of graph applications necessitates a more complex application stack incorporating runtime optimization. In this paper, we present a method of phrasing graph algorithms as collections of asynchronous, concurrently executing, concise code fragments which may be invoked both locally and in remote address spaces. A runtime layer performs a number of dynamic optimizations, including message coalescing, message combining, and software routing. We identify a number of common patterns in these algorithms, and explore how this programming model can express those patterns. Algorithmic transformations are discussed which expose asyn- chrony that can be leveraged by the runtime to improve performance and reduce resource utilization. Practical implementations and performance results are provided for a number of representative algorithms.},
+ acmid = {2465441},
+ address = {New York, NY, USA},
+ author = {Edmonds, Nicholas and Willcock, Jeremiah and Lumsdaine, Andrew},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465441},
+ isbn = {978-1-4503-2130-3},
+ keyword = {active messages, parallel graph algorithms, programming models},
+ link = {http://doi.acm.org/10.1145/2464996.2465441},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {283--292},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Expressing Graph Algorithms Using Generalized Active Messages},
+ year = {2013}
+}
+
+
+@inproceedings{Smith:2013:RCD:2464996.2464997,
+ abstract = {A truly grand challenge for science in general, and for computer architects and designers in particular, is to understand the mammalian brain's computing paradigm and then construct a computing device that embodies that paradigm. Although computer designers have a potential role to play in solving this grand challenge, it is up to us to define that role. From a computer designer's perspective, I will illustrate the current understanding of the brain's computational paradigm by describing several examples from experimental neuroscience. I will suggest an architecture hierarchy and discuss issues that arise when translating from the complex, asynchronous, electro-chemical device, which is the brain, to a synchronous digital device capable of performing computation in a similar manner. This translation presents many difficult challenges that will require science-inspired insight and discovery, added to the challenges of engineering a very large, unconventional digital system. But, as difficult as they may be, these challenges provide almost unlimited opportunities for forward-looking, risk-taking computer architects and designers.},
+ acmid = {2464997},
+ address = {New York, NY, USA},
+ author = {Smith, James E.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2464997},
+ isbn = {978-1-4503-2130-3},
+ keyword = {brain architecture, digital neurons, reverse-engineering},
+ link = {http://doi.acm.org/10.1145/2464996.2464997},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {335--336},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {The Role of Computer Designers in Reverse-engineering the Brain},
+ year = {2013}
+}
+
+
+@inproceedings{Alvanos:2013:IPA:2464996.2467277,
+ abstract = {
+                  An abstract is not available.
+              },
+ acmid = {2467277},
+ address = {New York, NY, USA},
+ author = {Alvanos, Michail and Tanase, Gabriel and Farreras, Montse and Tiotto, Ettore and Amaral, Jos{\'e} Nelson and Martorell, Xavier},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467277},
+ isbn = {978-1-4503-2130-3},
+ keyword = {one-sided communication, partitioned global address space, performance evaluation, unified parallel c},
+ link = {http://doi.acm.org/10.1145/2464996.2467277},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {457--458},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Improving Performance of All-to-all Communication Through Loop Scheduling in PGAS Environments},
+ year = {2013}
+}
+
+
+@inproceedings{Ciobanu:2013:FRR:2464996.2467283,
+ abstract = {The FASTER project Run-Time System Manager offloads programmers from low-level operations by performing task placement, scheduling, and dynamic FPGA reconfiguration. It also manages device fragmentation, configuration caching, pre-fetching and reuse, bitstream compression, and optimizes the system thermal and power footprints. We propose a micro-reconfiguration aware, configuration content agnostic ISA interface and a technology independent Task Configuration Microcode format targeting Maxeler Data Flow computers and Xilinx XUPV5 platforms. We achieve improved resource utilization with negligible performance overhead. Up to 4Gbps for DMA transfers, and up to 3Gbps for FPGA reconfiguration on Xilinx Virtex-5/6 devices is achieved.},
+ acmid = {2467283},
+ address = {New York, NY, USA},
+ author = {Ciobanu, C\u{a}t\u{a}lin Bogdan and Pnevmatikatos, Dionisios N. and Papadimitriou, Kyprianos D. and Gaydadjiev, Georgi N.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467283},
+ isbn = {978-1-4503-2130-3},
+ keyword = {FPGA, partial reconfiguration, run-time system manager},
+ link = {http://doi.acm.org/10.1145/2464996.2467283},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {463--464},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {FASTER Run-time Reconfiguration Management},
+ year = {2013}
+}
+
+
+@inproceedings{Teig:2013:FLB:2464996.2465447,
+ abstract = {Computation in practice consists of executing functions, usually with the intention of achieving all three of correctness, high throughput, and low latency. Unfortunately, the most popular ways to specify functions - e.g., C++, Java, etc. - have not advanced significantly in 20 years. Mainstream software is hard to reason about and lacks any means of even expressing throughput or latency requirements, much less satisfying them. On the hardware front, the throughput of uniprocessors has barely increased in 10 years, yet developing efficient algorithms for multi-core processors remains ad hoc and frequently fails. Latency is no longer improving either -- because multiple cores now compete for limited, off-chip memory bandwidth, and each core needs access to lots of off-chip memory. Finally, the ever-increasing need for communications throughput for datacenters, the Internet, and mobile devices is at odds with the importance of decreasing power consumption. What is a supercomputing community to do? (Hint: I believe that it is neither multi-core microprocessors nor GPUs.)},
+ acmid = {2465447},
+ address = {New York, NY, USA},
+ author = {Teig, Steve},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465447},
+ isbn = {978-1-4503-2130-3},
+ link = {http://doi.acm.org/10.1145/2464996.2465447},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {127--128},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Function, Latency, Bandwidth, Power: Towards a Better Computer},
+ year = {2013}
+}
+
+
+@inproceedings{Kofler:2013:AIA:2464996.2465007,
+ abstract = {Unleashing the full potential of heterogeneous systems, consisting of multi-core CPUs and GPUs, is a challenging task due to the difference in processing capabilities, memory availability, and communication latencies of different computational resources. In this paper we propose a novel approach that automatically optimizes task partitioning for different (input) problem sizes and different heterogeneous multi-core architectures. We use the Insieme source-to-source compiler to translate a single-device OpenCL program into a multi-device OpenCL program. The Insieme Runtime System then performs dynamic task partitioning based on an offline-generated prediction model. In order to derive the prediction model, we use a machine learning approach based on Artificial Neural Networks (ANN) that incorporates static program features as well as dynamic, input sensitive features. Principal component analysis have been used to further improve the task partitioning. Our approach has been evaluated over a suite of 23 programs and respectively achieves a performance improvement of 22% and 25% compared to an execution of the benchmarks on a single CPU and a single GPU which is equal to 87.5% of the optimal performance.},
+ acmid = {2465007},
+ address = {New York, NY, USA},
+ author = {Kofler, Klaus and Grasso, Ivan and Cosenza, Biagio and Fahringer, Thomas},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465007},
+ isbn = {978-1-4503-2130-3},
+ keyword = {code analysis, compilers, gpu, heterogeneous computing, machine learning, runtime system, task partitioning},
+ link = {http://doi.acm.org/10.1145/2464996.2465007},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {149--160},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {An Automatic Input-sensitive Approach for Heterogeneous Task Partitioning},
+ year = {2013}
+}
+
+
+@inproceedings{Jha:2013:EDP:2464996.2467269,
+ abstract = {To define and identify a region-of-interest (ROI) in a digital image, the shape descriptor of the ROI has to be described in terms of its boundary characteristics. To address the generic issues of contour tracking, the yConvex Hypergraph (yCHG) model was proposed by Kanna et al [1]. This yCHG model represents any connected region as a finite set of disjoint yConvex hyperedges (yCHE), which helps to perform the contour tracking precisely without retracing the same contour. We observe that the serial implementation of the yCHG is quite costly in terms of memory and computation for high resolution images. These issues motivated us to exploit the high level data parallelism available on Graphic Processing Units (GPUs). In this work, we propose a parallel approach to implement yCHG model by exploiting massively parallel cores of NVIDIA Compute Unified Device Architecture (CUDA). We perform our experiments on the MODIS satellite image database by NASA, and based on our analysis we observe that the performance of the serial implementation is better on smaller images, but once the threshold is achieved in terms of image resolution, the parallel implementation outperforms its sequential counterpart by 2 to 10 times (2x-10x). We also conclude that an increase in the number of hyperedges in ROI of given size does not impact the performance of the overall algorithm.},
+ acmid = {2467269},
+ address = {New York, NY, USA},
+ author = {Jha, Saurabh and Agarwal, Tejaswi and Rajesh Kanna, B.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467269},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPGPU, image analysis, parallel processing},
+ link = {http://doi.acm.org/10.1145/2464996.2467269},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {475--476},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Exploiting Data Parallelism in the yConvex Hypergraph Algorithm for Image Representation Using GPGPUs},
+ year = {2013}
+}
+
+
+@inproceedings{Park:2013:SDR:2464996.2465000,
+ abstract = {Contemporary and future programming languages for HPC promote hybrid parallelism and shared memory abstractions using a global address space. In this programming style, data races occur easily and are notoriously hard to find. Existing state-of-the-art data race detectors exhibit 10X-100X performance degradation and do not handle hybrid parallelism. In this paper we present the first complete implementation of data race detection at scale for UPC programs. Our implementation tracks local and global memory references in the program and it uses two techniques to reduce the overhead: 1) hierarchical function and instruction level sampling; and 2) exploiting the runtime persistence of aliasing and locality specific to Partitioned Global Address Space applications. The results indicate that both techniques are required in practice: well optimized instruction sampling introduces overheads as high as 6500% (65X slowdown), while each technique in separation is able to reduce it only to 1000% (10X slowdown). When applying the optimizations in conjunction our tool finds all previously known data races in our benchmark programs with at most 50% overhead when running on 2048 cores. Furthermore, while previous results illustrate the benefits of function level sampling, our experiences show that this technique does not work for scientific programs: instruction sampling or a hybrid approach is required.},
+ acmid = {2465000},
+ address = {New York, NY, USA},
+ author = {Park, Chang Seo and Sen, Koushik and Iancu, Costin},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465000},
+ isbn = {978-1-4503-2130-3},
+ keyword = {data race, instrumentation overhead, sampling, tracing},
+ link = {http://doi.acm.org/10.1145/2464996.2465000},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {47--58},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Scaling Data Race Detection for Partitioned Global Address Space Programs},
+ year = {2013}
+}
+
+
+@inproceedings{Koukos:2013:TME:2464996.2465012,
+ abstract = {The end of Dennard scaling is expected to shrink the range of DVFS in future nodes, limiting the energy savings of this technique. This paper evaluates how much we can increase the effectiveness of DVFS by using a software decoupled access-execute approach. Decoupling the data access from execution allows us to apply optimal voltage-frequency selection for each phase and therefore improve energy efficiency over standard coupled execution. The underlying insight of our work is that by decoupling access and execute we can take advantage of the memory-bound nature of the access phase and the compute-bound nature of the execute phase to optimize power efficiency, while maintaining good performance. To demonstrate this we built a task based parallel execution infrastructure consisting of: (1) a runtime system to orchestrate the execution, (2) power models to predict optimal voltage-frequency selection at runtime, (3) a modeling infrastructure based on hardware measurements to simulate zero-latency, per-core DVFS, and (4) a hardware measurement infrastructure to verify our model's accuracy. Based on real hardware measurements we project that the combination of decoupled access-execute and DVFS has the potential to improve EDP by 25% without hurting performance. On memory-bound applications we significantly improve performance due to increased MLP in the access phase and ILP in the execute phase. Furthermore we demonstrate that our method can achieve high performance both in presence or absence of a hardware prefetcher.},
+ acmid = {2465012},
+ address = {New York, NY, USA},
+ author = {Koukos, Konstantinos and Black-Schaffer, David and Spiliopoulos, Vasileios and Kaxiras, Stefanos},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465012},
+ isbn = {978-1-4503-2130-3},
+ keyword = {decoupled execution, dvfs, energy, performance, task-based execution},
+ link = {http://doi.acm.org/10.1145/2464996.2465012},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {253--262},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Towards More Efficient Execution: A Decoupled Access-execute Approach},
+ year = {2013}
+}
+
+
+@proceedings{Banerjee:2014:2591635,
+ abstract = {The International Conference on Supercomputing (ICS) was born in 1987 in Athens, Greece. Some of us have been associated with this conference since its very beginning, and we take great joy and pride in seeing it become successful and now pass the quarter century mark. A decision was made to celebrate the silver jubilee by publishing a 25th Anniversary Volume consisting of some of the most important papers presented at the conference over the years, together with the authors' retrospectives. The ideal would have been to pick one paper from each of the 25 years that had the greatest impact, and making sure that no more than one paper was from the same author or set of authors. I am happy to report that we did not follow these rules too rigidly and did not rely blindly on citation counts of papers. The distinguished committee that made the final decisions was a group of former ICS program committee chairs: Eduard Ayguade, Kyle Gallivan, Avi Mendelson, Alex Nicolau, Constantine Polychronopoulos, Mateo Valero, Alex Veidenbaum, Harry Wijshoff and myself. The committee selected 35 papers after extensive discussion. These papers and their authors' retrospectives appear in this volume. Several selected papers are included without a retrospective; their authors chose not to write one or had a very tough work schedule and could not do it in time. Only 32 of the selected papers are reprinted in this volume however, because ACM does not hold the copyright to papers from ICS'87.},
+ address = {New York, NY, USA},
+ editor = {Banerjee, Utpal},
+ isbn = {978-1-4503-2840-1},
+ location = {Munich, Germany},
+ publisher = {ACM},
+ title = {ACM International Conference on Supercomputing 25th Anniversary Volume},
+ year = {2014}
+}
+
+
+@inproceedings{Sorensen:2013:TSM:2464996.2467280,
+ abstract = {With the widespread use of graphical processing units (GPUs), it is important to ensure that programmers have a clear understanding of their shared memory consistency model, i.e. what values can be read when issued concurrently with writes. Compared to CPUs, GPUs present different shared memory behavior, and we know of no published formal consistency model for them. To fill this void, we establish a formal state transition model of GPU loads, stores, and fences in the language Murphi, and check properties -- captured in litmus tests that pertain to ordering and visibility properties -- over executions using the Murphi model checker.},
+ acmid = {2467280},
+ address = {New York, NY, USA},
+ author = {Sorensen, Tyler and Gopalakrishnan, Ganesh and Grover, Vinod},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467280},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPU, memory fences, shared memory consistency},
+ link = {http://doi.acm.org/10.1145/2464996.2467280},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {489--490},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Towards Shared Memory Consistency Models for GPUs},
+ year = {2013}
+}
+
+
+@inproceedings{Henretty:2013:SCS:2464996.2467268,
+ abstract = {Stencil computations are an integral component of applications in a number of scientific computing domains. Short-vector SIMD instruction sets are ubiquitous on modern processors and can be used to significantly increase the performance of stencil computations. Traditional approaches to optimizing stencils on these platforms have focused on either short-vector SIMD or data locality optimizations. In this paper, we propose a domain specific language and compiler for stencil computations that allows specification of stencils in a concise manner and automates both locality and short-vector SIMD optimizations, along with effective utilization of multi-core parallelism. Loop transformations to enhance data locality and enable load-balanced parallelism are combined with a data layout transformation to effectively increase the performance of stencil computations. Performance increases are demonstrated for a number of stencils on several modern SIMD architectures.},
+ acmid = {2467268},
+ address = {New York, NY, USA},
+ author = {Henretty, Tom and Veras, Richard and Franchetti, Franz and Pouchet, Louis-No\"{e}l and Ramanujam, J. and Sadayappan, P.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467268},
+ isbn = {978-1-4503-2130-3},
+ keyword = {dsl, multicore, simd, split tiling, stencils},
+ link = {http://doi.acm.org/10.1145/2464996.2467268},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {13--24},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {A Stencil Compiler for Short-vector SIMD Architectures},
+ year = {2013}
+}
+
+
+@inproceedings{Duy:2013:DMM:2464996.2467276,
+ abstract = {We present a decomposition method for the parallelization of multi-dimensional FFTs with two distinguishing features: adaptive decomposition and transpose order awareness for achieving minimal communication volume. Based on a row-wise decomposition that translates the multi-dimensional data into one-dimensional data for equally allocating to the processes, our method can adaptively decompose the data in the lowest possible dimensions to reduce communication volume in the first place, differently from previous works that have pre-defined dimensions of decomposition. Also, this decomposition offers plenty of orders in data transpose, and different transpose orders result in different volumes of communication. By analyzing all the possible cases, we find out the best transpose orders with minimal communication volumes for 3-D, 4-D, and 5-D FFTs.},
+ acmid = {2467276},
+ address = {New York, NY, USA},
+ author = {Duy, Truong Vinh Truong and Ozaki, Taisuke},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467276},
+ isbn = {978-1-4503-2130-3},
+ keyword = {domain decomposition, domain decomposition for FFTs, fast fourier transform, multi-dimensional FFts, parallel FFTs},
+ link = {http://doi.acm.org/10.1145/2464996.2467276},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {467--468},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {A Decomposition Method with Minimal Communication Volume for Parallelization of Multi-dimensional FFTs},
+ year = {2013}
+}
+
+
+@inproceedings{Blainey:2013:BMS:2464996.2465446,
+ abstract = {Organizations of all size, whether in business or government are recognizing the strategic role of data and the huge challenge they have to derive value from it. Consumer businesses want to better understand and engage with their customers. Logistics companies want to better optimize their operations. Governments want to find ways to deliver services more effectively and to reduce costs. We see the same patterns repeat across multiple industries. Conventional data management and data mining techniques are breaking down because of the huge volumes of data that need to be processed, because of the variety of ways that data is collected and stored and because of the need to make decisions quickly and on the most current information. The convergence of these trends is creating new opportunities for innovation in algorithms, programming models and computer architecture. In this talk, I will offer a perspective on the emerging field of business analytics on big data and explore connections with the world of high performance computing.},
+ acmid = {2465446},
+ address = {New York, NY, USA},
+ author = {Blainey, Bob},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465446},
+ isbn = {978-1-4503-2130-3},
+ keyword = {business analytics},
+ link = {http://doi.acm.org/10.1145/2464996.2465446},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Business Meets Supercomputing: Keynote Talk},
+ year = {2013}
+}
+
+
+@inproceedings{Foteinos:2013:MUM:2464996.2467281,
+ abstract = {Finite Element Mesh Generation is a critical component for many (bio-)engineering and science applications. In this project we will develop a novel framework for guaranteed quality mesh generation for 3D and 4D Finite Element (FE) analysis, able to scale to thousands of cores.},
+ acmid = {2467281},
+ address = {New York, NY, USA},
+ author = {Foteinos, Panagiotis and Feng, Daming and Chernikov, Andrey and Chrisochoides, Nikos},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467281},
+ isbn = {978-1-4503-2130-3},
+ keyword = {delaunay, fidelity, multi-layer, quality, refinement, scalability},
+ link = {http://doi.acm.org/10.1145/2464996.2467281},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {471--472},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Multi-layered Unstructured Mesh Generation},
+ year = {2013}
+}
+
+
+@inproceedings{Foteinos:2013:HQR:2464996.2465439,
+ abstract = {In this paper, we present a parallel Image-to-Mesh Conversion (I2M) algorithm with quality and fidelity guarantees achieved by dynamic point insertions and removals. Starting directly from an image, it is able to recover the isosurface and mesh the volume with tetrahedra of good shape. Our tightly-coupled shared-memory parallel speculative execution paradigm employs carefully designed contention managers, load balancing, synchronization and optimizations schemes which boost the parallel efficiency with little overhead: our single-threaded performance is faster than CGAL, the state of the art sequential mesh generation software we are aware of. The effectiveness of our method is shown on Blacklight, the Pittsburgh Supercomputing Center's cache-coherent NUMA machine, via a series of case studies justifying our choices. We observe a more than 82% strong scaling efficiency for up to 64 cores, and a more than 95% weak scaling efficiency for up to 144 cores, reaching a rate of 14.7 Million Elements per second. To the best of our knowledge, this is the fastest and most scalable 3D Delaunay refinement algorithm.},
+ acmid = {2465439},
+ address = {New York, NY, USA},
+ author = {Foteinos, Panagiotis and Chrisochoides, Nikos},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465439},
+ isbn = {978-1-4503-2130-3},
+ keyword = {delaunay refinement, fidelity, image-to-mesh conversion, parallel, quality},
+ link = {http://doi.acm.org/10.1145/2464996.2465439},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {233--242},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {High Quality Real-time Image-to-mesh Conversion for Finite Element Simulations},
+ year = {2013}
+}
+
+
+@inproceedings{Huo:2013:ESR:2464996.2479870,
+ abstract = {Graphics processing units (GPUs) have rapidly emerged as a very significant player in high performance computing. Single instruction multiple thread (SIMT) pipelines are typically used in GPUs to exploit parallelism and maximize performance. Although support for unstructured control flow has been included in GPUs, efficiently managing thread divergence for arbitrary parallel programs remains a critical challenge. In this paper, we focus on the problem of supporting recursion in modern GPUs. We design and comparatively evaluate various algorithms to manage thread divergence encountered in recursive programs. The results improve upon traditional post-dominator based reconvergence mechanisms designed to handle thread divergence due to control flow within a procedure.},
+ acmid = {2479870},
+ address = {New York, NY, USA},
+ author = {Huo, Xin and Krishnamoorthy, Sriram and Agrawal, Gagan},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2479870},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPU, SIMD, reconvergence methods, recursion},
+ link = {http://doi.acm.org/10.1145/2464996.2479870},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {409--420},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Efficient Scheduling of Recursive Control Flow on GPUs},
+ year = {2013}
+}
+
+
+@proceedings{Malony:2013:2464996,
+ abstract = {Welcome to the 27th ACM International Conference on Supercomputing (ICS), the oldest and longest running conference on high-performance computing. ICS is well known as the premier technical forum where researchers present their latest results and share with colleagues their perspectives on the state-of-the-art in the field in a focused, intimate environment. ICS 2013 continues this strong tradition with an exceptional technical program, thought-provoking keynote addresses, interesting workshops and tutorials, and opportunities for student participation. The conference rotates between the United States and international locations in Europe and Japan. This year ICS is taking place in beautiful Eugene, Oregon, the "Emerald City" of the Willamette Valley and the home of the University of Oregon. It is my pleasure to serve as the General Chair for ICS 2013 and I hope that you will find the meeting to be a rich and rewarding experience.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-2130-3},
+ location = {Eugene, Oregon, USA},
+ note = {415131},
+ publisher = {ACM},
+ title = {ICS '13: Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ year = {2013}
+}
+
+
+@proceedings{Banerjee:2012:2304576,
+ abstract = {On behalf of the Program Committee, we are pleased to introduce the technical program of the 2012 ACM International Conference on Supercomputing (ICS), the 26th in the series. The conference is by now a well established forum to present and discuss explorations that aim at pushing the limits of performance and capacity in large-scale computing systems, while preserving power efficiency, reliability, and programmability. In this context, papers have been solicited and submitted on parallel applications, architecture, hardware, accelerators, systems software, large scale installations, data center, grid and cloud computing, reliability, power efficiency, models of computation and of programming, and theoretical foundations of performance, for terascale to exascale systems. This year's program includes 36 technical papers selected out of 161 submissions (a 22.3% acceptance rate). There were more submissions of high quality and relevance than could be accommodated in a three-day technical program. Under these constraints, a Program Committee of 70 world experts on the variety of topics of interest to the conference has worked very hard to select a high quality program, assisted by 134 external reviewers and by the Submission Chairs, Francesco Silvestri and Francesco Versaci. The task was carried over a period of two months, with two rounds of reviews--the second deepening the results of the first one-and one week of email discussion among PC members to further refine the evaluation and prepare a preliminary synthesison each submission. A total of 641 reviews were provided in the process, with each paper receiving at least 3 reviews, and half the papers receiving 5 reviews. Final deliberations were made during the Program Committee meeting, held at the University of Padova, Italy, on March 9, 2012. The meeting was attended by nearly two-thirds of the PC members; most of the other members participated via conference call. The technical program is further enriched by the two keynote addresses. Yale Patt will reflect on avenues to improve the performance of the individual core that will benefit even exascale class systems. Michael Gschwind will present the Blue Gene/Q supercomputer design, and how it addresses the memory, power, scalability, communication, and reliability "walls". The Best Paper Award will be given according to the selection made by the audience among all papers. Thus, we invite you to carefully attend all talks, and to vote according to each paper's content, relevance, and presentation quality.},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-1316-2},
+ location = {San Servolo Island, Venice, Italy},
+ note = {415121},
+ publisher = {ACM},
+ title = {ICS '12: Proceedings of the 26th ACM International Conference on Supercomputing},
+ year = {2012}
+}
+
+
+@inproceedings{Sridharan:2013:HRP:2464996.2465016,
+ abstract = {The ubiquity of parallel machines will necessitate time- and energy-efficient parallel execution of a program in a wide range of hardware and software environments. Prevalent parallel execution models can fail to be efficient. Unable to account for dynamic changes in operating conditions, they may create non-optimum parallelism, leading to underutilization or contention of resources. We propose ParallelismDial (PD), a model to dynamically, continuously and judiciously adapt a program's degree of parallelism to a given dynamic operating environment. PD uses a holistic metric to measure system-efficiency. The metric is used to systematically optimize the program's execution. We apply PD to two diverse parallel programming models: Intel TBB, an industry standard, and Prometheus, a recent research effort. Two prototypes of PD have been implemented. The prototypes are evaluated on two stock multicore workstations. Dedicated and multiprogrammed environments were considered. Experimental results show that the prototypes outperform the state-of-the-art approaches, on average, by 15% on time and 31% on energy efficiency, in the dedicated environment. In the multiprogrammed environment, the savings are to the tune of 19% and 21% in time and energy, respectively.},
+ acmid = {2465016},
+ address = {New York, NY, USA},
+ author = {Sridharan, Srinath and Gupta, Gagan and Sohi, Gurindar S.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465016},
+ isbn = {978-1-4503-2130-3},
+ keyword = {autotuning, parallel programming, performance portability, performance tuning, run-time optimization},
+ link = {http://doi.acm.org/10.1145/2464996.2465016},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {337--348},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Holistic Run-time Parallelism Management for Time and Energy Efficiency},
+ year = {2013}
+}
+
+
+@inproceedings{Li:2013:SIS:2464996.2467274,
+ abstract = {Virtual desktop environments (VDEs) typically employ shared storage with the goal to benefit from the I/O optimizations therein. However, the Virtual Machine (VM) management that enables VDEs is typically agnostic of VM I/O characteristics. Thus, the opportunities for I/O reduction techniques, e.g., deduplication, which improve storage scalability and efficiency are constrained. We present SMIO, a VM management system that detects VM I/O similarities, and places the VMs such that the effectiveness of I/O reduction techniques is enhanced--as much as 4.9× compared to the standard approach.},
+ acmid = {2467274},
+ address = {New York, NY, USA},
+ author = {Li, Min and Mantri, Sushil and Zhou, Pin and Butt, Ali},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467274},
+ isbn = {978-1-4503-2130-3},
+ keyword = {virtual machine migration, virtual machine placement},
+ link = {http://doi.acm.org/10.1145/2464996.2467274},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {481--482},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {SMIO: I/O Similarity Aware Virtual Machine Management Invirtual Desktop Environments},
+ year = {2013}
+}
+
+
+@inproceedings{Chen:2013:IOS:2464996.2467270,
+ abstract = {Scientific workflows are a means of defining and orchestrating large, complex, multi-stage computations that perform data analysis and/or simulation. Task clustering is a runtime optimization technique that merges multiple short workflow tasks into a single job such that the job execution overhead is reduced and the overall runtime performance of the workflow is significantly improved. However, current task clustering strategies fail to consider the imbalance problem of both task runtime and task dependency. In our work, we first investigate the different causes of runtime imbalance and dependency imbalance. We then introduce a series of metrics based on our prior work to measure the severity of runtime and dependency imbalance respectively. Finally, we study a wide range of real scientific workflows to generalize the relationship between these metrics and balancing methods.},
+ acmid = {2467270},
+ address = {New York, NY, USA},
+ author = {Chen, Weiwei and Deelman, Ewa and Sakellariou, Rizos},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467270},
+ isbn = {978-1-4503-2130-3},
+ keyword = {balance, data locality, overhead, scientific workflow},
+ link = {http://doi.acm.org/10.1145/2464996.2467270},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {461--462},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Imbalance Optimization in Scientific Workflows},
+ year = {2013}
+}
+
+
+@inproceedings{Lin:2013:AF:2464996.2465015,
+ abstract = {Many modern multicore architectures support shared memory for ease of programming and relaxed memory models to deliver high performance. With relaxed memory models, memory accesses can be reordered dynamically and seen by other processors. Therefore, fence instructions are provided to enforce the memory orderings that are critical to the correctness of a program. However, fence instructions are costly as they cause the processor to stall. Prior works have observed that most of the executions of fence instructions are unnecessary. In this paper we propose address-aware fence, a hardware solution for reducing the overhead of fence instructions without resorting to speculation. Address-aware fence only enforces memory orderings that are necessary to maintain the effect that the traditional fence strives to enforce. This is achieved by dynamically checking a condition for when an execution of a fence must take effect and delay the memory accesses following the fence. When a fence instruction is encountered, first, necessary memory addresses are collected to form a watchlist, and then, only the memory accesses to addresses that are contained in the watchlist are delayed. The memory accesses whose addresses are not contained in the watchlist are allowed to complete without waiting for the completion of pending memory accesses from before the fence. Our experiments conducted on a group of concurrent lock-free algorithms and SPLASH-2 benchmarks show that address-aware fence eliminates nearly all the overhead due to fences and achieves an average improvement of 12.2\% on programs with traditional fences.},
+ acmid = {2465015},
+ address = {New York, NY, USA},
+ author = {Lin, Changhui and Nagarajan, Vijay and Gupta, Rajiv},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465015},
+ isbn = {978-1-4503-2130-3},
+ keyword = {fence instructions, memory models, microarchitecture},
+ link = {http://doi.acm.org/10.1145/2464996.2465015},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {313--324},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Address-aware Fences},
+ year = {2013}
+}
+
+
+@inproceedings{Badin:2013:INA:2464996.2465010,
+ abstract = {Scientific computing is only bound by the limits of Moore's Law and the scalability of high performance mathematical library implementations. Most mathematical libraries however tend to focus only on general inputs, limiting their potential performance and scalability by not tailoring their implementation to specific inputs, such as non-negative inputs. By removing this limitation it is possible to improve the performance and accuracy of a range of problems. In this paper we explore the limitations of hardware to improve accuracy of non-negative matrix multiply by specifically comparing implementations on the GPU and CPU and propose algorithmic solutions to improve accuracy. Next, we demonstrate a matrix multiply implementation that takes advantage of asymptotically fast matrix multiply algorithms, which have been shown to scale better than O(N3) matrix multiply implementations, and improve accuracy by up to a whole digit while increasing performance by up to 27% for matrices where the input is positive. Finally, we propose to extend the BLAS level 3 specification to non-negative matrices to allow easy integration of our solution and allow other library authors to implement their own solutions as part of an existing standard.},
+ acmid = {2465010},
+ address = {New York, NY, USA},
+ author = {Badin, Matthew and D'Alberto, Paolo and Bic, Lubomir and Dillencourt, Michael and Nicolau, Alexandru},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465010},
+ isbn = {978-1-4503-2130-3},
+ keyword = {accuracy, blas, gpgpu, hybrid matrix multiply},
+ link = {http://doi.acm.org/10.1145/2464996.2465010},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {213--222},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Improving Numerical Accuracy for Non-negative Matrix Multiplication on GPUs Using Recursive Algorithms},
+ year = {2013}
+}
+
+
+@inproceedings{Pophale:2013:IPO:2464996.2467279,
+ abstract = {Reducing data communication cost is a critical performance consideration and the need is more acute when using libraries like the OpenSHMEM Reference library which has to sacrifice some performance optimizations for portability. Being a Partitioned Global Address Space library the OpenSHMEM reference library provides more control over data placement, yet, some communication intensive applications would benefit from the libraries prior knowledge of its communication pattern. In this poster we discuss a low cost portable methodology to provide PE re-numbering to facilitate maximum on-node communication. We validate our method using the well-documented 2D heat transfer application.},
+ acmid = {2467279},
+ address = {New York, NY, USA},
+ author = {Pophale, Swaroop and Curtis, Tony and Chapman, Barbara},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467279},
+ isbn = {978-1-4503-2130-3},
+ keyword = {communication optimizations, openshmem, pgas},
+ link = {http://doi.acm.org/10.1145/2464996.2467279},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {485--486},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Improving Performance of openSHMEM Reference Library by Portable PE Mapping Technique},
+ year = {2013}
+}
+
+
+@inproceedings{Sabne:2013:SLC:2464996.2465023,
+ abstract = {Modern supercomputers rely on accelerators to speed up highly parallel workloads. Intricate programming models, limited device memory sizes and overheads of data transfers between CPU and accelerator memories are among the open challenges that restrict the widespread use of accelerators. First, this paper proposes a mechanism and an implementation to automatically pipeline the CPU-GPU memory channel so as to overlap the GPU computation with the memory copies, alleviating the data transfer overhead. Second, in doing so, the paper presents a technique called Computation Splitting, COSP, that caters to arbitrary device memory sizes and automatically manages to run out-of-card OpenMP-like applications on GPUs. Third, a novel adaptive runtime tuning mechanism is proposed to automatically select the pipeline stage size so as to gain the best possible performance. The mechanism adapts to the underlying hardware in the starting phase of a program and chooses the pipeline stage size. The techniques are implemented in a system that is able to translate an input OpenMP program to multiple GPUs attached to the same host CPU. Experimentation on a set of nine benchmarks shows that, on average, the pipelining scheme improves the performance by 1.49x, while limiting the runtime tuning overhead to 3% of the execution time.},
+ acmid = {2465023},
+ address = {New York, NY, USA},
+ author = {Sabne, Amit and Sakdhnagool, Putt and Eigenmann, Rudolf},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465023},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPU, large-data, openMP, out-of-card computations, pipelining, tuning},
+ link = {http://doi.acm.org/10.1145/2464996.2465023},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {443--454},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Scaling Large-data Computations on multi-GPU Accelerators},
+ year = {2013}
+}
+
+
+@inproceedings{Liu:2013:ESM:2464996.2465013,
+ abstract = {Sparse matrix-vector multiplication (SpMV) is an important kernel in many scientific applications and is known to be memory bandwidth limited. On modern processors with wide SIMD and large numbers of cores, we identify and address several bottlenecks which may limit performance even before memory bandwidth: (a) low SIMD efficiency due to sparsity, (b) overhead due to irregular memory accesses, and (c) load-imbalance due to non-uniform matrix structures. We describe an efficient implementation of SpMV on the IntelR Xeon PhiTM Coprocessor, codenamed Knights Corner (KNC), that addresses the above challenges. Our implementation exploits the salient architectural features of KNC, such as large caches and hardware support for irregular memory accesses. By using a specialized data structure with careful load balancing, we attain performance on average close to 90% of KNC's achievable memory bandwidth on a diverse set of sparse matrices. Furthermore, we demonstrate that our implementation is 3.52x and 1.32x faster, respectively, than the best available implementations on dual IntelR XeonR Processor E5-2680 and the NVIDIA Tesla K20X architecture.},
+ acmid = {2465013},
+ address = {New York, NY, USA},
+ author = {Liu, Xing and Smelyanskiy, Mikhail and Chow, Edmond and Dubey, Pradeep},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465013},
+ isbn = {978-1-4503-2130-3},
+ keyword = {esb format, intel many integrated core architecture (intel mic), intel xeon phi, knights corner, spmv},
+ link = {http://doi.acm.org/10.1145/2464996.2465013},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {273--282},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Efficient Sparse Matrix-vector Multiplication on x86-based Many-core Processors},
+ year = {2013}
+}
+
+
+@inproceedings{Alvanos:2013:ICP:2464996.2465006,
+ abstract = {The goal of Partitioned Global Address Space (PGAS) languages is to improve programmer productivity in large scale parallel machines. However, PGAS programs may have many fine-grained shared accesses that lead to performance degradation. Manual code transformations or compiler optimizations are required to improve the performance of programs with fine-grained accesses. The downside of manual code transformations is the increased program complexity that hinders programmer productivity. On the other hand, most compiler optimizations of fine-grain accesses require knowledge of physical data mapping and the use of parallel loop constructs. This paper presents an optimization for the Unified Parallel C language that combines compile time (static) and runtime (dynamic) coalescing of shared data, without the knowledge of physical data mapping. Larger messages increase the network efficiency and static coalescing decreases the overhead of library calls. The performance evaluation uses two microbenchmarks and three benchmarks to obtain scaling and absolute performance numbers on up to 32768 cores of a Power 775 machine. Our results show that the compiler transformation results in speedups from 1.15X up to 21X compared with the baseline versions and that they achieve up to 63% the performance of the MPI versions.},
+ acmid = {2465006},
+ address = {New York, NY, USA},
+ author = {Alvanos, Michail and Farreras, Montse and Tiotto, Ettore and Amaral, Jos{\'e} Nelson and Martorell, Xavier},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465006},
+ isbn = {978-1-4503-2130-3},
+ keyword = {one-sided communication, partitioned global address space, performance evaluation, unified parallel c},
+ link = {http://doi.acm.org/10.1145/2464996.2465006},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {129--138},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Improving Communication in PGAS Environments: Static and Dynamic Coalescing in UPC},
+ year = {2013}
+}
+
+
+@inproceedings{Patki:2013:EHO:2464996.2465009,
+ abstract = {Most recent research in power-aware supercomputing has focused on making individual nodes more efficient and measuring the results in terms of flops per watt. While this work is vital in order to reach exascale computing at 20 megawatts, there has been a dearth of work that explores efficiency at the whole system level. Traditional approaches in supercomputer design use worst-case power provisioning: the total power allocated to the system is determined by the maximum power draw possible per node. In a world where power is plentiful and nodes are scarce, this solution is optimal. However, as power becomes the limiting factor in supercomputer design, worst-case provisioning becomes a drag on performance. In this paper we demonstrate how a policy of overprovisioning hardware with respect to power combined with intelligent, hardware-enforced power bounds consistently leads to greater performance across a range of standard benchmarks. In particular, leveraging overprovisioning requires that applications use effective configurations; the best configuration depends on application scalability and memory contention. We show that using overprovisioning leads to an average speedup of more than 50% over worst-case provisioning.},
+ acmid = {2465009},
+ address = {New York, NY, USA},
+ author = {Patki, Tapasya and Lowenthal, David K. and Rountree, Barry and Schulz, Martin and de Supinski, Bronis R.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465009},
+ isbn = {978-1-4503-2130-3},
+ keyword = {high-performance computing, overprovisioned, power, rapl},
+ link = {http://doi.acm.org/10.1145/2464996.2465009},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {173--182},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Exploring Hardware Overprovisioning in Power-constrained, High Performance Computing},
+ year = {2013}
+}
+
+
+@inproceedings{Haidar:2013:TSM:2464996.2465438,
+ abstract = {The enormous gap between the high-performance capabilities of GPUs and the slow interconnect between them has made the development of numerical software that is scalable across multiple GPUs extremely challenging. We describe a successful methodology on how to address the challenges---starting from our algorithm design, kernel optimization and tuning, to our programming model---in the development of a scalable high-performance tridiagonal reduction algorithm for the symmetric eigenvalue problem. This is a fundamental linear algebra problem with many engineering and physics applications. We use a combination of a task-based approach to parallelism and a new algorithmic design to achieve high performance. The goal of the new design is to increase the computational intensity of the major compute kernels and to reduce synchronization and data transfers between GPUs. This may increase the number of flops, but the increase is offset by the more efficient execution and reduced data transfers. Our performance results are the best available, providing an enormous performance boost compared to current state-of-the-art solutions. In particular, our software scales up to 1070 Gflop/s using 16 Intel E5-2670 cores and eight M2090 GPUs, compared to 45 Gflop/s achieved by the optimized Intel Math Kernel Library (MKL) using only the 16 CPU cores.},
+ acmid = {2465438},
+ address = {New York, NY, USA},
+ author = {Haidar, Azzam and Gates, Mark and Tomov, Stan and Dongarra, Jack},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465438},
+ isbn = {978-1-4503-2130-3},
+ keyword = {eigenvalue, gpu communication, gpu computation, heterogeneous programming model, performance, reduction to tridiagonal, singular value decomposiiton, task parallelism},
+ link = {http://doi.acm.org/10.1145/2464996.2465438},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {223--232},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Toward a Scalable multi-GPU Eigensolver via Compute-intensive Kernels and Efficient Communication},
+ year = {2013}
+}
+
+
+@inproceedings{Amilkanthwar:2013:CCU:2464996.2467288,
+ abstract = {Coalesced memory access patterns in CUDA yields high performance but achieving such patterns in an application can be tedious. We propose a tool, CUPL, which locates uncoalesced access patterns (UCAP) in a given kernel at compile-time. CUPL does static analysis of a given kernel using polyhedral model and reports warnings if the input kernel exhibits UCAP. CUPL has two-fold use 1) It can help the programmer to locate regions of the code to optimize 2) It can help a compiler to perform efficient data layout transformations. Initial experiments show that CUPL reports warnings at appropriate places in kernels from Rodinia benchmark and NVIDIA SDK suites.},
+ acmid = {2467288},
+ address = {New York, NY, USA},
+ author = {Amilkanthwar, Madhur and Balachandran, Shankar},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467288},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPU, Polyhedral tool, access pattern, static analysis},
+ link = {http://doi.acm.org/10.1145/2464996.2467288},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {459--460},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {CUPL: A Compile-time Uncoalesced Memory Access Pattern Locator for CUDA},
+ year = {2013}
+}
+
+
+@inproceedings{Clarke:2013:MMA:2464996.2467272,
+ abstract = {We introduce MAD7, a tool that rapidly simulates many-core memory architectures at a functional level. MAD7 focuses on tracking access patterns and data spatial localities rather than enforcing any precise on-chip arbitration protocols. Although not cycle accurate by nature, it provides useful insights when comparing different memory architectures under real-world workloads. Potential cache access and on-chip network usage bottlenecks can be easily spotted visually thanks to figures generated by our tool. MAD7 simulations are multi-threaded and are typically up to two orders of magnitude faster than those of a fully cycle accurate simulator.},
+ acmid = {2467272},
+ address = {New York, NY, USA},
+ author = {Clarke, Hadrien A. and Trouv{\'e}, Antoine and Murakami, Kazuaki},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467272},
+ isbn = {978-1-4503-2130-3},
+ keyword = {memory architecture, simulation, visualization},
+ link = {http://doi.acm.org/10.1145/2464996.2467272},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {465--466},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {MAD7: A Memory Architecture Simulator Targeted at Design Space Exploration},
+ year = {2013}
+}
+
+
+@inproceedings{Duy:2013:MPD:2464996.2467273,
+ abstract = {We present a massively parallel domain decomposition method for atoms and grids to enable large-scale density functional theory (DFT) electronic structure calculations. In the atom decomposition, we develop a modified recursive bisection method based on the moment of inertia tensor for reordering the atoms from 3D to 1D along a principal axis so that atoms that are close in real space are also close on the axis to ensure data locality. The atoms are then divided into sub-domains depending on their projections onto the principal axis in a balanced way among the processes. In the grid decomposition, we define four data structures to make data locality consistent with that of the clustered atoms, and propose a 2D decomposition method for solving the Poisson equation using the 3D FFT with communication volume minimized. Benchmark results show that the parallel efficiency at 131,072 cores is 67.7\% compared to the baseline of 16,384 cores on the K computer.},
+ acmid = {2467273},
+ address = {New York, NY, USA},
+ author = {Duy, Truong Vinh Truong and Ozaki, Taisuke},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467273},
+ isbn = {978-1-4503-2130-3},
+ keyword = {domain decomposition, first principles calculations, modified recursive bisection, moment of inertia tensor},
+ link = {http://doi.acm.org/10.1145/2464996.2467273},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {469--470},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {A Massively Parallel Domain Decomposition Method for Large-scale DFT Electronic Structure Calculations},
+ year = {2013}
+}
+
+
+@inproceedings{Keever:2013:IPF:2464996.2467275,
+ abstract = {We present Imogen, a fully parallel code for simulating either the Euler or Ideal MHD equations, in two or three dimensions, on GPUs and GPU clusters. Fluid dynamic codes have historically been written entirely in either Fortran or C/C++. Imogen combines the power of GPU acceleration and compiled CUDA solver modules under the hood with the ease of development, ease of use, and ease of modification characteristic of interpreted languages as everything but the core numeric routines is written in Matlab. Our basic goal of writing a highly parallel and fast fluid simulation code driven by Matlab which is GPU accelerated and fully parallel has been largely achieved at this time. We have tested simulations with up to 350 million cells using as many as 50 GPUs on the University of Oregon's ACISS supercomputer, and see no technical reason we could not use many more. Depending on the complexity of the physics used, a single C2070 device can handle as many as 25 million computation cells and still achieve simulation rates as high as a few seconds per timestep. Even though the code runs in an interpreted environment, we have found that interpretation overhead is quite small. Tests simulations with a resolution of 83 found roughly 80ms per complete iteration of overhead on a test workstation, which would be no more than a few percent of the time used by a large simulation. We use a standard fluid scheme neatly summarized in [1] and the exactly ∇ • Β preserving magnetic update algorithm of [2]. Fluid and MHD problems are tested against Imogen and we find that its convergence is second order in both space and time. Because Imogen is a relatively new code, implementation and testing of support for extended physics is a continuous and ongoing process. The use of operator splitting means that new non-ideal effects can be implemented and tested without amending the fluid code. The structures which kernels follow depending on the specifics of the finite differencing they will be undertaking is examined for patterns. Common errors encountered in the development process are explored. In addition, work in progress on the application of Imogen to research into two astrophysical phenomenon, accretion shocks and the protostellar disks, is briefly presented. The linear instability of MHD shock waves for many/most possible parameters is established, and while there has been nonlinear work [3] it appears to largely be assumed that the distortion will keep growing and completely destroy the shock front in the nonlinear regime; We have observed severe distortion but have not seen a breakup. We also present early experiments in applying Imogen to differentially rotating disks.},
+ acmid = {2467275},
+ address = {New York, NY, USA},
+ author = {Keever, Erik and Imamura, James N.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467275},
+ isbn = {978-1-4503-2130-3},
+ keyword = {CFD, GPU acceleration, MHD, interpreted languages, matlab},
+ link = {http://doi.acm.org/10.1145/2464996.2467275},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {479--480},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Imogen: A Parallel 3D Fluid and MHD Code for GPUs},
+ year = {2013}
+}
+
+
+@inproceedings{Xiang:2013:EUV:2464996.2465022,
+ abstract = {State-of-art graphics processing units (GPUs) employ the single-instruction multiple-data (SIMD) style execution to achieve both high computational throughput and energy efficiency. As previous works have shown, there exists significant computational redundancy in SIMD execution, where different execution lanes operate on the same operand values. Such value locality is referred to as uniform vectors. In this paper, we first show that besides redundancy within a uniform vector, different vectors can also have the identical values. Then, we propose detailed architecture designs to exploit both types of redundancy. For redundancy within a uniform vector, we propose to either extend the vector register file with token bits or add a separate small scalar register file to eliminate redundant computations as well as redundant data storage. For redundancy across different uniform vectors, we adopt instruction reuse, proposed originally for CPU architectures, to detect and eliminate redundancy. The elimination of redundant computations and data storage leads to both significant energy savings and performance improvement. Furthermore, we propose to leverage such redundancy to protect arithmetic-logic units (ALUs) and register files against hardware errors. Our detailed evaluation shows that our proposed design has low hardware overhead and achieves performance gains, up to 23.9% and 12.0% on average, along with energy savings, up to 24.8% and 12.6% on average, as well as a 21.1% and 14.1% protection coverage for ALUs and register files, respectively.},
+ acmid = {2465022},
+ address = {New York, NY, USA},
+ author = {Xiang, Ping and Yang, Yi and Mantor, Mike and Rubin, Norm and Hsu, Lisa R. and Zhou, Huiyang},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465022},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPGPU, redundancy},
+ link = {http://doi.acm.org/10.1145/2464996.2465022},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {433--442},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Exploiting Uniform Vector Instructions for GPGPU Performance, Energy Efficiency, and Opportunistic Reliability Enhancement},
+ year = {2013}
+}
+
+
+@inproceedings{Prisacari:2013:BAE:2464996.2465434,
+ abstract = {The personalized all-to-all collective exchange is one of the most challenging communication patterns in HPC applications in terms of performance and scalability. In the context of the fat tree family of interconnection networks, widely used in current HPC systems and datacenters, we show that there is potential for optimizing this traffic pattern by deriving a tight theoretical lower bound for the bandwidth needed in the network to support such communication in a non-contending way. Current state of the art methods require up to twice as much bisection bandwidth as this theoretical minimum. We propose a set of optimized exchanges that use exactly the minimum amount of resources and exhibit close to ideal performance. This enables cost-effective networks, i.e., with as little as half the bisection bandwidth required by current state of the art methods, to exhibit quasi optimal performance under all-to-all traffic. In addition to supporting our claims by mathematical proofs, we include simulation results that confirm their correctness in practical system configurations.},
+ acmid = {2465434},
+ address = {New York, NY, USA},
+ author = {Prisacari, Bogdan and Rodriguez, German and Minkenberg, Cyriel and Hoefler, Torsten},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465434},
+ isbn = {978-1-4503-2130-3},
+ keyword = {all-to-all, bandwidth optimality, fat tree networks},
+ link = {http://doi.acm.org/10.1145/2464996.2465434},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {139--148},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Bandwidth-optimal All-to-all Exchanges in Fat Tree Networks},
+ year = {2013}
+}
+
+
+@inproceedings{Jiang:2013:AS:2464996.2467287,
+ abstract = {In this work, we implement an ARMv8 function and performance simulator based on gem5 infrastructure, which is the first open source ARMv8 simulator. All the ARMv8 A64 instructions other than SIMD are implemented using gem5 ISA description language. The ARMv8 simulator supports multiple CPU models, multiple memory systems, and McPAT power model.},
+ acmid = {2467287},
+ address = {New York, NY, USA},
+ author = {Jiang, Tao and Zhang, Lele and Hou, Rui and Zhang, Yi and Zhang, Qianlong and Chai, Lin and Han, Jing and Zhang, Wuxiang and Wang, Cong and Zhang, Lixin},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467287},
+ isbn = {978-1-4503-2130-3},
+ keyword = {ARMv8, simulator},
+ link = {http://doi.acm.org/10.1145/2464996.2467287},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {477--478},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {The ARMv8 Simulator},
+ year = {2013}
+}
+
+
+@inproceedings{AlSaber:2013:SSC:2464996.2465021,
+ abstract = {Recently, GPU libraries have made it easy to improve application performance by offloading computation to the GPU. However, using such libraries introduces the complexity of manually handling explicit data movements between GPU and CPU memory spaces. Unfortunately, when using these libraries with complex applications, it is very difficult to optimize CPU-GPU communication between multiple kernel invocations to avoid redundant communication. In this paper, we introduce SemCache, a semantics-aware GPU cache that automatically manages CPU-GPU communication and dynamically optimizes communication by eliminating redundant transfers using caching. Its key feature is the use of library semantics to determine the appropriate caching granularity for a given offloaded library (e.g., matrices in BLAS). We applied SemCache to BLAS libraries to provide a GPU drop-in replacement library which handles communications and optimizations automatically. Our caching technique is efficient; it only tracks matrices instead of tracking every memory access at fine granularity. Experimental results show that our system can dramatically reduce redundant communication for real-world computational science application and deliver significant performance improvements, beating GPU-based implementations like CULA and CUBLAS.},
+ acmid = {2465021},
+ address = {New York, NY, USA},
+ author = {AlSaber, Nabeel and Kulkarni, Milind},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465021},
+ isbn = {978-1-4503-2130-3},
+ keyword = {GPGPU, GPU offloading, communication optimization},
+ link = {http://doi.acm.org/10.1145/2464996.2465021},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {421--432},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {SemCache: Semantics-aware Caching for Efficient GPU Offloading},
+ year = {2013}
+}
+
+
+@inproceedings{Valero:2013:ERI:2464996.2467278,
+ abstract = {This work introduces a novel refresh mechanism that leverages reuse information to decide which blocks should be refreshed in an energy-aware eDRAM last-level cache. Experimental results show that, compared to a conventional eDRAM cache, the energy-aware approach achieves refresh energy savings up to 71%, while the reduction on the overall dynamic energy is by 65% with negligible performance losses.},
+ acmid = {2467278},
+ address = {New York, NY, USA},
+ author = {Valero, Alejandro and Sahuquillo, Julio and Petit, Salvador and Duato, Jos{\'e}},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467278},
+ isbn = {978-1-4503-2130-3},
+ keyword = {MRU-tour, on-chip caches, selective refresh},
+ link = {http://doi.acm.org/10.1145/2464996.2467278},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {491--492},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Exploiting Reuse Information to Reduce Refresh Energy in On-chip eDRAM Caches},
+ year = {2013}
+}
+
+
+@inproceedings{Fang:2013:CRA:2464996.2465002,
+ abstract = {With the fast improvement on memory bandwidth and capacity, the memory power consumption has become a major contributor to the overall system power profile. Due to the increasing importance of memory-level parallelism at the multi-core era, most memory scheduling schemes eagerly exploit such parallelism to optimize performance. A common policy used by memory controllers today is, whenever possible, always trying to open memory banks for pending requests to maximize bank-level parallelism and throughput. However, we find that this is neither power optimal nor necessary for maintaining performance because usually many banks are open while waiting for the data bus ownership. To address this issue, we propose a "Conservative Row Activation" scheme that delays the row activation operation of a request to an idle rank until its corresponding column access will not be blocked by the busy data bus. This can reduce the memory power with negligible performance impact by allowing a rank to stay at the low-power mode longer. To minimize performance impact, our scheme monitors the data bus transactions and reserves bus slots for column commands at the earliest possible time. The detailed simulation results indicate that our scheme can reduce the memory power consumption of a group of quad-core multi-programming memory-intensive workloads with SPEC2006 applications by 5.6% on average. It may even improve the performance slightly (by 0.3% on average), because the data bus utilization can be improved by giving column accesses higher priority than other commands.},
+ acmid = {2465002},
+ address = {New York, NY, USA},
+ author = {Fang, Kun and Zhu, Zhichun},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465002},
+ isbn = {978-1-4503-2130-3},
+ keyword = {memory access scheduling, multi-core processor, power optimization},
+ link = {http://doi.acm.org/10.1145/2464996.2465002},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {81--90},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Conservative Row Activation to Improve Memory Power Efficiency},
+ year = {2013}
+}
+
+
+@inproceedings{Koliai:2013:QPB:2464996.2465440,
+ abstract = {Accurate performance analysis is critical for understanding application efficiency and then driving software or hardware optimizations. Although most of static and dynamic performance analysis tools provide useful information, they are not completely satisfactory. Static performance analysis does not provide an accurate view due to the lack of runtime information (eg: cache behavior). On the other hand, profilers, generally mixed with hardware counters, provide a wide range of performance metrics but lack the ability to correlate performance informations with the appropriate code fragment, data structure or instruction. Finally, cycle accurate simulators are too complex and too costly to be used routinely for optimization of real life applications. This paper presents the Differential Analysis method, an approach designed for simple and automatic detection of performance bottlenecks. This approach relies on DECAN, a tool which generates different binary variants obtained by patching individual or groups of instructions. The different variants are then measured and compared, allowing to evaluate the cost of an instruction group and therefore its optimization potential benefit. Differential analysis is illustrated by the use of DECAN on a range of HPC applications to detect performance bottlenecks.},
+ acmid = {2465440},
+ address = {New York, NY, USA},
+ author = {Kolia\"{\i}, Souad and Bendifallah, Zakaria and Tribalat, Mathieu and Valensi, C{\'e}dric and Acquaviva, Jean-Thomas and Jalby, William},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465440},
+ isbn = {978-1-4503-2130-3},
+ keyword = {binary rewriting, bottleneck detection, differential analysis, performance evaluation},
+ link = {http://doi.acm.org/10.1145/2464996.2465440},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {263--272},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Quantifying Performance Bottleneck Cost Through Differential Analysis},
+ year = {2013}
+}
+
+
+@inproceedings{Stone:2013:ASC:2464996.2467267,
+ abstract = {In various applications including atmospheric and ocean simulation programs, stencil computations occur on semi-regular grids where subdomains of the grid are regular (e.g., can be stored in an array) but boundaries between sub-domains connect in an irregular fashion. Implementations of stencils on semi-regular grids often have grid topology details tangled with stencil computation code. This tangling of details makes updating stencil code difficult as it requires the programmer to have full knowledge of the current grid topology. Existing libraries and tools for separating the concerns of stencil computations from grid connectivity have not dealt with semi-regular grids and instead have focused on purely regular grids with possible periodicity or purely irregular grids. In this paper we introduce programming abstractions for the class of semi-regular grids and describe a prototype Fortran 90+ library called GridLib that implements these abstractions. Implementing these abstractions requires solving issues involving nodes in the grid with a non-standard number of neighbors and determining the communication schedule given an orthogonal specification of the grid decomposition. We present solutions to these issues that work within the context of grids used in atmospheric and ocean simulations. We also show that to maintain the performance while still providing this separation of concerns, it is necessary for a source-to-source translator to perform inlining between user code and the GridLib run-time library code. We present performance results for a stencil computation extracted from the Parallel Ocean Program.},
+ acmid = {2467267},
+ address = {New York, NY, USA},
+ author = {Stone, Andrew and Mills Strout, Michelle},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467267},
+ isbn = {978-1-4503-2130-3},
+ keyword = {atmospheric science, compilers, domain-specific languages, earth simulation, high-performance computing, parallel programming, programming models},
+ link = {http://doi.acm.org/10.1145/2464996.2467267},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {3--12},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Abstractions to Separate Concerns in Semi-regular Grids},
+ year = {2013}
+}
+
+
+@inproceedings{Sundar:2013:HNV:2464996.2465442,
+ abstract = {In this paper, we present HykSort, an optimized comparison sort for distributed memory architectures that attains more than 2× improvement over bitonic sort and samplesort. The algorithm is based on the hypercube quicksort, but instead of a binary recursion, we perform a k-way recursion in which the pivots are selected accurately with an iterative parallel select algorithm. The single-node sort is performed using a vectorized and multithreaded merge sort. The advantages of HykSort are lower communication costs, better load balancing, and avoidance of O(p)-collective communication primitives. We also present a staged communication samplesort, which is more robust than the original samplesort for large core counts. We conduct an experimental study in which we compare hypercube sort, bitonic sort, the original samplesort, the staged samplesort, and HykSort. We report weak and strong scaling results and study the effect of the grain size. It turns out that no single algorithm performs best and a hybridization strategy is necessary. As a highlight of our study, on our largest experiment on 262,144 AMD cores of the CRAY XK7 "Titan" platform at the Oak Ridge National Laboratory we sorted 8 trillion 32-bit integer keys in 37 seconds achieving 0.9TB/s effective throughput.},
+ acmid = {2465442},
+ address = {New York, NY, USA},
+ author = {Sundar, Hari and Malhotra, Dhairya and Biros, George},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465442},
+ isbn = {978-1-4503-2130-3},
+ keyword = {bitonic sort, distributed-memory parallelism, hypercube, parallel algorithms, quicksort, samplesort, shared-memory parallelism, sorting},
+ link = {http://doi.acm.org/10.1145/2464996.2465442},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {293--302},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {HykSort: A New Variant of Hypercube Quicksort on Distributed Memory Architectures},
+ year = {2013}
+}
+
+
+@inproceedings{Ozog:2013:ILB:2464996.2467282,
+ abstract = {Developing effective yet scalable load-balancing methods for irregular computations is critical to the successful application of simulations in a variety of disciplines at petascale and beyond. This paper explores a set of static and dynamic scheduling algorithms for block-sparse tensor contractions within the NWChem computational chemistry code for different degrees of sparsity (and therefore load imbalance). In this particular application, a relatively large amount of task information can be obtained at minimal cost, which enables the use of static partitioning techniques that take the entire task list as input. However, fully static partitioning is incapable of dealing with dynamic variation of task costs, such as from transient network contention or operating system noise, so we also consider hybrid schemes that utilize dynamic scheduling within subgroups. These two schemes, which have not been previously implemented in NWChem or its proxies (i.e. quantum chemistry mini-apps) are compared to the original centralized dynamic load-balancing algorithm as well as improved centralized scheme. In all cases, we separate the scheduling of tasks from the execution of tasks into an inspector phase and an executor phase. The impact of these methods upon the application is substantial on a large InfiniBand cluster: execution time is reduced by as much as 50% at scale. The technique is applicable to any scientific application requiring load balance where performance models or estimations of kernel execution times are available.},
+ acmid = {2467282},
+ address = {New York, NY, USA},
+ author = {Ozog, David and Shende, Sameer and Malony, Allen and Hammond, Jeff R. and Dinan, James and Balaji, Pavan},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467282},
+ isbn = {978-1-4503-2130-3},
+ keyword = {dynamic load balancing, global arrays, quantum chemistry, static partitioning, tensor contractions},
+ link = {http://doi.acm.org/10.1145/2464996.2467282},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {483--484},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Inspector/Executor Load Balancing Algorithms for Block-sparse Tensor Contractions},
+ year = {2013}
+}
+
+
+@inproceedings{Bueno:2013:IOS:2464996.2465017,
+ abstract = {The need for features for managing complex data accesses in modern programming models has increased due to the emerging hardware architectures. HPC hardware has moved towards clusters of accelerators and/or multicores, architectures with a complex memory hierarchy exposed to the programmer. We present the implementation of data regions on the OmpSs programming model, a high-productivity annotation-based programming model derived from OpenMP. This enables the programmer to specify regions of strided and/or overlapped data used by the parallel tasks of the application. The data will be automatically managed by the underlying run-time environment, which could transparently apply optimization techniques to improve performance. This approach based on a high-productivity programming model contrasts with more direct approaches like MPI, where the programmer has to explicitly deal with the data management. It is generally believed that these are capable of achieving the best possible performance, so we also compare the performance of several OmpSs applications against well-known counterparts MPI implementations obtaining comparable or better results.},
+ acmid = {2465017},
+ address = {New York, NY, USA},
+ author = {Bueno, Javier and Martorell, Xavier and Badia, Rosa M. and Ayguad{\'e}, Eduard and Labarta, Jes\'{u}s},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465017},
+ isbn = {978-1-4503-2130-3},
+ keyword = {cluster programming, non-contiguous memory access, openmp, run-time environments},
+ link = {http://doi.acm.org/10.1145/2464996.2465017},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {359--368},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Implementing OmpSs Support for Regions of Data in Architectures with Multiple Address Spaces},
+ year = {2013}
+}
+
+
+@inproceedings{Frings:2013:MPL:2464996.2465020,
+ abstract = {Dynamic linking has many advantages for managing large code bases, but dynamically linked applications have not typically scaled well on high performance computing systems. Splitting a monolithic executable into many dynamic shared object (DSO) files decreases compile time for large codes, reduces runtime memory requirements by allowing modules to be loaded and unloaded as needed, and allows common DSOs to be shared among many executables. However, launching an executable that depends on many DSOs causes a flood of file system operations at program start-up, when each process in the parallel application loads its dependencies. At large scales, this operation has an effect similar to a site-wide denial-of-service attack, as even large parallel file systems struggle to service so many simultaneous requests. In this paper, we present SPINDLE, a novel approach to parallel loading that coordinates simultaneous file system operations with a scalable network of cache server processes. Our approach is transparent to user applications. We extend the GNU loader, which is used in Linux as well as proprietary operating systems, to limit the number of simultaneous file system operations, quickly loading DSOs without thrashing the file system. Our experiments show that our prototype implementation has a low overhead and increases the scalability of Pynamic, a benchmark that stresses the dynamic loader, by a factor of 20.},
+ acmid = {2465020},
+ address = {New York, NY, USA},
+ author = {Frings, Wolfgang and Ahn, Dong H. and LeGendre, Matthew and Gamblin, Todd and de Supinski, Bronis R. and Wolf, Felix},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465020},
+ isbn = {978-1-4503-2130-3},
+ keyword = {hpc, os/runtime service, scalability},
+ link = {http://doi.acm.org/10.1145/2464996.2465020},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {389--398},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Massively Parallel Loading},
+ year = {2013}
+}
+
+
+@inproceedings{Marin:2013:DOA:2464996.2465014,
+ abstract = {Hardware prefetchers are effective at recognizing streaming memory access patterns and at moving data closer to the processing units to hide memory latency. However, hardware prefetchers can track only a limited number of data streams due to finite hardware resources. In this paper, we introduce the term streaming concurrency to characterize the number of parallel, logical data streams in an application. We present a simulation algorithm for understanding the streaming concurrency at any point in an application, and we show that this metric is a good predictor of the number of memory requests initiated by streaming prefetchers. Next, we try to understand the causes behind poor prefetching performance. We identified four prefetch unfriendly conditions and we show how to classify an application's memory references based on these conditions. We evaluated our analysis using the SPEC CPU2006 benchmark suite. We selected two benchmarks with unfavorable access patterns and transformed them to improve their prefetching effectiveness. Results show that making applications more prefetcher friendly can yield meaningful performance gains.},
+ acmid = {2465014},
+ address = {New York, NY, USA},
+ author = {Marin, Gabriel and McCurdy, Collin and Vetter, Jeffrey S.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465014},
+ isbn = {978-1-4503-2130-3},
+ keyword = {diagnosis, performance modeling, stream prefetching},
+ link = {http://doi.acm.org/10.1145/2464996.2465014},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {303--312},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Diagnosis and Optimization of Application Prefetching Performance},
+ year = {2013}
+}
+
+
+@inproceedings{Rajamony:2013:PAS:2464996.2465435,
+ abstract = {We describe the IBM Power 775, a supercomputing system that was designed to provide high performance at very large scales. The system recently attained world record performance numbers for three important, communication-heavy supercomputing benchmarks: RandomAccess, PTRANS, and Global FFT (while the Power 775 currently holds the number two spot in Global FFT, its efficiency when computing the FFT exceeds that of the number one system's by over 3.5 times). At the heart of the Power 775's performance is the "hub module", which is a high-radix router containing forty-seven copper and optical links with a switching capacity of over 1.1 Tbyte/second. This level of bandwidth is unprecedented for typical systems of the scale we discuss in this paper. As a result, we were forced to develop a complete software stack to fully leverage the communication capabilities of the system. In this paper we evaluate the Power 775 server at scales up to 2 Petaflops (63,360 POWER7 cores), discuss hardware and software tradeoffs considered during the design process, and finally present some lessons learned.},
+ acmid = {2465435},
+ address = {New York, NY, USA},
+ author = {Rajamony, Ramakrishnan and Stephenson, Mark W. and Speight, William Evan},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465435},
+ isbn = {978-1-4503-2130-3},
+ keyword = {Design studies, Measurement techniques, Performance attributes},
+ link = {http://doi.acm.org/10.1145/2464996.2465435},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {183--192},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {The Power 775 Architecture at Scale},
+ year = {2013}
+}
+
+
+@inproceedings{Liu:2013:NAP:2464996.2465433,
+ abstract = {The number of hardware threads is growing with each new generation of multicore chips; thus, one must effectively use threads to fully exploit emerging processors. OpenMP is a popular directive-based programming model that helps programmers exploit thread-level parallelism. In this paper, we describe the design and implementation of a novel performance tool for OpenMP. Our tool distinguishes itself from existing OpenMP performance tools in two principal ways. First, we develop a measurement methodology that attributes blame for work and inefficiency back to program contexts. We show how to integrate prior work on measurement methodologies that employ directed and undirected blame shifting and extend the approach to support dynamic thread-level parallelism in both time-shared and dedicated environments. Second, we develop a novel deferred context resolution method that supports online attribution of performance metrics to full calling contexts within an OpenMP program execution. This approach enables us to collect compact call path profiles for OpenMP program executions without the need for traces. Support for our approach is an integral part of an emerging standard performance tool application programming interface for OpenMP. We demonstrate the effectiveness of our approach by applying our tool to analyze four well-known application benchmarks that cover the spectrum of OpenMP features. In case studies with these benchmarks, insights from our tool helped us significantly improve the performance of these codes.},
+ acmid = {2465433},
+ address = {New York, NY, USA},
+ author = {Liu, Xu and Mellor-Crummey, John and Fagan, Michael},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465433},
+ isbn = {978-1-4503-2130-3},
+ keyword = {openmp, performance analysis, performance measurement, software tools},
+ link = {http://doi.acm.org/10.1145/2464996.2465433},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {69--80},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {A New Approach for Performance Analysis of openMP Programs},
+ year = {2013}
+}
+
+
+@inproceedings{Underwood:2013:EOI:2464996.2465437,
+ abstract = {Future high performance computing networks will exploit routers with both high port counts and high port bandwidth. Scalable on-die interconnects will be needed to insure that the router can sustain its full bandwidth for a variety of traffic patterns. Otherwise, blocking behavior within a router can be encountered by a variety of challenging HPC traffic patterns. We examine the router on-die interconnect problem in the context of a hypothetical 4 TB/s router, including throughput on various traffic patterns and die area considerations. The results indicate that the on-die topologies that have been used in the past require either too much area, or achieve too little performance. We present three topologies (two adaptations of existing topologies, and one new topology) that can deliver area-efficient sustained performance.},
+ acmid = {2465437},
+ address = {New York, NY, USA},
+ author = {Underwood, Keith D. and Borch, Eric and Sizer, John and Stremcha, Timothy and Strom, Michael},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465437},
+ isbn = {978-1-4503-2130-3},
+ keyword = {hpc router, on-die interconnect},
+ link = {http://doi.acm.org/10.1145/2464996.2465437},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {203--212},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Evaluating On-die Interconnects for a 4 TB/s Router},
+ year = {2013}
+}
+
+
+@inproceedings{Wang:2013:BCA:2464996.2465436,
+ abstract = {Handling routing- and protocol-induced deadlocks is a critical issue in designing a reliable communication system. Generally, to avoid these two types of deadlocks without losing routing freedom requires a large amount of virtual channels (VCs), which imposes significant negative effects on router power, energy and frequency. In this paper, we propose a virtual cut-through switched Bubble Coloring (BC) scheme, which can avoid both routing- and protocol-induced deadlocks and allow fully adaptive routing on any topology without the need for multiple virtual channels. Results from both synthetic and full-system simulation show that, compared to a conventional deadlock-free scheme with 4VCs (i.e., XY_adaptive_4VC), our BC scheme with the minimal 1VC (i.e., BC_1VC) can reduce router energy and area by up to 51.2% and 58.3%, respectively, and has comparable performance at the same time. As the proposed BC scheme does not require multiple virtual channels, it also reduces the complexity of router arbitration logic, which brings the opportunity to increase router frequency and further improve system performance.},
+ acmid = {2465436},
+ address = {New York, NY, USA},
+ author = {Wang, Ruisheng and Chen, Lizhong and Pinkston, Timothy Mark},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465436},
+ isbn = {978-1-4503-2130-3},
+ keyword = {bubble flow control, minimal virtual channel requirement, protocol-induced deadlock, routing-induced deadlock},
+ link = {http://doi.acm.org/10.1145/2464996.2465436},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {193--202},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Bubble Coloring: Avoiding Routing- and Protocol-induced Deadlocks with Minimal Virtual Channel Requirement},
+ year = {2013}
+}
+
+
+@inproceedings{Wu:2013:EST:2464996.2465001,
+ abstract = {SCALATRACE represents the state-of-the-art of parallel application tracing for high performance computing (HPC). This paper presents SCALATRACE II, a next generation tracer that delivers even higher trace compression capability, even when events are not always regular. In this work, we contribute a spectrum of novel compression and replay techniques that are fundamentally different from our past approaches. SCALATRACE II features a redesigned low-level encoding scheme of trace data such that data elements are elastic and self explanatory. With this new encoding scheme, trace compression is enhanced by introducing innovative intra-node and inter-node trace compression algorithms that guarantee high compression rates in a loop structure agnostic fashion. In practice, the improved compression scheme is particularly efficient for scientific codes that demonstrate inconsistent behavior across time steps and nodes. A novel approach is further contributed to probabilistically replay sequences of non-deterministic events. To assess the compression efficacy of SCALATRACE II, we conduct experiments not only with computational kernels but also a real-world application, the Parallel Ocean Program (POP). Compared to the first generation SCALATRACE, we observe key improvements on trace compression for benchmarks with inconsistent time step behavior and diverging task level behavior while retaining timing accuracy even under probabilistic replay.},
+ acmid = {2465001},
+ address = {New York, NY, USA},
+ author = {Wu, Xing and Mueller, Frank},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465001},
+ isbn = {978-1-4503-2130-3},
+ keyword = {performance, scalatrace, trace compression},
+ link = {http://doi.acm.org/10.1145/2464996.2465001},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {59--68},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Elastic and Scalable Tracing and Accurate Replay of Non-deterministic Events},
+ year = {2013}
+}
+
+
+@inproceedings{Prieto:2013:COB:2464996.2465019,
+ abstract = {This paper explores the benefits of scheduling off-chip memory operations in a Chip Multiprocessor (CMP) according to their execution relevance. Assuming the scenario of having many out-of-order execution cores in the CMP, from the processor perspective, the importance of the instruction that triggers an access to off-chip memory may vary considerably. Consequently, it makes sense to consider this point of view at the memory controller level to reorder outgoing memory accesses. After exploring different processor-centric sorting criteria, we reach the conclusion that the most simple and useful metric for scheduling a memory operation is the position in the reorder buffer of the instruction that triggers the on-chip miss. We propose a simple memory controller scheduling policy that employs this information as its main parameter. This proposal significantly improves system responsiveness, both in terms of throughput and fairness. The idea is analyzed through full-system simulation, running a broad set of workloads with diverse memory behavior. When it is compared with other scheduling algorithms with similar complexity, throughput can be improved by an average of 10% and fairness enhanced by an average of 15% even in very adverse usage scenarios. Moreover, the idea supports the possibility of dynamically favoring throughput or fairness, according to the end-user requirements.},
+ acmid = {2465019},
+ address = {New York, NY, USA},
+ author = {Prieto, Pablo and Puente, Valentin and Gregorio, Jose Angel},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465019},
+ isbn = {978-1-4503-2130-3},
+ keyword = {memory access scheduling, multi-core processor, off-chip bandwidth wall, out-of-order},
+ link = {http://doi.acm.org/10.1145/2464996.2465019},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {379--388},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {CMP Off-chip Bandwidth Scheduling Guided by Instruction Criticality},
+ year = {2013}
+}
+
+
+@inproceedings{Hogan:2013:NPR:2464996.2467285,
+ abstract = {A custom FPGA-based, 1U CubeSat form-factor reconfigurable computing development platform has been designed and built for the purpose of implementing and testing multicore and multiprocessor systems. The platform was designed to leverage the active partial reconfiguration and configuration readback capabilities of the Xilinx Virtex-6 device. This enables myriad research opportunities in parallel processing, high-performance reconfigurable computing, and multicore/multiprocessor system design. An example application features a nine-processor radiation tolerant computer system which motivates further research into network-on-chip solutions for reducing multicore system routing complexity.},
+ acmid = {2467285},
+ address = {New York, NY, USA},
+ author = {Hogan, Justin A. and Weber, Raymond J. and LaMeres, Brock J. and Kaiser, Todd},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467285},
+ isbn = {978-1-4503-2130-3},
+ keyword = {FPGA, fault tolerant, network-on-chip, partial reconfiguration, readback, reconfigurable computing},
+ link = {http://doi.acm.org/10.1145/2464996.2467285},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {473--474},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Network-on-chip for a Partially Reconfigurable FPGA System},
+ year = {2013}
+}
+
+
+@inproceedings{Jung:2013:MEP:2464996.2465005,
+ abstract = {This paper addresses new system design issues that will occur when a large quantity of emerging persistent RAM (PRAM) is put on the main memory bus of a platform. First, we anticipate that continued technology advances will enable us to integrate (portions of) the system storage within the PRAM modules on a system board. This change calls for comprehensive re-examination of the system design concepts that assume "slow" disk and the block I/O concept. Next, we propose Memorage, a system architecture that virtually manages all available physical resources for memory and storage in an integrated manner. Memorage leverages the existing OS virtual memory (VM) manager to improve the performance of memory-intensive workloads and achieve longer lifetime of the main memory. We design and implement a prototype system in the Linux OS to study the effectiveness of Memorage. Obtained results are promising; Memorage is shown to offer additional physical memory capacity to demanding workloads much more efficiently than a conventional VM manager. Under memory pressure, the performance of studied memory-intensive multiprogramming workloads was improved by up to 40.5% with an average of 16.7%. Moreover, Memorage is shown to extend the lifetime of the PRAM main memory by 3.9 or 6.9 times on a system with 8 GB PRAM main memory and a 240 GB or 480 GB PRAM storage.},
+ acmid = {2465005},
+ address = {New York, NY, USA},
+ author = {Jung, Ju-Young and Cho, Sangyeun},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465005},
+ isbn = {978-1-4503-2130-3},
+ keyword = {emerging persistent ram, management, memory hierarchy, performance, write endurance},
+ link = {http://doi.acm.org/10.1145/2464996.2465005},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {115--126},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Memorage: Emerging Persistent RAM Based Malleable Main Memory and Storage Architecture},
+ year = {2013}
+}
+
+
+@inproceedings{Vasudevan:2013:GAR:2464996.2465444,
+ abstract = {The effective use of GPUs for accelerating applications depends on a number of factors including effective asynchronous use of heterogeneous resources, reducing memory transfer between CPU and GPU, increasing occupancy of GPU kernels, overlapping data transfers with computations, reducing GPU idling and kernel optimizations. Overcoming these challenges require considerable effort on the part of the application developers and most optimization strategies are often proposed and tuned specifically for individual applications. In this paper, we present G-Charm, a generic framework with an adaptive runtime system for efficient execution of message-driven parallel applications on hybrid systems. The framework is based on Charm++, a message-driven programming environment and runtime for parallel applications. The techniques in our framework include dynamic scheduling of work on CPU and GPU cores, maximizing reuse of data present in GPU memory, data management in GPU memory, and combining multiple kernels. We have presented results using our framework on Tesla S1070 and Fermi C2070 systems using three classes of applications: a highly regular and parallel 2D Jacobi solver, a regular dense matrix Cholesky factorization representing linear algebra computations with dependencies among parallel computations and highly irregular molecular dynamics simulations. With our generic framework, we obtain 1.5 to 15 times improvement over previous GPU-based implementation of Charm++. We also obtain about 14\% improvement over an implementation of Cholesky factorization with a static work-distribution scheme.},
+ acmid = {2465444},
+ address = {New York, NY, USA},
+ author = {Vasudevan, R. and Vadhiyar, Sathish S. and Kal{\'e}, Laxmikant V.},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465444},
+ isbn = {978-1-4503-2130-3},
+ keyword = {charm++, combining kernels, data management, gpu, hybrid execution, optimizations},
+ link = {http://doi.acm.org/10.1145/2464996.2465444},
+ location = {Eugene, Oregon, USA},
+ numpages = {10},
+ pages = {349--358},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {G-Charm: An Adaptive Runtime System for Message-driven Parallel Applications on Hybrid Systems},
+ year = {2013}
+}
+
+
+@inproceedings{Wang:2013:VMU:2464996.2467289,
+ abstract = {GPGPU can boost the performance significantly for many compute intensive tasks. However, in datacenter scenarios, not all the applications need GPGPU. Thus, it is not necessary to equip GPGPU in each node considering its high price and infrequent usage demands. By leveraging high bandwidth of emerging interconnect like 100Gb Ethernet, PCI Express or RapidIO etc., it is reasonable to figure out a mechanism to allow nodes to share the remote GPGPUs. In this work, we proposed V-OpenCL, which supports transparently using of remote GPGPU in data center.},
+ acmid = {2467289},
+ address = {New York, NY, USA},
+ author = {Wang, Cong and Jiang, Tao and Hou, Rui},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467289},
+ isbn = {978-1-4503-2130-3},
+ keyword = {datacenter, high bandwidth interconnect, remote GPGPU, virtualization},
+ link = {http://doi.acm.org/10.1145/2464996.2467289},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {493--494},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {V-OpenCL: A Method to Use Remote GPGPU},
+ year = {2013}
+}
+
+
+@inproceedings{Weber:2013:PEP:2464996.2467284,
+ abstract = {This paper describes the benchmarking of an FPGA-based computing system that uses partially reconfigurable tiles for real-time allocation of hardware resources. This system was developed for use in the aerospace industry in order to provide redundancy for fault mitigation and real-time hardware reallocation to reduce mass associated with separate functional systems. In this paper, we present the results of performance studies on our Xilinx Virtex-6 platform using the Dhrystone, LINPACK and NAS-Kernel benchmarks. We further present the impact on power consumption as processors and hardware accelerators are brought online to increase performance.},
+ acmid = {2467284},
+ address = {New York, NY, USA},
+ author = {Weber, Raymond J. and Hogan, Justin A. and LaMeres, Brock J. and Kaiser, Todd},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467284},
+ isbn = {978-1-4503-2130-3},
+ keyword = {FPGA, benchmarking, partial reconfiguration},
+ link = {http://doi.acm.org/10.1145/2464996.2467284},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {495--496},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Power Efficiency in a Partially Reconfigurable Multiprocessor System},
+ year = {2013}
+}
+
+
+@inproceedings{Shrestha:2013:UPD:2464996.2467271,
+ abstract = {The context of the research is a co-design project that has the goals of designing hardware systems to match application requirements and mapping applications to the hardware efficiently. To determine application requirements, we characterize the application using platform-independent locality metrics. Next we use locality data to predict cache performance of sequential versions of the application codes for various cache configurations. After using an analytical model to select a candidate set of cache configurations, we use architectural simulation to refine the selection for the target multicore systems.},
+ acmid = {2467271},
+ address = {New York, NY, USA},
+ author = {Shrestha, Sonish},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467271},
+ isbn = {978-1-4503-2130-3},
+ keyword = {cache modeling, hardware-software co-design},
+ link = {http://doi.acm.org/10.1145/2464996.2467271},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {487--488},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Using Platform-independent Data Locality Analysis to Predict Cache Performance on Abstract Hardware Platforms},
+ year = {2013}
+}
+
+
+@inproceedings{Aananthakrishnan:2013:HAD:2464996.2467286,
+ abstract = {With the increasing cost of developing robust HPC software, precise data-flow analysis for MPI programs -- the mainstay of HPC programming -- are essential. The knowledge of communication is essential for precise data-flow analysis and the difficulty of statically determining it makes the conventional techniques insufficient. Hybrid methods combining static and dynamic techniques are needed and in this work we demonstrate one such approach in building the parallel control-flow graph which can then be used to leverage the precision of data-flow analyses for MPI programs.},
+ acmid = {2467286},
+ address = {New York, NY, USA},
+ author = {Aananthakrishnan, Sriram and Bronevetsky, Greg and Gopalakrishnan, Ganesh},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2467286},
+ isbn = {978-1-4503-2130-3},
+ keyword = {MPI, data-flow analysis, parallel control-flow graph},
+ link = {http://doi.acm.org/10.1145/2464996.2467286},
+ location = {Eugene, Oregon, USA},
+ numpages = {2},
+ pages = {455--456},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Hybrid Approach for Data-flow Analysis of MPI Programs},
+ year = {2013}
+}
+
+
+@inproceedings{Liu:2013:EDK:2464996.2464998,
+ abstract = {An important emerging problem domain in computational science and engineering is the development of multi-scale computational methods for complex problems in mechanics that span multiple spatial and temporal scales. An attractive approach to solving these problems is recursive decomposition: the problem is broken up into a tree of loosely coupled sub-problems which can be solved independently and then coupled back together to obtain the desired solution. However, a particular problem can be solved in myriad ways by coupling the sub-problems together in different tree orders. As we argue in this paper, the space of possible orders is vast, the performance gap between an arbitrary order and the best order is potentially quite large, and the likelihood that a domain scientist can find the best order to solve a problem on a particular machine is vanishingly small. In this paper, we present a system that uses domain-specific knowledge captured in computational libraries to optimize code written in a conventional language (C). The system generates efficient coupling orders to solve computational mechanics problems using recursive decomposition. Our system adopts the inspector-executor paradigm, where the problem is inspected and a novel heuristic finds an effective implementation based on domain properties evaluated by a cost model. The derived implementation is then executed by a parallel run-time system (Cilk) which achieves optimal parallel performance. We demonstrate that our cost model is highly correlated with actual application runtime, that our proposed technique outperforms non-decomposed and non-multiscale methods. The code generated by the heuristic also outperforms alternate scheduling strategies, as well as over 99% of randomly-generated recursive decompositions sampled from the space of possible solutions.},
+ acmid = {2464998},
+ address = {New York, NY, USA},
+ author = {Liu, Chenyang and Jamal, Muhammad Hasan and Kulkarni, Milind and Prakash, Arun and Pai, Vijay},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2464998},
+ isbn = {978-1-4503-2130-3},
+ keyword = {domain-specific optimization, multi-scale method, recursive decomposition},
+ link = {http://doi.acm.org/10.1145/2464996.2464998},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {25--36},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {Exploiting Domain Knowledge to Optimize Parallel Computational Mechanics Codes},
+ year = {2013}
+}
+
+
+@inproceedings{Grasso:2013:LHD:2464996.2465008,
+ abstract = {Clusters of heterogeneous nodes composed of multi-core CPUs and GPUs are increasingly being used for High Performance Computing (HPC) due to the benefits in peak performance and energy efficiency. In order to fully harvest the computational capabilities of such architectures, application developers often employ a combination of different parallel programming paradigms (e.g. OpenCL, CUDA, MPI and OpenMP), also known in literature as hybrid programming, which makes application development very challenging. Furthermore, these languages offer limited support to orchestrate data and computations for heterogeneous systems. In this paper, we present libWater, a uniform approach for programming distributed heterogeneous computing systems. It consists of a simple interface, compliant with the OpenCL programming model, and a runtime system which extends the capabilities of OpenCL beyond single platforms and single compute nodes. libWater enhances the OpenCL event system by enabling inter-context and inter-node device synchronization. Furthermore, libWater's runtime system uses dependency information enforced by event synchronization to dynamically build a DAG of enqueued commands which enables a class of advanced runtime optimizations. The detection and optimization of collective communication patterns is an example which, as shown by experimental results, improves the efficiency of the libWater runtime system for several application codes.},
+ acmid = {2465008},
+ address = {New York, NY, USA},
+ author = {Grasso, Ivan and Pellegrini, Simone and Cosenza, Biagio and Fahringer, Thomas},
+ booktitle = {Proceedings of the 27th International ACM Conference on International Conference on Supercomputing},
+ doi = {10.1145/2464996.2465008},
+ isbn = {978-1-4503-2130-3},
+ keyword = {distributed computing, heterogeneous computing, opencl, mpi, programming model, runtime system},
+ link = {http://doi.acm.org/10.1145/2464996.2465008},
+ location = {Eugene, Oregon, USA},
+ numpages = {12},
+ pages = {161--172},
+ publisher = {ACM},
+ series = {ICS '13},
+ title = {LibWater: Heterogeneous Distributed Computing Made Easy},
+ year = {2013}
+}
+
+
