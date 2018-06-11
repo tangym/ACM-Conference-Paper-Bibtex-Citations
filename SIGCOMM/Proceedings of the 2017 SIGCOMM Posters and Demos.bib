@@ -1,0 +1,1063 @@
+@inproceedings{Dimitrova:2017:QIR:3123878.3131968,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131968},
+ address = {New York, NY, USA},
+ author = {Dimitrova, Desislava C. and Liagouris, John and Hoffmann, Moritz and Kalavri, Vasiliki and Wicki, Sebastian and Roscoe, Timothy},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131968},
+ isbn = {978-1-4503-5057-0},
+ keyword = {SDN, dataflow programming, incremental routing},
+ link = {http://doi.acm.org/10.1145/3123878.3131968},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {9--11},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Quick Incremental Routing Logic for Dynamic Network Graphs},
+ year = {2017}
+}
+
+
+@inproceedings{Dethise:2017:PDI:3123878.3131967,
+ abstract = {SDN approaches to inter-domain routing promise better traffic engineering, enhanced security, and higher automation. Yet, naïve deployment of SDN on the Internet is dangerous as the control-plane expressiveness of BGP is significantly more limited than the data-plane expressiveness of SDN, which allows fine-grained rules to deflect traffic from BGP's default routes. This mismatch may lead to incorrect forwarding behaviors such as forwarding loops and blackholes, ultimately hindering SDN deployment at the inter-domain level. In this work, we make a first step towards verifying the correctness of inter-domain forwarding state with a focus on loop freedom while keeping private the SDN rules, as they comprise confidential routing information. To this end, we design a simple yet powerful primitive that allows two networks to verify whether their SDN rules overlap, i.e., the set of packets matched by these rules is non-empty, without leaking any information about the SDN rules. We propose an efficient implementation of this primitive by using recent advancements in Secure Multi-Party Computation and we then leverage it as the main building block for designing a system that detects Internet-wide forwarding loops among any set of SDN-enabled Internet eXchange Points.},
+ acmid = {3131967},
+ address = {New York, NY, USA},
+ author = {Dethise, Arnaud and Chiesa, Marco and Canini, Marco},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131967},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Inter-domain routing, Network Verification, Privacy, SMPC},
+ link = {http://doi.acm.org/10.1145/3123878.3131967},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {6--8},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Privacy-Preserving Detection of Inter-Domain SDN Rules Overlaps},
+ year = {2017}
+}
+
+
+@inproceedings{Song:2017:FDD:3123878.3131994,
+ abstract = {3D Fabric jointly uses two strategies for congestion avoidance: flow rate adjustment and path switch. 3D Fabric predicts flow's size and only decelerates large flows in case of light congestion. When the network is heavily congested, it starts to decelerate small flows as well, and meanwhile, considers to switch large flow's path with the help of a new artificial flowlet generation method. ns-3 simulation shows 3D Fabric's FCT outperforms DCTCP by more than 50% for small lows and 3% for large lows with low implementation cost.},
+ acmid = {3131994},
+ address = {New York, NY, USA},
+ author = {Song, Haoyu and Ji, Zhigang and Zhang, Yali and Xia, Yinben},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131994},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Congestion Control, Data Center Network, Load Balancing},
+ link = {http://doi.acm.org/10.1145/3123878.3131994},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {82--84},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {3D Fabric: Differential Deceleration and Detour for Congestion Free Data Center Networks},
+ year = {2017}
+}
+
+
+@inproceedings{Ameme:2017:CIC:3123878.3131974,
+ abstract = {The smart grid, with its large array of networked devices and bidirectional data flow between the end-users and the grid, presents new requirements in service reliability, communication latency, and data delivery. The traditional TCP/IP communication paradigm was not designed to handle these requirements at the envisioned scale. This calls for a novel networking paradigm. This paper makes the case for the use of the Information Centric Networking (ICN) paradigm to create the smart grid network architecture. We quantitatively assess the gains resulting from ICN's inherent functionalities, such as concurrent use of multiple interfaces, request aggregation, and stateful forwarding, which enable timely critical message delivery and fast packet re-transmissions. We perform simulations to compare IP and ICN-based smart grid deployments. Our results show that the ICN-based solution outperforms the IP-based solution, especially in a network with packet losses.},
+ acmid = {3131974},
+ address = {New York, NY, USA},
+ author = {Ameme, Dan and Misra, Satyajayant and Mtibaa, Abderrahmen},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131974},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Information-centric networks, Named-data networking, Smart Grid},
+ link = {http://doi.acm.org/10.1145/3123878.3131974},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {25--27},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {A Case for Information Centric Networking For Smart Grid Communications},
+ year = {2017}
+}
+
+
+@inproceedings{Jalali:2017:CIG:3123878.3132008,
+ abstract = {Fog computing, also known as Edge computing, is an emerging computational paradigm, increasingly utilized in Internet of Things (IoT) applications, particularly those that cannot be served efficiently using Cloud computing due to limitations such as bandwidth, latency, Internet connectivity. At present, the norm is the static allocation of tasks by developers of an application, where some IoT applications are allocated to be performed on the Cloud, some on the Fog, and some on a hybrid Cloud-Fog. The applications are pre-programmed and predefined to be run on a platform, and this is unchangeable at run-time. IoT gateways, which are devices that bridge the IoT local network and the Internet, are in a position to make dynamic adjustments and allocation decision between platforms based upon real-time conditions such as an IoT applications' performance. However, currently there is no (or very little) intelligence embedded into IoT gateways. This paper proposes cognitive IoT gateways powered by cognitive analytics and machine learning to improve the performance of IoT applications. These IoT devices are able to automatically learn and decide when and where to run an application, be that on the Cloud or on the Fog. The dynamic task sharing and platform interchanging will enable the IoT applications to be optimized for multiple objectives including task performance.},
+ acmid = {3132008},
+ address = {New York, NY, USA},
+ author = {Jalali, Fatemeh and Smith, Olivia J. and Lynar, Timothy and Suits, Frank},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132008},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Fog/Edge computing, Intelligent IoT gateways, Job sharing},
+ link = {http://doi.acm.org/10.1145/3123878.3132008},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {121--123},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Cognitive IoT Gateways: Automatic Task Sharing and Switching Between Cloud and Edge/Fog Computing},
+ year = {2017}
+}
+
+
+@inproceedings{Meyer:2017:TDT:3123878.3131992,
+ abstract = {In this demo, we address the problem of detecting anomalies on the Internet backbone in near real-time. Many of today's incidents may only become visible from inspecting multiple data sources and by considering multiple vantage points simultaneously. We present a setup based on the distributed forensic platform VAST that was extended to import various data streams from passive measurements and incident reporting at multiple locations, and perform an effective correlation analysis shortly after the data becomes exposed to our queries.},
+ acmid = {3131992},
+ address = {New York, NY, USA},
+ author = {Meyer, Philipp and Hiesgen, Raphael and Schmidt, Thomas C. and Nawrocki, Marcin and W\"{a}hlisch, Matthias},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131992},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Internet security, network forensic, threat detection},
+ link = {http://doi.acm.org/10.1145/3123878.3131992},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {76--78},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Towards Distributed Threat Intelligence in Real-Time},
+ year = {2017}
+}
+
+
+@inproceedings{Zhou:2017:CTM:3123878.3132000,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132000},
+ address = {New York, NY, USA},
+ author = {Zhou, Yu and Bi, Jun},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132000},
+ isbn = {978-1-4503-5057-0},
+ keyword = {P4, dynamic orchestration, modular programming},
+ link = {http://doi.acm.org/10.1145/3123878.3132000},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {100--102},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {ClickP4: Towards Modular Programming of P4},
+ year = {2017}
+}
+
+
+@inproceedings{Szabo:2017:MDP:3123878.3131999,
+ abstract = {In order to enable carrier grade network services constructed from software-based network functions, we need a novel data plane supporting high performance packet processing, low latency and flexible, fine granular programmability and control. The network functions implemented as virtual machines or containers use the same hardware resources (cpu, memory) as the elements responsible for networking, therefore, a low-level resource orchestrator which is capable of jointly controlling these resources is an indispensable component. In this demonstration, we showcase our novel resource orchestrator (FERO) on top of a data plane making use of open-source components such as, Docker, DPDK and OVS. It is capable of i) generating an abstract model of the underlying hardware architecture during the bootstrap process, ii) mapping the incoming network service requests to available resources based on our recently proposed Service Graph embedding engine and the generated graph model. The impact of the orchestration decision is shown on-the-fly by real-time performance measurements on a graphical dashboard.},
+ acmid = {3131999},
+ address = {New York, NY, USA},
+ author = {Szabo, Marton and Majdan, Andras and Pongracz, Gergely and Toka, Laszlo and Sonkoly, Balazs},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131999},
+ isbn = {978-1-4503-5057-0},
+ keyword = {DPDK, Docker, NFV, SDN, SFC},
+ link = {http://doi.acm.org/10.1145/3123878.3131999},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {97--99},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Making the Data Plane Ready for NFV: An Effective Way of Handling Resources},
+ year = {2017}
+}
+
+
+@inproceedings{Samain:2017:EMV:3123878.3131973,
+ abstract = {Mobile video delivery drives Internet traffic evolution and puts colossal pressure on future 5G networks to support higher quality and lower latency requirements over an increasingly heterogeneous network access. Future Internet paradigms recentering communication around content, such as Information Centric Networks (ICN), appear as promising candidates to relieve the challenges of a mobility-robust, efficient and cost-effective video delivery, by integrating video-awareness at network layer. In this demo, we focus on ICN-enabled Dynamic Adaptive Streaming (DAS) over an heterogeneous wireless access. We integrate ICN capabilities in DAS clients requesting 4K video content to standard DAS servers. We deploy a virtualized ICN-enabled network slice using LXC containers to connect clients to servers through an heterogeneous wireless access (802.11n and LTE emulated radios) and a simplified backhaul. The contribution of the demo is twofold. First it showcases what ICN can bring to DAS over a mobile heterogeneous access in virtue of its content-awareness at network layer. Second, it offers to the user a rich sandbox where several state-of-the-art DAS controllers are implemented and can be tested over ICN or standard TCP.},
+ acmid = {3131973},
+ address = {New York, NY, USA},
+ author = {Samain, Jacques and Aug{\'e}, Jordan and Carofiglio, Giovanna and Muscariello, Luca and Papalini, Michele and Sardara, Mauro},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131973},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Emulation, Information-Centric Network, Video Delivery},
+ link = {http://doi.acm.org/10.1145/3123878.3131973},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {22--24},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Enhancing Mobile Video Delivery over an Heterogeneous Network Access with Information-Centric Networking},
+ year = {2017}
+}
+
+
+@inproceedings{Friebe:2017:DDD:3123878.3131991,
+ abstract = {A current trend on the Internet is the increasing surveillance of its users. A few big service providers have divided most of the user-facing Internet between them, observing and recording the activities of their users to increase profits. Additionally, government agencies have been found to practice mass surveillance. With regard to this it becomes even more important to provide online services that protect the privacy of their users and avoid censorship by single, powerful entities. To reach these goals, a trusted third party should be avoided. A prototype service which fulfills these goals is DPS-Discuss, a decentralized, pseudonymous online discussion application. It uses the libraries BitNym and Peer-Tor-Peer for pseudonym management and anonymous communication.},
+ acmid = {3131991},
+ address = {New York, NY, USA},
+ author = {Friebe, Sebastian and Florian, Martin},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131991},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Bitcoin, Censorship, Pseudonymity, Sybil-Resistance, Tor},
+ link = {http://doi.acm.org/10.1145/3123878.3131991},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {74--75},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {DPS-Discuss: Demonstrating Decentralized, Pseudonymous, Sybil-resistant Communication},
+ year = {2017}
+}
+
+
+@inproceedings{Song:2017:WGT:3123878.3132004,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132004},
+ address = {New York, NY, USA},
+ author = {Song, Zhenyu and Shangguan, Longfei and Jamieson, Kyle},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132004},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Handover, Transit Networks, Wi-Fi},
+ link = {http://doi.acm.org/10.1145/3123878.3132004},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {111--112},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Wi-Fi Goes to Town: Rapid Picocell Switching for Wireless Transit Networks},
+ year = {2017}
+}
+
+
+@inproceedings{Zhu:2017:LDE:3123878.3131986,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131986},
+ address = {New York, NY, USA},
+ author = {Zhu, Liang and Heidemann, John},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131986},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Domain Name System (DNS), experiments, performance, trace replay},
+ link = {http://doi.acm.org/10.1145/3123878.3131986},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {60--62},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {LDplayer: DNS Experimentation at Scale},
+ year = {2017}
+}
+
+
+@inproceedings{Szalay:2017:HCT:3123878.3131997,
+ abstract = {Recently, Software-Defined Networking has grown out of being an "intriguing approach" and turned into a "must-have" for communication networks to overcome many long-standing problems of traditional networking. However, there are still some obstacles on the way to the widespread adoption. Current commodity-off-the-shelf (COTS) SDN offerings are still in their infancy and are notorious for lacking standards compliance, scalability, and unpredictable performance indicators compared to their legacy counterparts. On the other hand, recent software-based solutions might mitigate these shortcomings, but in terms of cost-efficiency and port density they are in a lower league. Here, we present HARMLESS, a novel SDN switch design that combines the rapid innovation and upgrade cycles of software switches with the port density of hardware-based appliances into a fully data plane-transparent, vendor-neutral and cost-effective solution for smaller enterprises to gain a foothold in this era. The demo showcases the SDN migration of a dumb legacy Ethernet switch to a powerful, fully reconfigurable, OpenFlow-enabled network device without incurring any major performance and latency penalty, nor any substantial price tag enabling to realize many use cases that would have otherwise needed standalone hardware appliances.},
+ acmid = {3131997},
+ address = {New York, NY, USA},
+ author = {Szalay, M\'{a}rk and Toka, L\'{a}szl\'{o} and R{\'e}tv\'{a}ri, G\'{a}bor and Pongr\'{a}cz, Gergely and Csikor, Levente and Pezaros, Dimitrios P.},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131997},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Migration, Software-Defined Networking, Switch design},
+ link = {http://doi.acm.org/10.1145/3123878.3131997},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {91--93},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {HARMLESS: Cost-Effective Transitioning to SDN},
+ year = {2017}
+}
+
+
+@inproceedings{Asgarian:2017:TSN:3123878.3132007,
+ abstract = {Time synchronization is a vital feature in many wireless sensor networks with applications ranging from structural health monitoring systems to body area sensors used for rehabilitation and sport medicine. While different wireless protocols have been utilized in sensor networks, Bluetooth Low Energy (BLE) has drawn a lot of attention in the past years due to its low-power architecture and availability in many consumer electronics. Moreover, the added non-connectable beacon mode has increased its functionality for Internet of Things (IoT) and sensor fusion. However, in this mode as devices are not paired with each other no synchronization service is available. In this paper, we present a synchronization protocol based on BLE beacons that can be used in conjunction with BLE software stacks provided with a commercial Bluetooth System-on-Chip (SoC). Offset and frequency-drift estimation techniques are discussed, and the effects of number of synchronization packets and their intervals on the overall synchronization accuracy are investigated. Experimental results show that without any re-synchronization in ten minutes, average synchronization errors of less than 350 ns per minute (single hop) can be achieved.},
+ acmid = {3132007},
+ address = {New York, NY, USA},
+ author = {Asgarian, Farzad and Najafi, Khalil},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132007},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Beacon, Bluetooth, Sensor Networks, Time Synchronization},
+ link = {http://doi.acm.org/10.1145/3123878.3132007},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {119--120},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Time Synchronization in a Network of Bluetooth Low Energy Beacons},
+ year = {2017}
+}
+
+
+@inproceedings{Fu:2017:BND:3123878.3132011,
+ abstract = {This paper proposes bitFA, a novel data structure optimized for fast and update-friendly regular expression matching. bitFA leverages fast bit manipulation, instruction-level parallelism and bitmap compression techniques to achieve 5x to 25x acceleration compared to existing NFA or DFA based regular expression matching methods.},
+ acmid = {3132011},
+ address = {New York, NY, USA},
+ author = {Fu, Zhe and Zhou, Shijie and Li, Jun},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132011},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Bit Manipulation, Finite Automaton, Regular Expression},
+ link = {http://doi.acm.org/10.1145/3123878.3132011},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {130--132},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {bitFA: A Novel Data Structure for Fast and Update-friendly Regular Expression Matching},
+ year = {2017}
+}
+
+
+@inproceedings{Arzani:2017:CND:3123878.3131979,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131979},
+ address = {New York, NY, USA},
+ author = {Arzani, Behnaz and Ciraci, Selim and Chamon, Luiz and Zhu, Yibo and Liu, Hongqiang and Padhye, Jitu and Outhred, Geoff and Loo, Boon Thau},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131979},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Data Centers, Network Diagnosis, TCP, Tomography},
+ link = {http://doi.acm.org/10.1145/3123878.3131979},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {40--42},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Closing the Network Diagnostics Gap with Vigil},
+ year = {2017}
+}
+
+
+@inproceedings{Dong:2017:WWV:3123878.3131993,
+ abstract = {Enforcing virtualized congestion control is a new trend for datacenter networks. Virtual Congestion Control (VCC) can also enforce differentiated Quality-of-Service (QoS) for flows. However, current flow differentiation algorithms only provide qualitative rather than quantitative bandwidth allocation. Weighted bandwidth allocation is critical to enforce administrator policy. In this work, we propose Weighted Virtual Congestion Control (WVCC) enforcement for datacenter networks. It is a novel per-flow differentiation mechanism capable of proportionally allocating bandwidth among flows.},
+ acmid = {3131993},
+ address = {New York, NY, USA},
+ author = {Dong, Jiaqing and Wang, Yi and Tian, Chen and Jin, Bo and Yin, Hao and Zhang, Gong},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131993},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Congestion Control, Network Proportionality, Virtualization},
+ link = {http://doi.acm.org/10.1145/3123878.3131993},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {79--81},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {WVCC: Weighted Virtual Congestion Control for Datacenter Networks},
+ year = {2017}
+}
+
+
+@proceedings{2017:3123878,
+ abstract = {
+An abstract is not available.
+},
+ address = {New York, NY, USA},
+ isbn = {978-1-4503-5057-0},
+ key = {$\!\!$},
+ location = {Los Angeles, CA, USA},
+ publisher = {ACM},
+ title = {SIGCOMM Posters and Demos '17: Proceedings of the SIGCOMM Posters and Demos},
+ year = {2017}
+}
+
+
+@inproceedings{Yan:2017:GWO:3123878.3131969,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131969},
+ address = {New York, NY, USA},
+ author = {Yan, Yabo and Bi, Jun and Zhou, Yu and Zhang, Cheng},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131969},
+ isbn = {978-1-4503-5057-0},
+ keyword = {flow table optimization, in-band control network, routing mechanism, software defined network},
+ link = {http://doi.acm.org/10.1145/3123878.3131969},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {12--14},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Gather: A Way to Optimize the Routing Process of In-band Control Network},
+ year = {2017}
+}
+
+
+@inproceedings{Zhang:2017:NRC:3123878.3131998,
+ abstract = {Consensus is a fundamental problem in distributed computing. In this poster, we ask the following question: can we partially offload the execution of a consensus algorithm to the network to improve its performance? We argue for an affirmative answer by proposing a network-assisted implementation of the Raft consensus algorithm. Our approach reduces consensus latency, is failure-aware, and does not sacrifice correctness or scalability. In order to enable Raft-aware forwarding and quick response, we use P4-based programmable switches and offload partial Raft functionality to the switch. We demonstrate the efficacy of our approach and performance improvements it offers via a prototype implementation.},
+ acmid = {3131998},
+ address = {New York, NY, USA},
+ author = {Zhang, Yang and Han, Bo and Zhang, Zhi-Li and Gopalakrishnan, Vijay},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131998},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Consensus, P4, Programmable networks, Raft algorithm, SDN},
+ link = {http://doi.acm.org/10.1145/3123878.3131998},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {94--96},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Network-Assisted Raft Consensus Algorithm},
+ year = {2017}
+}
+
+
+@inproceedings{Demoulin:2017:DDP:3123878.3131990,
+ abstract = {We propose a demonstration of DeDoS, a platform for mitigating asymmetric DDoS attacks. These attacks are particularly challenging since attackers using limited resources can exhaust the resources of even well-provisioned servers. DeDoS resolves this by splitting monolithic software stacks into separable components called minimum splittable units (MSUs). If part of the application stack is experiencing a DDoS attack, DeDoS can massively replicate only the affected MSUs, potentially across many machines. This allows scaling of the impacted resource separately from the rest of the application stack so that resources can be precisely added where needed to combat the attack. Our demonstration will show that DeDoS incurs reasonable overheads in normal operations and that it significantly outperforms naïve replication when defending against a range of asymmetric attacks.},
+ acmid = {3131990},
+ address = {New York, NY, USA},
+ author = {Demoulin, Henri Maxime and Vaidya, Tavish and Pedisich, Isaac and Sultana, Nik and Wang, Bowen and Qian, Jingyu and Zhang, Yuankai and Chen, Ang and Haeberlen, Andreas and Loo, Boon Thau and Phan, Linh Thi Xuan and Sherr, Micah and Shields, Clay and Zhou, Wenchao},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131990},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Denial-of-Service attacks, Distributed Systems, Real-time scheduling, Security},
+ link = {http://doi.acm.org/10.1145/3123878.3131990},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {71--73},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {A Demonstration of the DeDoS Platform for Defusing Asymmetric DDoS Attacks in Data Centers},
+ year = {2017}
+}
+
+
+@inproceedings{Cao:2017:RTT:3123878.3131995,
+ abstract = {TCP throughput and latency models are useful tools to characterize the TCP performance. The canonical throughput model [2], while useful, has some limitations since it does not consider how packet loss rate changes over time. This approach leads to poor predictions for short flows. We present a new modeling approach that characterizes the throughput and latency models by: (i) discovering the relationship between the packet loss rate and the congestion window size, and (ii) incorporating the starting congestion window and the number of parallel connections. Experimental results show that our models significantly improve modeling accuracy.},
+ acmid = {3131995},
+ address = {New York, NY, USA},
+ author = {Cao, Yi and Balasubramanian, Aruna and Gandhi, Anshul},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131995},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Network measurements, transport layer protocols},
+ link = {http://doi.acm.org/10.1145/3123878.3131995},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {85--87},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Rethinking TCP Throughput and Latency Modeling},
+ year = {2017}
+}
+
+
+@inproceedings{Ma:2017:FRL:3123878.3132006,
+ abstract = {This demo presents RFind, a system that enables fine-grained RFID localization via ultra-wideband emulation. RFind operates by measuring the time-of-flight -- i.e., the time it takes the signal to travel from an antenna to an RFID tag. To do so, it emulates an ultra-wide bandwidth on today's narrowband RFIDs without requiring any hardware modification to the tags. It then uses the large emulated bandwidth to estimate the time-of-flight and localize RFIDs. In contrast to past RFID localization proposals, RFind can operate in multipath-rich environments without reference tags and without requiring tag or antenna motion. The demo will allow users to move RFID-tagged objects to any location in line-of-sight, non-line-of-sight, and multi-path rich settings and check that the system can accurately localize the objects.},
+ acmid = {3132006},
+ address = {New York, NY, USA},
+ author = {Ma, Yunfei and Selby, Nicholas and Singh, Manish and Adib, Fadel},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132006},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Battery-free, Localization, RFID, Smart Environments, UWB},
+ link = {http://doi.acm.org/10.1145/3123878.3132006},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {116--118},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Fine-grained RFID Localization via Ultra-wideband Emulation},
+ year = {2017}
+}
+
+
+@inproceedings{Rath:2017:SPN:3123878.3131977,
+ abstract = {The softwarization of networks provides a new degree of flexibility in network operation but its software components can result in unexpected runtime performance and erratic network behavior. This challenges the deployment of flexible software functions in performance critical (core) networks. To address this challenge, we present a methodology enabling the prediction of runtime performance and testing of functional behavior of Network Functions. Unlike traditional performance evaluation, e.g., testbed testing or simulation, our methodology can characterize the Network Function performance for any possible workload only by code analysis.},
+ acmid = {3131977},
+ address = {New York, NY, USA},
+ author = {Rath, Felix and Krude, Johannes and R\"{u}th, Jan and Schemmel, Daniel and Hohlfeld, Oliver and Bitsch, J\'{o} \'{A}. and Wehrle, Klaus},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131977},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Measurements, NFV, Performance, Reliability, Symbolic Execution},
+ link = {http://doi.acm.org/10.1145/3123878.3131977},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {34--36},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {SymPerf: Predicting Network Function Performance},
+ year = {2017}
+}
+
+
+@inproceedings{Cziva:2017:RHF:3123878.3131981,
+ abstract = {End-to-end latency is becoming an important metric for many emerging applications (e.g., 5G low-latency services) over the Internet. To better understand end-to-end latency, we present Ruru1, a DPDK-based pipeline that exploits recent advances in high-speed packet processing and visualization. We present an operational deployment of Ruru over an international high-speed link running between Auckland and Los Angeles, and show how Ruru can be used for latency anomaly detection and network planning.},
+ acmid = {3131981},
+ address = {New York, NY, USA},
+ author = {Cziva, Richard and Lorier, Christopher and Pezaros, Dimitrios P.},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131981},
+ isbn = {978-1-4503-5057-0},
+ link = {http://doi.acm.org/10.1145/3123878.3131981},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {46--47},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Ruru: High-speed, Flow-level Latency Measurement and Visualization of Live Internet Traffic},
+ year = {2017}
+}
+
+
+@inproceedings{Paladi:2017:SVC:3123878.3132016,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132016},
+ address = {New York, NY, USA},
+ author = {Paladi, Nicolae and Karlsson, Linus},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132016},
+ isbn = {978-1-4503-5057-0},
+ link = {http://doi.acm.org/10.1145/3123878.3132016},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {144--146},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Safeguarding VNF Credentials with Intel SGX},
+ year = {2017}
+}
+
+
+@inproceedings{Ma:2017:CBC:3123878.3132003,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132003},
+ address = {New York, NY, USA},
+ author = {Ma, Zijun and Bi, Jun and Zhang, Cheng and Zhou, Yu and Dogar, Abdul Basit},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132003},
+ isbn = {978-1-4503-5057-0},
+ keyword = {P4, caching mechanism, data plane, match action table},
+ link = {http://doi.acm.org/10.1145/3123878.3132003},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {108--110},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {CacheP4: A Behavior-level Caching Mechanism for P4},
+ year = {2017}
+}
+
+
+@inproceedings{Dasari:2017:DHB:3123878.3131980,
+ abstract = {Mobile web page load time depends on three key factors: (1) the complexity of the Webpage, (2) the underlying network conditions, and (3) the processing capability of the device. While there are several works focusing on the Web complexity and the network, there is a little work in understanding the hardware bottlenecks in the page load process. In this poster, we analyze the effect of hardware bottlenecks of Web pages. We also analyze the effect of GPU offloading, a commonly used solution to speed up Web page loads.},
+ acmid = {3131980},
+ address = {New York, NY, USA},
+ author = {Dasari, Mallesham and Kelton, Conor and Nejati, Javad and Balasubramanian, Aruna and Das, Samir R.},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131980},
+ isbn = {978-1-4503-5057-0},
+ keyword = {CPU-GPU, Page Load Time, Web QoE},
+ link = {http://doi.acm.org/10.1145/3123878.3131980},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {43--45},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Demystifying Hardware Bottlenecks in Mobile Web Quality of Experience},
+ year = {2017}
+}
+
+
+@inproceedings{Yi:2017:TZC:3123878.3131975,
+ abstract = {Remote Direct Memory Access (RDMA) offers ultra-low latency and CPU bypass networking to application programmers. Existing applications are often designed around socket based software stack that manages application buffers separately from networking buffers and do memory copies between them when sending/receiving data. With large sized (up to hundreds MB) application buffers, the cost of such copies adds non trivial overhead to the end-to-end communication pipeline. In this work, we made an attempt to design a zero copy transport for distribute dataflow frameworks that unifies application and networking buffer management and completely eliminates unnecessary memory copies. Our prototype on top of TensorFlow shows 2.43x performance improvement over gRPC based transport and 1.21x performance improvement over an alternative RDMA transport with private buffers and memory copies.},
+ acmid = {3131975},
+ address = {New York, NY, USA},
+ author = {Yi, Bairen and Xia, Jiacheng and Chen, Li and Chen, Kai},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131975},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Kernel bypass networking, Memory management},
+ link = {http://doi.acm.org/10.1145/3123878.3131975},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {28--30},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Towards Zero Copy Dataflows Using RDMA},
+ year = {2017}
+}
+
+
+@inproceedings{Zhang:2017:FPS:3123878.3132015,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132015},
+ address = {New York, NY, USA},
+ author = {Zhang, Menghao and Bi, Jun and Bai, Jiasong and Dong, Zhao and Li, Yongbin and Li, Zhaogeng},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132015},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Eviction, Flow Table Overflow Attack, Priority, SDN},
+ link = {http://doi.acm.org/10.1145/3123878.3132015},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {141--143},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {FTGuard: A Priority-Aware Strategy Against the Flow Table Overflow Attack in SDN},
+ year = {2017}
+}
+
+
+@inproceedings{Zheng:2017:BBO:3123878.3132013,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132013},
+ address = {New York, NY, USA},
+ author = {Zheng, Zhilong and Bi, Jun and Yu, Heng and Sun, Chen and Wu, Jianping},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132013},
+ isbn = {978-1-4503-5057-0},
+ keyword = {GPU, NFV, batch-level, order-preserving},
+ link = {http://doi.acm.org/10.1145/3123878.3132013},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {136--137},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {BLOP: Batch-Level Order Preserving for GPU-Accelerated Packet Processing},
+ year = {2017}
+}
+
+
+@inproceedings{Neves:2017:SDP:3123878.3132001,
+ abstract = {This paper describes the design and implementation of a general-purpose compile-time sandbox for P4 data plane programs. Our mechanism allows a supervisor to interpose on another program's interaction with the forwarding device. The sandboxing technique we use provides also a powerful new program structuring model, allowing a data plane developer to combine crosscutting program modules in a safe way. To demonstrate the capabilities of our construct, we describe the implementation of a data plane security kernel that enforces end host isolation policies on top of a programmable data plane.},
+ acmid = {3132001},
+ address = {New York, NY, USA},
+ author = {Neves, Miguel and Levchenko, Kirill and Barcellos, Marinho},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132001},
+ isbn = {978-1-4503-5057-0},
+ keyword = {P4, Programmable data plane, Sandbox},
+ link = {http://doi.acm.org/10.1145/3123878.3132001},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {103--104},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Sandboxing Data Plane Programs for Fun and Profit},
+ year = {2017}
+}
+
+
+@inproceedings{Schmidt:2017:UUS:3123878.3131976,
+ abstract = {Unikernels are increasingly gaining traction in real-world deployments, especially for NFV and microservices, where their low footprint and high performance are especially beneficial. However, they still suffer from a lack of tools to support developers. uniprof is a stack profiler that supports Xen unikernels on x86 and ARM and does not requires any code changes or instrumentation. Its high speed and low overhead (0.1% at 100 samples/s) makes it usable even in production environments, allowing the collection of realistic and highly credible data.},
+ acmid = {3131976},
+ address = {New York, NY, USA},
+ author = {Schmidt, Florian},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131976},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Xen, call stack profiling, introspection, unikernels},
+ link = {http://doi.acm.org/10.1145/3123878.3131976},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {31--33},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Uniprof: A Unikernel Stack Profiler},
+ year = {2017}
+}
+
+
+@inproceedings{Bao:2017:HHE:3123878.3131971,
+ abstract = {This paper presents HERO, a system for accelerating high performance data center applications by integrating hybrid electrical and optical multicast. We built a prototype and developed a flow-level simulator to evaluate the performance of HERO. Experiment and simulation results show that HERO reduces the average MFCT by ~32% and ~28% compared to OCS and EPS multicast, respectively.},
+ acmid = {3131971},
+ address = {New York, NY, USA},
+ author = {Bao, Jinzhen and Zhao, Baokang and Dong, Dezun and Gong, Zhenghu},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131971},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Data Center Network, Multicast, Optical Network},
+ link = {http://doi.acm.org/10.1145/3123878.3131971},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {17--18},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {HERO: A Hybrid Electrical and Optical Multicast for Accelerating High-Performance Data Center Applications},
+ year = {2017}
+}
+
+
+@inproceedings{Siracusano:2017:TPB:3123878.3131996,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131996},
+ address = {New York, NY, USA},
+ author = {Siracusano, Giuseppe and Bifulco, Roberto and Salsano, Stefano},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131996},
+ isbn = {978-1-4503-5057-0},
+ keyword = {NFV, SDN, TCP proxy, proxy offloading},
+ link = {http://doi.acm.org/10.1145/3123878.3131996},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {88--90},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {TCP Proxy Bypass: All the Gain with No Pain!},
+ year = {2017}
+}
+
+
+@inproceedings{Cozzolino:2017:EFE:3123878.3132009,
+ abstract = {},
+ acmid = {3132009},
+ address = {New York, NY, USA},
+ author = {Cozzolino, Vittorio and Ding, Aaron Yi and Ott, Jorg and Kutscher, Dirk},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132009},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Edge Computing, IoT, Virtualization},
+ link = {http://doi.acm.org/10.1145/3123878.3132009},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {124--126},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Enabling Fine-Grained Edge Offloading for IoT},
+ year = {2017}
+}
+
+
+@inproceedings{Rotenberg:2017:AVS:3123878.3131989,
+ abstract = {SOHO routers act as a gateway to the Internet for Small Office/Home Office networks. Despite the important role that they fulfill, there is a long history of vulnerabilities allowing attackers to breach security and availability of the clients and services on SOHO networks. Following the multiple disclosures and recommendations for patches in the last two decades it seems an obvious question to verify whether the reality meets the expectation. We focus on an important class of vulnerabilities called 'authentication bypass', which allow an attacker to take control over a network device by subverting the authentication procedure. We perform a stealthy and non disruptive evaluation of authentication bypass vulnerabilities in SOHO routers. Our study focuses on a number of selected countries, to detect presence of vulnerable devices. The results of our study are worrisome: we find a large fraction of misconfigurations and insecurity issues in configuration of SOHO routers, which stand in sharp contrast to the awareness of the security and research communities to the vulnerabilities as well as a large body of work studying related topics.},
+ acmid = {3131989},
+ address = {New York, NY, USA},
+ author = {Rotenberg, Nadav and Shulman, Haya and Waidner, Michael and Zeltser, Benjamin},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131989},
+ isbn = {978-1-4503-5057-0},
+ keyword = {DNS security, resolver fingeprinting, resolver measurements},
+ link = {http://doi.acm.org/10.1145/3123878.3131989},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {68--70},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Authentication-Bypass Vulnerabilities in SOHO Routers},
+ year = {2017}
+}
+
+
+@inproceedings{Pfaff:2017:SSA:3123878.3131970,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131970},
+ address = {New York, NY, USA},
+ author = {Pfaff, Benedikt and Scherer, Johann and Hock, David and Gray, Nicholas and Zinner, Thomas and Tran-Gia, Phuoc and Durner, Raphael and Kellerer, Wolfgang and Lorenz, Claas},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131970},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Firewalling, Management, NFV, SDN, Security},
+ link = {http://doi.acm.org/10.1145/3123878.3131970},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {15--16},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {SDN/NFV-enabled Security Architecture for Fine-grained Policy Enforcement and Threat Mitigation for Enterprise Networks},
+ year = {2017}
+}
+
+
+@inproceedings{Gilani:2017:ITG:3123878.3131983,
+ abstract = {The explosion of bots on the Web brings an unprecedented increase in traffic from non-human sources. This work studies bot traffic on Twitter, finding that almost 50% of traffic is generated and propagated by a rapidly growing bot population -- a major concern for networked systems in the future.},
+ acmid = {3131983},
+ address = {New York, NY, USA},
+ author = {Gilani, Zafar and Crowcroft, Jon and Farahbakhsh, Reza and Tyson, Gareth},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131983},
+ isbn = {978-1-4503-5057-0},
+ keyword = {bot generated content, bot network traffic, information propagation},
+ link = {http://doi.acm.org/10.1145/3123878.3131983},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {51--53},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {The Implications of Twitterbot Generated Data Traffic on Networked Systems},
+ year = {2017}
+}
+
+
+@inproceedings{Lee:2017:SLL:3123878.3132012,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132012},
+ address = {New York, NY, USA},
+ author = {Lee, Jeongkeun and Miao, Rui and Kim, Changhoon and Yu, Minlan and Zeng, Hongyi},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132012},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Load balancing, Programmable switches},
+ link = {http://doi.acm.org/10.1145/3123878.3132012},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {133--135},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Stateful Layer-4 Load Balancing in Switching ASICs},
+ year = {2017}
+}
+
+
+@inproceedings{Sperotto:2017:TTI:3123878.3131988,
+ abstract = {The Domain Name System contains a wealth of information about the security, stability and health of the Internet. Most research that leverages the DNS for detection of malicious activities does so by using passive measurements. The limitation of this approach, however, is that it is effective only once an attack is ongoing. In this paper, we explore a different approach. We advocate the use of active DNS measurements for pro-active (i.e., before the actual attack) identification of domains set up for malicious use. Our research makes uses of data from the OpenINTEL large-scale active DNS measurement platform, which, since February 2015, collects daily snapshots of currently more than 60% of the DNS namespace. We illustrate the potential of our approach by showing preliminary results in three case studies, namely snowshoe spam, denial of service attacks and a case of targeted phishing known as CEO fraud.},
+ acmid = {3131988},
+ address = {New York, NY, USA},
+ author = {Sperotto, Anna and van der Toorn, Olivier and van Rijswijk-Deij, Roland},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131988},
+ isbn = {978-1-4503-5057-0},
+ keyword = {DNS, active measurements, network security},
+ link = {http://doi.acm.org/10.1145/3123878.3131988},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {65--67},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {TIDE: Threat Identification Using Active DNS Measurements},
+ year = {2017}
+}
+
+
+@inproceedings{Fontugne:2017:HRM:3123878.3131982,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131982},
+ address = {New York, NY, USA},
+ author = {Fontugne, Romain and Shah, Anant and Aben, Emile},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131982},
+ isbn = {978-1-4503-5057-0},
+ link = {http://doi.acm.org/10.1145/3123878.3131982},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {48--50},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {AS Hegemony: A Robust Metric for AS Centrality},
+ year = {2017}
+}
+
+
+@inproceedings{Kwon:2017:UCF:3123878.3132010,
+ abstract = {The filter technologies, e.g., Bloom filters, have been used for IP lookup for their compactness and efficiency. We investigate the performance of cuckoo filters with Cisco's VPP (Vector Packet Processing) for IP lookup. We also introduce a variant called a length-aware cuckoo filter that treats incoming IP addresses discriminatively, and study its performance with VPP. As proof-of-concept, we implement cuckoo filters with VPP, and test them on both functions and performance with focus on the ip6-input node in VPP.},
+ acmid = {3132010},
+ address = {New York, NY, USA},
+ author = {Kwon, Minseok and Vajpayee, Shailesh and Vijayaragavan, Pragash and Dhuliya, Arjun and Marshall, John},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132010},
+ isbn = {978-1-4503-5057-0},
+ keyword = {IP lookup, cuckoo filters, packet forwarding, software routers},
+ link = {http://doi.acm.org/10.1145/3123878.3132010},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {127--129},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Use of Cuckoo Filters with FD.Io VPP for Software IPv6 Routing Lookup},
+ year = {2017}
+}
+
+
+@inproceedings{Fan:2017:NPN:3123878.3132002,
+ abstract = {We present NS4, a P4-driven network simulator, which is, to the best of our knowledge, the first research effort in applying P4 to network simulation. Key features of NS4 include (1) elimination of laborious and redundant work for developing internal models of the simulator; (2) direct migration from simulation code to real-world P4 devices; (3) simulation of P4-enabled devices and network systems; (4) seamless compatibility with ns-3; (5) better scalability over other P4 behavioral model validation tools. We proposed and prototyped NS4 by integrating a P4 behavioral model in ns-3, and evaluated its effectiveness by a user case study. Source codes and examples of NS4 are publicly available at https://ns-4.github.io/},
+ acmid = {3132002},
+ address = {New York, NY, USA},
+ author = {Fan, Chengze and Bi, Jun and Zhou, Yu and Zhang, Cheng and Yu, Haisu},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132002},
+ isbn = {978-1-4503-5057-0},
+ keyword = {P4, simulation},
+ link = {http://doi.acm.org/10.1145/3123878.3132002},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {105--107},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {NS4: A P4-driven Network Simulator},
+ year = {2017}
+}
+
+
+@inproceedings{Mao:2017:BBC:3123878.3131965,
+ abstract = {BGP, the only inter-domain routing protocol used today, often converges slowly upon outages. While fast-reroute solutions exist, they can only protect from local outages, not remote ones (e.g., a failure in a transit network). To address this problem, we proposed SWIFT, a fast-reroute framework enabling BGP routers to locally restore connectivity upon remote outages by combining fast inference mechanisms in the control-plane with fast data plane updates. While SWIFT is deployable on a per-router basis, we show in this demonstration that we can deploy SWIFT in Software-Defined Internet Exchange Points (SDXes) with a simple software update. We show that "SWIFTing" an SDX is highly beneficial as it enables to converge the entire fabric within few seconds instead of the tens of seconds required by the original software.},
+ acmid = {3131965},
+ address = {New York, NY, USA},
+ author = {Mao, Philipp and Birkner, R\"{u}diger and Holterbach, Thomas and Vanbever, Laurent},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131965},
+ isbn = {978-1-4503-5057-0},
+ keyword = {BGP, Convergence, Fast Reroute, Internet exchange point (IXP)},
+ link = {http://doi.acm.org/10.1145/3123878.3131965},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {1--2},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Boosting the BGP Convergence in SDXes with SWIFT},
+ year = {2017}
+}
+
+
+@inproceedings{Shukla:2017:ACG:3123878.3131966,
+ abstract = {Software-Defined Networks (SDNs) has been an area of interest among researchers from academia and industry. SDNs, however, also introduce new challenges, for example researchers work under strict time constraints and need to conduct frequent experiments to verify their ideas on scalable simulation of real-life topologies. The challenge is two-fold: first, the researchers need to manually generate the topologies and second, manually configure the devices in the generated topologies to enable routing protocols. We demonstrate two novel tools, namely, Topology Generator and Enhanced Automatic Configuration RouteFlow (EACRF), which automatically generate the custom scalable topologies at the SDN data plane and configure routing protocols like BGP and OSPF, at the SDN control plane, in a seamless fashion in quick time. EACRF is an enhancement of RouteFlow which can be used in con/junction with Topology Generator or independently.},
+ acmid = {3131966},
+ address = {New York, NY, USA},
+ author = {Shukla, Apoorv and Shi, Mengchen and Feldmann, Anja},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131966},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Mininet, OpenFlow, Quagga, Reproducible Research, SDN},
+ link = {http://doi.acm.org/10.1145/3123878.3131966},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {3--5},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Automatic Custom Generation of Topologies and Configuration of Routing Protocols in SDN},
+ year = {2017}
+}
+
+
+@inproceedings{Nathan:2017:DMS:3123878.3131985,
+ abstract = {We demonstrate Marple [15], a system that allows network operators to measure a wide variety of performance metrics in real time. It consists of a performance query language, Marple, modeled on familiar functional operators like map, filter, and groupby. Marple is supported by a programmable key-value store on switches, which can compute flexible aggregated statistics (e.g., per-flow counts, moving averages over queueing latencies) over packets at line rate. Our switch design implements performance queries which could previously run only on end hosts, while utilizing only a modest fraction of switch hardware resources. To demonstrate the utility of Marple, we compile Marple queries to a P4-programmable software switch running within Mininet. We demonstrate two example use cases of Marple: diagnosing the root cause of latency spikes and measuring the flowlet size distribution.},
+ acmid = {3131985},
+ address = {New York, NY, USA},
+ author = {Nathan, Vikram and Narayana, Srinivas and Sivaraman, Anirudh and Goyal, Prateesh and Arun, Venkat and Alizadeh, Mohammad and Jeyakumar, Vimalkumar and Kim, Changhoon},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131985},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Network measurement, network hardware, network programming},
+ link = {http://doi.acm.org/10.1145/3123878.3131985},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {57--59},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Demonstration of the Marple System for Network Performance Monitoring},
+ year = {2017}
+}
+
+
+@inproceedings{Gonzalez:2017:NDM:3123878.3131978,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3131978},
+ address = {New York, NY, USA},
+ author = {Gonzalez, Roberto and Garcia-Duran, Alberto and Manco, Filipe and Niepert, Mathias and Vallina, Pelayo},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131978},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Deep Learning, Network Data Monetization, Online Advertising, Privacy},
+ link = {http://doi.acm.org/10.1145/3123878.3131978},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {37--39},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Network Data Monetization Using Net2Vec},
+ year = {2017}
+}
+
+
+@inproceedings{Siracusano:2017:SKS:3123878.3132014,
+ abstract = {
+An abstract is not available.
+},
+ acmid = {3132014},
+ address = {New York, NY, USA},
+ author = {Siracusano, Giuseppe and Bifulco, Roberto},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132014},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Key-Value Store, SmartNic, XDP, eBPF},
+ link = {http://doi.acm.org/10.1145/3123878.3132014},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {138--140},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Is It a SmartNIC or a Key-Value Store?: Both!},
+ year = {2017}
+}
+
+
+@inproceedings{Mahfoudi:2017:DNL:3123878.3132005,
+ abstract = {We describe a demonstration run on R2lab, an anechoic chamber located at Inria Sophia Antipolis, France. The demonstration consists in deploying a standalone 5G network in less than 5 minutes. All the network components (base station, subscriber management, serving and packet gateways, network traffic analyzers) were run automatically using the nepi-ng experiment orchestration tool. Download and upload performance to the Internet from a commercial phone located in the anechoic chamber are shown.},
+ acmid = {3132005},
+ address = {New York, NY, USA},
+ author = {Mahfoudi, Mohamed Naoufal and Parmentelat, Thierry and Turletti, Thierry and Dabbous, Walid and Knopp, Raymond},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3132005},
+ isbn = {978-1-4503-5057-0},
+ keyword = {4G/5G, Wireless testbed},
+ link = {http://doi.acm.org/10.1145/3123878.3132005},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {113--115},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Deploy a 5G Network in Less Than 5 Minutes},
+ year = {2017}
+}
+
+
+@inproceedings{vanRijswijk-Deij:2017:RCM:3123878.3131987,
+ abstract = {The Domain Name System (DNS) is part of the core of the Internet. Over the past decade, much-needed security features were added to this protocol, with the introduction of the DNS Security Extensions. DNSSEC adds authenticity and integrity to the protocol using digital signatures, and turns the DNS into a public key infrastructure (PKI). At the top of this PKI is a single key, the so-called Key Signing Key (KSK) for the DNS root. The current Root KSK was introduced in 2010, and has not changed since. This year, the Root KSK will be replaced for the first time ever. This event potentially has a major impact on the Internet. Thousands of DNS resolvers worldwide rely on this key to validate DNSSEC signatures, and must start using the new key, either through an automated process, or manual intervention. Failure to pick up the new key will result in resolvers becoming completely unavailable to end users. This work presents the "Root Canary", a system to monitor and measure this event from the perspective of validating DNS resolvers for its entire nine-month duration. The system combines three active measurement platforms to have the broadest possible coverage of validating resolvers. Results will be presented in near real-time, to allow the global DNS community to act if problems arise. Furthermore, after the Root KSK rollover concludes in March 2018, we will use the recorded datasets for an in-depth analysis, from which the Internet community can draw lessons for future key rollovers.},
+ acmid = {3131987},
+ address = {New York, NY, USA},
+ author = {van Rijswijk-Deij, R. and Chung, T. and Choffnes, D. and Mislove, A. and Toorop, W.},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131987},
+ isbn = {978-1-4503-5057-0},
+ keyword = {DNS, DNSSEC, Internet stability, active measurements},
+ link = {http://doi.acm.org/10.1145/3123878.3131987},
+ location = {Los Angeles, CA, USA},
+ numpages = {2},
+ pages = {63--64},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {The Root Canary: Monitoring and Measuring the DNSSEC Root Key Rollover},
+ year = {2017}
+}
+
+
+@inproceedings{Diab:2017:CAD:3123878.3131972,
+ abstract = {Telco-CDNs are ISP-managed CDNs deployed inside ISP networks. We propose a new content distribution system inside telco-CDN called CAD. In CAD, Content Provider and ISP collaborate to distribute multimedia content to users inside the ISP network. CAD manages both the overlay and underlay of the network to reduce the ISP interdomain traffic, improve the service latency, and minimize the intradomain link utilization. CAD achieves these goals by allowing caching servers to fetch content from other caching servers, and create videos on-demand inside the telco-CDN. We propose an algorithm to calculate the overlay and underlay of the CAD-managed telco-CDN in polynomial time. Compared against the closest approach in the literature, our initial results showed that CAD achieves up to 30% reduction in the interdomain traffic and up to 230% improvement in the service latency, while not increasing the intradomain link utilization.},
+ acmid = {3131972},
+ address = {New York, NY, USA},
+ author = {Diab, Khaled and Hefeeda, Mohamed},
+ booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+ doi = {10.1145/3123878.3131972},
+ isbn = {978-1-4503-5057-0},
+ keyword = {Content Distribution, TE, Telco-CDN},
+ link = {http://doi.acm.org/10.1145/3123878.3131972},
+ location = {Los Angeles, CA, USA},
+ numpages = {3},
+ pages = {19--21},
+ publisher = {ACM},
+ series = {SIGCOMM Posters and Demos '17},
+ title = {Cooperative Active Distribution of Videos in Telco-CDNs},
+ year = {2017}
+}
+
+
